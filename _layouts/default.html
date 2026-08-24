@@ -16,7 +16,8 @@
 
 <a class="skip" href="#main">Skip to content</a>
 
-{%- assign prod = site.data.products | where: "slug", page.product | first %}
+{%- assign prod = false -%}
+{%- if page.product -%}{%- assign prod = site.data.products | where: "slug", page.product | first -%}{%- endif %}
 <header class="site-head">
   <div class="head-in">
     <a class="wordmark" href="{{ '/' | relative_url }}">plugin<span>.</span>dev<span>.</span>lab</a>
