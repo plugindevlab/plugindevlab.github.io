@@ -38,7 +38,7 @@ If you already know the plugin and just want a component, go to the
 
   {%- for a in prod.flow.aside -%}
   {%- assign g = wf[a.group] -%}
-  {%- assign ax = forloop.index0 | times: step | plus: 208 -%}
+  {%- assign ax = a.col | times: step -%}
   {%- if a.into != "" %}
   <path class="map-arrow map-dash" d="M{{ ax | plus: 84 }} 200 V128" marker-end="url(#mk)"/>
   {%- endif %}

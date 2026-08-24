@@ -52,8 +52,8 @@ a:hover { text-decoration: none; }
 
 .content { max-width: var(--wide); margin: 0 auto; padding: 4rem var(--pad) 6rem; }
 .content > * { max-width: var(--measure); }
-.content > .full, .content > .split, .content > .grid,
-.content > table, .content > pre, .content > figure { max-width: none; }
+.content > .full, .content > .split, .content > .grid, .content > .map-wrap,
+.content > section, .content > table, .content > pre, .content > figure { max-width: none; }
 
 h1 {
   font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 300; letter-spacing: -.02em;

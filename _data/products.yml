@@ -13,8 +13,8 @@
       - { group: bowl-section-4, label: "3D solids" }
       - { group: bowl-analysis, label: "Analysis" }
     aside:
-      - { group: table, label: "Tables", into: bowl-section-2 }
-      - { group: util, label: "Tools", into: "" }
+      - { group: table, label: "Tables", into: bowl-section-2, col: 1 }
+      - { group: util, label: "Tools", into: "", col: 4 }
   nav:
     - { label: "Getting started", url: /antlion/getting-started/ }
     - { label: "Workflow", url: /antlion/workflow/ }
