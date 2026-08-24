@@ -1,0 +1,79 @@
+antlion:
+  bowl-section-1:
+    path: "Bowl / Section 1"
+    page: "01-plan"
+    count: 7
+    components:
+      - { name: "Field", anchor: "field", id: "FIELD-001", page: "01-plan" }
+      - { name: "Startline Rect", anchor: "startline-rect", id: "STARTLINE-001", page: "01-plan" }
+      - { name: "Startline Capsule", anchor: "startline-capsule", id: "STARTLINE-003", page: "01-plan" }
+      - { name: "Startline Oval", anchor: "startline-oval", id: "STARTLINE-002", page: "01-plan" }
+      - { name: "Custom Startline", anchor: "custom-startline", id: "STARTLINE-004", page: "01-plan" }
+      - { name: "Axis", anchor: "axis", id: "AXIS-002", page: "01-plan" }
+      - { name: "Custom Axis", anchor: "custom-axis", id: "AXIS-003", page: "01-plan" }
+  bowl-section-2:
+    path: "Bowl / Section 2"
+    page: "02-section"
+    count: 4
+    components:
+      - { name: "Section", anchor: "section", id: "SECTION-002", page: "02-section" }
+      - { name: "Auto Section", anchor: "auto-section", id: "SECTION-001", page: "02-section" }
+      - { name: "Section Plus", anchor: "section-plus", id: "HANDRAIL-001", page: "02-section" }
+      - { name: "Table Section", anchor: "table-section", id: "SECTION-003", page: "02-section" }
+  bowl-section-3:
+    path: "Bowl / Section 3"
+    page: "03-plan2d"
+    count: 6
+    components:
+      - { name: "Stand 2D", anchor: "stand-2d", id: "STAND2D-002", page: "03-plan2d" }
+      - { name: "Vomitory", anchor: "vomitory", id: "VOMITORY-001", page: "03-plan2d" }
+      - { name: "Seat", anchor: "seat", id: "SEAT-001", page: "03-plan2d" }
+      - { name: "Custom Seat", anchor: "custom-seat", id: "SEAT-002", page: "03-plan2d" }
+      - { name: "Cut", anchor: "cut", id: "CUT-001", page: "03-plan2d" }
+      - { name: "Opening Cut", anchor: "opening-cut", id: "CUT-002", page: "03-plan2d" }
+  bowl-section-4:
+    path: "Bowl / Section 4"
+    page: "04-body3d"
+    count: 6
+    components:
+      - { name: "Stand 3D", anchor: "stand-3d", id: "STAND-001", page: "04-body3d" }
+      - { name: "Vom 3D", anchor: "vom-3d", id: "VOM3D-001", page: "04-body3d" }
+      - { name: "Stand 3D Plus", anchor: "stand-3d-plus", id: "BUILD-001", page: "04-body3d" }
+      - { name: "Rail 3D", anchor: "rail-3d", id: "RAIL-001", page: "04-body3d" }
+      - { name: "Assemble Bowl", anchor: "assemble-bowl", id: "UTIL-004", page: "04-body3d" }
+      - { name: "Seat 3D", anchor: "seat-3d", id: "SEAT3D-001", page: "04-body3d" }
+  util:
+    path: "Util"
+    page: "05-analysis-util"
+    count: 7
+    components:
+      - { name: "Input Panel", anchor: "input-panel", id: "", page: "05-analysis-util" }
+      - { name: "C-value Legend", anchor: "c-value-legend", id: "LEGEND-001", page: "05-analysis-util" }
+      - { name: "Sheet Setup", anchor: "sheet-setup", id: "", page: "05-analysis-util" }
+      - { name: "Slider Merge", anchor: "slider-merge", id: "", page: "05-analysis-util" }
+      - { name: "Toggle Merge", anchor: "toggle-merge", id: "", page: "05-analysis-util" }
+      - { name: "Data Gate", anchor: "data-gate", id: "GATE-001", page: "05-analysis-util" }
+      - { name: "License", anchor: "license", id: "", page: "05-analysis-util" }
+  bowl-analysis:
+    path: "Bowl Analysis"
+    page: "05-analysis-util"
+    count: 9
+    components:
+      - { name: "Section analysis", anchor: "section-analysis", id: "ANALYSIS-001", page: "05-analysis-util" }
+      - { name: "C-value Seat", anchor: "c-value-seat", id: "ANALYSIS-004", page: "05-analysis-util" }
+      - { name: "C-value Tread", anchor: "c-value-tread", id: "ANALYSIS-005", page: "05-analysis-util" }
+      - { name: "C-value Section Check", anchor: "c-value-section-check", id: "ANALYSIS-006", page: "05-analysis-util" }
+      - { name: "C-value Map", anchor: "c-value-map", id: "ANALYSIS-007", page: "05-analysis-util" }
+      - { name: "Seat Map", anchor: "seat-map", id: "SEATMAP-001", page: "05-analysis-util" }
+      - { name: "Seat View", anchor: "seat-view", id: "VIEWSEAT-001", page: "05-analysis-util" }
+      - { name: "View Axis", anchor: "view-axis", id: "VIEWAXIS-001", page: "05-analysis-util" }
+      - { name: "View Limit", anchor: "view-limit", id: "VIEWLIMIT-001", page: "05-analysis-util" }
+  table:
+    path: "Table"
+    page: "06-table"
+    count: 4
+    components:
+      - { name: "Excel Workbook", anchor: "excel-workbook", id: "IO-007", page: "06-table" }
+      - { name: "Google Workbook", anchor: "google-workbook", id: "IO-004", page: "06-table" }
+      - { name: "Table In", anchor: "table-in", id: "IO-005", page: "06-table" }
+      - { name: "Table Out", anchor: "table-out", id: "IO-006", page: "06-table" }

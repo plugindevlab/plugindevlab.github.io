@@ -1,0 +1,54 @@
+bowl-section-1: |
+  Place the field, draw the line where the front row starts, and set the axes the sections
+  will sit on. Everything downstream is measured from these.
+
+  The four start-line shapes form **one continuum**: grow the corner radius and a rectangle
+  becomes a capsule, then an oval. A custom curve is the escape hatch when the shape is not
+  any of those — open curves are allowed.
+
+bowl-section-2: |
+  Build the stair section — the profile that gets swept around the bowl — and attach extras
+  such as railings and wheelchair platforms.
+
+  **There are three ways in.** Read a line you drew, solve riser heights from a target
+  C-value, or build the section from workbook numbers. All three produce the same object,
+  and **everything downstream cannot tell which way it came.**
+
+bowl-section-3: |
+  Unroll the section onto the plan, place vomitories and seats, and cut the bowl to shape.
+
+  **Most design decisions happen here.** This is where the bowl stops being a profile and
+  becomes a seating plan: where people walk in, how many seats fit, where the geometry stops.
+
+bowl-section-4: |
+  Build what the 2D layout decided as real solids — tier stands, vomitory stairs, railings,
+  seats.
+
+  From here the chain carries the 3D result inside a single bundled port, so the analysis
+  stage needs one wire rather than many.
+
+bowl-analysis: |
+  Check the design and produce evidence you can put in front of someone.
+
+  C-value is computed per seat and per tread band across the whole bowl, so you see **where**
+  the design breaks down rather than checking one section and hoping. Section checks draw
+  their dimensions and sightlines on the real cut — a number you report is a number you can
+  defend.
+
+  **A single-section check and the whole-bowl maps do not replace each other.** One examines
+  one place rigorously; the others tell you which place to examine.
+
+table: |
+  Values can live in a spreadsheet instead of Rhino. Read your inputs from a workbook, write
+  the results back, and keep the numbers where the rest of the project already keeps them.
+
+  Google Sheets and Excel both work, and **communication happens only when you press Run** —
+  the definition does not talk to the network while you are designing.
+
+util: |
+  Tools that sit beside the chain rather than in it — licence registration, gathering inputs
+  into one panel, legends, shared drawing-sheet format, and helpers for bundling per-tier
+  values.
+
+  These are **not a stage.** They do not take the chain in and pass it on; they support
+  whatever stage you are working in.

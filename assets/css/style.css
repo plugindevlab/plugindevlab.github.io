@@ -138,3 +138,27 @@ figure.fig figcaption {
   .split { grid-template-columns: 1fr; gap: 1.5rem; }
   .split.flip > .split-text, .split.flip > .fig { order: 0; }
 }
+
+.map-wrap { margin: 2.5rem 0 var(--rhythm); overflow-x: auto; }
+.map { width: 100%; min-width: 46rem; height: auto; display: block; }
+
+.map-node { fill: var(--bg-soft); stroke: var(--rule); stroke-width: 1; transition: fill .12s; }
+.map a:hover .map-node { fill: var(--bg); stroke: var(--accent); }
+.map-aside { fill: none; stroke-dasharray: 3 3; }
+
+.map text { font-family: var(--font-body); fill: var(--ink); }
+.map-n { font-size: 12px; font-weight: 600; letter-spacing: .14em; fill: var(--ink-faint); }
+.map-t { font-size: 17px; font-weight: 400; }
+.map-c { font-size: 12px; fill: var(--ink-soft); }
+.map a { text-decoration: none; }
+.map a:hover .map-t { fill: var(--accent); }
+
+.map-arrow { stroke: var(--ink-faint); stroke-width: 1; fill: none; }
+.map-dash { stroke-dasharray: 3 3; }
+.map-head { fill: var(--ink-faint); }
+
+.comp-list { font-size: .92rem; line-height: 2; color: var(--ink-faint); }
+.comp-list a { text-decoration: none; color: var(--ink-soft); border-bottom: 1px solid var(--rule); }
+.comp-list a:hover { color: var(--accent); border-bottom-color: currentColor; }
+
+.content.wide > p, .content.wide > ul, .content.wide > ol { max-width: var(--measure); }

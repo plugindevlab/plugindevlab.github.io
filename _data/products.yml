@@ -5,6 +5,16 @@
     Stadium bowl design workflow for Rhino 8 and Grasshopper — start lines, sections,
     stands, vomitories and seats as one editable chain, with continuous sightline checking.
   reference: antlion/specs/reference/en
+  flow:
+    spine:
+      - { group: bowl-section-1, label: "Plan & setup" }
+      - { group: bowl-section-2, label: "Section" }
+      - { group: bowl-section-3, label: "2D layout" }
+      - { group: bowl-section-4, label: "3D solids" }
+      - { group: bowl-analysis, label: "Analysis" }
+    aside:
+      - { group: table, label: "Tables", into: bowl-section-2 }
+      - { group: util, label: "Tools", into: "" }
   nav:
     - { label: "Getting started", url: /antlion/getting-started/ }
     - { label: "Workflow", url: /antlion/workflow/ }
