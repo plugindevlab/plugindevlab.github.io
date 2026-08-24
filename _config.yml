@@ -1,0 +1,20 @@
+title: plugin.dev.lab
+description: Design-workflow plugins for Rhino and Grasshopper
+lang: en
+
+url: https://plugindevlab.github.io
+baseurl: ""
+
+prelaunch: true
+
+exclude:
+  - _tools
+  - README.md
+
+defaults:
+  - scope: { path: "" }
+    values:
+      layout: default
+  - scope: { path: "antlion" }
+    values:
+      product: antlion

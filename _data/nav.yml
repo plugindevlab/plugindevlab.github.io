@@ -1,0 +1,9 @@
+antlion:
+  name: Antlion
+  url: /antlion/
+  items:
+    - { label: "Getting started", url: /antlion/getting-started/ }
+    - { label: "Reference", url: /antlion/reference/ }
+    - { label: "Tutorials", url: /antlion/tutorials/ }
+    - { label: "Troubleshooting", url: /antlion/troubleshooting/ }
+    - { label: "Changelog", url: /antlion/changelog/ }

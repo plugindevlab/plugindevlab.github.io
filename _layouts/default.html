@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{%- assign page_title = page.title | default: site.title -%}
+<title>{% if page_title != site.title %}{{ page_title }} · {{ site.title }}{% else %}{{ site.title }} — {{ site.description }}{% endif %}</title>
+<meta name="description" content="{{ page.description | default: site.description }}">
+{%- if site.prelaunch %}
+<meta name="robots" content="noindex, nofollow">
+{%- endif %}
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <a class="wordmark" href="{{ '/' | relative_url }}">plugin.dev.lab</a>
+  {%- assign nav = site.data.nav[page.product] -%}
+  {%- if nav %}
+  <nav class="product-nav" aria-label="{{ nav.name }}">
+    <a class="product-home{% if page.url == nav.url %} here{% endif %}" href="{{ nav.url | relative_url }}">{{ nav.name }}</a>
+    {%- for item in nav.items %}
+    <a{% if page.url contains item.url %} class="here"{% endif %} href="{{ item.url | relative_url }}">{{ item.label }}</a>
+    {%- endfor %}
+  </nav>
+  {%- endif %}
+</header>
+
+<main class="content" id="main">
+{{ content }}
+</main>
+
+<footer class="site-foot">
+  {%- if nav %}
+  <p><a href="{{ nav.url | relative_url }}#report-a-problem">Report a problem</a> · <a href="{{ nav.url | relative_url }}#get-antlion">Where to get {{ nav.name }}</a></p>
+  {%- endif %}
+  <p class="mark">plugin.dev.lab</p>
+</footer>
+
+</body>
+</html>
