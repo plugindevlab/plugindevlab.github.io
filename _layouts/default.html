@@ -16,28 +16,36 @@
 
 <a class="skip" href="#main">Skip to content</a>
 
+{%- assign prod = site.data.products | where: "slug", page.product | first %}
 <header class="site-head">
-  <a class="wordmark" href="{{ '/' | relative_url }}">plugin.dev.lab</a>
-  {%- assign nav = site.data.nav[page.product] -%}
-  {%- if nav %}
-  <nav class="product-nav" aria-label="{{ nav.name }}">
-    <a class="product-home{% if page.url == nav.url %} here{% endif %}" href="{{ nav.url | relative_url }}">{{ nav.name }}</a>
-    {%- for item in nav.items %}
-    <a{% if page.url contains item.url %} class="here"{% endif %} href="{{ item.url | relative_url }}">{{ item.label }}</a>
-    {%- endfor %}
-  </nav>
-  {%- endif %}
+  <div class="head-in">
+    <a class="wordmark" href="{{ '/' | relative_url }}">plugin<span>.</span>dev<span>.</span>lab</a>
+    {%- if prod %}
+    <nav class="product-nav" aria-label="{{ prod.name }}">
+      <a class="product-home{% if page.url == '/' | append: prod.slug | append: '/' %} here{% endif %}" href="/{{ prod.slug }}/">{{ prod.name }}</a>
+      {%- for item in prod.nav %}
+      <a{% if page.url contains item.url %} class="here"{% endif %} href="{{ item.url | relative_url }}">{{ item.label }}</a>
+      {%- endfor %}
+    </nav>
+    {%- endif %}
+  </div>
 </header>
 
-<main class="content" id="main">
+<main class="content{% if page.wide %} wide{% endif %}" id="main">
 {{ content }}
 </main>
 
 <footer class="site-foot">
-  {%- if nav %}
-  <p><a href="{{ nav.url | relative_url }}#report-a-problem">Report a problem</a> · <a href="{{ nav.url | relative_url }}#get-antlion">Where to get {{ nav.name }}</a></p>
-  {%- endif %}
-  <p class="mark">plugin.dev.lab</p>
+  <div class="foot-in">
+    {%- if prod %}
+    <p class="foot-links">
+      <a href="/{{ prod.slug }}/#report-a-problem">Report a problem</a>
+      <a href="/{{ prod.slug }}/#get-{{ prod.slug }}">Where to get {{ prod.name }}</a>
+      <a href="/{{ prod.slug }}/changelog/">Changelog</a>
+    </p>
+    {%- endif %}
+    <p class="mark">plugin.dev.lab</p>
+  </div>
 </footer>
 
 </body>

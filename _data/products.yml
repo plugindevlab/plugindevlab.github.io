@@ -1,0 +1,15 @@
+- slug: antlion
+  name: Antlion
+  status: shipped
+  tagline: >-
+    Stadium bowl design workflow for Rhino 8 and Grasshopper — start lines, sections,
+    stands, vomitories and seats as one editable chain, with continuous sightline checking.
+  reference: antlion/specs/reference/en
+  nav:
+    - { label: "Getting started", url: /antlion/getting-started/ }
+    - { label: "Workflow", url: /antlion/workflow/ }
+    - { label: "Reference", url: /antlion/reference/ }
+    - { label: "Tutorials", url: /antlion/tutorials/ }
+    - { label: "Troubleshooting", url: /antlion/troubleshooting/ }
+    - { label: "Changelog", url: /antlion/changelog/ }
+

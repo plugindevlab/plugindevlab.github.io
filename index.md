@@ -3,23 +3,34 @@ title: plugin.dev.lab
 description: Design-workflow plugins for Rhino and Grasshopper — automate the workflow, keep the design yours.
 ---
 
-# plugin.dev.lab
+<p class="label">Rhino · Grasshopper</p>
 
-Design-workflow plugins for Rhino and Grasshopper — built around one idea:
-**automate the workflow, keep the design yours.**
+# Automate the workflow, keep the design yours.
 
-## Products
+Design-workflow plugins for Rhino and Grasshopper. Each one takes a job that eats days of
+an architect's time and makes it a chain you can keep editing — not a black box that hands
+back a result you cannot argue with.
 
-### [Antlion](antlion/index.md)
+<div class="grid" markdown="0">
+{%- for p in site.data.products %}
+  <div class="card">
+    <div class="fig-wait">Image to come</div>
+    <h3>{% if p.status == "shipped" %}<a href="/{{ p.slug }}/">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</h3>
+    <p>{{ p.tagline }}</p>
+    {%- if p.status == "shipped" %}
+    <p><a href="/{{ p.slug }}/workflow/">Workflow</a> · <a href="/{{ p.slug }}/reference/">Reference</a> · <a href="/{{ p.slug }}/changelog/">Changelog</a></p>
+    {%- else %}
+    <p class="label">In development</p>
+    {%- endif %}
+  </div>
+{%- endfor %}
+</div>
 
-Stadium bowl design workflow for Rhino 8 / Grasshopper. Builds the seating bowl as one
-connected, editable chain — start lines, sections, stands, vomitories, seats, cuts —
-with continuous sightline (C-value) checking and direct spreadsheet and drawing-sheet output.
+## How these are built
 
-- [Getting started](antlion/getting-started/index.md)
-- [Component reference](antlion/reference/index.md)
-- [Tutorials](antlion/tutorials/index.md)
-- [Troubleshooting](antlion/troubleshooting/index.md)
-- [Changelog](antlion/changelog/index.md)
-- [Report a problem](antlion/index.md#report-a-problem)
+Every plugin here is documented from its own source. The component reference is generated
+from the plugin binary, so it cannot drift from the version you are running — if a port is
+renamed, the page changes with it. Bugs are fixed and shipped continuously, and each
+product's changelog is the record of that.
 
+Reports do not require an account. Nothing on this site asks you to sign up.
