@@ -92,7 +92,7 @@ licence; the bowl, analysis and table components need one.
 
 Found a bug, or something that does not behave the way the reference says it should?
 
-*(Report form link — coming with release.)*
+[**Report a problem →**](https://tally.so/r/MepAQM)
 
 **No account or sign-in is required.** The form asks what you saw and how to reproduce it;
 the plugin fills in version and environment details for you.
