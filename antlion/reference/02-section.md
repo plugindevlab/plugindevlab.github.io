@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Section 2 · Section"
+noindex: true
 generated: true
 ---
 
@@ -101,7 +102,7 @@ generated: true
    - How high the tier behind starts above the last nosing below - one per gap between tiers (no default - you set this)
 
 8. `Minimum C-Values`  ·  nick `Min C` — `Number` `list` · optional
-   - The C-value every row must hold - one per tier, or one for all (default 100 mm)
+   - The C-value every row must hold - one per tier, or one for all (default 90 mm)
 
 9. `Minimum Riser`  ·  nick `Min Rise` — `Number` `item` · default `150 mm / 6 in`
    - Shallowest riser to build. Front rows needing less get raised to it (default 150 mm)
@@ -160,7 +161,7 @@ generated: true
 
 ## Section Plus
 
-`Antlion ▸ Bowl ▸ Section 2` · ID `HANDRAIL-001` · 8 inputs · 7 outputs
+`Antlion ▸ Bowl ▸ Section 2` · ID `HANDRAIL-001` · 10 inputs · 7 outputs
 
 > Adds the things a bare section does not have: the front barrier or handrail, accessible (wheelchair) rows, and the sightline check over the barrier. Sits between Section and Stand 2D — pure section geometry stays in Section.
 
@@ -189,6 +190,12 @@ generated: true
 
 7. `Panel Values`  ·  nick `Panel` — `Object` `item` · optional
    - Every value from Input Panel, as one bundle. Anything you wire in yourself wins over it
+
+8. `WC Eye Vertical Offset`  ·  nick `WC Eye V` — `Number` `item` · default `Antlion.Logic.HandrailLogic.WcEyeVerticalDefault`
+   - Eye height above the platform for a wheelchair user. 1150 mm follows EN 13200-1, measured from the floor - a seated spectator's 1200 mm is measured the same way but includes the seat. Set your own if your code says otherwise
+
+9. `WC Eye Horizontal Offset`  ·  nick `WC Eye H` — `Number` `item` · default `Antlion.Logic.HandrailLogic.WcEyeHorizontalFollow`
+   - How far back from the nosing a wheelchair user's eye sits. Leave it at -1 to use the same value as a seated spectator, which is what Section already applied
 
 **Outputs**
 

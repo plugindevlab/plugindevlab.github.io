@@ -1,0 +1,136 @@
+{%- assign prod = site.data.products | where: "slug", page.product | first -%}
+{%- assign pdata = site.data.components.products[page.product] -%}
+{%- assign comp = pdata.components | where: "id", page.component | first -%}
+{%- assign nin = comp.inputs | size -%}
+{%- assign nout = comp.outputs | size -%}
+{%- assign fig = comp.figure -%}
+
+<div class="shell">
+{% include side-nav.html group=comp.group current=comp.id %}
+<div class="col">
+
+<article class="sheet">
+  <div class="inner">
+    <p class="crumb"><a href="/{{ prod.slug }}/">{{ prod.name }}</a> /
+      <a href="/{{ prod.slug }}/components/">Components</a> / {{ comp.name | escape }}</p>
+
+    <h1>{{ comp.name | escape }}{% if comp.compId %}<span class="nick">{{ comp.compId }}</span>{% endif %}</h1>
+    {%- if comp.summary %}
+    <p class="lede">{{ comp.summary | escape }}</p>
+    {%- endif %}
+
+    <div class="stages">
+      {%- for s in prod.flow.spine %}
+      <div{% if s.group == comp.group %} class="here"{% endif %} style="--st:var(--s{{ forloop.index }})">{{ forloop.index }}<b>{{ s.label | escape }}</b></div>
+      {%- endfor %}
+    </div>
+
+    <p class="tags">
+      {%- if comp.tier %}
+      <span class="tag{% unless comp.tier == 'free' %} on{% endunless %}" style="--tier:var(--tier-{{ comp.tier }})">{{ comp.tier }}</span>
+      {%- endif %}
+      <span class="tag">{{ comp.ribbon | join: " ▸ " }}</span>
+      <span class="tag">{{ nin }} in &middot; {{ nout }} out</span>
+    </p>
+  </div>
+
+  <div class="plate">
+    <div class="plate-h"><b>Fig. 1 &mdash; Ports</b><b>Reads left, writes right</b></div>
+    <div class="diagram" style="width:{{ fig.w }}px;height:{{ fig.h }}px">
+      <svg viewBox="0 0 {{ fig.w }} {{ fig.h }}" aria-hidden="true">
+        <g class="lead">
+          {%- for p in fig.ports %}
+          <path{% if p.flow %} class="chain-{{ p.side }}"{% endif %} d="{{ p.d }}"/>
+          {%- endfor %}
+        </g>
+        <g class="tick">
+          {%- for p in fig.ports %}
+          <circle cx="{{ p.gripX }}" cy="{{ p.gripY }}" r="2.5"/>
+          {%- endfor %}
+        </g>
+      </svg>
+
+      {%- if fig.img %}
+      <img class="capsule-img" src="{{ fig.img | relative_url }}" alt="{{ comp.name | escape }} component in Grasshopper"
+        style="left:{{ fig.imgX }}px;top:{{ fig.imgY }}px;width:{{ fig.imgW }}px;height:{{ fig.imgH }}px">
+      {%- else %}
+      <div class="capsule" style="left:{{ fig.imgX }}px;top:{{ fig.imgY }}px;width:{{ fig.imgW }}px;height:{{ fig.imgH }}px"><p>Capture pending
+        <em>rendered from the plugin, not screenshotted</em></p></div>
+      {%- endif %}
+
+      {%- for p in fig.ports %}
+      <div class="call {{ p.side }}{% if p.flow %} req{% endif %}" style="left:{{ p.callX }}px;top:{{ p.callY }}px;width:{{ fig.callW }}px;height:{{ fig.callH }}px"><b>{{ p.name | escape }}{% if p.nick %} <i>{{ p.nick | escape }}</i>{% endif %}</b><span>{{ p.ghType }} &middot; {{ p.access }}</span>{% if p.blurb %}<em>{{ p.blurb | escape }}</em>{% endif %}</div>
+      {%- endfor %}
+    </div>
+    {%- assign chainin = comp.inputs | where: "flow", true | size -%}
+    {%- assign chainout = comp.outputs | where: "flow", true | size -%}
+    {%- if chainin > 0 or chainout > 0 %}
+    <p class="plate-n">Coloured ports carry the chain from one component to the next.
+      The rest are values you set once.</p>
+    {%- endif %}
+  </div>
+
+  <div class="body">
+    {%- assign note = pdata.notes[comp.id] %}
+    {%- if note %}
+    <h2>What it does</h2>
+    <p>{{ note | escape }}</p>
+    {%- endif %}
+
+    <h2>Inputs</h2>
+    <ul class="ports">
+      {%- for p in comp.inputs %}
+      {%- assign lower = p.desc | downcase %}
+      <li{% if p.flow %} class="chain"{% endif %}><b>{{ p.name | escape }}</b><code>{{ p.nick | default: p.name | escape }}</code><span>{{ p.desc | escape }}{% if p.default %}{% unless lower contains "default" %} <em>Default {{ p.default | escape }}.</em>{% endunless %}{% endif %}</span></li>
+      {%- endfor %}
+    </ul>
+
+    <h2>Outputs</h2>
+    <ul class="ports">
+      {%- for p in comp.outputs %}
+      <li{% if p.flow %} class="chain"{% endif %}><b>{{ p.name | escape }}</b><code>{{ p.nick | default: p.name | escape }}</code><span>{{ p.desc | escape }}</span></li>
+      {%- endfor %}
+    </ul>
+
+    {%- assign before = "" -%}
+    {%- for p in comp.inputs %}{% if p.flow %}{% assign t = pdata.types[p.type] %}{% for cid in t.producers %}{% if cid != comp.id %}{% assign before = before | append: cid | append: "," %}{% endif %}{% endfor %}{% endif %}{% endfor -%}
+    {%- assign after = "" -%}
+    {%- for p in comp.outputs %}{% if p.flow %}{% assign t = pdata.types[p.type] %}{% for cid in t.consumers %}{% if cid != comp.id %}{% assign after = after | append: cid | append: "," %}{% endif %}{% endfor %}{% endif %}{% endfor -%}
+    {%- assign before = before | split: "," | uniq -%}
+    {%- assign after = after | split: "," | uniq -%}
+    {%- assign nbefore = before | size -%}
+    {%- assign nafter = after | size -%}
+
+    {%- if nbefore > 0 or nafter > 0 %}
+    <aside class="chain-box">
+      <div class="chain">
+        <h3>In the chain</h3>
+        {%- if nbefore > 0 %}
+        <p class="dir">Comes after</p>
+        {%- for cid in before %}{% assign c2 = pdata.components | where: "id", cid | first %}
+        <a href="/{{ prod.slug }}/components/{{ cid }}/">{{ c2.name | escape }}<em>{{ c2.compId }}</em></a>
+        {%- endfor %}
+        {%- endif %}
+        {%- if nafter > 0 %}
+        <p class="dir">Goes into</p>
+        {%- for cid in after %}{% assign c2 = pdata.components | where: "id", cid | first %}
+        <a href="/{{ prod.slug }}/components/{{ cid }}/">{{ c2.name | escape }}<em>{{ c2.compId }}</em></a>
+        {%- endfor %}
+        {%- endif %}
+      </div>
+    </aside>
+    {%- endif %}
+  </div>
+
+  <dl class="title-block">
+    {%- if comp.compId %}<div><dt>Component</dt><dd>{{ comp.compId }}</dd></div>{% endif %}
+    <div><dt>Ribbon</dt><dd>{{ comp.ribbon | join: " ▸ " }}</dd></div>
+    {%- if comp.tier %}<div><dt>Tier</dt><dd>{{ comp.tier }}</dd></div>{% endif %}
+    <div><dt>Ports</dt><dd>{{ nin }} in &middot; {{ nout }} out</dd></div>
+    <div><dt>Reference</dt><dd><a href="/{{ prod.slug }}/reference/{{ comp.page }}.html#{{ comp.id }}">{{ comp.page }}</a></dd></div>
+    {%- if comp.checked %}<div><dt>Checked</dt><dd>{{ comp.checked }}</dd></div>{% endif %}
+  </dl>
+</article>
+
+</div>
+</div>

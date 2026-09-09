@@ -1,0 +1,32 @@
+{%- assign pdata = site.data.components.products[page.product] -%}
+{%- assign prod = site.data.products | where: "slug", page.product | first -%}
+<aside class="side" aria-label="Components">
+  <details class="side-panel" open>
+    <summary>Components</summary>
+    <div class="side-in">
+      <h2>Components</h2>
+      {%- for s in prod.flow.spine %}
+      {%- assign list = pdata.components | where: "group", s.group %}
+      <details{% if s.group == include.group %} open{% endif %}>
+        <summary><span>{{ s.label | escape }}</span><i>{{ list | size }}</i></summary>
+        <ul>
+          {%- for c in list %}
+          <li><a href="/{{ prod.slug }}/components/{{ c.id }}/"{% if c.id == include.current %} aria-current="page"{% endif %}>{{ c.name | escape }}</a></li>
+          {%- endfor %}
+        </ul>
+      </details>
+      {%- endfor %}
+      {%- for s in prod.flow.aside %}
+      {%- assign list = pdata.components | where: "group", s.group %}
+      <details{% if s.group == include.group %} open{% endif %}>
+        <summary><span>{{ s.label | escape }}</span><i>{{ list | size }}</i></summary>
+        <ul>
+          {%- for c in list %}
+          <li><a href="/{{ prod.slug }}/components/{{ c.id }}/"{% if c.id == include.current %} aria-current="page"{% endif %}>{{ c.name | escape }}</a></li>
+          {%- endfor %}
+        </ul>
+      </details>
+      {%- endfor %}
+    </div>
+  </details>
+</aside>

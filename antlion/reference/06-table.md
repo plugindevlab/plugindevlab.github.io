@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Table"
+noindex: true
 generated: true
 ---
 
@@ -97,7 +98,7 @@ generated: true
 
 ## Table In
 
-`Antlion ▸ Table` · ID `IO-005` · 2 inputs · 8 outputs
+`Antlion ▸ Table` · ID `IO-005` · 2 inputs · 10 outputs
 
 > Reads the workbook's input pages and gives you the values to build from. Wire the workbook reference and press run. Values are looked up by column and key name, so inserting rows or reordering columns in the spreadsheet is safe. What was read is stored with the Grasshopper file, so the canvas keeps working without pressing run again.
 
@@ -134,6 +135,12 @@ generated: true
 
 7. `Debug` — `Text` `item`
    - One-line diagnostic. Copy this text when reporting a problem
+
+8. `WC Eye Vertical Offset`  ·  nick `WC Eye V` — `Number` `item`
+   - Eye height above the platform for a wheelchair user
+
+9. `WC Eye Horizontal Offset`  ·  nick `WC Eye H` — `Number` `item`
+   - How far back from the nosing a wheelchair user's eye sits. -1 = same as seated
 
 ---
 

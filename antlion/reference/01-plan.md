@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Section 1 · Plan & Setup"
+noindex: true
 generated: true
 ---
 
@@ -262,8 +263,8 @@ generated: true
 2. `End Mode`  ·  nick `▾ End` — `Text` `item` · default `FILL_BOTH_ENDS` · dropdown
    - What to do with the leftover at the end of a straight run (default FILL_BOTH_ENDS)
 
-3. `Arc Division`  ·  nick `Arc Div` — `Integer` `item` · default `8`
-   - How many sections each corner arc is divided into (default 8)
+3. `Arc Division`  ·  nick `Arc Div` — `Integer` `item` · default `4`
+   - How many sections each corner arc is divided into (default 4)
 
 4. `Module` — `Number` `item` · default `8000 mm / 300 in`
    - Section spacing on the straight runs, adjusted to fit each run evenly (default 8000 mm)

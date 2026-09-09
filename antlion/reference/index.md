@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Antlion Component Reference"
+noindex: true
 generated: true
 ---
 

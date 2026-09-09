@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Analysis & Util"
+noindex: true
 generated: true
 ---
 
@@ -126,7 +127,7 @@ generated: true
    - Which tiers to build - one per tier, empty = every tier (default true)
 
 9. `Show Sightlines`  ·  nick `Show Sgt` — `Boolean` `item` · default `false`
-   - Draw the eye-to-focus line for every POOR and BLOCKED seat (default false)
+   - Draw the eye-to-focus line for every seat that has a focus - filter by Seat Statuses to keep only POOR or BLOCKED (default false)
 
 10. `Rail Check`  ·  nick `Rail Chk` — `Boolean` `item` · default `true`
    - Count railings from Rail 3D as sightline obstructions. Off = ignore every railing, as if none were built (default on)
@@ -293,7 +294,7 @@ generated: true
 
 ## C-value Section Check
 
-`Antlion ▸ Bowl Analysis` · ID `ANALYSIS-006` · 8 inputs · 10 outputs
+`Antlion ▸ Bowl Analysis` · ID `ANALYSIS-006` · 8 inputs · 12 outputs
 
 > Lays every axis section out on its own sheet so you can flip through them. One scale for the whole set, chosen so the largest section fits, and every section sits at the same place on its sheet.
 
@@ -354,6 +355,12 @@ generated: true
 
 9. `Debug` — `Text` `item`
    - One-line diagnostic. Copy this text when reporting a problem
+
+10. `Part Curves`  ·  nick `Parts` — `Curve` `list`
+   - Railings and vomitories where the cut really passes through them, one curve per piece. Draw solid - these are real sections, not datums
+
+11. `Part Hidden Curves`  ·  nick `Part Hidn` — `Curve` `list`
+   - The same parts where the cut misses them. Draw dashed
 
 ---
 
@@ -697,10 +704,10 @@ generated: true
    - Sport, kind, radius, datum, source and whether the value is sourced or user-set
 
 2. `Seats Inside`  ·  nick `Inside` — `Integer` `item`
-   - Seats inside the maximum limit (-1 = no seat layout wired)
+   - Seats inside the maximum limit, or the reference/override maximum when the sport has none (-1 = not counted: no seat layout wired, or no limit line drawn)
 
 3. `Seats Outside`  ·  nick `Outside` — `Integer` `item`
-   - Seats outside the maximum limit (-1 = no seat layout wired)
+   - Seats outside the maximum limit, or the reference/override maximum when the sport has none (-1 = not counted: no seat layout wired, or no limit line drawn)
 
 4. `Seats Beyond Points`  ·  nick `Beyond` — `Point` `list`
    - Positions of the seats outside the maximum limit - where, not just how many

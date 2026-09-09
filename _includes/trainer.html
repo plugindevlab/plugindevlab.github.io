@@ -1,0 +1,128 @@
+{%- assign prod = site.data.products | where: "slug", page.product | first -%}
+{%- assign pdata = site.data.components.products[page.product] -%}
+{%- assign g = pdata.graph -%}
+{%- assign nstage = g.stages | size -%}
+{%- assign ncomp = g.components | size -%}
+
+<div class="shell">
+<aside class="side" aria-label="Components">
+  <details class="side-panel" open>
+    <summary>Components</summary>
+    <div class="side-in" data-trainer-palette>
+      <h2>Put on the board</h2>
+      {%- for s in prod.flow.spine %}
+      {%- assign list = pdata.components | where: "group", s.group %}
+      <details{% if forloop.first %} open{% endif %}>
+        <summary><span>{{ s.label | escape }}</span><i>{{ list | size }}</i></summary>
+        <ul>
+          {%- for c in list %}
+          <li><a href="/{{ prod.slug }}/components/{{ c.id }}/" data-comp="{{ c.id }}">{{ c.name | escape }}</a></li>
+          {%- endfor %}
+        </ul>
+      </details>
+      {%- endfor %}
+      {%- for s in prod.flow.aside %}
+      {%- assign list = pdata.components | where: "group", s.group %}
+      <details>
+        <summary><span>{{ s.label | escape }}</span><i>{{ list | size }}</i></summary>
+        <ul>
+          {%- for c in list %}
+          <li><a href="/{{ prod.slug }}/components/{{ c.id }}/" data-comp="{{ c.id }}">{{ c.name | escape }}</a></li>
+          {%- endfor %}
+        </ul>
+      </details>
+      {%- endfor %}
+    </div>
+  </details>
+</aside>
+<div class="col">
+
+<article class="sheet">
+  <div class="inner">
+    <p class="crumb"><a href="/{{ prod.slug }}/">{{ prod.name }}</a> / Trainer</p>
+
+    <h1>Workflow trainer<span class="nick">{{ ncomp }}</span></h1>
+    <p class="lede">Wire the bowl workflow yourself. The board only accepts the connections
+      the plugin accepts, and it tells you why when it refuses one.</p>
+
+    <p class="tags">
+      <span class="tag">{{ nstage }} stages</span>
+      <span class="tag">{{ g.types | size }} port types</span>
+      <button type="button" class="tag tr-reset" data-trainer-reset hidden>Clear the board</button>
+    </p>
+  </div>
+
+  <div class="plate">
+    <div class="plate-h"><b>Board</b><b>Reads left, writes right</b></div>
+
+    <div class="tr" data-trainer data-comp-base="/{{ prod.slug }}/components/">
+      <p class="tr-static-note">This page needs JavaScript to let you wire anything. Without it,
+        here is the same chain as a list — each stage with what it takes and what it makes.</p>
+      {%- for s in g.stages %}
+      <h3 class="tr-static-h">{{ forloop.index }} &middot; {{ s.label | escape }}</h3>
+      <ul class="ports">
+        {%- for c in g.components %}{% if c.group == s.group %}
+        <li><b><a href="/{{ prod.slug }}/components/{{ c.id }}/">{{ c.name | escape }}</a></b><code>{% for p in c.in %}{{ p.t }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% if c.in == empty %}—{% endif %}</code><span>makes {% for p in c.out %}{{ p.t }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% if c.out == empty %}nothing the chain carries{% endif %}</span></li>
+        {%- endif %}{% endfor %}
+      </ul>
+      {%- endfor %}
+      <p class="tr-static-note">The workflow map on <a href="/{{ prod.slug }}/workflow/">the workflow page</a>
+        draws the same order.</p>
+    </div>
+
+    <p class="plate-n">Ports carry the chain. A connection is allowed when the two ports
+      are the same type, when the input still has room, and when it does not loop back.</p>
+  </div>
+
+  <div class="body">
+    <h2>How to use it</h2>
+    <p>Pick a component from the list on the left to put it on the board. Click an output port
+      to pick up what it makes, then click an input port to drop it there — or drag from one to
+      the other. Click a wire to remove it, drag a component by its name to move it, and click
+      the name to read what the component does.</p>
+    <p>Click an input port while holding nothing and the board tells you what that port takes
+      and which components make it. That is the same sentence you get when a connection is
+      refused, so a refusal is never a dead end.</p>
+
+    <h2>What it checks</h2>
+    <ul class="warn">
+      <li>The two ports must be the same type. Types are the short port nicknames you see on
+        the canvas, which is how the plugin keeps wires alive when a component is renamed.</li>
+      <li>An <em>item</em> input holds one wire; a <em>list</em> input holds several. An output
+        splits to as many inputs as you like.</li>
+      <li>Nothing may loop back into itself.</li>
+    </ul>
+    <p>Those are the only three. Anything the plugin allows, the board allows — including
+      shortcuts that skip a stage. A component counts as connected only when an unbroken chain
+      reaches it from a component that needs no input; anything else is floating, and the
+      counter says so.</p>
+
+    <h2>What it is not</h2>
+    <p>There is no button that finishes the graph for you, no score and no timer. Nothing is
+      saved: reload the page and the board is empty again.</p>
+
+    <aside class="chain-box">
+      <div class="chain">
+        <h3>Start here</h3>
+        {%- for c in g.components %}{% if c.in == empty and c.out != empty %}
+        <a href="/{{ prod.slug }}/components/{{ c.id }}/">{{ c.name | escape }}<em>needs nothing</em></a>
+        {%- endif %}{% endfor %}
+        <p class="dir">Then follow the types</p>
+      </div>
+    </aside>
+  </div>
+
+  <dl class="title-block">
+    <div><dt>Product</dt><dd>{{ prod.name }}</dd></div>
+    <div><dt>Stages</dt><dd>{{ nstage }}</dd></div>
+    <div><dt>Components</dt><dd>{{ ncomp }}</dd></div>
+    <div><dt>Port types</dt><dd>{{ g.types | size }}</dd></div>
+    <div><dt>Reference</dt><dd><a href="/{{ prod.slug }}/components/">Component pages</a></dd></div>
+  </dl>
+</article>
+
+</div>
+</div>
+
+<script type="application/json" id="trainer-graph">{{ g | jsonify }}</script>
+<script src="{{ '/assets/js/trainer.js' | relative_url }}" defer></script>

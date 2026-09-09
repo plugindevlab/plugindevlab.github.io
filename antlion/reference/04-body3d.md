@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Section 4 · 3D Solids"
+noindex: true
 generated: true
 ---
 
@@ -16,7 +17,7 @@ generated: true
 
 ## Stand 3D
 
-`Antlion ▸ Bowl ▸ Section 4` · ID `STAND-001` · 7 inputs · 5 outputs
+`Antlion ▸ Bowl ▸ Section 4` · ID `STAND-001` · 6 inputs · 5 outputs
 
 > Sweeps the closed section profile around the axis planes into the solid tier bodies. This is the raw stand — cuts and openings are applied later by Stand 3D Plus.
 
@@ -31,16 +32,13 @@ generated: true
 2. `Axis` — `Object` `item` · optional
    - The axis system, passed along the chain. Wire from Stand 2D
 
-3. `Axis Join Mode`  ·  nick `▾ Join` — `Text` `item` · default `AUTO` · dropdown
-   - How sections are joined between axes: AUTO, RADIAL or ORTHO (default AUTO)
-
-4. `Generate Brep`  ·  nick `Brep` — `Boolean` `item` · default `true`
+3. `Generate Brep`  ·  nick `Brep` — `Boolean` `item` · default `true`
    - Build the stand solids. Off = fast wireframe-only check (default true)
 
-5. `Generate Handrail`  ·  nick `Handrail` — `Boolean` `item` · default `false`
+4. `Generate Handrail`  ·  nick `Handrail` — `Boolean` `item` · default `false`
    - Build the barriers as solids too. Needs Handrail Sections wired (default false)
 
-6. `Panel Values`  ·  nick `Panel` — `Object` `item` · optional
+5. `Panel Values`  ·  nick `Panel` — `Object` `item` · optional
    - Every value from Input Panel, as one bundle. Anything you wire in yourself wins over it
 
 **Outputs**
@@ -119,7 +117,7 @@ generated: true
 **Inputs**
 
 0. `Stand Body`  ·  nick `SBD` — `Object` `item` · optional
-   - The raw stand solids from Stand 3D. Unwired = rebuilt from the rings, rougher
+   - The raw stand solids from Stand 3D. Unwired = rebuilt from the rings - rougher, and those bodies come out open, not closed solids
 
 1. `Seat Result`  ·  nick `SRD` — `Object` `item` · optional
    - The 2D layout to build. Wire from Seat, or from Cut once you have cut the bowl
@@ -163,7 +161,7 @@ generated: true
 0. `Build Result`  ·  nick `BRD` — `Object` `item` · optional
    - The 3D bowl from Stand 3D Plus. This one wire is the only input needed
 
-1. `Side Top Mode`  ·  nick `▾ SideTop` — `Text` `list` · default `Hold Side H` · dropdown
+1. `Side Top Mode`  ·  nick `▾ SideTop` — `Text` `list` · default `PortValueLists.RailSideTopModes[0]` · dropdown
    - How tall the cut-edge parapet is along its run - one per tier. Hold Side H keeps Side H the whole way, so it meets the rear parapet at a step. Blend to Rear H starts at Side H and eases to Rear H by the back, so the two meet flush (default Hold Side H)
 
 2. `Front Skirt Depths`  ·  nick `Front Sk` — `Number` `list` · default `-1.0`

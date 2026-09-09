@@ -1,0 +1,3934 @@
+{
+ "_about": "Generated from a Grasshopper capture run - do not edit by hand. Coordinates are CSS pixels (1x); the PNG is rendered at 'scale'.",
+ "captured": "2026-09-09T18:22:16.3775653+09:00",
+ "gh": "8.33.26188.13001",
+ "source": "req-20260909-182206-225.json",
+ "components": {
+  "Auto Section": {
+   "id": "auto-section",
+   "product": "antlion",
+   "w": 140,
+   "h": 388,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Field Info",
+     "nick": "Field",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Focal Point",
+     "nick": "Focal",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Base Line",
+     "nick": "Base",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Rows Per Tier",
+     "nick": "Rows",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Front Treads",
+     "nick": "Front T",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "Other Treads",
+     "nick": "Other T",
+     "x": 4,
+     "y": 114
+    },
+    {
+     "name": "Tier Step Back",
+     "nick": "Step Back",
+     "x": 4,
+     "y": 134
+    },
+    {
+     "name": "Tier Step Up",
+     "nick": "Step Up",
+     "x": 4,
+     "y": 154
+    },
+    {
+     "name": "Minimum C-Values",
+     "nick": "Min C",
+     "x": 4,
+     "y": 174
+    },
+    {
+     "name": "Minimum Riser",
+     "nick": "Min Rise",
+     "x": 4,
+     "y": 194
+    },
+    {
+     "name": "Maximum Riser",
+     "nick": "Max Rise",
+     "x": 4,
+     "y": 214
+    },
+    {
+     "name": "Eye Horizontal Offset",
+     "nick": "Eye H",
+     "x": 4,
+     "y": 234
+    },
+    {
+     "name": "Eye Vertical Offset",
+     "nick": "Eye V",
+     "x": 4,
+     "y": 254
+    },
+    {
+     "name": "First Tread Height",
+     "nick": "First H",
+     "x": 4,
+     "y": 274
+    },
+    {
+     "name": "Start Distance",
+     "nick": "Start D",
+     "x": 4,
+     "y": 294
+    },
+    {
+     "name": "Slab Thickness",
+     "nick": "Slab T",
+     "x": 4,
+     "y": 314
+    },
+    {
+     "name": "Riser Step",
+     "nick": "Rise Stp",
+     "x": 4,
+     "y": 334
+    },
+    {
+     "name": "Flip X",
+     "nick": "Flip X",
+     "x": 4,
+     "y": 354
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 374
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Stand Sections",
+     "nick": "SSD",
+     "x": 136,
+     "y": 31
+    },
+    {
+     "name": "Tread Lines",
+     "nick": "Treads",
+     "x": 136,
+     "y": 85
+    },
+    {
+     "name": "Riser Heights",
+     "nick": "Risers",
+     "x": 136,
+     "y": 139
+    },
+    {
+     "name": "Section Profiles",
+     "nick": "Profile",
+     "x": 136,
+     "y": 193
+    },
+    {
+     "name": "Closed Profiles",
+     "nick": "Closed",
+     "x": 136,
+     "y": 248
+    },
+    {
+     "name": "Eye Points",
+     "nick": "Eye Pts",
+     "x": 136,
+     "y": 302
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 136,
+     "y": 356
+    }
+   ]
+  },
+  "C-value Map": {
+   "id": "c-value-map",
+   "product": "antlion",
+   "w": 128,
+   "h": 168,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "C-value Map Data",
+     "nick": "CMD",
+     "x": 4,
+     "y": 30
+    },
+    {
+     "name": "Origin",
+     "nick": "Origin",
+     "x": 4,
+     "y": 83
+    },
+    {
+     "name": "Sheet Data",
+     "nick": "SHD",
+     "x": 4,
+     "y": 137
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Sheets",
+     "nick": "Sheets",
+     "x": 124,
+     "y": 14
+    },
+    {
+     "name": "Map Hatches",
+     "nick": "Hatches",
+     "x": 124,
+     "y": 34
+    },
+    {
+     "name": "Map Outlines",
+     "nick": "Outlines",
+     "x": 124,
+     "y": 54
+    },
+    {
+     "name": "Drawing Curves",
+     "nick": "Drawing",
+     "x": 124,
+     "y": 74
+    },
+    {
+     "name": "Labels",
+     "nick": "Labels",
+     "x": 124,
+     "y": 94
+    },
+    {
+     "name": "Sheet Labels",
+     "nick": "Sh Label",
+     "x": 124,
+     "y": 114
+    },
+    {
+     "name": "Report",
+     "nick": "Report",
+     "x": 124,
+     "y": 134
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 124,
+     "y": 154
+    }
+   ]
+  },
+  "Section analysis": {
+   "id": "section-analysis",
+   "product": "antlion",
+   "w": 153,
+   "h": 188,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Stand Sections",
+     "nick": "SSD",
+     "x": 4,
+     "y": 15
+    },
+    {
+     "name": "C-Value Mode",
+     "nick": "▾ C Val",
+     "x": 4,
+     "y": 37
+    },
+    {
+     "name": "Minimum C-Value",
+     "nick": "Min C",
+     "x": 4,
+     "y": 60
+    },
+    {
+     "name": "Show Dimensions",
+     "nick": "Show Dim",
+     "x": 4,
+     "y": 82
+    },
+    {
+     "name": "Text Offset",
+     "nick": "Text Off",
+     "x": 4,
+     "y": 105
+    },
+    {
+     "name": "Text Height",
+     "nick": "Text H",
+     "x": 4,
+     "y": 127
+    },
+    {
+     "name": "Dimension Style",
+     "nick": "Dim Styl",
+     "x": 4,
+     "y": 150
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 172
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Analysis Reports",
+     "nick": "Reports",
+     "x": 149,
+     "y": 14
+    },
+    {
+     "name": "OK Dimensions",
+     "nick": "OK Dims",
+     "x": 149,
+     "y": 34
+    },
+    {
+     "name": "Poor Dimensions",
+     "nick": "Poor Dim",
+     "x": 149,
+     "y": 54
+    },
+    {
+     "name": "Riser Dimensions",
+     "nick": "Riser Dm",
+     "x": 149,
+     "y": 74
+    },
+    {
+     "name": "OK Sightlines",
+     "nick": "OK Sight",
+     "x": 149,
+     "y": 94
+    },
+    {
+     "name": "Poor Sightlines",
+     "nick": "Poor Sgt",
+     "x": 149,
+     "y": 114
+    },
+    {
+     "name": "Barrier Dimensions",
+     "nick": "Barr Dim",
+     "x": 149,
+     "y": 134
+    },
+    {
+     "name": "Report",
+     "nick": "Report",
+     "x": 149,
+     "y": 154
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 149,
+     "y": 174
+    }
+   ]
+  },
+  "C-value Tread": {
+   "id": "c-value-tread",
+   "product": "antlion",
+   "w": 138,
+   "h": 288,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Build Result",
+     "nick": "BRD",
+     "x": 4,
+     "y": 18
+    },
+    {
+     "name": "Rail Result",
+     "nick": "RLD",
+     "x": 4,
+     "y": 46
+    },
+    {
+     "name": "Focal Curve",
+     "nick": "Focal C",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Color Scheme",
+     "nick": "Scheme",
+     "x": 4,
+     "y": 102
+    },
+    {
+     "name": "Minimum C-Value",
+     "nick": "Min C",
+     "x": 4,
+     "y": 130
+    },
+    {
+     "name": "Optimal C-Value",
+     "nick": "Opt C",
+     "x": 4,
+     "y": 158
+    },
+    {
+     "name": "Tier Enabled",
+     "nick": "Tiers",
+     "x": 4,
+     "y": 186
+    },
+    {
+     "name": "Color Mode",
+     "nick": "▾ Color",
+     "x": 4,
+     "y": 214
+    },
+    {
+     "name": "Rail Check",
+     "nick": "Rail Chk",
+     "x": 4,
+     "y": 242
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 270
+    }
+   ],
+   "outputs": [
+    {
+     "name": "C-value Map Data",
+     "nick": "CMD",
+     "x": 134,
+     "y": 14
+    },
+    {
+     "name": "C-value Section Data",
+     "nick": "CSD",
+     "x": 134,
+     "y": 34
+    },
+    {
+     "name": "Map Hatches",
+     "nick": "Hatches",
+     "x": 134,
+     "y": 54
+    },
+    {
+     "name": "Cell Colors",
+     "nick": "Colors",
+     "x": 134,
+     "y": 74
+    },
+    {
+     "name": "Cell Outlines",
+     "nick": "Outlines",
+     "x": 134,
+     "y": 94
+    },
+    {
+     "name": "Band C-Values",
+     "nick": "Band C",
+     "x": 134,
+     "y": 114
+    },
+    {
+     "name": "Band Statuses",
+     "nick": "Status",
+     "x": 134,
+     "y": 134
+    },
+    {
+     "name": "Band Sections",
+     "nick": "Sections",
+     "x": 134,
+     "y": 154
+    },
+    {
+     "name": "Band Eyes",
+     "nick": "Eyes",
+     "x": 134,
+     "y": 174
+    },
+    {
+     "name": "Band Focals",
+     "nick": "Focals",
+     "x": 134,
+     "y": 194
+    },
+    {
+     "name": "Effective Focal Curves",
+     "nick": "Eff Focal",
+     "x": 134,
+     "y": 214
+    },
+    {
+     "name": "Sightlines",
+     "nick": "Sightlns",
+     "x": 134,
+     "y": 234
+    },
+    {
+     "name": "Report",
+     "nick": "Report",
+     "x": 134,
+     "y": 254
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 134,
+     "y": 274
+    }
+   ]
+  },
+  "C-value Seat": {
+   "id": "c-value-seat",
+   "product": "antlion",
+   "w": 144,
+   "h": 248,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Build Result",
+     "nick": "BRD",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Rail Result",
+     "nick": "RLD",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Focal Curve",
+     "nick": "Focal C",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Color Scheme",
+     "nick": "Scheme",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Focal Aim Mode",
+     "nick": "▾ Aim",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "Color Mode",
+     "nick": "▾ Color",
+     "x": 4,
+     "y": 114
+    },
+    {
+     "name": "Minimum C-Value",
+     "nick": "Min C",
+     "x": 4,
+     "y": 134
+    },
+    {
+     "name": "Optimal C-Value",
+     "nick": "Opt C",
+     "x": 4,
+     "y": 154
+    },
+    {
+     "name": "Tier Enabled",
+     "nick": "Tiers",
+     "x": 4,
+     "y": 174
+    },
+    {
+     "name": "Show Sightlines",
+     "nick": "Show Sgt",
+     "x": 4,
+     "y": 194
+    },
+    {
+     "name": "Rail Check",
+     "nick": "Rail Chk",
+     "x": 4,
+     "y": 214
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 234
+    }
+   ],
+   "outputs": [
+    {
+     "name": "C-value Map Data",
+     "nick": "CMD",
+     "x": 140,
+     "y": 14
+    },
+    {
+     "name": "Map Hatches",
+     "nick": "Hatches",
+     "x": 140,
+     "y": 36
+    },
+    {
+     "name": "Seat Outlines",
+     "nick": "Outlines",
+     "x": 140,
+     "y": 58
+    },
+    {
+     "name": "Seat C-Values",
+     "nick": "Seat C",
+     "x": 140,
+     "y": 80
+    },
+    {
+     "name": "Seat Statuses",
+     "nick": "Status",
+     "x": 140,
+     "y": 102
+    },
+    {
+     "name": "Seat Eyes",
+     "nick": "Eyes",
+     "x": 140,
+     "y": 123
+    },
+    {
+     "name": "Seat Focals",
+     "nick": "Focals",
+     "x": 140,
+     "y": 145
+    },
+    {
+     "name": "Effective Focal Curves",
+     "nick": "Eff Focal",
+     "x": 140,
+     "y": 167
+    },
+    {
+     "name": "Sightlines",
+     "nick": "Sightlns",
+     "x": 140,
+     "y": 189
+    },
+    {
+     "name": "Report",
+     "nick": "Report",
+     "x": 140,
+     "y": 211
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 140,
+     "y": 233
+    }
+   ]
+  },
+  "Stand 3D": {
+   "id": "stand-3d",
+   "product": "antlion",
+   "w": 137,
+   "h": 128,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Handrail Sections",
+     "nick": "Rails",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Stand Sections",
+     "nick": "SSD",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Axis",
+     "nick": "Axis",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Generate Brep",
+     "nick": "Brep",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Generate Handrail",
+     "nick": "Handrail",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 114
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Stand Body",
+     "nick": "SBD",
+     "x": 133,
+     "y": 16
+    },
+    {
+     "name": "Stand Geometry",
+     "nick": "Bodies",
+     "x": 133,
+     "y": 40
+    },
+    {
+     "name": "Handrail Geometry",
+     "nick": "Rails 3D",
+     "x": 133,
+     "y": 64
+    },
+    {
+     "name": "Section Profiles",
+     "nick": "Profile",
+     "x": 133,
+     "y": 88
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 133,
+     "y": 112
+    }
+   ]
+  },
+  "Vomitory": {
+   "id": "vomitory",
+   "product": "antlion",
+   "w": 148,
+   "h": 368,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Stand Sections",
+     "nick": "SSD",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Axis",
+     "nick": "Axis",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Stand 2D",
+     "nick": "Stand 2D",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Vom Strides",
+     "nick": "Stride",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Vom Start Index",
+     "nick": "Start Ix",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "Vom Start Treads",
+     "nick": "Start Tr",
+     "x": 4,
+     "y": 114
+    },
+    {
+     "name": "Vom Type Mode",
+     "nick": "▾ Type",
+     "x": 4,
+     "y": 134
+    },
+    {
+     "name": "Vom Widths",
+     "nick": "Vom W",
+     "x": 4,
+     "y": 154
+    },
+    {
+     "name": "Min Clearance",
+     "nick": "Min Clr",
+     "x": 4,
+     "y": 174
+    },
+    {
+     "name": "Stair Clearance",
+     "nick": "Stair Clr",
+     "x": 4,
+     "y": 194
+    },
+    {
+     "name": "Vom Drops",
+     "nick": "Drop",
+     "x": 4,
+     "y": 214
+    },
+    {
+     "name": "Landing Depths",
+     "nick": "Land D",
+     "x": 4,
+     "y": 234
+    },
+    {
+     "name": "Ramp Slope",
+     "nick": "Slope",
+     "x": 4,
+     "y": 254
+    },
+    {
+     "name": "Mid Landing Depth",
+     "nick": "Mid D",
+     "x": 4,
+     "y": 274
+    },
+    {
+     "name": "Vom Enabled",
+     "nick": "Vom On",
+     "x": 4,
+     "y": 294
+    },
+    {
+     "name": "Align Tiers",
+     "nick": "Align",
+     "x": 4,
+     "y": 314
+    },
+    {
+     "name": "Mid Landings",
+     "nick": "Mid Land",
+     "x": 4,
+     "y": 334
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 354
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Vomitory",
+     "nick": "VD",
+     "x": 144,
+     "y": 26
+    },
+    {
+     "name": "Stand 2D",
+     "nick": "Stand 2D",
+     "x": 144,
+     "y": 71
+    },
+    {
+     "name": "Stand Sections",
+     "nick": "SSD",
+     "x": 144,
+     "y": 116
+    },
+    {
+     "name": "Axis",
+     "nick": "Axis",
+     "x": 144,
+     "y": 161
+    },
+    {
+     "name": "Vom Lines",
+     "nick": "Vom Lns",
+     "x": 144,
+     "y": 206
+    },
+    {
+     "name": "Section Lines",
+     "nick": "Sec Lns",
+     "x": 144,
+     "y": 251
+    },
+    {
+     "name": "Vom Section Rects",
+     "nick": "Vom Sec",
+     "x": 144,
+     "y": 296
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 144,
+     "y": 341
+    }
+   ]
+  },
+  "Seat View": {
+   "id": "seat-view",
+   "product": "antlion",
+   "w": 128,
+   "h": 228,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Seat Map Data",
+     "nick": "SMD",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Tier",
+     "nick": "Tier",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Zone",
+     "nick": "Zone",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Seat Number",
+     "nick": "Seat No",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Yaw",
+     "nick": "Yaw",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "Pitch",
+     "nick": "Pitch",
+     "x": 4,
+     "y": 114
+    },
+    {
+     "name": "Lens",
+     "nick": "Lens",
+     "x": 4,
+     "y": 134
+    },
+    {
+     "name": "Apply",
+     "nick": "Apply",
+     "x": 4,
+     "y": 154
+    },
+    {
+     "name": "Live",
+     "nick": "Live",
+     "x": 4,
+     "y": 174
+    },
+    {
+     "name": "Address",
+     "nick": "Address",
+     "x": 4,
+     "y": 194
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 214
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Eye Point",
+     "nick": "Eye",
+     "x": 124,
+     "y": 31
+    },
+    {
+     "name": "Focal Point",
+     "nick": "Focal",
+     "x": 124,
+     "y": 86
+    },
+    {
+     "name": "Sight Line",
+     "nick": "Sight",
+     "x": 124,
+     "y": 141
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 124,
+     "y": 196
+    }
+   ]
+  },
+  "Field": {
+   "id": "field",
+   "product": "antlion",
+   "w": 140,
+   "h": 188,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Custom Curve",
+     "nick": "Curve",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Base Plane",
+     "nick": "Plane",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Custom Focal Point",
+     "nick": "Custom F",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Sport Mode",
+     "nick": "▾ Sport",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Focal Position Mode",
+     "nick": "▾ Focal",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "Focal Direction Mode",
+     "nick": "▾ Focal",
+     "x": 4,
+     "y": 114
+    },
+    {
+     "name": "Focal Offset",
+     "nick": "Focal Off",
+     "x": 4,
+     "y": 134
+    },
+    {
+     "name": "Rotate 90",
+     "nick": "Rotate",
+     "x": 4,
+     "y": 154
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 174
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Field Info",
+     "nick": "Field",
+     "x": 136,
+     "y": 19
+    },
+    {
+     "name": "Field Outline",
+     "nick": "Outline",
+     "x": 136,
+     "y": 49
+    },
+    {
+     "name": "Focal Curve",
+     "nick": "Focal C",
+     "x": 136,
+     "y": 79
+    },
+    {
+     "name": "Focal Point",
+     "nick": "Focal",
+     "x": 136,
+     "y": 109
+    },
+    {
+     "name": "Base Point",
+     "nick": "Base Pt",
+     "x": 136,
+     "y": 139
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 136,
+     "y": 169
+    }
+   ]
+  },
+  "Sheet Setup": {
+   "id": "sheet-setup",
+   "product": "antlion",
+   "w": 120,
+   "h": 128,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Sheet Size Mode",
+     "nick": "▾ Size",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Sheet Columns",
+     "nick": "Columns",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Scale Step",
+     "nick": "Scale St",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Margin",
+     "nick": "Margin",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Gap",
+     "nick": "Gap",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "Dimension Style",
+     "nick": "Dim Styl",
+     "x": 4,
+     "y": 114
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Sheet Data",
+     "nick": "SHD",
+     "x": 116,
+     "y": 64
+    }
+   ]
+  },
+  "Seat": {
+   "id": "seat",
+   "product": "antlion",
+   "w": 149,
+   "h": 388,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Vomitory",
+     "nick": "VD",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Stand 2D",
+     "nick": "Stand 2D",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Stand Sections",
+     "nick": "SSD",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Axis",
+     "nick": "Axis",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Max Seats Per Run",
+     "nick": "Max Run",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "Min Seats Per Run",
+     "nick": "Min Run",
+     "x": 4,
+     "y": 114
+    },
+    {
+     "name": "Aisle Side Mode",
+     "nick": "▾ Side",
+     "x": 4,
+     "y": 134
+    },
+    {
+     "name": "Vom Shift",
+     "nick": "Shift",
+     "x": 4,
+     "y": 154
+    },
+    {
+     "name": "Seat Width",
+     "nick": "Seat W",
+     "x": 4,
+     "y": 174
+    },
+    {
+     "name": "Seat Depth",
+     "nick": "Seat D",
+     "x": 4,
+     "y": 194
+    },
+    {
+     "name": "Aisle Width",
+     "nick": "Aisle W",
+     "x": 4,
+     "y": 214
+    },
+    {
+     "name": "Max Riser Step",
+     "nick": "Max Step",
+     "x": 4,
+     "y": 234
+    },
+    {
+     "name": "WC Ratio Target",
+     "nick": "WC %",
+     "x": 4,
+     "y": 254
+    },
+    {
+     "name": "WC Width",
+     "nick": "WC W",
+     "x": 4,
+     "y": 274
+    },
+    {
+     "name": "WC Depth",
+     "nick": "WC D",
+     "x": 4,
+     "y": 294
+    },
+    {
+     "name": "Aisle Split Mode",
+     "nick": "Split",
+     "x": 4,
+     "y": 314
+    },
+    {
+     "name": "Aisle Full Height",
+     "nick": "Full H",
+     "x": 4,
+     "y": 334
+    },
+    {
+     "name": "End Aisle Mode",
+     "nick": "End A",
+     "x": 4,
+     "y": 354
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 374
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Seat Result",
+     "nick": "SRD",
+     "x": 145,
+     "y": 23
+    },
+    {
+     "name": "Seat Rects",
+     "nick": "Seats",
+     "x": 145,
+     "y": 61
+    },
+    {
+     "name": "Good Seat Rects",
+     "nick": "Good",
+     "x": 145,
+     "y": 99
+    },
+    {
+     "name": "Poor Seat Rects",
+     "nick": "Poor",
+     "x": 145,
+     "y": 137
+    },
+    {
+     "name": "Vom Rects",
+     "nick": "Voms",
+     "x": 145,
+     "y": 175
+    },
+    {
+     "name": "Vom Shifts",
+     "nick": "Shifts",
+     "x": 145,
+     "y": 213
+    },
+    {
+     "name": "Aisles",
+     "nick": "Aisles",
+     "x": 145,
+     "y": 251
+    },
+    {
+     "name": "WC Platforms",
+     "nick": "WC Plat",
+     "x": 145,
+     "y": 289
+    },
+    {
+     "name": "WC Units",
+     "nick": "WC Units",
+     "x": 145,
+     "y": 327
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 145,
+     "y": 365
+    }
+   ]
+  },
+  "Toggle Merge": {
+   "id": "toggle-merge",
+   "product": "antlion",
+   "w": 176,
+   "h": 34,
+   "scale": 2,
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "R1",
+     "nick": "R1",
+     "x": 172,
+     "y": 17
+    }
+   ]
+  },
+  "View Limit": {
+   "id": "view-limit",
+   "product": "antlion",
+   "w": 141,
+   "h": 148,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Field Info",
+     "nick": "Field",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Seat Result",
+     "nick": "SRD",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Sport Mode",
+     "nick": "▾ Sports",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Optimum Overrides",
+     "nick": "Opt Ovr",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Maximum Overrides",
+     "nick": "Max Ovr",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "Show Reference",
+     "nick": "Show Ref",
+     "x": 4,
+     "y": 114
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 134
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Limit Curves",
+     "nick": "Limits",
+     "x": 137,
+     "y": 14
+    },
+    {
+     "name": "Limit Labels",
+     "nick": "Lim Lbl",
+     "x": 137,
+     "y": 34
+    },
+    {
+     "name": "Seats Inside",
+     "nick": "Inside",
+     "x": 137,
+     "y": 54
+    },
+    {
+     "name": "Seats Outside",
+     "nick": "Outside",
+     "x": 137,
+     "y": 74
+    },
+    {
+     "name": "Seats Beyond Points",
+     "nick": "Beyond",
+     "x": 137,
+     "y": 94
+    },
+    {
+     "name": "Report",
+     "nick": "Report",
+     "x": 137,
+     "y": 114
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 137,
+     "y": 134
+    }
+   ]
+  },
+  "Google Workbook": {
+   "id": "google-workbook",
+   "product": "antlion",
+   "w": 133,
+   "h": 148,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Field Info",
+     "nick": "Field",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Focal Point",
+     "nick": "Focal",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Base Line",
+     "nick": "Base",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Action Mode",
+     "nick": "▾ Action",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Run",
+     "nick": "Run",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "Workbook Name",
+     "nick": "Name",
+     "x": 4,
+     "y": 114
+    },
+    {
+     "name": "Workbook URL",
+     "nick": "URL",
+     "x": 4,
+     "y": 134
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Book",
+     "nick": "Book",
+     "x": 129,
+     "y": 27
+    },
+    {
+     "name": "URL",
+     "nick": "URL",
+     "x": 129,
+     "y": 73
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 129,
+     "y": 120
+    }
+   ]
+  },
+  "C-value Legend": {
+   "id": "c-value-legend",
+   "product": "antlion",
+   "w": 131,
+   "h": 88,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Band Min",
+     "nick": "Min",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Band Max",
+     "nick": "Max",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Band Step",
+     "nick": "Step",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Colors",
+     "nick": "Colors",
+     "x": 4,
+     "y": 74
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Scheme",
+     "nick": "Scheme",
+     "x": 127,
+     "y": 14
+    },
+    {
+     "name": "Colors",
+     "nick": "Colors",
+     "x": 127,
+     "y": 34
+    },
+    {
+     "name": "Band Labels",
+     "nick": "Band Lbl",
+     "x": 127,
+     "y": 54
+    },
+    {
+     "name": "Report",
+     "nick": "Report",
+     "x": 127,
+     "y": 74
+    }
+   ]
+  },
+  "Table In": {
+   "id": "table-in",
+   "product": "antlion",
+   "w": 130,
+   "h": 208,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Book",
+     "nick": "Book",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Run",
+     "nick": "Run",
+     "x": 4,
+     "y": 154
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Table Data",
+     "nick": "Table",
+     "x": 126,
+     "y": 14
+    },
+    {
+     "name": "Eye Horizontal Offset",
+     "nick": "Eye H",
+     "x": 126,
+     "y": 34
+    },
+    {
+     "name": "Eye Vertical Offset",
+     "nick": "Eye V",
+     "x": 126,
+     "y": 54
+    },
+    {
+     "name": "Slab Thickness",
+     "nick": "Slab T",
+     "x": 126,
+     "y": 74
+    },
+    {
+     "name": "Minimum C-Value",
+     "nick": "Min C",
+     "x": 126,
+     "y": 94
+    },
+    {
+     "name": "C-Value Mode",
+     "nick": "C Val",
+     "x": 126,
+     "y": 114
+    },
+    {
+     "name": "Book",
+     "nick": "Book",
+     "x": 126,
+     "y": 134
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 126,
+     "y": 154
+    },
+    {
+     "name": "WC Eye Vertical Offset",
+     "nick": "WC Eye V",
+     "x": 126,
+     "y": 174
+    },
+    {
+     "name": "WC Eye Horizontal Offset",
+     "nick": "WC Eye H",
+     "x": 126,
+     "y": 194
+    }
+   ]
+  },
+  "Slider Merge": {
+   "id": "slider-merge",
+   "product": "antlion",
+   "w": 218,
+   "h": 34,
+   "scale": 2,
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "R1",
+     "nick": "R1",
+     "x": 214,
+     "y": 17
+    }
+   ]
+  },
+  "Table Out": {
+   "id": "table-out",
+   "product": "antlion",
+   "w": 128,
+   "h": 68,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Book",
+     "nick": "Book",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Results",
+     "nick": "Results",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Run",
+     "nick": "Run",
+     "x": 4,
+     "y": 54
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Success",
+     "nick": "Success",
+     "x": 124,
+     "y": 14
+    },
+    {
+     "name": "Written",
+     "nick": "Written",
+     "x": 124,
+     "y": 34
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 124,
+     "y": 54
+    }
+   ]
+  },
+  "Custom Axis": {
+   "id": "custom-axis",
+   "product": "antlion",
+   "w": 121,
+   "h": 128,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Start Line",
+     "nick": "Start",
+     "x": 4,
+     "y": 19
+    },
+    {
+     "name": "Start Line Curve",
+     "nick": "Curve",
+     "x": 4,
+     "y": 49
+    },
+    {
+     "name": "Axis Curves",
+     "nick": "Curves",
+     "x": 4,
+     "y": 79
+    },
+    {
+     "name": "Guide Length",
+     "nick": "Guide",
+     "x": 4,
+     "y": 109
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Axis",
+     "nick": "Axis",
+     "x": 117,
+     "y": 14
+    },
+    {
+     "name": "Base Line",
+     "nick": "Base",
+     "x": 117,
+     "y": 34
+    },
+    {
+     "name": "Axis Points",
+     "nick": "Points",
+     "x": 117,
+     "y": 54
+    },
+    {
+     "name": "Axis Planes",
+     "nick": "Planes",
+     "x": 117,
+     "y": 74
+    },
+    {
+     "name": "Axis Lines",
+     "nick": "Lines",
+     "x": 117,
+     "y": 94
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 117,
+     "y": 114
+    }
+   ]
+  },
+  "Seat Map": {
+   "id": "seat-map",
+   "product": "antlion",
+   "w": 130,
+   "h": 228,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Build Result",
+     "nick": "BRD",
+     "x": 4,
+     "y": 31
+    },
+    {
+     "name": "Origin",
+     "nick": "Origin",
+     "x": 4,
+     "y": 86
+    },
+    {
+     "name": "Sheet Data",
+     "nick": "SHD",
+     "x": 4,
+     "y": 141
+    },
+    {
+     "name": "Zone Prefix",
+     "nick": "Prefix",
+     "x": 4,
+     "y": 196
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Seat Map Data",
+     "nick": "SMD",
+     "x": 126,
+     "y": 14
+    },
+    {
+     "name": "Sheets",
+     "nick": "Sheets",
+     "x": 126,
+     "y": 34
+    },
+    {
+     "name": "Zone Hatches",
+     "nick": "Hatches",
+     "x": 126,
+     "y": 54
+    },
+    {
+     "name": "Zone Outlines",
+     "nick": "Zones",
+     "x": 126,
+     "y": 74
+    },
+    {
+     "name": "Drawing Curves",
+     "nick": "Drawing",
+     "x": 126,
+     "y": 94
+    },
+    {
+     "name": "Labels",
+     "nick": "Labels",
+     "x": 126,
+     "y": 114
+    },
+    {
+     "name": "Sheet Labels",
+     "nick": "Sh Label",
+     "x": 126,
+     "y": 134
+    },
+    {
+     "name": "Zone Table",
+     "nick": "Zone Tbl",
+     "x": 126,
+     "y": 154
+    },
+    {
+     "name": "Seat Table",
+     "nick": "Seat Tbl",
+     "x": 126,
+     "y": 174
+    },
+    {
+     "name": "Report",
+     "nick": "Report",
+     "x": 126,
+     "y": 194
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 126,
+     "y": 214
+    }
+   ]
+  },
+  "Table Section": {
+   "id": "table-section",
+   "product": "antlion",
+   "w": 128,
+   "h": 168,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Book",
+     "nick": "Book",
+     "x": 4,
+     "y": 17
+    },
+    {
+     "name": "Field Info",
+     "nick": "Field",
+     "x": 4,
+     "y": 43
+    },
+    {
+     "name": "Focal Point",
+     "nick": "Focal",
+     "x": 4,
+     "y": 70
+    },
+    {
+     "name": "Base Line",
+     "nick": "Base",
+     "x": 4,
+     "y": 97
+    },
+    {
+     "name": "Slab Thickness",
+     "nick": "Slab T",
+     "x": 4,
+     "y": 123
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 150
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Stand Sections",
+     "nick": "SSD",
+     "x": 124,
+     "y": 14
+    },
+    {
+     "name": "Handrail Sections",
+     "nick": "Rails",
+     "x": 124,
+     "y": 34
+    },
+    {
+     "name": "Section Profiles",
+     "nick": "Profile",
+     "x": 124,
+     "y": 54
+    },
+    {
+     "name": "Closed Profiles",
+     "nick": "Closed",
+     "x": 124,
+     "y": 74
+    },
+    {
+     "name": "Eye Points",
+     "nick": "Eye Pts",
+     "x": 124,
+     "y": 94
+    },
+    {
+     "name": "Guide Geometry",
+     "nick": "Guides",
+     "x": 124,
+     "y": 114
+    },
+    {
+     "name": "WC Section Profiles",
+     "nick": "WC Prof",
+     "x": 124,
+     "y": 134
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 124,
+     "y": 154
+    }
+   ]
+  },
+  "Data Gate": {
+   "id": "data-gate",
+   "product": "antlion",
+   "w": 70,
+   "h": 54,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Data",
+     "nick": "D",
+     "x": 4,
+     "y": 16
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Result",
+     "nick": "R",
+     "x": 66,
+     "y": 16
+    }
+   ]
+  },
+  "Seat 3D": {
+   "id": "seat-3d",
+   "product": "antlion",
+   "w": 146,
+   "h": 268,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Build Result",
+     "nick": "BRD",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Custom Chair Parts",
+     "nick": "Cust Chr",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Custom Human Parts",
+     "nick": "Cust Hum",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Seat Map Data",
+     "nick": "SMD",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Side Gap",
+     "nick": "Side Gap",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "Depth Gap",
+     "nick": "Depth Gp",
+     "x": 4,
+     "y": 114
+    },
+    {
+     "name": "Chair",
+     "nick": "Chair",
+     "x": 4,
+     "y": 134
+    },
+    {
+     "name": "Human",
+     "nick": "Human",
+     "x": 4,
+     "y": 154
+    },
+    {
+     "name": "Tier Enabled",
+     "nick": "Tiers",
+     "x": 4,
+     "y": 174
+    },
+    {
+     "name": "Merge Preview",
+     "nick": "Merge",
+     "x": 4,
+     "y": 194
+    },
+    {
+     "name": "Block Prefix",
+     "nick": "Prefix",
+     "x": 4,
+     "y": 214
+    },
+    {
+     "name": "Bake Blocks",
+     "nick": "Bake",
+     "x": 4,
+     "y": 234
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 254
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Chairs",
+     "nick": "Chairs",
+     "x": 142,
+     "y": 47
+    },
+    {
+     "name": "Humans",
+     "nick": "Humans",
+     "x": 142,
+     "y": 133
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 142,
+     "y": 220
+    }
+   ]
+  },
+  "License": {
+   "id": "license",
+   "product": "antlion",
+   "w": 132,
+   "h": 68,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "License Key",
+     "nick": "Key",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Register",
+     "nick": "Register",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Diagnose",
+     "nick": "Diagnose",
+     "x": 4,
+     "y": 54
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Status",
+     "nick": "Status",
+     "x": 128,
+     "y": 34
+    }
+   ]
+  },
+  "Rail 3D": {
+   "id": "rail-3d",
+   "product": "antlion",
+   "w": 147,
+   "h": 228,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Build Result",
+     "nick": "BRD",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Side Top Mode",
+     "nick": "▾ SideTop",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Front Skirt Depths",
+     "nick": "Front Sk",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Side Heights",
+     "nick": "Side H",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Side Skirt Depths",
+     "nick": "Side Sk",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "Rear Heights",
+     "nick": "Rear H",
+     "x": 4,
+     "y": 114
+    },
+    {
+     "name": "Rear Skirt Depths",
+     "nick": "Rear Sk",
+     "x": 4,
+     "y": 134
+    },
+    {
+     "name": "Opening Rail Heights",
+     "nick": "Open H",
+     "x": 4,
+     "y": 154
+    },
+    {
+     "name": "Side Base Runs",
+     "nick": "Side Run",
+     "x": 4,
+     "y": 174
+    },
+    {
+     "name": "Rear Enabled",
+     "nick": "Rear On",
+     "x": 4,
+     "y": 194
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 214
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Rail Result",
+     "nick": "RLD",
+     "x": 143,
+     "y": 17
+    },
+    {
+     "name": "Railing Breps",
+     "nick": "Rails",
+     "x": 143,
+     "y": 45
+    },
+    {
+     "name": "Front Rails",
+     "nick": "Front",
+     "x": 143,
+     "y": 72
+    },
+    {
+     "name": "Side Rails",
+     "nick": "Side",
+     "x": 143,
+     "y": 100
+    },
+    {
+     "name": "Rear Rails",
+     "nick": "Rear",
+     "x": 143,
+     "y": 127
+    },
+    {
+     "name": "Opening Rails",
+     "nick": "Open",
+     "x": 143,
+     "y": 155
+    },
+    {
+     "name": "Rail Curves",
+     "nick": "Rail Crv",
+     "x": 143,
+     "y": 182
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 143,
+     "y": 210
+    }
+   ]
+  },
+  "Input Panel": {
+   "id": "input-panel",
+   "product": "antlion",
+   "w": 192,
+   "h": 64,
+   "scale": 2,
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "Panel Values",
+     "nick": "Values",
+     "x": 190,
+     "y": 17
+    }
+   ]
+  },
+  "Section Plus": {
+   "id": "section-plus",
+   "product": "antlion",
+   "w": 151,
+   "h": 208,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Stand Sections",
+     "nick": "SSD",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Solid Heights",
+     "nick": "Solid H",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Solid Thicknesses",
+     "nick": "Solid T",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Solid Skirts",
+     "nick": "Skirt",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Min C Over Rail",
+     "nick": "Min C Ovr",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "WC Tiers",
+     "nick": "WC Tiers",
+     "x": 4,
+     "y": 114
+    },
+    {
+     "name": "WC Merge",
+     "nick": "WC Merge",
+     "x": 4,
+     "y": 134
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 154
+    },
+    {
+     "name": "WC Eye Vertical Offset",
+     "nick": "WC Eye V",
+     "x": 4,
+     "y": 174
+    },
+    {
+     "name": "WC Eye Horizontal Offset",
+     "nick": "WC Eye H",
+     "x": 4,
+     "y": 194
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Stand Sections",
+     "nick": "SSD",
+     "x": 147,
+     "y": 18
+    },
+    {
+     "name": "Handrail Sections",
+     "nick": "Rails",
+     "x": 147,
+     "y": 46
+    },
+    {
+     "name": "Section Profiles",
+     "nick": "Profile",
+     "x": 147,
+     "y": 75
+    },
+    {
+     "name": "Closed Profiles",
+     "nick": "Closed",
+     "x": 147,
+     "y": 103
+    },
+    {
+     "name": "Guide Geometry",
+     "nick": "Guides",
+     "x": 147,
+     "y": 132
+    },
+    {
+     "name": "WC Section Profiles",
+     "nick": "WC Prof",
+     "x": 147,
+     "y": 160
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 147,
+     "y": 189
+    }
+   ]
+  },
+  "Startline Rect": {
+   "id": "startline-rect",
+   "product": "antlion",
+   "w": 140,
+   "h": 148,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Field Info",
+     "nick": "Field",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Source Outline",
+     "nick": "Source",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Corner Mode",
+     "nick": "▾ Corner",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Offset Long",
+     "nick": "Off Long",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Offset Short",
+     "nick": "Off Short",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "Corner Size",
+     "nick": "Corner S",
+     "x": 4,
+     "y": 114
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 134
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Start Line",
+     "nick": "Start",
+     "x": 136,
+     "y": 18
+    },
+    {
+     "name": "Start Line Curve",
+     "nick": "Curve",
+     "x": 136,
+     "y": 46
+    },
+    {
+     "name": "Arc Centers",
+     "nick": "Centers",
+     "x": 136,
+     "y": 74
+    },
+    {
+     "name": "Arc Radii",
+     "nick": "Radii",
+     "x": 136,
+     "y": 102
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 136,
+     "y": 130
+    }
+   ]
+  },
+  "C-value Section Check": {
+   "id": "c-value-section-check",
+   "product": "antlion",
+   "w": 143,
+   "h": 248,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "C-value Section Data",
+     "nick": "CSD",
+     "x": 4,
+     "y": 19
+    },
+    {
+     "name": "Origin",
+     "nick": "Origin",
+     "x": 4,
+     "y": 49
+    },
+    {
+     "name": "Sheet Data",
+     "nick": "SHD",
+     "x": 4,
+     "y": 79
+    },
+    {
+     "name": "Axis Filter",
+     "nick": "Filter",
+     "x": 4,
+     "y": 109
+    },
+    {
+     "name": "Text Offset",
+     "nick": "Text Off",
+     "x": 4,
+     "y": 139
+    },
+    {
+     "name": "Text Height",
+     "nick": "Text H",
+     "x": 4,
+     "y": 169
+    },
+    {
+     "name": "Label Mode",
+     "nick": "▾ Label",
+     "x": 4,
+     "y": 199
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 229
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Sheets",
+     "nick": "Sheets",
+     "x": 139,
+     "y": 14
+    },
+    {
+     "name": "Tread Curves",
+     "nick": "Treads",
+     "x": 139,
+     "y": 34
+    },
+    {
+     "name": "Tread Hidden Curves",
+     "nick": "Trd Hidn",
+     "x": 139,
+     "y": 54
+    },
+    {
+     "name": "Sight Lines",
+     "nick": "Sight",
+     "x": 139,
+     "y": 74
+    },
+    {
+     "name": "Hidden Sight Lines",
+     "nick": "Sght Hdn",
+     "x": 139,
+     "y": 94
+    },
+    {
+     "name": "Field Curves",
+     "nick": "Field Cv",
+     "x": 139,
+     "y": 114
+    },
+    {
+     "name": "Labels",
+     "nick": "Labels",
+     "x": 139,
+     "y": 134
+    },
+    {
+     "name": "Sheet Labels",
+     "nick": "Sh Label",
+     "x": 139,
+     "y": 154
+    },
+    {
+     "name": "Report",
+     "nick": "Report",
+     "x": 139,
+     "y": 174
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 139,
+     "y": 194
+    },
+    {
+     "name": "Part Curves",
+     "nick": "Parts",
+     "x": 139,
+     "y": 214
+    },
+    {
+     "name": "Part Hidden Curves",
+     "nick": "Part Hidn",
+     "x": 139,
+     "y": 234
+    }
+   ]
+  },
+  "Cut": {
+   "id": "cut",
+   "product": "antlion",
+   "w": 148,
+   "h": 208,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Seat Result",
+     "nick": "SRD",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Cut Curve",
+     "nick": "Curve",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Axis From",
+     "nick": "From",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Axis To",
+     "nick": "To",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Cut Combine Mode",
+     "nick": "▾ Comb",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "Keep Side",
+     "nick": "Keep Sd",
+     "x": 4,
+     "y": 114
+    },
+    {
+     "name": "End Aisle",
+     "nick": "End Aisle",
+     "x": 4,
+     "y": 134
+    },
+    {
+     "name": "Keep Span",
+     "nick": "Keep Sp",
+     "x": 4,
+     "y": 154
+    },
+    {
+     "name": "Tier Enabled",
+     "nick": "Tiers",
+     "x": 4,
+     "y": 174
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 194
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Seat Result",
+     "nick": "SRD",
+     "x": 144,
+     "y": 15
+    },
+    {
+     "name": "Cut Lines",
+     "nick": "Cut Lns",
+     "x": 144,
+     "y": 37
+    },
+    {
+     "name": "Cut Records",
+     "nick": "Records",
+     "x": 144,
+     "y": 59
+    },
+    {
+     "name": "Removed Seat Rects",
+     "nick": "Removed",
+     "x": 144,
+     "y": 81
+    },
+    {
+     "name": "Tread Rings",
+     "nick": "Rings",
+     "x": 144,
+     "y": 103
+    },
+    {
+     "name": "Seat Rects",
+     "nick": "Seats",
+     "x": 144,
+     "y": 126
+    },
+    {
+     "name": "Vom Rects",
+     "nick": "Voms",
+     "x": 144,
+     "y": 148
+    },
+    {
+     "name": "Aisles",
+     "nick": "Aisles",
+     "x": 144,
+     "y": 170
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 144,
+     "y": 192
+    }
+   ]
+  },
+  "Vom 3D": {
+   "id": "vom-3d",
+   "product": "antlion",
+   "w": 140,
+   "h": 168,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Seat Result",
+     "nick": "SRD",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Wall Thickness",
+     "nick": "Wall T",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Wall Rise",
+     "nick": "Wall R",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Opening Widths",
+     "nick": "Open W",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Opening Heights",
+     "nick": "Open H",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "Stair Width",
+     "nick": "Stair W",
+     "x": 4,
+     "y": 114
+    },
+    {
+     "name": "Stair Side Mode",
+     "nick": "▾ Stair",
+     "x": 4,
+     "y": 134
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 154
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Seat Result",
+     "nick": "SRD",
+     "x": 136,
+     "y": 24
+    },
+    {
+     "name": "Vom Breps",
+     "nick": "Vom 3D",
+     "x": 136,
+     "y": 64
+    },
+    {
+     "name": "Vom Curves",
+     "nick": "Vom Crv",
+     "x": 136,
+     "y": 104
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 136,
+     "y": 144
+    }
+   ]
+  },
+  "Assemble Bowl": {
+   "id": "assemble-bowl",
+   "product": "antlion",
+   "w": 139,
+   "h": 148,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Stand Bodies",
+     "nick": "SBD",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Seat Results",
+     "nick": "SRD",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Cut End Mode",
+     "nick": "▾ End",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Opening End Mode",
+     "nick": "▾ Op End",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Cut Offset",
+     "nick": "Offset",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "Opening Offset",
+     "nick": "Op Offset",
+     "x": 4,
+     "y": 114
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 134
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Stand Body",
+     "nick": "SBD",
+     "x": 135,
+     "y": 14
+    },
+    {
+     "name": "Seat Result",
+     "nick": "SRD",
+     "x": 135,
+     "y": 34
+    },
+    {
+     "name": "Tread Rings",
+     "nick": "Rings",
+     "x": 135,
+     "y": 54
+    },
+    {
+     "name": "Seat Rects",
+     "nick": "Seats",
+     "x": 135,
+     "y": 74
+    },
+    {
+     "name": "Vom Rects",
+     "nick": "Voms",
+     "x": 135,
+     "y": 94
+    },
+    {
+     "name": "Aisles",
+     "nick": "Aisles",
+     "x": 135,
+     "y": 114
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 135,
+     "y": 134
+    }
+   ]
+  },
+  "Custom Seat": {
+   "id": "custom-seat",
+   "product": "antlion",
+   "w": 151,
+   "h": 388,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Stand Sections",
+     "nick": "SSD",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Axis",
+     "nick": "Axis",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Stand 2D",
+     "nick": "Stand 2D",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Custom Voms",
+     "nick": "Cust Vom",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Custom Steps",
+     "nick": "Cust Step",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "Custom Seats",
+     "nick": "Cust Seat",
+     "x": 4,
+     "y": 114
+    },
+    {
+     "name": "Custom WCs",
+     "nick": "Cust WC",
+     "x": 4,
+     "y": 134
+    },
+    {
+     "name": "Max Seats Per Run",
+     "nick": "Max Run",
+     "x": 4,
+     "y": 154
+    },
+    {
+     "name": "Min Seats Per Run",
+     "nick": "Min Run",
+     "x": 4,
+     "y": 174
+    },
+    {
+     "name": "Aisle Side Mode",
+     "nick": "▾ Side",
+     "x": 4,
+     "y": 194
+    },
+    {
+     "name": "Seat Width",
+     "nick": "Seat W",
+     "x": 4,
+     "y": 214
+    },
+    {
+     "name": "Seat Depth",
+     "nick": "Seat D",
+     "x": 4,
+     "y": 234
+    },
+    {
+     "name": "Aisle Width",
+     "nick": "Aisle W",
+     "x": 4,
+     "y": 254
+    },
+    {
+     "name": "Max Riser Step",
+     "nick": "Max Step",
+     "x": 4,
+     "y": 274
+    },
+    {
+     "name": "Aisle Split Mode",
+     "nick": "Split",
+     "x": 4,
+     "y": 294
+    },
+    {
+     "name": "WC Ratio Target",
+     "nick": "WC %",
+     "x": 4,
+     "y": 314
+    },
+    {
+     "name": "WC Width",
+     "nick": "WC W",
+     "x": 4,
+     "y": 334
+    },
+    {
+     "name": "WC Depth",
+     "nick": "WC D",
+     "x": 4,
+     "y": 354
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 374
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Seat Result",
+     "nick": "SRD",
+     "x": 147,
+     "y": 25
+    },
+    {
+     "name": "Seat Rects",
+     "nick": "Seats",
+     "x": 147,
+     "y": 67
+    },
+    {
+     "name": "Good Seat Rects",
+     "nick": "Good",
+     "x": 147,
+     "y": 109
+    },
+    {
+     "name": "Poor Seat Rects",
+     "nick": "Poor",
+     "x": 147,
+     "y": 151
+    },
+    {
+     "name": "Vom Rects",
+     "nick": "Voms",
+     "x": 147,
+     "y": 193
+    },
+    {
+     "name": "Aisles",
+     "nick": "Aisles",
+     "x": 147,
+     "y": 236
+    },
+    {
+     "name": "WC Platforms",
+     "nick": "WC Plat",
+     "x": 147,
+     "y": 278
+    },
+    {
+     "name": "WC Units",
+     "nick": "WC Units",
+     "x": 147,
+     "y": 320
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 147,
+     "y": 362
+    }
+   ]
+  },
+  "View Axis": {
+   "id": "view-axis",
+   "product": "antlion",
+   "w": 127,
+   "h": 108,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Axis",
+     "nick": "Axis",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Guide Length",
+     "nick": "Guide",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Circle Radius",
+     "nick": "Circle R",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Text Height",
+     "nick": "Text H",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 94
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Guide Lines",
+     "nick": "Guides",
+     "x": 123,
+     "y": 14
+    },
+    {
+     "name": "Circles",
+     "nick": "Circles",
+     "x": 123,
+     "y": 34
+    },
+    {
+     "name": "Labels",
+     "nick": "Labels",
+     "x": 123,
+     "y": 54
+    },
+    {
+     "name": "Label Names",
+     "nick": "Names",
+     "x": 123,
+     "y": 74
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 123,
+     "y": 94
+    }
+   ]
+  },
+  "Startline Oval": {
+   "id": "startline-oval",
+   "product": "antlion",
+   "w": 144,
+   "h": 168,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Field Info",
+     "nick": "Field",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Source Outline",
+     "nick": "Source",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Oval Mode",
+     "nick": "▾ Oval",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Add Long",
+     "nick": "Add Long",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Add Short",
+     "nick": "Add Short",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "Snap Unit",
+     "nick": "Snap U",
+     "x": 4,
+     "y": 114
+    },
+    {
+     "name": "Radius Snap",
+     "nick": "Snap",
+     "x": 4,
+     "y": 134
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 154
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Start Line",
+     "nick": "Start",
+     "x": 140,
+     "y": 20
+    },
+    {
+     "name": "Start Line Curve",
+     "nick": "Curve",
+     "x": 140,
+     "y": 52
+    },
+    {
+     "name": "Arc Centers",
+     "nick": "Centers",
+     "x": 140,
+     "y": 84
+    },
+    {
+     "name": "Arc Radii",
+     "nick": "Radii",
+     "x": 140,
+     "y": 116
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 140,
+     "y": 148
+    }
+   ]
+  },
+  "Opening Cut": {
+   "id": "opening-cut",
+   "product": "antlion",
+   "w": 146,
+   "h": 228,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Seat Result",
+     "nick": "SRD",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Cut Curve",
+     "nick": "Curve",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Opening From",
+     "nick": "From",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Opening To",
+     "nick": "To",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Rows",
+     "nick": "Rows",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "Opening Type Mode",
+     "nick": "▾ Type",
+     "x": 4,
+     "y": 114
+    },
+    {
+     "name": "Cut Combine Mode",
+     "nick": "▾ Comb",
+     "x": 4,
+     "y": 134
+    },
+    {
+     "name": "Opening Widths",
+     "nick": "Open W",
+     "x": 4,
+     "y": 154
+    },
+    {
+     "name": "Min Tread Depth",
+     "nick": "Min Trd",
+     "x": 4,
+     "y": 174
+    },
+    {
+     "name": "Tier Enabled",
+     "nick": "Tiers",
+     "x": 4,
+     "y": 194
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 214
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Seat Result",
+     "nick": "SRD",
+     "x": 142,
+     "y": 14
+    },
+    {
+     "name": "Railing Lines",
+     "nick": "Rail Lns",
+     "x": 142,
+     "y": 34
+    },
+    {
+     "name": "Opening Rects",
+     "nick": "Openings",
+     "x": 142,
+     "y": 54
+    },
+    {
+     "name": "Cut Records",
+     "nick": "Records",
+     "x": 142,
+     "y": 74
+    },
+    {
+     "name": "Removed Seat Rects",
+     "nick": "Removed",
+     "x": 142,
+     "y": 94
+    },
+    {
+     "name": "Tread Rings",
+     "nick": "Rings",
+     "x": 142,
+     "y": 114
+    },
+    {
+     "name": "Seat Rects",
+     "nick": "Seats",
+     "x": 142,
+     "y": 134
+    },
+    {
+     "name": "Vom Rects",
+     "nick": "Voms",
+     "x": 142,
+     "y": 154
+    },
+    {
+     "name": "Aisles",
+     "nick": "Aisles",
+     "x": 142,
+     "y": 174
+    },
+    {
+     "name": "WC Units",
+     "nick": "WC Units",
+     "x": 142,
+     "y": 194
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 142,
+     "y": 214
+    }
+   ]
+  },
+  "Excel Workbook": {
+   "id": "excel-workbook",
+   "product": "antlion",
+   "w": 119,
+   "h": 128,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Field Info",
+     "nick": "Field",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Focal Point",
+     "nick": "Focal",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Base Line",
+     "nick": "Base",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Run",
+     "nick": "Run",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Folder Path",
+     "nick": "Folder",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "File Name",
+     "nick": "Name",
+     "x": 4,
+     "y": 114
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Book",
+     "nick": "Book",
+     "x": 115,
+     "y": 24
+    },
+    {
+     "name": "Path",
+     "nick": "Path",
+     "x": 115,
+     "y": 64
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 115,
+     "y": 104
+    }
+   ]
+  },
+  "Stand 2D": {
+   "id": "stand-2d",
+   "product": "antlion",
+   "w": 121,
+   "h": 108,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Stand Sections",
+     "nick": "SSD",
+     "x": 4,
+     "y": 29
+    },
+    {
+     "name": "Axis",
+     "nick": "Axis",
+     "x": 4,
+     "y": 79
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Stand Sections",
+     "nick": "SSD",
+     "x": 117,
+     "y": 14
+    },
+    {
+     "name": "Axis",
+     "nick": "Axis",
+     "x": 117,
+     "y": 34
+    },
+    {
+     "name": "Stand 2D",
+     "nick": "Stand 2D",
+     "x": 117,
+     "y": 54
+    },
+    {
+     "name": "Tread Rings",
+     "nick": "Rings",
+     "x": 117,
+     "y": 74
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 117,
+     "y": 94
+    }
+   ]
+  },
+  "Startline Capsule": {
+   "id": "startline-capsule",
+   "product": "antlion",
+   "w": 127,
+   "h": 108,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Field Info",
+     "nick": "Field",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Source Outline",
+     "nick": "Source",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Arc Shift",
+     "nick": "Shift",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Arc Radius",
+     "nick": "Radius",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 94
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Start Line",
+     "nick": "Start",
+     "x": 123,
+     "y": 14
+    },
+    {
+     "name": "Start Line Curve",
+     "nick": "Curve",
+     "x": 123,
+     "y": 34
+    },
+    {
+     "name": "Arc Centers",
+     "nick": "Centers",
+     "x": 123,
+     "y": 54
+    },
+    {
+     "name": "Arc Radii",
+     "nick": "Radii",
+     "x": 123,
+     "y": 74
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 123,
+     "y": 94
+    }
+   ]
+  },
+  "Axis": {
+   "id": "axis",
+   "product": "antlion",
+   "w": 130,
+   "h": 188,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Start Line",
+     "nick": "Start",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Start Line Curve",
+     "nick": "Curve",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "End Mode",
+     "nick": "▾ End",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Arc Division",
+     "nick": "Arc Div",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Module",
+     "nick": "Module",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "Chamfer Module",
+     "nick": "Chamfer",
+     "x": 4,
+     "y": 114
+    },
+    {
+     "name": "Guide Length",
+     "nick": "Guide",
+     "x": 4,
+     "y": 134
+    },
+    {
+     "name": "Center Axis",
+     "nick": "Center",
+     "x": 4,
+     "y": 154
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 174
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Axis",
+     "nick": "Axis",
+     "x": 126,
+     "y": 19
+    },
+    {
+     "name": "Base Line",
+     "nick": "Base",
+     "x": 126,
+     "y": 49
+    },
+    {
+     "name": "Axis Points",
+     "nick": "Points",
+     "x": 126,
+     "y": 79
+    },
+    {
+     "name": "Axis Planes",
+     "nick": "Planes",
+     "x": 126,
+     "y": 109
+    },
+    {
+     "name": "Axis Lines",
+     "nick": "Lines",
+     "x": 126,
+     "y": 139
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 126,
+     "y": 169
+    }
+   ]
+  },
+  "Custom Startline": {
+   "id": "custom-startline",
+   "product": "antlion",
+   "w": 122,
+   "h": 108,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Field Info",
+     "nick": "Field",
+     "x": 4,
+     "y": 29
+    },
+    {
+     "name": "Custom Curve",
+     "nick": "Curve",
+     "x": 4,
+     "y": 79
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Start Line",
+     "nick": "Start",
+     "x": 118,
+     "y": 14
+    },
+    {
+     "name": "Start Line Curve",
+     "nick": "Curve",
+     "x": 118,
+     "y": 34
+    },
+    {
+     "name": "Arc Centers",
+     "nick": "Centers",
+     "x": 118,
+     "y": 54
+    },
+    {
+     "name": "Arc Radii",
+     "nick": "Radii",
+     "x": 118,
+     "y": 74
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 118,
+     "y": 94
+    }
+   ]
+  },
+  "Stand 3D Plus": {
+   "id": "stand-3d-plus",
+   "product": "antlion",
+   "w": 144,
+   "h": 108,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Stand Body",
+     "nick": "SBD",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Seat Result",
+     "nick": "SRD",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "WC Deck Mode",
+     "nick": "▾ Deck",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Tier Enabled",
+     "nick": "Tiers",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 94
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Build Result",
+     "nick": "BRD",
+     "x": 140,
+     "y": 14
+    },
+    {
+     "name": "Stand Breps",
+     "nick": "Bodies",
+     "x": 140,
+     "y": 34
+    },
+    {
+     "name": "Aisles 3D",
+     "nick": "Aisles 3D",
+     "x": 140,
+     "y": 54
+    },
+    {
+     "name": "WC Decks",
+     "nick": "WC Decks",
+     "x": 140,
+     "y": 74
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 140,
+     "y": 94
+    }
+   ]
+  },
+  "Section": {
+   "id": "section",
+   "product": "antlion",
+   "w": 124,
+   "h": 188,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Tread Lines",
+     "nick": "Treads",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Field Info",
+     "nick": "Field",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Focal Point",
+     "nick": "Focal",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Base Line",
+     "nick": "Base",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Eye Horizontal Offset",
+     "nick": "Eye H",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "Eye Vertical Offset",
+     "nick": "Eye V",
+     "x": 4,
+     "y": 114
+    },
+    {
+     "name": "First Tread Height",
+     "nick": "First H",
+     "x": 4,
+     "y": 134
+    },
+    {
+     "name": "Slab Thickness",
+     "nick": "Slab T",
+     "x": 4,
+     "y": 154
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 174
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Stand Sections",
+     "nick": "SSD",
+     "x": 120,
+     "y": 22
+    },
+    {
+     "name": "Section Profiles",
+     "nick": "Profile",
+     "x": 120,
+     "y": 58
+    },
+    {
+     "name": "Closed Profiles",
+     "nick": "Closed",
+     "x": 120,
+     "y": 94
+    },
+    {
+     "name": "Eye Points",
+     "nick": "Eye Pts",
+     "x": 120,
+     "y": 130
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 120,
+     "y": 166
+    }
+   ]
+  }
+ }
+}

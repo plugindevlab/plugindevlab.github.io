@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Section 3 · 2D Plan Layout"
+noindex: true
 generated: true
 ---
 

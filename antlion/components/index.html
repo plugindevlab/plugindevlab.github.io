@@ -1,0 +1,54 @@
+---
+layout: default
+title: "Antlion Components"
+description: "Every Antlion component, grouped by the stage of the bowl workflow it belongs to."
+sheet: true
+---
+{%- assign prod = site.data.products | where: "slug", page.product | first -%}
+{%- assign pdata = site.data.components.products[page.product] -%}
+{%- assign all = pdata.components | size -%}
+
+<div class="shell">
+{% include side-nav.html %}
+<div class="col">
+
+<article class="sheet">
+  <div class="inner">
+    <p class="crumb"><a href="/{{ prod.slug }}/">{{ prod.name }}</a> / Components</p>
+    <h1>Components<span class="nick">{{ all }}</span></h1>
+    <p class="lede">Every component in the plugin, in the order you meet them. The five
+      numbered stages are the bowl workflow; the rest sit alongside it.</p>
+  </div>
+
+  <div class="body">
+    {%- for s in prod.flow.spine %}
+    {%- assign list = pdata.components | where: "group", s.group %}
+    <h2>{{ forloop.index }} &middot; {{ s.label | escape }}</h2>
+    <ul class="ports">
+      {%- for c in list %}
+      <li><b><a href="/{{ prod.slug }}/components/{{ c.id }}/">{{ c.name | escape }}</a></b><code>{{ c.compId }}</code><span>{{ c.summary | truncatewords: 20 | escape }}</span></li>
+      {%- endfor %}
+    </ul>
+    {%- endfor %}
+
+    {%- for s in prod.flow.aside %}
+    {%- assign list = pdata.components | where: "group", s.group %}
+    <h2>{{ s.label | escape }}</h2>
+    <ul class="ports">
+      {%- for c in list %}
+      <li><b><a href="/{{ prod.slug }}/components/{{ c.id }}/">{{ c.name | escape }}</a></b><code>{{ c.compId }}</code><span>{{ c.summary | truncatewords: 20 | escape }}</span></li>
+      {%- endfor %}
+    </ul>
+    {%- endfor %}
+  </div>
+
+  <dl class="title-block">
+    <div><dt>Product</dt><dd>{{ prod.name }}</dd></div>
+    <div><dt>Components</dt><dd>{{ all }}</dd></div>
+    <div><dt>Stages</dt><dd>{{ prod.flow.spine | size }}</dd></div>
+    <div><dt>Reference</dt><dd><a href="/{{ prod.slug }}/reference/">Port tables</a></dd></div>
+  </dl>
+</article>
+
+</div>
+</div>

@@ -1,0 +1,20 @@
+{
+  "_about": "The only hand-written half of the component data. Everything else in _data/components.json is generated from the plugin source by _tools/compdata.py. English only - this file ships to the public repo.",
+
+  "unproduced": {
+    "Dim Styl": {
+      "source": "rhino",
+      "note": "A Rhino dimension style, wired from a Rhino object parameter. Leave it unwired for the default style."
+    },
+    "D": {
+      "source": "any",
+      "note": "Data Gate holds a wire shut, so this input takes whatever the component upstream of it makes."
+    },
+    "Results": {
+      "source": "any-result",
+      "note": "Table Out takes any mix of result objects - section, analysis, seat map or C-value map. Anything with no table form is skipped."
+    }
+  },
+
+  "notes": {}
+}
