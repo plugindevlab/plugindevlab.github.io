@@ -121,7 +121,7 @@ Every Antlion component has a **`debug`** output, and it is often faster than se
 
 - Double-click empty canvas, type `panel`, press Enter
 - Drag a wire from the component's **`debug`** output into that panel
-- Click inside the panel, select all, copy
+- Right-click the panel → **Copy Data Only**
 - Paste it into the report form
 
 If the component shows an orange or red bubble, hover it and copy that message too.
