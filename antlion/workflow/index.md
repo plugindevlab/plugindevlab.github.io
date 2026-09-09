@@ -64,6 +64,8 @@ here. Click any component to read what it does.
 
 ## Where things sit in the ribbon {#ribbon}
 
+{% include ribbon-fig.html %}
+
 {% include antlion-ribbon.html %}
 
 ## How the ports connect

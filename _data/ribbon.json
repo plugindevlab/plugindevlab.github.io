@@ -1,0 +1,47 @@
+{
+ "_about": "Generated from a Grasshopper ribbon capture - do not edit by hand. Coordinates are pixels in the PNG's own coordinate system.",
+ "captured": "2026-09-10T07:32:24.4879747+09:00",
+ "gh": null,
+ "gh_version": "8.33.26188.13001",
+ "source": "req-20260910-073224-144.json",
+ "products": {
+  "antlion": {
+   "img": "/assets/img/antlion/ribbon.png",
+   "tab": "Antlion",
+   "w": 824,
+   "h": 77,
+   "dpi": 96,
+   "method": "draw",
+   "panels": [
+    {
+     "name": "Bowl",
+     "x": 0,
+     "y": 2,
+     "w": 374,
+     "h": 75
+    },
+    {
+     "name": "Bowl Analysis",
+     "x": 374,
+     "y": 2,
+     "w": 206,
+     "h": 75
+    },
+    {
+     "name": "Table",
+     "x": 580,
+     "y": 2,
+     "w": 64,
+     "h": 75
+    },
+    {
+     "name": "Util",
+     "x": 644,
+     "y": 2,
+     "w": 178,
+     "h": 75
+    }
+   ]
+  }
+ }
+}

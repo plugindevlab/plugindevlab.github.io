@@ -1,0 +1,27 @@
+{%- assign pdata = site.data.components.products[page.product] -%}
+{%- assign r = pdata.graph.ribbon -%}
+{%- if r %}
+<div class="rib-wrap" markdown="0">
+  <div class="rib" style="width:{{ r.w }}px;height:{{ r.h }}px">
+    <img class="rib-img" src="{{ r.img | relative_url }}"
+      alt="The {{ r.tab }} tab in the Grasshopper ribbon, with its panels"
+      style="left:{{ r.imgX }}px;top:{{ r.imgY }}px;width:{{ r.imgW }}px;height:{{ r.imgH }}px">
+    <svg viewBox="0 0 {{ r.w }} {{ r.h }}" aria-hidden="true">
+      <g class="rib-zone">
+        {%- for p in r.panels %}
+        <rect x="{{ p.rx }}" y="{{ p.ry }}" width="{{ p.rw }}" height="{{ p.rh }}"/>
+        {%- endfor %}
+      </g>
+      <g class="rib-lead">
+        {%- for p in r.panels %}
+        <path d="{{ p.bracket }}"/>
+        <path d="{{ p.d }}"/>
+        {%- endfor %}
+      </g>
+    </svg>
+    {%- for p in r.panels %}
+    <div class="rib-call" style="left:{{ p.x }}px;top:{{ p.y }}px;width:{{ r.callW }}px;height:{{ r.callH }}px"><b>{{ p.name | escape }}</b><span>{{ p.count }} components</span></div>
+    {%- endfor %}
+  </div>
+</div>
+{%- endif %}

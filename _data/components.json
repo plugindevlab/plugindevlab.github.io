@@ -21937,7 +21937,69 @@
       ],
       "skipped": 1
      }
-    ]
+    ],
+    "ribbon": {
+     "w": 848,
+     "h": 189,
+     "imgX": 12,
+     "imgY": 12,
+     "imgW": 824,
+     "imgH": 77,
+     "img": "/assets/img/antlion/ribbon.png",
+     "tab": "Antlion",
+     "callW": 132,
+     "callH": 46,
+     "panels": [
+      {
+       "name": "Bowl",
+       "count": 23,
+       "rx": 12,
+       "ry": 14,
+       "rw": 374,
+       "rh": 75,
+       "bracket": "M13 96 V101 H385 V96",
+       "d": "M199 101 V131",
+       "x": 133,
+       "y": 131
+      },
+      {
+       "name": "Bowl Analysis",
+       "count": 9,
+       "rx": 386,
+       "ry": 14,
+       "rw": 206,
+       "rh": 75,
+       "bracket": "M387 96 V101 H591 V96",
+       "d": "M489 101 V116 L478 131",
+       "x": 412,
+       "y": 131
+      },
+      {
+       "name": "Table",
+       "count": 4,
+       "rx": 592,
+       "ry": 14,
+       "rw": 64,
+       "rh": 75,
+       "bracket": "M593 96 V101 H655 V96",
+       "d": "M624 101 V131",
+       "x": 558,
+       "y": 131
+      },
+      {
+       "name": "Util",
+       "count": 7,
+       "rx": 656,
+       "ry": 14,
+       "rw": 178,
+       "rh": 75,
+       "bracket": "M657 96 V101 H833 V96",
+       "d": "M745 101 V116 L770 131",
+       "x": 704,
+       "y": 131
+      }
+     ]
+    }
    }
   }
  }
