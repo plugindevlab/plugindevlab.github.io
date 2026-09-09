@@ -6,6 +6,8 @@
     stands, vomitories and seats as one editable chain, with continuous sightline checking.
   reference: antlion/specs/reference/en
   tiers: antlion/phase2_csharp/_tools/icon_audit.py
+  qa: antlion/qa
+  guids: antlion/phase2_csharp/_tools/port_audit.py
   flow:
     spine:
       - { group: bowl-section-1, label: "Plan & setup", col: 0, row: 0 }
@@ -20,7 +22,6 @@
     - { label: "Getting started", url: /antlion/getting-started/ }
     - { label: "Workflow", url: /antlion/workflow/ }
     - { label: "Components", url: /antlion/components/ }
-    - { label: "Ribbon", url: /antlion/ribbon/ }
     - { label: "Tutorials", url: /antlion/tutorials/ }
     - { label: "Troubleshooting", url: /antlion/troubleshooting/ }
     - { label: "Changelog", url: /antlion/changelog/ }

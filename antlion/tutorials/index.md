@@ -6,7 +6,7 @@ generated: true
 
 # Antlion Tutorials
 
-Longer, task-shaped guides. Where the [component reference](../ribbon/index.md) tells you what a
+Longer, task-shaped guides. Where the [component reference](../workflow/index.md#ribbon) tells you what a
 port does, these pages tell you how a job gets done — and state the rules that are not
 visible on screen.
 

@@ -1,0 +1,46 @@
+antlion:
+  - graph: analysis
+    label: "Check one section"
+    note: >-
+      The shortest useful chain. Draw the field, set the axes, solve a section and read the
+      C-value straight off it — no 2D layout, no solids.
+  - graph: build
+    label: "The standard bowl"
+    note: >-
+      The backbone. Section to 2D layout to solids, with vomitories and a cut. Every other
+      combination below is this one with something added.
+  - graph: custom_axis_chain
+    label: "Axes you draw yourself"
+    note: >-
+      Same chain, but the axes come from curves you drew instead of the automatic spacing.
+      Everything downstream is unchanged — it cannot tell the difference.
+  - graph: table_section
+    label: "Section from a workbook"
+    note: >-
+      Riser and tread numbers come out of Excel instead of a solved section, and the results
+      go back to the sheet.
+  - graph: rail
+    label: "Railings on the stand"
+    note: >-
+      Adds railings to the built bowl. Their geometry feeds the sightline checks, so a rail
+      that blocks a view shows up as a failed seat rather than a surprise on site.
+  - graph: cvalue_map
+    label: "Sightlines, seat by seat"
+    note: >-
+      Measures the C-value from every seat's own eye to its own focus and paints the result,
+      then lays it out on a drawing sheet.
+  - graph: section_check
+    label: "Section sheets"
+    note: >-
+      Takes one representative section per axis gap and flips through them on sheets — light
+      enough to leave on while you tune the section.
+  - graph: seat_3d
+    label: "Real chairs"
+    note: >-
+      Replaces the seat markers with chair geometry, so the model is presentable rather than
+      diagrammatic.
+  - graph: merge_bowl
+    label: "Two sections, one bowl"
+    note: >-
+      Two different sections are cut to complementary spans and assembled into a single
+      bowl. This is the combination that exercises joining, and the seat counts add up.

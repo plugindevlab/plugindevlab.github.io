@@ -1,0 +1,35 @@
+{%- assign prod = site.data.products | where: "slug", page.product | first -%}
+{%- assign pdata = site.data.components.products[page.product] -%}
+{%- assign recipes = pdata.graph.recipes -%}
+
+<div class="combos" markdown="0">
+  {%- for r in recipes %}
+  <details class="combo"{% if forloop.first %} open{% endif %}>
+    <summary><b>{{ r.label }}</b><i>{{ r.nodes | size }} components</i></summary>
+    <div class="combo-in">
+      <p class="combo-n">{{ r.note }}</p>
+      <div class="combo-plate">
+        <svg viewBox="0 0 {{ r.w }} {{ r.h }}" width="{{ r.w }}" height="{{ r.h }}"
+             role="img" aria-label="{{ r.label }} — {{ r.nodes | size }} components wired in order">
+          <g class="combo-wires">
+            {%- for w in r.wires %}
+            <path class="cw-{{ w.kind }}" d="{{ w.d }}"><title>{{ w.port }}</title></path>
+            {%- endfor %}
+          </g>
+          {%- for n in r.nodes %}
+          <a href="/{{ prod.slug }}/components/{{ n.id }}/">
+            <title>{{ n.name }}{% if n.cid %} — {{ n.cid }}{% endif %}</title>
+            <rect class="combo-node" x="{{ n.x }}" y="{{ n.y }}" width="{{ r.nodeW }}" height="{{ r.nodeH }}" rx="2"/>
+            {%- if n.tier %}
+            <rect class="combo-tier" x="{{ n.x }}" y="{{ n.y }}" width="3" height="{{ r.nodeH }}"
+                  style="fill:var(--tier-{{ n.tier }})"/>
+            {%- endif %}
+            <text class="combo-t" x="{{ n.x | plus: 12 }}" y="{{ n.y | plus: 22 }}">{{ n.name }}</text>
+          </a>
+          {%- endfor %}
+        </svg>
+      </div>
+    </div>
+  </details>
+  {%- endfor %}
+</div>

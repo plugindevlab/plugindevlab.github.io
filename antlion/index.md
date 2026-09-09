@@ -75,8 +75,8 @@ Works in millimetre and inch documents.
 - [**Components**](components/index.html) — every component, every port, with a diagram of
   where each port sits on the capsule. Generated from the plugin source, so it cannot
   disagree with the plugin you are running.
-- [**Ribbon map**](ribbon/index.md) — which panel and section each component lives in, for
-  when you know the plugin and just want to find the thing.
+- [**Ribbon map**](workflow/index.md#ribbon) — which panel and section each component lives
+  in, for when you know the plugin and just want to find the thing.
 - [**Tutorials**](tutorials/index.md) — the parts where the rules are not visible on screen.
 - [**Troubleshooting**](troubleshooting/index.md) — known symptoms, causes, and fixes.
 - [**Changelog**](changelog/index.md) — what changed in each release.

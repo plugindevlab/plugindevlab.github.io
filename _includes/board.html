@@ -3,57 +3,34 @@
 {%- assign g = pdata.graph -%}
 {%- assign m = g.map -%}
 
-<div class="tr" data-trainer data-comp-base="/{{ prod.slug }}/components/" markdown="0">
-
-  <div class="tr-bar"></div>
-
-  <div class="tr-board" style="--map-h:{{ m.h }}px">
-    <svg class="tr-map" viewBox="0 0 {{ m.w }} {{ m.h }}" width="{{ m.w }}" height="{{ m.h }}"
-         role="img" aria-label="The {{ prod.name }} workflow — stages and what feeds what">
-      <defs>
-        <marker id="mk" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-          <path d="M0 0 L8 4 L0 8 z" class="map-head"/>
-        </marker>
-      </defs>
-      <g class="map-edges">
-        {%- for e in m.edges %}
-        <path class="map-arrow map-e-{{ e.kind }}" d="{{ e.d }}" marker-end="url(#mk)"><title>{{ e.types }}</title></path>
-        {%- endfor %}
-      </g>
-      {%- for n in m.nodes %}
-      <a href="#{{ n.group }}" data-stage="{{ n.group }}">
-        <title>{{ n.label }} — {{ n.count }} components</title>
-        <rect class="map-node{% if n.aside %} map-aside{% endif %}" x="{{ n.x }}" y="{{ n.y }}" width="{{ n.w }}" height="{{ n.h }}" rx="2"/>
-        {%- if n.step > 0 %}
-        <text class="map-n" x="{{ n.x | plus: 16 }}" y="{{ n.y | plus: 26 }}">{{ n.step }}</text>
-        {%- endif %}
-        <text class="map-t" x="{{ n.x | plus: 16 }}" y="{{ n.y | plus: 48 }}">{{ n.label }}</text>
-        <text class="map-c" x="{{ n.x | plus: 16 }}" y="{{ n.y | plus: 64 }}">{{ n.count }} components</text>
-      </a>
+<div class="map-wrap" markdown="0">
+  <svg class="map" viewBox="0 0 {{ m.w }} {{ m.h }}" width="{{ m.w }}" height="{{ m.h }}"
+       role="img" aria-label="The {{ prod.name }} workflow — stages and what feeds what">
+    <defs>
+      <marker id="mk" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0 0 L8 4 L0 8 z" class="map-head"/>
+      </marker>
+    </defs>
+    <g class="map-edges">
+      {%- for e in m.edges %}
+      <path class="map-arrow map-e-{{ e.kind }}" d="{{ e.d }}" marker-end="url(#mk)"><title>{{ e.types }}</title></path>
       {%- endfor %}
-    </svg>
-  </div>
-
-  <p class="tr-say" role="status"></p>
-
-  <div class="tr-fallback">
-    <p class="tr-static-note">With JavaScript on, the map above becomes a board: open a stage,
-      put a component down and wire it. Without it, here is the same chain as a list.</p>
-    {%- for s in g.stages %}
-    <h3 class="tr-static-h">{{ s.label | escape }}</h3>
-    <ul class="ports">
-      {%- for c in g.components %}{% if c.group == s.group %}
-      <li><b><a href="/{{ prod.slug }}/components/{{ c.id }}/">{{ c.name | escape }}</a></b><code>{% for p in c.in %}{{ p.t }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% if c.in == empty %}—{% endif %}</code><span>makes {% for p in c.out %}{{ p.t }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% if c.out == empty %}nothing the chain carries{% endif %}</span></li>
-      {%- endif %}{% endfor %}
-    </ul>
+    </g>
+    {%- for n in m.nodes %}
+    <a href="#{{ n.group }}">
+      <title>{{ n.label }} — {{ n.count }} components</title>
+      <rect class="map-node{% if n.aside %} map-aside{% endif %}" x="{{ n.x }}" y="{{ n.y }}" width="{{ n.w }}" height="{{ n.h }}" rx="2"/>
+      {%- if n.step > 0 %}
+      <text class="map-n" x="{{ n.x | plus: 16 }}" y="{{ n.y | plus: 26 }}">{{ n.step }}</text>
+      {%- endif %}
+      <text class="map-t" x="{{ n.x | plus: 16 }}" y="{{ n.y | plus: 48 }}">{{ n.label }}</text>
+      <text class="map-c" x="{{ n.x | plus: 16 }}" y="{{ n.y | plus: 64 }}">{{ n.count }} components</text>
+    </a>
     {%- endfor %}
-  </div>
+  </svg>
 </div>
 
 <p class="map-note" markdown="0">Solid arrows are the backbone. Dotted ones go back up the
-chain — those are real: <b>Seat Map</b> in Analysis makes the seat layout that <b>Seat 3D</b>
-builds. {{ m.skipped }} more connections skip a stage entirely and are left off the map to
-keep it readable; every one of them is on the component pages.</p>
-
-<script type="application/json" id="trainer-graph">{{ g | jsonify }}</script>
-<script src="{{ '/assets/js/trainer.js' | relative_url }}" defer></script>
+chain &mdash; those are real: <b>Seat Map</b> in Analysis makes the seat layout that
+<b>Seat 3D</b> builds. {{ m.skipped }} more connections skip a stage entirely and are left
+off the map to keep it readable; every one of them is on the component pages.</p>

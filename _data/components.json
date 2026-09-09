@@ -18013,7 +18013,7 @@
      }
     ],
     "map": {
-     "w": 1012,
+     "w": 1116,
      "h": 302,
      "nodes": [
       {
@@ -18022,7 +18022,7 @@
        "aside": false,
        "x": 10,
        "y": 10,
-       "w": 236,
+       "w": 220,
        "h": 74,
        "count": 7,
        "step": 1
@@ -18033,7 +18033,7 @@
        "aside": false,
        "x": 10,
        "y": 114,
-       "w": 236,
+       "w": 220,
        "h": 74,
        "count": 4,
        "step": 2
@@ -18042,9 +18042,9 @@
        "group": "bowl-section-3",
        "label": "2D layout",
        "aside": false,
-       "x": 262,
+       "x": 302,
        "y": 10,
-       "w": 236,
+       "w": 220,
        "h": 74,
        "count": 6,
        "step": 3
@@ -18053,9 +18053,9 @@
        "group": "bowl-section-4",
        "label": "3D solids",
        "aside": false,
-       "x": 514,
+       "x": 594,
        "y": 10,
-       "w": 236,
+       "w": 220,
        "h": 74,
        "count": 6,
        "step": 4
@@ -18064,9 +18064,9 @@
        "group": "bowl-analysis",
        "label": "Analysis",
        "aside": false,
-       "x": 766,
+       "x": 886,
        "y": 10,
-       "w": 236,
+       "w": 220,
        "h": 74,
        "count": 9,
        "step": 5
@@ -18077,7 +18077,7 @@
        "aside": true,
        "x": 10,
        "y": 218,
-       "w": 236,
+       "w": 220,
        "h": 74,
        "count": 4,
        "step": 0
@@ -18086,9 +18086,9 @@
        "group": "util",
        "label": "Tools",
        "aside": true,
-       "x": 766,
+       "x": 886,
        "y": 218,
-       "w": 236,
+       "w": 220,
        "h": 74,
        "count": 7,
        "step": 0
@@ -18096,70 +18096,70 @@
      ],
      "edges": [
       {
-       "d": "M128 84 V114",
+       "d": "M120 84 V114",
        "kind": "main",
        "from": "bowl-section-1",
        "to": "bowl-section-2",
        "types": "Field"
       },
       {
-       "d": "M246 47 C258 47 250 34 262 34",
+       "d": "M230 47 C269 47 263 34 302 34",
        "kind": "main",
        "from": "bowl-section-1",
        "to": "bowl-section-3",
        "types": "Axis"
       },
       {
-       "d": "M246 151 C258 151 250 59 262 59",
+       "d": "M230 151 C269 151 263 59 302 59",
        "kind": "main",
        "from": "bowl-section-2",
        "to": "bowl-section-3",
        "types": "SSD"
       },
       {
-       "d": "M128 218 V188",
+       "d": "M120 218 V188",
        "kind": "aside",
        "from": "table",
        "to": "bowl-section-2",
        "types": "Book"
       },
       {
-       "d": "M328 84 V208 H179 V188",
+       "d": "M363 84 V208 H168 V188",
        "kind": "back",
        "from": "bowl-section-3",
        "to": "bowl-section-2",
        "types": "SSD"
       },
       {
-       "d": "M498 47 C510 47 502 47 514 47",
+       "d": "M522 47 C561 47 555 47 594 47",
        "kind": "main",
        "from": "bowl-section-3",
        "to": "bowl-section-4",
        "types": "Axis, SRD, SSD"
       },
       {
-       "d": "M580 84 V104 H431 V84",
+       "d": "M655 84 V104 H460 V84",
        "kind": "back",
        "from": "bowl-section-4",
        "to": "bowl-section-3",
        "types": "SRD"
       },
       {
-       "d": "M750 47 C762 47 754 47 766 47",
+       "d": "M814 47 C853 47 847 47 886 47",
        "kind": "main",
        "from": "bowl-section-4",
        "to": "bowl-analysis",
        "types": "BRD, RLD, SRD"
       },
       {
-       "d": "M832 84 V104 H683 V84",
+       "d": "M947 84 V104 H752 V84",
        "kind": "back",
        "from": "bowl-analysis",
        "to": "bowl-section-4",
        "types": "SMD"
       },
       {
-       "d": "M884 218 V84",
+       "d": "M996 218 V84",
        "kind": "aside",
        "from": "util",
        "to": "bowl-analysis",
@@ -19459,6 +19459,2483 @@
        }
       ],
       "out": []
+     }
+    ],
+    "recipes": [
+     {
+      "id": "analysis",
+      "label": "Check one section",
+      "note": "The shortest useful chain. Draw the field, set the axes, solve a section and read the C-value straight off it — no 2D layout, no solids.",
+      "w": 1380,
+      "h": 54,
+      "nodeW": 200,
+      "nodeH": 34,
+      "nodes": [
+       {
+        "key": "field",
+        "id": "field",
+        "name": "Field",
+        "cid": "FIELD-001",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 10,
+        "y": 10
+       },
+       {
+        "key": "sl",
+        "id": "startline-rect",
+        "name": "Startline Rect",
+        "cid": "STARTLINE-001",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 242,
+        "y": 10
+       },
+       {
+        "key": "axis",
+        "id": "axis",
+        "name": "Axis",
+        "cid": "AXIS-002",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 474,
+        "y": 10
+       },
+       {
+        "key": "sec",
+        "id": "auto-section",
+        "name": "Auto Section",
+        "cid": "SECTION-001",
+        "group": "bowl-section-2",
+        "tier": "core",
+        "x": 706,
+        "y": 10
+       },
+       {
+        "key": "splus",
+        "id": "section-plus",
+        "name": "Section Plus",
+        "cid": "HANDRAIL-001",
+        "group": "bowl-section-2",
+        "tier": "core",
+        "x": 938,
+        "y": 10
+       },
+       {
+        "key": "ana",
+        "id": "section-analysis",
+        "name": "Section analysis",
+        "cid": "ANALYSIS-001",
+        "group": "bowl-analysis",
+        "tier": "core",
+        "x": 1170,
+        "y": 10
+       }
+      ],
+      "wires": [
+       {
+        "port": "Field Info",
+        "a": "field",
+        "b": "sl",
+        "kind": "main",
+        "d": "M210 27 H242"
+       },
+       {
+        "port": "Start Line",
+        "a": "sl",
+        "b": "axis",
+        "kind": "main",
+        "d": "M442 27 H474"
+       },
+       {
+        "port": "Field Info",
+        "a": "field",
+        "b": "sec",
+        "kind": "skip",
+        "d": "M210 27 H706"
+       },
+       {
+        "port": "Base Line",
+        "a": "axis",
+        "b": "sec",
+        "kind": "main",
+        "d": "M674 27 H706"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "sec",
+        "b": "splus",
+        "kind": "main",
+        "d": "M906 27 H938"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "splus",
+        "b": "ana",
+        "kind": "main",
+        "d": "M1138 27 H1170"
+       }
+      ],
+      "skipped": 0
+     },
+     {
+      "id": "build",
+      "label": "The standard bowl",
+      "note": "The backbone. Section to 2D layout to solids, with vomitories and a cut. Every other combination below is this one with something added.",
+      "w": 1380,
+      "h": 132,
+      "nodeW": 200,
+      "nodeH": 34,
+      "nodes": [
+       {
+        "key": "field",
+        "id": "field",
+        "name": "Field",
+        "cid": "FIELD-001",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 10,
+        "y": 10
+       },
+       {
+        "key": "sl",
+        "id": "startline-rect",
+        "name": "Startline Rect",
+        "cid": "STARTLINE-001",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 242,
+        "y": 10
+       },
+       {
+        "key": "axis",
+        "id": "axis",
+        "name": "Axis",
+        "cid": "AXIS-002",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 474,
+        "y": 10
+       },
+       {
+        "key": "sec",
+        "id": "auto-section",
+        "name": "Auto Section",
+        "cid": "SECTION-001",
+        "group": "bowl-section-2",
+        "tier": "core",
+        "x": 706,
+        "y": 10
+       },
+       {
+        "key": "splus",
+        "id": "section-plus",
+        "name": "Section Plus",
+        "cid": "HANDRAIL-001",
+        "group": "bowl-section-2",
+        "tier": "core",
+        "x": 938,
+        "y": 10
+       },
+       {
+        "key": "s2d",
+        "id": "stand-2d",
+        "name": "Stand 2D",
+        "cid": "STAND2D-002",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 1170,
+        "y": 10
+       },
+       {
+        "key": "vom",
+        "id": "vomitory",
+        "name": "Vomitory",
+        "cid": "VOMITORY-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 1170,
+        "y": 88
+       },
+       {
+        "key": "seat",
+        "id": "seat",
+        "name": "Seat",
+        "cid": "SEAT-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 938,
+        "y": 88
+       },
+       {
+        "key": "cut",
+        "id": "cut",
+        "name": "Cut",
+        "cid": "CUT-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 706,
+        "y": 88
+       },
+       {
+        "key": "stand",
+        "id": "stand-3d",
+        "name": "Stand 3D",
+        "cid": "STAND-001",
+        "group": "bowl-section-4",
+        "tier": "core",
+        "x": 474,
+        "y": 88
+       },
+       {
+        "key": "b3d",
+        "id": "stand-3d-plus",
+        "name": "Stand 3D Plus",
+        "cid": "BUILD-001",
+        "group": "bowl-section-4",
+        "tier": "core",
+        "x": 242,
+        "y": 88
+       }
+      ],
+      "wires": [
+       {
+        "port": "Field Info",
+        "a": "field",
+        "b": "sl",
+        "kind": "main",
+        "d": "M210 27 H242"
+       },
+       {
+        "port": "Start Line",
+        "a": "sl",
+        "b": "axis",
+        "kind": "main",
+        "d": "M442 27 H474"
+       },
+       {
+        "port": "Field Info",
+        "a": "field",
+        "b": "sec",
+        "kind": "skip",
+        "d": "M210 27 H706"
+       },
+       {
+        "port": "Base Line",
+        "a": "axis",
+        "b": "sec",
+        "kind": "main",
+        "d": "M674 27 H706"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "sec",
+        "b": "splus",
+        "kind": "main",
+        "d": "M906 27 H938"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "splus",
+        "b": "s2d",
+        "kind": "main",
+        "d": "M1138 27 H1170"
+       },
+       {
+        "port": "Axis",
+        "a": "axis",
+        "b": "s2d",
+        "kind": "skip",
+        "d": "M674 27 H1170"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "s2d",
+        "b": "vom",
+        "kind": "main",
+        "d": "M1270 44 V88"
+       },
+       {
+        "port": "Axis",
+        "a": "s2d",
+        "b": "vom",
+        "kind": "main",
+        "d": "M1270 44 V88"
+       },
+       {
+        "port": "Stand 2D",
+        "a": "s2d",
+        "b": "vom",
+        "kind": "main",
+        "d": "M1270 44 V88"
+       },
+       {
+        "port": "Vomitory",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Stand 2D",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Axis",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Seat Result",
+        "a": "seat",
+        "b": "cut",
+        "kind": "main",
+        "d": "M938 105 H906"
+       },
+       {
+        "port": "Seat Result",
+        "a": "cut",
+        "b": "b3d",
+        "kind": "skip",
+        "d": "M706 105 H442"
+       },
+       {
+        "port": "Handrail Sections",
+        "a": "splus",
+        "b": "stand",
+        "kind": "skip",
+        "d": "M1038 44 C1038 66 574 66 574 88"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "s2d",
+        "b": "stand",
+        "kind": "skip",
+        "d": "M1270 44 C1270 66 574 66 574 88"
+       },
+       {
+        "port": "Axis",
+        "a": "s2d",
+        "b": "stand",
+        "kind": "skip",
+        "d": "M1270 44 C1270 66 574 66 574 88"
+       },
+       {
+        "port": "Stand Body",
+        "a": "stand",
+        "b": "b3d",
+        "kind": "main",
+        "d": "M474 105 H442"
+       }
+      ],
+      "skipped": 0
+     },
+     {
+      "id": "custom_axis_chain",
+      "label": "Axes you draw yourself",
+      "note": "Same chain, but the axes come from curves you drew instead of the automatic spacing. Everything downstream is unchanged — it cannot tell the difference.",
+      "w": 1380,
+      "h": 132,
+      "nodeW": 200,
+      "nodeH": 34,
+      "nodes": [
+       {
+        "key": "field",
+        "id": "field",
+        "name": "Field",
+        "cid": "FIELD-001",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 10,
+        "y": 10
+       },
+       {
+        "key": "sl",
+        "id": "startline-rect",
+        "name": "Startline Rect",
+        "cid": "STARTLINE-001",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 242,
+        "y": 10
+       },
+       {
+        "key": "cax",
+        "id": "custom-axis",
+        "name": "Custom Axis",
+        "cid": "AXIS-003",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 474,
+        "y": 10
+       },
+       {
+        "key": "sec",
+        "id": "auto-section",
+        "name": "Auto Section",
+        "cid": "SECTION-001",
+        "group": "bowl-section-2",
+        "tier": "core",
+        "x": 706,
+        "y": 10
+       },
+       {
+        "key": "splus",
+        "id": "section-plus",
+        "name": "Section Plus",
+        "cid": "HANDRAIL-001",
+        "group": "bowl-section-2",
+        "tier": "core",
+        "x": 938,
+        "y": 10
+       },
+       {
+        "key": "s2d",
+        "id": "stand-2d",
+        "name": "Stand 2D",
+        "cid": "STAND2D-002",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 1170,
+        "y": 10
+       },
+       {
+        "key": "vom",
+        "id": "vomitory",
+        "name": "Vomitory",
+        "cid": "VOMITORY-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 1170,
+        "y": 88
+       },
+       {
+        "key": "seat",
+        "id": "seat",
+        "name": "Seat",
+        "cid": "SEAT-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 938,
+        "y": 88
+       },
+       {
+        "key": "cut",
+        "id": "cut",
+        "name": "Cut",
+        "cid": "CUT-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 706,
+        "y": 88
+       },
+       {
+        "key": "stand",
+        "id": "stand-3d",
+        "name": "Stand 3D",
+        "cid": "STAND-001",
+        "group": "bowl-section-4",
+        "tier": "core",
+        "x": 474,
+        "y": 88
+       },
+       {
+        "key": "b3d",
+        "id": "stand-3d-plus",
+        "name": "Stand 3D Plus",
+        "cid": "BUILD-001",
+        "group": "bowl-section-4",
+        "tier": "core",
+        "x": 242,
+        "y": 88
+       }
+      ],
+      "wires": [
+       {
+        "port": "Field Info",
+        "a": "field",
+        "b": "sl",
+        "kind": "main",
+        "d": "M210 27 H242"
+       },
+       {
+        "port": "Start Line",
+        "a": "sl",
+        "b": "cax",
+        "kind": "main",
+        "d": "M442 27 H474"
+       },
+       {
+        "port": "Field Info",
+        "a": "field",
+        "b": "sec",
+        "kind": "skip",
+        "d": "M210 27 H706"
+       },
+       {
+        "port": "Base Line",
+        "a": "cax",
+        "b": "sec",
+        "kind": "main",
+        "d": "M674 27 H706"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "sec",
+        "b": "splus",
+        "kind": "main",
+        "d": "M906 27 H938"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "splus",
+        "b": "s2d",
+        "kind": "main",
+        "d": "M1138 27 H1170"
+       },
+       {
+        "port": "Axis",
+        "a": "cax",
+        "b": "s2d",
+        "kind": "skip",
+        "d": "M674 27 H1170"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "s2d",
+        "b": "vom",
+        "kind": "main",
+        "d": "M1270 44 V88"
+       },
+       {
+        "port": "Axis",
+        "a": "s2d",
+        "b": "vom",
+        "kind": "main",
+        "d": "M1270 44 V88"
+       },
+       {
+        "port": "Stand 2D",
+        "a": "s2d",
+        "b": "vom",
+        "kind": "main",
+        "d": "M1270 44 V88"
+       },
+       {
+        "port": "Vomitory",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Stand 2D",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Axis",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Seat Result",
+        "a": "seat",
+        "b": "cut",
+        "kind": "main",
+        "d": "M938 105 H906"
+       },
+       {
+        "port": "Seat Result",
+        "a": "cut",
+        "b": "b3d",
+        "kind": "skip",
+        "d": "M706 105 H442"
+       },
+       {
+        "port": "Handrail Sections",
+        "a": "splus",
+        "b": "stand",
+        "kind": "skip",
+        "d": "M1038 44 C1038 66 574 66 574 88"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "s2d",
+        "b": "stand",
+        "kind": "skip",
+        "d": "M1270 44 C1270 66 574 66 574 88"
+       },
+       {
+        "port": "Axis",
+        "a": "s2d",
+        "b": "stand",
+        "kind": "skip",
+        "d": "M1270 44 C1270 66 574 66 574 88"
+       },
+       {
+        "port": "Stand Body",
+        "a": "stand",
+        "b": "b3d",
+        "kind": "main",
+        "d": "M474 105 H442"
+       }
+      ],
+      "skipped": 0
+     },
+     {
+      "id": "table_section",
+      "label": "Section from a workbook",
+      "note": "Riser and tread numbers come out of Excel instead of a solved section, and the results go back to the sheet.",
+      "w": 1380,
+      "h": 132,
+      "nodeW": 200,
+      "nodeH": 34,
+      "nodes": [
+       {
+        "key": "field",
+        "id": "field",
+        "name": "Field",
+        "cid": "FIELD-001",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 10,
+        "y": 10
+       },
+       {
+        "key": "sl",
+        "id": "startline-rect",
+        "name": "Startline Rect",
+        "cid": "STARTLINE-001",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 242,
+        "y": 10
+       },
+       {
+        "key": "axis",
+        "id": "axis",
+        "name": "Axis",
+        "cid": "AXIS-002",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 474,
+        "y": 10
+       },
+       {
+        "key": "xlwb",
+        "id": "excel-workbook",
+        "name": "Excel Workbook",
+        "cid": "IO-007",
+        "group": "table",
+        "tier": "core",
+        "x": 706,
+        "y": 10
+       },
+       {
+        "key": "tin",
+        "id": "table-in",
+        "name": "Table In",
+        "cid": "IO-005",
+        "group": "table",
+        "tier": "core",
+        "x": 938,
+        "y": 10
+       },
+       {
+        "key": "tsec",
+        "id": "table-section",
+        "name": "Table Section",
+        "cid": "SECTION-003",
+        "group": "bowl-section-2",
+        "tier": "core",
+        "x": 1170,
+        "y": 10
+       },
+       {
+        "key": "stand",
+        "id": "stand-3d",
+        "name": "Stand 3D",
+        "cid": "STAND-001",
+        "group": "bowl-section-4",
+        "tier": "core",
+        "x": 1170,
+        "y": 88
+       }
+      ],
+      "wires": [
+       {
+        "port": "Field Info",
+        "a": "field",
+        "b": "sl",
+        "kind": "main",
+        "d": "M210 27 H242"
+       },
+       {
+        "port": "Start Line",
+        "a": "sl",
+        "b": "axis",
+        "kind": "main",
+        "d": "M442 27 H474"
+       },
+       {
+        "port": "Field Info",
+        "a": "field",
+        "b": "xlwb",
+        "kind": "skip",
+        "d": "M210 27 H706"
+       },
+       {
+        "port": "Focal Point",
+        "a": "field",
+        "b": "xlwb",
+        "kind": "skip",
+        "d": "M210 27 H706"
+       },
+       {
+        "port": "Base Line",
+        "a": "axis",
+        "b": "xlwb",
+        "kind": "main",
+        "d": "M674 27 H706"
+       },
+       {
+        "port": "Field Info",
+        "a": "field",
+        "b": "tsec",
+        "kind": "skip",
+        "d": "M210 27 H1170"
+       },
+       {
+        "port": "Focal Point",
+        "a": "field",
+        "b": "tsec",
+        "kind": "skip",
+        "d": "M210 27 H1170"
+       },
+       {
+        "port": "Base Line",
+        "a": "axis",
+        "b": "tsec",
+        "kind": "skip",
+        "d": "M674 27 H1170"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "tsec",
+        "b": "stand",
+        "kind": "main",
+        "d": "M1270 44 V88"
+       },
+       {
+        "port": "Handrail Sections",
+        "a": "tsec",
+        "b": "stand",
+        "kind": "main",
+        "d": "M1270 44 V88"
+       },
+       {
+        "port": "Axis",
+        "a": "axis",
+        "b": "stand",
+        "kind": "skip",
+        "d": "M574 44 C574 66 1270 66 1270 88"
+       },
+       {
+        "port": "Book",
+        "a": "xlwb",
+        "b": "tin",
+        "kind": "main",
+        "d": "M906 27 H938"
+       },
+       {
+        "port": "Book",
+        "a": "tin",
+        "b": "tsec",
+        "kind": "main",
+        "d": "M1138 27 H1170"
+       }
+      ],
+      "skipped": 0
+     },
+     {
+      "id": "rail",
+      "label": "Railings on the stand",
+      "note": "Adds railings to the built bowl. Their geometry feeds the sightline checks, so a rail that blocks a view shows up as a failed seat rather than a surprise on site.",
+      "w": 1380,
+      "h": 132,
+      "nodeW": 200,
+      "nodeH": 34,
+      "nodes": [
+       {
+        "key": "field",
+        "id": "field",
+        "name": "Field",
+        "cid": "FIELD-001",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 10,
+        "y": 10
+       },
+       {
+        "key": "sl",
+        "id": "startline-rect",
+        "name": "Startline Rect",
+        "cid": "STARTLINE-001",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 242,
+        "y": 10
+       },
+       {
+        "key": "axis",
+        "id": "axis",
+        "name": "Axis",
+        "cid": "AXIS-002",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 474,
+        "y": 10
+       },
+       {
+        "key": "sec",
+        "id": "auto-section",
+        "name": "Auto Section",
+        "cid": "SECTION-001",
+        "group": "bowl-section-2",
+        "tier": "core",
+        "x": 706,
+        "y": 10
+       },
+       {
+        "key": "splus",
+        "id": "section-plus",
+        "name": "Section Plus",
+        "cid": "HANDRAIL-001",
+        "group": "bowl-section-2",
+        "tier": "core",
+        "x": 938,
+        "y": 10
+       },
+       {
+        "key": "s2d",
+        "id": "stand-2d",
+        "name": "Stand 2D",
+        "cid": "STAND2D-002",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 1170,
+        "y": 10
+       },
+       {
+        "key": "vom",
+        "id": "vomitory",
+        "name": "Vomitory",
+        "cid": "VOMITORY-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 1170,
+        "y": 88
+       },
+       {
+        "key": "seat",
+        "id": "seat",
+        "name": "Seat",
+        "cid": "SEAT-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 938,
+        "y": 88
+       },
+       {
+        "key": "cut",
+        "id": "cut",
+        "name": "Cut",
+        "cid": "CUT-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 706,
+        "y": 88
+       },
+       {
+        "key": "stand",
+        "id": "stand-3d",
+        "name": "Stand 3D",
+        "cid": "STAND-001",
+        "group": "bowl-section-4",
+        "tier": "core",
+        "x": 474,
+        "y": 88
+       },
+       {
+        "key": "b3d",
+        "id": "stand-3d-plus",
+        "name": "Stand 3D Plus",
+        "cid": "BUILD-001",
+        "group": "bowl-section-4",
+        "tier": "core",
+        "x": 242,
+        "y": 88
+       },
+       {
+        "key": "rail",
+        "id": "rail-3d",
+        "name": "Rail 3D",
+        "cid": "RAIL-001",
+        "group": "bowl-section-4",
+        "tier": "core",
+        "x": 10,
+        "y": 88
+       }
+      ],
+      "wires": [
+       {
+        "port": "Field Info",
+        "a": "field",
+        "b": "sl",
+        "kind": "main",
+        "d": "M210 27 H242"
+       },
+       {
+        "port": "Start Line",
+        "a": "sl",
+        "b": "axis",
+        "kind": "main",
+        "d": "M442 27 H474"
+       },
+       {
+        "port": "Field Info",
+        "a": "field",
+        "b": "sec",
+        "kind": "skip",
+        "d": "M210 27 H706"
+       },
+       {
+        "port": "Base Line",
+        "a": "axis",
+        "b": "sec",
+        "kind": "main",
+        "d": "M674 27 H706"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "sec",
+        "b": "splus",
+        "kind": "main",
+        "d": "M906 27 H938"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "splus",
+        "b": "s2d",
+        "kind": "main",
+        "d": "M1138 27 H1170"
+       },
+       {
+        "port": "Axis",
+        "a": "axis",
+        "b": "s2d",
+        "kind": "skip",
+        "d": "M674 27 H1170"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "s2d",
+        "b": "vom",
+        "kind": "main",
+        "d": "M1270 44 V88"
+       },
+       {
+        "port": "Axis",
+        "a": "s2d",
+        "b": "vom",
+        "kind": "main",
+        "d": "M1270 44 V88"
+       },
+       {
+        "port": "Stand 2D",
+        "a": "s2d",
+        "b": "vom",
+        "kind": "main",
+        "d": "M1270 44 V88"
+       },
+       {
+        "port": "Vomitory",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Stand 2D",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Axis",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Seat Result",
+        "a": "seat",
+        "b": "cut",
+        "kind": "main",
+        "d": "M938 105 H906"
+       },
+       {
+        "port": "Seat Result",
+        "a": "cut",
+        "b": "b3d",
+        "kind": "skip",
+        "d": "M706 105 H442"
+       },
+       {
+        "port": "Build Result",
+        "a": "b3d",
+        "b": "rail",
+        "kind": "main",
+        "d": "M242 105 H210"
+       },
+       {
+        "port": "Handrail Sections",
+        "a": "splus",
+        "b": "stand",
+        "kind": "skip",
+        "d": "M1038 44 C1038 66 574 66 574 88"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "s2d",
+        "b": "stand",
+        "kind": "skip",
+        "d": "M1270 44 C1270 66 574 66 574 88"
+       },
+       {
+        "port": "Axis",
+        "a": "s2d",
+        "b": "stand",
+        "kind": "skip",
+        "d": "M1270 44 C1270 66 574 66 574 88"
+       },
+       {
+        "port": "Stand Body",
+        "a": "stand",
+        "b": "b3d",
+        "kind": "main",
+        "d": "M474 105 H442"
+       }
+      ],
+      "skipped": 0
+     },
+     {
+      "id": "cvalue_map",
+      "label": "Sightlines, seat by seat",
+      "note": "Measures the C-value from every seat's own eye to its own focus and paints the result, then lays it out on a drawing sheet.",
+      "w": 1380,
+      "h": 210,
+      "nodeW": 200,
+      "nodeH": 34,
+      "nodes": [
+       {
+        "key": "field",
+        "id": "field",
+        "name": "Field",
+        "cid": "FIELD-001",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 10,
+        "y": 10
+       },
+       {
+        "key": "sl",
+        "id": "startline-rect",
+        "name": "Startline Rect",
+        "cid": "STARTLINE-001",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 242,
+        "y": 10
+       },
+       {
+        "key": "axis",
+        "id": "axis",
+        "name": "Axis",
+        "cid": "AXIS-002",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 474,
+        "y": 10
+       },
+       {
+        "key": "sec",
+        "id": "auto-section",
+        "name": "Auto Section",
+        "cid": "SECTION-001",
+        "group": "bowl-section-2",
+        "tier": "core",
+        "x": 706,
+        "y": 10
+       },
+       {
+        "key": "splus",
+        "id": "section-plus",
+        "name": "Section Plus",
+        "cid": "HANDRAIL-001",
+        "group": "bowl-section-2",
+        "tier": "core",
+        "x": 938,
+        "y": 10
+       },
+       {
+        "key": "s2d",
+        "id": "stand-2d",
+        "name": "Stand 2D",
+        "cid": "STAND2D-002",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 1170,
+        "y": 10
+       },
+       {
+        "key": "vom",
+        "id": "vomitory",
+        "name": "Vomitory",
+        "cid": "VOMITORY-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 1170,
+        "y": 88
+       },
+       {
+        "key": "seat",
+        "id": "seat",
+        "name": "Seat",
+        "cid": "SEAT-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 938,
+        "y": 88
+       },
+       {
+        "key": "cut",
+        "id": "cut",
+        "name": "Cut",
+        "cid": "CUT-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 706,
+        "y": 88
+       },
+       {
+        "key": "stand",
+        "id": "stand-3d",
+        "name": "Stand 3D",
+        "cid": "STAND-001",
+        "group": "bowl-section-4",
+        "tier": "core",
+        "x": 474,
+        "y": 88
+       },
+       {
+        "key": "b3d",
+        "id": "stand-3d-plus",
+        "name": "Stand 3D Plus",
+        "cid": "BUILD-001",
+        "group": "bowl-section-4",
+        "tier": "core",
+        "x": 242,
+        "y": 88
+       },
+       {
+        "key": "cva",
+        "id": "c-value-seat",
+        "name": "C-value Seat",
+        "cid": "ANALYSIS-004",
+        "group": "bowl-analysis",
+        "tier": "core",
+        "x": 10,
+        "y": 88
+       },
+       {
+        "key": "map",
+        "id": "c-value-map",
+        "name": "C-value Map",
+        "cid": "ANALYSIS-007",
+        "group": "bowl-analysis",
+        "tier": "core",
+        "x": 10,
+        "y": 166
+       }
+      ],
+      "wires": [
+       {
+        "port": "Field Info",
+        "a": "field",
+        "b": "sl",
+        "kind": "main",
+        "d": "M210 27 H242"
+       },
+       {
+        "port": "Start Line",
+        "a": "sl",
+        "b": "axis",
+        "kind": "main",
+        "d": "M442 27 H474"
+       },
+       {
+        "port": "Field Info",
+        "a": "field",
+        "b": "sec",
+        "kind": "skip",
+        "d": "M210 27 H706"
+       },
+       {
+        "port": "Base Line",
+        "a": "axis",
+        "b": "sec",
+        "kind": "main",
+        "d": "M674 27 H706"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "sec",
+        "b": "splus",
+        "kind": "main",
+        "d": "M906 27 H938"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "splus",
+        "b": "s2d",
+        "kind": "main",
+        "d": "M1138 27 H1170"
+       },
+       {
+        "port": "Axis",
+        "a": "axis",
+        "b": "s2d",
+        "kind": "skip",
+        "d": "M674 27 H1170"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "s2d",
+        "b": "vom",
+        "kind": "main",
+        "d": "M1270 44 V88"
+       },
+       {
+        "port": "Axis",
+        "a": "s2d",
+        "b": "vom",
+        "kind": "main",
+        "d": "M1270 44 V88"
+       },
+       {
+        "port": "Stand 2D",
+        "a": "s2d",
+        "b": "vom",
+        "kind": "main",
+        "d": "M1270 44 V88"
+       },
+       {
+        "port": "Vomitory",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Stand 2D",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Axis",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Seat Result",
+        "a": "seat",
+        "b": "cut",
+        "kind": "main",
+        "d": "M938 105 H906"
+       },
+       {
+        "port": "Seat Result",
+        "a": "cut",
+        "b": "b3d",
+        "kind": "skip",
+        "d": "M706 105 H442"
+       },
+       {
+        "port": "Handrail Sections",
+        "a": "splus",
+        "b": "stand",
+        "kind": "skip",
+        "d": "M1038 44 C1038 66 574 66 574 88"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "s2d",
+        "b": "stand",
+        "kind": "skip",
+        "d": "M1270 44 C1270 66 574 66 574 88"
+       },
+       {
+        "port": "Axis",
+        "a": "s2d",
+        "b": "stand",
+        "kind": "skip",
+        "d": "M1270 44 C1270 66 574 66 574 88"
+       },
+       {
+        "port": "Stand Body",
+        "a": "stand",
+        "b": "b3d",
+        "kind": "main",
+        "d": "M474 105 H442"
+       },
+       {
+        "port": "Build Result",
+        "a": "b3d",
+        "b": "cva",
+        "kind": "main",
+        "d": "M242 105 H210"
+       },
+       {
+        "port": "Focal Curve",
+        "a": "field",
+        "b": "cva",
+        "kind": "skip",
+        "d": "M110 44 V88"
+       },
+       {
+        "port": "C-value Map Data",
+        "a": "cva",
+        "b": "map",
+        "kind": "main",
+        "d": "M110 122 V166"
+       }
+      ],
+      "skipped": 0
+     },
+     {
+      "id": "section_check",
+      "label": "Section sheets",
+      "note": "Takes one representative section per axis gap and flips through them on sheets — light enough to leave on while you tune the section.",
+      "w": 1380,
+      "h": 210,
+      "nodeW": 200,
+      "nodeH": 34,
+      "nodes": [
+       {
+        "key": "field",
+        "id": "field",
+        "name": "Field",
+        "cid": "FIELD-001",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 10,
+        "y": 10
+       },
+       {
+        "key": "sl",
+        "id": "startline-rect",
+        "name": "Startline Rect",
+        "cid": "STARTLINE-001",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 242,
+        "y": 10
+       },
+       {
+        "key": "axis",
+        "id": "axis",
+        "name": "Axis",
+        "cid": "AXIS-002",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 474,
+        "y": 10
+       },
+       {
+        "key": "sec",
+        "id": "auto-section",
+        "name": "Auto Section",
+        "cid": "SECTION-001",
+        "group": "bowl-section-2",
+        "tier": "core",
+        "x": 706,
+        "y": 10
+       },
+       {
+        "key": "splus",
+        "id": "section-plus",
+        "name": "Section Plus",
+        "cid": "HANDRAIL-001",
+        "group": "bowl-section-2",
+        "tier": "core",
+        "x": 938,
+        "y": 10
+       },
+       {
+        "key": "s2d",
+        "id": "stand-2d",
+        "name": "Stand 2D",
+        "cid": "STAND2D-002",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 1170,
+        "y": 10
+       },
+       {
+        "key": "vom",
+        "id": "vomitory",
+        "name": "Vomitory",
+        "cid": "VOMITORY-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 1170,
+        "y": 88
+       },
+       {
+        "key": "seat",
+        "id": "seat",
+        "name": "Seat",
+        "cid": "SEAT-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 938,
+        "y": 88
+       },
+       {
+        "key": "cut",
+        "id": "cut",
+        "name": "Cut",
+        "cid": "CUT-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 706,
+        "y": 88
+       },
+       {
+        "key": "stand",
+        "id": "stand-3d",
+        "name": "Stand 3D",
+        "cid": "STAND-001",
+        "group": "bowl-section-4",
+        "tier": "core",
+        "x": 474,
+        "y": 88
+       },
+       {
+        "key": "b3d",
+        "id": "stand-3d-plus",
+        "name": "Stand 3D Plus",
+        "cid": "BUILD-001",
+        "group": "bowl-section-4",
+        "tier": "core",
+        "x": 242,
+        "y": 88
+       },
+       {
+        "key": "cvt",
+        "id": "c-value-tread",
+        "name": "C-value Tread",
+        "cid": "ANALYSIS-005",
+        "group": "bowl-analysis",
+        "tier": "core",
+        "x": 10,
+        "y": 88
+       },
+       {
+        "key": "chk",
+        "id": "c-value-section-check",
+        "name": "C-value Section Check",
+        "cid": "ANALYSIS-006",
+        "group": "bowl-analysis",
+        "tier": "core",
+        "x": 10,
+        "y": 166
+       }
+      ],
+      "wires": [
+       {
+        "port": "Field Info",
+        "a": "field",
+        "b": "sl",
+        "kind": "main",
+        "d": "M210 27 H242"
+       },
+       {
+        "port": "Start Line",
+        "a": "sl",
+        "b": "axis",
+        "kind": "main",
+        "d": "M442 27 H474"
+       },
+       {
+        "port": "Field Info",
+        "a": "field",
+        "b": "sec",
+        "kind": "skip",
+        "d": "M210 27 H706"
+       },
+       {
+        "port": "Base Line",
+        "a": "axis",
+        "b": "sec",
+        "kind": "main",
+        "d": "M674 27 H706"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "sec",
+        "b": "splus",
+        "kind": "main",
+        "d": "M906 27 H938"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "splus",
+        "b": "s2d",
+        "kind": "main",
+        "d": "M1138 27 H1170"
+       },
+       {
+        "port": "Axis",
+        "a": "axis",
+        "b": "s2d",
+        "kind": "skip",
+        "d": "M674 27 H1170"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "s2d",
+        "b": "vom",
+        "kind": "main",
+        "d": "M1270 44 V88"
+       },
+       {
+        "port": "Axis",
+        "a": "s2d",
+        "b": "vom",
+        "kind": "main",
+        "d": "M1270 44 V88"
+       },
+       {
+        "port": "Stand 2D",
+        "a": "s2d",
+        "b": "vom",
+        "kind": "main",
+        "d": "M1270 44 V88"
+       },
+       {
+        "port": "Vomitory",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Stand 2D",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Axis",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Seat Result",
+        "a": "seat",
+        "b": "cut",
+        "kind": "main",
+        "d": "M938 105 H906"
+       },
+       {
+        "port": "Seat Result",
+        "a": "cut",
+        "b": "b3d",
+        "kind": "skip",
+        "d": "M706 105 H442"
+       },
+       {
+        "port": "Handrail Sections",
+        "a": "splus",
+        "b": "stand",
+        "kind": "skip",
+        "d": "M1038 44 C1038 66 574 66 574 88"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "s2d",
+        "b": "stand",
+        "kind": "skip",
+        "d": "M1270 44 C1270 66 574 66 574 88"
+       },
+       {
+        "port": "Axis",
+        "a": "s2d",
+        "b": "stand",
+        "kind": "skip",
+        "d": "M1270 44 C1270 66 574 66 574 88"
+       },
+       {
+        "port": "Stand Body",
+        "a": "stand",
+        "b": "b3d",
+        "kind": "main",
+        "d": "M474 105 H442"
+       },
+       {
+        "port": "Build Result",
+        "a": "b3d",
+        "b": "cvt",
+        "kind": "main",
+        "d": "M242 105 H210"
+       },
+       {
+        "port": "Focal Curve",
+        "a": "field",
+        "b": "cvt",
+        "kind": "skip",
+        "d": "M110 44 V88"
+       },
+       {
+        "port": "C-value Section Data",
+        "a": "cvt",
+        "b": "chk",
+        "kind": "main",
+        "d": "M110 122 V166"
+       }
+      ],
+      "skipped": 0
+     },
+     {
+      "id": "seat_3d",
+      "label": "Real chairs",
+      "note": "Replaces the seat markers with chair geometry, so the model is presentable rather than diagrammatic.",
+      "w": 1380,
+      "h": 132,
+      "nodeW": 200,
+      "nodeH": 34,
+      "nodes": [
+       {
+        "key": "field",
+        "id": "field",
+        "name": "Field",
+        "cid": "FIELD-001",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 10,
+        "y": 10
+       },
+       {
+        "key": "sl",
+        "id": "startline-rect",
+        "name": "Startline Rect",
+        "cid": "STARTLINE-001",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 242,
+        "y": 10
+       },
+       {
+        "key": "axis",
+        "id": "axis",
+        "name": "Axis",
+        "cid": "AXIS-002",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 474,
+        "y": 10
+       },
+       {
+        "key": "sec",
+        "id": "auto-section",
+        "name": "Auto Section",
+        "cid": "SECTION-001",
+        "group": "bowl-section-2",
+        "tier": "core",
+        "x": 706,
+        "y": 10
+       },
+       {
+        "key": "splus",
+        "id": "section-plus",
+        "name": "Section Plus",
+        "cid": "HANDRAIL-001",
+        "group": "bowl-section-2",
+        "tier": "core",
+        "x": 938,
+        "y": 10
+       },
+       {
+        "key": "s2d",
+        "id": "stand-2d",
+        "name": "Stand 2D",
+        "cid": "STAND2D-002",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 1170,
+        "y": 10
+       },
+       {
+        "key": "vom",
+        "id": "vomitory",
+        "name": "Vomitory",
+        "cid": "VOMITORY-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 1170,
+        "y": 88
+       },
+       {
+        "key": "seat",
+        "id": "seat",
+        "name": "Seat",
+        "cid": "SEAT-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 938,
+        "y": 88
+       },
+       {
+        "key": "cut",
+        "id": "cut",
+        "name": "Cut",
+        "cid": "CUT-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 706,
+        "y": 88
+       },
+       {
+        "key": "stand",
+        "id": "stand-3d",
+        "name": "Stand 3D",
+        "cid": "STAND-001",
+        "group": "bowl-section-4",
+        "tier": "core",
+        "x": 474,
+        "y": 88
+       },
+       {
+        "key": "b3d",
+        "id": "stand-3d-plus",
+        "name": "Stand 3D Plus",
+        "cid": "BUILD-001",
+        "group": "bowl-section-4",
+        "tier": "core",
+        "x": 242,
+        "y": 88
+       },
+       {
+        "key": "s3d",
+        "id": "seat-3d",
+        "name": "Seat 3D",
+        "cid": "SEAT3D-001",
+        "group": "bowl-section-4",
+        "tier": "core",
+        "x": 10,
+        "y": 88
+       }
+      ],
+      "wires": [
+       {
+        "port": "Field Info",
+        "a": "field",
+        "b": "sl",
+        "kind": "main",
+        "d": "M210 27 H242"
+       },
+       {
+        "port": "Start Line",
+        "a": "sl",
+        "b": "axis",
+        "kind": "main",
+        "d": "M442 27 H474"
+       },
+       {
+        "port": "Field Info",
+        "a": "field",
+        "b": "sec",
+        "kind": "skip",
+        "d": "M210 27 H706"
+       },
+       {
+        "port": "Base Line",
+        "a": "axis",
+        "b": "sec",
+        "kind": "main",
+        "d": "M674 27 H706"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "sec",
+        "b": "splus",
+        "kind": "main",
+        "d": "M906 27 H938"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "splus",
+        "b": "s2d",
+        "kind": "main",
+        "d": "M1138 27 H1170"
+       },
+       {
+        "port": "Axis",
+        "a": "axis",
+        "b": "s2d",
+        "kind": "skip",
+        "d": "M674 27 H1170"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "s2d",
+        "b": "vom",
+        "kind": "main",
+        "d": "M1270 44 V88"
+       },
+       {
+        "port": "Axis",
+        "a": "s2d",
+        "b": "vom",
+        "kind": "main",
+        "d": "M1270 44 V88"
+       },
+       {
+        "port": "Stand 2D",
+        "a": "s2d",
+        "b": "vom",
+        "kind": "main",
+        "d": "M1270 44 V88"
+       },
+       {
+        "port": "Vomitory",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Stand 2D",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Axis",
+        "a": "vom",
+        "b": "seat",
+        "kind": "main",
+        "d": "M1170 105 H1138"
+       },
+       {
+        "port": "Seat Result",
+        "a": "seat",
+        "b": "cut",
+        "kind": "main",
+        "d": "M938 105 H906"
+       },
+       {
+        "port": "Seat Result",
+        "a": "cut",
+        "b": "b3d",
+        "kind": "skip",
+        "d": "M706 105 H442"
+       },
+       {
+        "port": "Handrail Sections",
+        "a": "splus",
+        "b": "stand",
+        "kind": "skip",
+        "d": "M1038 44 C1038 66 574 66 574 88"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "s2d",
+        "b": "stand",
+        "kind": "skip",
+        "d": "M1270 44 C1270 66 574 66 574 88"
+       },
+       {
+        "port": "Axis",
+        "a": "s2d",
+        "b": "stand",
+        "kind": "skip",
+        "d": "M1270 44 C1270 66 574 66 574 88"
+       },
+       {
+        "port": "Stand Body",
+        "a": "stand",
+        "b": "b3d",
+        "kind": "main",
+        "d": "M474 105 H442"
+       },
+       {
+        "port": "Build Result",
+        "a": "b3d",
+        "b": "s3d",
+        "kind": "main",
+        "d": "M242 105 H210"
+       }
+      ],
+      "skipped": 2
+     },
+     {
+      "id": "merge_bowl",
+      "label": "Two sections, one bowl",
+      "note": "Two different sections are cut to complementary spans and assembled into a single bowl. This is the combination that exercises joining, and the seat counts add up.",
+      "w": 916,
+      "h": 674,
+      "nodeW": 200,
+      "nodeH": 34,
+      "nodes": [
+       {
+        "key": "field",
+        "id": "field",
+        "name": "Field",
+        "cid": "FIELD-001",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 10,
+        "y": 10
+       },
+       {
+        "key": "sl",
+        "id": "startline-rect",
+        "name": "Startline Rect",
+        "cid": "STARTLINE-001",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 10,
+        "y": 72
+       },
+       {
+        "key": "axis",
+        "id": "axis",
+        "name": "Axis",
+        "cid": "AXIS-002",
+        "group": "bowl-section-1",
+        "tier": "core",
+        "x": 10,
+        "y": 134
+       },
+       {
+        "key": "secA",
+        "id": "auto-section",
+        "name": "Auto Section",
+        "cid": "SECTION-001",
+        "group": "bowl-section-2",
+        "tier": "core",
+        "x": 10,
+        "y": 196
+       },
+       {
+        "key": "splusA",
+        "id": "section-plus",
+        "name": "Section Plus",
+        "cid": "HANDRAIL-001",
+        "group": "bowl-section-2",
+        "tier": "core",
+        "x": 10,
+        "y": 258
+       },
+       {
+        "key": "s2dA",
+        "id": "stand-2d",
+        "name": "Stand 2D",
+        "cid": "STAND2D-002",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 10,
+        "y": 320
+       },
+       {
+        "key": "vomA",
+        "id": "vomitory",
+        "name": "Vomitory",
+        "cid": "VOMITORY-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 10,
+        "y": 382
+       },
+       {
+        "key": "seatA",
+        "id": "seat",
+        "name": "Seat",
+        "cid": "SEAT-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 10,
+        "y": 444
+       },
+       {
+        "key": "cutA",
+        "id": "cut",
+        "name": "Cut",
+        "cid": "CUT-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 10,
+        "y": 506
+       },
+       {
+        "key": "secB",
+        "id": "auto-section",
+        "name": "Auto Section",
+        "cid": "SECTION-001",
+        "group": "bowl-section-2",
+        "tier": "core",
+        "x": 242,
+        "y": 196
+       },
+       {
+        "key": "splusB",
+        "id": "section-plus",
+        "name": "Section Plus",
+        "cid": "HANDRAIL-001",
+        "group": "bowl-section-2",
+        "tier": "core",
+        "x": 242,
+        "y": 258
+       },
+       {
+        "key": "s2dB",
+        "id": "stand-2d",
+        "name": "Stand 2D",
+        "cid": "STAND2D-002",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 242,
+        "y": 320
+       },
+       {
+        "key": "vomB",
+        "id": "vomitory",
+        "name": "Vomitory",
+        "cid": "VOMITORY-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 242,
+        "y": 382
+       },
+       {
+        "key": "seatB",
+        "id": "seat",
+        "name": "Seat",
+        "cid": "SEAT-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 242,
+        "y": 444
+       },
+       {
+        "key": "cutB",
+        "id": "cut",
+        "name": "Cut",
+        "cid": "CUT-001",
+        "group": "bowl-section-3",
+        "tier": "core",
+        "x": 242,
+        "y": 506
+       },
+       {
+        "key": "standA",
+        "id": "stand-3d",
+        "name": "Stand 3D",
+        "cid": "STAND-001",
+        "group": "bowl-section-4",
+        "tier": "core",
+        "x": 474,
+        "y": 382
+       },
+       {
+        "key": "standB",
+        "id": "stand-3d",
+        "name": "Stand 3D",
+        "cid": "STAND-001",
+        "group": "bowl-section-4",
+        "tier": "core",
+        "x": 706,
+        "y": 382
+       },
+       {
+        "key": "bowl",
+        "id": "assemble-bowl",
+        "name": "Assemble Bowl",
+        "cid": "UTIL-004",
+        "group": "bowl-section-4",
+        "tier": "core",
+        "x": 10,
+        "y": 568
+       },
+       {
+        "key": "b3dm",
+        "id": "stand-3d-plus",
+        "name": "Stand 3D Plus",
+        "cid": "BUILD-001",
+        "group": "bowl-section-4",
+        "tier": "core",
+        "x": 10,
+        "y": 630
+       }
+      ],
+      "wires": [
+       {
+        "port": "Field Info",
+        "a": "field",
+        "b": "sl",
+        "kind": "main",
+        "d": "M110 44 V72"
+       },
+       {
+        "port": "Start Line",
+        "a": "sl",
+        "b": "axis",
+        "kind": "main",
+        "d": "M110 106 V134"
+       },
+       {
+        "port": "Field Info",
+        "a": "field",
+        "b": "secA",
+        "kind": "skip",
+        "d": "M110 44 V196"
+       },
+       {
+        "port": "Base Line",
+        "a": "axis",
+        "b": "secA",
+        "kind": "main",
+        "d": "M110 168 V196"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "secA",
+        "b": "splusA",
+        "kind": "main",
+        "d": "M110 230 V258"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "splusA",
+        "b": "s2dA",
+        "kind": "main",
+        "d": "M110 292 V320"
+       },
+       {
+        "port": "Axis",
+        "a": "axis",
+        "b": "s2dA",
+        "kind": "skip",
+        "d": "M110 168 V320"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "s2dA",
+        "b": "vomA",
+        "kind": "main",
+        "d": "M110 354 V382"
+       },
+       {
+        "port": "Axis",
+        "a": "s2dA",
+        "b": "vomA",
+        "kind": "main",
+        "d": "M110 354 V382"
+       },
+       {
+        "port": "Stand 2D",
+        "a": "s2dA",
+        "b": "vomA",
+        "kind": "main",
+        "d": "M110 354 V382"
+       },
+       {
+        "port": "Vomitory",
+        "a": "vomA",
+        "b": "seatA",
+        "kind": "main",
+        "d": "M110 416 V444"
+       },
+       {
+        "port": "Stand 2D",
+        "a": "vomA",
+        "b": "seatA",
+        "kind": "main",
+        "d": "M110 416 V444"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "vomA",
+        "b": "seatA",
+        "kind": "main",
+        "d": "M110 416 V444"
+       },
+       {
+        "port": "Axis",
+        "a": "vomA",
+        "b": "seatA",
+        "kind": "main",
+        "d": "M110 416 V444"
+       },
+       {
+        "port": "Seat Result",
+        "a": "seatA",
+        "b": "cutA",
+        "kind": "main",
+        "d": "M110 478 V506"
+       },
+       {
+        "port": "Handrail Sections",
+        "a": "splusA",
+        "b": "standA",
+        "kind": "skip",
+        "d": "M110 292 C110 337 574 337 574 382"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "s2dA",
+        "b": "standA",
+        "kind": "skip",
+        "d": "M110 354 C110 368 574 368 574 382"
+       },
+       {
+        "port": "Axis",
+        "a": "s2dA",
+        "b": "standA",
+        "kind": "skip",
+        "d": "M110 354 C110 368 574 368 574 382"
+       },
+       {
+        "port": "Field Info",
+        "a": "field",
+        "b": "secB",
+        "kind": "skip",
+        "d": "M110 44 C110 120 342 120 342 196"
+       },
+       {
+        "port": "Base Line",
+        "a": "axis",
+        "b": "secB",
+        "kind": "skip",
+        "d": "M110 168 C110 182 342 182 342 196"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "secB",
+        "b": "splusB",
+        "kind": "main",
+        "d": "M342 230 V258"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "splusB",
+        "b": "s2dB",
+        "kind": "main",
+        "d": "M342 292 V320"
+       },
+       {
+        "port": "Axis",
+        "a": "axis",
+        "b": "s2dB",
+        "kind": "skip",
+        "d": "M110 168 C110 244 342 244 342 320"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "s2dB",
+        "b": "vomB",
+        "kind": "main",
+        "d": "M342 354 V382"
+       },
+       {
+        "port": "Axis",
+        "a": "s2dB",
+        "b": "vomB",
+        "kind": "main",
+        "d": "M342 354 V382"
+       },
+       {
+        "port": "Stand 2D",
+        "a": "s2dB",
+        "b": "vomB",
+        "kind": "main",
+        "d": "M342 354 V382"
+       },
+       {
+        "port": "Vomitory",
+        "a": "vomB",
+        "b": "seatB",
+        "kind": "main",
+        "d": "M342 416 V444"
+       },
+       {
+        "port": "Stand 2D",
+        "a": "vomB",
+        "b": "seatB",
+        "kind": "main",
+        "d": "M342 416 V444"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "vomB",
+        "b": "seatB",
+        "kind": "main",
+        "d": "M342 416 V444"
+       },
+       {
+        "port": "Axis",
+        "a": "vomB",
+        "b": "seatB",
+        "kind": "main",
+        "d": "M342 416 V444"
+       },
+       {
+        "port": "Seat Result",
+        "a": "seatB",
+        "b": "cutB",
+        "kind": "main",
+        "d": "M342 478 V506"
+       },
+       {
+        "port": "Handrail Sections",
+        "a": "splusB",
+        "b": "standB",
+        "kind": "skip",
+        "d": "M342 292 C342 337 806 337 806 382"
+       },
+       {
+        "port": "Stand Sections",
+        "a": "s2dB",
+        "b": "standB",
+        "kind": "skip",
+        "d": "M342 354 C342 368 806 368 806 382"
+       },
+       {
+        "port": "Axis",
+        "a": "s2dB",
+        "b": "standB",
+        "kind": "skip",
+        "d": "M342 354 C342 368 806 368 806 382"
+       },
+       {
+        "port": "Stand Bodies",
+        "a": "standA",
+        "b": "bowl",
+        "kind": "skip",
+        "d": "M574 416 C574 492 110 492 110 568"
+       },
+       {
+        "port": "Stand Bodies",
+        "a": "standB",
+        "b": "bowl",
+        "kind": "main",
+        "d": "M806 416 C806 492 110 492 110 568"
+       },
+       {
+        "port": "Seat Results",
+        "a": "cutA",
+        "b": "bowl",
+        "kind": "skip",
+        "d": "M110 540 V568"
+       },
+       {
+        "port": "Seat Results",
+        "a": "cutB",
+        "b": "bowl",
+        "kind": "skip",
+        "d": "M342 540 C342 554 110 554 110 568"
+       },
+       {
+        "port": "Stand Body",
+        "a": "bowl",
+        "b": "b3dm",
+        "kind": "main",
+        "d": "M110 602 V630"
+       },
+       {
+        "port": "Seat Result",
+        "a": "bowl",
+        "b": "b3dm",
+        "kind": "main",
+        "d": "M110 602 V630"
+       }
+      ],
+      "skipped": 1
      }
     ]
    }

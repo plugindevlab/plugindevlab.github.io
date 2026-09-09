@@ -1,7 +1,8 @@
 ---
 title: The Antlion workflow
-description: The whole Antlion chain as one map you can wire yourself — plan, section, 2D layout, 3D solids, analysis. What order to use things in.
+description: The whole Antlion chain as one map, the standard component combinations that actually run, and where each component sits in the ribbon.
 wide: true
+full: true
 ---
 
 {%- assign prod = site.data.products | where: "slug", "antlion" | first -%}
@@ -13,14 +14,21 @@ wide: true
 # What order to use things in
 
 Most of the difficulty in a Grasshopper plugin is not *what exists* — it is *what comes
-next*. This is the whole chain in one view, and you can wire it here before you wire it in
-Grasshopper. Open a stage, put a component down, and the board will only accept the
-connections the plugin accepts.
+next*. This page has three answers to that, in order: the chain as a map, the combinations
+people actually build, and where each component sits in the ribbon.
 
-**It is not a single line.** Two strands run side by side — the plan and the section — and
-they meet at the 2D layout. A few connections even run back up the chain.
+**The chain is not a single line.** Two strands run side by side — the plan and the section
+— and they meet at the 2D layout. A few connections even run back up it.
 
 {% include board.html %}
+
+## Combinations that actually run
+
+These are not made-up examples. Each one is a definition our test harness builds and solves
+in Rhino, so if the plugin changes underneath them, they break there before they mislead you
+here. Click any component to read what it does.
+
+{% include combos.html %}
 
 ## The stages
 
@@ -54,11 +62,15 @@ they meet at the 2D layout. A few connections even run back up the chain.
 {%- endif %}
 {% endfor %}
 
-## Wiring the chain
+## Where things sit in the ribbon {#ribbon}
+
+{% include antlion-ribbon.html %}
+
+## How the ports connect
 
 A connection is allowed when the two ports carry the same type, when the input still has
 room — an *item* input holds one wire, a *list* input holds several — and when it does not
-loop back on itself. Those are the only three rules, and they are the plugin's own.
+loop back on itself. Those are the only three rules, and they are Grasshopper's own.
 
 Types are the short port nicknames you see on the canvas. The plugin keeps them stable when
 a component is renamed, which is exactly why a wire survives a rename. Every component page
