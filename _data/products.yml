@@ -8,20 +8,19 @@
   tiers: antlion/phase2_csharp/_tools/icon_audit.py
   flow:
     spine:
-      - { group: bowl-section-1, label: "Plan & setup" }
-      - { group: bowl-section-2, label: "Section" }
-      - { group: bowl-section-3, label: "2D layout" }
-      - { group: bowl-section-4, label: "3D solids" }
-      - { group: bowl-analysis, label: "Analysis" }
+      - { group: bowl-section-1, label: "Plan & setup", col: 0, row: 0 }
+      - { group: bowl-section-2, label: "Section",      col: 0, row: 1 }
+      - { group: bowl-section-3, label: "2D layout",    col: 1, row: 0 }
+      - { group: bowl-section-4, label: "3D solids",    col: 2, row: 0 }
+      - { group: bowl-analysis,  label: "Analysis",     col: 3, row: 0 }
     aside:
-      - { group: table, label: "Tables", into: bowl-section-2, col: 1 }
-      - { group: util, label: "Tools", into: "", col: 4 }
+      - { group: table, label: "Tables", col: 0, row: 2 }
+      - { group: util,  label: "Tools",  col: 3, row: 2 }
   nav:
     - { label: "Getting started", url: /antlion/getting-started/ }
     - { label: "Workflow", url: /antlion/workflow/ }
-    - { label: "Trainer", url: /antlion/trainer/ }
     - { label: "Components", url: /antlion/components/ }
-    - { label: "Reference", url: /antlion/reference/ }
+    - { label: "Ribbon", url: /antlion/ribbon/ }
     - { label: "Tutorials", url: /antlion/tutorials/ }
     - { label: "Troubleshooting", url: /antlion/troubleshooting/ }
     - { label: "Changelog", url: /antlion/changelog/ }

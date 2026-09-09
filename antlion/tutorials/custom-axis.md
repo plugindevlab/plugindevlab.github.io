@@ -6,7 +6,7 @@ generated: true
 
 # Custom Axis — placing sections on curves you draw
 
-`Antlion ▸ Bowl ▸ Section 1` · ID `AXIS-003` · ports: [reference](../reference/01-plan.md#custom-axis)
+`Antlion ▸ Bowl ▸ Section 1` · ID `AXIS-003` · ports: [reference](../components/custom-axis/index.html)
 
 Where `Axis` places axes automatically by rule (spacing, count), **`Custom Axis` makes
 your own curves the axes.** Use it to bring axis lines straight in from a CAD drawing,

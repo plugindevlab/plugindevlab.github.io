@@ -18,7 +18,7 @@ back a result you cannot argue with.
     <h3>{% if p.status == "shipped" %}<a href="/{{ p.slug }}/">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</h3>
     <p>{{ p.tagline }}</p>
     {%- if p.status == "shipped" %}
-    <p><a href="/{{ p.slug }}/workflow/">Workflow</a> · <a href="/{{ p.slug }}/reference/">Reference</a> · <a href="/{{ p.slug }}/changelog/">Changelog</a></p>
+    <p><a href="/{{ p.slug }}/workflow/">Workflow</a> · <a href="/{{ p.slug }}/components/">Components</a> · <a href="/{{ p.slug }}/changelog/">Changelog</a></p>
     {%- else %}
     <p class="label">In development</p>
     {%- endif %}

@@ -41,7 +41,7 @@ the design breaks down rather than checking one section and hoping.
 Section checks draw their evidence — dimensions and sightlines on the real cut — so a
 number you report is a number you can defend in a meeting.
 
-[Analysis components](reference/05-analysis-util.md)
+[Analysis components](components/index.html)
 </div>
 <figure class="fig">
 <div class="fig-wait">Image to come</div>
@@ -58,7 +58,7 @@ or Excel — read your inputs from a workbook, write the results back.
 
 Works in millimetre and inch documents.
 
-[Table components](reference/06-table.md)
+[Table components](components/index.html)
 </div>
 <figure class="fig">
 <div class="fig-wait">Image to come</div>
@@ -72,8 +72,11 @@ Works in millimetre and inch documents.
   definition that produces a bowl.
 - [**Workflow**](workflow/index.md) — the whole chain as a map. Start here if you are
   wondering what order to use things in.
-- [**Component reference**](reference/index.md) — every component, every port. Generated
-  from the plugin source, so it cannot disagree with the plugin you are running.
+- [**Components**](components/index.html) — every component, every port, with a diagram of
+  where each port sits on the capsule. Generated from the plugin source, so it cannot
+  disagree with the plugin you are running.
+- [**Ribbon map**](ribbon/index.md) — which panel and section each component lives in, for
+  when you know the plugin and just want to find the thing.
 - [**Tutorials**](tutorials/index.md) — the parts where the rules are not visible on screen.
 - [**Troubleshooting**](troubleshooting/index.md) — known symptoms, causes, and fixes.
 - [**Changelog**](changelog/index.md) — what changed in each release.

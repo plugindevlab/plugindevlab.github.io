@@ -127,7 +127,6 @@
     <div><dt>Ribbon</dt><dd>{{ comp.ribbon | join: " ▸ " }}</dd></div>
     {%- if comp.tier %}<div><dt>Tier</dt><dd>{{ comp.tier }}</dd></div>{% endif %}
     <div><dt>Ports</dt><dd>{{ nin }} in &middot; {{ nout }} out</dd></div>
-    <div><dt>Reference</dt><dd><a href="/{{ prod.slug }}/reference/{{ comp.page }}.html#{{ comp.id }}">{{ comp.page }}</a></dd></div>
     {%- if comp.checked %}<div><dt>Checked</dt><dd>{{ comp.checked }}</dd></div>{% endif %}
   </dl>
 </article>

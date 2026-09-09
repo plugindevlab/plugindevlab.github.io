@@ -7,13 +7,23 @@
 
   var G;
   try { G = JSON.parse(raw.textContent); } catch (e) { return; }
-  if (!G || !G.components || !G.components.length) { return; }
+  if (!G || !G.components || !G.components.length || !G.map) { return; }
 
-  var BY_ID = {};
-  G.components.forEach(function (c) { BY_ID[c.id] = c; });
+  var board = root.querySelector(".tr-board");
+  var map = root.querySelector(".tr-map");
+  var bar = root.querySelector(".tr-bar");
+  var say = root.querySelector(".tr-say");
+  if (!board || !map) { return; }
 
-  var STAGE_OF = {};
-  G.stages.forEach(function (s, i) { STAGE_OF[s.group] = i; });
+  var BY_ID = {}, BY_GROUP = {};
+  G.components.forEach(function (c) {
+    BY_ID[c.id] = c;
+    (BY_GROUP[c.group] = BY_GROUP[c.group] || []).push(c);
+  });
+  var BOX = {};
+  G.map.nodes.forEach(function (n) { BOX[n.group] = n; });
+  var STAGE = {};
+  G.stages.forEach(function (s) { STAGE[s.group] = s; });
 
   function wireable(c) {
     return c["in"].filter(function (p) {
@@ -34,21 +44,14 @@
   }
 
   var nodes = [];  var wires = [];  var seq = 0;
-  var armed = null;  var dragWire = null;
+  var armed = null;
+  var dragWire = null;
   var afterDrag = false;
-  var selected = null;
+  var moving = null;
 
-  root.innerHTML = "";
   root.classList.add("tr-live");
-
-  var bar = document.createElement("div");
-  bar.className = "tr-bar";
-  root.appendChild(bar);
-
-  var board = document.createElement("div");
-  board.className = "tr-board";
-  board.setAttribute("tabindex", "-1");
-  root.appendChild(board);
+  var fallback = root.querySelector(".tr-fallback");
+  if (fallback) { fallback.remove(); }
 
   var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("class", "tr-wires");
@@ -58,55 +61,91 @@
   ghost.setAttribute("class", "tr-ghost");
   svg.appendChild(ghost);
 
+  var pop = document.createElement("div");
+  pop.className = "tr-pop";
+  pop.hidden = true;
+  board.appendChild(pop);
+
   var panel = document.createElement("div");
   panel.className = "tr-panel";
   panel.hidden = true;
   root.appendChild(panel);
 
-  var say = document.createElement("p");
-  say.className = "tr-say";
-  say.setAttribute("role", "status");
-  root.appendChild(say);
+  var MAP_H = G.map.h;
+  var GAP = 26;
+  map.addEventListener("click", function (ev) {
+    var a = ev.target.closest ? ev.target.closest("a[data-stage]") : null;
+    if (!a) { return; }
+    ev.preventDefault();
+    openStage(a.getAttribute("data-stage"));
+  });
 
-  var palette = document.querySelector("[data-trainer-palette]");
-  if (palette) {
-    palette.addEventListener("click", function (ev) {
-      var a = ev.target.closest ? ev.target.closest("a[data-comp]") : null;
-      if (!a) { return; }
-      ev.preventDefault();
-      place(a.getAttribute("data-comp"));
+  function openStage(group) {
+    var box = BOX[group], list = BY_GROUP[group] || [];
+    if (!box || !list.length) { return; }
+    pop.innerHTML = '<div class="tr-pop-h"><b>' + esc(STAGE[group] ? STAGE[group].label : group)
+      + "</b><span>" + list.length + " components</span>"
+      + '<button type="button" class="tr-close" aria-label="Close">×</button></div>'
+      + '<div class="tr-chips">' + list.map(function (c) {
+        return '<a href="' + esc(root.getAttribute("data-comp-base") + c.id) + '/" data-comp="'
+          + esc(c.id) + '"><b>' + esc(c.name) + "</b>"
+          + (c.cid ? "<code>" + esc(c.cid) + "</code>" : "") + "</a>";
+      }).join("") + "</div>"
+      + '<p class="tr-pop-n">Click one to put it on the board. Its ports appear on the node.</p>';
+    pop.style.left = Math.min(box.x, Math.max(0, G.map.w - 300)) + "px";
+    pop.style.top = (box.y + box.h + 8) + "px";
+    pop.hidden = false;
+    tell(list.length + " components in " + (STAGE[group] ? STAGE[group].label : group) + ".");
+  }
+  pop.addEventListener("click", function (ev) {
+    if (ev.target.closest(".tr-close")) { pop.hidden = true; return; }
+    var a = ev.target.closest ? ev.target.closest("a[data-comp]") : null;
+    if (!a) { return; }
+    ev.preventDefault();
+    place(a.getAttribute("data-comp"));
+  });
+
+  var NODE_W = 236, ROW_H = 34;
+
+  function freeSpot(c) {
+    var feeders = nodes.filter(function (n) {
+      return BY_ID[n.id].out.some(function (o) {
+        return c["in"].some(function (i) { return i.t === o.t; });
+      });
     });
-  }
-
-  var COL_W = 268, ROW_H = 34, PAD = 18;
-
-  function column(c) {
-    var i = STAGE_OF[c.group];
-    return i === undefined ? G.stages.length : i;
-  }
-
-  function freeSpot(col) {
-    var y = PAD;
-    var taken = nodes.filter(function (n) { return n.col === col; });
-    taken.forEach(function (n) { y = Math.max(y, n.y + n.h + 14); });
-    return y;
+    var x, y;
+    if (feeders.length) {
+      var f = feeders[feeders.length - 1];
+      x = f.x + NODE_W + 44;
+      y = f.y;
+    } else {
+      var box = BOX[c.group];
+      x = box ? box.x : 10;
+      y = MAP_H + GAP;
+    }
+    var guard = 0;
+    while (guard++ < 60 && nodes.some(function (n) {
+      return Math.abs(n.x - x) < NODE_W - 20 && Math.abs(n.y - y) < n.h + 12;
+    })) {
+      y += 40;
+    }
+    return { x: x, y: Math.max(y, MAP_H + GAP) };
   }
 
   function place(id) {
     var c = BY_ID[id];
     if (!c) { return; }
-    var col = column(c);
+    var spot = freeSpot(c);
     var rows = Math.max(c["in"].length, c.out.length);
     var n = {
-      uid: "n" + (++seq), id: id, col: col,
-      x: PAD + col * COL_W, y: 0,
-      h: 44 + rows * ROW_H + 10,
+      uid: "n" + (++seq), id: id, group: c.group,
+      x: spot.x, y: spot.y, h: 44 + rows * ROW_H + 10,
       pins: { "in": [], out: [] }
     };
-    n.y = freeSpot(col);
     nodes.push(n);
     drawNode(n);
-    tell(c.name + " placed. Wire it from the ports on its left.");
+    pop.hidden = true;
+    tell(c.name + " is on the board. Wire it from the ports on its left.");
     redraw();
   }
 
@@ -116,9 +155,9 @@
     row.className = "tr-pin tr-" + side;
     row.setAttribute("data-side", side);
     row.setAttribute("data-i", String(i));
-    var external = !(G.types[p.t] && G.types[p.t].producers.length);
-    if (side === "in" && external) { row.classList.add("tr-ext"); }
-    row.innerHTML = '<i></i><b>' + esc(p.t) + "</b><em>" + esc(p.n) + "</em>";
+    var t = G.types[p.t];
+    if (side === "in" && !(t && t.producers.length)) { row.classList.add("tr-ext"); }
+    row.innerHTML = "<i></i><b>" + esc(p.t) + "</b><em>" + esc(p.n) + "</em>";
     row.title = p.n + " — " + p.t + " · " + p.a + (p.opt ? " · optional" : "");
     n.pins[side][i] = row;
     return row;
@@ -134,7 +173,7 @@
 
     var head = document.createElement("div");
     head.className = "tr-head";
-    head.innerHTML = '<b>' + esc(c.name) + "</b>" + (c.cid ? "<code>" + esc(c.cid) + "</code>" : "");
+    head.innerHTML = "<b>" + esc(c.name) + "</b>" + (c.cid ? "<code>" + esc(c.cid) + "</code>" : "");
     var kill = document.createElement("button");
     kill.type = "button";
     kill.className = "tr-kill";
@@ -155,6 +194,7 @@
 
     board.appendChild(el);
     n.el = el;
+    n.h = el.offsetHeight || n.h;
 
     kill.addEventListener("click", function (ev) { ev.stopPropagation(); remove(n); });
     head.addEventListener("click", function (ev) {
@@ -173,15 +213,13 @@
       if (afterDrag) { afterDrag = false; return; }
       tapPin(n, pin);
     });
-    n.h = el.offsetHeight || n.h;
   }
 
   function remove(n) {
-    wires.filter(function (w) { return w.a.node === n || w.b.node === n; })
-      .forEach(dropWire);
+    wires.filter(function (w) { return w.a.node === n || w.b.node === n; }).forEach(dropWire);
     nodes.splice(nodes.indexOf(n), 1);
     if (n.el) { n.el.remove(); }
-    if (selected === n) { closePanel(); }
+    closePanel();
     disarm();
     redraw();
   }
@@ -194,11 +232,16 @@
       if (cur === b) { return true; }
       if (seen[cur.uid]) { continue; }
       seen[cur.uid] = 1;
-      wires.forEach(function (w) {
-        if (w.a.node === cur) { stack.push(w.b.node); }
-      });
+      wires.forEach(function (w) { if (w.a.node === cur) { stack.push(w.b.node); } });
     }
     return false;
+  }
+
+  function wireInto(node, i) {
+    for (var k = 0; k < wires.length; k++) {
+      if (wires[k].b.node === node && wires[k].b.i === i) { return wires[k]; }
+    }
+    return null;
   }
 
   function refuse(outNode, oi, inNode, ii) {
@@ -215,13 +258,6 @@
     }
     if (reaches(inNode, outNode)) {
       return "That would loop back into itself. Grasshopper does not allow a cycle.";
-    }
-    return null;
-  }
-
-  function wireInto(node, i) {
-    for (var k = 0; k < wires.length; k++) {
-      if (wires[k].b.node === node && wires[k].b.i === i) { return wires[k]; }
     }
     return null;
   }
@@ -267,8 +303,8 @@
       disarm();
       armed = { node: n, i: i };
       pin.classList.add("tr-armed");
-      var t = BY_ID[n.id].out[i];
-      tell("Holding " + t.t + " from " + BY_ID[n.id].name + ". Now click an input that takes it.");
+      tell("Holding " + BY_ID[n.id].out[i].t + " from " + BY_ID[n.id].name
+        + ". Now click an input that takes it.");
       return;
     }
     if (armed) {
@@ -291,9 +327,7 @@
   function startWire(n, pin, ev) {
     if (pin.getAttribute("data-side") !== "out") { return; }
     ev.preventDefault();
-    var i = Number(pin.getAttribute("data-i"));
-    dragWire = { node: n, i: i, moved: false };
-    board.setPointerCapture ? board.setPointerCapture(ev.pointerId) : null;
+    dragWire = { node: n, i: Number(pin.getAttribute("data-i")), moved: false };
   }
 
   function boardPoint(ev) {
@@ -305,9 +339,7 @@
     if (moving) { onMove(ev); return; }
     if (!dragWire) { return; }
     dragWire.moved = true;
-    var from = pinPoint(dragWire.node, "out", dragWire.i);
-    var to = boardPoint(ev);
-    ghost.setAttribute("d", curve(from, to));
+    ghost.setAttribute("d", curve(pinPoint(dragWire.node, "out", dragWire.i), boardPoint(ev)));
   });
 
   board.addEventListener("pointerup", function (ev) {
@@ -316,23 +348,19 @@
     var d = dragWire;
     dragWire = null;
     ghost.removeAttribute("d");
-    if (!d.moved) { return; }    afterDrag = true;
+    if (!d.moved) { return; }
+    afterDrag = true;
     var el = document.elementFromPoint(ev.clientX, ev.clientY);
     var pin = el && el.closest ? el.closest(".tr-pin") : null;
-    if (!pin || pin.getAttribute("data-side") !== "in") {
-      tell("Drop it on an input port.");
-      return;
-    }
+    if (!pin || pin.getAttribute("data-side") !== "in") { tell("Drop it on an input port."); return; }
     var host = null;
     nodes.forEach(function (n) { if (n.el && n.el.contains(pin)) { host = n; } });
     if (host) { connect(d.node, d.i, host, Number(pin.getAttribute("data-i"))); }
   });
 
   document.addEventListener("keydown", function (ev) {
-    if (ev.key === "Escape") { disarm(); closePanel(); }
+    if (ev.key === "Escape") { disarm(); closePanel(); pop.hidden = true; }
   });
-
-  var moving = null;
 
   function startMove(n, ev) {
     if (ev.target.closest && ev.target.closest(".tr-kill")) { return; }
@@ -341,8 +369,7 @@
     n.el.classList.add("tr-moving");
   }
   function onMove(ev) {
-    var p = boardPoint(ev);
-    var n = moving.node;
+    var p = boardPoint(ev), n = moving.node;
     n.x = Math.max(0, p.x - moving.dx);
     n.y = Math.max(0, p.y - moving.dy);
     n.el.style.left = n.x + "px";
@@ -358,8 +385,7 @@
   function pinPoint(n, side, i) {
     var pin = n.pins[side][i];
     if (!pin) { return { x: n.x, y: n.y }; }
-    var pr = pin.getBoundingClientRect();
-    var br = board.getBoundingClientRect();
+    var pr = pin.getBoundingClientRect(), br = board.getBoundingClientRect();
     return {
       x: (side === "out" ? pr.right : pr.left) - br.left + board.scrollLeft,
       y: pr.top + pr.height / 2 - br.top + board.scrollTop
@@ -380,21 +406,19 @@
   }
 
   function grow() {
-    var w = 0, h = 0;
+    var w = G.map.w, h = MAP_H + GAP;
     nodes.forEach(function (n) {
-      w = Math.max(w, n.x + 250);
-      h = Math.max(h, n.y + (n.el ? n.el.offsetHeight : n.h));
+      w = Math.max(w, n.x + NODE_W + 10);
+      h = Math.max(h, n.y + (n.el ? n.el.offsetHeight : n.h) + 20);
     });
-    board.style.minHeight = Math.max(320, h + PAD) + "px";
-    svg.style.width = Math.max(board.clientWidth, w + PAD) + "px";
-    svg.style.height = Math.max(320, h + PAD) + "px";
+    board.style.minHeight = h + "px";
+    svg.style.width = w + "px";
+    svg.style.height = h + "px";
   }
 
   function reachedSet() {
     var got = {};
-    nodes.forEach(function (n) {
-      if (!wireable(BY_ID[n.id]).length) { got[n.uid] = 1; }
-    });
+    nodes.forEach(function (n) { if (!wireable(BY_ID[n.id]).length) { got[n.uid] = 1; } });
     var changed = true;
     while (changed) {
       changed = false;
@@ -413,43 +437,39 @@
   function redraw() {
     grow();
     redrawWires();
+    root.classList.toggle("tr-building", nodes.length > 0);
     var got = reachedSet();
-    nodes.forEach(function (n) {
-      n.el.classList.toggle("tr-floating", !got[n.uid]);
-    });
-    var done = 0;
-    var html = "";
-    G.stages.forEach(function (s, i) {
-      var here = nodes.filter(function (n) {
-        return BY_ID[n.id].group === s.group && got[n.uid];
-      });
+    nodes.forEach(function (n) { n.el.classList.toggle("tr-floating", !got[n.uid]); });
+
+    var spine = G.stages.filter(function (s) { return !s.aside; });
+    var done = 0, html = "";
+    spine.forEach(function (s, i) {
+      var here = nodes.filter(function (n) { return n.group === s.group && got[n.uid]; });
       if (here.length) { done++; }
       html += '<div class="' + (here.length ? "here" : "") + '" style="--st:var(--s'
         + (i + 1) + ')">' + (i + 1) + "<b>" + esc(s.label) + "</b></div>";
     });
-    bar.innerHTML = '<div class="stages">' + html + "</div>";
-
     var floating = nodes.length - Object.keys(got).length;
     var parts = [];
     if (!nodes.length) {
-      parts.push("Nothing on the board yet.");
+      parts.push("Open a stage on the map and put something down.");
     } else {
-      parts.push("Reached " + done + " of " + G.stages.length + " stages.");
+      parts.push("Reached " + done + " of " + spine.length + " stages.");
       if (floating > 0) {
         parts.push(floating === 1
           ? "One component is floating — nothing upstream reaches it."
           : floating + " components are floating — nothing upstream reaches them.");
       }
     }
-    if (done === G.stages.length && G.stages.length) {
-      parts.push("That is the bowl workflow, end to end.");
+    if (done === spine.length && spine.length) { parts.push("That is the bowl workflow, end to end."); }
+    if (bar) {
+      bar.innerHTML = '<div class="stages">' + html + '</div><p class="tr-score">'
+        + esc(parts.join(" ")) + "</p>";
     }
-    bar.insertAdjacentHTML("beforeend", '<p class="tr-score">' + esc(parts.join(" ")) + "</p>");
   }
 
   function openPanel(n) {
     var c = BY_ID[n.id];
-    selected = n;
     var rows = function (list, label) {
       if (!list.length) { return ""; }
       return "<h4>" + label + "</h4><ul>" + list.map(function (p) {
@@ -461,13 +481,15 @@
       + "<h3>" + esc(c.name) + (c.cid ? "<code>" + esc(c.cid) + "</code>" : "") + "</h3>"
       + (c.summary ? "<p>" + esc(c.summary) + "</p>" : "")
       + rows(c["in"], "Chain inputs") + rows(c.out, "Chain outputs")
-      + '<a class="tr-more" href="' + esc(root.getAttribute("data-comp-base") + c.id) + '/">Full description</a>';
+      + '<a class="tr-more" href="' + esc(root.getAttribute("data-comp-base") + c.id)
+      + '/">Full description</a>';
     panel.hidden = false;
     panel.querySelector(".tr-close").addEventListener("click", closePanel);
   }
-  function closePanel() { panel.hidden = true; selected = null; }
+  function closePanel() { panel.hidden = true; }
 
   function tell(msg, bad) {
+    if (!say) { return; }
     say.textContent = msg;
     say.classList.toggle("bad", !!bad);
   }
@@ -481,13 +503,14 @@
       nodes = [];
       disarm();
       closePanel();
+      pop.hidden = true;
       redraw();
-      tell("Board cleared.");
+      tell("Board cleared. The map is back to just the stages.");
     });
   }
 
   window.addEventListener("resize", function () { grow(); redrawWires(); });
 
   redraw();
-  tell("Pick a component on the left to put it on the board.");
+  tell("Click a stage on the map to see what is in it.");
 }());

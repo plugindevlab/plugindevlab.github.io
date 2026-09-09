@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "Antlion Component Reference"
-noindex: true
 generated: true
 ---
 
@@ -23,7 +22,7 @@ Everything lives under the **`Antlion` tab**, in four panels. Panels are divided
 
 ### Panel `Bowl` — the bowl pipeline
 
-- **Section 1 · Plan & Setup** → [01-plan.md](01-plan.md)
+- **Section 1 · Plan & Setup** → [01-plan.md](../components/index.html)
   `Field` · `Startline Rect` · `Startline Capsule` · `Startline Oval` · `Custom Startline` · `Axis` · `Custom Axis`
   Place the field, draw the line where the front row starts, set the axes the sections sit on.
   - **The four start lines form a continuum of shapes**: grow the corner radius and a
@@ -31,23 +30,23 @@ Everything lives under the **`Antlion` tab**, in four panels. Panels are divided
     corners) → `Capsule` (two straight sides, semicircular ends) → `Oval` (no straight
     sides) → `Custom Startline` (any curve you draw, open curves allowed).
 
-- **Section 2 · Section** → [02-section.md](02-section.md)
+- **Section 2 · Section** → [02-section.md](../components/index.html)
   `Section` · `Auto Section` · `Section Plus` · `Table Section`
   Build the stair section and attach extras such as railings and wheelchair platforms.
   **There are three ways to make a section** — `Section` reads a line you drew,
   `Auto Section` solves riser heights from a target C-value, `Table Section` builds it
   from workbook numbers. Downstream components cannot tell which way it came.
 
-- **Section 3 · 2D Plan Layout** → [03-plan2d.md](03-plan2d.md)
+- **Section 3 · 2D Plan Layout** → [03-plan2d.md](../components/index.html)
   `Stand 2D` · `Vomitory` · `Seat` · `Custom Seat` · `Cut` · `Opening Cut`
   Unroll the section onto the plan, place vomitories and seats, cut the bowl to shape.
   **Most design decisions happen here.**
 
-- **Section 4 · 3D Solids** → [04-body3d.md](04-body3d.md)
+- **Section 4 · 3D Solids** → [04-body3d.md](../components/index.html)
   `Stand 3D` · `Vom 3D` · `Assemble Bowl` · `Stand 3D Plus` · `Rail 3D` · `Seat 3D`
   Build what 2D decided as real solids.
 
-### Panel `Bowl Analysis` — checking → [05-analysis-util.md](05-analysis-util.md)
+### Panel `Bowl Analysis` — checking → [05-analysis-util.md](../components/index.html)
 
 `Section analysis` (C-value sightline check on one section) · `C-value Seat` (per-seat
 C-value map) · `C-value Tread` (per-tread-band C-value map) · `C-value Section Check`
@@ -64,13 +63,13 @@ distance limits) · `Seat View` (what a given seat actually sees).
 - **`Section Check` creates no values** — it only draws what `Tread` computed, so the
   `C digest:` line in both components' `debug` output must match to the letter.
 
-### Panel `Table` — spreadsheet round-trip → [06-table.md](06-table.md)
+### Panel `Table` — spreadsheet round-trip → [06-table.md](../components/index.html)
 
 `Google Workbook` · `Excel Workbook` (connect/create) · `Table In` (read) ·
 `Table Out` (write back). Values live in a spreadsheet instead of Rhino.
 **Communication happens only when you press Run.**
 
-### Panel `Util` — tools → [05-analysis-util.md](05-analysis-util.md)
+### Panel `Util` — tools → [05-analysis-util.md](../components/index.html)
 
 `License` (license registration) · `Input Panel` (gather inputs in one panel) ·
 `C-value Legend` · `Sheet Setup` (shared drawing-sheet format) · `Slider Merge` ·
