@@ -24,7 +24,13 @@
             <rect class="combo-tier" x="{{ n.x }}" y="{{ n.y }}" width="3" height="{{ r.nodeH }}"
                   style="fill:var(--tier-{{ n.tier }})"/>
             {%- endif %}
-            <text class="combo-t" x="{{ n.x | plus: 12 }}" y="{{ n.y | plus: 22 }}">{{ n.name }}</text>
+            {%- assign nl = n.lines | size -%}
+            {%- if nl > 1 %}
+            <text class="combo-t" x="{{ n.x | plus: 9 }}" y="{{ n.y | plus: 17 }}">{{ n.lines[0] }}</text>
+            <text class="combo-t" x="{{ n.x | plus: 9 }}" y="{{ n.y | plus: 30 }}">{{ n.lines[1] }}</text>
+            {%- else %}
+            <text class="combo-t" x="{{ n.x | plus: 9 }}" y="{{ n.y | plus: 24 }}">{{ n.name }}</text>
+            {%- endif %}
           </a>
           {%- endfor %}
         </svg>
