@@ -1,6 +1,6 @@
 ---
 title: The Antlion workflow
-description: The whole Antlion chain as one map, the standard component combinations that actually run, and where each component sits in the ribbon.
+description: Where every component sits in the ribbon, and the whole chain as one diagram — what order to use things in.
 wide: true
 full: true
 ---
@@ -14,21 +14,53 @@ full: true
 # What order to use things in
 
 Most of the difficulty in a Grasshopper plugin is not *what exists* — it is *what comes
-next*. This page has three answers to that, in order: the chain as a map, the combinations
-people actually build, and where each component sits in the ribbon.
+next*. This page answers that twice: first where every component sits in the ribbon, then
+the whole chain as a single diagram.
 
-**The chain is not a single line.** Two strands run side by side — the plan and the section
-— and they meet at the 2D layout. A few connections even run back up it.
+## Where things sit in the ribbon {#ribbon}
 
-{% include board.html %}
+{% include ribbon-fig.html %}
 
-## Combinations that actually run
+The tab holds four panels, and the panels are not four categories of thing — they are four
+kinds of work. **Bowl** builds geometry, and it is by far the largest because everything
+downstream hangs off it. **Bowl Analysis** measures what Bowl built: sightlines, C-values,
+seat maps, and the guides that make them legible. **Table** connects a workbook, so the
+numbers you would otherwise retype live in Excel or Google Sheets and come back in.
+**Util** is everything that helps without being part of the chain — a values panel, a
+legend, sheet setup, the licence.
 
-These are not made-up examples. Each one is a definition our test harness builds and solves
-in Rhino, so if the plugin changes underneath them, they break there before they mislead you
-here. Click any component to read what it does.
+**Inside a panel, the separators are the order of work, not a grouping of similar things.**
+Read a panel left to right, section by section, and you are reading the sequence you would
+actually build in. In Bowl that means the start line first, then the section through the
+stand, then the plan layout, then the 3D bodies. In Bowl Analysis it is the 2D check, then
+the 3D checks, then the drawings, then the on-screen guides. Nothing about that order is
+decoration: a component in a later section usually cannot run until something from an
+earlier one has produced its result.
 
-{% include combos.html %}
+That ordering is worth one warning, because it was broken until recently. Grasshopper sorts
+a panel by exposure first and then by name, so the only way to control the order inside a
+section is the name itself. Antlion carries an invisible sort prefix to do that, and on
+Rhino 8 the prefix it used was discarded by the runtime — every section quietly fell back to
+alphabetical. It is fixed, so what you see above is the intended order, but if you have an
+older build the panels will read alphabetically instead.
+
+{% include antlion-ribbon.html %}
+
+## The whole chain in one diagram
+
+Everything below is one picture on purpose. The chain is not a single line: two strands run
+side by side — the plan and the section — and they meet at the 2D layout. Follow it left to
+right; every shape is a link to that component's page.
+
+{% include flowmap.html %}
+
+**Arrows are order, not wiring.** Most of them are a real connection you could make on the
+canvas, but a few say *do this first* where no wire exists — the axis before the section,
+the bowl before you put a guide on it. The component pages carry the ports; this diagram
+carries the sequence.
+
+**Dotted links mean "instead of", not "as well as".** A custom start line replaces the built-in
+one; a table-driven section replaces the section you set by hand. Wire one or the other.
 
 ## The stages
 
@@ -61,12 +93,6 @@ here. Click any component to read what it does.
 </section>
 {%- endif %}
 {% endfor %}
-
-## Where things sit in the ribbon {#ribbon}
-
-{% include ribbon-fig.html %}
-
-{% include antlion-ribbon.html %}
 
 ## How the ports connect
 

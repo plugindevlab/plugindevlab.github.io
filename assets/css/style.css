@@ -477,3 +477,48 @@ figure.fig figcaption {
   .combos a:hover .combo-node { fill: var(--bg); stroke: var(--accent); }
   .combos a:hover .combo-t { fill: var(--accent); }
 }
+
+.fm-wrap { margin: 1.6rem 0 1.2rem; }
+.fm { width: 100%; height: auto; display: block; }
+
+.fm-shape { stroke-width: 1; transition: fill 120ms ease, stroke 120ms ease; }
+.fm-t { font: 400 10px/1 var(--font-body); text-anchor: middle; }
+.fm-n { text-decoration: none; }
+
+.fm-main .fm-shape { fill: var(--s4); stroke: var(--s4); }
+.fm-main .fm-t { fill: var(--paper); }
+
+.fm-alt .fm-shape { fill: var(--bg-soft); stroke: var(--frame); stroke-dasharray: 4 3; }
+.fm-alt .fm-t { fill: var(--ink-soft); }
+
+.fm-pick .fm-shape { fill: var(--panel); stroke: var(--s2); }
+.fm-pick .fm-t { fill: var(--ink); }
+
+.fm-table .fm-shape { fill: var(--bg-soft); stroke: var(--rule); }
+.fm-table .fm-t { fill: var(--ink); }
+
+.fm-guide .fm-shape { fill: none; stroke: var(--accent); stroke-width: 1.6; }
+.fm-guide .fm-t { fill: var(--accent); }
+
+.fm-wire { fill: none; stroke: var(--s4); stroke-width: 1.4; }
+.fm-head { fill: var(--s4); }
+.fm-swap { fill: none; stroke: var(--ink-faint); stroke-width: 1; stroke-dasharray: 3 4; }
+
+.fm-key {
+  list-style: none; margin: 0 0 var(--rhythm); padding: 0;
+  display: flex; flex-wrap: wrap; gap: .35rem 1.6rem;
+  font-size: .86rem; color: var(--ink-soft);
+}
+.fm-key li { display: flex; align-items: center; gap: .5rem; }
+.fm-key b { font-weight: 600; color: var(--ink); }
+.fm-key-ic { width: 14px; height: 14px; flex: none; display: inline-block; }
+.fm-key-main { background: var(--s4); border-radius: 50%; }
+.fm-key-alt { background: var(--bg-soft); border: 1px dashed var(--frame); transform: rotate(45deg); }
+.fm-key-pick { background: var(--panel); border: 1px solid var(--s2); border-radius: 5px; }
+.fm-key-table { background: var(--bg-soft); border: 1px solid var(--rule); border-radius: 2px; }
+.fm-key-guide { border: 1.6px solid var(--accent); border-radius: 50%; }
+
+@media (hover: hover) and (pointer: fine) {
+  .fm-n:hover .fm-shape { stroke: var(--accent); stroke-width: 2; }
+  .fm-main:hover .fm-shape { fill: var(--accent); }
+}

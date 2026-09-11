@@ -12,7 +12,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-09-08",
+     "checked": "2026-09-10",
      "summary": "Draws the playing field outline for a sport and the focal point every sightline is measured to. Start here — the rest of the chain hangs off field_info.",
      "inputs": [
       {
@@ -208,7 +208,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -444,7 +444,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 726,
         "callY": 510,
         "gripX": 632,
@@ -464,7 +464,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-09-08",
+     "checked": "2026-09-10",
      "summary": "Start line for the front row, offset outward from the field edge by a long-side and a short-side distance. Optional rounded or chamfered corners.",
      "inputs": [
       {
@@ -621,7 +621,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -812,7 +812,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 726,
         "callY": 406,
         "gripX": 632,
@@ -832,7 +832,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-09-08",
+     "checked": "2026-09-10",
      "summary": "Start line as a capsule - two equal semicircles joined by straight sides. The classic athletics track outline.",
      "inputs": [
       {
@@ -963,7 +963,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -1124,7 +1124,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 706,
         "callY": 362,
         "gripX": 612,
@@ -1144,7 +1144,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-09-08",
+     "checked": "2026-09-10",
      "summary": "Start line as an oval around the field — four tangent arcs, or a true ellipse. Use when the bowl has no straight sides.",
      "inputs": [
       {
@@ -1314,7 +1314,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -1520,7 +1520,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 732,
         "callY": 426,
         "gripX": 638,
@@ -1540,7 +1540,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-09-08",
+     "checked": "2026-09-10",
      "summary": "Start line taken from a curve you draw, aligned to the field frame. Use when no preset shape fits. An open curve gives a stand with two free ends.",
      "inputs": [
       {
@@ -1632,7 +1632,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -1748,7 +1748,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 699,
         "callY": 362,
         "gripX": 605,
@@ -1768,7 +1768,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-09-08",
+     "checked": "2026-09-10",
      "summary": "Divides the start line into the planes each stand section is placed on. Straight runs are split by an even module, arcs by a fixed count — so section spacing follows the shape.",
      "inputs": [
       {
@@ -1964,7 +1964,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -2200,7 +2200,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 711,
         "callY": 510,
         "gripX": 617,
@@ -2220,7 +2220,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-09-08",
+     "checked": "2026-09-10",
      "summary": "Section placement planes from axis curves you draw yourself. Each curve's crossing with the start line becomes an axis, numbered along the start line - those numbers are what Cut refers to.",
      "inputs": [
       {
@@ -2351,7 +2351,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -2512,7 +2512,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 698,
         "callY": 448,
         "gripX": 604,
@@ -2532,7 +2532,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-09-05",
+     "checked": "2026-09-10",
      "summary": "Turns the tread lines you draw into a tier section — rows, nosing and eye points, and the closed profile the stand is swept from. Draw one line per step; the component sorts them and works out the tiers.",
      "inputs": [
       {
@@ -2715,7 +2715,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -2936,7 +2936,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 702,
         "callY": 448,
         "gripX": 608,
@@ -2956,7 +2956,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-09-05",
+     "checked": "2026-09-10",
      "summary": "Works out the risers for you. Give it the tread depths and the minimum C-value you want to hold, and it raises each step by the smallest Riser Step increment that still clears that C-value - the shallowest bowl that meets the target. The front row starts on the start line, so wire the same field, focal point and start line that Section takes. Bake tread_lines if you want to fine-tune the steps by hand in Section afterwards.",
      "inputs": [
       {
@@ -3295,7 +3295,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -3696,7 +3696,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 726,
         "callY": 866,
         "gripX": 632,
@@ -3716,7 +3716,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-09-05",
+     "checked": "2026-09-10",
      "summary": "Adds the things a bare section does not have: the front barrier or handrail, accessible (wheelchair) rows, and the sightline check over the barrier. Sits between Section and Stand 2D — pure section geometry stays in Section.",
      "inputs": [
       {
@@ -3938,7 +3938,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -4204,7 +4204,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 742,
         "callY": 594,
         "gripX": 648,
@@ -4224,7 +4224,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-09-05",
+     "checked": "2026-09-10",
      "summary": "Builds the tier sections from the numbers in your workbook instead of lines you draw. Wire the book from Table In, plus the same field, focal point and start line that Section takes. The barrier settings live in the workbook too, so this one component does what Section and Section Plus do together - the outputs are the same.",
      "inputs": [
       {
@@ -4407,7 +4407,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -4628,7 +4628,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 708,
         "callY": 618,
         "gripX": 614,
@@ -4648,7 +4648,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-08-23",
+     "checked": "2026-09-10",
      "summary": "Sweeps each tier section around the axis planes and flattens it into tread rings in plan. Everything downstream — seats, vomitories, cuts — works on these rings.",
      "inputs": [
       {
@@ -4740,7 +4740,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -4856,7 +4856,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 698,
         "callY": 362,
         "gripX": 604,
@@ -4876,7 +4876,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-08-23",
+     "checked": "2026-09-10",
      "summary": "Places the vomitories — the tunnels spectators enter the bowl through — in the tread rings, and sets how each one gets down to the concourse: flat, stepped, stair or ramp.",
      "inputs": [
       {
@@ -5215,7 +5215,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -5616,7 +5616,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 738,
         "callY": 826,
         "gripX": 644,
@@ -5636,7 +5636,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-08-23",
+     "checked": "2026-09-10",
      "summary": "Fills the tread rings with seats, breaking each row at the vomitories and aisles, and flags rows that break the egress limits. Wheelchair spaces are placed here too.",
      "inputs": [
       {
@@ -6014,7 +6014,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -6460,7 +6460,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 740,
         "callY": 970,
         "gripX": 646,
@@ -6480,7 +6480,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-08-23",
+     "checked": "2026-09-10",
      "summary": "Same seat placement as Seat, but the vomitories, aisles and even the seats come from curves you draw instead of being generated. Use it where the automatic layout cannot express what you want.",
      "inputs": [
       {
@@ -6845,7 +6845,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -7276,7 +7276,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 742,
         "callY": 906,
         "gripX": 648,
@@ -7296,7 +7296,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-08-23",
+     "checked": "2026-09-10",
      "summary": "Cuts the bowl to shape — keep or remove a whole span between two axis numbers, or everything on one side of a curve you draw. Seats, aisles, vomitories and rings are all filtered together.",
      "inputs": [
       {
@@ -7544,7 +7544,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -7840,7 +7840,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 738,
         "callY": 724,
         "gripX": 644,
@@ -7860,7 +7860,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-08-23",
+     "checked": "2026-09-10",
      "summary": "Punches local entrance openings through the stand — between two axis numbers, or under a closed curve you draw. Unlike Cut it removes only what the opening covers, and it records the new edges as railing lines.",
      "inputs": [
       {
@@ -8147,7 +8147,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -8488,7 +8488,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 735,
         "callY": 876,
         "gripX": 641,
@@ -8508,7 +8508,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-09-03",
+     "checked": "2026-09-10",
      "summary": "Sweeps the closed section profile around the axis planes into the solid tier bodies. This is the raw stand — cuts and openings are applied later by Stand 3D Plus.",
      "inputs": [
       {
@@ -8652,7 +8652,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -8828,7 +8828,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 722,
         "callY": 384,
         "gripX": 628,
@@ -8848,7 +8848,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-09-03",
+     "checked": "2026-09-10",
      "summary": "Builds the vomitories as solids — the side and end walls, the portal opening punched through, and the stair or ramp down to the concourse.",
      "inputs": [
       {
@@ -9005,7 +9005,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -9196,7 +9196,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 726,
         "callY": 366,
         "gripX": 632,
@@ -9216,7 +9216,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-09-03",
+     "checked": "2026-09-10",
      "summary": "Builds the 3D bowl: cuts the stand solids with everything the 2D chain decided — shape cuts, entrance openings, vomitories — and lifts the seats and aisle steps to their real tread heights.",
      "inputs": [
       {
@@ -9347,7 +9347,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -9508,7 +9508,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 732,
         "callY": 362,
         "gripX": 638,
@@ -9528,7 +9528,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-09-03",
+     "checked": "2026-09-10",
      "summary": "Builds the railings and parapets as solids — the front barrier, the rear parapet, the edges left by a cut, and the walls around entrance openings.",
      "inputs": [
       {
@@ -9776,7 +9776,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -10072,7 +10072,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 736,
         "callY": 680,
         "gripX": 642,
@@ -10092,7 +10092,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-09-03",
+     "checked": "2026-09-10",
      "summary": "Assembles the final bowl plan before Stand 3D Plus: merges parallel seat layouts (tiers renumbered), pulls exposed cut ends past their axis by the offset, and previews the finished plan.",
      "inputs": [
       {
@@ -10275,7 +10275,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic including the tier map. Copy this when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs (includes the tier map). Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -10496,7 +10496,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic including the tier map",
+        "blurb": "Developer diagnostic output for tracking down bugs (includes the tier map)",
         "callX": 724,
         "callY": 534,
         "gripX": 630,
@@ -10516,7 +10516,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-09-03",
+     "checked": "2026-09-10",
      "summary": "Puts a chair and a seated spectator target on every seat of the built bowl. Wire the Stand 3D Plus BRD output. The ports carry one merged preview mesh per tier so twenty thousand seats stay light; bake the component itself (right-click, Bake) to plant real block instances - one definition, one instance per seat - so the document stays light too. The spectator is a flat target whose eye mark sits exactly on the eye point the C-value analysis measures from.",
      "inputs": [
       {
@@ -10725,7 +10725,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -10976,7 +10976,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 735,
         "callY": 550,
         "gripX": 641,
@@ -10995,7 +10995,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-05",
+     "checked": "2026-09-10",
      "summary": "Pick an Antlion component and set every value it takes, with sensible defaults shown. For when you are not sure what to wire in.",
      "inputs": [],
      "outputs": [
@@ -11053,7 +11053,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-05",
+     "checked": "2026-09-10",
      "summary": "Checks the sightline over the row in front, row by row, and reports the C-value. Draws the sightlines and dimensions so you can see where the view fails.",
      "inputs": [
       {
@@ -11275,7 +11275,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -11541,7 +11541,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 746,
         "callY": 704,
         "gripX": 652,
@@ -11560,7 +11560,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-05",
+     "checked": "2026-09-10",
      "summary": "Paints every seat with its own C-value, measured in 3D from that seat's eye to its own focus. Wire the Stand 3D Plus BRD output; add Rail 3D RLD to see where a railing, not a head, is the obstruction.",
      "inputs": [
       {
@@ -11860,7 +11860,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -12216,7 +12216,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 732,
         "callY": 894,
         "gripX": 638,
@@ -12235,7 +12235,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-05",
+     "checked": "2026-09-10",
      "summary": "Paints each tread band with the C-value of one representative section taken between two axes. One value per axis gap, so it is light enough to leave on while you tune the section. C-value Seat measures every seat instead - the two differ most on curves, where one section cannot stand for the whole band.",
      "inputs": [
       {
@@ -12548,7 +12548,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -12919,7 +12919,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 723,
         "callY": 1132,
         "gripX": 629,
@@ -12938,7 +12938,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-05",
+     "checked": "2026-09-10",
      "summary": "Builds an explicit colour legend for the C-value maps. Set the first number, the last number and the band size - the bands become <min, min to min+step, ... , >=max, each with its own colour. Leave colors unwired for the built-in ramp, or supply your own (interpolated when fewer than the band count). Wire scheme into C-value Seat or C-value Tread; the map is then coloured by these bands (color_mode is ignored) and C-value Map prints this legend on every sheet. It also carries the not-graded states - OPEN, FRONT, EMPTY and NA - as a fixed grey series, so every grey patch on the map is named on the sheet; the report output explains why each state appears and how to clear it. The component itself shows the legend on the canvas.",
      "inputs": [
       {
@@ -13193,7 +13193,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-05",
+     "checked": "2026-09-10",
      "summary": "Lays every axis section out on its own sheet so you can flip through them. One scale for the whole set, chosen so the largest section fits, and every section sits at the same place on its sheet.",
      "inputs": [
       {
@@ -13428,7 +13428,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       },
@@ -13735,7 +13735,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 730,
         "callY": 826,
         "gripX": 636,
@@ -13784,7 +13784,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-05",
+     "checked": "2026-09-10",
      "summary": "Holds the sheet layout settings in one place - where the sheets start, the paper size, how many sheets per row, the scale rounding, margins and the text style. Wire the SHD output into C-value Section Check, C-value Map and Seat Map so every sheet component lays out the same way from a single setup. When SHD is wired, the sheet inputs on those components are ignored.",
      "inputs": [
       {
@@ -14011,7 +14011,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-05",
+     "checked": "2026-09-10",
      "summary": "A stack of sliders in one component — each row Dk drives output Rk. Drag the bottom edge to add or remove rows; right-click to set ranges. Saves wiring a dozen separate sliders into per-tier inputs.",
      "inputs": [],
      "outputs": [
@@ -14069,7 +14069,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-05",
+     "checked": "2026-09-10",
      "summary": "A stack of toggles in one component — each row Dk drives output Rk. Drag the bottom edge to add or remove rows. Saves wiring a dozen separate toggles into per-tier inputs.",
      "inputs": [],
      "outputs": [
@@ -14127,7 +14127,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-05",
+     "checked": "2026-09-10",
      "summary": "Lays the C-value map out flat - one sheet per tier, named TIER 0, TIER 1 and so on, with the seat layout drawing, the coloured map and the tier's minimum, average and pass rate written top-left. Wire the CMD output of C-value Seat for a seat map, or of C-value Tread for a tread map - one at a time.",
      "inputs": [
       {
@@ -14271,7 +14271,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -14447,7 +14447,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 708,
         "callY": 618,
         "gripX": 614,
@@ -14466,7 +14466,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-05",
+     "checked": "2026-09-10",
      "summary": "Holds the wire shut. Whatever changes upstream, nothing downstream recomputes until you press PASS - then the data at D goes through R once and stays there. Put it between the 2D bowl chain and the heavy 3D build or analysis components: edit the bowl lag-free, press to update. The Gate Switch component opens and closes every gate on the canvas at once. Reopening a file behaves like the moment it was saved: a gate that was holding data picks it up again on load (one full compute, like opening any normal file), and a gate that was empty stays shut.",
      "inputs": [
       {
@@ -14553,7 +14553,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-05",
+     "checked": "2026-09-10",
      "summary": "Groups the seats into zones - the pieces left when the aisles, vomitories and cuts are taken out of the tier - and gives every seat a readable address like \"A0 05 S 25\": prefix and tier number, zone number counted along the axis direction, then the seat number running from the lowest tread up. Wheelchair units belong to their zone too, numbered \"W 1\", \"W 2\". Outputs the SMD bundle for Seat View and Seat 3D, a zone map laid out one sheet per tier, and flat tables ready for a spreadsheet. Wire the BRD output of Stand 3D Plus; wire SHD from Sheet Setup to place the sheets",
      "inputs": [
       {
@@ -14749,7 +14749,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -14985,7 +14985,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 711,
         "callY": 876,
         "gripX": 617,
@@ -15004,7 +15004,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-05",
+     "checked": "2026-09-10",
      "summary": "Register your Antlion license key. Enter the key once — every definition on this computer is unlocked.",
      "inputs": [
       {
@@ -15147,7 +15147,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-05",
+     "checked": "2026-09-10",
      "summary": "Looks through a spectator's eyes. Wire the Seat Map SMD and pick a seat by tier, zone and seat number - or type its address like \"A0 05 S 25\" - press apply, and the perspective viewport jumps to that seat's analysis eye point looking at its own focal point - the same eye and focus the C-value map measures. Turn live on and the yaw and pitch sliders let you look around from the fixed eye point, so you can judge a vomitory rail or a cut-edge railing exactly as the seated spectator would see it.",
      "inputs": [
       {
@@ -15343,7 +15343,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -15579,7 +15579,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 708,
         "callY": 478,
         "gripX": 614,
@@ -15598,7 +15598,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-05",
+     "checked": "2026-09-10",
      "summary": "Tags every axis with its number — a guide line running out from each axis point into a circle holding the axis name (A0, A1, ...). The numbers are the same ones Cut and Opening Cut expect in axis_from / opening_from, so you can read them here and leave those heavy previews off.",
      "inputs": [
       {
@@ -15729,7 +15729,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -15890,7 +15890,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 706,
         "callY": 362,
         "gripX": 612,
@@ -15909,7 +15909,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-05",
+     "checked": "2026-09-10",
      "summary": "Draws the optimum and maximum viewing distance circles for a sport and counts how many seats fall outside. Reference only — it never removes a seat; wire limit_curves into Cut if you want it enforced.",
      "inputs": [
       {
@@ -16092,7 +16092,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -16313,7 +16313,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 728,
         "callY": 534,
         "gripX": 634,
@@ -16332,7 +16332,7 @@
      ],
      "group": "table",
      "page": "06-table",
-     "checked": "2026-08-24",
+     "checked": "2026-09-10",
      "summary": "Creates an .xlsx workbook you can fill in with Excel, with the input pages already laid out, and hands the reference to Table In and Table Out. Give the project folder, optionally a file name (the folder name is used when empty), and press Run - an existing file connects, a missing file is made there. No internet or sign-in is needed, so this is the path that works on closed networks. The reference is saved with the Grasshopper file; because it is a file path, moving the workbook or the .gh means picking the file again. The 10-series pages are yours and are written only at creation; the 80-series pages belong to the plugin.",
      "inputs": [
       {
@@ -16450,7 +16450,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -16596,7 +16596,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 694,
         "callY": 262,
         "gripX": 600,
@@ -16615,7 +16615,7 @@
      ],
      "group": "table",
      "page": "06-table",
-     "checked": "2026-08-24",
+     "checked": "2026-09-10",
      "summary": "Creates a spreadsheet you can fill in by hand, with the input pages already laid out, and hands the reference to Table In and Table Out. Press Run once - the reference is saved with the Grasshopper file, so reopening it stays connected to the same workbook. After that you only edit the sheet and press Run on Table In; you do not need this component again. The 10-series pages are yours and are written only at creation; the 80-series pages belong to the plugin.",
      "inputs": [
       {
@@ -16746,7 +16746,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -16907,7 +16907,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 716,
         "callY": 290,
         "gripX": 622,
@@ -16926,7 +16926,7 @@
      ],
      "group": "table",
      "page": "06-table",
-     "checked": "2026-08-24",
+     "checked": "2026-09-10",
      "summary": "Reads the workbook's input pages and gives you the values to build from. Wire the workbook reference and press run. Values are looked up by column and key name, so inserting rows or reordering columns in the spreadsheet is safe. What was read is stored with the Grasshopper file, so the canvas keeps working without pressing run again.",
      "inputs": [
       {
@@ -17057,7 +17057,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       },
@@ -17244,7 +17244,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 711,
         "callY": 656,
         "gripX": 617,
@@ -17293,7 +17293,7 @@
      ],
      "group": "table",
      "page": "06-table",
-     "checked": "2026-08-24",
+     "checked": "2026-09-10",
      "summary": "Writes analysis results into the workbook's result pages. Wire the workbook reference and the result objects - section, analysis, seat map or C-value map - and press run. Each result type knows which page it belongs on. The plugin owns those pages and rewrites them every run; copy rows into the input pages if you want to keep and edit them.",
      "inputs": [
       {
@@ -17372,7 +17372,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One-line diagnostic. Copy this text when reporting a problem",
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -17473,7 +17473,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "One-line diagnostic",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 708,
         "callY": 192,
         "gripX": 614,
@@ -22023,6 +22023,1509 @@
       "skipped": 1
      }
     ],
+    "flowmap": {
+     "w": 1500,
+     "h": 580,
+     "nodeW": 72,
+     "nodeH": 72,
+     "r": 36,
+     "cols": 15,
+     "rows": 6,
+     "nodes": [
+      {
+       "key": "field",
+       "id": "field",
+       "kind": "main",
+       "label": "Field",
+       "col": 0,
+       "row": 2,
+       "members": "Field",
+       "tier": "core",
+       "summary": "Draws the playing field outline for a sport and the focal point every sightline is measured to.",
+       "x": 14,
+       "y": 206,
+       "cx": 50,
+       "cy": 242,
+       "lines": [
+        {
+         "t": "Field",
+         "y": 246
+        }
+       ]
+      },
+      {
+       "key": "startline-rect",
+       "id": "startline-rect",
+       "kind": "main",
+       "label": "Startline",
+       "col": 1,
+       "row": 2,
+       "members": "Startline Rect, Startline Capsule, Startline Oval",
+       "tier": "core",
+       "summary": "Start line for the front row, offset outward from the field edge by a long-side and a short-side distance.",
+       "x": 114,
+       "y": 206,
+       "cx": 150,
+       "cy": 242,
+       "lines": [
+        {
+         "t": "Startline",
+         "y": 246
+        }
+       ]
+      },
+      {
+       "key": "custom-startline",
+       "id": "custom-startline",
+       "kind": "pick",
+       "label": "Custom Startline",
+       "col": 1,
+       "row": 4,
+       "members": "Custom Startline",
+       "tier": "core",
+       "summary": "Start line taken from a curve you draw, aligned to the field frame.",
+       "x": 114,
+       "y": 398,
+       "cx": 150,
+       "cy": 434,
+       "lines": [
+        {
+         "t": "Custom",
+         "y": 433
+        },
+        {
+         "t": "Startline",
+         "y": 444
+        }
+       ]
+      },
+      {
+       "key": "auto-section",
+       "id": "auto-section",
+       "kind": "alt",
+       "label": "Auto Section",
+       "col": 2,
+       "row": 0,
+       "members": "Auto Section",
+       "tier": "core",
+       "summary": "Works out the risers for you.",
+       "x": 214,
+       "y": 14,
+       "cx": 250,
+       "cy": 50,
+       "lines": [
+        {
+         "t": "Auto",
+         "y": 49
+        },
+        {
+         "t": "Section",
+         "y": 60
+        }
+       ]
+      },
+      {
+       "key": "section",
+       "id": "section",
+       "kind": "main",
+       "label": "Section",
+       "col": 2,
+       "row": 1,
+       "members": "Section",
+       "tier": "core",
+       "summary": "Turns the tread lines you draw into a tier section — rows, nosing and eye points, and the closed profile the stand is swept from.",
+       "x": 214,
+       "y": 110,
+       "cx": 250,
+       "cy": 146,
+       "lines": [
+        {
+         "t": "Section",
+         "y": 150
+        }
+       ]
+      },
+      {
+       "key": "axis",
+       "id": "axis",
+       "kind": "main",
+       "label": "Axis",
+       "col": 2,
+       "row": 2,
+       "members": "Axis",
+       "tier": "core",
+       "summary": "Divides the start line into the planes each stand section is placed on.",
+       "x": 214,
+       "y": 206,
+       "cx": 250,
+       "cy": 242,
+       "lines": [
+        {
+         "t": "Axis",
+         "y": 246
+        }
+       ]
+      },
+      {
+       "key": "custom-axis",
+       "id": "custom-axis",
+       "kind": "pick",
+       "label": "Custom Axis",
+       "col": 2,
+       "row": 4,
+       "members": "Custom Axis",
+       "tier": "core",
+       "summary": "Section placement planes from axis curves you draw yourself.",
+       "x": 214,
+       "y": 398,
+       "cx": 250,
+       "cy": 434,
+       "lines": [
+        {
+         "t": "Custom",
+         "y": 433
+        },
+        {
+         "t": "Axis",
+         "y": 444
+        }
+       ]
+      },
+      {
+       "key": "table-section",
+       "id": "table-section",
+       "kind": "alt",
+       "label": "Table Section",
+       "col": 3,
+       "row": 0,
+       "members": "Table Section",
+       "tier": "core",
+       "summary": "Builds the tier sections from the numbers in your workbook instead of lines you draw.",
+       "x": 314,
+       "y": 14,
+       "cx": 350,
+       "cy": 50,
+       "lines": [
+        {
+         "t": "Table",
+         "y": 49
+        },
+        {
+         "t": "Section",
+         "y": 60
+        }
+       ]
+      },
+      {
+       "key": "section-plus",
+       "id": "section-plus",
+       "kind": "main",
+       "label": "Section Plus",
+       "col": 3,
+       "row": 1,
+       "members": "Section Plus",
+       "tier": "core",
+       "summary": "Adds the things a bare section does not have: the front barrier or handrail, accessible (wheelchair) rows, and the sightline check over the barrier.",
+       "x": 314,
+       "y": 110,
+       "cx": 350,
+       "cy": 146,
+       "lines": [
+        {
+         "t": "Section",
+         "y": 145
+        },
+        {
+         "t": "Plus",
+         "y": 156
+        }
+       ]
+      },
+      {
+       "key": "section-analysis",
+       "id": "section-analysis",
+       "kind": "table",
+       "label": "Section analysis",
+       "col": 4,
+       "row": 1,
+       "members": "Section analysis",
+       "tier": "core",
+       "summary": "Checks the sightline over the row in front, row by row, and reports the C-value.",
+       "x": 414,
+       "y": 110,
+       "cx": 450,
+       "cy": 146,
+       "lines": [
+        {
+         "t": "Section",
+         "y": 145
+        },
+        {
+         "t": "analysis",
+         "y": 156
+        }
+       ]
+      },
+      {
+       "key": "view-axis-plan",
+       "id": "view-axis",
+       "kind": "guide",
+       "label": "View Axis",
+       "col": 4,
+       "row": 3,
+       "members": "View Axis",
+       "tier": "core",
+       "summary": "Tags every axis with its number — a guide line running out from each axis point into a circle holding the axis name (A0, A1, ...).",
+       "x": 414,
+       "y": 302,
+       "cx": 450,
+       "cy": 338,
+       "lines": [
+        {
+         "t": "View",
+         "y": 337
+        },
+        {
+         "t": "Axis",
+         "y": 348
+        }
+       ]
+      },
+      {
+       "key": "stand-2d",
+       "id": "stand-2d",
+       "kind": "main",
+       "label": "Stand 2D",
+       "col": 5,
+       "row": 2,
+       "members": "Stand 2D",
+       "tier": "core",
+       "summary": "Sweeps each tier section around the axis planes and flattens it into tread rings in plan.",
+       "x": 514,
+       "y": 206,
+       "cx": 550,
+       "cy": 242,
+       "lines": [
+        {
+         "t": "Stand",
+         "y": 241
+        },
+        {
+         "t": "2D",
+         "y": 252
+        }
+       ]
+      },
+      {
+       "key": "vomitory",
+       "id": "vomitory",
+       "kind": "main",
+       "label": "Vomitory",
+       "col": 6,
+       "row": 2,
+       "members": "Vomitory",
+       "tier": "core",
+       "summary": "Places the vomitories — the tunnels spectators enter the bowl through — in the tread rings, and sets how each one gets down to the concourse: flat...",
+       "x": 614,
+       "y": 206,
+       "cx": 650,
+       "cy": 242,
+       "lines": [
+        {
+         "t": "Vomitory",
+         "y": 246
+        }
+       ]
+      },
+      {
+       "key": "seat",
+       "id": "seat",
+       "kind": "main",
+       "label": "Seat",
+       "col": 7,
+       "row": 2,
+       "members": "Seat",
+       "tier": "core",
+       "summary": "Fills the tread rings with seats, breaking each row at the vomitories and aisles, and flags rows that break the egress limits.",
+       "x": 714,
+       "y": 206,
+       "cx": 750,
+       "cy": 242,
+       "lines": [
+        {
+         "t": "Seat",
+         "y": 246
+        }
+       ]
+      },
+      {
+       "key": "custom-seat",
+       "id": "custom-seat",
+       "kind": "pick",
+       "label": "Custom Seat",
+       "col": 7,
+       "row": 4,
+       "members": "Custom Seat",
+       "tier": "core",
+       "summary": "Same seat placement as Seat, but the vomitories, aisles and even the seats come from curves you draw instead of being generated.",
+       "x": 714,
+       "y": 398,
+       "cx": 750,
+       "cy": 434,
+       "lines": [
+        {
+         "t": "Custom",
+         "y": 433
+        },
+        {
+         "t": "Seat",
+         "y": 444
+        }
+       ]
+      },
+      {
+       "key": "stand-3d",
+       "id": "stand-3d",
+       "kind": "main",
+       "label": "Stand 3D",
+       "col": 8,
+       "row": 1,
+       "members": "Stand 3D",
+       "tier": "core",
+       "summary": "Sweeps the closed section profile around the axis planes into the solid tier bodies.",
+       "x": 814,
+       "y": 110,
+       "cx": 850,
+       "cy": 146,
+       "lines": [
+        {
+         "t": "Stand",
+         "y": 145
+        },
+        {
+         "t": "3D",
+         "y": 156
+        }
+       ]
+      },
+      {
+       "key": "cut",
+       "id": "cut",
+       "kind": "main",
+       "label": "Cut",
+       "col": 8,
+       "row": 2,
+       "members": "Cut",
+       "tier": "core",
+       "summary": "Cuts the bowl to shape — keep or remove a whole span between two axis numbers, or everything on one side of a curve you draw.",
+       "x": 814,
+       "y": 206,
+       "cx": 850,
+       "cy": 242,
+       "lines": [
+        {
+         "t": "Cut",
+         "y": 246
+        }
+       ]
+      },
+      {
+       "key": "opening-cut",
+       "id": "opening-cut",
+       "kind": "main",
+       "label": "Opening Cut",
+       "col": 9,
+       "row": 2,
+       "members": "Opening Cut",
+       "tier": "core",
+       "summary": "Punches local entrance openings through the stand — between two axis numbers, or under a closed curve you draw.",
+       "x": 914,
+       "y": 206,
+       "cx": 950,
+       "cy": 242,
+       "lines": [
+        {
+         "t": "Opening",
+         "y": 241
+        },
+        {
+         "t": "Cut",
+         "y": 252
+        }
+       ]
+      },
+      {
+       "key": "vom-3d",
+       "id": "vom-3d",
+       "kind": "main",
+       "label": "Vom 3D",
+       "col": 10,
+       "row": 2,
+       "members": "Vom 3D",
+       "tier": "core",
+       "summary": "Builds the vomitories as solids — the side and end walls, the portal opening punched through, and the stair or ramp down to the concourse.",
+       "x": 1014,
+       "y": 206,
+       "cx": 1050,
+       "cy": 242,
+       "lines": [
+        {
+         "t": "Vom",
+         "y": 241
+        },
+        {
+         "t": "3D",
+         "y": 252
+        }
+       ]
+      },
+      {
+       "key": "assemble-bowl",
+       "id": "assemble-bowl",
+       "kind": "main",
+       "label": "Assemble Bowl",
+       "col": 11,
+       "row": 2,
+       "members": "Assemble Bowl",
+       "tier": "core",
+       "summary": "Assembles the final bowl plan before Stand 3D Plus: merges parallel seat layouts (tiers renumbered), pulls exposed cut ends past their axis by the...",
+       "x": 1114,
+       "y": 206,
+       "cx": 1150,
+       "cy": 242,
+       "lines": [
+        {
+         "t": "Assemble",
+         "y": 241
+        },
+        {
+         "t": "Bowl",
+         "y": 252
+        }
+       ]
+      },
+      {
+       "key": "view-axis-bowl",
+       "id": "view-axis",
+       "kind": "guide",
+       "label": "View Axis",
+       "col": 11,
+       "row": 5,
+       "members": "View Axis",
+       "tier": "core",
+       "summary": "Tags every axis with its number — a guide line running out from each axis point into a circle holding the axis name (A0, A1, ...).",
+       "x": 1114,
+       "y": 494,
+       "cx": 1150,
+       "cy": 530,
+       "lines": [
+        {
+         "t": "View",
+         "y": 529
+        },
+        {
+         "t": "Axis",
+         "y": 540
+        }
+       ]
+      },
+      {
+       "key": "rail-3d",
+       "id": "rail-3d",
+       "kind": "main",
+       "label": "Rail 3D",
+       "col": 12,
+       "row": 1,
+       "members": "Rail 3D",
+       "tier": "core",
+       "summary": "Builds the railings and parapets as solids — the front barrier, the rear parapet, the edges left by a cut, and the walls around entrance openings.",
+       "x": 1214,
+       "y": 110,
+       "cx": 1250,
+       "cy": 146,
+       "lines": [
+        {
+         "t": "Rail",
+         "y": 145
+        },
+        {
+         "t": "3D",
+         "y": 156
+        }
+       ]
+      },
+      {
+       "key": "stand-3d-plus",
+       "id": "stand-3d-plus",
+       "kind": "main",
+       "label": "Stand 3D Plus",
+       "col": 12,
+       "row": 2,
+       "members": "Stand 3D Plus",
+       "tier": "core",
+       "summary": "Builds the 3D bowl: cuts the stand solids with everything the 2D chain decided — shape cuts, entrance openings, vomitories — and lifts the seats and...",
+       "x": 1214,
+       "y": 206,
+       "cx": 1250,
+       "cy": 242,
+       "lines": [
+        {
+         "t": "Stand",
+         "y": 235
+        },
+        {
+         "t": "3D",
+         "y": 246
+        },
+        {
+         "t": "Plus",
+         "y": 257
+        }
+       ]
+      },
+      {
+       "key": "c-value-seat",
+       "id": "c-value-seat",
+       "kind": "table",
+       "label": "C-value Seat",
+       "col": 13,
+       "row": 1,
+       "members": "C-value Seat",
+       "tier": "core",
+       "summary": "Paints every seat with its own C-value, measured in 3D from that seat's eye to its own focus.",
+       "x": 1314,
+       "y": 110,
+       "cx": 1350,
+       "cy": 146,
+       "lines": [
+        {
+         "t": "C-value",
+         "y": 145
+        },
+        {
+         "t": "Seat",
+         "y": 156
+        }
+       ]
+      },
+      {
+       "key": "c-value-tread",
+       "id": "c-value-tread",
+       "kind": "table",
+       "label": "C-value Tread",
+       "col": 13,
+       "row": 2,
+       "members": "C-value Tread",
+       "tier": "core",
+       "summary": "Paints each tread band with the C-value of one representative section taken between two axes.",
+       "x": 1314,
+       "y": 206,
+       "cx": 1350,
+       "cy": 242,
+       "lines": [
+        {
+         "t": "C-value",
+         "y": 241
+        },
+        {
+         "t": "Tread",
+         "y": 252
+        }
+       ]
+      },
+      {
+       "key": "seat-map",
+       "id": "seat-map",
+       "kind": "table",
+       "label": "Seat Map",
+       "col": 13,
+       "row": 4,
+       "members": "Seat Map",
+       "tier": "core",
+       "summary": "Groups the seats into zones - the pieces left when the aisles, vomitories and cuts are taken out of the tier - and gives every seat a readable...",
+       "x": 1314,
+       "y": 398,
+       "cx": 1350,
+       "cy": 434,
+       "lines": [
+        {
+         "t": "Seat",
+         "y": 433
+        },
+        {
+         "t": "Map",
+         "y": 444
+        }
+       ]
+      },
+      {
+       "key": "c-value-map",
+       "id": "c-value-map",
+       "kind": "main",
+       "label": "C-value Map",
+       "col": 14,
+       "row": 1,
+       "members": "C-value Map",
+       "tier": "core",
+       "summary": "Lays the C-value map out flat - one sheet per tier, named TIER 0, TIER 1 and so on, with the seat layout drawing, the coloured map and the tier's...",
+       "x": 1414,
+       "y": 110,
+       "cx": 1450,
+       "cy": 146,
+       "lines": [
+        {
+         "t": "C-value",
+         "y": 145
+        },
+        {
+         "t": "Map",
+         "y": 156
+        }
+       ]
+      },
+      {
+       "key": "c-value-section-check",
+       "id": "c-value-section-check",
+       "kind": "main",
+       "label": "C-value Section Check",
+       "col": 14,
+       "row": 2,
+       "members": "C-value Section Check",
+       "tier": "core",
+       "summary": "Lays every axis section out on its own sheet so you can flip through them.",
+       "x": 1414,
+       "y": 206,
+       "cx": 1450,
+       "cy": 242,
+       "lines": [
+        {
+         "t": "C-value",
+         "y": 235
+        },
+        {
+         "t": "Section",
+         "y": 246
+        },
+        {
+         "t": "Check",
+         "y": 257
+        }
+       ]
+      },
+      {
+       "key": "seat-view",
+       "id": "seat-view",
+       "kind": "main",
+       "label": "Seat View",
+       "col": 14,
+       "row": 4,
+       "members": "Seat View",
+       "tier": "core",
+       "summary": "Looks through a spectator's eyes.",
+       "x": 1414,
+       "y": 398,
+       "cx": 1450,
+       "cy": 434,
+       "lines": [
+        {
+         "t": "Seat",
+         "y": 433
+        },
+        {
+         "t": "View",
+         "y": 444
+        }
+       ]
+      }
+     ],
+     "wires": [
+      {
+       "d": "M86 234 H96 Q100 234 100 238 V238 Q100 242 104 242 H114",
+       "a": "field",
+       "b": "startline-rect",
+       "real": true,
+       "title": "Field → Startline"
+      },
+      {
+       "d": "M186 242 H196 Q200 242 200 238 V238 Q200 234 204 234 H214",
+       "a": "startline-rect",
+       "b": "axis",
+       "real": true,
+       "title": "Startline → Axis"
+      },
+      {
+       "d": "M186 434 H193 Q200 434 200 427 V256 Q200 249 207 249 H214",
+       "a": "custom-startline",
+       "b": "axis",
+       "real": true,
+       "title": "Custom Startline → Axis"
+      },
+      {
+       "d": "M250 206 V182",
+       "a": "axis",
+       "b": "section",
+       "real": false,
+       "title": "Axis → Section"
+      },
+      {
+       "d": "M286 146 H297 Q300 146 300 149 V150 Q300 153 303 153 H314",
+       "a": "section",
+       "b": "section-plus",
+       "real": true,
+       "title": "Section → Section Plus"
+      },
+      {
+       "d": "M286 50 H293 Q300 50 300 57 V131 Q300 138 307 138 H314",
+       "a": "auto-section",
+       "b": "section-plus",
+       "real": true,
+       "title": "Auto Section → Section Plus"
+      },
+      {
+       "d": "M386 138 H393 Q400 138 400 145 V146 Q400 153 407 153 H414",
+       "a": "section-plus",
+       "b": "section-analysis",
+       "real": true,
+       "title": "Section Plus → Section analysis"
+      },
+      {
+       "d": "M386 50 H393 Q400 50 400 57 V131 Q400 138 407 138 H414",
+       "a": "table-section",
+       "b": "section-analysis",
+       "real": true,
+       "title": "Table Section → Section analysis"
+      },
+      {
+       "d": "M286 234 H496 Q500 234 500 238 V238 Q500 242 504 242 H514",
+       "a": "axis",
+       "b": "stand-2d",
+       "real": true,
+       "title": "Axis → Stand 2D"
+      },
+      {
+       "d": "M286 249 H393 Q400 249 400 256 V331 Q400 338 407 338 H414",
+       "a": "axis",
+       "b": "view-axis-plan",
+       "real": true,
+       "title": "Axis → View Axis"
+      },
+      {
+       "d": "M386 153 H393 Q400 153 400 160 V224 Q400 231 407 231 H514",
+       "a": "section-plus",
+       "b": "stand-2d",
+       "real": true,
+       "title": "Section Plus → Stand 2D"
+      },
+      {
+       "d": "M286 434 H493 Q500 434 500 427 V259 Q500 252 507 252 H514",
+       "a": "custom-axis",
+       "b": "stand-2d",
+       "real": true,
+       "title": "Custom Axis → Stand 2D"
+      },
+      {
+       "d": "M86 249 H93 Q100 249 100 256 V523 Q100 530 107 530 H1114",
+       "a": "field",
+       "b": "view-axis-bowl",
+       "real": false,
+       "title": "Field → View Axis"
+      },
+      {
+       "d": "M586 242 H614",
+       "a": "stand-2d",
+       "b": "vomitory",
+       "real": true,
+       "title": "Stand 2D → Vomitory"
+      },
+      {
+       "d": "M586 231 H593 Q600 231 600 224 V153 Q600 146 607 146 H814",
+       "a": "stand-2d",
+       "b": "stand-3d",
+       "real": true,
+       "title": "Stand 2D → Stand 3D"
+      },
+      {
+       "d": "M586 252 H593 Q600 252 600 259 V427 Q600 434 607 434 H714",
+       "a": "stand-2d",
+       "b": "custom-seat",
+       "real": true,
+       "title": "Stand 2D → Custom Seat"
+      },
+      {
+       "d": "M686 242 H714",
+       "a": "vomitory",
+       "b": "seat",
+       "real": true,
+       "title": "Vomitory → Seat"
+      },
+      {
+       "d": "M786 242 H796 Q800 242 800 238 V238 Q800 234 804 234 H814",
+       "a": "seat",
+       "b": "cut",
+       "real": true,
+       "title": "Seat → Cut"
+      },
+      {
+       "d": "M786 434 H793 Q800 434 800 427 V256 Q800 249 807 249 H814",
+       "a": "custom-seat",
+       "b": "cut",
+       "real": true,
+       "title": "Custom Seat → Cut"
+      },
+      {
+       "d": "M886 242 H914",
+       "a": "cut",
+       "b": "opening-cut",
+       "real": true,
+       "title": "Cut → Opening Cut"
+      },
+      {
+       "d": "M986 242 H1014",
+       "a": "opening-cut",
+       "b": "vom-3d",
+       "real": true,
+       "title": "Opening Cut → Vom 3D"
+      },
+      {
+       "d": "M1086 242 H1097 Q1100 242 1100 245 V246 Q1100 249 1103 249 H1114",
+       "a": "vom-3d",
+       "b": "assemble-bowl",
+       "real": true,
+       "title": "Vom 3D → Assemble Bowl"
+      },
+      {
+       "d": "M886 146 H1093 Q1100 146 1100 153 V227 Q1100 234 1107 234 H1114",
+       "a": "stand-3d",
+       "b": "assemble-bowl",
+       "real": true,
+       "title": "Stand 3D → Assemble Bowl"
+      },
+      {
+       "d": "M1186 242 H1214",
+       "a": "assemble-bowl",
+       "b": "stand-3d-plus",
+       "real": true,
+       "title": "Assemble Bowl → Stand 3D Plus"
+      },
+      {
+       "d": "M1150 278 V494",
+       "a": "assemble-bowl",
+       "b": "view-axis-bowl",
+       "real": false,
+       "title": "Assemble Bowl → View Axis"
+      },
+      {
+       "d": "M1250 206 V182",
+       "a": "stand-3d-plus",
+       "b": "rail-3d",
+       "real": true,
+       "title": "Stand 3D Plus → Rail 3D"
+      },
+      {
+       "d": "M1286 231 H1293 Q1300 231 1300 224 V160 Q1300 153 1307 153 H1314",
+       "a": "stand-3d-plus",
+       "b": "c-value-seat",
+       "real": true,
+       "title": "Stand 3D Plus → C-value Seat"
+      },
+      {
+       "d": "M1286 242 H1297 Q1300 242 1300 245 V246 Q1300 249 1303 249 H1314",
+       "a": "stand-3d-plus",
+       "b": "c-value-tread",
+       "real": true,
+       "title": "Stand 3D Plus → C-value Tread"
+      },
+      {
+       "d": "M1286 252 H1293 Q1300 252 1300 259 V427 Q1300 434 1307 434 H1314",
+       "a": "stand-3d-plus",
+       "b": "seat-map",
+       "real": true,
+       "title": "Stand 3D Plus → Seat Map"
+      },
+      {
+       "d": "M1286 138 H1314",
+       "a": "rail-3d",
+       "b": "c-value-seat",
+       "real": true,
+       "title": "Rail 3D → C-value Seat"
+      },
+      {
+       "d": "M1286 153 H1287 Q1294 153 1294 160 V227 Q1294 234 1301 234 H1314",
+       "a": "rail-3d",
+       "b": "c-value-tread",
+       "real": true,
+       "title": "Rail 3D → C-value Tread"
+      },
+      {
+       "d": "M1386 146 H1396 Q1400 146 1400 142 V142 Q1400 138 1404 138 H1414",
+       "a": "c-value-seat",
+       "b": "c-value-map",
+       "real": true,
+       "title": "C-value Seat → C-value Map"
+      },
+      {
+       "d": "M1386 234 H1393 Q1400 234 1400 227 V160 Q1400 153 1407 153 H1414",
+       "a": "c-value-tread",
+       "b": "c-value-map",
+       "real": true,
+       "title": "C-value Tread → C-value Map"
+      },
+      {
+       "d": "M1386 249 H1397 Q1400 249 1400 246 V245 Q1400 242 1403 242 H1414",
+       "a": "c-value-tread",
+       "b": "c-value-section-check",
+       "real": true,
+       "title": "C-value Tread → C-value Section Check"
+      },
+      {
+       "d": "M1386 434 H1414",
+       "a": "seat-map",
+       "b": "seat-view",
+       "real": true,
+       "title": "Seat Map → Seat View"
+      }
+     ],
+     "swaps": [
+      {
+       "d": "M150 398 V278",
+       "title": "Custom Startline stands in for Startline"
+      },
+      {
+       "d": "M250 398 V278",
+       "title": "Custom Axis stands in for Axis"
+      },
+      {
+       "d": "M250 86 V110",
+       "title": "Auto Section stands in for Section"
+      },
+      {
+       "d": "M350 86 V110",
+       "title": "Table Section stands in for Section Plus"
+      },
+      {
+       "d": "M750 398 V278",
+       "title": "Custom Seat stands in for Seat"
+      }
+     ],
+     "segs": [
+      [
+       86,
+       234,
+       100,
+       234
+      ],
+      [
+       100,
+       234,
+       100,
+       242
+      ],
+      [
+       100,
+       242,
+       114,
+       242
+      ],
+      [
+       186,
+       242,
+       200,
+       242
+      ],
+      [
+       200,
+       234,
+       200,
+       242
+      ],
+      [
+       200,
+       234,
+       214,
+       234
+      ],
+      [
+       186,
+       434,
+       200,
+       434
+      ],
+      [
+       200,
+       249,
+       200,
+       434
+      ],
+      [
+       200,
+       249,
+       214,
+       249
+      ],
+      [
+       250,
+       182,
+       250,
+       206
+      ],
+      [
+       286,
+       146,
+       300,
+       146
+      ],
+      [
+       300,
+       146,
+       300,
+       153
+      ],
+      [
+       300,
+       153,
+       314,
+       153
+      ],
+      [
+       286,
+       50,
+       300,
+       50
+      ],
+      [
+       300,
+       50,
+       300,
+       138
+      ],
+      [
+       300,
+       138,
+       314,
+       138
+      ],
+      [
+       386,
+       138,
+       400,
+       138
+      ],
+      [
+       400,
+       138,
+       400,
+       153
+      ],
+      [
+       400,
+       153,
+       414,
+       153
+      ],
+      [
+       386,
+       50,
+       400,
+       50
+      ],
+      [
+       400,
+       50,
+       400,
+       138
+      ],
+      [
+       400,
+       138,
+       414,
+       138
+      ],
+      [
+       286,
+       234,
+       500,
+       234
+      ],
+      [
+       500,
+       234,
+       500,
+       242
+      ],
+      [
+       500,
+       242,
+       514,
+       242
+      ],
+      [
+       286,
+       249,
+       400,
+       249
+      ],
+      [
+       400,
+       249,
+       400,
+       338
+      ],
+      [
+       400,
+       338,
+       414,
+       338
+      ],
+      [
+       386,
+       153,
+       400,
+       153
+      ],
+      [
+       400,
+       153,
+       400,
+       231
+      ],
+      [
+       400,
+       231,
+       514,
+       231
+      ],
+      [
+       286,
+       434,
+       500,
+       434
+      ],
+      [
+       500,
+       252,
+       500,
+       434
+      ],
+      [
+       500,
+       252,
+       514,
+       252
+      ],
+      [
+       86,
+       249,
+       100,
+       249
+      ],
+      [
+       100,
+       249,
+       100,
+       530
+      ],
+      [
+       100,
+       530,
+       1114,
+       530
+      ],
+      [
+       586,
+       242,
+       614,
+       242
+      ],
+      [
+       586,
+       231,
+       600,
+       231
+      ],
+      [
+       600,
+       146,
+       600,
+       231
+      ],
+      [
+       600,
+       146,
+       814,
+       146
+      ],
+      [
+       586,
+       252,
+       600,
+       252
+      ],
+      [
+       600,
+       252,
+       600,
+       434
+      ],
+      [
+       600,
+       434,
+       714,
+       434
+      ],
+      [
+       686,
+       242,
+       714,
+       242
+      ],
+      [
+       786,
+       242,
+       800,
+       242
+      ],
+      [
+       800,
+       234,
+       800,
+       242
+      ],
+      [
+       800,
+       234,
+       814,
+       234
+      ],
+      [
+       786,
+       434,
+       800,
+       434
+      ],
+      [
+       800,
+       249,
+       800,
+       434
+      ],
+      [
+       800,
+       249,
+       814,
+       249
+      ],
+      [
+       886,
+       242,
+       914,
+       242
+      ],
+      [
+       986,
+       242,
+       1014,
+       242
+      ],
+      [
+       1086,
+       242,
+       1100,
+       242
+      ],
+      [
+       1100,
+       242,
+       1100,
+       249
+      ],
+      [
+       1100,
+       249,
+       1114,
+       249
+      ],
+      [
+       886,
+       146,
+       1100,
+       146
+      ],
+      [
+       1100,
+       146,
+       1100,
+       234
+      ],
+      [
+       1100,
+       234,
+       1114,
+       234
+      ],
+      [
+       1186,
+       242,
+       1214,
+       242
+      ],
+      [
+       1150,
+       278,
+       1150,
+       494
+      ],
+      [
+       1250,
+       182,
+       1250,
+       206
+      ],
+      [
+       1286,
+       231,
+       1300,
+       231
+      ],
+      [
+       1300,
+       153,
+       1300,
+       231
+      ],
+      [
+       1300,
+       153,
+       1314,
+       153
+      ],
+      [
+       1286,
+       242,
+       1300,
+       242
+      ],
+      [
+       1300,
+       242,
+       1300,
+       249
+      ],
+      [
+       1300,
+       249,
+       1314,
+       249
+      ],
+      [
+       1286,
+       252,
+       1300,
+       252
+      ],
+      [
+       1300,
+       252,
+       1300,
+       434
+      ],
+      [
+       1300,
+       434,
+       1314,
+       434
+      ],
+      [
+       1286,
+       138,
+       1314,
+       138
+      ],
+      [
+       1286,
+       153,
+       1294,
+       153
+      ],
+      [
+       1294,
+       153,
+       1294,
+       234
+      ],
+      [
+       1294,
+       234,
+       1314,
+       234
+      ],
+      [
+       1386,
+       146,
+       1400,
+       146
+      ],
+      [
+       1400,
+       138,
+       1400,
+       146
+      ],
+      [
+       1400,
+       138,
+       1414,
+       138
+      ],
+      [
+       1386,
+       234,
+       1400,
+       234
+      ],
+      [
+       1400,
+       153,
+       1400,
+       234
+      ],
+      [
+       1400,
+       153,
+       1414,
+       153
+      ],
+      [
+       1386,
+       249,
+       1400,
+       249
+      ],
+      [
+       1400,
+       242,
+       1400,
+       249
+      ],
+      [
+       1400,
+       242,
+       1414,
+       242
+      ],
+      [
+       1386,
+       434,
+       1414,
+       434
+      ]
+     ],
+     "order_only": [
+      "Axis → Section",
+      "Field → View Axis",
+      "Assemble Bowl → View Axis"
+     ],
+     "back": []
+    },
     "ribbon": {
      "w": 848,
      "h": 189,

@@ -1,0 +1,75 @@
+antlion:
+  nodes:
+    - id: field                  col: 0   row: 2  kind: main
+    - id: startline-rect         col: 1   row: 2  kind: main   also: startline-capsule, startline-oval
+    - id: custom-startline       col: 1   row: 4  kind: pick
+    - id: auto-section           col: 2   row: 0  kind: alt
+    - id: section                col: 2   row: 1  kind: main
+    - id: axis                   col: 2   row: 2  kind: main
+    - id: custom-axis            col: 2   row: 4  kind: pick
+    - id: table-section          col: 3   row: 0  kind: alt
+    - id: section-plus           col: 3   row: 1  kind: main
+    - id: section-analysis       col: 4   row: 1  kind: table
+    - id: view-axis              col: 4   row: 3  kind: guide  as: view-axis-plan
+    - id: stand-2d               col: 5   row: 2  kind: main
+    - id: vomitory               col: 6   row: 2  kind: main
+    - id: seat                   col: 7   row: 2  kind: main
+    - id: custom-seat            col: 7   row: 4  kind: pick
+    - id: stand-3d               col: 8   row: 1  kind: main
+    - id: cut                    col: 8   row: 2  kind: main
+    - id: opening-cut            col: 9   row: 2  kind: main
+    - id: vom-3d                 col: 10  row: 2  kind: main
+    - id: assemble-bowl          col: 11  row: 2  kind: main
+    - id: view-axis              col: 11  row: 5  kind: guide  as: view-axis-bowl
+    - id: rail-3d                col: 12  row: 1  kind: main
+    - id: stand-3d-plus          col: 12  row: 2  kind: main
+    - id: c-value-seat           col: 13  row: 1  kind: table
+    - id: c-value-tread          col: 13  row: 2  kind: table
+    - id: seat-map               col: 13  row: 4  kind: table
+    - id: c-value-map            col: 14  row: 1  kind: main
+    - id: c-value-section-check  col: 14  row: 2  kind: main
+    - id: seat-view              col: 14  row: 4  kind: main
+
+  wires:
+    - field > startline-rect
+    - startline-rect > axis
+    - custom-startline > axis
+    - axis > section
+    - section > section-plus
+    - auto-section > section-plus
+    - section-plus > section-analysis
+    - table-section > section-analysis
+    - axis > stand-2d
+    - axis > view-axis-plan
+    - section-plus > stand-2d
+    - custom-axis > stand-2d
+    - field > view-axis-bowl
+    - stand-2d > vomitory
+    - stand-2d > stand-3d
+    - stand-2d > custom-seat
+    - vomitory > seat
+    - seat > cut
+    - custom-seat > cut
+    - cut > opening-cut
+    - opening-cut > vom-3d
+    - vom-3d > assemble-bowl
+    - stand-3d > assemble-bowl
+    - assemble-bowl > stand-3d-plus
+    - assemble-bowl > view-axis-bowl
+    - stand-3d-plus > rail-3d
+    - stand-3d-plus > c-value-seat
+    - stand-3d-plus > c-value-tread
+    - stand-3d-plus > seat-map
+    - rail-3d > c-value-seat
+    - rail-3d > c-value-tread
+    - c-value-seat > c-value-map
+    - c-value-tread > c-value-map
+    - c-value-tread > c-value-section-check
+    - seat-map > seat-view
+
+  swaps:
+    - custom-startline ~ startline-rect
+    - custom-axis ~ axis
+    - auto-section ~ section
+    - table-section ~ section-plus
+    - custom-seat ~ seat

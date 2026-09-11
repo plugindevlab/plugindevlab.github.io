@@ -1,8 +1,8 @@
 {
  "_about": "Generated from a Grasshopper capture run - do not edit by hand. Coordinates are CSS pixels (1x); the PNG is rendered at 'scale'.",
- "captured": "2026-09-09T18:22:16.3775653+09:00",
+ "captured": "2026-09-12T08:08:10.3221828+09:00",
  "gh": "8.33.26188.13001",
- "source": "req-20260909-182206-225.json",
+ "source": "req-20260912-080809-807.json",
  "components": {
   "Auto Section": {
    "id": "auto-section",
