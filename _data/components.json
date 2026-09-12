@@ -232,6 +232,7 @@
       "h": 786,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 178,
       "imgW": 210,
@@ -652,6 +653,7 @@
       "h": 616,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 142,
       "imgW": 210,
@@ -1001,6 +1003,7 @@
       "h": 444,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 104,
       "imgW": 190,
@@ -1359,6 +1362,7 @@
       "h": 702,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 160,
       "imgW": 216,
@@ -1684,6 +1688,7 @@
       "h": 444,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 104,
       "imgW": 183,
@@ -2030,6 +2035,7 @@
       "h": 786,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 178,
       "imgW": 195,
@@ -2431,6 +2437,7 @@
       "h": 530,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 123,
       "imgW": 182,
@@ -2807,6 +2814,7 @@
       "h": 786,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 178,
       "imgW": 186,
@@ -3399,6 +3407,7 @@
       "h": 1642,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 364,
       "imgW": 210,
@@ -4055,6 +4064,7 @@
       "h": 872,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 197,
       "imgW": 226,
@@ -4539,6 +4549,7 @@
       "h": 702,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 160,
       "imgW": 192,
@@ -4888,6 +4899,7 @@
       "h": 444,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 104,
       "imgW": 182,
@@ -5379,6 +5391,7 @@
       "h": 1556,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 345,
       "imgW": 222,
@@ -6196,6 +6209,7 @@
       "h": 1642,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 364,
       "imgW": 224,
@@ -7045,6 +7059,7 @@
       "h": 1642,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 364,
       "imgW": 226,
@@ -7757,6 +7772,7 @@
       "h": 872,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 197,
       "imgW": 222,
@@ -8373,6 +8389,7 @@
       "h": 958,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 216,
       "imgW": 219,
@@ -8892,6 +8909,7 @@
       "h": 530,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 123,
       "imgW": 206,
@@ -9256,6 +9274,7 @@
       "h": 702,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 160,
       "imgW": 210,
@@ -9614,6 +9633,7 @@
       "h": 444,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 104,
       "imgW": 216,
@@ -10050,6 +10070,7 @@
       "h": 958,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 216,
       "imgW": 220,
@@ -10561,6 +10582,7 @@
       "h": 616,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 142,
       "imgW": 208,
@@ -11016,6 +11038,7 @@
       "h": 1128,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 252,
       "imgW": 219,
@@ -11297,11 +11320,12 @@
      "after": [],
      "tier": "free",
      "figure": {
-      "w": 1144,
+      "w": 716,
       "h": 156,
       "callW": 340,
       "callH": 63,
-      "imgX": 428,
+      "lead": 88,
+      "imgX": 0,
       "imgY": 30,
       "imgW": 288,
       "imgH": 96,
@@ -11317,11 +11341,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Every value set in this panel, as one bundle",
-        "callX": 804,
+        "callX": 376,
         "callY": 24,
-        "gripX": 713,
+        "gripX": 285,
         "gripY": 56,
-        "d": "M804 55 H790 L725 56 H713"
+        "d": "M376 55 H362 L297 56 H285"
        }
       ]
      }
@@ -11573,11 +11597,12 @@
      "after": [],
      "tier": "core",
      "figure": {
-      "w": 1086,
+      "w": 1082,
       "h": 786,
       "callW": 340,
       "callH": 63,
-      "imgX": 428,
+      "lead": 86,
+      "imgX": 426,
       "imgY": 178,
       "imgW": 230,
       "imgH": 282,
@@ -11595,9 +11620,9 @@
         "blurb": "The sections to check, from Section or Section Plus",
         "callX": 0,
         "callY": 168,
-        "gripX": 434,
+        "gripX": 432,
         "gripY": 200,
-        "d": "M340 199 H354 L422 200 H434"
+        "d": "M340 199 H354 L420 200 H432"
        },
        {
         "side": "in",
@@ -11610,9 +11635,9 @@
         "blurb": "STANDARD aims straight at the focal point, VARIABLE_CORNER allows for the corners",
         "callX": 0,
         "callY": 236,
-        "gripX": 434,
+        "gripX": 432,
         "gripY": 234,
-        "d": "M340 267 H354 L422 234 H434"
+        "d": "M340 267 H354 L420 234 H432"
        },
        {
         "side": "in",
@@ -11625,9 +11650,9 @@
         "blurb": "Rows below this are reported POOR",
         "callX": 0,
         "callY": 302,
-        "gripX": 434,
+        "gripX": 432,
         "gripY": 268,
-        "d": "M340 333 H354 L422 268 H434"
+        "d": "M340 333 H354 L420 268 H432"
        },
        {
         "side": "in",
@@ -11640,9 +11665,9 @@
         "blurb": "Draw the dimension annotations",
         "callX": 0,
         "callY": 370,
-        "gripX": 434,
+        "gripX": 432,
         "gripY": 301,
-        "d": "M340 401 H354 L422 301 H434"
+        "d": "M340 401 H354 L420 301 H432"
        },
        {
         "side": "in",
@@ -11655,9 +11680,9 @@
         "blurb": "How far the dimension lines sit from the geometry",
         "callX": 0,
         "callY": 436,
-        "gripX": 434,
+        "gripX": 432,
         "gripY": 336,
-        "d": "M340 467 H354 L422 336 H434"
+        "d": "M340 467 H354 L420 336 H432"
        },
        {
         "side": "in",
@@ -11670,9 +11695,9 @@
         "blurb": "Dimension text height",
         "callX": 0,
         "callY": 504,
-        "gripX": 434,
+        "gripX": 432,
         "gripY": 368,
-        "d": "M340 535 H354 L422 368 H434"
+        "d": "M340 535 H354 L420 368 H432"
        },
        {
         "side": "in",
@@ -11685,9 +11710,9 @@
         "blurb": "A Rhino dimension style to draw with",
         "callX": 0,
         "callY": 570,
-        "gripX": 434,
+        "gripX": 432,
         "gripY": 403,
-        "d": "M340 601 H354 L422 403 H434"
+        "d": "M340 601 H354 L420 403 H432"
        },
        {
         "side": "in",
@@ -11700,9 +11725,9 @@
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
         "callY": 638,
-        "gripX": 434,
+        "gripX": 432,
         "gripY": 436,
-        "d": "M340 669 H354 L422 436 H434"
+        "d": "M340 669 H354 L420 436 H432"
        },
        {
         "side": "out",
@@ -11713,11 +11738,11 @@
         "access": "list",
         "flow": true,
         "blurb": "The full result per tier",
-        "callX": 746,
+        "callX": 742,
         "callY": 168,
-        "gripX": 652,
+        "gripX": 650,
         "gripY": 199,
-        "d": "M746 199 H652"
+        "d": "M742 199 H650"
        },
        {
         "side": "out",
@@ -11728,11 +11753,11 @@
         "access": "list",
         "flow": false,
         "blurb": "C-value dimensions for rows that pass",
-        "callX": 746,
+        "callX": 742,
         "callY": 234,
-        "gripX": 652,
+        "gripX": 650,
         "gripY": 229,
-        "d": "M746 265 H732 L664 229 H652"
+        "d": "M742 265 H728 L662 229 H650"
        },
        {
         "side": "out",
@@ -11743,11 +11768,11 @@
         "access": "list",
         "flow": false,
         "blurb": "C-value dimensions for rows that fail",
-        "callX": 746,
+        "callX": 742,
         "callY": 302,
-        "gripX": 652,
+        "gripX": 650,
         "gripY": 259,
-        "d": "M746 333 H732 L664 259 H652"
+        "d": "M742 333 H728 L662 259 H650"
        },
        {
         "side": "out",
@@ -11758,11 +11783,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Riser height dimension on each step",
-        "callX": 746,
+        "callX": 742,
         "callY": 368,
-        "gripX": 652,
+        "gripX": 650,
         "gripY": 289,
-        "d": "M746 399 H732 L664 289 H652"
+        "d": "M742 399 H728 L662 289 H650"
        },
        {
         "side": "out",
@@ -11773,11 +11798,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Sightlines for rows that pass, plus each tier's last row",
-        "callX": 746,
+        "callX": 742,
         "callY": 436,
-        "gripX": 652,
+        "gripX": 650,
         "gripY": 319,
-        "d": "M746 467 H732 L664 319 H652"
+        "d": "M742 467 H728 L662 319 H650"
        },
        {
         "side": "out",
@@ -11788,11 +11813,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Sightlines for rows that fail",
-        "callX": 746,
+        "callX": 742,
         "callY": 502,
-        "gripX": 652,
+        "gripX": 650,
         "gripY": 349,
-        "d": "M746 533 H732 L664 349 H652"
+        "d": "M742 533 H728 L662 349 H650"
        },
        {
         "side": "out",
@@ -11803,11 +11828,11 @@
         "access": "list",
         "flow": false,
         "blurb": "C-value dimension at the barrier top point",
-        "callX": 746,
+        "callX": 742,
         "callY": 570,
-        "gripX": 652,
+        "gripX": 650,
         "gripY": 379,
-        "d": "M746 601 H732 L664 379 H652"
+        "d": "M742 601 H728 L662 379 H650"
        },
        {
         "side": "out",
@@ -11818,11 +11843,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Per-tier summary",
-        "callX": 746,
+        "callX": 742,
         "callY": 636,
-        "gripX": 652,
+        "gripX": 650,
         "gripY": 409,
-        "d": "M746 667 H732 L664 409 H652"
+        "d": "M742 667 H728 L662 409 H650"
        },
        {
         "side": "out",
@@ -11833,11 +11858,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 746,
+        "callX": 742,
         "callY": 704,
-        "gripX": 652,
+        "gripX": 650,
         "gripY": 439,
-        "d": "M746 735 H732 L664 439 H652"
+        "d": "M742 735 H728 L662 439 H650"
        }
       ]
      }
@@ -12170,6 +12195,7 @@
       "h": 1044,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 234,
       "imgW": 216,
@@ -12867,6 +12893,7 @@
       "h": 1214,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 271,
       "imgW": 207,
@@ -13367,6 +13394,7 @@
       "h": 360,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 86,
       "imgW": 196,
@@ -13783,6 +13811,7 @@
       "h": 1044,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 234,
       "imgW": 214,
@@ -14211,6 +14240,7 @@
       "h": 530,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 123,
       "imgW": 180,
@@ -14357,11 +14387,12 @@
      "after": [],
      "tier": "free",
      "figure": {
-      "w": 1183,
+      "w": 755,
       "h": 111,
       "callW": 340,
       "callH": 63,
-      "imgX": 428,
+      "lead": 88,
+      "imgX": 0,
       "imgY": 30,
       "imgW": 327,
       "imgH": 51,
@@ -14377,11 +14408,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Value of row 1",
-        "callX": 843,
+        "callX": 415,
         "callY": 24,
-        "gripX": 749,
+        "gripX": 321,
         "gripY": 56,
-        "d": "M843 55 H829 L761 56 H749"
+        "d": "M415 55 H401 L333 56 H321"
        }
       ]
      }
@@ -14417,11 +14448,12 @@
      "after": [],
      "tier": "free",
      "figure": {
-      "w": 1120,
+      "w": 692,
       "h": 111,
       "callW": 340,
       "callH": 63,
-      "imgX": 428,
+      "lead": 88,
+      "imgX": 0,
       "imgY": 30,
       "imgW": 264,
       "imgH": 51,
@@ -14437,11 +14469,11 @@
         "access": "item",
         "flow": false,
         "blurb": "State of row 1",
-        "callX": 780,
+        "callX": 352,
         "callY": 24,
-        "gripX": 686,
+        "gripX": 258,
         "gripY": 56,
-        "d": "M780 55 H766 L698 56 H686"
+        "d": "M352 55 H338 L270 56 H258"
        }
       ]
      }
@@ -14616,6 +14648,7 @@
       "h": 702,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 160,
       "imgW": 192,
@@ -14840,6 +14873,7 @@
       "h": 141,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 30,
       "imgW": 105,
@@ -14897,11 +14931,12 @@
      "after": [],
      "tier": "free",
      "figure": {
-      "w": 964,
+      "w": 108,
       "h": 153,
       "callW": 340,
       "callH": 63,
-      "imgX": 428,
+      "lead": 88,
+      "imgX": 0,
       "imgY": 30,
       "imgW": 108,
       "imgH": 93,
@@ -15134,6 +15169,7 @@
       "h": 958,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 216,
       "imgW": 195,
@@ -15444,6 +15480,7 @@
       "h": 274,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 68,
       "imgW": 198,
@@ -15734,6 +15771,7 @@
       "h": 958,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 216,
       "imgW": 192,
@@ -16127,6 +16165,7 @@
       "h": 444,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 104,
       "imgW": 190,
@@ -16500,6 +16539,7 @@
       "h": 616,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 142,
       "imgW": 212,
@@ -16866,6 +16906,7 @@
       "h": 530,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 123,
       "imgW": 178,
@@ -17170,6 +17211,7 @@
       "h": 616,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 142,
       "imgW": 200,
@@ -17515,6 +17557,7 @@
       "h": 872,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 197,
       "imgW": 195,
@@ -17810,6 +17853,7 @@
       "h": 274,
       "callW": 340,
       "callH": 63,
+      "lead": 88,
       "imgX": 428,
       "imgY": 68,
       "imgW": 192,
