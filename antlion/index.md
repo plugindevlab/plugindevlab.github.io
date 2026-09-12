@@ -68,8 +68,8 @@ Works in millimetre and inch documents.
 
 ## Learn it
 
-- [**Getting started**](getting-started/index.md) — install, licence, and the first
-  definition that produces a bowl.
+- [**Getting started**](getting-started/index.md) — what you need, installing from the
+  package manager, and registering your licence.
 - [**Workflow**](workflow/index.md) — the whole chain as a map. Start here if you are
   wondering what order to use things in.
 - [**Components**](components/index.html) — every component, every port, with a diagram of
