@@ -8,8 +8,8 @@ description: Known symptoms in Antlion for Rhino and Grasshopper — what causes
 Search for your symptom. Each page says what you see, why it happens, and what to do about
 it — including which version fixed it, if it was a bug.
 
-If your problem is not here, [report it](#report-a-problem) — the form and the two steps that
-make a report fixable are further down this page.
+If your problem is not here, the form to report it is at the bottom of this page, along with
+the two steps that make a report fixable.
 
 ## Pages
 

@@ -16,5 +16,16 @@
     }
   },
 
-  "notes": {}
+  "_selfchain_about": "Components that can be wired into another copy of themselves in series. Port types alone cannot tell this apart from an accidental loop, so each entry is declared here with the note the chain box shows. Only components whose own output type matches one of their own input types may be listed - compdata.py fails the build otherwise.",
+
+  "selfchain": {
+    "cut": "Chains into another Cut. Two in series with complementary Tier Enabled is how you cut different tiers from opposite sides.",
+    "opening-cut": "Chains into another Opening Cut. Every stage of the cut chain can be skipped or repeated."
+  },
+
+  "_notes_about": "Per-component paragraph, shown as 'What it does' above the port tables. Written by hand for the components whose behaviour is not visible in their ports. One paragraph, no markup - the template escapes it. English only, like the rest of this file.",
+
+  "notes": {
+    "input-panel": "Pick a component, set the tier count, and every value it takes appears in one place with its default already filled in - so you can see what a value is and what a normal one looks like before you commit to it. It is not there to reduce how much you have to wire: almost every input already has a default, and the handful that must be wired carry data from upstream, which no panel can stand in for. The bundle it outputs is locked to the component you picked - wire it into a different one and it says so, rather than quietly filling a port that happens to share a name. A wire always wins over the bundle; a value you typed into a port by right-clicking does not, because whatever wins has to be visible on the canvas. Not every component is on its list - a few take one value or none, and a few take things a panel cannot type."
+  }
 }

@@ -7740,14 +7740,16 @@
      ],
      "before": [
       "seat",
-      "custom-seat"
+      "custom-seat",
+      "cut"
      ],
      "after": [
       "opening-cut",
       "vom-3d",
       "stand-3d-plus",
       "assemble-bowl",
-      "view-limit"
+      "view-limit",
+      "cut"
      ],
      "tier": "core",
      "figure": {
@@ -8355,13 +8357,15 @@
      "before": [
       "seat",
       "custom-seat",
-      "cut"
+      "cut",
+      "opening-cut"
      ],
      "after": [
       "vom-3d",
       "stand-3d-plus",
       "assemble-bowl",
-      "view-limit"
+      "view-limit",
+      "opening-cut"
      ],
      "tier": "core",
      "figure": {
@@ -18228,7 +18232,13 @@
      }
     }
    },
-   "notes": {},
+   "notes": {
+    "input-panel": "Pick a component, set the tier count, and every value it takes appears in one place with its default already filled in - so you can see what a value is and what a normal one looks like before you commit to it. It is not there to reduce how much you have to wire: almost every input already has a default, and the handful that must be wired carry data from upstream, which no panel can stand in for. The bundle it outputs is locked to the component you picked - wire it into a different one and it says so, rather than quietly filling a port that happens to share a name. A wire always wins over the bundle; a value you typed into a port by right-clicking does not, because whatever wins has to be visible on the canvas. Not every component is on its list - a few take one value or none, and a few take things a panel cannot type."
+   },
+   "selfchain": {
+    "cut": "Chains into another Cut. Two in series with complementary Tier Enabled is how you cut different tiers from opposite sides.",
+    "opening-cut": "Chains into another Opening Cut. Every stage of the cut chain can be skipped or repeated."
+   },
    "graph": {
     "stages": [
      {

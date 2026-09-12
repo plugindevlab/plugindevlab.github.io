@@ -71,12 +71,7 @@
   </div>
 
   <div class="body">
-    {%- assign note = pdata.notes[comp.id] %}
-    {%- if note %}
-    <h2>What it does</h2>
-    <p>{{ note | escape }}</p>
-    {%- endif %}
-
+    {%- if nin > 0 %}
     <h2>Inputs</h2>
     <ul class="ports">
       {%- for p in comp.inputs %}
@@ -84,13 +79,22 @@
       <li{% if p.flow %} class="chain"{% endif %}><b>{{ p.name | escape }}</b><code>{{ p.nick | default: p.name | escape }}</code><span>{{ p.desc | escape }}{% if p.default %}{% unless lower contains "default" %} <em>Default {{ p.default | escape }}.</em>{% endunless %}{% endif %}</span></li>
       {%- endfor %}
     </ul>
+    {%- endif %}
 
+    {%- if nout > 0 %}
     <h2>Outputs</h2>
     <ul class="ports">
       {%- for p in comp.outputs %}
       <li{% if p.flow %} class="chain"{% endif %}><b>{{ p.name | escape }}</b><code>{{ p.nick | default: p.name | escape }}</code><span>{{ p.desc | escape }}</span></li>
       {%- endfor %}
     </ul>
+    {%- endif %}
+
+    {%- assign note = pdata.notes[comp.id] %}
+    {%- if note %}
+    <h2>What it does</h2>
+    <p>{{ note | escape }}</p>
+    {%- endif %}
 
     {%- assign before = comp.before -%}
     {%- assign after = comp.after -%}
@@ -104,13 +108,17 @@
         {%- if nbefore > 0 %}
         <p class="dir">Comes after</p>
         {%- for cid in before %}{% assign c2 = pdata.components | where: "id", cid | first %}
-        <a href="/{{ prod.slug }}/components/{{ cid }}/">{{ c2.name | escape }}<em>{{ c2.compId }}</em></a>
+        {%- if cid == comp.id %}<b class="self">{{ c2.name | escape }} again<em>{{ pdata.selfchain[cid] | escape }}</em></b>
+        {%- else %}<a href="/{{ prod.slug }}/components/{{ cid }}/">{{ c2.name | escape }}<em>{{ c2.compId }}</em></a>
+        {%- endif %}
         {%- endfor %}
         {%- endif %}
         {%- if nafter > 0 %}
         <p class="dir">Goes into</p>
         {%- for cid in after %}{% assign c2 = pdata.components | where: "id", cid | first %}
-        <a href="/{{ prod.slug }}/components/{{ cid }}/">{{ c2.name | escape }}<em>{{ c2.compId }}</em></a>
+        {%- if cid == comp.id %}<b class="self">{{ c2.name | escape }} again<em>{{ pdata.selfchain[cid] | escape }}</em></b>
+        {%- else %}<a href="/{{ prod.slug }}/components/{{ cid }}/">{{ c2.name | escape }}<em>{{ c2.compId }}</em></a>
+        {%- endif %}
         {%- endfor %}
         {%- endif %}
       </div>
