@@ -2,7 +2,7 @@
 <svg
    width="256"
    height="256"
-   viewBox="0 0 256 256"
+   viewBox="0.00 0.00 256.00 256.00"
    data-palette="antlion"
    data-family="bim"
    version="1.1"
@@ -15,6 +15,7 @@
   <g
     
      id="layer-base">
+    <rect id="base-plate" fill="#ffffff" x="0.00" y="0.00" width="256.00" height="256.00"/>
     <path
        id="base-stand-left"
        data-fill="muted"
