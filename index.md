@@ -14,7 +14,11 @@ back a result you cannot argue with.
 <div class="grid" markdown="0">
 {%- for p in site.data.products %}
   <div class="card">
+    {%- if p.image %}
+    <img src="{{ p.image | relative_url }}" alt="{{ p.image_alt }}" loading="lazy">
+    {%- else %}
     <div class="fig-wait">Image to come</div>
+    {%- endif %}
     <h3>{% if p.status == "shipped" %}<a href="/{{ p.slug }}/">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</h3>
     <p>{{ p.tagline }}</p>
     {%- if p.status == "shipped" %}
