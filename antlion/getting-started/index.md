@@ -18,4 +18,4 @@ description: Requirements, install, licensing, and the first Grasshopper definit
 ## When something does not work
 
 Start with [Troubleshooting](../troubleshooting/index.md). If your symptom is not there,
-[report it](../index.md#report-a-problem) — no account needed.
+[report it](../troubleshooting/index.md#report-a-problem) — no account needed.

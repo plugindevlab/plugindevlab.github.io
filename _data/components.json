@@ -213,6 +213,19 @@
        "type": null
       }
      ],
+     "before": [],
+     "after": [
+      "startline-rect",
+      "startline-capsule",
+      "startline-oval",
+      "custom-startline",
+      "section",
+      "auto-section",
+      "table-section",
+      "view-limit",
+      "excel-workbook",
+      "google-workbook"
+     ],
      "tier": "core",
      "figure": {
       "w": 1066,
@@ -626,6 +639,13 @@
        "type": null
       }
      ],
+     "before": [
+      "field"
+     ],
+     "after": [
+      "axis",
+      "custom-axis"
+     ],
      "tier": "core",
      "figure": {
       "w": 1066,
@@ -967,6 +987,13 @@
        "flow": false,
        "type": null
       }
+     ],
+     "before": [
+      "field"
+     ],
+     "after": [
+      "axis",
+      "custom-axis"
      ],
      "tier": "core",
      "figure": {
@@ -1319,6 +1346,13 @@
        "type": null
       }
      ],
+     "before": [
+      "field"
+     ],
+     "after": [
+      "axis",
+      "custom-axis"
+     ],
      "tier": "core",
      "figure": {
       "w": 1072,
@@ -1636,6 +1670,13 @@
        "flow": false,
        "type": null
       }
+     ],
+     "before": [
+      "field"
+     ],
+     "after": [
+      "axis",
+      "custom-axis"
      ],
      "tier": "core",
      "figure": {
@@ -1968,6 +2009,20 @@
        "flow": false,
        "type": null
       }
+     ],
+     "before": [
+      "startline-rect",
+      "startline-capsule",
+      "startline-oval",
+      "custom-startline"
+     ],
+     "after": [
+      "stand-2d",
+      "vomitory",
+      "seat",
+      "custom-seat",
+      "stand-3d",
+      "view-axis"
      ],
      "tier": "core",
      "figure": {
@@ -2356,6 +2411,20 @@
        "type": null
       }
      ],
+     "before": [
+      "startline-rect",
+      "startline-capsule",
+      "startline-oval",
+      "custom-startline"
+     ],
+     "after": [
+      "stand-2d",
+      "vomitory",
+      "seat",
+      "custom-seat",
+      "stand-3d",
+      "view-axis"
+     ],
      "tier": "core",
      "figure": {
       "w": 1038,
@@ -2719,6 +2788,18 @@
        "flow": false,
        "type": null
       }
+     ],
+     "before": [
+      "field"
+     ],
+     "after": [
+      "section-plus",
+      "stand-2d",
+      "vomitory",
+      "seat",
+      "custom-seat",
+      "stand-3d",
+      "section-analysis"
      ],
      "tier": "core",
      "figure": {
@@ -3299,6 +3380,18 @@
        "flow": false,
        "type": null
       }
+     ],
+     "before": [
+      "field"
+     ],
+     "after": [
+      "section-plus",
+      "stand-2d",
+      "vomitory",
+      "seat",
+      "custom-seat",
+      "stand-3d",
+      "section-analysis"
      ],
      "tier": "core",
      "figure": {
@@ -3943,6 +4036,19 @@
        "type": null
       }
      ],
+     "before": [
+      "section",
+      "auto-section",
+      "table-section"
+     ],
+     "after": [
+      "stand-2d",
+      "vomitory",
+      "seat",
+      "custom-seat",
+      "stand-3d",
+      "section-analysis"
+     ],
      "tier": "core",
      "figure": {
       "w": 1082,
@@ -4412,6 +4518,21 @@
        "type": null
       }
      ],
+     "before": [
+      "excel-workbook",
+      "google-workbook",
+      "table-in",
+      "field"
+     ],
+     "after": [
+      "section-plus",
+      "stand-2d",
+      "vomitory",
+      "seat",
+      "custom-seat",
+      "stand-3d",
+      "section-analysis"
+     ],
      "tier": "core",
      "figure": {
       "w": 1048,
@@ -4744,6 +4865,22 @@
        "flow": false,
        "type": null
       }
+     ],
+     "before": [
+      "section",
+      "auto-section",
+      "section-plus",
+      "table-section",
+      "axis",
+      "custom-axis"
+     ],
+     "after": [
+      "vomitory",
+      "seat",
+      "custom-seat",
+      "stand-3d",
+      "section-analysis",
+      "view-axis"
      ],
      "tier": "core",
      "figure": {
@@ -5219,6 +5356,22 @@
        "flow": false,
        "type": null
       }
+     ],
+     "before": [
+      "section",
+      "auto-section",
+      "section-plus",
+      "table-section",
+      "stand-2d",
+      "axis",
+      "custom-axis"
+     ],
+     "after": [
+      "seat",
+      "custom-seat",
+      "stand-3d",
+      "section-analysis",
+      "view-axis"
      ],
      "tier": "core",
      "figure": {
@@ -6018,6 +6171,24 @@
        "flow": false,
        "type": null
       }
+     ],
+     "before": [
+      "vomitory",
+      "stand-2d",
+      "section",
+      "auto-section",
+      "section-plus",
+      "table-section",
+      "axis",
+      "custom-axis"
+     ],
+     "after": [
+      "cut",
+      "opening-cut",
+      "vom-3d",
+      "stand-3d-plus",
+      "assemble-bowl",
+      "view-limit"
      ],
      "tier": "core",
      "figure": {
@@ -6850,6 +7021,24 @@
        "type": null
       }
      ],
+     "before": [
+      "section",
+      "auto-section",
+      "section-plus",
+      "table-section",
+      "stand-2d",
+      "vomitory",
+      "axis",
+      "custom-axis"
+     ],
+     "after": [
+      "cut",
+      "opening-cut",
+      "vom-3d",
+      "stand-3d-plus",
+      "assemble-bowl",
+      "view-limit"
+     ],
      "tier": "core",
      "figure": {
       "w": 1082,
@@ -7549,6 +7738,17 @@
        "type": null
       }
      ],
+     "before": [
+      "seat",
+      "custom-seat"
+     ],
+     "after": [
+      "opening-cut",
+      "vom-3d",
+      "stand-3d-plus",
+      "assemble-bowl",
+      "view-limit"
+     ],
      "tier": "core",
      "figure": {
       "w": 1078,
@@ -8152,6 +8352,17 @@
        "type": null
       }
      ],
+     "before": [
+      "seat",
+      "custom-seat",
+      "cut"
+     ],
+     "after": [
+      "vom-3d",
+      "stand-3d-plus",
+      "assemble-bowl",
+      "view-limit"
+     ],
      "tier": "core",
      "figure": {
       "w": 1075,
@@ -8657,6 +8868,20 @@
        "type": null
       }
      ],
+     "before": [
+      "section",
+      "auto-section",
+      "section-plus",
+      "table-section",
+      "stand-2d",
+      "vomitory",
+      "axis",
+      "custom-axis"
+     ],
+     "after": [
+      "stand-3d-plus",
+      "assemble-bowl"
+     ],
      "tier": "core",
      "figure": {
       "w": 1062,
@@ -9010,6 +9235,17 @@
        "type": null
       }
      ],
+     "before": [
+      "seat",
+      "custom-seat",
+      "cut",
+      "opening-cut"
+     ],
+     "after": [
+      "stand-3d-plus",
+      "assemble-bowl",
+      "view-limit"
+     ],
      "tier": "core",
      "figure": {
       "w": 1066,
@@ -9351,6 +9587,22 @@
        "flow": false,
        "type": null
       }
+     ],
+     "before": [
+      "stand-3d",
+      "assemble-bowl",
+      "seat",
+      "custom-seat",
+      "cut",
+      "opening-cut",
+      "vom-3d"
+     ],
+     "after": [
+      "rail-3d",
+      "seat-3d",
+      "c-value-seat",
+      "c-value-tread",
+      "seat-map"
      ],
      "tier": "core",
      "figure": {
@@ -9780,6 +10032,13 @@
        "flow": false,
        "type": null
       }
+     ],
+     "before": [
+      "stand-3d-plus"
+     ],
+     "after": [
+      "c-value-seat",
+      "c-value-tread"
      ],
      "tier": "core",
      "figure": {
@@ -10280,6 +10539,18 @@
        "type": null
       }
      ],
+     "before": [
+      "stand-3d",
+      "seat",
+      "custom-seat",
+      "cut",
+      "opening-cut",
+      "vom-3d"
+     ],
+     "after": [
+      "stand-3d-plus",
+      "view-limit"
+     ],
      "tier": "core",
      "figure": {
       "w": 1064,
@@ -10730,6 +11001,11 @@
        "type": null
       }
      ],
+     "before": [
+      "stand-3d-plus",
+      "seat-map"
+     ],
+     "after": [],
      "tier": "core",
      "figure": {
       "w": 1075,
@@ -11013,6 +11289,8 @@
        "type": null
       }
      ],
+     "before": [],
+     "after": [],
      "tier": "free",
      "figure": {
       "w": 1144,
@@ -11280,6 +11558,15 @@
        "type": null
       }
      ],
+     "before": [
+      "section",
+      "auto-section",
+      "section-plus",
+      "table-section",
+      "stand-2d",
+      "vomitory"
+     ],
+     "after": [],
      "tier": "core",
      "figure": {
       "w": 1086,
@@ -11864,6 +12151,14 @@
        "flow": false,
        "type": null
       }
+     ],
+     "before": [
+      "stand-3d-plus",
+      "rail-3d",
+      "c-value-legend"
+     ],
+     "after": [
+      "c-value-map"
      ],
      "tier": "core",
      "figure": {
@@ -12553,6 +12848,15 @@
        "type": null
       }
      ],
+     "before": [
+      "stand-3d-plus",
+      "rail-3d",
+      "c-value-legend"
+     ],
+     "after": [
+      "c-value-map",
+      "c-value-section-check"
+     ],
      "tier": "core",
      "figure": {
       "w": 1063,
@@ -13048,6 +13352,11 @@
        "type": null
       }
      ],
+     "before": [],
+     "after": [
+      "c-value-seat",
+      "c-value-tread"
+     ],
      "tier": "free",
      "figure": {
       "w": 1052,
@@ -13459,6 +13768,11 @@
        "type": null
       }
      ],
+     "before": [
+      "c-value-tread",
+      "sheet-setup"
+     ],
+     "after": [],
      "tier": "core",
      "figure": {
       "w": 1070,
@@ -13881,6 +14195,12 @@
        "type": "SHD"
       }
      ],
+     "before": [],
+     "after": [
+      "c-value-section-check",
+      "c-value-map",
+      "seat-map"
+     ],
      "tier": "free",
      "figure": {
       "w": 1036,
@@ -14029,6 +14349,8 @@
        "type": null
       }
      ],
+     "before": [],
+     "after": [],
      "tier": "free",
      "figure": {
       "w": 1183,
@@ -14087,6 +14409,8 @@
        "type": null
       }
      ],
+     "before": [],
+     "after": [],
      "tier": "free",
      "figure": {
       "w": 1120,
@@ -14276,6 +14600,12 @@
        "type": null
       }
      ],
+     "before": [
+      "c-value-seat",
+      "c-value-tread",
+      "sheet-setup"
+     ],
+     "after": [],
      "tier": "core",
      "figure": {
       "w": 1048,
@@ -14498,6 +14828,8 @@
        "type": "R"
       }
      ],
+     "before": [],
+     "after": [],
      "tier": "free",
      "figure": {
       "w": 961,
@@ -14557,6 +14889,8 @@
      "summary": "One switch for every Data Gate on the canvas - no wires needed. LIVE holds every gate open, so data flows as if PASS were held down and the whole chain stays current. HOLD closes them all again; each gate keeps the last data that went through. Keep a single switch per document.",
      "inputs": [],
      "outputs": [],
+     "before": [],
+     "after": [],
      "tier": "free",
      "figure": {
       "w": 964,
@@ -14781,6 +15115,14 @@
        "flow": false,
        "type": null
       }
+     ],
+     "before": [
+      "stand-3d-plus",
+      "sheet-setup"
+     ],
+     "after": [
+      "seat-3d",
+      "seat-view"
      ],
      "tier": "core",
      "figure": {
@@ -15090,6 +15432,8 @@
        "type": null
       }
      ],
+     "before": [],
+     "after": [],
      "tier": "free",
      "figure": {
       "w": 1054,
@@ -15376,6 +15720,10 @@
        "type": null
       }
      ],
+     "before": [
+      "seat-map"
+     ],
+     "after": [],
      "tier": "core",
      "figure": {
       "w": 1048,
@@ -15762,6 +16110,13 @@
        "type": null
       }
      ],
+     "before": [
+      "axis",
+      "custom-axis",
+      "stand-2d",
+      "vomitory"
+     ],
+     "after": [],
      "tier": "core",
      "figure": {
       "w": 1046,
@@ -16125,6 +16480,16 @@
        "type": null
       }
      ],
+     "before": [
+      "field",
+      "seat",
+      "custom-seat",
+      "cut",
+      "opening-cut",
+      "vom-3d",
+      "assemble-bowl"
+     ],
+     "after": [],
      "tier": "core",
      "figure": {
       "w": 1068,
@@ -16483,6 +16848,14 @@
        "type": null
       }
      ],
+     "before": [
+      "field"
+     ],
+     "after": [
+      "table-section",
+      "table-in",
+      "table-out"
+     ],
      "tier": "core",
      "figure": {
       "w": 1034,
@@ -16778,6 +17151,14 @@
        "flow": false,
        "type": null
       }
+     ],
+     "before": [
+      "field"
+     ],
+     "after": [
+      "table-section",
+      "table-in",
+      "table-out"
      ],
      "tier": "core",
      "figure": {
@@ -17116,6 +17497,14 @@
        "type": null
       }
      ],
+     "before": [
+      "excel-workbook",
+      "google-workbook"
+     ],
+     "after": [
+      "table-section",
+      "table-out"
+     ],
      "tier": "core",
      "figure": {
       "w": 1051,
@@ -17405,6 +17794,12 @@
        "type": null
       }
      ],
+     "before": [
+      "excel-workbook",
+      "google-workbook",
+      "table-in"
+     ],
+     "after": [],
      "tier": "core",
      "figure": {
       "w": 1048,

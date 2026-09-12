@@ -92,12 +92,8 @@
       {%- endfor %}
     </ul>
 
-    {%- assign before = "" -%}
-    {%- for p in comp.inputs %}{% if p.flow %}{% assign t = pdata.types[p.type] %}{% for cid in t.producers %}{% if cid != comp.id %}{% assign before = before | append: cid | append: "," %}{% endif %}{% endfor %}{% endif %}{% endfor -%}
-    {%- assign after = "" -%}
-    {%- for p in comp.outputs %}{% if p.flow %}{% assign t = pdata.types[p.type] %}{% for cid in t.consumers %}{% if cid != comp.id %}{% assign after = after | append: cid | append: "," %}{% endif %}{% endfor %}{% endif %}{% endfor -%}
-    {%- assign before = before | split: "," | uniq -%}
-    {%- assign after = after | split: "," | uniq -%}
+    {%- assign before = comp.before -%}
+    {%- assign after = comp.after -%}
     {%- assign nbefore = before | size -%}
     {%- assign nafter = after | size -%}
 
