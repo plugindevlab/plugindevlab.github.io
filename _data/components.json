@@ -10995,7 +10995,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-10",
+     "checked": "2026-09-12",
      "summary": "Pick an Antlion component and set every value it takes, with sensible defaults shown. For when you are not sure what to wire in.",
      "inputs": [],
      "outputs": [
@@ -11053,7 +11053,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-10",
+     "checked": "2026-09-12",
      "summary": "Checks the sightline over the row in front, row by row, and reports the C-value. Draws the sightlines and dimensions so you can see where the view fails.",
      "inputs": [
       {
@@ -11560,7 +11560,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-10",
+     "checked": "2026-09-12",
      "summary": "Paints every seat with its own C-value, measured in 3D from that seat's eye to its own focus. Wire the Stand 3D Plus BRD output; add Rail 3D RLD to see where a railing, not a head, is the obstruction.",
      "inputs": [
       {
@@ -12235,7 +12235,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-10",
+     "checked": "2026-09-12",
      "summary": "Paints each tread band with the C-value of one representative section taken between two axes. One value per axis gap, so it is light enough to leave on while you tune the section. C-value Seat measures every seat instead - the two differ most on curves, where one section cannot stand for the whole band.",
      "inputs": [
       {
@@ -12938,7 +12938,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-10",
+     "checked": "2026-09-12",
      "summary": "Builds an explicit colour legend for the C-value maps. Set the first number, the last number and the band size - the bands become <min, min to min+step, ... , >=max, each with its own colour. Leave colors unwired for the built-in ramp, or supply your own (interpolated when fewer than the band count). Wire scheme into C-value Seat or C-value Tread; the map is then coloured by these bands (color_mode is ignored) and C-value Map prints this legend on every sheet. It also carries the not-graded states - OPEN, FRONT, EMPTY and NA - as a fixed grey series, so every grey patch on the map is named on the sheet; the report output explains why each state appears and how to clear it. The component itself shows the legend on the canvas.",
      "inputs": [
       {
@@ -13193,7 +13193,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-10",
+     "checked": "2026-09-12",
      "summary": "Lays every axis section out on its own sheet so you can flip through them. One scale for the whole set, chosen so the largest section fits, and every section sits at the same place on its sheet.",
      "inputs": [
       {
@@ -13784,7 +13784,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-10",
+     "checked": "2026-09-12",
      "summary": "Holds the sheet layout settings in one place - where the sheets start, the paper size, how many sheets per row, the scale rounding, margins and the text style. Wire the SHD output into C-value Section Check, C-value Map and Seat Map so every sheet component lays out the same way from a single setup. When SHD is wired, the sheet inputs on those components are ignored.",
      "inputs": [
       {
@@ -14011,7 +14011,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-10",
+     "checked": "2026-09-12",
      "summary": "A stack of sliders in one component — each row Dk drives output Rk. Drag the bottom edge to add or remove rows; right-click to set ranges. Saves wiring a dozen separate sliders into per-tier inputs.",
      "inputs": [],
      "outputs": [
@@ -14069,7 +14069,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-10",
+     "checked": "2026-09-12",
      "summary": "A stack of toggles in one component — each row Dk drives output Rk. Drag the bottom edge to add or remove rows. Saves wiring a dozen separate toggles into per-tier inputs.",
      "inputs": [],
      "outputs": [
@@ -14127,7 +14127,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-10",
+     "checked": "2026-09-12",
      "summary": "Lays the C-value map out flat - one sheet per tier, named TIER 0, TIER 1 and so on, with the seat layout drawing, the coloured map and the tier's minimum, average and pass rate written top-left. Wire the CMD output of C-value Seat for a seat map, or of C-value Tread for a tread map - one at a time.",
      "inputs": [
       {
@@ -14466,7 +14466,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-10",
+     "checked": "2026-09-12",
      "summary": "Holds the wire shut. Whatever changes upstream, nothing downstream recomputes until you press PASS - then the data at D goes through R once and stays there. Put it between the 2D bowl chain and the heavy 3D build or analysis components: edit the bowl lag-free, press to update. The Gate Switch component opens and closes every gate on the canvas at once. Reopening a file behaves like the moment it was saved: a gate that was holding data picks it up again on load (one full compute, like opening any normal file), and a gate that was empty stays shut.",
      "inputs": [
       {
@@ -14553,7 +14553,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-10",
+     "checked": "2026-09-12",
      "summary": "One switch for every Data Gate on the canvas - no wires needed. LIVE holds every gate open, so data flows as if PASS were held down and the whole chain stays current. HOLD closes them all again; each gate keeps the last data that went through. Keep a single switch per document.",
      "inputs": [],
      "outputs": [],
@@ -14581,7 +14581,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-10",
+     "checked": "2026-09-12",
      "summary": "Groups the seats into zones - the pieces left when the aisles, vomitories and cuts are taken out of the tier - and gives every seat a readable address like \"A0 05 S 25\": prefix and tier number, zone number counted along the axis direction, then the seat number running from the lowest tread up. Wheelchair units belong to their zone too, numbered \"W 1\", \"W 2\". Outputs the SMD bundle for Seat View and Seat 3D, a zone map laid out one sheet per tier, and flat tables ready for a spreadsheet. Wire the BRD output of Stand 3D Plus; wire SHD from Sheet Setup to place the sheets",
      "inputs": [
       {
@@ -15032,7 +15032,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-10",
+     "checked": "2026-09-12",
      "summary": "Register your Antlion license key. Enter the key once — every definition on this computer is unlocked.",
      "inputs": [
       {
@@ -15175,7 +15175,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-10",
+     "checked": "2026-09-12",
      "summary": "Looks through a spectator's eyes. Wire the Seat Map SMD and pick a seat by tier, zone and seat number - or type its address like \"A0 05 S 25\" - press apply, and the perspective viewport jumps to that seat's analysis eye point looking at its own focal point - the same eye and focus the C-value map measures. Turn live on and the yaw and pitch sliders let you look around from the fixed eye point, so you can judge a vomitory rail or a cut-edge railing exactly as the seated spectator would see it.",
      "inputs": [
       {
@@ -15626,7 +15626,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-10",
+     "checked": "2026-09-12",
      "summary": "Tags every axis with its number — a guide line running out from each axis point into a circle holding the axis name (A0, A1, ...). The numbers are the same ones Cut and Opening Cut expect in axis_from / opening_from, so you can read them here and leave those heavy previews off.",
      "inputs": [
       {
@@ -15937,7 +15937,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-10",
+     "checked": "2026-09-12",
      "summary": "Draws the optimum and maximum viewing distance circles for a sport and counts how many seats fall outside. Reference only — it never removes a seat; wire limit_curves into Cut if you want it enforced.",
      "inputs": [
       {
@@ -22098,7 +22098,12 @@
          "t": "Field",
          "y": 274
         }
-       ]
+       ],
+       "lw": 30,
+       "lx0": 33,
+       "lx1": 70,
+       "ly0": 263,
+       "ly1": 278
       },
       {
        "key": "startline-rect",
@@ -22126,7 +22131,12 @@
          "t": "Startline",
          "y": 274
         }
-       ]
+       ],
+       "lw": 54,
+       "lx0": 121,
+       "lx1": 182,
+       "ly0": 263,
+       "ly1": 278
       },
       {
        "key": "custom-startline",
@@ -22158,7 +22168,12 @@
          "t": "Startline",
          "y": 486
         }
-       ]
+       ],
+       "lw": 54,
+       "lx0": 121,
+       "lx1": 182,
+       "ly0": 463,
+       "ly1": 490
       },
       {
        "key": "auto-section",
@@ -22190,7 +22205,12 @@
          "t": "Section",
          "y": 86
         }
-       ]
+       ],
+       "lw": 42,
+       "lx0": 227,
+       "lx1": 276,
+       "ly0": 63,
+       "ly1": 90
       },
       {
        "key": "section",
@@ -22218,7 +22238,12 @@
          "t": "Section",
          "y": 174
         }
-       ]
+       ],
+       "lw": 42,
+       "lx0": 227,
+       "lx1": 276,
+       "ly0": 163,
+       "ly1": 178
       },
       {
        "key": "axis",
@@ -22246,7 +22271,12 @@
          "t": "Axis",
          "y": 274
         }
-       ]
+       ],
+       "lw": 24,
+       "lx0": 236,
+       "lx1": 267,
+       "ly0": 263,
+       "ly1": 278
       },
       {
        "key": "custom-axis",
@@ -22278,7 +22308,12 @@
          "t": "Axis",
          "y": 486
         }
-       ]
+       ],
+       "lw": 36,
+       "lx0": 230,
+       "lx1": 273,
+       "ly0": 463,
+       "ly1": 490
       },
       {
        "key": "table-section",
@@ -22310,7 +22345,12 @@
          "t": "Section",
          "y": 86
         }
-       ]
+       ],
+       "lw": 42,
+       "lx0": 327,
+       "lx1": 376,
+       "ly0": 63,
+       "ly1": 90
       },
       {
        "key": "section-plus",
@@ -22342,7 +22382,12 @@
          "t": "Plus",
          "y": 186
         }
-       ]
+       ],
+       "lw": 42,
+       "lx0": 327,
+       "lx1": 376,
+       "ly0": 163,
+       "ly1": 190
       },
       {
        "key": "section-analysis",
@@ -22374,10 +22419,15 @@
          "t": "analysis",
          "y": 186
         }
-       ]
+       ],
+       "lw": 48,
+       "lx0": 424,
+       "lx1": 479,
+       "ly0": 163,
+       "ly1": 190
       },
       {
-       "key": "view-axis-plan",
+       "key": "view-axis",
        "id": "view-axis",
        "kind": "guide",
        "label": "View Axis",
@@ -22406,7 +22456,12 @@
          "t": "Axis",
          "y": 386
         }
-       ]
+       ],
+       "lw": 24,
+       "lx0": 436,
+       "lx1": 467,
+       "ly0": 363,
+       "ly1": 390
       },
       {
        "key": "stand-2d",
@@ -22438,7 +22493,12 @@
          "t": "2D",
          "y": 286
         }
-       ]
+       ],
+       "lw": 30,
+       "lx0": 533,
+       "lx1": 570,
+       "ly0": 263,
+       "ly1": 290
       },
       {
        "key": "vomitory",
@@ -22466,7 +22526,12 @@
          "t": "Vomitory",
          "y": 274
         }
-       ]
+       ],
+       "lw": 48,
+       "lx0": 624,
+       "lx1": 679,
+       "ly0": 263,
+       "ly1": 278
       },
       {
        "key": "seat",
@@ -22494,7 +22559,12 @@
          "t": "Seat",
          "y": 274
         }
-       ]
+       ],
+       "lw": 24,
+       "lx0": 736,
+       "lx1": 767,
+       "ly0": 263,
+       "ly1": 278
       },
       {
        "key": "custom-seat",
@@ -22526,7 +22596,12 @@
          "t": "Seat",
          "y": 486
         }
-       ]
+       ],
+       "lw": 36,
+       "lx0": 730,
+       "lx1": 773,
+       "ly0": 463,
+       "ly1": 490
       },
       {
        "key": "stand-3d",
@@ -22558,7 +22633,12 @@
          "t": "3D",
          "y": 186
         }
-       ]
+       ],
+       "lw": 30,
+       "lx0": 833,
+       "lx1": 870,
+       "ly0": 163,
+       "ly1": 190
       },
       {
        "key": "cut",
@@ -22586,7 +22666,12 @@
          "t": "Cut",
          "y": 274
         }
-       ]
+       ],
+       "lw": 18,
+       "lx0": 839,
+       "lx1": 864,
+       "ly0": 263,
+       "ly1": 278
       },
       {
        "key": "opening-cut",
@@ -22618,7 +22703,12 @@
          "t": "Cut",
          "y": 286
         }
-       ]
+       ],
+       "lw": 42,
+       "lx0": 927,
+       "lx1": 976,
+       "ly0": 263,
+       "ly1": 290
       },
       {
        "key": "vom-3d",
@@ -22650,7 +22740,12 @@
          "t": "3D",
          "y": 286
         }
-       ]
+       ],
+       "lw": 18,
+       "lx0": 1039,
+       "lx1": 1064,
+       "ly0": 263,
+       "ly1": 290
       },
       {
        "key": "assemble-bowl",
@@ -22682,21 +22777,26 @@
          "t": "Bowl",
          "y": 286
         }
-       ]
+       ],
+       "lw": 48,
+       "lx0": 1124,
+       "lx1": 1179,
+       "ly0": 263,
+       "ly1": 290
       },
       {
-       "key": "view-axis-bowl",
-       "id": "view-axis",
+       "key": "view-limit",
+       "id": "view-limit",
        "kind": "guide",
-       "label": "View Axis",
+       "label": "View Limit",
        "col": 11,
        "row": 5,
-       "members": "View Axis",
+       "members": "View Limit",
        "tier": "core",
-       "summary": "Tags every axis with its number — a guide line running out from each axis point into a circle holding the axis name (A0, A1, ...).",
+       "summary": "Draws the optimum and maximum viewing distance circles for a sport and counts how many seats fall outside.",
        "x": 1114,
        "y": 514,
-       "icon": "/assets/img/antlion/icons/view-axis.svg",
+       "icon": "/assets/img/antlion/icons/view-limit.svg",
        "cx": 1152,
        "bx": 1130,
        "by": 514,
@@ -22711,10 +22811,15 @@
          "y": 574
         },
         {
-         "t": "Axis",
+         "t": "Limit",
          "y": 586
         }
-       ]
+       ],
+       "lw": 30,
+       "lx0": 1133,
+       "lx1": 1170,
+       "ly0": 563,
+       "ly1": 590
       },
       {
        "key": "rail-3d",
@@ -22746,7 +22851,12 @@
          "t": "3D",
          "y": 186
         }
-       ]
+       ],
+       "lw": 24,
+       "lx0": 1236,
+       "lx1": 1267,
+       "ly0": 163,
+       "ly1": 190
       },
       {
        "key": "stand-3d-plus",
@@ -22782,7 +22892,12 @@
          "t": "Plus",
          "y": 298
         }
-       ]
+       ],
+       "lw": 30,
+       "lx0": 1233,
+       "lx1": 1270,
+       "ly0": 263,
+       "ly1": 302
       },
       {
        "key": "c-value-seat",
@@ -22814,7 +22929,12 @@
          "t": "Seat",
          "y": 186
         }
-       ]
+       ],
+       "lw": 42,
+       "lx0": 1327,
+       "lx1": 1376,
+       "ly0": 163,
+       "ly1": 190
       },
       {
        "key": "c-value-tread",
@@ -22846,7 +22966,12 @@
          "t": "Tread",
          "y": 286
         }
-       ]
+       ],
+       "lw": 42,
+       "lx0": 1327,
+       "lx1": 1376,
+       "ly0": 263,
+       "ly1": 290
       },
       {
        "key": "seat-map",
@@ -22878,7 +23003,12 @@
          "t": "Map",
          "y": 486
         }
-       ]
+       ],
+       "lw": 24,
+       "lx0": 1336,
+       "lx1": 1367,
+       "ly0": 463,
+       "ly1": 490
       },
       {
        "key": "c-value-map",
@@ -22910,7 +23040,12 @@
          "t": "Map",
          "y": 186
         }
-       ]
+       ],
+       "lw": 42,
+       "lx0": 1427,
+       "lx1": 1476,
+       "ly0": 163,
+       "ly1": 190
       },
       {
        "key": "c-value-section-check",
@@ -22946,7 +23081,12 @@
          "t": "Check",
          "y": 298
         }
-       ]
+       ],
+       "lw": 42,
+       "lx0": 1427,
+       "lx1": 1476,
+       "ly0": 263,
+       "ly1": 302
       },
       {
        "key": "seat-view",
@@ -22978,7 +23118,12 @@
          "t": "View",
          "y": 486
         }
-       ]
+       ],
+       "lw": 24,
+       "lx0": 1436,
+       "lx1": 1467,
+       "ly0": 463,
+       "ly1": 490
       }
      ],
      "wires": [
@@ -23010,7 +23155,7 @@
        "title": "Custom Startline → Axis"
       },
       {
-       "d": "M252 214 V158",
+       "d": "M279 214 V158",
        "a": "axis",
        "b": "section",
        "real": false,
@@ -23066,7 +23211,7 @@
       {
        "d": "M274 243 H412 Q418 243 418 249 V323 Q418 329 424 329 H430",
        "a": "axis",
-       "b": "view-axis-plan",
+       "b": "view-axis",
        "real": true,
        "kind": "branch",
        "crooked": false,
@@ -23093,11 +23238,11 @@
       {
        "d": "M74 243 H80 Q86 243 86 249 V523 Q86 529 92 529 H1130",
        "a": "field",
-       "b": "view-axis-bowl",
-       "real": false,
+       "b": "view-limit",
+       "real": true,
        "kind": "branch",
        "crooked": false,
-       "title": "Field → View Axis"
+       "title": "Field → View Limit"
       },
       {
        "d": "M574 236 H630",
@@ -23199,16 +23344,16 @@
        "title": "Assemble Bowl → Stand 3D Plus"
       },
       {
-       "d": "M1152 258 V514",
+       "d": "M1182 258 V514",
        "a": "assemble-bowl",
-       "b": "view-axis-bowl",
-       "real": false,
+       "b": "view-limit",
+       "real": true,
        "kind": "branch",
        "crooked": false,
-       "title": "Assemble Bowl → View Axis"
+       "title": "Assemble Bowl → View Limit"
       },
       {
-       "d": "M1252 214 V158",
+       "d": "M1273 214 V158",
        "a": "stand-3d-plus",
        "b": "rail-3d",
        "real": true,
@@ -23300,23 +23445,23 @@
      ],
      "swaps": [
       {
-       "d": "M152 414 V290",
+       "d": "M152 414 V282",
        "title": "Custom Startline stands in for Startline"
       },
       {
-       "d": "M252 414 V290",
+       "d": "M252 414 V282",
        "title": "Custom Axis stands in for Axis"
       },
       {
-       "d": "M252 90 V114",
+       "d": "M252 94 V114",
        "title": "Auto Section stands in for Section"
       },
       {
-       "d": "M352 90 V114",
+       "d": "M352 94 V114",
        "title": "Table Section stands in for Section Plus"
       },
       {
-       "d": "M752 414 V290",
+       "d": "M752 414 V282",
        "title": "Custom Seat stands in for Seat"
       }
      ],
@@ -23352,9 +23497,9 @@
        243
       ],
       [
-       252,
+       279,
        158,
-       252,
+       279,
        214
       ],
       [
@@ -23598,15 +23743,15 @@
        236
       ],
       [
-       1152,
+       1182,
        258,
-       1152,
+       1182,
        514
       ],
       [
-       1252,
+       1273,
        158,
-       1252,
+       1273,
        214
       ],
       [
@@ -23710,12 +23855,40 @@
        436,
        1430,
        436
+      ],
+      [
+       152,
+       282,
+       152,
+       414
+      ],
+      [
+       252,
+       282,
+       252,
+       414
+      ],
+      [
+       252,
+       94,
+       252,
+       114
+      ],
+      [
+       352,
+       94,
+       352,
+       114
+      ],
+      [
+       752,
+       282,
+       752,
+       414
       ]
      ],
      "order_only": [
-      "Axis → Section",
-      "Field → View Axis",
-      "Assemble Bowl → View Axis"
+      "Axis → Section"
      ],
      "back": []
     },

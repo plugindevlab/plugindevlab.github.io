@@ -11,7 +11,7 @@ antlion:
     - {id: table-section,         col: 3,  row: 0, kind: alt}
     - {id: section-plus,          col: 3,  row: 1, kind: main}
     - {id: section-analysis,      col: 4,  row: 1, kind: table}
-    - {id: view-axis,             col: 4,  row: 3, kind: guide, as: view-axis-plan}
+    - {id: view-axis,             col: 4,  row: 3, kind: guide}
     - {id: stand-2d,              col: 5,  row: 2, kind: main}
     - {id: vomitory,              col: 6,  row: 2, kind: main}
     - {id: seat,                  col: 7,  row: 2, kind: main}
@@ -21,7 +21,7 @@ antlion:
     - {id: opening-cut,           col: 9,  row: 2, kind: main}
     - {id: vom-3d,                col: 10, row: 2, kind: main}
     - {id: assemble-bowl,         col: 11, row: 2, kind: main}
-    - {id: view-axis,             col: 11, row: 5, kind: guide, as: view-axis-bowl}
+    - {id: view-limit,            col: 11, row: 5, kind: guide}
     - {id: rail-3d,               col: 12, row: 1, kind: main}
     - {id: stand-3d-plus,         col: 12, row: 2, kind: main}
     - {id: c-value-seat,          col: 13, row: 1, kind: table}
@@ -41,10 +41,10 @@ antlion:
     - section-plus > section-analysis
     - table-section > section-analysis
     - axis > stand-2d
-    - axis > view-axis-plan
+    - axis > view-axis
     - section-plus > stand-2d
     - custom-axis > stand-2d
-    - field > view-axis-bowl
+    - field > view-limit
     - stand-2d > vomitory
     - stand-2d > stand-3d
     - stand-2d > custom-seat
@@ -56,7 +56,7 @@ antlion:
     - vom-3d > assemble-bowl
     - stand-3d > assemble-bowl
     - assemble-bowl > stand-3d-plus
-    - assemble-bowl > view-axis-bowl
+    - assemble-bowl > view-limit
     - stand-3d-plus > rail-3d
     - stand-3d-plus > c-value-seat
     - stand-3d-plus > c-value-tread

@@ -38,10 +38,10 @@ component's page.
 
 {% include flowmap.html %}
 
-**Arrows are order, not wiring.** Most are a real connection you could make on the canvas,
-but a few say *do this first* where no wire exists — the axis before the section, the bowl
-before you put a guide on it. **Dotted links mean "instead of", not "as well as":** a custom
-start line replaces the built-in one; a table-driven section replaces the one you set by hand.
+**Arrows are order, not wiring.** Nearly all of them are a real connection you could make on
+the canvas, but not every one is — the axis comes before the section even though nothing runs
+between the two. **Dotted links mean "instead of", not "as well as":** a custom start line
+replaces the built-in one; a table-driven section replaces the one you set by hand.
 
 ## The stages
 
