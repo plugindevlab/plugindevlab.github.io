@@ -87,6 +87,7 @@ a:hover { text-decoration: none; }
 .content > * { max-width: var(--measure); }
 .content > .full, .content > .split, .content > .grid, .content > .map-wrap,
 .content > .combos, .content > .map-note, .content > .rib-wrap,
+.content > .fm-wrap, .content > .fm-key,
 .content > section, .content > table, .content > pre, .content > figure { max-width: none; }
 
 h1 {
