@@ -519,7 +519,7 @@ figure.fig figcaption {
 .fm-s-icon .fm-table .fm-shape { fill: var(--bg-soft); }
 .fm-s-icon .fm-guide .fm-shape { stroke: var(--accent); }
 .fm-s-icon .fm-t {
-  fill: var(--ink); stroke: var(--bg); stroke-width: 3px;
+  fill: var(--ink); stroke: var(--bg); stroke-width: 1.8px;
   paint-order: stroke fill; stroke-linejoin: round;
 }
 

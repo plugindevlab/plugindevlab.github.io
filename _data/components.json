@@ -14545,6 +14545,34 @@
      }
     },
     {
+     "id": "gate-switch",
+     "name": "Gate Switch",
+     "compId": "GATE-002",
+     "ribbon": [
+      "Util"
+     ],
+     "group": "util",
+     "page": "05-analysis-util",
+     "checked": "2026-09-10",
+     "summary": "One switch for every Data Gate on the canvas - no wires needed. LIVE holds every gate open, so data flows as if PASS were held down and the whole chain stays current. HOLD closes them all again; each gate keeps the last data that went through. Keep a single switch per document.",
+     "inputs": [],
+     "outputs": [],
+     "tier": "free",
+     "figure": {
+      "w": 964,
+      "h": 153,
+      "callW": 340,
+      "callH": 63,
+      "imgX": 428,
+      "imgY": 30,
+      "imgW": 108,
+      "imgH": 93,
+      "img": "/assets/img/antlion/components/gate-switch.png",
+      "pending": false,
+      "ports": []
+     }
+    },
+    {
      "id": "seat-map",
      "name": "Seat Map",
      "compId": "SEATMAP-001",
@@ -18090,7 +18118,7 @@
        "y": 218,
        "w": 220,
        "h": 74,
-       "count": 7,
+       "count": 8,
        "step": 0
       }
      ],
@@ -19267,6 +19295,16 @@
         "opt": false
        }
       ]
+     },
+     {
+      "id": "gate-switch",
+      "name": "Gate Switch",
+      "cid": "GATE-002",
+      "group": "util",
+      "tier": "free",
+      "summary": "One switch for every Data Gate on the canvas - no wires needed.",
+      "in": [],
+      "out": []
      },
      {
       "id": "seat-map",
@@ -22058,7 +22096,7 @@
        "lines": [
         {
          "t": "Field",
-         "y": 267
+         "y": 274
         }
        ]
       },
@@ -22086,7 +22124,7 @@
        "lines": [
         {
          "t": "Startline",
-         "y": 267
+         "y": 274
         }
        ]
       },
@@ -22114,11 +22152,11 @@
        "lines": [
         {
          "t": "Custom",
-         "y": 467
+         "y": 474
         },
         {
          "t": "Startline",
-         "y": 479
+         "y": 486
         }
        ]
       },
@@ -22146,11 +22184,11 @@
        "lines": [
         {
          "t": "Auto",
-         "y": 67
+         "y": 74
         },
         {
          "t": "Section",
-         "y": 79
+         "y": 86
         }
        ]
       },
@@ -22178,7 +22216,7 @@
        "lines": [
         {
          "t": "Section",
-         "y": 167
+         "y": 174
         }
        ]
       },
@@ -22206,7 +22244,7 @@
        "lines": [
         {
          "t": "Axis",
-         "y": 267
+         "y": 274
         }
        ]
       },
@@ -22234,11 +22272,11 @@
        "lines": [
         {
          "t": "Custom",
-         "y": 467
+         "y": 474
         },
         {
          "t": "Axis",
-         "y": 479
+         "y": 486
         }
        ]
       },
@@ -22266,11 +22304,11 @@
        "lines": [
         {
          "t": "Table",
-         "y": 67
+         "y": 74
         },
         {
          "t": "Section",
-         "y": 79
+         "y": 86
         }
        ]
       },
@@ -22298,11 +22336,11 @@
        "lines": [
         {
          "t": "Section",
-         "y": 167
+         "y": 174
         },
         {
          "t": "Plus",
-         "y": 179
+         "y": 186
         }
        ]
       },
@@ -22330,11 +22368,11 @@
        "lines": [
         {
          "t": "Section",
-         "y": 167
+         "y": 174
         },
         {
          "t": "analysis",
-         "y": 179
+         "y": 186
         }
        ]
       },
@@ -22362,11 +22400,11 @@
        "lines": [
         {
          "t": "View",
-         "y": 367
+         "y": 374
         },
         {
          "t": "Axis",
-         "y": 379
+         "y": 386
         }
        ]
       },
@@ -22394,11 +22432,11 @@
        "lines": [
         {
          "t": "Stand",
-         "y": 267
+         "y": 274
         },
         {
          "t": "2D",
-         "y": 279
+         "y": 286
         }
        ]
       },
@@ -22426,7 +22464,7 @@
        "lines": [
         {
          "t": "Vomitory",
-         "y": 267
+         "y": 274
         }
        ]
       },
@@ -22454,7 +22492,7 @@
        "lines": [
         {
          "t": "Seat",
-         "y": 267
+         "y": 274
         }
        ]
       },
@@ -22482,11 +22520,11 @@
        "lines": [
         {
          "t": "Custom",
-         "y": 467
+         "y": 474
         },
         {
          "t": "Seat",
-         "y": 479
+         "y": 486
         }
        ]
       },
@@ -22514,11 +22552,11 @@
        "lines": [
         {
          "t": "Stand",
-         "y": 167
+         "y": 174
         },
         {
          "t": "3D",
-         "y": 179
+         "y": 186
         }
        ]
       },
@@ -22546,7 +22584,7 @@
        "lines": [
         {
          "t": "Cut",
-         "y": 267
+         "y": 274
         }
        ]
       },
@@ -22574,11 +22612,11 @@
        "lines": [
         {
          "t": "Opening",
-         "y": 267
+         "y": 274
         },
         {
          "t": "Cut",
-         "y": 279
+         "y": 286
         }
        ]
       },
@@ -22606,11 +22644,11 @@
        "lines": [
         {
          "t": "Vom",
-         "y": 267
+         "y": 274
         },
         {
          "t": "3D",
-         "y": 279
+         "y": 286
         }
        ]
       },
@@ -22638,11 +22676,11 @@
        "lines": [
         {
          "t": "Assemble",
-         "y": 267
+         "y": 274
         },
         {
          "t": "Bowl",
-         "y": 279
+         "y": 286
         }
        ]
       },
@@ -22670,11 +22708,11 @@
        "lines": [
         {
          "t": "View",
-         "y": 567
+         "y": 574
         },
         {
          "t": "Axis",
-         "y": 579
+         "y": 586
         }
        ]
       },
@@ -22702,11 +22740,11 @@
        "lines": [
         {
          "t": "Rail",
-         "y": 167
+         "y": 174
         },
         {
          "t": "3D",
-         "y": 179
+         "y": 186
         }
        ]
       },
@@ -22734,15 +22772,15 @@
        "lines": [
         {
          "t": "Stand",
-         "y": 267
+         "y": 274
         },
         {
          "t": "3D",
-         "y": 279
+         "y": 286
         },
         {
          "t": "Plus",
-         "y": 291
+         "y": 298
         }
        ]
       },
@@ -22770,11 +22808,11 @@
        "lines": [
         {
          "t": "C-value",
-         "y": 167
+         "y": 174
         },
         {
          "t": "Seat",
-         "y": 179
+         "y": 186
         }
        ]
       },
@@ -22802,11 +22840,11 @@
        "lines": [
         {
          "t": "C-value",
-         "y": 267
+         "y": 274
         },
         {
          "t": "Tread",
-         "y": 279
+         "y": 286
         }
        ]
       },
@@ -22834,11 +22872,11 @@
        "lines": [
         {
          "t": "Seat",
-         "y": 467
+         "y": 474
         },
         {
          "t": "Map",
-         "y": 479
+         "y": 486
         }
        ]
       },
@@ -22866,11 +22904,11 @@
        "lines": [
         {
          "t": "C-value",
-         "y": 167
+         "y": 174
         },
         {
          "t": "Map",
-         "y": 179
+         "y": 186
         }
        ]
       },
@@ -22898,15 +22936,15 @@
        "lines": [
         {
          "t": "C-value",
-         "y": 267
+         "y": 274
         },
         {
          "t": "Section",
-         "y": 279
+         "y": 286
         },
         {
          "t": "Check",
-         "y": 291
+         "y": 298
         }
        ]
       },
@@ -22934,11 +22972,11 @@
        "lines": [
         {
          "t": "Seat",
-         "y": 467
+         "y": 474
         },
         {
          "t": "View",
-         "y": 479
+         "y": 486
         }
        ]
       }
@@ -23737,7 +23775,7 @@
       },
       {
        "name": "Util",
-       "count": 7,
+       "count": 8,
        "bx": 1143,
        "bw": 303,
        "by": 157,

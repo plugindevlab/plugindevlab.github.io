@@ -45,7 +45,7 @@ antlion:
   util:
     path: "Util"
     page: "05-analysis-util"
-    count: 7
+    count: 8
     components:
       - { name: "Input Panel", anchor: "input-panel", id: "", page: "05-analysis-util" }
       - { name: "C-value Legend", anchor: "c-value-legend", id: "LEGEND-001", page: "05-analysis-util" }
@@ -53,6 +53,7 @@ antlion:
       - { name: "Slider Merge", anchor: "slider-merge", id: "", page: "05-analysis-util" }
       - { name: "Toggle Merge", anchor: "toggle-merge", id: "", page: "05-analysis-util" }
       - { name: "Data Gate", anchor: "data-gate", id: "GATE-001", page: "05-analysis-util" }
+      - { name: "Gate Switch", anchor: "gate-switch", id: "GATE-002", page: "05-analysis-util" }
       - { name: "License", anchor: "license", id: "", page: "05-analysis-util" }
   bowl-analysis:
     path: "Bowl Analysis"

@@ -1010,6 +1010,15 @@
     }
    ]
   },
+  "Gate Switch": {
+   "id": "gate-switch",
+   "product": "antlion",
+   "w": 72,
+   "h": 62,
+   "scale": 2,
+   "inputs": [],
+   "outputs": []
+  },
   "Field": {
    "id": "field",
    "product": "antlion",
