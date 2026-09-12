@@ -1,0 +1,80 @@
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <g
+     id="layer-guide"
+     style="display:none">
+    <rect
+       id="guide-canvas"
+       x="0.5"
+       y="0.5"
+       width="23"
+       height="23"
+       fill="none"
+       stroke="#ff00ff"
+       stroke-width="1" />
+    <rect
+       id="guide-live"
+       x="1.5"
+       y="1.5"
+       width="21"
+       height="21"
+       fill="none"
+       stroke="#00b0ff"
+       stroke-width="1" />
+  </g>
+  <g
+     id="layer-base">
+    <rect
+       id="base-pill-on"
+       x="4"
+       y="3"
+       width="13"
+       height="7"
+       rx="3.5"
+       fill="none"
+       stroke="#aeaeae"
+       stroke-width="2" />
+    <rect
+       id="base-pill-off"
+       x="4"
+       y="14"
+       width="13"
+       height="7"
+       rx="3.5"
+       fill="none"
+       stroke="#aeaeae"
+       stroke-width="2" />
+  </g>
+  <g
+     id="layer-detail">
+    <path
+       id="detail-merge-line"
+       d="M 19 6.5 H 21 V 17.5 H 19"
+       fill="none"
+       stroke="#e7e7e7"
+       stroke-width="1" />
+    <circle
+       id="detail-knob-off"
+       cx="7.5"
+       cy="17.5"
+       r="2"
+       fill="#656565" />
+  </g>
+  <g
+     id="layer-accent">
+    <circle
+       id="accent-knob-on"
+       cx="13.5"
+       cy="6.5"
+       r="2"
+       fill="#9c8f81"
+       stroke="#4e4e4e"
+       stroke-width="1" />
+  </g>
+</svg>

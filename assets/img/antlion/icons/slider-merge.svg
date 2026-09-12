@@ -1,0 +1,88 @@
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <g
+     id="layer-guide"
+     style="display:none">
+    <rect
+       id="guide-canvas"
+       x="0.5"
+       y="0.5"
+       width="23"
+       height="23"
+       fill="none"
+       stroke="#ff00ff"
+       stroke-width="1" />
+    <rect
+       id="guide-live"
+       x="1.5"
+       y="1.5"
+       width="21"
+       height="21"
+       fill="none"
+       stroke="#00b0ff"
+       stroke-width="1" />
+  </g>
+  <g
+     id="layer-base">
+    <path
+       id="base-track-1"
+       d="M 3 5 H 21"
+       fill="none"
+       stroke="#aeaeae"
+       stroke-width="2" />
+    <path
+       id="base-track-2"
+       d="M 3 12 H 21"
+       fill="none"
+       stroke="#aeaeae"
+       stroke-width="2" />
+    <path
+       id="base-track-3"
+       d="M 3 19 H 21"
+       fill="none"
+       stroke="#aeaeae"
+       stroke-width="2" />
+  </g>
+  <g
+     id="layer-detail">
+    <path
+       id="detail-merge-line"
+       d="M 9 5 L 15 12 L 11 19"
+       fill="none"
+       stroke="#e7e7e7"
+       stroke-width="1" />
+  </g>
+  <g
+     id="layer-accent">
+    <circle
+       id="accent-knob-1"
+       cx="9"
+       cy="5"
+       r="2.2"
+       fill="#9c8f81"
+       stroke="#4e4e4e"
+       stroke-width="1" />
+    <circle
+       id="accent-knob-2"
+       cx="15"
+       cy="12"
+       r="2.2"
+       fill="#9c8f81"
+       stroke="#4e4e4e"
+       stroke-width="1" />
+    <circle
+       id="accent-knob-3"
+       cx="11"
+       cy="19"
+       r="2.2"
+       fill="#9c8f81"
+       stroke="#4e4e4e"
+       stroke-width="1" />
+  </g>
+</svg>

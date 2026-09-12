@@ -1,0 +1,76 @@
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <g
+     id="layer-guide"
+     style="display:none">
+    <rect
+       id="guide-canvas"
+       x="0.5"
+       y="0.5"
+       width="23"
+       height="23"
+       fill="none"
+       stroke="#ff00ff"
+       stroke-width="1" />
+    <rect
+       id="guide-live"
+       x="1.5"
+       y="1.5"
+       width="21"
+       height="21"
+       fill="none"
+       stroke="#00b0ff"
+       stroke-width="1" />
+  </g>
+  <g
+     id="layer-base">
+    <rect
+       id="base-sheet"
+       x="2"
+       y="3"
+       width="20"
+       height="18"
+       fill="none"
+       stroke="#e7e7e7"
+       stroke-width="2" />
+  </g>
+  <g
+     id="layer-detail">
+    <rect
+       id="detail-band-outer"
+       x="5"
+       y="6"
+       width="14"
+       height="12"
+       rx="5"
+       fill="none"
+       stroke="#112e96"
+       stroke-width="2" />
+    <rect
+       id="detail-band-mid"
+       x="8"
+       y="9"
+       width="8"
+       height="6"
+       rx="3"
+       fill="none"
+       stroke="#2d7be0"
+       stroke-width="2" />
+  </g>
+  <g
+     id="layer-accent">
+    <rect
+       id="accent-band-inner"
+       x="10.5"
+       y="11.5"
+       width="3"
+       height="1"
+       fill="#83c3e6" />
+  </g>
+</svg>

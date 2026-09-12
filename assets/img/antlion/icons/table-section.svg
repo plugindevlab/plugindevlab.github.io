@@ -1,0 +1,68 @@
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <g
+     id="layer-guide"
+     style="display:none">
+    <rect
+       id="guide-canvas"
+       x="0.5"
+       y="0.5"
+       width="23"
+       height="23"
+       fill="none"
+       stroke="#ff00ff"
+       stroke-width="1" />
+    <rect
+       id="guide-live"
+       x="1.5"
+       y="1.5"
+       width="21"
+       height="21"
+       fill="none"
+       stroke="#00b0ff"
+       stroke-width="1" />
+  </g>
+  <g
+     id="layer-base">
+    <path
+       style="fill:#656565"
+       d="m 3,19 h 4 v -2 h 4 v -2 h 4 v -2 h 4 v -2 h 4 v 2 h -2 v 2 h -4 v 2 h -4 v 2 H 9 v 2 H 3 Z"
+       id="base-slab" />
+  </g>
+  <g
+     id="layer-detail">
+    <rect
+       id="detail-grid-frame"
+       x="2.5"
+       y="2.5"
+       width="8"
+       height="6"
+       fill="none"
+       stroke="#e7e7e7"
+       stroke-width="1"
+       style="stroke:#656565;stroke-opacity:1" />
+    <path
+       id="detail-grid-lines"
+       d="M 2.5 5.5 H 10.5 M 6.5 2.5 V 8.5"
+       fill="none"
+       stroke="#e7e7e7"
+       stroke-width="1"
+       style="fill:#656565;fill-opacity:1;stroke:#656565;stroke-opacity:1" />
+  </g>
+  <g
+     id="layer-accent">
+    <rect
+       id="accent-grid-cell"
+       x="3"
+       y="6"
+       width="3"
+       height="2"
+       fill="#83c3e6" />
+  </g>
+</svg>

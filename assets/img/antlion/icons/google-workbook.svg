@@ -1,0 +1,60 @@
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <g
+     id="layer-guide"
+     style="display:none">
+    <rect
+       id="guide-canvas"
+       x="0.5"
+       y="0.5"
+       width="23"
+       height="23"
+       fill="none"
+       stroke="#ff00ff"
+       stroke-width="1" />
+    <rect
+       id="guide-live"
+       x="1.5"
+       y="1.5"
+       width="21"
+       height="21"
+       fill="none"
+       stroke="#00b0ff"
+       stroke-width="1" />
+  </g>
+  <g
+     id="layer-base" />
+  <g
+     id="layer-detail" />
+  <g
+     id="layer-accent">
+    <path
+       id="base-doc"
+       d="m 4,2 h 11 l 5,5 V 22 H 4 Z"
+       fill="#e7e7e7"
+       stroke="#4e4e4e"
+       stroke-width="2" />
+    <path
+       id="detail-fold"
+       d="m 15,2 v 5 h 5"
+       fill="none"
+       stroke="#4e4e4e"
+       stroke-width="2" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;writing-mode:lr-tb;direction:ltr;fill:#2d7be0;stroke:#2d7be0;stroke-width:0;stroke-linecap:square"
+       x="7.1964846"
+       y="18"
+       id="text1-0-7"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#2d7be0;stroke:#2d7be0;stroke-width:0"
+         x="7.1964846"
+         y="18"
+         id="tspan2-1-1">G</tspan></text>
+  </g>
+</svg>

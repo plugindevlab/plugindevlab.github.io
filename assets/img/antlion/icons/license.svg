@@ -1,0 +1,62 @@
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <g
+     id="layer-guide"
+     style="display:none">
+    <rect
+       id="guide-canvas"
+       x="0.5"
+       y="0.5"
+       width="23"
+       height="23"
+       fill="none"
+       stroke="#ff00ff"
+       stroke-width="1" />
+    <rect
+       id="guide-live"
+       x="1.5"
+       y="1.5"
+       width="21"
+       height="21"
+       fill="none"
+       stroke="#00b0ff"
+       stroke-width="1" />
+  </g>
+  <g
+     id="layer-base">
+    <circle
+       id="base-badge"
+       cx="12"
+       cy="10"
+       r="7"
+       fill="#9c8f81"
+       stroke="#4e4e4e"
+       stroke-width="2" />
+  </g>
+  <g
+     id="layer-detail">
+    <path
+       id="detail-ribbon-left"
+       d="M 8 16 L 8 22 L 11 19.5 Z"
+       fill="#6a564e" />
+    <path
+       id="detail-ribbon-right"
+       d="M 16 16 L 16 22 L 13 19.5 Z"
+       fill="#6a564e" />
+  </g>
+  <g
+     id="layer-accent">
+    <path
+       id="accent-check"
+       d="M 8.5 10 L 11 13 L 15.5 7.5"
+       fill="none"
+       stroke="#e7e7e7"
+       stroke-width="2" />
+  </g>
+</svg>

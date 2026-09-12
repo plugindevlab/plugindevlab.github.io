@@ -1,0 +1,96 @@
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <g
+     id="layer-guide"
+     style="display:none">
+    <rect
+       id="guide-canvas"
+       x="0.5"
+       y="0.5"
+       width="23"
+       height="23"
+       fill="none"
+       stroke="#ff00ff"
+       stroke-width="1" />
+    <rect
+       id="guide-live"
+       x="1.5"
+       y="1.5"
+       width="21"
+       height="21"
+       fill="none"
+       stroke="#00b0ff"
+       stroke-width="1" />
+  </g>
+  <g
+     id="layer-base">
+    <circle
+       id="base-seat-1a"
+       cx="5"
+       cy="6"
+       r="2"
+       fill="#83c3e6" />
+    <circle
+       id="base-seat-1b"
+       cx="12"
+       cy="5"
+       r="2"
+       fill="#83c3e6" />
+    <circle
+       id="base-seat-1c"
+       cx="19"
+       cy="6"
+       r="2"
+       fill="#83c3e6" />
+    <circle
+       id="base-seat-2a"
+       cx="5"
+       cy="12.5"
+       r="2"
+       fill="#2d7be0" />
+    <circle
+       id="base-seat-2b"
+       cx="12"
+       cy="11.5"
+       r="2"
+       fill="#2d7be0" />
+    <circle
+       id="base-seat-2c"
+       cx="19"
+       cy="12.5"
+       r="2"
+       fill="#2d7be0" />
+  </g>
+  <g
+     id="layer-detail">
+    <circle
+       id="detail-seat-3a"
+       cx="5"
+       cy="19"
+       r="2"
+       fill="#112e96" />
+    <circle
+       id="detail-seat-3c"
+       cx="19"
+       cy="19"
+       r="2"
+       fill="#112e96" />
+  </g>
+  <g
+     id="layer-accent">
+    <circle
+       id="accent-seat-worst"
+       cx="12"
+       cy="18"
+       r="2"
+       fill="#112e96"
+       stroke="#4e4e4e"
+       stroke-width="1" />
+  </g>
+</svg>

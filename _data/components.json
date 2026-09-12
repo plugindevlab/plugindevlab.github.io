@@ -22024,11 +22024,13 @@
      }
     ],
     "flowmap": {
+     "style": "icon",
      "w": 1504,
      "h": 604,
-     "nodeW": 76,
-     "nodeH": 76,
-     "r": 38,
+     "nodeW": 44,
+     "nodeH": 44,
+     "r": 22,
+     "iconRx": 11,
      "cols": 15,
      "rows": 6,
      "nodes": [
@@ -22044,12 +22046,19 @@
        "summary": "Draws the playing field outline for a sport and the focal point every sightline is measured to.",
        "x": 14,
        "y": 214,
+       "icon": "/assets/img/antlion/icons/field.svg",
        "cx": 52,
-       "cy": 252,
+       "bx": 30,
+       "by": 214,
+       "cy": 236,
+       "iw": 26,
+       "ih": 26,
+       "ix": 39,
+       "iy": 223,
        "lines": [
         {
          "t": "Field",
-         "y": 256
+         "y": 267
         }
        ]
       },
@@ -22065,12 +22074,19 @@
        "summary": "Start line for the front row, offset outward from the field edge by a long-side and a short-side distance.",
        "x": 114,
        "y": 214,
+       "icon": "/assets/img/antlion/icons/startline-rect.svg",
        "cx": 152,
-       "cy": 252,
+       "bx": 130,
+       "by": 214,
+       "cy": 236,
+       "iw": 26,
+       "ih": 26,
+       "ix": 139,
+       "iy": 223,
        "lines": [
         {
          "t": "Startline",
-         "y": 256
+         "y": 267
         }
        ]
       },
@@ -22086,16 +22102,23 @@
        "summary": "Start line taken from a curve you draw, aligned to the field frame.",
        "x": 114,
        "y": 414,
+       "icon": "/assets/img/antlion/icons/custom-startline.svg",
        "cx": 152,
-       "cy": 452,
+       "bx": 130,
+       "by": 414,
+       "cy": 436,
+       "iw": 26,
+       "ih": 26,
+       "ix": 139,
+       "iy": 423,
        "lines": [
         {
          "t": "Custom",
-         "y": 450
+         "y": 467
         },
         {
          "t": "Startline",
-         "y": 462
+         "y": 479
         }
        ]
       },
@@ -22111,16 +22134,23 @@
        "summary": "Works out the risers for you.",
        "x": 214,
        "y": 14,
+       "icon": "/assets/img/antlion/icons/auto-section.svg",
        "cx": 252,
-       "cy": 52,
+       "bx": 230,
+       "by": 14,
+       "cy": 36,
+       "iw": 26,
+       "ih": 26,
+       "ix": 239,
+       "iy": 23,
        "lines": [
         {
          "t": "Auto",
-         "y": 50
+         "y": 67
         },
         {
          "t": "Section",
-         "y": 62
+         "y": 79
         }
        ]
       },
@@ -22136,12 +22166,19 @@
        "summary": "Turns the tread lines you draw into a tier section — rows, nosing and eye points, and the closed profile the stand is swept from.",
        "x": 214,
        "y": 114,
+       "icon": "/assets/img/antlion/icons/section.svg",
        "cx": 252,
-       "cy": 152,
+       "bx": 230,
+       "by": 114,
+       "cy": 136,
+       "iw": 26,
+       "ih": 26,
+       "ix": 239,
+       "iy": 123,
        "lines": [
         {
          "t": "Section",
-         "y": 156
+         "y": 167
         }
        ]
       },
@@ -22157,12 +22194,19 @@
        "summary": "Divides the start line into the planes each stand section is placed on.",
        "x": 214,
        "y": 214,
+       "icon": "/assets/img/antlion/icons/axis.svg",
        "cx": 252,
-       "cy": 252,
+       "bx": 230,
+       "by": 214,
+       "cy": 236,
+       "iw": 26,
+       "ih": 26,
+       "ix": 239,
+       "iy": 223,
        "lines": [
         {
          "t": "Axis",
-         "y": 256
+         "y": 267
         }
        ]
       },
@@ -22178,16 +22222,23 @@
        "summary": "Section placement planes from axis curves you draw yourself.",
        "x": 214,
        "y": 414,
+       "icon": "/assets/img/antlion/icons/custom-axis.svg",
        "cx": 252,
-       "cy": 452,
+       "bx": 230,
+       "by": 414,
+       "cy": 436,
+       "iw": 26,
+       "ih": 26,
+       "ix": 239,
+       "iy": 423,
        "lines": [
         {
          "t": "Custom",
-         "y": 450
+         "y": 467
         },
         {
          "t": "Axis",
-         "y": 462
+         "y": 479
         }
        ]
       },
@@ -22203,16 +22254,23 @@
        "summary": "Builds the tier sections from the numbers in your workbook instead of lines you draw.",
        "x": 314,
        "y": 14,
+       "icon": "/assets/img/antlion/icons/table-section.svg",
        "cx": 352,
-       "cy": 52,
+       "bx": 330,
+       "by": 14,
+       "cy": 36,
+       "iw": 26,
+       "ih": 26,
+       "ix": 339,
+       "iy": 23,
        "lines": [
         {
          "t": "Table",
-         "y": 50
+         "y": 67
         },
         {
          "t": "Section",
-         "y": 62
+         "y": 79
         }
        ]
       },
@@ -22228,16 +22286,23 @@
        "summary": "Adds the things a bare section does not have: the front barrier or handrail, accessible (wheelchair) rows, and the sightline check over the barrier.",
        "x": 314,
        "y": 114,
+       "icon": "/assets/img/antlion/icons/section-plus.svg",
        "cx": 352,
-       "cy": 152,
+       "bx": 330,
+       "by": 114,
+       "cy": 136,
+       "iw": 26,
+       "ih": 26,
+       "ix": 339,
+       "iy": 123,
        "lines": [
         {
          "t": "Section",
-         "y": 150
+         "y": 167
         },
         {
          "t": "Plus",
-         "y": 162
+         "y": 179
         }
        ]
       },
@@ -22253,16 +22318,23 @@
        "summary": "Checks the sightline over the row in front, row by row, and reports the C-value.",
        "x": 414,
        "y": 114,
+       "icon": "/assets/img/antlion/icons/section-analysis.svg",
        "cx": 452,
-       "cy": 152,
+       "bx": 430,
+       "by": 114,
+       "cy": 136,
+       "iw": 26,
+       "ih": 26,
+       "ix": 439,
+       "iy": 123,
        "lines": [
         {
          "t": "Section",
-         "y": 150
+         "y": 167
         },
         {
          "t": "analysis",
-         "y": 162
+         "y": 179
         }
        ]
       },
@@ -22278,16 +22350,23 @@
        "summary": "Tags every axis with its number — a guide line running out from each axis point into a circle holding the axis name (A0, A1, ...).",
        "x": 414,
        "y": 314,
+       "icon": "/assets/img/antlion/icons/view-axis.svg",
        "cx": 452,
-       "cy": 352,
+       "bx": 430,
+       "by": 314,
+       "cy": 336,
+       "iw": 26,
+       "ih": 26,
+       "ix": 439,
+       "iy": 323,
        "lines": [
         {
          "t": "View",
-         "y": 350
+         "y": 367
         },
         {
          "t": "Axis",
-         "y": 362
+         "y": 379
         }
        ]
       },
@@ -22303,16 +22382,23 @@
        "summary": "Sweeps each tier section around the axis planes and flattens it into tread rings in plan.",
        "x": 514,
        "y": 214,
+       "icon": "/assets/img/antlion/icons/stand-2d.svg",
        "cx": 552,
-       "cy": 252,
+       "bx": 530,
+       "by": 214,
+       "cy": 236,
+       "iw": 26,
+       "ih": 26,
+       "ix": 539,
+       "iy": 223,
        "lines": [
         {
          "t": "Stand",
-         "y": 250
+         "y": 267
         },
         {
          "t": "2D",
-         "y": 262
+         "y": 279
         }
        ]
       },
@@ -22328,12 +22414,19 @@
        "summary": "Places the vomitories — the tunnels spectators enter the bowl through — in the tread rings, and sets how each one gets down to the concourse: flat...",
        "x": 614,
        "y": 214,
+       "icon": "/assets/img/antlion/icons/vomitory.svg",
        "cx": 652,
-       "cy": 252,
+       "bx": 630,
+       "by": 214,
+       "cy": 236,
+       "iw": 26,
+       "ih": 26,
+       "ix": 639,
+       "iy": 223,
        "lines": [
         {
          "t": "Vomitory",
-         "y": 256
+         "y": 267
         }
        ]
       },
@@ -22349,12 +22442,19 @@
        "summary": "Fills the tread rings with seats, breaking each row at the vomitories and aisles, and flags rows that break the egress limits.",
        "x": 714,
        "y": 214,
+       "icon": "/assets/img/antlion/icons/seat.svg",
        "cx": 752,
-       "cy": 252,
+       "bx": 730,
+       "by": 214,
+       "cy": 236,
+       "iw": 26,
+       "ih": 26,
+       "ix": 739,
+       "iy": 223,
        "lines": [
         {
          "t": "Seat",
-         "y": 256
+         "y": 267
         }
        ]
       },
@@ -22370,16 +22470,23 @@
        "summary": "Same seat placement as Seat, but the vomitories, aisles and even the seats come from curves you draw instead of being generated.",
        "x": 714,
        "y": 414,
+       "icon": "/assets/img/antlion/icons/custom-seat.svg",
        "cx": 752,
-       "cy": 452,
+       "bx": 730,
+       "by": 414,
+       "cy": 436,
+       "iw": 26,
+       "ih": 26,
+       "ix": 739,
+       "iy": 423,
        "lines": [
         {
          "t": "Custom",
-         "y": 450
+         "y": 467
         },
         {
          "t": "Seat",
-         "y": 462
+         "y": 479
         }
        ]
       },
@@ -22395,16 +22502,23 @@
        "summary": "Sweeps the closed section profile around the axis planes into the solid tier bodies.",
        "x": 814,
        "y": 114,
+       "icon": "/assets/img/antlion/icons/stand-3d.svg",
        "cx": 852,
-       "cy": 152,
+       "bx": 830,
+       "by": 114,
+       "cy": 136,
+       "iw": 26,
+       "ih": 26,
+       "ix": 839,
+       "iy": 123,
        "lines": [
         {
          "t": "Stand",
-         "y": 150
+         "y": 167
         },
         {
          "t": "3D",
-         "y": 162
+         "y": 179
         }
        ]
       },
@@ -22420,12 +22534,19 @@
        "summary": "Cuts the bowl to shape — keep or remove a whole span between two axis numbers, or everything on one side of a curve you draw.",
        "x": 814,
        "y": 214,
+       "icon": "/assets/img/antlion/icons/cut.svg",
        "cx": 852,
-       "cy": 252,
+       "bx": 830,
+       "by": 214,
+       "cy": 236,
+       "iw": 26,
+       "ih": 26,
+       "ix": 839,
+       "iy": 223,
        "lines": [
         {
          "t": "Cut",
-         "y": 256
+         "y": 267
         }
        ]
       },
@@ -22441,16 +22562,23 @@
        "summary": "Punches local entrance openings through the stand — between two axis numbers, or under a closed curve you draw.",
        "x": 914,
        "y": 214,
+       "icon": "/assets/img/antlion/icons/opening-cut.svg",
        "cx": 952,
-       "cy": 252,
+       "bx": 930,
+       "by": 214,
+       "cy": 236,
+       "iw": 26,
+       "ih": 26,
+       "ix": 939,
+       "iy": 223,
        "lines": [
         {
          "t": "Opening",
-         "y": 250
+         "y": 267
         },
         {
          "t": "Cut",
-         "y": 262
+         "y": 279
         }
        ]
       },
@@ -22466,16 +22594,23 @@
        "summary": "Builds the vomitories as solids — the side and end walls, the portal opening punched through, and the stair or ramp down to the concourse.",
        "x": 1014,
        "y": 214,
+       "icon": "/assets/img/antlion/icons/vom-3d.svg",
        "cx": 1052,
-       "cy": 252,
+       "bx": 1030,
+       "by": 214,
+       "cy": 236,
+       "iw": 26,
+       "ih": 26,
+       "ix": 1039,
+       "iy": 223,
        "lines": [
         {
          "t": "Vom",
-         "y": 250
+         "y": 267
         },
         {
          "t": "3D",
-         "y": 262
+         "y": 279
         }
        ]
       },
@@ -22491,16 +22626,23 @@
        "summary": "Assembles the final bowl plan before Stand 3D Plus: merges parallel seat layouts (tiers renumbered), pulls exposed cut ends past their axis by the...",
        "x": 1114,
        "y": 214,
+       "icon": "/assets/img/antlion/icons/assemble-bowl.svg",
        "cx": 1152,
-       "cy": 252,
+       "bx": 1130,
+       "by": 214,
+       "cy": 236,
+       "iw": 26,
+       "ih": 26,
+       "ix": 1139,
+       "iy": 223,
        "lines": [
         {
          "t": "Assemble",
-         "y": 250
+         "y": 267
         },
         {
          "t": "Bowl",
-         "y": 262
+         "y": 279
         }
        ]
       },
@@ -22516,16 +22658,23 @@
        "summary": "Tags every axis with its number — a guide line running out from each axis point into a circle holding the axis name (A0, A1, ...).",
        "x": 1114,
        "y": 514,
+       "icon": "/assets/img/antlion/icons/view-axis.svg",
        "cx": 1152,
-       "cy": 552,
+       "bx": 1130,
+       "by": 514,
+       "cy": 536,
+       "iw": 26,
+       "ih": 26,
+       "ix": 1139,
+       "iy": 523,
        "lines": [
         {
          "t": "View",
-         "y": 550
+         "y": 567
         },
         {
          "t": "Axis",
-         "y": 562
+         "y": 579
         }
        ]
       },
@@ -22541,16 +22690,23 @@
        "summary": "Builds the railings and parapets as solids — the front barrier, the rear parapet, the edges left by a cut, and the walls around entrance openings.",
        "x": 1214,
        "y": 114,
+       "icon": "/assets/img/antlion/icons/rail-3d.svg",
        "cx": 1252,
-       "cy": 152,
+       "bx": 1230,
+       "by": 114,
+       "cy": 136,
+       "iw": 26,
+       "ih": 26,
+       "ix": 1239,
+       "iy": 123,
        "lines": [
         {
          "t": "Rail",
-         "y": 150
+         "y": 167
         },
         {
          "t": "3D",
-         "y": 162
+         "y": 179
         }
        ]
       },
@@ -22566,20 +22722,27 @@
        "summary": "Builds the 3D bowl: cuts the stand solids with everything the 2D chain decided — shape cuts, entrance openings, vomitories — and lifts the seats and...",
        "x": 1214,
        "y": 214,
+       "icon": "/assets/img/antlion/icons/stand-3d-plus.svg",
        "cx": 1252,
-       "cy": 252,
+       "bx": 1230,
+       "by": 214,
+       "cy": 236,
+       "iw": 26,
+       "ih": 26,
+       "ix": 1239,
+       "iy": 223,
        "lines": [
         {
          "t": "Stand",
-         "y": 244
+         "y": 267
         },
         {
          "t": "3D",
-         "y": 256
+         "y": 279
         },
         {
          "t": "Plus",
-         "y": 268
+         "y": 291
         }
        ]
       },
@@ -22595,16 +22758,23 @@
        "summary": "Paints every seat with its own C-value, measured in 3D from that seat's eye to its own focus.",
        "x": 1314,
        "y": 114,
+       "icon": "/assets/img/antlion/icons/c-value-seat.svg",
        "cx": 1352,
-       "cy": 152,
+       "bx": 1330,
+       "by": 114,
+       "cy": 136,
+       "iw": 26,
+       "ih": 26,
+       "ix": 1339,
+       "iy": 123,
        "lines": [
         {
          "t": "C-value",
-         "y": 150
+         "y": 167
         },
         {
          "t": "Seat",
-         "y": 162
+         "y": 179
         }
        ]
       },
@@ -22620,16 +22790,23 @@
        "summary": "Paints each tread band with the C-value of one representative section taken between two axes.",
        "x": 1314,
        "y": 214,
+       "icon": "/assets/img/antlion/icons/c-value-tread.svg",
        "cx": 1352,
-       "cy": 252,
+       "bx": 1330,
+       "by": 214,
+       "cy": 236,
+       "iw": 26,
+       "ih": 26,
+       "ix": 1339,
+       "iy": 223,
        "lines": [
         {
          "t": "C-value",
-         "y": 250
+         "y": 267
         },
         {
          "t": "Tread",
-         "y": 262
+         "y": 279
         }
        ]
       },
@@ -22645,16 +22822,23 @@
        "summary": "Groups the seats into zones - the pieces left when the aisles, vomitories and cuts are taken out of the tier - and gives every seat a readable...",
        "x": 1314,
        "y": 414,
+       "icon": "/assets/img/antlion/icons/seat-map.svg",
        "cx": 1352,
-       "cy": 452,
+       "bx": 1330,
+       "by": 414,
+       "cy": 436,
+       "iw": 26,
+       "ih": 26,
+       "ix": 1339,
+       "iy": 423,
        "lines": [
         {
          "t": "Seat",
-         "y": 450
+         "y": 467
         },
         {
          "t": "Map",
-         "y": 462
+         "y": 479
         }
        ]
       },
@@ -22670,16 +22854,23 @@
        "summary": "Lays the C-value map out flat - one sheet per tier, named TIER 0, TIER 1 and so on, with the seat layout drawing, the coloured map and the tier's...",
        "x": 1414,
        "y": 114,
+       "icon": "/assets/img/antlion/icons/c-value-map.svg",
        "cx": 1452,
-       "cy": 152,
+       "bx": 1430,
+       "by": 114,
+       "cy": 136,
+       "iw": 26,
+       "ih": 26,
+       "ix": 1439,
+       "iy": 123,
        "lines": [
         {
          "t": "C-value",
-         "y": 150
+         "y": 167
         },
         {
          "t": "Map",
-         "y": 162
+         "y": 179
         }
        ]
       },
@@ -22695,20 +22886,27 @@
        "summary": "Lays every axis section out on its own sheet so you can flip through them.",
        "x": 1414,
        "y": 214,
+       "icon": "/assets/img/antlion/icons/c-value-section-check.svg",
        "cx": 1452,
-       "cy": 252,
+       "bx": 1430,
+       "by": 214,
+       "cy": 236,
+       "iw": 26,
+       "ih": 26,
+       "ix": 1439,
+       "iy": 223,
        "lines": [
         {
          "t": "C-value",
-         "y": 244
+         "y": 267
         },
         {
          "t": "Section",
-         "y": 256
+         "y": 279
         },
         {
          "t": "Check",
-         "y": 268
+         "y": 291
         }
        ]
       },
@@ -22724,23 +22922,30 @@
        "summary": "Looks through a spectator's eyes.",
        "x": 1414,
        "y": 414,
+       "icon": "/assets/img/antlion/icons/seat-view.svg",
        "cx": 1452,
-       "cy": 452,
+       "bx": 1430,
+       "by": 414,
+       "cy": 436,
+       "iw": 26,
+       "ih": 26,
+       "ix": 1439,
+       "iy": 423,
        "lines": [
         {
          "t": "Seat",
-         "y": 450
+         "y": 467
         },
         {
          "t": "View",
-         "y": 462
+         "y": 479
         }
        ]
       }
      ],
      "wires": [
       {
-       "d": "M90 252 H114",
+       "d": "M74 236 H130",
        "a": "field",
        "b": "startline-rect",
        "real": true,
@@ -22749,7 +22954,7 @@
        "title": "Field → Startline"
       },
       {
-       "d": "M190 252 H214",
+       "d": "M174 236 H230",
        "a": "startline-rect",
        "b": "axis",
        "real": true,
@@ -22758,7 +22963,7 @@
        "title": "Startline → Axis"
       },
       {
-       "d": "M190 441 H196 Q202 441 202 435 V269 Q202 263 208 263 H214",
+       "d": "M174 429 H212 Q218 429 218 423 V249 Q218 243 224 243 H230",
        "a": "custom-startline",
        "b": "axis",
        "real": true,
@@ -22767,7 +22972,7 @@
        "title": "Custom Startline → Axis"
       },
       {
-       "d": "M252 214 V190",
+       "d": "M252 214 V158",
        "a": "axis",
        "b": "section",
        "real": false,
@@ -22776,7 +22981,7 @@
        "title": "Axis → Section"
       },
       {
-       "d": "M290 152 H314",
+       "d": "M274 136 H330",
        "a": "section",
        "b": "section-plus",
        "real": true,
@@ -22785,7 +22990,7 @@
        "title": "Section → Section Plus"
       },
       {
-       "d": "M290 63 H296 Q302 63 302 69 V135 Q302 141 308 141 H314",
+       "d": "M274 43 H312 Q318 43 318 49 V123 Q318 129 324 129 H330",
        "a": "auto-section",
        "b": "section-plus",
        "real": true,
@@ -22794,7 +22999,7 @@
        "title": "Auto Section → Section Plus"
       },
       {
-       "d": "M390 152 H414",
+       "d": "M374 136 H430",
        "a": "section-plus",
        "b": "section-analysis",
        "real": true,
@@ -22803,7 +23008,7 @@
        "title": "Section Plus → Section analysis"
       },
       {
-       "d": "M390 63 H396 Q402 63 402 69 V135 Q402 141 408 141 H414",
+       "d": "M374 43 H412 Q418 43 418 49 V123 Q418 129 424 129 H430",
        "a": "table-section",
        "b": "section-analysis",
        "real": true,
@@ -22812,7 +23017,7 @@
        "title": "Table Section → Section analysis"
       },
       {
-       "d": "M290 252 H514",
+       "d": "M274 236 H530",
        "a": "axis",
        "b": "stand-2d",
        "real": true,
@@ -22821,7 +23026,7 @@
        "title": "Axis → Stand 2D"
       },
       {
-       "d": "M290 263 H396 Q402 263 402 269 V335 Q402 341 408 341 H414",
+       "d": "M274 243 H412 Q418 243 418 249 V323 Q418 329 424 329 H430",
        "a": "axis",
        "b": "view-axis-plan",
        "real": true,
@@ -22830,7 +23035,7 @@
        "title": "Axis → View Axis"
       },
       {
-       "d": "M390 163 H396 Q402 163 402 169 V235 Q402 241 408 241 H514",
+       "d": "M374 143 H380 Q386 143 386 149 V223 Q386 229 392 229 H530",
        "a": "section-plus",
        "b": "stand-2d",
        "real": true,
@@ -22839,7 +23044,7 @@
        "title": "Section Plus → Stand 2D"
       },
       {
-       "d": "M290 441 H496 Q502 441 502 435 V269 Q502 263 508 263 H514",
+       "d": "M274 429 H512 Q518 429 518 423 V249 Q518 243 524 243 H530",
        "a": "custom-axis",
        "b": "stand-2d",
        "real": true,
@@ -22848,7 +23053,7 @@
        "title": "Custom Axis → Stand 2D"
       },
       {
-       "d": "M90 263 H96 Q102 263 102 269 V535 Q102 541 108 541 H1114",
+       "d": "M74 243 H80 Q86 243 86 249 V523 Q86 529 92 529 H1130",
        "a": "field",
        "b": "view-axis-bowl",
        "real": false,
@@ -22857,7 +23062,7 @@
        "title": "Field → View Axis"
       },
       {
-       "d": "M590 252 H614",
+       "d": "M574 236 H630",
        "a": "stand-2d",
        "b": "vomitory",
        "real": true,
@@ -22866,7 +23071,7 @@
        "title": "Stand 2D → Vomitory"
       },
       {
-       "d": "M590 241 H596 Q602 241 602 235 V169 Q602 163 608 163 H814",
+       "d": "M574 229 H580 Q586 229 586 223 V149 Q586 143 592 143 H830",
        "a": "stand-2d",
        "b": "stand-3d",
        "real": true,
@@ -22875,7 +23080,7 @@
        "title": "Stand 2D → Stand 3D"
       },
       {
-       "d": "M590 263 H596 Q602 263 602 269 V435 Q602 441 608 441 H714",
+       "d": "M574 243 H580 Q586 243 586 249 V423 Q586 429 592 429 H730",
        "a": "stand-2d",
        "b": "custom-seat",
        "real": true,
@@ -22884,7 +23089,7 @@
        "title": "Stand 2D → Custom Seat"
       },
       {
-       "d": "M690 252 H714",
+       "d": "M674 236 H730",
        "a": "vomitory",
        "b": "seat",
        "real": true,
@@ -22893,7 +23098,7 @@
        "title": "Vomitory → Seat"
       },
       {
-       "d": "M790 252 H814",
+       "d": "M774 236 H830",
        "a": "seat",
        "b": "cut",
        "real": true,
@@ -22902,7 +23107,7 @@
        "title": "Seat → Cut"
       },
       {
-       "d": "M790 441 H796 Q802 441 802 435 V269 Q802 263 808 263 H814",
+       "d": "M774 429 H812 Q818 429 818 423 V249 Q818 243 824 243 H830",
        "a": "custom-seat",
        "b": "cut",
        "real": true,
@@ -22911,7 +23116,7 @@
        "title": "Custom Seat → Cut"
       },
       {
-       "d": "M890 252 H914",
+       "d": "M874 236 H930",
        "a": "cut",
        "b": "opening-cut",
        "real": true,
@@ -22920,7 +23125,7 @@
        "title": "Cut → Opening Cut"
       },
       {
-       "d": "M990 252 H1014",
+       "d": "M974 236 H1030",
        "a": "opening-cut",
        "b": "vom-3d",
        "real": true,
@@ -22929,7 +23134,7 @@
        "title": "Opening Cut → Vom 3D"
       },
       {
-       "d": "M1090 252 H1114",
+       "d": "M1074 236 H1130",
        "a": "vom-3d",
        "b": "assemble-bowl",
        "real": true,
@@ -22938,7 +23143,7 @@
        "title": "Vom 3D → Assemble Bowl"
       },
       {
-       "d": "M890 163 H1096 Q1102 163 1102 169 V235 Q1102 241 1108 241 H1114",
+       "d": "M874 143 H1112 Q1118 143 1118 149 V223 Q1118 229 1124 229 H1130",
        "a": "stand-3d",
        "b": "assemble-bowl",
        "real": true,
@@ -22947,7 +23152,7 @@
        "title": "Stand 3D → Assemble Bowl"
       },
       {
-       "d": "M1190 252 H1214",
+       "d": "M1174 236 H1230",
        "a": "assemble-bowl",
        "b": "stand-3d-plus",
        "real": true,
@@ -22956,7 +23161,7 @@
        "title": "Assemble Bowl → Stand 3D Plus"
       },
       {
-       "d": "M1152 290 V514",
+       "d": "M1152 258 V514",
        "a": "assemble-bowl",
        "b": "view-axis-bowl",
        "real": false,
@@ -22965,7 +23170,7 @@
        "title": "Assemble Bowl → View Axis"
       },
       {
-       "d": "M1252 214 V190",
+       "d": "M1252 214 V158",
        "a": "stand-3d-plus",
        "b": "rail-3d",
        "real": true,
@@ -22974,7 +23179,7 @@
        "title": "Stand 3D Plus → Rail 3D"
       },
       {
-       "d": "M1290 241 H1296 Q1302 241 1302 235 V169 Q1302 163 1308 163 H1314",
+       "d": "M1274 229 H1312 Q1318 229 1318 223 V149 Q1318 143 1324 143 H1330",
        "a": "stand-3d-plus",
        "b": "c-value-seat",
        "real": true,
@@ -22983,7 +23188,7 @@
        "title": "Stand 3D Plus → C-value Seat"
       },
       {
-       "d": "M1290 252 H1314",
+       "d": "M1274 236 H1330",
        "a": "stand-3d-plus",
        "b": "c-value-tread",
        "real": true,
@@ -22992,7 +23197,7 @@
        "title": "Stand 3D Plus → C-value Tread"
       },
       {
-       "d": "M1290 263 H1296 Q1302 263 1302 269 V435 Q1302 441 1308 441 H1314",
+       "d": "M1274 243 H1312 Q1318 243 1318 249 V423 Q1318 429 1324 429 H1330",
        "a": "stand-3d-plus",
        "b": "seat-map",
        "real": true,
@@ -23001,7 +23206,7 @@
        "title": "Stand 3D Plus → Seat Map"
       },
       {
-       "d": "M1290 152 H1314",
+       "d": "M1274 136 H1330",
        "a": "rail-3d",
        "b": "c-value-seat",
        "real": true,
@@ -23010,7 +23215,7 @@
        "title": "Rail 3D → C-value Seat"
       },
       {
-       "d": "M1290 163 H1290 Q1296 163 1296 169 V235 Q1296 241 1302 241 H1314",
+       "d": "M1274 143 H1306 Q1312 143 1312 149 V223 Q1312 229 1318 229 H1330",
        "a": "rail-3d",
        "b": "c-value-tread",
        "real": true,
@@ -23019,7 +23224,7 @@
        "title": "Rail 3D → C-value Tread"
       },
       {
-       "d": "M1390 152 H1414",
+       "d": "M1374 136 H1430",
        "a": "c-value-seat",
        "b": "c-value-map",
        "real": true,
@@ -23028,7 +23233,7 @@
        "title": "C-value Seat → C-value Map"
       },
       {
-       "d": "M1390 241 H1396 Q1402 241 1402 235 V169 Q1402 163 1408 163 H1414",
+       "d": "M1374 229 H1412 Q1418 229 1418 223 V149 Q1418 143 1424 143 H1430",
        "a": "c-value-tread",
        "b": "c-value-map",
        "real": true,
@@ -23037,7 +23242,7 @@
        "title": "C-value Tread → C-value Map"
       },
       {
-       "d": "M1390 252 H1414",
+       "d": "M1374 236 H1430",
        "a": "c-value-tread",
        "b": "c-value-section-check",
        "real": true,
@@ -23046,7 +23251,7 @@
        "title": "C-value Tread → C-value Section Check"
       },
       {
-       "d": "M1390 452 H1414",
+       "d": "M1374 436 H1430",
        "a": "seat-map",
        "b": "seat-view",
        "real": true,
@@ -23079,394 +23284,394 @@
      ],
      "segs": [
       [
-       90,
+       74,
+       236,
+       130,
+       236
+      ],
+      [
+       174,
+       236,
+       230,
+       236
+      ],
+      [
+       174,
+       429,
+       218,
+       429
+      ],
+      [
+       218,
+       243,
+       218,
+       429
+      ],
+      [
+       218,
+       243,
+       230,
+       243
+      ],
+      [
        252,
-       114,
-       252
-      ],
-      [
-       190,
-       252,
-       214,
-       252
-      ],
-      [
-       190,
-       441,
-       202,
-       441
-      ],
-      [
-       202,
-       263,
-       202,
-       441
-      ],
-      [
-       202,
-       263,
-       214,
-       263
-      ],
-      [
-       252,
-       190,
+       158,
        252,
        214
       ],
       [
-       290,
-       152,
-       314,
-       152
+       274,
+       136,
+       330,
+       136
       ],
       [
-       290,
-       63,
-       302,
-       63
+       274,
+       43,
+       318,
+       43
       ],
       [
-       302,
-       63,
-       302,
-       141
+       318,
+       43,
+       318,
+       129
       ],
       [
-       302,
-       141,
-       314,
-       141
+       318,
+       129,
+       330,
+       129
       ],
       [
-       390,
-       152,
-       414,
-       152
+       374,
+       136,
+       430,
+       136
       ],
       [
-       390,
-       63,
-       402,
-       63
+       374,
+       43,
+       418,
+       43
       ],
       [
-       402,
-       63,
-       402,
-       141
+       418,
+       43,
+       418,
+       129
       ],
       [
-       402,
-       141,
-       414,
-       141
+       418,
+       129,
+       430,
+       129
       ],
       [
-       290,
-       252,
-       514,
-       252
+       274,
+       236,
+       530,
+       236
       ],
       [
-       290,
-       263,
-       402,
-       263
+       274,
+       243,
+       418,
+       243
       ],
       [
-       402,
-       263,
-       402,
-       341
+       418,
+       243,
+       418,
+       329
       ],
       [
-       402,
-       341,
-       414,
-       341
+       418,
+       329,
+       430,
+       329
       ],
       [
-       390,
-       163,
-       402,
-       163
+       374,
+       143,
+       386,
+       143
       ],
       [
-       402,
-       163,
-       402,
-       241
+       386,
+       143,
+       386,
+       229
       ],
       [
-       402,
-       241,
-       514,
-       241
+       386,
+       229,
+       530,
+       229
       ],
       [
-       290,
-       441,
-       502,
-       441
+       274,
+       429,
+       518,
+       429
       ],
       [
-       502,
-       263,
-       502,
-       441
+       518,
+       243,
+       518,
+       429
       ],
       [
-       502,
-       263,
-       514,
-       263
+       518,
+       243,
+       530,
+       243
       ],
       [
-       90,
-       263,
-       102,
-       263
+       74,
+       243,
+       86,
+       243
       ],
       [
-       102,
-       263,
-       102,
-       541
+       86,
+       243,
+       86,
+       529
       ],
       [
-       102,
-       541,
-       1114,
-       541
+       86,
+       529,
+       1130,
+       529
       ],
       [
-       590,
-       252,
-       614,
-       252
+       574,
+       236,
+       630,
+       236
       ],
       [
-       590,
-       241,
-       602,
-       241
+       574,
+       229,
+       586,
+       229
       ],
       [
-       602,
-       163,
-       602,
-       241
+       586,
+       143,
+       586,
+       229
       ],
       [
-       602,
-       163,
-       814,
-       163
+       586,
+       143,
+       830,
+       143
       ],
       [
-       590,
-       263,
-       602,
-       263
+       574,
+       243,
+       586,
+       243
       ],
       [
-       602,
-       263,
-       602,
-       441
+       586,
+       243,
+       586,
+       429
       ],
       [
-       602,
-       441,
-       714,
-       441
+       586,
+       429,
+       730,
+       429
       ],
       [
-       690,
-       252,
-       714,
-       252
+       674,
+       236,
+       730,
+       236
       ],
       [
-       790,
-       252,
-       814,
-       252
+       774,
+       236,
+       830,
+       236
       ],
       [
-       790,
-       441,
-       802,
-       441
+       774,
+       429,
+       818,
+       429
       ],
       [
-       802,
-       263,
-       802,
-       441
+       818,
+       243,
+       818,
+       429
       ],
       [
-       802,
-       263,
-       814,
-       263
+       818,
+       243,
+       830,
+       243
       ],
       [
-       890,
-       252,
-       914,
-       252
+       874,
+       236,
+       930,
+       236
       ],
       [
-       990,
-       252,
-       1014,
-       252
+       974,
+       236,
+       1030,
+       236
       ],
       [
-       1090,
-       252,
-       1114,
-       252
+       1074,
+       236,
+       1130,
+       236
       ],
       [
-       890,
-       163,
-       1102,
-       163
+       874,
+       143,
+       1118,
+       143
       ],
       [
-       1102,
-       163,
-       1102,
-       241
+       1118,
+       143,
+       1118,
+       229
       ],
       [
-       1102,
-       241,
-       1114,
-       241
+       1118,
+       229,
+       1130,
+       229
       ],
       [
-       1190,
-       252,
-       1214,
-       252
+       1174,
+       236,
+       1230,
+       236
       ],
       [
        1152,
-       290,
+       258,
        1152,
        514
       ],
       [
        1252,
-       190,
+       158,
        1252,
        214
       ],
       [
-       1290,
-       241,
-       1302,
-       241
+       1274,
+       229,
+       1318,
+       229
       ],
       [
-       1302,
-       163,
-       1302,
-       241
+       1318,
+       143,
+       1318,
+       229
       ],
       [
-       1302,
-       163,
-       1314,
-       163
+       1318,
+       143,
+       1330,
+       143
       ],
       [
-       1290,
-       252,
-       1314,
-       252
+       1274,
+       236,
+       1330,
+       236
       ],
       [
-       1290,
-       263,
-       1302,
-       263
+       1274,
+       243,
+       1318,
+       243
       ],
       [
-       1302,
-       263,
-       1302,
-       441
+       1318,
+       243,
+       1318,
+       429
       ],
       [
-       1302,
-       441,
-       1314,
-       441
+       1318,
+       429,
+       1330,
+       429
       ],
       [
-       1290,
-       152,
-       1314,
-       152
+       1274,
+       136,
+       1330,
+       136
       ],
       [
-       1290,
-       163,
-       1296,
-       163
+       1274,
+       143,
+       1312,
+       143
       ],
       [
-       1296,
-       163,
-       1296,
-       241
+       1312,
+       143,
+       1312,
+       229
       ],
       [
-       1296,
-       241,
-       1314,
-       241
+       1312,
+       229,
+       1330,
+       229
       ],
       [
-       1390,
-       152,
-       1414,
-       152
+       1374,
+       136,
+       1430,
+       136
       ],
       [
-       1390,
-       241,
-       1402,
-       241
+       1374,
+       229,
+       1418,
+       229
       ],
       [
-       1402,
-       163,
-       1402,
-       241
+       1418,
+       143,
+       1418,
+       229
       ],
       [
-       1402,
-       163,
-       1414,
-       163
+       1418,
+       143,
+       1430,
+       143
       ],
       [
-       1390,
-       252,
-       1414,
-       252
+       1374,
+       236,
+       1430,
+       236
       ],
       [
-       1390,
-       452,
-       1414,
-       452
+       1374,
+       436,
+       1430,
+       436
       ]
      ],
      "order_only": [
@@ -23497,7 +23702,10 @@
        "d": "M339 162 V191",
        "x": 255,
        "y": 191,
-       "w": 168
+       "w": 168,
+       "tx": 267,
+       "nameY": 213,
+       "countY": 230
       },
       {
        "name": "Bowl Analysis",
@@ -23508,7 +23716,10 @@
        "d": "M846 162 V191",
        "x": 762,
        "y": 191,
-       "w": 168
+       "w": 168,
+       "tx": 774,
+       "nameY": 213,
+       "countY": 230
       },
       {
        "name": "Table",
@@ -23519,7 +23730,10 @@
        "d": "M1083 162 V191",
        "x": 999,
        "y": 191,
-       "w": 168
+       "w": 168,
+       "tx": 1011,
+       "nameY": 213,
+       "countY": 230
       },
       {
        "name": "Util",
@@ -23530,7 +23744,10 @@
        "d": "M1294 162 V191",
        "x": 1210,
        "y": 191,
-       "w": 168
+       "w": 168,
+       "tx": 1222,
+       "nameY": 213,
+       "countY": 230
       }
      ]
     }

@@ -1,0 +1,77 @@
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <g
+     id="layer-guide"
+     style="display:none">
+    <rect
+       id="guide-canvas"
+       x="0.5"
+       y="0.5"
+       width="23"
+       height="23"
+       fill="none"
+       stroke="#ff00ff"
+       stroke-width="1" />
+    <rect
+       id="guide-live"
+       x="1.5"
+       y="1.5"
+       width="21"
+       height="21"
+       fill="none"
+       stroke="#00b0ff"
+       stroke-width="1" />
+  </g>
+  <g
+     id="layer-base">
+    <path
+       id="base-wall-top"
+       d="M 2 8 H 22"
+       fill="none"
+       stroke="#aeaeae"
+       stroke-width="2" />
+    <path
+       id="base-wall-bottom"
+       d="M 2 16 H 22"
+       fill="none"
+       stroke="#aeaeae"
+       stroke-width="2" />
+  </g>
+  <g
+     id="layer-detail">
+    <circle
+       id="detail-wait-dot-1"
+       cx="5"
+       cy="12"
+       r="1.6"
+       fill="#656565" />
+    <circle
+       id="detail-wait-dot-2"
+       cx="9"
+       cy="12"
+       r="1.6"
+       fill="#656565" />
+  </g>
+  <g
+     id="layer-accent">
+    <rect
+       id="accent-gate-bar"
+       x="12"
+       y="6"
+       width="3"
+       height="12"
+       fill="#9c8f81" />
+    <circle
+       id="accent-passed-dot"
+       cx="19"
+       cy="12"
+       r="1.6"
+       fill="#c3bfb7" />
+  </g>
+</svg>

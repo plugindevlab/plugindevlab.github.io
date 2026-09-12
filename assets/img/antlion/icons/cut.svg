@@ -1,0 +1,94 @@
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <g
+     id="layer-guide"
+     style="display:none">
+    <rect
+       id="guide-canvas"
+       x="0.5"
+       y="0.5"
+       width="23"
+       height="23"
+       fill="none"
+       stroke="#ff00ff"
+       stroke-width="1" />
+    <rect
+       id="guide-live"
+       x="1.5"
+       y="1.5"
+       width="21"
+       height="21"
+       fill="none"
+       stroke="#00b0ff"
+       stroke-width="1" />
+  </g>
+  <g
+     id="layer-base">
+    <path
+       id="base-row-1"
+       d="M 2 4 H 13"
+       fill="none"
+       stroke="#4e4e4e"
+       stroke-width="2" />
+    <path
+       id="base-row-2"
+       d="M 2 9 H 13"
+       fill="none"
+       stroke="#4e4e4e"
+       stroke-width="2" />
+    <path
+       id="base-row-3"
+       d="M 2 14 H 13"
+       fill="none"
+       stroke="#4e4e4e"
+       stroke-width="2" />
+    <path
+       id="base-row-4"
+       d="M 2 19 H 13"
+       fill="none"
+       stroke="#4e4e4e"
+       stroke-width="2" />
+  </g>
+  <g
+     id="layer-detail">
+    <path
+       id="detail-row-cut-1"
+       d="M 18 4 H 22"
+       fill="none"
+       stroke="#656565"
+       stroke-width="2" />
+    <path
+       id="detail-row-cut-2"
+       d="M 18 9 H 22"
+       fill="none"
+       stroke="#656565"
+       stroke-width="2" />
+    <path
+       id="detail-row-cut-3"
+       d="M 18 14 H 22"
+       fill="none"
+       stroke="#656565"
+       stroke-width="2" />
+    <path
+       id="detail-row-cut-4"
+       d="M 18 19 H 22"
+       fill="none"
+       stroke="#656565"
+       stroke-width="2" />
+  </g>
+  <g
+     id="layer-accent">
+    <path
+       id="accent-cut-line"
+       d="M 15 1 V 22"
+       fill="none"
+       stroke="#2d7be0"
+       stroke-width="2" />
+  </g>
+</svg>

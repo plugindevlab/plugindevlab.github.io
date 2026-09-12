@@ -1,0 +1,72 @@
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <g
+     id="layer-guide"
+     style="display:none">
+    <rect
+       id="guide-canvas"
+       x="0.5"
+       y="0.5"
+       width="23"
+       height="23"
+       fill="none"
+       stroke="#ff00ff"
+       stroke-width="1" />
+    <rect
+       id="guide-live"
+       x="1.5"
+       y="1.5"
+       width="21"
+       height="21"
+       fill="none"
+       stroke="#00b0ff"
+       stroke-width="1" />
+  </g>
+  <g
+     id="layer-base">
+    <path
+       id="base-band-top"
+       d="M 3 7 Q 12 2 21 7"
+       fill="none"
+       stroke="#83c3e6"
+       stroke-width="3" />
+    <path
+       id="base-band-mid"
+       d="M 3 13 Q 12 8 21 13"
+       fill="none"
+       stroke="#2d7be0"
+       stroke-width="3" />
+    <path
+       id="base-band-low"
+       d="M 3 19 Q 12 14 21 19"
+       fill="none"
+       stroke="#112e96"
+       stroke-width="3" />
+  </g>
+  <g
+     id="layer-detail">
+    <path
+       id="detail-axis-tick"
+       d="M 12 3.5 V 21"
+       fill="none"
+       stroke="#656565"
+       stroke-width="1" />
+  </g>
+  <g
+     id="layer-accent">
+    <circle
+       id="accent-sample-dot"
+       cx="12"
+       cy="10.5"
+       r="1.7"
+       fill="#e7e7e7"
+       stroke="#4e4e4e"
+       stroke-width="1" />
+  </g>
+</svg>

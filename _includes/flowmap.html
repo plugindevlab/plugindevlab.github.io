@@ -2,7 +2,7 @@
 {%- assign f = pdata.graph.flowmap -%}
 {%- if f %}
 <div class="fm-wrap" markdown="0">
-  <svg class="fm" viewBox="0 0 {{ f.w }} {{ f.h }}" width="{{ f.w }}" height="{{ f.h }}"
+  <svg class="fm fm-s-{{ f.style }}" viewBox="0 0 {{ f.w }} {{ f.h }}" width="{{ f.w }}" height="{{ f.h }}"
        role="img" aria-label="The whole chain in one diagram — what order to use things in">
     <defs>
       <marker id="fmk" viewBox="0 0 8 8" refX="7.5" refY="4" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
@@ -22,10 +22,13 @@
     {%- for n in f.nodes %}
     <a href="../components/{{ n.id }}/" class="fm-n fm-{{ n.kind }}">
       <title>{{ n.members }} — {{ n.summary }}</title>
-      {%- if n.kind == 'alt' %}
-      <path class="fm-shape" d="M{{ n.cx }} {{ n.y }} L{{ n.x | plus: f.nodeW }} {{ n.cy }} L{{ n.cx }} {{ n.y | plus: f.nodeH }} L{{ n.x }} {{ n.cy }} z"/>
+      {%- if f.style == 'icon' %}
+      <rect class="fm-shape" x="{{ n.bx }}" y="{{ n.by }}" width="{{ f.nodeW }}" height="{{ f.nodeH }}" rx="{{ f.iconRx }}"/>
+      <image href="{{ n.icon | relative_url }}" x="{{ n.ix }}" y="{{ n.iy }}" width="{{ n.iw }}" height="{{ n.ih }}"/>
+      {%- elsif n.kind == 'alt' %}
+      <path class="fm-shape" d="M{{ n.cx }} {{ n.by }} L{{ n.bx | plus: f.nodeW }} {{ n.cy }} L{{ n.cx }} {{ n.by | plus: f.nodeH }} L{{ n.bx }} {{ n.cy }} z"/>
       {%- elsif n.kind == 'pick' or n.kind == 'table' %}
-      <rect class="fm-shape" x="{{ n.x }}" y="{{ n.y | plus: 6 }}" width="{{ f.nodeW }}" height="{{ f.nodeH | minus: 12 }}" rx="{% if n.kind == 'pick' %}20{% else %}7{% endif %}"/>
+      <rect class="fm-shape" x="{{ n.bx }}" y="{{ n.by | plus: 6 }}" width="{{ f.nodeW }}" height="{{ f.nodeH | minus: 12 }}" rx="{% if n.kind == 'pick' %}20{% else %}7{% endif %}"/>
       {%- else %}
       <circle class="fm-shape" cx="{{ n.cx }}" cy="{{ n.cy }}" r="{{ f.r }}"/>
       {%- endif %}

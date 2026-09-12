@@ -1,4 +1,5 @@
 antlion:
+  style: icon
   nodes:
     - {id: field,                 col: 0,  row: 2, kind: main}
     - {id: startline-rect,        col: 1,  row: 2, kind: main, also: [startline-capsule, startline-oval]}

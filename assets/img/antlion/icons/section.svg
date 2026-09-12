@@ -1,0 +1,42 @@
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <g
+     id="layer-guide"
+     style="display:none">
+    <rect
+       id="guide-canvas"
+       x="0.5"
+       y="0.5"
+       width="23"
+       height="23"
+       fill="none"
+       stroke="#ff00ff"
+       stroke-width="1" />
+    <rect
+       id="guide-live"
+       x="1.5"
+       y="1.5"
+       width="21"
+       height="21"
+       fill="none"
+       stroke="#00b0ff"
+       stroke-width="1" />
+  </g>
+  <g
+     id="layer-base">
+    <path
+       style="fill:#656565"
+       d="m 3,19 h 4 v -2 h 4 v -2 h 4 v -2 h 4 v -2 h 4 v 2 h -2 v 2 h -4 v 2 h -4 v 2 H 9 v 2 H 3 Z"
+       id="base-slab" />
+  </g>
+  <g
+     id="layer-detail" />
+  <g
+     id="layer-accent" />
+</svg>

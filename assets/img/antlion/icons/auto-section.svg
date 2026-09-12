@@ -1,0 +1,56 @@
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <g
+     id="layer-guide"
+     style="display:none">
+    <rect
+       id="guide-canvas"
+       x="0.5"
+       y="0.5"
+       width="23"
+       height="23"
+       fill="none"
+       stroke="#ff00ff"
+       stroke-width="1" />
+    <rect
+       id="guide-live"
+       x="1.5"
+       y="1.5"
+       width="21"
+       height="21"
+       fill="none"
+       stroke="#00b0ff"
+       stroke-width="1" />
+  </g>
+  <g
+     id="layer-base">
+    <path
+       style="fill:#656565"
+       d="m 3,19 h 4 v -2 h 4 v -2 h 4 v -2 h 4 v -2 h 4 v 2 h -2 v 2 h -4 v 2 h -4 v 2 H 9 v 2 H 3 Z"
+       id="base-slab" />
+  </g>
+  <g
+     id="layer-detail" />
+  <g
+     id="layer-accent">
+    <g
+       id="accent-auto-mark"
+       style="opacity:1;fill:#2d7be0"
+       transform="matrix(1.4008587,0,0,1.352708,-2.0987688,-1.9867898)">
+      <path
+         style="font-size:5.47249px;baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#2d7be0;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+         d="M 6.8829102,7.1547709 H 6.3190941 L 5.9289654,6.0458435 H 4.2081239 L 3.8179952,7.1547709 H 3.2809003 L 4.7291862,3.1759928 H 5.4346243 Z M 5.7659665,5.5915841 5.0685447,3.6382686 4.3684507,5.5915841 Z"
+         id="accent-auto-mark-1" />
+      <path
+         style="font-size:5.47249px;baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#2d7be0;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+         d="M 4.5703125,2.9472656 2.9550781,7.3828125 h 1.0253907 l 0.3886718,-1.109375 h 1.3984375 l 0.390625,1.109375 H 7.2089844 L 5.59375,2.9472656 Z m 0.3183594,0.4570313 h 0.021484 L 4.046875,5.8183594 v 0.00195 H 4.044925 L 3.65625,6.9257812 H 3.607422 Z m 0.3378906,0 h 0.048828 l 1.28125,3.5214843 H 6.4804687 L 6.0898437,5.8203125 v -0.00195 z M 5.0683594,4.3164062 5.4414062,5.3632812 H 4.6933594 Z"
+         id="accent-auto-mark-2" />
+    </g>
+  </g>
+</svg>

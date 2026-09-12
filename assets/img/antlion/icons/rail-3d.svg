@@ -1,0 +1,86 @@
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <g
+     id="layer-guide"
+     style="display:none">
+    <rect
+       id="guide-canvas"
+       x="0.5"
+       y="0.5"
+       width="23"
+       height="23"
+       fill="none"
+       stroke="#ff00ff"
+       stroke-width="1" />
+    <rect
+       id="guide-live"
+       x="1.5"
+       y="1.5"
+       width="21"
+       height="21"
+       fill="none"
+       stroke="#00b0ff"
+       stroke-width="1" />
+  </g>
+  <g
+     id="layer-base">
+    <path
+       style="fill:#4e4e4e;stroke:#656565;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="m 9,19 h 4 v -2 h 4 v -2 h 4 v -2 h 2 v 4 h -4 v 2 h -4 v 2 H 9 Z"
+       id="base-slab" />
+    <path
+       style="fill:#656565;stroke:none;stroke-width:1;stroke-linecap:square;stroke-dasharray:none"
+       d="M 9,21 3,15 v -2 l 6,6 z"
+       id="path17" />
+    <path
+       style="fill:#aeaeae;stroke:none;stroke-width:1;stroke-linecap:square;stroke-dasharray:none"
+       d="M 13,19 7,13 H 3 l 6,6 z"
+       id="path17-8" />
+    <path
+       style="fill:#656565;stroke:none;stroke-width:1;stroke-linecap:square;stroke-dasharray:none"
+       d="M 13,19 7,13 v -2 l 6,6 z"
+       id="path17-1" />
+    <path
+       style="fill:#aeaeae;stroke:none;stroke-width:1;stroke-linecap:square;stroke-dasharray:none"
+       d="M 17,17 11,11 H 7 l 6,6 z"
+       id="path17-8-7" />
+    <path
+       style="fill:#656565;stroke:none;stroke-width:1;stroke-linecap:square;stroke-dasharray:none"
+       d="M 17,17 11,11 V 9 l 6,6 z"
+       id="path17-1-7" />
+    <path
+       style="fill:#aeaeae;stroke:none;stroke-width:1;stroke-linecap:square;stroke-dasharray:none"
+       d="M 21,15 15,9 h -4 l 6,6 z"
+       id="path17-8-7-6" />
+    <path
+       style="fill:#656565;stroke:none;stroke-width:1;stroke-linecap:square;stroke-dasharray:none"
+       d="M 21,15 15,9 V 7 l 6,6 z"
+       id="path17-1-2" />
+    <path
+       style="fill:#aeaeae;stroke:none;stroke-width:1;stroke-linecap:square;stroke-dasharray:none"
+       d="M 23,13 17,7 h -2 l 6,6 z"
+       id="path17-8-7-2" />
+    <path
+       style="fill:#83c3e6;stroke:none;stroke-width:1;stroke-linecap:square;stroke-dasharray:none"
+       d="M 9,15 3,9 H 1 l 6,6 z"
+       id="path17-8-7-2-3" />
+    <path
+       style="fill:#112e96;stroke:none;stroke-width:1;stroke-linecap:square;stroke-dasharray:none"
+       d="M 9,23 V 15 H 7 v 8 z"
+       id="path17-8-7-2-3-3" />
+    <path
+       style="fill:#2d7be0;stroke:none;stroke-width:1;stroke-linecap:square;stroke-dasharray:none"
+       d="M 7,15 1,9 v 8 l 6,6 z"
+       id="path17-8-7-2-3-4" />
+  </g>
+  <g
+     id="layer-detail" />
+  <g
+     id="layer-accent" />
+</svg>

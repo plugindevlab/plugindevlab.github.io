@@ -1,0 +1,71 @@
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <g
+     id="layer-guide"
+     style="display:none">
+    <rect
+       id="guide-canvas"
+       x="0.5"
+       y="0.5"
+       width="23"
+       height="23"
+       fill="none"
+       stroke="#ff00ff"
+       stroke-width="1" />
+    <rect
+       id="guide-live"
+       x="1.5"
+       y="1.5"
+       width="21"
+       height="21"
+       fill="none"
+       stroke="#00b0ff"
+       stroke-width="1" />
+  </g>
+  <g
+     id="layer-detail">
+    <path
+       style="fill:#656565"
+       d="m 3,18 h 4 v -2 h 4 v -2 h 4 v -2 h 4 v -2 h 4 v 2 h -2 v 2 h -4 v 2 h -4 v 2 H 9 v 2 H 3 Z"
+       id="base-slab" />
+    <path
+       id="accent-sight-2"
+       d="M 2,11 17,7"
+       fill="none"
+       stroke="#2d7be0"
+       stroke-width="1" />
+    <path
+       id="accent-sight-2-4"
+       d="M 17,12 V 7"
+       fill="none"
+       stroke="#2d7be0"
+       stroke-width="1"
+       style="fill:#aeaeae;stroke:#aeaeae;stroke-width:2;stroke-dasharray:none" />
+    <circle
+       id="accent-focus"
+       cx="17"
+       cy="7"
+       r="2"
+       fill="#112e96" />
+  </g>
+  <g
+     id="layer-accent" />
+  <g
+     id="layer-base">
+    <rect
+       id="base-sheet"
+       x="2"
+       y="3"
+       width="20"
+       height="18"
+       fill="none"
+       stroke="#e7e7e7"
+       stroke-width="2" />
+  </g>
+</svg>
