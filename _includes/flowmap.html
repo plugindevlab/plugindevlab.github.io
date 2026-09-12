@@ -16,7 +16,7 @@
     </g>
     <g class="fm-wires">
       {%- for w in f.wires %}
-      <path class="fm-wire" d="{{ w.d }}" marker-end="url(#fmk)"><title>{{ w.title }}</title></path>
+      <path class="fm-wire fm-w-{{ w.kind }}" d="{{ w.d }}" marker-end="url(#fmk)"><title>{{ w.title }}</title></path>
       {%- endfor %}
     </g>
     {%- for n in f.nodes %}

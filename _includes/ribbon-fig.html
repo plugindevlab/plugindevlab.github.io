@@ -7,20 +7,19 @@
       alt="The {{ r.tab }} tab in the Grasshopper ribbon, with its panels"
       style="left:{{ r.imgX }}px;top:{{ r.imgY }}px;width:{{ r.imgW }}px;height:{{ r.imgH }}px">
     <svg viewBox="0 0 {{ r.w }} {{ r.h }}" aria-hidden="true">
-      <g class="rib-zone">
+      <g class="rib-band">
         {%- for p in r.panels %}
-        <rect x="{{ p.rx }}" y="{{ p.ry }}" width="{{ p.rw }}" height="{{ p.rh }}"/>
+        <rect x="{{ p.bx }}" y="{{ p.by }}" width="{{ p.bw }}" height="{{ r.barH }}" rx="1"/>
         {%- endfor %}
       </g>
       <g class="rib-lead">
         {%- for p in r.panels %}
-        <path d="{{ p.bracket }}"/>
         <path d="{{ p.d }}"/>
         {%- endfor %}
       </g>
     </svg>
     {%- for p in r.panels %}
-    <div class="rib-call" style="left:{{ p.x }}px;top:{{ p.y }}px;width:{{ r.callW }}px;height:{{ r.callH }}px"><b>{{ p.name | escape }}</b><span>{{ p.count }} components</span></div>
+    <div class="rib-call" style="left:{{ p.x }}px;top:{{ p.y }}px;width:{{ p.w }}px;height:{{ r.callH }}px"><b>{{ p.name | escape }}</b><span>{{ p.count }} components</span></div>
     {%- endfor %}
   </div>
 </div>
