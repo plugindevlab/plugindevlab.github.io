@@ -5,6 +5,16 @@ description: Known symptoms in Antlion for Rhino and Grasshopper — what causes
 
 # Troubleshooting
 
+{%- capture tlist -%}
+{%- assign tpages = site.pages | sort: "title" -%}
+{%- for p in tpages -%}
+{%- if p.url != page.url and p.url contains page.url %}
+- [{{ p.title | escape }}]({{ p.url | relative_url }})
+{%- endif -%}
+{%- endfor -%}
+{%- endcapture -%}
+{%- if tlist != "" %}
+
 Search for your symptom. Each page says what you see, why it happens, and what to do about
 it — including which version fixed it, if it was a bug.
 
@@ -12,8 +22,8 @@ If your problem is not here, the form to report it is at the bottom of this page
 the two steps that make a report fixable.
 
 ## Pages
-
-*No pages yet — this section fills up as reports come in after release.*
+{{ tlist }}
+{% endif %}
 
 ## Report a problem
 
