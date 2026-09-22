@@ -88,10 +88,15 @@ Works in millimeter and inch documents.
 
 ## Learn it
 
-- [**Getting started**](getting-started/index.md) — what you need, installing from the
-  package manager, and registering your license.
-- [**Workflow**](workflow/index.md) — the whole chain as a map. Start here if you are
-  wondering what order to use things in.
+New to Antlion? Read these two, in this order.
+
+1. [**Getting started**](getting-started/index.md) — what you need, installing from the
+   package manager, and registering your license.
+2. [**Workflow**](workflow/index.md) — the whole chain as a map. Start here if you are
+   wondering what order to use things in.
+
+When you need to look something up:
+
 - [**Components**](components/index.html) — every component, every port, with a diagram of
   where each port sits on the capsule. Generated from the plugin source, so it cannot
   disagree with the plugin you are running.

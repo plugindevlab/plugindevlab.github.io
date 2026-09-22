@@ -26,7 +26,7 @@ sheet: true
     <h2>{{ forloop.index }} &middot; {{ s.label | escape }}</h2>
     <ul class="ports">
       {%- for c in list %}
-      <li><b translate="no"><a href="/{{ prod.slug }}/components/{{ c.id }}/">{{ c.name | escape }}</a></b><code translate="no">{{ c.compId }}</code><span>{{ c.summary | truncatewords: 20 | escape }}</span></li>
+      <li><b translate="no"><a href="/{{ prod.slug }}/components/{{ c.id }}/">{{ c.name | escape }}</a></b><code translate="no">{{ c.compId }}</code><div class="sum">{{ c.indexHead | escape }}{% if c.indexMore %}<div hidden="until-found">{{ c.indexMore | escape }}</div>{% endif %}</div></li>
       {%- endfor %}
     </ul>
     {%- endfor %}
@@ -36,7 +36,7 @@ sheet: true
     <h2>{{ s.label | escape }}</h2>
     <ul class="ports">
       {%- for c in list %}
-      <li><b translate="no"><a href="/{{ prod.slug }}/components/{{ c.id }}/">{{ c.name | escape }}</a></b><code translate="no">{{ c.compId }}</code><span>{{ c.summary | truncatewords: 20 | escape }}</span></li>
+      <li><b translate="no"><a href="/{{ prod.slug }}/components/{{ c.id }}/">{{ c.name | escape }}</a></b><code translate="no">{{ c.compId }}</code><div class="sum">{{ c.indexHead | escape }}{% if c.indexMore %}<div hidden="until-found">{{ c.indexMore | escape }}</div>{% endif %}</div></li>
       {%- endfor %}
     </ul>
     {%- endfor %}

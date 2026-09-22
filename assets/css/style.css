@@ -384,7 +384,7 @@ figure.fig figcaption {
   margin-left: calc(-1 * (var(--sp4) + .5px)); margin-right: calc(-1 * (var(--sp4) + .5px));
   padding-left: var(--sp4); padding-right: var(--sp4);
 }
-.ports span { font-size: 13.5px; color: var(--soft); line-height: 1.5; }
+.ports span, .ports .sum { font-size: 13.5px; color: var(--soft); line-height: 1.5; }
 .ports span em { font-style: normal; color: var(--faint); }
 
 .warn { margin: 0; padding: 0; list-style: none; }
@@ -460,7 +460,7 @@ figure.fig figcaption {
   .stages { max-width: none; }
   .stages div b { display: none; }
   .ports li { grid-template-columns: minmax(0, 1fr) 96px; gap: 0 var(--sp3); }
-  .ports span { grid-column: 1 / -1; }
+  .ports span, .ports .sum { grid-column: 1 / -1; }
 }
 
 .combos { margin: 1.5rem 0 var(--rhythm); border-top: 1px solid var(--rule); }

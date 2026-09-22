@@ -229,7 +229,7 @@
      "tier": "core",
      "figure": {
       "w": 1082,
-      "h": 786,
+      "h": 639,
       "callW": 340,
       "callH": 63,
       "lead": 86,
@@ -250,10 +250,10 @@
         "flow": false,
         "blurb": "Your own field outline",
         "callX": 0,
-        "callY": 168,
+        "callY": 20,
         "gripX": 432,
         "gripY": 199,
-        "d": "M340 199 H432"
+        "d": "M340 51 H354 L420 199 H432"
        },
        {
         "side": "in",
@@ -265,10 +265,10 @@
         "flow": false,
         "blurb": "Where the field sits and which way it faces",
         "callX": 0,
-        "callY": 234,
+        "callY": 87,
         "gripX": 432,
         "gripY": 229,
-        "d": "M340 265 H354 L420 229 H432"
+        "d": "M340 118 H354 L420 229 H432"
        },
        {
         "side": "in",
@@ -280,10 +280,10 @@
         "flow": false,
         "blurb": "Your own focal point",
         "callX": 0,
-        "callY": 302,
+        "callY": 154,
         "gripX": 432,
         "gripY": 259,
-        "d": "M340 333 H354 L420 259 H432"
+        "d": "M340 185 H354 L420 259 H432"
        },
        {
         "side": "in",
@@ -295,10 +295,10 @@
         "flow": false,
         "blurb": "Which sport sets the field size and shape (default SOCCER)",
         "callX": 0,
-        "callY": 368,
+        "callY": 221,
         "gripX": 432,
         "gripY": 289,
-        "d": "M340 399 H354 L420 289 H432"
+        "d": "M340 252 H354 L420 289 H432"
        },
        {
         "side": "in",
@@ -310,10 +310,10 @@
         "flow": false,
         "blurb": "Where the focal point sits: HALF_N or HALF_S halfway along a long side, HALF_E or HALF_W at an end, CUSTOM at…",
         "callX": 0,
-        "callY": 436,
+        "callY": 288,
         "gripX": 432,
         "gripY": 319,
-        "d": "M340 467 H354 L420 319 H432"
+        "d": "M340 319 H432"
        },
        {
         "side": "in",
@@ -325,10 +325,10 @@
         "flow": false,
         "blurb": "VERTICAL lifts the focal point above the field, HORIZONTAL pulls it inside the outline",
         "callX": 0,
-        "callY": 502,
+        "callY": 355,
         "gripX": 432,
         "gripY": 349,
-        "d": "M340 533 H354 L420 349 H432"
+        "d": "M340 386 H354 L420 349 H432"
        },
        {
         "side": "in",
@@ -340,10 +340,10 @@
         "flow": false,
         "blurb": "How far the focal point sits from the field surface or outline",
         "callX": 0,
-        "callY": 570,
+        "callY": 422,
         "gripX": 432,
         "gripY": 379,
-        "d": "M340 601 H354 L420 379 H432"
+        "d": "M340 453 H354 L420 379 H432"
        },
        {
         "side": "in",
@@ -355,10 +355,10 @@
         "flow": false,
         "blurb": "Turn the field a quarter turn so its long side runs the other way",
         "callX": 0,
-        "callY": 636,
+        "callY": 489,
         "gripX": 432,
         "gripY": 409,
-        "d": "M340 667 H354 L420 409 H432"
+        "d": "M340 520 H354 L420 409 H432"
        },
        {
         "side": "in",
@@ -370,10 +370,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 704,
+        "callY": 556,
         "gripX": 432,
         "gripY": 439,
-        "d": "M340 735 H354 L420 439 H432"
+        "d": "M340 587 H354 L420 439 H432"
        },
        {
         "side": "out",
@@ -466,7 +466,9 @@
         "d": "M742 541 H728 L662 432 H650"
        }
       ]
-     }
+     },
+     "indexHead": "Draws the playing field outline for a sport and the focal point every sightline is measured to. Start here —...",
+     "indexMore": "the rest of the chain hangs off field_info."
     },
     {
      "id": "startline-rect",
@@ -650,7 +652,7 @@
      "tier": "core",
      "figure": {
       "w": 1066,
-      "h": 616,
+      "h": 505,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -671,10 +673,10 @@
         "flow": true,
         "blurb": "The field, straight from Field",
         "callX": 0,
-        "callY": 132,
+        "callY": 20,
         "gripX": 434,
         "gripY": 163,
-        "d": "M340 163 H434"
+        "d": "M340 51 H354 L422 163 H434"
        },
        {
         "side": "in",
@@ -686,10 +688,10 @@
         "flow": false,
         "blurb": "Offset from this curve instead",
         "callX": 0,
-        "callY": 198,
+        "callY": 87,
         "gripX": 434,
         "gripY": 193,
-        "d": "M340 229 H354 L422 193 H434"
+        "d": "M340 118 H354 L422 193 H434"
        },
        {
         "side": "in",
@@ -701,10 +703,10 @@
         "flow": false,
         "blurb": "How the four corners are treated: square, arc or straight cut",
         "callX": 0,
-        "callY": 266,
+        "callY": 154,
         "gripX": 434,
         "gripY": 223,
-        "d": "M340 297 H354 L422 223 H434"
+        "d": "M340 185 H354 L422 223 H434"
        },
        {
         "side": "in",
@@ -716,10 +718,10 @@
         "flow": false,
         "blurb": "Gap from the long sides of the field to the front row",
         "callX": 0,
-        "callY": 332,
+        "callY": 221,
         "gripX": 434,
         "gripY": 253,
-        "d": "M340 363 H354 L422 253 H434"
+        "d": "M340 252 H354 L422 253 H434"
        },
        {
         "side": "in",
@@ -731,10 +733,10 @@
         "flow": false,
         "blurb": "Gap from the short (goal) ends of the field to the front row",
         "callX": 0,
-        "callY": 400,
+        "callY": 288,
         "gripX": 434,
         "gripY": 283,
-        "d": "M340 431 H354 L422 283 H434"
+        "d": "M340 319 H354 L422 283 H434"
        },
        {
         "side": "in",
@@ -746,10 +748,10 @@
         "flow": false,
         "blurb": "Corner arc radius, or chamfer cut-back",
         "callX": 0,
-        "callY": 466,
+        "callY": 355,
         "gripX": 434,
         "gripY": 313,
-        "d": "M340 497 H354 L422 313 H434"
+        "d": "M340 386 H354 L422 313 H434"
        },
        {
         "side": "in",
@@ -761,10 +763,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 534,
+        "callY": 422,
         "gripX": 434,
         "gripY": 343,
-        "d": "M340 565 H354 L422 343 H434"
+        "d": "M340 453 H354 L422 343 H434"
        },
        {
         "side": "out",
@@ -842,7 +844,9 @@
         "d": "M726 437 H712 L644 337 H632"
        }
       ]
-     }
+     },
+     "indexHead": "Start line for the front row, offset outward from the field edge by a long-side and a short-side distance. Optional...",
+     "indexMore": "rounded or chamfered corners."
     },
     {
      "id": "startline-capsule",
@@ -1000,7 +1004,7 @@
      "tier": "core",
      "figure": {
       "w": 1046,
-      "h": 444,
+      "h": 371,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -1021,10 +1025,10 @@
         "flow": true,
         "blurb": "The field, straight from Field",
         "callX": 0,
-        "callY": 94,
+        "callY": 20,
         "gripX": 434,
         "gripY": 125,
-        "d": "M340 125 H434"
+        "d": "M340 51 H354 L422 125 H434"
        },
        {
         "side": "in",
@@ -1036,10 +1040,10 @@
         "flow": false,
         "blurb": "Build the shape around this curve instead",
         "callX": 0,
-        "callY": 160,
+        "callY": 87,
         "gripX": 434,
         "gripY": 155,
-        "d": "M340 191 H354 L422 155 H434"
+        "d": "M340 118 H354 L422 155 H434"
        },
        {
         "side": "in",
@@ -1051,10 +1055,10 @@
         "flow": false,
         "blurb": "How far each semicircle centre sits from the field centre",
         "callX": 0,
-        "callY": 228,
+        "callY": 154,
         "gripX": 434,
         "gripY": 185,
-        "d": "M340 259 H354 L422 185 H434"
+        "d": "M340 185 H434"
        },
        {
         "side": "in",
@@ -1066,10 +1070,10 @@
         "flow": false,
         "blurb": "Radius of the two end semicircles",
         "callX": 0,
-        "callY": 294,
+        "callY": 221,
         "gripX": 434,
         "gripY": 215,
-        "d": "M340 325 H354 L422 215 H434"
+        "d": "M340 252 H354 L422 215 H434"
        },
        {
         "side": "in",
@@ -1081,10 +1085,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 362,
+        "callY": 288,
         "gripX": 434,
         "gripY": 245,
-        "d": "M340 393 H354 L422 245 H434"
+        "d": "M340 319 H354 L422 245 H434"
        },
        {
         "side": "out",
@@ -1096,10 +1100,10 @@
         "flow": true,
         "blurb": "The start line as one object",
         "callX": 706,
-        "callY": 94,
+        "callY": 20,
         "gripX": 612,
         "gripY": 125,
-        "d": "M706 125 H612"
+        "d": "M706 51 H692 L624 125 H612"
        },
        {
         "side": "out",
@@ -1111,10 +1115,10 @@
         "flow": false,
         "blurb": "The start line itself, a closed curve in plan",
         "callX": 706,
-        "callY": 160,
+        "callY": 87,
         "gripX": 612,
         "gripY": 155,
-        "d": "M706 191 H692 L624 155 H612"
+        "d": "M706 118 H692 L624 155 H612"
        },
        {
         "side": "out",
@@ -1126,10 +1130,10 @@
         "flow": false,
         "blurb": "The two semicircle centre points, right then left",
         "callX": 706,
-        "callY": 228,
+        "callY": 154,
         "gripX": 612,
         "gripY": 185,
-        "d": "M706 259 H692 L624 185 H612"
+        "d": "M706 185 H612"
        },
        {
         "side": "out",
@@ -1141,10 +1145,10 @@
         "flow": false,
         "blurb": "Radius of each semicircle",
         "callX": 706,
-        "callY": 294,
+        "callY": 221,
         "gripX": 612,
         "gripY": 215,
-        "d": "M706 325 H692 L624 215 H612"
+        "d": "M706 252 H692 L624 215 H612"
        },
        {
         "side": "out",
@@ -1156,13 +1160,15 @@
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 706,
-        "callY": 362,
+        "callY": 288,
         "gripX": 612,
         "gripY": 245,
-        "d": "M706 393 H692 L624 245 H612"
+        "d": "M706 319 H692 L624 245 H612"
        }
       ]
-     }
+     },
+     "indexHead": "Start line as a capsule - two equal semicircles joined by straight sides. The classic athletics track outline.",
+     "indexMore": null
     },
     {
      "id": "startline-oval",
@@ -1359,7 +1365,7 @@
      "tier": "core",
      "figure": {
       "w": 1072,
-      "h": 702,
+      "h": 572,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -1380,10 +1386,10 @@
         "flow": true,
         "blurb": "The field, straight from Field",
         "callX": 0,
-        "callY": 150,
+        "callY": 20,
         "gripX": 434,
         "gripY": 181,
-        "d": "M340 181 H434"
+        "d": "M340 51 H354 L422 181 H434"
        },
        {
         "side": "in",
@@ -1395,10 +1401,10 @@
         "flow": false,
         "blurb": "Build the oval around this curve instead",
         "callX": 0,
-        "callY": 216,
+        "callY": 87,
         "gripX": 434,
         "gripY": 211,
-        "d": "M340 247 H354 L422 211 H434"
+        "d": "M340 118 H354 L422 211 H434"
        },
        {
         "side": "in",
@@ -1410,10 +1416,10 @@
         "flow": false,
         "blurb": "Four tangent arcs with buildable radii, or a true ellipse",
         "callX": 0,
-        "callY": 284,
+        "callY": 154,
         "gripX": 434,
         "gripY": 241,
-        "d": "M340 315 H354 L422 241 H434"
+        "d": "M340 185 H354 L422 241 H434"
        },
        {
         "side": "in",
@@ -1425,10 +1431,10 @@
         "flow": false,
         "blurb": "How far past the field the oval reaches along its long axis",
         "callX": 0,
-        "callY": 350,
+        "callY": 221,
         "gripX": 434,
         "gripY": 271,
-        "d": "M340 381 H354 L422 271 H434"
+        "d": "M340 252 H354 L422 271 H434"
        },
        {
         "side": "in",
@@ -1440,10 +1446,10 @@
         "flow": false,
         "blurb": "How far past the field the oval reaches along its short axis",
         "callX": 0,
-        "callY": 418,
+        "callY": 288,
         "gripX": 434,
         "gripY": 301,
-        "d": "M340 449 H354 L422 301 H434"
+        "d": "M340 319 H354 L422 301 H434"
        },
        {
         "side": "in",
@@ -1455,10 +1461,10 @@
         "flow": false,
         "blurb": "Rounding step used by Radius Snap",
         "callX": 0,
-        "callY": 484,
+        "callY": 355,
         "gripX": 434,
         "gripY": 331,
-        "d": "M340 515 H354 L422 331 H434"
+        "d": "M340 386 H354 L422 331 H434"
        },
        {
         "side": "in",
@@ -1470,10 +1476,10 @@
         "flow": false,
         "blurb": "Round the arc radii to whole units so they are easier to set out on site",
         "callX": 0,
-        "callY": 552,
+        "callY": 422,
         "gripX": 434,
         "gripY": 361,
-        "d": "M340 583 H354 L422 361 H434"
+        "d": "M340 453 H354 L422 361 H434"
        },
        {
         "side": "in",
@@ -1485,10 +1491,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 618,
+        "callY": 489,
         "gripX": 434,
         "gripY": 391,
-        "d": "M340 649 H354 L422 391 H434"
+        "d": "M340 520 H354 L422 391 H434"
        },
        {
         "side": "out",
@@ -1566,7 +1572,9 @@
         "d": "M732 457 H718 L650 382 H638"
        }
       ]
-     }
+     },
+     "indexHead": "Start line as an oval around the field — four tangent arcs, or a true ellipse. Use when the bowl...",
+     "indexMore": "has no straight sides."
     },
     {
      "id": "custom-startline",
@@ -1685,7 +1693,7 @@
      "tier": "core",
      "figure": {
       "w": 1039,
-      "h": 444,
+      "h": 371,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -1736,10 +1744,10 @@
         "flow": true,
         "blurb": "The start line as one object",
         "callX": 699,
-        "callY": 94,
+        "callY": 20,
         "gripX": 605,
         "gripY": 125,
-        "d": "M699 125 H605"
+        "d": "M699 51 H685 L617 125 H605"
        },
        {
         "side": "out",
@@ -1751,10 +1759,10 @@
         "flow": false,
         "blurb": "Your curve",
         "callX": 699,
-        "callY": 160,
+        "callY": 87,
         "gripX": 605,
         "gripY": 155,
-        "d": "M699 191 H685 L617 155 H605"
+        "d": "M699 118 H685 L617 155 H605"
        },
        {
         "side": "out",
@@ -1766,10 +1774,10 @@
         "flow": false,
         "blurb": "Centre point of every arc found in your curve",
         "callX": 699,
-        "callY": 228,
+        "callY": 154,
         "gripX": 605,
         "gripY": 185,
-        "d": "M699 259 H685 L617 185 H605"
+        "d": "M699 185 H605"
        },
        {
         "side": "out",
@@ -1781,10 +1789,10 @@
         "flow": false,
         "blurb": "Radius of each detected arc, matching Arc Centers",
         "callX": 699,
-        "callY": 294,
+        "callY": 221,
         "gripX": 605,
         "gripY": 215,
-        "d": "M699 325 H685 L617 215 H605"
+        "d": "M699 252 H685 L617 215 H605"
        },
        {
         "side": "out",
@@ -1796,13 +1804,15 @@
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 699,
-        "callY": 362,
+        "callY": 288,
         "gripX": 605,
         "gripY": 245,
-        "d": "M699 393 H685 L617 245 H605"
+        "d": "M699 319 H685 L617 245 H605"
        }
       ]
-     }
+     },
+     "indexHead": "Start line taken from a curve you draw - aligned to the field frame for a preset field, used as...",
+     "indexMore": "drawn for a custom field. Use when no preset shape fits. An open curve gives a stand with two free ends."
     },
     {
      "id": "axis",
@@ -2032,7 +2042,7 @@
      "tier": "core",
      "figure": {
       "w": 1051,
-      "h": 786,
+      "h": 639,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -2053,10 +2063,10 @@
         "flow": true,
         "blurb": "The start line from any Startline component",
         "callX": 0,
-        "callY": 168,
+        "callY": 20,
         "gripX": 434,
         "gripY": 199,
-        "d": "M340 199 H434"
+        "d": "M340 51 H354 L422 199 H434"
        },
        {
         "side": "in",
@@ -2068,10 +2078,10 @@
         "flow": false,
         "blurb": "Divide this curve instead",
         "callX": 0,
-        "callY": 234,
+        "callY": 87,
         "gripX": 434,
         "gripY": 229,
-        "d": "M340 265 H354 L422 229 H434"
+        "d": "M340 118 H354 L422 229 H434"
        },
        {
         "side": "in",
@@ -2083,10 +2093,10 @@
         "flow": false,
         "blurb": "What to do with the leftover at the end of a straight run",
         "callX": 0,
-        "callY": 302,
+        "callY": 154,
         "gripX": 434,
         "gripY": 259,
-        "d": "M340 333 H354 L422 259 H434"
+        "d": "M340 185 H354 L422 259 H434"
        },
        {
         "side": "in",
@@ -2098,10 +2108,10 @@
         "flow": false,
         "blurb": "How many sections each corner arc is divided into",
         "callX": 0,
-        "callY": 368,
+        "callY": 221,
         "gripX": 434,
         "gripY": 289,
-        "d": "M340 399 H354 L422 289 H434"
+        "d": "M340 252 H354 L422 289 H434"
        },
        {
         "side": "in",
@@ -2113,10 +2123,10 @@
         "flow": false,
         "blurb": "Section spacing on the straight runs, adjusted to fit each run evenly",
         "callX": 0,
-        "callY": 436,
+        "callY": 288,
         "gripX": 434,
         "gripY": 319,
-        "d": "M340 467 H354 L422 319 H434"
+        "d": "M340 319 H434"
        },
        {
         "side": "in",
@@ -2128,10 +2138,10 @@
         "flow": false,
         "blurb": "Spacing along chamfered corner edges",
         "callX": 0,
-        "callY": 502,
+        "callY": 355,
         "gripX": 434,
         "gripY": 349,
-        "d": "M340 533 H354 L422 349 H434"
+        "d": "M340 386 H354 L422 349 H434"
        },
        {
         "side": "in",
@@ -2143,10 +2153,10 @@
         "flow": false,
         "blurb": "Length of the preview line drawn at each axis",
         "callX": 0,
-        "callY": 570,
+        "callY": 422,
         "gripX": 434,
         "gripY": 379,
-        "d": "M340 601 H354 L422 379 H434"
+        "d": "M340 453 H354 L422 379 H434"
        },
        {
         "side": "in",
@@ -2158,10 +2168,10 @@
         "flow": false,
         "blurb": "Also put a section on the centre of each run",
         "callX": 0,
-        "callY": 636,
+        "callY": 489,
         "gripX": 434,
         "gripY": 409,
-        "d": "M340 667 H354 L422 409 H434"
+        "d": "M340 520 H354 L422 409 H434"
        },
        {
         "side": "in",
@@ -2173,10 +2183,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 704,
+        "callY": 556,
         "gripX": 434,
         "gripY": 439,
-        "d": "M340 735 H354 L422 439 H434"
+        "d": "M340 587 H354 L422 439 H434"
        },
        {
         "side": "out",
@@ -2269,7 +2279,9 @@
         "d": "M711 541 H697 L629 432 H617"
        }
       ]
-     }
+     },
+     "indexHead": "Divides the start line into the planes each stand section is placed on. Straight runs are split by an even...",
+     "indexMore": "module, arcs by a fixed count — so section spacing follows the shape."
     },
     {
      "id": "custom-axis",
@@ -2434,7 +2446,7 @@
      "tier": "core",
      "figure": {
       "w": 1038,
-      "h": 530,
+      "h": 438,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -2515,10 +2527,10 @@
         "flow": true,
         "blurb": "The axis system as one object",
         "callX": 698,
-        "callY": 112,
+        "callY": 20,
         "gripX": 604,
         "gripY": 144,
-        "d": "M698 143 H684 L616 144 H604"
+        "d": "M698 51 H684 L616 144 H604"
        },
        {
         "side": "out",
@@ -2530,10 +2542,10 @@
         "flow": false,
         "blurb": "The faceted line the stand is built on",
         "callX": 698,
-        "callY": 180,
+        "callY": 87,
         "gripX": 604,
         "gripY": 174,
-        "d": "M698 211 H684 L616 174 H604"
+        "d": "M698 118 H684 L616 174 H604"
        },
        {
         "side": "out",
@@ -2545,10 +2557,10 @@
         "flow": false,
         "blurb": "One point per axis, numbered along the start line",
         "callX": 698,
-        "callY": 246,
+        "callY": 154,
         "gripX": 604,
         "gripY": 204,
-        "d": "M698 277 H684 L616 204 H604"
+        "d": "M698 185 H684 L616 204 H604"
        },
        {
         "side": "out",
@@ -2560,10 +2572,10 @@
         "flow": false,
         "blurb": "One plane per axis",
         "callX": 698,
-        "callY": 314,
+        "callY": 221,
         "gripX": 604,
         "gripY": 234,
-        "d": "M698 345 H684 L616 234 H604"
+        "d": "M698 252 H684 L616 234 H604"
        },
        {
         "side": "out",
@@ -2575,10 +2587,10 @@
         "flow": false,
         "blurb": "Preview line at each axis, for checking direction and spacing",
         "callX": 698,
-        "callY": 380,
+        "callY": 288,
         "gripX": 604,
         "gripY": 264,
-        "d": "M698 411 H684 L616 264 H604"
+        "d": "M698 319 H684 L616 264 H604"
        },
        {
         "side": "out",
@@ -2590,13 +2602,15 @@
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 698,
-        "callY": 448,
+        "callY": 355,
         "gripX": 604,
         "gripY": 294,
-        "d": "M698 479 H684 L616 294 H604"
+        "d": "M698 386 H684 L616 294 H604"
        }
       ]
-     }
+     },
+     "indexHead": "Section placement planes from axis curves you draw yourself. Each curve's crossing with the start line becomes an axis, numbered...",
+     "indexMore": "along the start line - those numbers are what Cut refers to."
     },
     {
      "id": "section",
@@ -2811,7 +2825,7 @@
      "tier": "core",
      "figure": {
       "w": 1042,
-      "h": 786,
+      "h": 639,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -2832,10 +2846,10 @@
         "flow": false,
         "blurb": "One line per step, at least two per tier, all in one plane",
         "callX": 0,
-        "callY": 168,
+        "callY": 20,
         "gripX": 434,
         "gripY": 199,
-        "d": "M340 199 H434"
+        "d": "M340 51 H354 L422 199 H434"
        },
        {
         "side": "in",
@@ -2847,10 +2861,10 @@
         "flow": true,
         "blurb": "The field, straight from Field",
         "callX": 0,
-        "callY": 234,
+        "callY": 87,
         "gripX": 434,
         "gripY": 229,
-        "d": "M340 265 H354 L422 229 H434"
+        "d": "M340 118 H354 L422 229 H434"
        },
        {
         "side": "in",
@@ -2862,10 +2876,10 @@
         "flow": false,
         "blurb": "Aim the sightlines somewhere else",
         "callX": 0,
-        "callY": 302,
+        "callY": 154,
         "gripX": 434,
         "gripY": 259,
-        "d": "M340 333 H354 L422 259 H434"
+        "d": "M340 185 H354 L422 259 H434"
        },
        {
         "side": "in",
@@ -2877,10 +2891,10 @@
         "flow": false,
         "blurb": "The faceted line the stand is built on",
         "callX": 0,
-        "callY": 368,
+        "callY": 221,
         "gripX": 434,
         "gripY": 289,
-        "d": "M340 399 H354 L422 289 H434"
+        "d": "M340 252 H354 L422 289 H434"
        },
        {
         "side": "in",
@@ -2892,10 +2906,10 @@
         "flow": false,
         "blurb": "How far back from the nosing a seated spectator's eye sits",
         "callX": 0,
-        "callY": 436,
+        "callY": 288,
         "gripX": 434,
         "gripY": 319,
-        "d": "M340 467 H354 L422 319 H434"
+        "d": "M340 319 H434"
        },
        {
         "side": "in",
@@ -2907,10 +2921,10 @@
         "flow": false,
         "blurb": "Eye height above the tread, seated spectator",
         "callX": 0,
-        "callY": 502,
+        "callY": 355,
         "gripX": 434,
         "gripY": 349,
-        "d": "M340 533 H354 L422 349 H434"
+        "d": "M340 386 H354 L422 349 H434"
        },
        {
         "side": "in",
@@ -2922,10 +2936,10 @@
         "flow": false,
         "blurb": "Height of the first step above field level",
         "callX": 0,
-        "callY": 570,
+        "callY": 422,
         "gripX": 434,
         "gripY": 379,
-        "d": "M340 601 H354 L422 379 H434"
+        "d": "M340 453 H354 L422 379 H434"
        },
        {
         "side": "in",
@@ -2937,10 +2951,10 @@
         "flow": false,
         "blurb": "Thickness of the stand slab",
         "callX": 0,
-        "callY": 636,
+        "callY": 489,
         "gripX": 434,
         "gripY": 409,
-        "d": "M340 667 H354 L422 409 H434"
+        "d": "M340 520 H354 L422 409 H434"
        },
        {
         "side": "in",
@@ -2952,10 +2966,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 704,
+        "callY": 556,
         "gripX": 434,
         "gripY": 439,
-        "d": "M340 735 H354 L422 439 H434"
+        "d": "M340 587 H354 L422 439 H434"
        },
        {
         "side": "out",
@@ -3033,7 +3047,9 @@
         "d": "M702 479 H688 L620 427 H608"
        }
       ]
-     }
+     },
+     "indexHead": "Turns the tread lines you draw into a tier section — rows, nosing and eye points, and the closed profile...",
+     "indexMore": "the stand is swept from. Draw one line per step; the component sorts them and works out the tiers."
     },
     {
      "id": "auto-section",
@@ -3404,7 +3420,7 @@
      "tier": "core",
      "figure": {
       "w": 1066,
-      "h": 1642,
+      "h": 1309,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -3425,10 +3441,10 @@
         "flow": true,
         "blurb": "The field, straight from Field",
         "callX": 0,
-        "callY": 354,
+        "callY": 20,
         "gripX": 434,
         "gripY": 385,
-        "d": "M340 385 H434"
+        "d": "M340 51 H354 L422 385 H434"
        },
        {
         "side": "in",
@@ -3440,10 +3456,10 @@
         "flow": false,
         "blurb": "Aim the sightlines somewhere else",
         "callX": 0,
-        "callY": 420,
+        "callY": 87,
         "gripX": 434,
         "gripY": 415,
-        "d": "M340 451 H354 L422 415 H434"
+        "d": "M340 118 H354 L422 415 H434"
        },
        {
         "side": "in",
@@ -3455,10 +3471,10 @@
         "flow": false,
         "blurb": "The faceted line the stand is built on",
         "callX": 0,
-        "callY": 488,
+        "callY": 154,
         "gripX": 434,
         "gripY": 445,
-        "d": "M340 519 H354 L422 445 H434"
+        "d": "M340 185 H354 L422 445 H434"
        },
        {
         "side": "in",
@@ -3470,10 +3486,10 @@
         "flow": false,
         "blurb": "How many steps each tier has, front row included",
         "callX": 0,
-        "callY": 554,
+        "callY": 221,
         "gripX": 434,
         "gripY": 475,
-        "d": "M340 585 H354 L422 475 H434"
+        "d": "M340 252 H354 L422 475 H434"
        },
        {
         "side": "in",
@@ -3485,10 +3501,10 @@
         "flow": false,
         "blurb": "Depth of the front step",
         "callX": 0,
-        "callY": 622,
+        "callY": 288,
         "gripX": 434,
         "gripY": 505,
-        "d": "M340 653 H354 L422 505 H434"
+        "d": "M340 319 H354 L422 505 H434"
        },
        {
         "side": "in",
@@ -3500,10 +3516,10 @@
         "flow": false,
         "blurb": "Depth of every step above the front one",
         "callX": 0,
-        "callY": 688,
+        "callY": 355,
         "gripX": 434,
         "gripY": 535,
-        "d": "M340 719 H354 L422 535 H434"
+        "d": "M340 386 H354 L422 535 H434"
        },
        {
         "side": "in",
@@ -3515,10 +3531,10 @@
         "flow": false,
         "blurb": "How far the tier behind starts back from the last nosing below",
         "callX": 0,
-        "callY": 756,
+        "callY": 422,
         "gripX": 434,
         "gripY": 565,
-        "d": "M340 787 H354 L422 565 H434"
+        "d": "M340 453 H354 L422 565 H434"
        },
        {
         "side": "in",
@@ -3530,10 +3546,10 @@
         "flow": false,
         "blurb": "How high the tier behind starts above the last nosing below",
         "callX": 0,
-        "callY": 822,
+        "callY": 489,
         "gripX": 434,
         "gripY": 595,
-        "d": "M340 853 H354 L422 595 H434"
+        "d": "M340 520 H354 L422 595 H434"
        },
        {
         "side": "in",
@@ -3545,10 +3561,10 @@
         "flow": false,
         "blurb": "The C-value every row must hold",
         "callX": 0,
-        "callY": 890,
+        "callY": 556,
         "gripX": 434,
         "gripY": 625,
-        "d": "M340 921 H354 L422 625 H434"
+        "d": "M340 587 H354 L422 625 H434"
        },
        {
         "side": "in",
@@ -3560,10 +3576,10 @@
         "flow": false,
         "blurb": "Shallowest riser to build",
         "callX": 0,
-        "callY": 956,
+        "callY": 623,
         "gripX": 434,
         "gripY": 655,
-        "d": "M340 987 H354 L422 655 H434"
+        "d": "M340 654 H354 L422 655 H434"
        },
        {
         "side": "in",
@@ -3575,10 +3591,10 @@
         "flow": false,
         "blurb": "Tallest riser to build",
         "callX": 0,
-        "callY": 1024,
+        "callY": 690,
         "gripX": 434,
         "gripY": 685,
-        "d": "M340 1055 H354 L422 685 H434"
+        "d": "M340 721 H354 L422 685 H434"
        },
        {
         "side": "in",
@@ -3590,10 +3606,10 @@
         "flow": false,
         "blurb": "How far back from the nosing a seated spectator's eye sits",
         "callX": 0,
-        "callY": 1090,
+        "callY": 757,
         "gripX": 434,
         "gripY": 715,
-        "d": "M340 1121 H354 L422 715 H434"
+        "d": "M340 788 H354 L422 715 H434"
        },
        {
         "side": "in",
@@ -3605,10 +3621,10 @@
         "flow": false,
         "blurb": "Eye height above the tread, seated spectator",
         "callX": 0,
-        "callY": 1158,
+        "callY": 824,
         "gripX": 434,
         "gripY": 745,
-        "d": "M340 1189 H354 L422 745 H434"
+        "d": "M340 855 H354 L422 745 H434"
        },
        {
         "side": "in",
@@ -3620,10 +3636,10 @@
         "flow": false,
         "blurb": "Height of the first step above field level",
         "callX": 0,
-        "callY": 1224,
+        "callY": 891,
         "gripX": 434,
         "gripY": 775,
-        "d": "M340 1255 H354 L422 775 H434"
+        "d": "M340 922 H354 L422 775 H434"
        },
        {
         "side": "in",
@@ -3635,10 +3651,10 @@
         "flow": false,
         "blurb": "How far the first step sits in front of the focal point",
         "callX": 0,
-        "callY": 1292,
+        "callY": 958,
         "gripX": 434,
         "gripY": 805,
-        "d": "M340 1323 H354 L422 805 H434"
+        "d": "M340 989 H354 L422 805 H434"
        },
        {
         "side": "in",
@@ -3650,10 +3666,10 @@
         "flow": false,
         "blurb": "Thickness of the stand slab",
         "callX": 0,
-        "callY": 1358,
+        "callY": 1025,
         "gripX": 434,
         "gripY": 835,
-        "d": "M340 1389 H354 L422 835 H434"
+        "d": "M340 1056 H354 L422 835 H434"
        },
        {
         "side": "in",
@@ -3665,10 +3681,10 @@
         "flow": false,
         "blurb": "Risers round up to a whole multiple of this, so they set out on site",
         "callX": 0,
-        "callY": 1426,
+        "callY": 1092,
         "gripX": 434,
         "gripY": 865,
-        "d": "M340 1457 H354 L422 865 H434"
+        "d": "M340 1123 H354 L422 865 H434"
        },
        {
         "side": "in",
@@ -3680,10 +3696,10 @@
         "flow": false,
         "blurb": "Fold the section onto the other side of its own line in plan",
         "callX": 0,
-        "callY": 1492,
+        "callY": 1159,
         "gripX": 434,
         "gripY": 895,
-        "d": "M340 1523 H354 L422 895 H434"
+        "d": "M340 1190 H354 L422 895 H434"
        },
        {
         "side": "in",
@@ -3695,10 +3711,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 1560,
+        "callY": 1226,
         "gripX": 434,
         "gripY": 925,
-        "d": "M340 1591 H354 L422 925 H434"
+        "d": "M340 1257 H354 L422 925 H434"
        },
        {
         "side": "out",
@@ -3806,7 +3822,9 @@
         "d": "M726 897 H712 L644 898 H632"
        }
       ]
-     }
+     },
+     "indexHead": "Works out the risers for you. Give it the tread depths and the minimum C-value you want to hold, and...",
+     "indexMore": "it raises each step by the smallest Riser Step increment that still clears that C-value - the shallowest bowl that meets the target. The front row starts on the start line, so wire the same field, focal point and start line that Section takes. Bake tread_lines if you want to fine-tune the steps by hand in Section afterwards."
     },
     {
      "id": "section-plus",
@@ -4061,7 +4079,7 @@
      "tier": "core",
      "figure": {
       "w": 1082,
-      "h": 872,
+      "h": 706,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -4082,10 +4100,10 @@
         "flow": true,
         "blurb": "The sections to add barriers to, from Section",
         "callX": 0,
-        "callY": 186,
+        "callY": 20,
         "gripX": 434,
         "gripY": 218,
-        "d": "M340 217 H354 L422 218 H434"
+        "d": "M340 51 H354 L422 218 H434"
        },
        {
         "side": "in",
@@ -4097,10 +4115,10 @@
         "flow": false,
         "blurb": "Height of the solid barrier above the front tread",
         "callX": 0,
-        "callY": 254,
+        "callY": 87,
         "gripX": 434,
         "gripY": 248,
-        "d": "M340 285 H354 L422 248 H434"
+        "d": "M340 118 H354 L422 248 H434"
        },
        {
         "side": "in",
@@ -4112,10 +4130,10 @@
         "flow": false,
         "blurb": "Thickness of the solid barrier",
         "callX": 0,
-        "callY": 320,
+        "callY": 154,
         "gripX": 434,
         "gripY": 278,
-        "d": "M340 351 H354 L422 278 H434"
+        "d": "M340 185 H354 L422 278 H434"
        },
        {
         "side": "in",
@@ -4127,10 +4145,10 @@
         "flow": false,
         "blurb": "How far the barrier drops below the front tread, hiding the slab edge",
         "callX": 0,
-        "callY": 388,
+        "callY": 221,
         "gripX": 434,
         "gripY": 308,
-        "d": "M340 419 H354 L422 308 H434"
+        "d": "M340 252 H354 L422 308 H434"
        },
        {
         "side": "in",
@@ -4142,10 +4160,10 @@
         "flow": false,
         "blurb": "Smallest C-value over the barrier top",
         "callX": 0,
-        "callY": 454,
+        "callY": 288,
         "gripX": 434,
         "gripY": 338,
-        "d": "M340 485 H354 L422 338 H434"
+        "d": "M340 319 H354 L422 338 H434"
        },
        {
         "side": "in",
@@ -4157,10 +4175,10 @@
         "flow": false,
         "blurb": "Per-tier toggle marking the top row as the accessible (wheelchair) row",
         "callX": 0,
-        "callY": 522,
+        "callY": 355,
         "gripX": 434,
         "gripY": 368,
-        "d": "M340 553 H354 L422 368 H434"
+        "d": "M340 386 H354 L422 368 H434"
        },
        {
         "side": "in",
@@ -4172,10 +4190,10 @@
         "flow": false,
         "blurb": "Level the top 2 rows of every WC tier",
         "callX": 0,
-        "callY": 588,
+        "callY": 422,
         "gripX": 434,
         "gripY": 398,
-        "d": "M340 619 H354 L422 398 H434"
+        "d": "M340 453 H354 L422 398 H434"
        },
        {
         "side": "in",
@@ -4187,10 +4205,10 @@
         "flow": false,
         "blurb": "Eye height above the platform for a wheelchair user",
         "callX": 0,
-        "callY": 656,
+        "callY": 489,
         "gripX": 434,
         "gripY": 428,
-        "d": "M340 687 H354 L422 428 H434"
+        "d": "M340 520 H354 L422 428 H434"
        },
        {
         "side": "in",
@@ -4202,10 +4220,10 @@
         "flow": false,
         "blurb": "How far back from the nosing a wheelchair user's eye sits",
         "callX": 0,
-        "callY": 722,
+        "callY": 556,
         "gripX": 434,
         "gripY": 458,
-        "d": "M340 753 H354 L422 458 H434"
+        "d": "M340 587 H354 L422 458 H434"
        },
        {
         "side": "in",
@@ -4217,10 +4235,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 790,
+        "callY": 623,
         "gripX": 434,
         "gripY": 488,
-        "d": "M340 821 H354 L422 488 H434"
+        "d": "M340 654 H354 L422 488 H434"
        },
        {
         "side": "out",
@@ -4328,7 +4346,9 @@
         "d": "M742 625 H728 L660 481 H648"
        }
       ]
-     }
+     },
+     "indexHead": "Adds the things a bare section does not have: the front barrier or handrail, accessible (wheelchair) rows, and the sightline...",
+     "indexMore": "check over the barrier. Sits between Section and Stand 2D — pure section geometry stays in Section."
     },
     {
      "id": "table-section",
@@ -4546,7 +4566,7 @@
      "tier": "core",
      "figure": {
       "w": 1048,
-      "h": 702,
+      "h": 572,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -4582,10 +4602,10 @@
         "flow": true,
         "blurb": "The field, straight from Field",
         "callX": 0,
-        "callY": 222,
+        "callY": 221,
         "gripX": 434,
         "gripY": 224,
-        "d": "M340 253 H354 L422 224 H434"
+        "d": "M340 252 H354 L422 224 H434"
        },
        {
         "side": "in",
@@ -4612,10 +4632,10 @@
         "flow": false,
         "blurb": "The faceted line the stand is built on",
         "callX": 0,
-        "callY": 356,
+        "callY": 355,
         "gripX": 434,
         "gripY": 306,
-        "d": "M340 387 H354 L422 306 H434"
+        "d": "M340 386 H354 L422 306 H434"
        },
        {
         "side": "in",
@@ -4642,10 +4662,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 490,
+        "callY": 489,
         "gripX": 434,
         "gripY": 385,
-        "d": "M340 521 H354 L422 385 H434"
+        "d": "M340 520 H354 L422 385 H434"
        },
        {
         "side": "out",
@@ -4657,10 +4677,10 @@
         "flow": true,
         "blurb": "The tier sections, with the barrier and any accessible rows written in",
         "callX": 708,
-        "callY": 150,
+        "callY": 20,
         "gripX": 614,
         "gripY": 181,
-        "d": "M708 181 H614"
+        "d": "M708 51 H694 L626 181 H614"
        },
        {
         "side": "out",
@@ -4672,10 +4692,10 @@
         "flow": false,
         "blurb": "The barrier itself, one closed section curve per tier",
         "callX": 708,
-        "callY": 216,
+        "callY": 87,
         "gripX": 614,
         "gripY": 211,
-        "d": "M708 247 H694 L626 211 H614"
+        "d": "M708 118 H694 L626 211 H614"
        },
        {
         "side": "out",
@@ -4687,10 +4707,10 @@
         "flow": false,
         "blurb": "Tread-top stepped line, after the front row was pulled back for the barrier",
         "callX": 708,
-        "callY": 284,
+        "callY": 154,
         "gripX": 614,
         "gripY": 241,
-        "d": "M708 315 H694 L626 241 H614"
+        "d": "M708 185 H694 L626 241 H614"
        },
        {
         "side": "out",
@@ -4702,10 +4722,10 @@
         "flow": false,
         "blurb": "The closed profile the stand is swept from",
         "callX": 708,
-        "callY": 350,
+        "callY": 221,
         "gripX": 614,
         "gripY": 271,
-        "d": "M708 381 H694 L626 271 H614"
+        "d": "M708 252 H694 L626 271 H614"
        },
        {
         "side": "out",
@@ -4717,10 +4737,10 @@
         "flow": false,
         "blurb": "Eye point of every row, all tiers",
         "callX": 708,
-        "callY": 418,
+        "callY": 288,
         "gripX": 614,
         "gripY": 301,
-        "d": "M708 449 H694 L626 301 H614"
+        "d": "M708 319 H694 L626 301 H614"
        },
        {
         "side": "out",
@@ -4732,10 +4752,10 @@
         "flow": false,
         "blurb": "The lines behind the barrier sightline check",
         "callX": 708,
-        "callY": 484,
+        "callY": 355,
         "gripX": 614,
         "gripY": 331,
-        "d": "M708 515 H694 L626 331 H614"
+        "d": "M708 386 H694 L626 331 H614"
        },
        {
         "side": "out",
@@ -4747,10 +4767,10 @@
         "flow": false,
         "blurb": "Tread-top line through an accessible platform, one per WC tier",
         "callX": 708,
-        "callY": 552,
+        "callY": 422,
         "gripX": 614,
         "gripY": 361,
-        "d": "M708 583 H694 L626 361 H614"
+        "d": "M708 453 H694 L626 361 H614"
        },
        {
         "side": "out",
@@ -4762,13 +4782,15 @@
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 708,
-        "callY": 618,
+        "callY": 489,
         "gripX": 614,
         "gripY": 391,
-        "d": "M708 649 H694 L626 391 H614"
+        "d": "M708 520 H694 L626 391 H614"
        }
       ]
-     }
+     },
+     "indexHead": "Builds the tier sections from the numbers in your workbook instead of lines you draw. Wire the book from Table...",
+     "indexMore": "In, plus the same field, focal point and start line that Section takes. The barrier settings live in the workbook too, so this one component does what Section and Section Plus do together - the outputs are the same."
     },
     {
      "id": "stand-2d",
@@ -4896,7 +4918,7 @@
      "tier": "core",
      "figure": {
       "w": 1038,
-      "h": 444,
+      "h": 371,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -4947,10 +4969,10 @@
         "flow": true,
         "blurb": "Pass-through of the sections, unchanged",
         "callX": 698,
-        "callY": 94,
+        "callY": 20,
         "gripX": 604,
         "gripY": 125,
-        "d": "M698 125 H604"
+        "d": "M698 51 H684 L616 125 H604"
        },
        {
         "side": "out",
@@ -4962,10 +4984,10 @@
         "flow": true,
         "blurb": "Pass-through of the axis, unchanged",
         "callX": 698,
-        "callY": 160,
+        "callY": 87,
         "gripX": 604,
         "gripY": 155,
-        "d": "M698 191 H684 L616 155 H604"
+        "d": "M698 118 H684 L616 155 H604"
        },
        {
         "side": "out",
@@ -4977,10 +4999,10 @@
         "flow": true,
         "blurb": "The 2D bowl as one object",
         "callX": 698,
-        "callY": 228,
+        "callY": 154,
         "gripX": 604,
         "gripY": 185,
-        "d": "M698 259 H684 L616 185 H604"
+        "d": "M698 185 H604"
        },
        {
         "side": "out",
@@ -4992,10 +5014,10 @@
         "flow": false,
         "blurb": "The tread rings themselves, all tiers in one flat list",
         "callX": 698,
-        "callY": 294,
+        "callY": 221,
         "gripX": 604,
         "gripY": 215,
-        "d": "M698 325 H684 L616 215 H604"
+        "d": "M698 252 H684 L616 215 H604"
        },
        {
         "side": "out",
@@ -5007,13 +5029,15 @@
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 698,
-        "callY": 362,
+        "callY": 288,
         "gripX": 604,
         "gripY": 245,
-        "d": "M698 393 H684 L616 245 H604"
+        "d": "M698 319 H684 L616 245 H604"
        }
       ]
-     }
+     },
+     "indexHead": "Sweeps each tier section around the axis planes and flattens it into tread rings in plan. Everything downstream — seats,...",
+     "indexMore": "vomitories, cuts — works on these rings."
     },
     {
      "id": "vomitory",
@@ -5388,7 +5412,7 @@
      "tier": "core",
      "figure": {
       "w": 1078,
-      "h": 1556,
+      "h": 1242,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -5409,10 +5433,10 @@
         "flow": true,
         "blurb": "The tier sections, passed along the chain",
         "callX": 0,
-        "callY": 334,
+        "callY": 20,
         "gripX": 434,
         "gripY": 366,
-        "d": "M340 365 H354 L422 366 H434"
+        "d": "M340 51 H354 L422 366 H434"
        },
        {
         "side": "in",
@@ -5424,10 +5448,10 @@
         "flow": true,
         "blurb": "The axis system, passed along the chain",
         "callX": 0,
-        "callY": 402,
+        "callY": 87,
         "gripX": 434,
         "gripY": 396,
-        "d": "M340 433 H354 L422 396 H434"
+        "d": "M340 118 H354 L422 396 H434"
        },
        {
         "side": "in",
@@ -5439,10 +5463,10 @@
         "flow": true,
         "blurb": "The 2D bowl the vomitories are cut into",
         "callX": 0,
-        "callY": 468,
+        "callY": 154,
         "gripX": 434,
         "gripY": 426,
-        "d": "M340 499 H354 L422 426 H434"
+        "d": "M340 185 H354 L422 426 H434"
        },
        {
         "side": "in",
@@ -5454,10 +5478,10 @@
         "flow": false,
         "blurb": "Place a vomitory every N ring segments",
         "callX": 0,
-        "callY": 536,
+        "callY": 221,
         "gripX": 434,
         "gripY": 456,
-        "d": "M340 567 H354 L422 456 H434"
+        "d": "M340 252 H354 L422 456 H434"
        },
        {
         "side": "in",
@@ -5469,10 +5493,10 @@
         "flow": false,
         "blurb": "Which ring segment the first vomitory lands on",
         "callX": 0,
-        "callY": 602,
+        "callY": 288,
         "gripX": 434,
         "gripY": 486,
-        "d": "M340 633 H354 L422 486 H434"
+        "d": "M340 319 H354 L422 486 H434"
        },
        {
         "side": "in",
@@ -5484,10 +5508,10 @@
         "flow": false,
         "blurb": "Which tread the opening starts at, front row = 1",
         "callX": 0,
-        "callY": 670,
+        "callY": 355,
         "gripX": 434,
         "gripY": 516,
-        "d": "M340 701 H354 L422 516 H434"
+        "d": "M340 386 H354 L422 516 H434"
        },
        {
         "side": "in",
@@ -5499,10 +5523,10 @@
         "flow": false,
         "blurb": "How each tier reaches the concourse: 1 BASIC, 2 STEPPED, 3 STAIR, 4 RAMP",
         "callX": 0,
-        "callY": 736,
+        "callY": 422,
         "gripX": 434,
         "gripY": 546,
-        "d": "M340 767 H354 L422 546 H434"
+        "d": "M340 453 H354 L422 546 H434"
        },
        {
         "side": "in",
@@ -5514,10 +5538,10 @@
         "flow": false,
         "blurb": "Clear width of the vomitory opening",
         "callX": 0,
-        "callY": 804,
+        "callY": 489,
         "gripX": 434,
         "gripY": 576,
-        "d": "M340 835 H354 L422 576 H434"
+        "d": "M340 520 H354 L422 576 H434"
        },
        {
         "side": "in",
@@ -5529,10 +5553,10 @@
         "flow": false,
         "blurb": "Headroom kept over the flat parts",
         "callX": 0,
-        "callY": 870,
+        "callY": 556,
         "gripX": 434,
         "gripY": 606,
-        "d": "M340 901 H354 L422 606 H434"
+        "d": "M340 587 H354 L422 606 H434"
        },
        {
         "side": "in",
@@ -5544,10 +5568,10 @@
         "flow": false,
         "blurb": "Headroom kept over the sloping part of a stair or ramp",
         "callX": 0,
-        "callY": 938,
+        "callY": 623,
         "gripX": 434,
         "gripY": 636,
-        "d": "M340 969 H354 L422 636 H434"
+        "d": "M340 654 H354 L422 636 H434"
        },
        {
         "side": "in",
@@ -5559,10 +5583,10 @@
         "flow": false,
         "blurb": "How far the vomitory drops to reach the concourse",
         "callX": 0,
-        "callY": 1004,
+        "callY": 690,
         "gripX": 434,
         "gripY": 666,
-        "d": "M340 1035 H354 L422 666 H434"
+        "d": "M340 721 H354 L422 666 H434"
        },
        {
         "side": "in",
@@ -5574,10 +5598,10 @@
         "flow": false,
         "blurb": "Depth of the flat waiting space at the top",
         "callX": 0,
-        "callY": 1072,
+        "callY": 757,
         "gripX": 434,
         "gripY": 696,
-        "d": "M340 1103 H354 L422 696 H434"
+        "d": "M340 788 H354 L422 696 H434"
        },
        {
         "side": "in",
@@ -5589,10 +5613,10 @@
         "flow": false,
         "blurb": "Ramp gradient as 1:N",
         "callX": 0,
-        "callY": 1138,
+        "callY": 824,
         "gripX": 434,
         "gripY": 726,
-        "d": "M340 1169 H354 L422 726 H434"
+        "d": "M340 855 H354 L422 726 H434"
        },
        {
         "side": "in",
@@ -5604,10 +5628,10 @@
         "flow": false,
         "blurb": "Depth of each intermediate landing",
         "callX": 0,
-        "callY": 1206,
+        "callY": 891,
         "gripX": 434,
         "gripY": 756,
-        "d": "M340 1237 H354 L422 756 H434"
+        "d": "M340 922 H354 L422 756 H434"
        },
        {
         "side": "in",
@@ -5619,10 +5643,10 @@
         "flow": false,
         "blurb": "Which tiers get vomitories",
         "callX": 0,
-        "callY": 1272,
+        "callY": 958,
         "gripX": 434,
         "gripY": 786,
-        "d": "M340 1303 H354 L422 786 H434"
+        "d": "M340 989 H354 L422 786 H434"
        },
        {
         "side": "in",
@@ -5634,10 +5658,10 @@
         "flow": false,
         "blurb": "On = vomitory axes derive from tier 0 and line up across tiers",
         "callX": 0,
-        "callY": 1340,
+        "callY": 1025,
         "gripX": 434,
         "gripY": 816,
-        "d": "M340 1371 H354 L422 816 H434"
+        "d": "M340 1056 H354 L422 816 H434"
        },
        {
         "side": "in",
@@ -5649,10 +5673,10 @@
         "flow": false,
         "blurb": "Break long descents with intermediate landings",
         "callX": 0,
-        "callY": 1406,
+        "callY": 1092,
         "gripX": 434,
         "gripY": 846,
-        "d": "M340 1437 H354 L422 846 H434"
+        "d": "M340 1123 H354 L422 846 H434"
        },
        {
         "side": "in",
@@ -5664,10 +5688,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 1474,
+        "callY": 1159,
         "gripX": 434,
         "gripY": 876,
-        "d": "M340 1505 H354 L422 876 H434"
+        "d": "M340 1190 H354 L422 876 H434"
        },
        {
         "side": "out",
@@ -5790,7 +5814,9 @@
         "d": "M738 857 H644"
        }
       ]
-     }
+     },
+     "indexHead": "Places the vomitories — the tunnels spectators enter the bowl through — in the tread rings, and sets how each...",
+     "indexMore": "one gets down to the concourse: flat, stepped, stair or ramp."
     },
     {
      "id": "seat",
@@ -6206,7 +6232,7 @@
      "tier": "core",
      "figure": {
       "w": 1080,
-      "h": 1642,
+      "h": 1309,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -6227,10 +6253,10 @@
         "flow": true,
         "blurb": "The vomitories seats must avoid",
         "callX": 0,
-        "callY": 354,
+        "callY": 20,
         "gripX": 434,
         "gripY": 385,
-        "d": "M340 385 H434"
+        "d": "M340 51 H354 L422 385 H434"
        },
        {
         "side": "in",
@@ -6242,10 +6268,10 @@
         "flow": true,
         "blurb": "The tread rings seats are placed on",
         "callX": 0,
-        "callY": 420,
+        "callY": 87,
         "gripX": 434,
         "gripY": 415,
-        "d": "M340 451 H354 L422 415 H434"
+        "d": "M340 118 H354 L422 415 H434"
        },
        {
         "side": "in",
@@ -6257,10 +6283,10 @@
         "flow": true,
         "blurb": "The tier sections, passed along the chain",
         "callX": 0,
-        "callY": 488,
+        "callY": 154,
         "gripX": 434,
         "gripY": 445,
-        "d": "M340 519 H354 L422 445 H434"
+        "d": "M340 185 H354 L422 445 H434"
        },
        {
         "side": "in",
@@ -6272,10 +6298,10 @@
         "flow": true,
         "blurb": "The axis system, passed along",
         "callX": 0,
-        "callY": 554,
+        "callY": 221,
         "gripX": 434,
         "gripY": 475,
-        "d": "M340 585 H354 L422 475 H434"
+        "d": "M340 252 H354 L422 475 H434"
        },
        {
         "side": "in",
@@ -6287,10 +6313,10 @@
         "flow": false,
         "blurb": "Longest run allowed when spectators can leave from both ends",
         "callX": 0,
-        "callY": 622,
+        "callY": 288,
         "gripX": 434,
         "gripY": 505,
-        "d": "M340 653 H354 L422 505 H434"
+        "d": "M340 319 H354 L422 505 H434"
        },
        {
         "side": "in",
@@ -6302,10 +6328,10 @@
         "flow": false,
         "blurb": "Shortest run worth keeping",
         "callX": 0,
-        "callY": 688,
+        "callY": 355,
         "gripX": 434,
         "gripY": 535,
-        "d": "M340 719 H354 L422 535 H434"
+        "d": "M340 386 H354 L422 535 H434"
        },
        {
         "side": "in",
@@ -6317,10 +6343,10 @@
         "flow": false,
         "blurb": "Which side of a tier gets a stepped aisle: BOTH, LEFT, RIGHT or NONE",
         "callX": 0,
-        "callY": 756,
+        "callY": 422,
         "gripX": 434,
         "gripY": 565,
-        "d": "M340 787 H354 L422 565 H434"
+        "d": "M340 453 H354 L422 565 H434"
        },
        {
         "side": "in",
@@ -6332,10 +6358,10 @@
         "flow": false,
         "blurb": "1 = let vomitory centrelines slide along straight runs to cut seat stubs",
         "callX": 0,
-        "callY": 822,
+        "callY": 489,
         "gripX": 434,
         "gripY": 595,
-        "d": "M340 853 H354 L422 595 H434"
+        "d": "M340 520 H354 L422 595 H434"
        },
        {
         "side": "in",
@@ -6347,10 +6373,10 @@
         "flow": false,
         "blurb": "Width of one seat",
         "callX": 0,
-        "callY": 890,
+        "callY": 556,
         "gripX": 434,
         "gripY": 625,
-        "d": "M340 921 H354 L422 625 H434"
+        "d": "M340 587 H354 L422 625 H434"
        },
        {
         "side": "in",
@@ -6362,10 +6388,10 @@
         "flow": false,
         "blurb": "Depth of one seat",
         "callX": 0,
-        "callY": 956,
+        "callY": 623,
         "gripX": 434,
         "gripY": 655,
-        "d": "M340 987 H354 L422 655 H434"
+        "d": "M340 654 H354 L422 655 H434"
        },
        {
         "side": "in",
@@ -6377,10 +6403,10 @@
         "flow": false,
         "blurb": "Clear width of each aisle",
         "callX": 0,
-        "callY": 1024,
+        "callY": 690,
         "gripX": 434,
         "gripY": 685,
-        "d": "M340 1055 H354 L422 685 H434"
+        "d": "M340 721 H354 L422 685 H434"
        },
        {
         "side": "in",
@@ -6392,10 +6418,10 @@
         "flow": false,
         "blurb": "Comfortable rise per aisle step",
         "callX": 0,
-        "callY": 1090,
+        "callY": 757,
         "gripX": 434,
         "gripY": 715,
-        "d": "M340 1121 H354 L422 715 H434"
+        "d": "M340 788 H354 L422 715 H434"
        },
        {
         "side": "in",
@@ -6407,10 +6433,10 @@
         "flow": false,
         "blurb": "Target share of wheelchair spaces, percent of capacity",
         "callX": 0,
-        "callY": 1158,
+        "callY": 824,
         "gripX": 434,
         "gripY": 745,
-        "d": "M340 1189 H354 L422 745 H434"
+        "d": "M340 855 H354 L422 745 H434"
        },
        {
         "side": "in",
@@ -6422,10 +6448,10 @@
         "flow": false,
         "blurb": "Width of one wheelchair space",
         "callX": 0,
-        "callY": 1224,
+        "callY": 891,
         "gripX": 434,
         "gripY": 775,
-        "d": "M340 1255 H354 L422 775 H434"
+        "d": "M340 922 H354 L422 775 H434"
        },
        {
         "side": "in",
@@ -6437,10 +6463,10 @@
         "flow": false,
         "blurb": "Depth of one wheelchair space",
         "callX": 0,
-        "callY": 1292,
+        "callY": 958,
         "gripX": 434,
         "gripY": 805,
-        "d": "M340 1323 H354 L422 805 H434"
+        "d": "M340 989 H354 L422 805 H434"
        },
        {
         "side": "in",
@@ -6452,10 +6478,10 @@
         "flow": false,
         "blurb": "Add a mid aisle to any run still too long",
         "callX": 0,
-        "callY": 1358,
+        "callY": 1025,
         "gripX": 434,
         "gripY": 835,
-        "d": "M340 1389 H354 L422 835 H434"
+        "d": "M340 1056 H354 L422 835 H434"
        },
        {
         "side": "in",
@@ -6467,10 +6493,10 @@
         "flow": false,
         "blurb": "On = the aisle runs the full tier height, off = only from where the row gets too long",
         "callX": 0,
-        "callY": 1426,
+        "callY": 1092,
         "gripX": 434,
         "gripY": 865,
-        "d": "M340 1457 H354 L422 865 H434"
+        "d": "M340 1123 H354 L422 865 H434"
        },
        {
         "side": "in",
@@ -6482,10 +6508,10 @@
         "flow": false,
         "blurb": "On = leave a walking strip along each open end of a run instead of seats, so spectators can get out sideways",
         "callX": 0,
-        "callY": 1492,
+        "callY": 1159,
         "gripX": 434,
         "gripY": 895,
-        "d": "M340 1523 H354 L422 895 H434"
+        "d": "M340 1190 H354 L422 895 H434"
        },
        {
         "side": "in",
@@ -6497,10 +6523,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 1560,
+        "callY": 1226,
         "gripX": 434,
         "gripY": 925,
-        "d": "M340 1591 H354 L422 925 H434"
+        "d": "M340 1257 H354 L422 925 H434"
        },
        {
         "side": "out",
@@ -6653,7 +6679,9 @@
         "d": "M740 1001 H726 L658 912 H646"
        }
       ]
-     }
+     },
+     "indexHead": "Fills the tread rings with seats, breaking each row at the vomitories and aisles, and flags rows that break the...",
+     "indexMore": "egress limits. Wheelchair spaces are placed here too."
     },
     {
      "id": "custom-seat",
@@ -7134,7 +7162,7 @@
      "tier": "core",
      "figure": {
       "w": 1082,
-      "h": 2154,
+      "h": 1711,
       "callW": 340,
       "callH": 63,
       "lead": 81,
@@ -7155,10 +7183,10 @@
         "flow": true,
         "blurb": "The tier sections, passed along the chain",
         "callX": 0,
-        "callY": 464,
+        "callY": 20,
         "gripX": 427,
         "gripY": 495,
-        "d": "M340 495 H427"
+        "d": "M340 51 H354 L415 495 H427"
        },
        {
         "side": "in",
@@ -7170,10 +7198,10 @@
         "flow": true,
         "blurb": "The axis system from Stand 2D",
         "callX": 0,
-        "callY": 530,
+        "callY": 87,
         "gripX": 427,
         "gripY": 525,
-        "d": "M340 561 H354 L415 525 H427"
+        "d": "M340 118 H354 L415 525 H427"
        },
        {
         "side": "in",
@@ -7185,10 +7213,10 @@
         "flow": true,
         "blurb": "The tread rings seats are placed on",
         "callX": 0,
-        "callY": 598,
+        "callY": 154,
         "gripX": 427,
         "gripY": 555,
-        "d": "M340 629 H354 L415 555 H427"
+        "d": "M340 185 H354 L415 555 H427"
        },
        {
         "side": "in",
@@ -7200,10 +7228,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 0,
-        "callY": 664,
+        "callY": 221,
         "gripX": 427,
         "gripY": 585,
-        "d": "M340 695 H354 L415 585 H427"
+        "d": "M340 252 H354 L415 585 H427"
        },
        {
         "side": "in",
@@ -7215,10 +7243,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 0,
-        "callY": 732,
+        "callY": 288,
         "gripX": 427,
         "gripY": 615,
-        "d": "M340 763 H354 L415 615 H427"
+        "d": "M340 319 H354 L415 615 H427"
        },
        {
         "side": "in",
@@ -7230,10 +7258,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 0,
-        "callY": 798,
+        "callY": 355,
         "gripX": 427,
         "gripY": 645,
-        "d": "M340 829 H354 L415 645 H427"
+        "d": "M340 386 H354 L415 645 H427"
        },
        {
         "side": "in",
@@ -7245,10 +7273,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 0,
-        "callY": 866,
+        "callY": 422,
         "gripX": 427,
         "gripY": 675,
-        "d": "M340 897 H354 L415 675 H427"
+        "d": "M340 453 H354 L415 675 H427"
        },
        {
         "side": "in",
@@ -7260,10 +7288,10 @@
         "flow": false,
         "blurb": "Longest run allowed when spectators can leave from both ends",
         "callX": 0,
-        "callY": 932,
+        "callY": 489,
         "gripX": 427,
         "gripY": 705,
-        "d": "M340 963 H354 L415 705 H427"
+        "d": "M340 520 H354 L415 705 H427"
        },
        {
         "side": "in",
@@ -7275,10 +7303,10 @@
         "flow": false,
         "blurb": "Shortest run worth keeping",
         "callX": 0,
-        "callY": 1000,
+        "callY": 556,
         "gripX": 427,
         "gripY": 735,
-        "d": "M340 1031 H354 L415 735 H427"
+        "d": "M340 587 H354 L415 735 H427"
        },
        {
         "side": "in",
@@ -7290,10 +7318,10 @@
         "flow": false,
         "blurb": "Where the end aisles go: BOTH, LEFT, RIGHT or NONE",
         "callX": 0,
-        "callY": 1066,
+        "callY": 623,
         "gripX": 427,
         "gripY": 765,
-        "d": "M340 1097 H354 L415 765 H427"
+        "d": "M340 654 H354 L415 765 H427"
        },
        {
         "side": "in",
@@ -7305,10 +7333,10 @@
         "flow": false,
         "blurb": "Width of one seat",
         "callX": 0,
-        "callY": 1134,
+        "callY": 690,
         "gripX": 427,
         "gripY": 795,
-        "d": "M340 1165 H354 L415 795 H427"
+        "d": "M340 721 H354 L415 795 H427"
        },
        {
         "side": "in",
@@ -7320,10 +7348,10 @@
         "flow": false,
         "blurb": "Depth of one seat",
         "callX": 0,
-        "callY": 1200,
+        "callY": 757,
         "gripX": 427,
         "gripY": 825,
-        "d": "M340 1231 H354 L415 825 H427"
+        "d": "M340 788 H354 L415 825 H427"
        },
        {
         "side": "in",
@@ -7335,10 +7363,10 @@
         "flow": false,
         "blurb": "Clear width of each aisle",
         "callX": 0,
-        "callY": 1268,
+        "callY": 824,
         "gripX": 427,
         "gripY": 855,
-        "d": "M340 1299 H354 L415 855 H427"
+        "d": "M340 855 H427"
        },
        {
         "side": "in",
@@ -7350,10 +7378,10 @@
         "flow": false,
         "blurb": "Comfortable rise per aisle step",
         "callX": 0,
-        "callY": 1334,
+        "callY": 891,
         "gripX": 427,
         "gripY": 885,
-        "d": "M340 1365 H354 L415 885 H427"
+        "d": "M340 922 H354 L415 885 H427"
        },
        {
         "side": "in",
@@ -7365,10 +7393,10 @@
         "flow": false,
         "blurb": "Add a mid aisle to runs still too long",
         "callX": 0,
-        "callY": 1402,
+        "callY": 958,
         "gripX": 427,
         "gripY": 915,
-        "d": "M340 1433 H354 L415 915 H427"
+        "d": "M340 989 H354 L415 915 H427"
        },
        {
         "side": "in",
@@ -7380,10 +7408,10 @@
         "flow": false,
         "blurb": "Target share of wheelchair spaces, percent of capacity",
         "callX": 0,
-        "callY": 1468,
+        "callY": 1025,
         "gripX": 427,
         "gripY": 945,
-        "d": "M340 1499 H354 L415 945 H427"
+        "d": "M340 1056 H354 L415 945 H427"
        },
        {
         "side": "in",
@@ -7395,10 +7423,10 @@
         "flow": false,
         "blurb": "Width of one wheelchair space",
         "callX": 0,
-        "callY": 1536,
+        "callY": 1092,
         "gripX": 427,
         "gripY": 975,
-        "d": "M340 1567 H354 L415 975 H427"
+        "d": "M340 1123 H354 L415 975 H427"
        },
        {
         "side": "in",
@@ -7410,10 +7438,10 @@
         "flow": false,
         "blurb": "Depth of one wheelchair space",
         "callX": 0,
-        "callY": 1602,
+        "callY": 1159,
         "gripX": 427,
         "gripY": 1005,
-        "d": "M340 1633 H354 L415 1005 H427"
+        "d": "M340 1190 H354 L415 1005 H427"
        },
        {
         "side": "in",
@@ -7425,10 +7453,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 0,
-        "callY": 1670,
+        "callY": 1226,
         "gripX": 427,
         "gripY": 1035,
-        "d": "M340 1701 H354 L415 1035 H427"
+        "d": "M340 1257 H354 L415 1035 H427"
        },
        {
         "side": "in",
@@ -7440,10 +7468,10 @@
         "flow": false,
         "blurb": "Thickness of the vomitory wall between a ring line and its opening, measured along the top ring",
         "callX": 0,
-        "callY": 1736,
+        "callY": 1293,
         "gripX": 427,
         "gripY": 1065,
-        "d": "M340 1767 H354 L415 1065 H427"
+        "d": "M340 1324 H354 L415 1065 H427"
        },
        {
         "side": "in",
@@ -7455,10 +7483,10 @@
         "flow": false,
         "blurb": "How far down from the top ring a ring opening empties, as a height difference",
         "callX": 0,
-        "callY": 1804,
+        "callY": 1360,
         "gripX": 427,
         "gripY": 1095,
-        "d": "M340 1835 H354 L415 1095 H427"
+        "d": "M340 1391 H354 L415 1095 H427"
        },
        {
         "side": "in",
@@ -7470,10 +7498,10 @@
         "flow": false,
         "blurb": "Length of a ring opening along the top ring towards higher axis numbers",
         "callX": 0,
-        "callY": 1870,
+        "callY": 1427,
         "gripX": 427,
         "gripY": 1125,
-        "d": "M340 1901 H354 L415 1125 H427"
+        "d": "M340 1458 H354 L415 1125 H427"
        },
        {
         "side": "in",
@@ -7485,10 +7513,10 @@
         "flow": false,
         "blurb": "Length of a ring opening along the top ring towards lower axis numbers",
         "callX": 0,
-        "callY": 1938,
+        "callY": 1494,
         "gripX": 427,
         "gripY": 1155,
-        "d": "M340 1969 H354 L415 1155 H427"
+        "d": "M340 1525 H354 L415 1155 H427"
        },
        {
         "side": "in",
@@ -7500,10 +7528,10 @@
         "flow": false,
         "blurb": "Which way a ring opening extends from its ring line: FORWARD, BACKWARD or BOTH",
         "callX": 0,
-        "callY": 2004,
+        "callY": 1561,
         "gripX": 427,
         "gripY": 1185,
-        "d": "M340 2035 H354 L415 1185 H427"
+        "d": "M340 1592 H354 L415 1185 H427"
        },
        {
         "side": "in",
@@ -7515,10 +7543,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 2072,
+        "callY": 1628,
         "gripX": 427,
         "gripY": 1215,
-        "d": "M340 2103 H354 L415 1215 H427"
+        "d": "M340 1659 H354 L415 1215 H427"
        },
        {
         "side": "out",
@@ -7656,7 +7684,9 @@
         "d": "M742 1187 H728 L667 1188 H655"
        }
       ]
-     }
+     },
+     "indexHead": "Same seat placement as Seat, but the vomitories, aisles and even the seats come from curves you draw instead of...",
+     "indexMore": "being generated. Use it where the automatic layout cannot express what you want."
     },
     {
      "id": "cut",
@@ -7976,7 +8006,7 @@
      "tier": "core",
      "figure": {
       "w": 1078,
-      "h": 1128,
+      "h": 907,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -7997,10 +8027,10 @@
         "flow": true,
         "blurb": "The layout to cut",
         "callX": 0,
-        "callY": 242,
+        "callY": 20,
         "gripX": 434,
         "gripY": 273,
-        "d": "M340 273 H434"
+        "d": "M340 51 H354 L422 273 H434"
        },
        {
         "side": "in",
@@ -8012,10 +8042,10 @@
         "flow": false,
         "blurb": "Cut along this curve, drawn in plan",
         "callX": 0,
-        "callY": 308,
+        "callY": 87,
         "gripX": 434,
         "gripY": 303,
-        "d": "M340 339 H354 L422 303 H434"
+        "d": "M340 118 H354 L422 303 H434"
        },
        {
         "side": "in",
@@ -8027,10 +8057,10 @@
         "flow": false,
         "blurb": "Start axis number of each span to cut",
         "callX": 0,
-        "callY": 376,
+        "callY": 154,
         "gripX": 434,
         "gripY": 333,
-        "d": "M340 407 H354 L422 333 H434"
+        "d": "M340 185 H354 L422 333 H434"
        },
        {
         "side": "in",
@@ -8042,10 +8072,10 @@
         "flow": false,
         "blurb": "End axis number of each span, matching Axis From item for item",
         "callX": 0,
-        "callY": 442,
+        "callY": 221,
         "gripX": 434,
         "gripY": 363,
-        "d": "M340 473 H354 L422 363 H434"
+        "d": "M340 252 H354 L422 363 H434"
        },
        {
         "side": "in",
@@ -8057,10 +8087,10 @@
         "flow": false,
         "blurb": "With both a curve and a span set: AND applies both, or use only one",
         "callX": 0,
-        "callY": 510,
+        "callY": 288,
         "gripX": 434,
         "gripY": 393,
-        "d": "M340 541 H354 L422 393 H434"
+        "d": "M340 319 H354 L422 393 H434"
        },
        {
         "side": "in",
@@ -8072,10 +8102,10 @@
         "flow": false,
         "blurb": "Which side of your curve survives, looking along its direction: on = left (default true)",
         "callX": 0,
-        "callY": 576,
+        "callY": 355,
         "gripX": 434,
         "gripY": 423,
-        "d": "M340 607 H354 L422 423 H434"
+        "d": "M340 386 H354 L422 423 H434"
        },
        {
         "side": "in",
@@ -8087,10 +8117,10 @@
         "flow": false,
         "blurb": "Curve mode only",
         "callX": 0,
-        "callY": 644,
+        "callY": 422,
         "gripX": 434,
         "gripY": 453,
-        "d": "M340 675 H354 L422 453 H434"
+        "d": "M340 453 H434"
        },
        {
         "side": "in",
@@ -8102,10 +8132,10 @@
         "flow": false,
         "blurb": "On = keep only what is inside the spans, off = remove what is inside",
         "callX": 0,
-        "callY": 710,
+        "callY": 489,
         "gripX": 434,
         "gripY": 483,
-        "d": "M340 741 H354 L422 483 H434"
+        "d": "M340 520 H354 L422 483 H434"
        },
        {
         "side": "in",
@@ -8117,10 +8147,10 @@
         "flow": false,
         "blurb": "Which tiers this cut applies to",
         "callX": 0,
-        "callY": 778,
+        "callY": 556,
         "gripX": 434,
         "gripY": 513,
-        "d": "M340 809 H354 L422 513 H434"
+        "d": "M340 587 H354 L422 513 H434"
        },
        {
         "side": "in",
@@ -8132,10 +8162,10 @@
         "flow": false,
         "blurb": "Move each span's start end off its axis, one per span: + keeps more of the stand past the axis,",
         "callX": 0,
-        "callY": 844,
+        "callY": 623,
         "gripX": 434,
         "gripY": 543,
-        "d": "M340 875 H354 L422 543 H434"
+        "d": "M340 654 H354 L422 543 H434"
        },
        {
         "side": "in",
@@ -8147,10 +8177,10 @@
         "flow": false,
         "blurb": "Same for each span's end end, matching To item for item",
         "callX": 0,
-        "callY": 912,
+        "callY": 690,
         "gripX": 434,
         "gripY": 573,
-        "d": "M340 943 H354 L422 573 H434"
+        "d": "M340 721 H354 L422 573 H434"
        },
        {
         "side": "in",
@@ -8162,10 +8192,10 @@
         "flow": false,
         "blurb": "How an offset end runs out to its line: FOLLOW keeps the ring's own path, EXTEND runs the tread straight on",
         "callX": 0,
-        "callY": 978,
+        "callY": 757,
         "gripX": 434,
         "gripY": 603,
-        "d": "M340 1009 H354 L422 603 H434"
+        "d": "M340 788 H354 L422 603 H434"
        },
        {
         "side": "in",
@@ -8177,10 +8207,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 1046,
+        "callY": 824,
         "gripX": 434,
         "gripY": 633,
-        "d": "M340 1077 H354 L422 633 H434"
+        "d": "M340 855 H354 L422 633 H434"
        },
        {
         "side": "out",
@@ -8318,7 +8348,9 @@
         "d": "M738 815 H724 L656 626 H644"
        }
       ]
-     }
+     },
+     "indexHead": "Cuts the bowl to shape — keep or remove a whole span between two axis numbers, or everything on one...",
+     "indexMore": "side of a curve you draw. Seats, aisles, vomitories and rings are all filtered together."
     },
     {
      "id": "opening-cut",
@@ -8664,7 +8696,7 @@
      "tier": "core",
      "figure": {
       "w": 1081,
-      "h": 1128,
+      "h": 907,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -8685,10 +8717,10 @@
         "flow": true,
         "blurb": "The layout to open up",
         "callX": 0,
-        "callY": 242,
+        "callY": 20,
         "gripX": 434,
         "gripY": 273,
-        "d": "M340 273 H434"
+        "d": "M340 51 H354 L422 273 H434"
        },
        {
         "side": "in",
@@ -8700,10 +8732,10 @@
         "flow": false,
         "blurb": "A CLOSED curve in plan",
         "callX": 0,
-        "callY": 308,
+        "callY": 87,
         "gripX": 434,
         "gripY": 303,
-        "d": "M340 339 H354 L422 303 H434"
+        "d": "M340 118 H354 L422 303 H434"
        },
        {
         "side": "in",
@@ -8715,10 +8747,10 @@
         "flow": false,
         "blurb": "One axis number per opening",
         "callX": 0,
-        "callY": 376,
+        "callY": 154,
         "gripX": 434,
         "gripY": 333,
-        "d": "M340 407 H354 L422 333 H434"
+        "d": "M340 185 H354 L422 333 H434"
        },
        {
         "side": "in",
@@ -8730,10 +8762,10 @@
         "flow": false,
         "blurb": "The other axis number of each opening, matching Opening From item for item",
         "callX": 0,
-        "callY": 442,
+        "callY": 221,
         "gripX": 434,
         "gripY": 363,
-        "d": "M340 473 H354 L422 363 H434"
+        "d": "M340 252 H354 L422 363 H434"
        },
        {
         "side": "in",
@@ -8745,10 +8777,10 @@
         "flow": false,
         "blurb": "How many treads each opening removes, counting up from the bottom of the tier",
         "callX": 0,
-        "callY": 510,
+        "callY": 288,
         "gripX": 434,
         "gripY": 393,
-        "d": "M340 541 H354 L422 393 H434"
+        "d": "M340 319 H354 L422 393 H434"
        },
        {
         "side": "in",
@@ -8760,10 +8792,10 @@
         "flow": false,
         "blurb": "SPAN empties the whole width, VOM cuts a rectangle at the midpoint",
         "callX": 0,
-        "callY": 576,
+        "callY": 355,
         "gripX": 434,
         "gripY": 423,
-        "d": "M340 607 H354 L422 423 H434"
+        "d": "M340 386 H354 L422 423 H434"
        },
        {
         "side": "in",
@@ -8775,10 +8807,10 @@
         "flow": false,
         "blurb": "With both openings and a curve set: BOTH cuts either, or use only one",
         "callX": 0,
-        "callY": 644,
+        "callY": 422,
         "gripX": 434,
         "gripY": 453,
-        "d": "M340 675 H354 L422 453 H434"
+        "d": "M340 453 H434"
        },
        {
         "side": "in",
@@ -8790,10 +8822,10 @@
         "flow": false,
         "blurb": "Width of a VOM opening",
         "callX": 0,
-        "callY": 710,
+        "callY": 489,
         "gripX": 434,
         "gripY": 483,
-        "d": "M340 741 H354 L422 483 H434"
+        "d": "M340 520 H354 L422 483 H434"
        },
        {
         "side": "in",
@@ -8805,10 +8837,10 @@
         "flow": false,
         "blurb": "Where a curve leaves a tread shallower than this, its seats go too",
         "callX": 0,
-        "callY": 778,
+        "callY": 556,
         "gripX": 434,
         "gripY": 513,
-        "d": "M340 809 H354 L422 513 H434"
+        "d": "M340 587 H354 L422 513 H434"
        },
        {
         "side": "in",
@@ -8820,10 +8852,10 @@
         "flow": false,
         "blurb": "Which tiers these openings cut through",
         "callX": 0,
-        "callY": 844,
+        "callY": 623,
         "gripX": 434,
         "gripY": 543,
-        "d": "M340 875 H354 L422 543 H434"
+        "d": "M340 654 H354 L422 543 H434"
        },
        {
         "side": "in",
@@ -8835,10 +8867,10 @@
         "flow": false,
         "blurb": "Narrow each SPAN opening on both sides by this much, one per opening: + keeps more seats beside the axis…",
         "callX": 0,
-        "callY": 912,
+        "callY": 690,
         "gripX": 434,
         "gripY": 573,
-        "d": "M340 943 H354 L422 573 H434"
+        "d": "M340 721 H354 L422 573 H434"
        },
        {
         "side": "in",
@@ -8850,10 +8882,10 @@
         "flow": false,
         "blurb": "How an offset opening side runs out to its line: FOLLOW cuts on the offset line and keeps the seats there as…",
         "callX": 0,
-        "callY": 978,
+        "callY": 757,
         "gripX": 434,
         "gripY": 603,
-        "d": "M340 1009 H354 L422 603 H434"
+        "d": "M340 788 H354 L422 603 H434"
        },
        {
         "side": "in",
@@ -8865,10 +8897,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 1046,
+        "callY": 824,
         "gripX": 434,
         "gripY": 633,
-        "d": "M340 1077 H354 L422 633 H434"
+        "d": "M340 855 H354 L422 633 H434"
        },
        {
         "side": "out",
@@ -8880,10 +8912,10 @@
         "flow": true,
         "blurb": "The layout after the openings",
         "callX": 741,
-        "callY": 242,
+        "callY": 154,
         "gripX": 647,
         "gripY": 274,
-        "d": "M741 273 H727 L659 274 H647"
+        "d": "M741 185 H727 L659 274 H647"
        },
        {
         "side": "out",
@@ -8895,10 +8927,10 @@
         "flow": false,
         "blurb": "Every edge that now needs a railing, running total",
         "callX": 741,
-        "callY": 310,
+        "callY": 221,
         "gripX": 647,
         "gripY": 310,
-        "d": "M741 341 H727 L659 310 H647"
+        "d": "M741 252 H727 L659 310 H647"
        },
        {
         "side": "out",
@@ -8910,10 +8942,10 @@
         "flow": false,
         "blurb": "The outline of each opening this component cut",
         "callX": 741,
-        "callY": 376,
+        "callY": 288,
         "gripX": 647,
         "gripY": 345,
-        "d": "M741 407 H727 L659 345 H647"
+        "d": "M741 319 H727 L659 345 H647"
        },
        {
         "side": "out",
@@ -8925,10 +8957,10 @@
         "flow": false,
         "blurb": "A line per opening made here",
         "callX": 741,
-        "callY": 444,
+        "callY": 355,
         "gripX": 647,
         "gripY": 381,
-        "d": "M741 475 H727 L659 381 H647"
+        "d": "M741 386 H727 L659 381 H647"
        },
        {
         "side": "out",
@@ -8940,10 +8972,10 @@
         "flow": false,
         "blurb": "The seats these openings removed, drawn in plan",
         "callX": 741,
-        "callY": 510,
+        "callY": 422,
         "gripX": 647,
         "gripY": 417,
-        "d": "M741 541 H727 L659 417 H647"
+        "d": "M741 453 H727 L659 417 H647"
        },
        {
         "side": "out",
@@ -8955,10 +8987,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 741,
-        "callY": 578,
+        "callY": 489,
         "gripX": 647,
         "gripY": 452,
-        "d": "M741 609 H727 L659 452 H647"
+        "d": "M741 520 H727 L659 452 H647"
        },
        {
         "side": "out",
@@ -8970,10 +9002,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 741,
-        "callY": 644,
+        "callY": 556,
         "gripX": 647,
         "gripY": 488,
-        "d": "M741 675 H727 L659 488 H647"
+        "d": "M741 587 H727 L659 488 H647"
        },
        {
         "side": "out",
@@ -8985,10 +9017,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 741,
-        "callY": 712,
+        "callY": 623,
         "gripX": 647,
         "gripY": 524,
-        "d": "M741 743 H727 L659 524 H647"
+        "d": "M741 654 H727 L659 524 H647"
        },
        {
         "side": "out",
@@ -9000,10 +9032,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 741,
-        "callY": 778,
+        "callY": 690,
         "gripX": 647,
         "gripY": 558,
-        "d": "M741 809 H727 L659 558 H647"
+        "d": "M741 721 H727 L659 558 H647"
        },
        {
         "side": "out",
@@ -9015,10 +9047,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 741,
-        "callY": 846,
+        "callY": 757,
         "gripX": 647,
         "gripY": 594,
-        "d": "M741 877 H727 L659 594 H647"
+        "d": "M741 788 H727 L659 594 H647"
        },
        {
         "side": "out",
@@ -9030,13 +9062,15 @@
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 741,
-        "callY": 912,
+        "callY": 824,
         "gripX": 647,
         "gripY": 630,
-        "d": "M741 943 H727 L659 630 H647"
+        "d": "M741 855 H727 L659 630 H647"
        }
       ]
-     }
+     },
+     "indexHead": "Punches local entrance openings through the stand — between two axis numbers, or under a closed curve you draw. Unlike...",
+     "indexMore": "Cut it removes only what the opening covers, and it records the new edges as railing lines."
     },
     {
      "id": "stand-3d",
@@ -9214,7 +9248,7 @@
      "tier": "core",
      "figure": {
       "w": 1062,
-      "h": 530,
+      "h": 438,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -9235,10 +9269,10 @@
         "flow": false,
         "blurb": "Barrier section curves from Section Plus",
         "callX": 0,
-        "callY": 112,
+        "callY": 20,
         "gripX": 434,
         "gripY": 144,
-        "d": "M340 143 H354 L422 144 H434"
+        "d": "M340 51 H354 L422 144 H434"
        },
        {
         "side": "in",
@@ -9250,10 +9284,10 @@
         "flow": true,
         "blurb": "The tier sections to sweep",
         "callX": 0,
-        "callY": 180,
+        "callY": 87,
         "gripX": 434,
         "gripY": 174,
-        "d": "M340 211 H354 L422 174 H434"
+        "d": "M340 118 H354 L422 174 H434"
        },
        {
         "side": "in",
@@ -9265,10 +9299,10 @@
         "flow": true,
         "blurb": "The axis system, passed along the chain",
         "callX": 0,
-        "callY": 246,
+        "callY": 154,
         "gripX": 434,
         "gripY": 204,
-        "d": "M340 277 H354 L422 204 H434"
+        "d": "M340 185 H354 L422 204 H434"
        },
        {
         "side": "in",
@@ -9280,10 +9314,10 @@
         "flow": false,
         "blurb": "Build the stand solids",
         "callX": 0,
-        "callY": 314,
+        "callY": 221,
         "gripX": 434,
         "gripY": 234,
-        "d": "M340 345 H354 L422 234 H434"
+        "d": "M340 252 H354 L422 234 H434"
        },
        {
         "side": "in",
@@ -9295,10 +9329,10 @@
         "flow": false,
         "blurb": "Build the barriers as solids too",
         "callX": 0,
-        "callY": 380,
+        "callY": 288,
         "gripX": 434,
         "gripY": 264,
-        "d": "M340 411 H354 L422 264 H434"
+        "d": "M340 319 H354 L422 264 H434"
        },
        {
         "side": "in",
@@ -9310,10 +9344,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 448,
+        "callY": 355,
         "gripX": 434,
         "gripY": 294,
-        "d": "M340 479 H354 L422 294 H434"
+        "d": "M340 386 H354 L422 294 H434"
        },
        {
         "side": "out",
@@ -9325,10 +9359,10 @@
         "flow": true,
         "blurb": "The raw tier solids as one object",
         "callX": 722,
-        "callY": 116,
+        "callY": 87,
         "gripX": 628,
         "gripY": 147,
-        "d": "M722 147 H628"
+        "d": "M722 118 H708 L640 147 H628"
        },
        {
         "side": "out",
@@ -9340,10 +9374,10 @@
         "flow": false,
         "blurb": "The tier bodies as separate solids, one per tier",
         "callX": 722,
-        "callY": 182,
+        "callY": 154,
         "gripX": 628,
         "gripY": 183,
-        "d": "M722 213 H708 L640 183 H628"
+        "d": "M722 185 H708 L640 183 H628"
        },
        {
         "side": "out",
@@ -9355,10 +9389,10 @@
         "flow": false,
         "blurb": "The barriers as solids, one per tier",
         "callX": 722,
-        "callY": 250,
+        "callY": 221,
         "gripX": 628,
         "gripY": 219,
-        "d": "M722 281 H708 L640 219 H628"
+        "d": "M722 252 H708 L640 219 H628"
        },
        {
         "side": "out",
@@ -9370,10 +9404,10 @@
         "flow": false,
         "blurb": "The closed profile as actually placed on each axis plane",
         "callX": 722,
-        "callY": 316,
+        "callY": 288,
         "gripX": 628,
         "gripY": 255,
-        "d": "M722 347 H708 L640 255 H628"
+        "d": "M722 319 H708 L640 255 H628"
        },
        {
         "side": "out",
@@ -9385,13 +9419,15 @@
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 722,
-        "callY": 384,
+        "callY": 355,
         "gripX": 628,
         "gripY": 291,
-        "d": "M722 415 H708 L640 291 H628"
+        "d": "M722 386 H708 L640 291 H628"
        }
       ]
-     }
+     },
+     "indexHead": "Sweeps the closed section profile around the axis planes into the solid tier bodies. This is the raw stand —...",
+     "indexMore": "cuts and openings are applied later by Stand 3D Plus."
     },
     {
      "id": "vom-3d",
@@ -9579,7 +9615,7 @@
      "tier": "core",
      "figure": {
       "w": 1066,
-      "h": 702,
+      "h": 572,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -9600,10 +9636,10 @@
         "flow": true,
         "blurb": "The 2D layout, from Seat or a Cut",
         "callX": 0,
-        "callY": 150,
+        "callY": 20,
         "gripX": 434,
         "gripY": 181,
-        "d": "M340 181 H434"
+        "d": "M340 51 H354 L422 181 H434"
        },
        {
         "side": "in",
@@ -9615,10 +9651,10 @@
         "flow": false,
         "blurb": "Thickness of the vomitory walls, measured inward",
         "callX": 0,
-        "callY": 216,
+        "callY": 87,
         "gripX": 434,
         "gripY": 211,
-        "d": "M340 247 H354 L422 211 H434"
+        "d": "M340 118 H354 L422 211 H434"
        },
        {
         "side": "in",
@@ -9630,10 +9666,10 @@
         "flow": false,
         "blurb": "How far the end wall rises above the tread behind it",
         "callX": 0,
-        "callY": 284,
+        "callY": 154,
         "gripX": 434,
         "gripY": 241,
-        "d": "M340 315 H354 L422 241 H434"
+        "d": "M340 185 H354 L422 241 H434"
        },
        {
         "side": "in",
@@ -9645,10 +9681,10 @@
         "flow": false,
         "blurb": "Clear width of the portal through the end wall",
         "callX": 0,
-        "callY": 350,
+        "callY": 221,
         "gripX": 434,
         "gripY": 271,
-        "d": "M340 381 H354 L422 271 H434"
+        "d": "M340 252 H354 L422 271 H434"
        },
        {
         "side": "in",
@@ -9660,10 +9696,10 @@
         "flow": false,
         "blurb": "Clear height of the portal from the vomitory floor",
         "callX": 0,
-        "callY": 418,
+        "callY": 288,
         "gripX": 434,
         "gripY": 301,
-        "d": "M340 449 H354 L422 301 H434"
+        "d": "M340 319 H354 L422 301 H434"
        },
        {
         "side": "in",
@@ -9675,10 +9711,10 @@
         "flow": false,
         "blurb": "Width of each stair strip, inside the side wall",
         "callX": 0,
-        "callY": 484,
+        "callY": 355,
         "gripX": 434,
         "gripY": 331,
-        "d": "M340 515 H354 L422 331 H434"
+        "d": "M340 386 H354 L422 331 H434"
        },
        {
         "side": "in",
@@ -9690,10 +9726,10 @@
         "flow": false,
         "blurb": "Which side the stairs run down: NONE, LEFT, RIGHT or BOTH",
         "callX": 0,
-        "callY": 552,
+        "callY": 422,
         "gripX": 434,
         "gripY": 361,
-        "d": "M340 583 H354 L422 361 H434"
+        "d": "M340 453 H354 L422 361 H434"
        },
        {
         "side": "in",
@@ -9705,10 +9741,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 618,
+        "callY": 489,
         "gripX": 434,
         "gripY": 391,
-        "d": "M340 649 H354 L422 391 H434"
+        "d": "M340 520 H354 L422 391 H434"
        },
        {
         "side": "out",
@@ -9771,7 +9807,9 @@
         "d": "M726 397 H712 L644 376 H632"
        }
       ]
-     }
+     },
+     "indexHead": "Builds the vomitories as solids — the side and end walls, the portal opening punched through, and the stair or...",
+     "indexMore": "ramp down to the concourse."
     },
     {
      "id": "stand-3d-plus",
@@ -9938,7 +9976,7 @@
      "tier": "core",
      "figure": {
       "w": 1072,
-      "h": 444,
+      "h": 371,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -9959,10 +9997,10 @@
         "flow": true,
         "blurb": "The raw stand solids from Stand 3D",
         "callX": 0,
-        "callY": 94,
+        "callY": 20,
         "gripX": 434,
         "gripY": 125,
-        "d": "M340 125 H434"
+        "d": "M340 51 H354 L422 125 H434"
        },
        {
         "side": "in",
@@ -9974,10 +10012,10 @@
         "flow": true,
         "blurb": "The 2D layout to build",
         "callX": 0,
-        "callY": 160,
+        "callY": 87,
         "gripX": 434,
         "gripY": 155,
-        "d": "M340 191 H354 L422 155 H434"
+        "d": "M340 118 H354 L422 155 H434"
        },
        {
         "side": "in",
@@ -9989,10 +10027,10 @@
         "flow": false,
         "blurb": "0 = INTEGRAL, cast into the tier body",
         "callX": 0,
-        "callY": 228,
+        "callY": 154,
         "gripX": 434,
         "gripY": 185,
-        "d": "M340 259 H354 L422 185 H434"
+        "d": "M340 185 H434"
        },
        {
         "side": "in",
@@ -10004,10 +10042,10 @@
         "flow": false,
         "blurb": "Which tiers to build",
         "callX": 0,
-        "callY": 294,
+        "callY": 221,
         "gripX": 434,
         "gripY": 215,
-        "d": "M340 325 H354 L422 215 H434"
+        "d": "M340 252 H354 L422 215 H434"
        },
        {
         "side": "in",
@@ -10019,10 +10057,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 362,
+        "callY": 288,
         "gripX": 434,
         "gripY": 245,
-        "d": "M340 393 H354 L422 245 H434"
+        "d": "M340 319 H354 L422 245 H434"
        },
        {
         "side": "out",
@@ -10034,10 +10072,10 @@
         "flow": true,
         "blurb": "The 3D bowl as one object",
         "callX": 732,
-        "callY": 94,
+        "callY": 20,
         "gripX": 638,
         "gripY": 125,
-        "d": "M732 125 H638"
+        "d": "M732 51 H718 L650 125 H638"
        },
        {
         "side": "out",
@@ -10049,10 +10087,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 732,
-        "callY": 160,
+        "callY": 87,
         "gripX": 638,
         "gripY": 155,
-        "d": "M732 191 H718 L650 155 H638"
+        "d": "M732 118 H718 L650 155 H638"
        },
        {
         "side": "out",
@@ -10064,10 +10102,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 732,
-        "callY": 228,
+        "callY": 154,
         "gripX": 638,
         "gripY": 185,
-        "d": "M732 259 H718 L650 185 H638"
+        "d": "M732 185 H638"
        },
        {
         "side": "out",
@@ -10079,10 +10117,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 732,
-        "callY": 294,
+        "callY": 221,
         "gripX": 638,
         "gripY": 215,
-        "d": "M732 325 H718 L650 215 H638"
+        "d": "M732 252 H718 L650 215 H638"
        },
        {
         "side": "out",
@@ -10094,13 +10132,15 @@
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 732,
-        "callY": 362,
+        "callY": 288,
         "gripX": 638,
         "gripY": 245,
-        "d": "M732 393 H718 L650 245 H638"
+        "d": "M732 319 H718 L650 245 H638"
        }
       ]
-     }
+     },
+     "indexHead": "Builds the 3D bowl: cuts the stand solids with everything the 2D chain decided — shape cuts, entrance openings, vomitories...",
+     "indexMore": "— and lifts the seats and aisle steps to their real tread heights."
     },
     {
      "id": "rail-3d",
@@ -10375,7 +10415,7 @@
      "tier": "core",
      "figure": {
       "w": 1076,
-      "h": 958,
+      "h": 773,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -10396,10 +10436,10 @@
         "flow": true,
         "blurb": "The 3D bowl from Stand 3D Plus",
         "callX": 0,
-        "callY": 206,
+        "callY": 20,
         "gripX": 434,
         "gripY": 237,
-        "d": "M340 237 H434"
+        "d": "M340 51 H354 L422 237 H434"
        },
        {
         "side": "in",
@@ -10411,10 +10451,10 @@
         "flow": false,
         "blurb": "How tall the cut-edge parapet is along its run",
         "callX": 0,
-        "callY": 272,
+        "callY": 87,
         "gripX": 434,
         "gripY": 267,
-        "d": "M340 303 H354 L422 267 H434"
+        "d": "M340 118 H354 L422 267 H434"
        },
        {
         "side": "in",
@@ -10426,10 +10466,10 @@
         "flow": false,
         "blurb": "How far the front parapet drops below the first tread",
         "callX": 0,
-        "callY": 340,
+        "callY": 154,
         "gripX": 434,
         "gripY": 297,
-        "d": "M340 371 H354 L422 297 H434"
+        "d": "M340 185 H354 L422 297 H434"
        },
        {
         "side": "in",
@@ -10441,10 +10481,10 @@
         "flow": false,
         "blurb": "Height of the parapet along a cut edge, measured above each tread",
         "callX": 0,
-        "callY": 406,
+        "callY": 221,
         "gripX": 434,
         "gripY": 327,
-        "d": "M340 437 H354 L422 327 H434"
+        "d": "M340 252 H354 L422 327 H434"
        },
        {
         "side": "in",
@@ -10456,10 +10496,10 @@
         "flow": false,
         "blurb": "How far the cut-edge parapet drops below the tread at each end of its run",
         "callX": 0,
-        "callY": 474,
+        "callY": 288,
         "gripX": 434,
         "gripY": 357,
-        "d": "M340 505 H354 L422 357 H434"
+        "d": "M340 319 H354 L422 357 H434"
        },
        {
         "side": "in",
@@ -10471,10 +10511,10 @@
         "flow": false,
         "blurb": "Height of the rear parapet above the last tread",
         "callX": 0,
-        "callY": 540,
+        "callY": 355,
         "gripX": 434,
         "gripY": 387,
-        "d": "M340 571 H354 L422 387 H434"
+        "d": "M340 386 H354 L422 387 H434"
        },
        {
         "side": "in",
@@ -10486,10 +10526,10 @@
         "flow": false,
         "blurb": "How far the rear parapet drops below the last tread",
         "callX": 0,
-        "callY": 608,
+        "callY": 422,
         "gripX": 434,
         "gripY": 417,
-        "d": "M340 639 H354 L422 417 H434"
+        "d": "M340 453 H354 L422 417 H434"
        },
        {
         "side": "in",
@@ -10501,10 +10541,10 @@
         "flow": false,
         "blurb": "Height of the parapet around an entrance opening, above the tread",
         "callX": 0,
-        "callY": 674,
+        "callY": 489,
         "gripX": 434,
         "gripY": 447,
-        "d": "M340 705 H354 L422 447 H434"
+        "d": "M340 520 H354 L422 447 H434"
        },
        {
         "side": "in",
@@ -10516,10 +10556,10 @@
         "flow": false,
         "blurb": "How far the underside of the cut-edge parapet runs level from the front before it starts to climb, hiding the…",
         "callX": 0,
-        "callY": 742,
+        "callY": 556,
         "gripX": 434,
         "gripY": 477,
-        "d": "M340 773 H354 L422 477 H434"
+        "d": "M340 587 H354 L422 477 H434"
        },
        {
         "side": "in",
@@ -10531,10 +10571,10 @@
         "flow": false,
         "blurb": "Build the rear parapet at the back of each tier",
         "callX": 0,
-        "callY": 808,
+        "callY": 623,
         "gripX": 434,
         "gripY": 507,
-        "d": "M340 839 H354 L422 507 H434"
+        "d": "M340 654 H354 L422 507 H434"
        },
        {
         "side": "in",
@@ -10546,10 +10586,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 876,
+        "callY": 690,
         "gripX": 434,
         "gripY": 537,
-        "d": "M340 907 H354 L422 537 H434"
+        "d": "M340 721 H354 L422 537 H434"
        },
        {
         "side": "out",
@@ -10672,7 +10712,9 @@
         "d": "M736 711 H722 L654 531 H642"
        }
       ]
-     }
+     },
+     "indexHead": "Builds the railings and parapets as solids — the front barrier, the rear parapet, the edges left by a cut,...",
+     "indexMore": "and the walls around entrance openings."
     },
     {
      "id": "assemble-bowl",
@@ -10887,7 +10929,7 @@
      "tier": "core",
      "figure": {
       "w": 1064,
-      "h": 616,
+      "h": 505,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -10908,10 +10950,10 @@
         "flow": true,
         "blurb": "The stand solids for each branch, in the same order as the layouts below",
         "callX": 0,
-        "callY": 132,
+        "callY": 20,
         "gripX": 434,
         "gripY": 163,
-        "d": "M340 163 H434"
+        "d": "M340 51 H354 L422 163 H434"
        },
        {
         "side": "in",
@@ -10923,10 +10965,10 @@
         "flow": true,
         "blurb": "One layout per branch",
         "callX": 0,
-        "callY": 198,
+        "callY": 87,
         "gripX": 434,
         "gripY": 193,
-        "d": "M340 229 H354 L422 193 H434"
+        "d": "M340 118 H354 L422 193 H434"
        },
        {
         "side": "in",
@@ -10938,10 +10980,10 @@
         "flow": false,
         "blurb": "How the pulled end runs on: EXTEND keeps the remaining tread's straight line (default), FOLLOW keeps the…",
         "callX": 0,
-        "callY": 266,
+        "callY": 154,
         "gripX": 434,
         "gripY": 223,
-        "d": "M340 297 H354 L422 223 H434"
+        "d": "M340 185 H354 L422 223 H434"
        },
        {
         "side": "in",
@@ -10953,10 +10995,10 @@
         "flow": false,
         "blurb": "Opening edges only: EXTEND (default) or FOLLOW, set separately from the cut ends",
         "callX": 0,
-        "callY": 332,
+        "callY": 221,
         "gripX": 434,
         "gripY": 253,
-        "d": "M340 363 H354 L422 253 H434"
+        "d": "M340 252 H354 L422 253 H434"
        },
        {
         "side": "in",
@@ -10968,10 +11010,10 @@
         "flow": false,
         "blurb": "Pull every exposed cut end this far past its axis, so the joint sits clear of the structural line",
         "callX": 0,
-        "callY": 400,
+        "callY": 288,
         "gripX": 434,
         "gripY": 283,
-        "d": "M340 431 H354 L422 283 H434"
+        "d": "M340 319 H354 L422 283 H434"
        },
        {
         "side": "in",
@@ -10983,10 +11025,10 @@
         "flow": false,
         "blurb": "Opening edges only (Opening Cut spans): their own pull distance",
         "callX": 0,
-        "callY": 466,
+        "callY": 355,
         "gripX": 434,
         "gripY": 313,
-        "d": "M340 497 H354 L422 313 H434"
+        "d": "M340 386 H354 L422 313 H434"
        },
        {
         "side": "in",
@@ -10998,10 +11040,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 534,
+        "callY": 422,
         "gripX": 434,
         "gripY": 343,
-        "d": "M340 565 H354 L422 343 H434"
+        "d": "M340 453 H354 L422 343 H434"
        },
        {
         "side": "out",
@@ -11013,10 +11055,10 @@
         "flow": true,
         "blurb": "The merged stand solids, same tier order",
         "callX": 724,
-        "callY": 132,
+        "callY": 20,
         "gripX": 630,
         "gripY": 163,
-        "d": "M724 163 H630"
+        "d": "M724 51 H710 L642 163 H630"
        },
        {
         "side": "out",
@@ -11028,10 +11070,10 @@
         "flow": true,
         "blurb": "The assembled layout, carrying every branch's tiers with cut ends resolved",
         "callX": 724,
-        "callY": 198,
+        "callY": 87,
         "gripX": 630,
         "gripY": 193,
-        "d": "M724 229 H710 L642 193 H630"
+        "d": "M724 118 H710 L642 193 H630"
        },
        {
         "side": "out",
@@ -11043,10 +11085,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 724,
-        "callY": 266,
+        "callY": 154,
         "gripX": 630,
         "gripY": 223,
-        "d": "M724 297 H710 L642 223 H630"
+        "d": "M724 185 H710 L642 223 H630"
        },
        {
         "side": "out",
@@ -11058,10 +11100,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 724,
-        "callY": 332,
+        "callY": 221,
         "gripX": 630,
         "gripY": 253,
-        "d": "M724 363 H710 L642 253 H630"
+        "d": "M724 252 H710 L642 253 H630"
        },
        {
         "side": "out",
@@ -11073,10 +11115,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 724,
-        "callY": 400,
+        "callY": 288,
         "gripX": 630,
         "gripY": 283,
-        "d": "M724 431 H710 L642 283 H630"
+        "d": "M724 319 H710 L642 283 H630"
        },
        {
         "side": "out",
@@ -11088,10 +11130,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 724,
-        "callY": 466,
+        "callY": 355,
         "gripX": 630,
         "gripY": 313,
-        "d": "M724 497 H710 L642 313 H630"
+        "d": "M724 386 H710 L642 313 H630"
        },
        {
         "side": "out",
@@ -11103,13 +11145,15 @@
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs (includes the tier map)",
         "callX": 724,
-        "callY": 534,
+        "callY": 422,
         "gripX": 630,
         "gripY": 343,
-        "d": "M724 565 H710 L642 343 H630"
+        "d": "M724 453 H710 L642 343 H630"
        }
       ]
-     }
+     },
+     "indexHead": "Assembles the final bowl plan before Stand 3D Plus: merges parallel seat layouts (tiers renumbered), pulls exposed cut ends past...",
+     "indexMore": "their axis by the offset, and previews the finished plan."
     },
     {
      "id": "seat-3d",
@@ -11343,7 +11387,7 @@
      "tier": "core",
      "figure": {
       "w": 1075,
-      "h": 1128,
+      "h": 907,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -11364,10 +11408,10 @@
         "flow": true,
         "blurb": "The built bowl, straight from Stand 3D Plus",
         "callX": 0,
-        "callY": 242,
+        "callY": 20,
         "gripX": 434,
         "gripY": 273,
-        "d": "M340 273 H434"
+        "d": "M340 51 H354 L422 273 H434"
        },
        {
         "side": "in",
@@ -11379,10 +11423,10 @@
         "flow": false,
         "blurb": "Your own chair geometry around the origin: X = width, Y = to the pitch, Z = up",
         "callX": 0,
-        "callY": 308,
+        "callY": 87,
         "gripX": 434,
         "gripY": 303,
-        "d": "M340 339 H354 L422 303 H434"
+        "d": "M340 118 H354 L422 303 H434"
        },
        {
         "side": "in",
@@ -11394,10 +11438,10 @@
         "flow": false,
         "blurb": "Your own spectator geometry, modelled around the origin like Custom Chair Parts",
         "callX": 0,
-        "callY": 376,
+        "callY": 154,
         "gripX": 434,
         "gripY": 333,
-        "d": "M340 407 H354 L422 333 H434"
+        "d": "M340 185 H354 L422 333 H434"
        },
        {
         "side": "in",
@@ -11409,10 +11453,10 @@
         "flow": true,
         "blurb": "The seat map from Seat Map",
         "callX": 0,
-        "callY": 442,
+        "callY": 221,
         "gripX": 434,
         "gripY": 363,
-        "d": "M340 473 H354 L422 363 H434"
+        "d": "M340 252 H354 L422 363 H434"
        },
        {
         "side": "in",
@@ -11424,10 +11468,10 @@
         "flow": false,
         "blurb": "Gap to the neighbouring chair, taken off the seat width",
         "callX": 0,
-        "callY": 510,
+        "callY": 288,
         "gripX": 434,
         "gripY": 393,
-        "d": "M340 541 H354 L422 393 H434"
+        "d": "M340 319 H354 L422 393 H434"
        },
        {
         "side": "in",
@@ -11439,10 +11483,10 @@
         "flow": false,
         "blurb": "Knee room in front, taken off the seat depth",
         "callX": 0,
-        "callY": 576,
+        "callY": 355,
         "gripX": 434,
         "gripY": 423,
-        "d": "M340 607 H354 L422 423 H434"
+        "d": "M340 386 H354 L422 423 H434"
        },
        {
         "side": "in",
@@ -11454,10 +11498,10 @@
         "flow": false,
         "blurb": "Build a chair on every seat",
         "callX": 0,
-        "callY": 644,
+        "callY": 422,
         "gripX": 434,
         "gripY": 453,
-        "d": "M340 675 H354 L422 453 H434"
+        "d": "M340 453 H434"
        },
        {
         "side": "in",
@@ -11469,10 +11513,10 @@
         "flow": false,
         "blurb": "Stand a seated spectator on every seat, eye mark on the analysis eye point",
         "callX": 0,
-        "callY": 710,
+        "callY": 489,
         "gripX": 434,
         "gripY": 483,
-        "d": "M340 741 H354 L422 483 H434"
+        "d": "M340 520 H354 L422 483 H434"
        },
        {
         "side": "in",
@@ -11484,10 +11528,10 @@
         "flow": false,
         "blurb": "Which tiers to build",
         "callX": 0,
-        "callY": 778,
+        "callY": 556,
         "gripX": 434,
         "gripY": 513,
-        "d": "M340 809 H354 L422 513 H434"
+        "d": "M340 587 H354 L422 513 H434"
        },
        {
         "side": "in",
@@ -11499,10 +11543,10 @@
         "flow": false,
         "blurb": "Deprecated",
         "callX": 0,
-        "callY": 844,
+        "callY": 623,
         "gripX": 434,
         "gripY": 543,
-        "d": "M340 875 H354 L422 543 H434"
+        "d": "M340 654 H354 L422 543 H434"
        },
        {
         "side": "in",
@@ -11514,10 +11558,10 @@
         "flow": false,
         "blurb": "Name prefix for the baked block definitions",
         "callX": 0,
-        "callY": 912,
+        "callY": 690,
         "gripX": 434,
         "gripY": 573,
-        "d": "M340 943 H354 L422 573 H434"
+        "d": "M340 721 H354 L422 573 H434"
        },
        {
         "side": "in",
@@ -11529,10 +11573,10 @@
         "flow": false,
         "blurb": "Wire a Button to plant blocks in the Rhino document",
         "callX": 0,
-        "callY": 978,
+        "callY": 757,
         "gripX": 434,
         "gripY": 603,
-        "d": "M340 1009 H354 L422 603 H434"
+        "d": "M340 788 H354 L422 603 H434"
        },
        {
         "side": "in",
@@ -11544,10 +11588,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 1046,
+        "callY": 824,
         "gripX": 434,
         "gripY": 633,
-        "d": "M340 1077 H354 L422 633 H434"
+        "d": "M340 855 H354 L422 633 H434"
        },
        {
         "side": "out",
@@ -11595,7 +11639,9 @@
         "d": "M735 581 H721 L653 582 H641"
        }
       ]
-     }
+     },
+     "indexHead": "Puts a chair and a seated spectator target on every seat of the built bowl. Wire the Stand 3D Plus...",
+     "indexMore": "BRD output. The ports carry one merged preview mesh per tier so twenty thousand seats stay light; bake the component itself (right-click, Bake) to plant real block instances - one definition, one instance per seat - so the document stays light too. The spectator is a flat target whose eye mark sits exactly on the eye point the C-value analysis measures from."
     },
     {
      "id": "input-panel",
@@ -11629,12 +11675,12 @@
      "tier": "free",
      "figure": {
       "w": 716,
-      "h": 156,
+      "h": 136,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 0,
-      "imgY": 30,
+      "imgY": 20,
       "imgW": 288,
       "imgH": 96,
       "img": "/assets/img/antlion/components/input-panel.png",
@@ -11650,13 +11696,15 @@
         "flow": false,
         "blurb": "Every value set in this panel, as one bundle",
         "callX": 376,
-        "callY": 24,
+        "callY": 20,
         "gripX": 285,
-        "gripY": 56,
-        "d": "M376 55 H362 L297 56 H285"
+        "gripY": 46,
+        "d": "M376 51 H362 L297 46 H285"
        }
       ]
-     }
+     },
+     "indexHead": "Pick an Antlion component and set every value it takes, with sensible defaults shown. For when you are not sure...",
+     "indexMore": "what to wire in."
     },
     {
      "id": "section-analysis",
@@ -11906,7 +11954,7 @@
      "tier": "core",
      "figure": {
       "w": 1082,
-      "h": 786,
+      "h": 639,
       "callW": 340,
       "callH": 63,
       "lead": 83,
@@ -11927,10 +11975,10 @@
         "flow": true,
         "blurb": "The sections to check, from Section or Section Plus",
         "callX": 0,
-        "callY": 168,
+        "callY": 87,
         "gripX": 429,
         "gripY": 200,
-        "d": "M340 199 H354 L417 200 H429"
+        "d": "M340 118 H354 L417 200 H429"
        },
        {
         "side": "in",
@@ -11942,10 +11990,10 @@
         "flow": false,
         "blurb": "STANDARD aims straight at the focal point, VARIABLE_CORNER allows for the corners",
         "callX": 0,
-        "callY": 236,
+        "callY": 154,
         "gripX": 429,
         "gripY": 234,
-        "d": "M340 267 H354 L417 234 H429"
+        "d": "M340 185 H354 L417 234 H429"
        },
        {
         "side": "in",
@@ -11957,10 +12005,10 @@
         "flow": false,
         "blurb": "Rows below this are reported POOR",
         "callX": 0,
-        "callY": 302,
+        "callY": 221,
         "gripX": 429,
         "gripY": 268,
-        "d": "M340 333 H354 L417 268 H429"
+        "d": "M340 252 H354 L417 268 H429"
        },
        {
         "side": "in",
@@ -11972,10 +12020,10 @@
         "flow": false,
         "blurb": "Draw the dimension annotations",
         "callX": 0,
-        "callY": 370,
+        "callY": 288,
         "gripX": 429,
         "gripY": 301,
-        "d": "M340 401 H354 L417 301 H429"
+        "d": "M340 319 H354 L417 301 H429"
        },
        {
         "side": "in",
@@ -11987,10 +12035,10 @@
         "flow": false,
         "blurb": "How far the dimension lines sit from the geometry",
         "callX": 0,
-        "callY": 436,
+        "callY": 355,
         "gripX": 429,
         "gripY": 336,
-        "d": "M340 467 H354 L417 336 H429"
+        "d": "M340 386 H354 L417 336 H429"
        },
        {
         "side": "in",
@@ -12002,10 +12050,10 @@
         "flow": false,
         "blurb": "Dimension text height",
         "callX": 0,
-        "callY": 504,
+        "callY": 422,
         "gripX": 429,
         "gripY": 368,
-        "d": "M340 535 H354 L417 368 H429"
+        "d": "M340 453 H354 L417 368 H429"
        },
        {
         "side": "in",
@@ -12017,10 +12065,10 @@
         "flow": true,
         "blurb": "A Rhino dimension style to draw with",
         "callX": 0,
-        "callY": 570,
+        "callY": 489,
         "gripX": 429,
         "gripY": 403,
-        "d": "M340 601 H354 L417 403 H429"
+        "d": "M340 520 H354 L417 403 H429"
        },
        {
         "side": "in",
@@ -12032,10 +12080,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 638,
+        "callY": 556,
         "gripX": 429,
         "gripY": 436,
-        "d": "M340 669 H354 L417 436 H429"
+        "d": "M340 587 H354 L417 436 H429"
        },
        {
         "side": "out",
@@ -12047,10 +12095,10 @@
         "flow": true,
         "blurb": "The full result per tier",
         "callX": 742,
-        "callY": 168,
+        "callY": 20,
         "gripX": 653,
         "gripY": 199,
-        "d": "M742 199 H653"
+        "d": "M742 51 H728 L665 199 H653"
        },
        {
         "side": "out",
@@ -12062,10 +12110,10 @@
         "flow": false,
         "blurb": "C-value dimensions for rows that pass",
         "callX": 742,
-        "callY": 234,
+        "callY": 87,
         "gripX": 653,
         "gripY": 229,
-        "d": "M742 265 H728 L665 229 H653"
+        "d": "M742 118 H728 L665 229 H653"
        },
        {
         "side": "out",
@@ -12077,10 +12125,10 @@
         "flow": false,
         "blurb": "C-value dimensions for rows that fail",
         "callX": 742,
-        "callY": 302,
+        "callY": 154,
         "gripX": 653,
         "gripY": 259,
-        "d": "M742 333 H728 L665 259 H653"
+        "d": "M742 185 H728 L665 259 H653"
        },
        {
         "side": "out",
@@ -12092,10 +12140,10 @@
         "flow": false,
         "blurb": "Riser height dimension on each step",
         "callX": 742,
-        "callY": 368,
+        "callY": 221,
         "gripX": 653,
         "gripY": 289,
-        "d": "M742 399 H728 L665 289 H653"
+        "d": "M742 252 H728 L665 289 H653"
        },
        {
         "side": "out",
@@ -12107,10 +12155,10 @@
         "flow": false,
         "blurb": "Sightlines for rows that pass, plus each tier's last row",
         "callX": 742,
-        "callY": 436,
+        "callY": 288,
         "gripX": 653,
         "gripY": 319,
-        "d": "M742 467 H728 L665 319 H653"
+        "d": "M742 319 H653"
        },
        {
         "side": "out",
@@ -12122,10 +12170,10 @@
         "flow": false,
         "blurb": "Sightlines for rows that fail",
         "callX": 742,
-        "callY": 502,
+        "callY": 355,
         "gripX": 653,
         "gripY": 349,
-        "d": "M742 533 H728 L665 349 H653"
+        "d": "M742 386 H728 L665 349 H653"
        },
        {
         "side": "out",
@@ -12137,10 +12185,10 @@
         "flow": false,
         "blurb": "C-value dimension at the barrier top point",
         "callX": 742,
-        "callY": 570,
+        "callY": 422,
         "gripX": 653,
         "gripY": 379,
-        "d": "M742 601 H728 L665 379 H653"
+        "d": "M742 453 H728 L665 379 H653"
        },
        {
         "side": "out",
@@ -12152,10 +12200,10 @@
         "flow": false,
         "blurb": "Per-tier summary",
         "callX": 742,
-        "callY": 636,
+        "callY": 489,
         "gripX": 653,
         "gripY": 409,
-        "d": "M742 667 H728 L665 409 H653"
+        "d": "M742 520 H728 L665 409 H653"
        },
        {
         "side": "out",
@@ -12167,13 +12215,15 @@
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 742,
-        "callY": 704,
+        "callY": 556,
         "gripX": 653,
         "gripY": 439,
-        "d": "M742 735 H728 L665 439 H653"
+        "d": "M742 587 H728 L665 439 H653"
        }
       ]
-     }
+     },
+     "indexHead": "Checks the sightline over the row in front, row by row, and reports the C-value. Draws the sightlines and dimensions...",
+     "indexMore": "so you can see where the view fails."
     },
     {
      "id": "c-value-seat",
@@ -12487,7 +12537,7 @@
      "tier": "core",
      "figure": {
       "w": 1072,
-      "h": 958,
+      "h": 773,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -12508,10 +12558,10 @@
         "flow": true,
         "blurb": "The built bowl, straight from Stand 3D Plus",
         "callX": 0,
-        "callY": 206,
+        "callY": 20,
         "gripX": 434,
         "gripY": 237,
-        "d": "M340 237 H434"
+        "d": "M340 51 H354 L422 237 H434"
        },
        {
         "side": "in",
@@ -12523,10 +12573,10 @@
         "flow": true,
         "blurb": "Railings from Rail 3D",
         "callX": 0,
-        "callY": 272,
+        "callY": 87,
         "gripX": 434,
         "gripY": 267,
-        "d": "M340 303 H354 L422 267 H434"
+        "d": "M340 118 H354 L422 267 H434"
        },
        {
         "side": "in",
@@ -12538,10 +12588,10 @@
         "flow": false,
         "blurb": "The line every seat aims at",
         "callX": 0,
-        "callY": 340,
+        "callY": 154,
         "gripX": 434,
         "gripY": 297,
-        "d": "M340 371 H354 L422 297 H434"
+        "d": "M340 185 H354 L422 297 H434"
        },
        {
         "side": "in",
@@ -12553,10 +12603,10 @@
         "flow": true,
         "blurb": "A scheme from C-value Legend",
         "callX": 0,
-        "callY": 406,
+        "callY": 221,
         "gripX": 434,
         "gripY": 327,
-        "d": "M340 437 H354 L422 327 H434"
+        "d": "M340 252 H354 L422 327 H434"
        },
        {
         "side": "in",
@@ -12568,10 +12618,10 @@
         "flow": false,
         "blurb": "Which point on the pitch each seat is measured against",
         "callX": 0,
-        "callY": 474,
+        "callY": 288,
         "gripX": 434,
         "gripY": 357,
-        "d": "M340 505 H354 L422 357 H434"
+        "d": "M340 319 H354 L422 357 H434"
        },
        {
         "side": "in",
@@ -12583,10 +12633,10 @@
         "flow": false,
         "blurb": "Seats below this are POOR",
         "callX": 0,
-        "callY": 540,
+        "callY": 355,
         "gripX": 434,
         "gripY": 387,
-        "d": "M340 571 H354 L422 387 H434"
+        "d": "M340 386 H354 L422 387 H434"
        },
        {
         "side": "in",
@@ -12598,10 +12648,10 @@
         "flow": false,
         "blurb": "Upper end of the published band",
         "callX": 0,
-        "callY": 608,
+        "callY": 422,
         "gripX": 434,
         "gripY": 417,
-        "d": "M340 639 H354 L422 417 H434"
+        "d": "M340 453 H354 L422 417 H434"
        },
        {
         "side": "in",
@@ -12613,10 +12663,10 @@
         "flow": false,
         "blurb": "Which tiers to build",
         "callX": 0,
-        "callY": 674,
+        "callY": 489,
         "gripX": 434,
         "gripY": 447,
-        "d": "M340 705 H354 L422 447 H434"
+        "d": "M340 520 H354 L422 447 H434"
        },
        {
         "side": "in",
@@ -12628,10 +12678,10 @@
         "flow": false,
         "blurb": "Draw the eye-to-focus line for every seat that has a focus",
         "callX": 0,
-        "callY": 742,
+        "callY": 556,
         "gripX": 434,
         "gripY": 477,
-        "d": "M340 773 H354 L422 477 H434"
+        "d": "M340 587 H354 L422 477 H434"
        },
        {
         "side": "in",
@@ -12643,10 +12693,10 @@
         "flow": false,
         "blurb": "Count railings from Rail 3D as sightline obstructions",
         "callX": 0,
-        "callY": 808,
+        "callY": 623,
         "gripX": 434,
         "gripY": 507,
-        "d": "M340 839 H354 L422 507 H434"
+        "d": "M340 654 H354 L422 507 H434"
        },
        {
         "side": "in",
@@ -12658,10 +12708,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 876,
+        "callY": 690,
         "gripX": 434,
         "gripY": 537,
-        "d": "M340 907 H354 L422 537 H434"
+        "d": "M340 721 H354 L422 537 H434"
        },
        {
         "side": "out",
@@ -12673,10 +12723,10 @@
         "flow": true,
         "blurb": "The whole seat map flattened to 2D plan",
         "callX": 732,
-        "callY": 206,
+        "callY": 20,
         "gripX": 638,
         "gripY": 237,
-        "d": "M732 237 H638"
+        "d": "M732 51 H718 L650 237 H638"
        },
        {
         "side": "out",
@@ -12688,10 +12738,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 732,
-        "callY": 272,
+        "callY": 87,
         "gripX": 638,
         "gripY": 267,
-        "d": "M732 303 H718 L650 267 H638"
+        "d": "M732 118 H718 L650 267 H638"
        },
        {
         "side": "out",
@@ -12703,10 +12753,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 732,
-        "callY": 340,
+        "callY": 154,
         "gripX": 638,
         "gripY": 297,
-        "d": "M732 371 H718 L650 297 H638"
+        "d": "M732 185 H718 L650 297 H638"
        },
        {
         "side": "out",
@@ -12718,10 +12768,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 732,
-        "callY": 406,
+        "callY": 221,
         "gripX": 638,
         "gripY": 327,
-        "d": "M732 437 H718 L650 327 H638"
+        "d": "M732 252 H718 L650 327 H638"
        },
        {
         "side": "out",
@@ -12733,10 +12783,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 732,
-        "callY": 474,
+        "callY": 288,
         "gripX": 638,
         "gripY": 357,
-        "d": "M732 505 H718 L650 357 H638"
+        "d": "M732 319 H718 L650 357 H638"
        },
        {
         "side": "out",
@@ -12748,10 +12798,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 732,
-        "callY": 540,
+        "callY": 355,
         "gripX": 638,
         "gripY": 387,
-        "d": "M732 571 H718 L650 387 H638"
+        "d": "M732 386 H718 L650 387 H638"
        },
        {
         "side": "out",
@@ -12763,10 +12813,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 732,
-        "callY": 608,
+        "callY": 422,
         "gripX": 638,
         "gripY": 417,
-        "d": "M732 639 H718 L650 417 H638"
+        "d": "M732 453 H718 L650 417 H638"
        },
        {
         "side": "out",
@@ -12778,10 +12828,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 732,
-        "callY": 674,
+        "callY": 489,
         "gripX": 638,
         "gripY": 447,
-        "d": "M732 705 H718 L650 447 H638"
+        "d": "M732 520 H718 L650 447 H638"
        },
        {
         "side": "out",
@@ -12793,10 +12843,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 732,
-        "callY": 742,
+        "callY": 556,
         "gripX": 638,
         "gripY": 477,
-        "d": "M732 773 H718 L650 477 H638"
+        "d": "M732 587 H718 L650 477 H638"
        },
        {
         "side": "out",
@@ -12808,10 +12858,10 @@
         "flow": false,
         "blurb": "Per-tier summary",
         "callX": 732,
-        "callY": 808,
+        "callY": 623,
         "gripX": 638,
         "gripY": 507,
-        "d": "M732 839 H718 L650 507 H638"
+        "d": "M732 654 H718 L650 507 H638"
        },
        {
         "side": "out",
@@ -12823,13 +12873,15 @@
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 732,
-        "callY": 876,
+        "callY": 690,
         "gripX": 638,
         "gripY": 537,
-        "d": "M732 907 H718 L650 537 H638"
+        "d": "M732 721 H718 L650 537 H638"
        }
       ]
-     }
+     },
+     "indexHead": "Paints every seat with its own C-value, measured in 3D from that seat's eye to its own focus. Wire the...",
+     "indexMore": "Stand 3D Plus BRD output; add Rail 3D RLD to see where a railing, not a head, is the obstruction."
     },
     {
      "id": "c-value-tread",
@@ -13170,7 +13222,7 @@
      "tier": "core",
      "figure": {
       "w": 1063,
-      "h": 1214,
+      "h": 974,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -13341,10 +13393,10 @@
         "flow": true,
         "blurb": "The whole tread map flattened to 2D plan",
         "callX": 723,
-        "callY": 260,
+        "callY": 20,
         "gripX": 629,
         "gripY": 292,
-        "d": "M723 291 H709 L641 292 H629"
+        "d": "M723 51 H709 L641 292 H629"
        },
        {
         "side": "out",
@@ -13356,10 +13408,10 @@
         "flow": true,
         "blurb": "Every axis section in one bundle",
         "callX": 723,
-        "callY": 328,
+        "callY": 87,
         "gripX": 629,
         "gripY": 322,
-        "d": "M723 359 H709 L641 322 H629"
+        "d": "M723 118 H709 L641 322 H629"
        },
        {
         "side": "out",
@@ -13371,10 +13423,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 723,
-        "callY": 394,
+        "callY": 154,
         "gripX": 629,
         "gripY": 352,
-        "d": "M723 425 H709 L641 352 H629"
+        "d": "M723 185 H709 L641 352 H629"
        },
        {
         "side": "out",
@@ -13386,10 +13438,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 723,
-        "callY": 462,
+        "callY": 221,
         "gripX": 629,
         "gripY": 382,
-        "d": "M723 493 H709 L641 382 H629"
+        "d": "M723 252 H709 L641 382 H629"
        },
        {
         "side": "out",
@@ -13401,10 +13453,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 723,
-        "callY": 528,
+        "callY": 288,
         "gripX": 629,
         "gripY": 412,
-        "d": "M723 559 H709 L641 412 H629"
+        "d": "M723 319 H709 L641 412 H629"
        },
        {
         "side": "out",
@@ -13416,10 +13468,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 723,
-        "callY": 596,
+        "callY": 355,
         "gripX": 629,
         "gripY": 442,
-        "d": "M723 627 H709 L641 442 H629"
+        "d": "M723 386 H709 L641 442 H629"
        },
        {
         "side": "out",
@@ -13431,10 +13483,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 723,
-        "callY": 662,
+        "callY": 422,
         "gripX": 629,
         "gripY": 472,
-        "d": "M723 693 H709 L641 472 H629"
+        "d": "M723 453 H709 L641 472 H629"
        },
        {
         "side": "out",
@@ -13446,10 +13498,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 723,
-        "callY": 730,
+        "callY": 489,
         "gripX": 629,
         "gripY": 502,
-        "d": "M723 761 H709 L641 502 H629"
+        "d": "M723 520 H709 L641 502 H629"
        },
        {
         "side": "out",
@@ -13461,10 +13513,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 723,
-        "callY": 796,
+        "callY": 556,
         "gripX": 629,
         "gripY": 532,
-        "d": "M723 827 H709 L641 532 H629"
+        "d": "M723 587 H709 L641 532 H629"
        },
        {
         "side": "out",
@@ -13476,10 +13528,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 723,
-        "callY": 864,
+        "callY": 623,
         "gripX": 629,
         "gripY": 562,
-        "d": "M723 895 H709 L641 562 H629"
+        "d": "M723 654 H709 L641 562 H629"
        },
        {
         "side": "out",
@@ -13491,10 +13543,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 723,
-        "callY": 930,
+        "callY": 690,
         "gripX": 629,
         "gripY": 592,
-        "d": "M723 961 H709 L641 592 H629"
+        "d": "M723 721 H709 L641 592 H629"
        },
        {
         "side": "out",
@@ -13506,10 +13558,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 723,
-        "callY": 998,
+        "callY": 757,
         "gripX": 629,
         "gripY": 622,
-        "d": "M723 1029 H709 L641 622 H629"
+        "d": "M723 788 H709 L641 622 H629"
        },
        {
         "side": "out",
@@ -13521,10 +13573,10 @@
         "flow": false,
         "blurb": "Per-tier summary plus how well one section represents each band",
         "callX": 723,
-        "callY": 1064,
+        "callY": 824,
         "gripX": 629,
         "gripY": 652,
-        "d": "M723 1095 H709 L641 652 H629"
+        "d": "M723 855 H709 L641 652 H629"
        },
        {
         "side": "out",
@@ -13536,13 +13588,15 @@
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 723,
-        "callY": 1132,
+        "callY": 891,
         "gripX": 629,
         "gripY": 682,
-        "d": "M723 1163 H709 L641 682 H629"
+        "d": "M723 922 H709 L641 682 H629"
        }
       ]
-     }
+     },
+     "indexHead": "Paints each tread band with the C-value of one representative section taken between two axes. One value per axis gap,...",
+     "indexMore": "so it is light enough to leave on while you tune the section. C-value Seat measures every seat instead - the two differ most on curves, where one section cannot stand for the whole band."
     },
     {
      "id": "c-value-legend",
@@ -13684,7 +13738,7 @@
      "tier": "free",
      "figure": {
       "w": 1052,
-      "h": 444,
+      "h": 371,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -13705,10 +13759,10 @@
         "flow": false,
         "blurb": "First band boundary",
         "callX": 0,
-        "callY": 94,
+        "callY": 20,
         "gripX": 434,
         "gripY": 125,
-        "d": "M340 125 H434"
+        "d": "M340 51 H354 L422 125 H434"
        },
        {
         "side": "in",
@@ -13720,10 +13774,10 @@
         "flow": false,
         "blurb": "Last band boundary",
         "callX": 0,
-        "callY": 160,
+        "callY": 87,
         "gripX": 434,
         "gripY": 155,
-        "d": "M340 191 H354 L422 155 H434"
+        "d": "M340 118 H354 L422 155 H434"
        },
        {
         "side": "in",
@@ -13735,10 +13789,10 @@
         "flow": false,
         "blurb": "Band size",
         "callX": 0,
-        "callY": 228,
+        "callY": 154,
         "gripX": 434,
         "gripY": 185,
-        "d": "M340 259 H354 L422 185 H434"
+        "d": "M340 185 H434"
        },
        {
         "side": "in",
@@ -13750,10 +13804,10 @@
         "flow": false,
         "blurb": "Your own band colours, low band first",
         "callX": 0,
-        "callY": 294,
+        "callY": 221,
         "gripX": 434,
         "gripY": 215,
-        "d": "M340 325 H354 L422 215 H434"
+        "d": "M340 252 H354 L422 215 H434"
        },
        {
         "side": "in",
@@ -13765,10 +13819,10 @@
         "flow": false,
         "blurb": "The C-value bands stay the same either way",
         "callX": 0,
-        "callY": 362,
+        "callY": 288,
         "gripX": 434,
         "gripY": 245,
-        "d": "M340 393 H354 L422 245 H434"
+        "d": "M340 319 H354 L422 245 H434"
        },
        {
         "side": "out",
@@ -13780,10 +13834,10 @@
         "flow": true,
         "blurb": "The legend as one object",
         "callX": 712,
-        "callY": 96,
+        "callY": 87,
         "gripX": 618,
         "gripY": 128,
-        "d": "M712 127 H698 L630 128 H618"
+        "d": "M712 118 H698 L630 128 H618"
        },
        {
         "side": "out",
@@ -13795,10 +13849,10 @@
         "flow": false,
         "blurb": "The colour of each band, low band first",
         "callX": 712,
-        "callY": 164,
+        "callY": 154,
         "gripX": 618,
         "gripY": 166,
-        "d": "M712 195 H698 L630 166 H618"
+        "d": "M712 185 H698 L630 166 H618"
        },
        {
         "side": "out",
@@ -13810,10 +13864,10 @@
         "flow": false,
         "blurb": "The label of each band, as text",
         "callX": 712,
-        "callY": 230,
+        "callY": 221,
         "gripX": 618,
         "gripY": 203,
-        "d": "M712 261 H698 L630 203 H618"
+        "d": "M712 252 H698 L630 203 H618"
        },
        {
         "side": "out",
@@ -13825,13 +13879,15 @@
         "flow": false,
         "blurb": "Why the grey not-graded states appear and how to clear them",
         "callX": 712,
-        "callY": 298,
+        "callY": 288,
         "gripX": 618,
         "gripY": 240,
-        "d": "M712 329 H698 L630 240 H618"
+        "d": "M712 319 H698 L630 240 H618"
        }
       ]
-     }
+     },
+     "indexHead": "Builds an explicit colour legend for the C-value maps. Set the first number, the last number and the band size...",
+     "indexMore": "- the bands become <min, min to min+step, ... , >=max, each with its own colour. Leave colors unwired for the built-in ramp, or supply your own (interpolated when fewer than the band count). Wire scheme into C-value Seat or C-value Tread; the map is then coloured by these bands and C-value Map prints this legend on every sheet. Detail Mode on lists the two view-cut states (a seat row or a railing hiding the focal point, C<0) in their own colours; off folds them into the lowest band. It also carries the not-graded states - OPEN, FRONT, EMPTY and NA - as a fixed grey series, so every grey patch on the map is named on the sheet; the report output explains why each state appears and how to clear it. The component itself shows the legend on the canvas."
     },
     {
      "id": "c-value-section-check",
@@ -14116,7 +14172,7 @@
      "tier": "core",
      "figure": {
       "w": 1070,
-      "h": 1044,
+      "h": 840,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -14257,10 +14313,10 @@
         "flow": false,
         "blurb": "One sheet rectangle per axis, sized so the drawing inside stays full size",
         "callX": 730,
-        "callY": 224,
+        "callY": 20,
         "gripX": 636,
         "gripY": 255,
-        "d": "M730 255 H636"
+        "d": "M730 51 H716 L648 255 H636"
        },
        {
         "side": "out",
@@ -14272,10 +14328,10 @@
         "flow": false,
         "blurb": "The stand where the tread is really built, one closed curve per run",
         "callX": 730,
-        "callY": 290,
+        "callY": 87,
         "gripX": 636,
         "gripY": 285,
-        "d": "M730 321 H716 L648 285 H636"
+        "d": "M730 118 H716 L648 285 H636"
        },
        {
         "side": "out",
@@ -14287,10 +14343,10 @@
         "flow": false,
         "blurb": "The stand where nothing is built",
         "callX": 730,
-        "callY": 358,
+        "callY": 154,
         "gripX": 636,
         "gripY": 315,
-        "d": "M730 389 H716 L648 315 H636"
+        "d": "M730 185 H716 L648 315 H636"
        },
        {
         "side": "out",
@@ -14302,10 +14358,10 @@
         "flow": false,
         "blurb": "Eye to focal point, one per row that has a spectator",
         "callX": 730,
-        "callY": 424,
+        "callY": 221,
         "gripX": 636,
         "gripY": 345,
-        "d": "M730 455 H716 L648 345 H636"
+        "d": "M730 252 H716 L648 345 H636"
        },
        {
         "side": "out",
@@ -14317,10 +14373,10 @@
         "flow": false,
         "blurb": "Sightlines for rows the cut does not pass through",
         "callX": 730,
-        "callY": 492,
+        "callY": 288,
         "gripX": 636,
         "gripY": 375,
-        "d": "M730 523 H716 L648 375 H636"
+        "d": "M730 319 H716 L648 375 H636"
        },
        {
         "side": "out",
@@ -14332,10 +14388,10 @@
         "flow": false,
         "blurb": "The drawing datums",
         "callX": 730,
-        "callY": 558,
+        "callY": 355,
         "gripX": 636,
         "gripY": 405,
-        "d": "M730 589 H716 L648 405 H636"
+        "d": "M730 386 H716 L648 405 H636"
        },
        {
         "side": "out",
@@ -14347,10 +14403,10 @@
         "flow": false,
         "blurb": "C-value and tread dimensions plus the sheet title, as real Rhino annotations",
         "callX": 730,
-        "callY": 626,
+        "callY": 422,
         "gripX": 636,
         "gripY": 435,
-        "d": "M730 657 H716 L648 435 H636"
+        "d": "M730 453 H716 L648 435 H636"
        },
        {
         "side": "out",
@@ -14362,10 +14418,10 @@
         "flow": false,
         "blurb": "The axis label on each sheet, parallel to Sheets",
         "callX": 730,
-        "callY": 692,
+        "callY": 489,
         "gripX": 636,
         "gripY": 465,
-        "d": "M730 723 H716 L648 465 H636"
+        "d": "M730 520 H716 L648 465 H636"
        },
        {
         "side": "out",
@@ -14377,10 +14433,10 @@
         "flow": false,
         "blurb": "Sheet format, scale, and how the largest section fits the usable area",
         "callX": 730,
-        "callY": 760,
+        "callY": 556,
         "gripX": 636,
         "gripY": 495,
-        "d": "M730 791 H716 L648 495 H636"
+        "d": "M730 587 H716 L648 495 H636"
        },
        {
         "side": "out",
@@ -14392,10 +14448,10 @@
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 730,
-        "callY": 826,
+        "callY": 623,
         "gripX": 636,
         "gripY": 525,
-        "d": "M730 857 H716 L648 525 H636"
+        "d": "M730 654 H716 L648 525 H636"
        },
        {
         "side": "out",
@@ -14407,10 +14463,10 @@
         "flow": false,
         "blurb": "Railings and vomitories where the cut really passes through them, one curve per piece",
         "callX": 730,
-        "callY": 894,
+        "callY": 690,
         "gripX": 636,
         "gripY": 555,
-        "d": "M730 925 H716 L648 555 H636"
+        "d": "M730 721 H716 L648 555 H636"
        },
        {
         "side": "out",
@@ -14422,13 +14478,15 @@
         "flow": false,
         "blurb": "The same parts where the cut misses them",
         "callX": 730,
-        "callY": 960,
+        "callY": 757,
         "gripX": 636,
         "gripY": 585,
-        "d": "M730 991 H716 L648 585 H636"
+        "d": "M730 788 H716 L648 585 H636"
        }
       ]
-     }
+     },
+     "indexHead": "Lays every axis section out on its own sheet so you can flip through them. One scale for the whole...",
+     "indexMore": "set, chosen so the largest section fits, and every section sits at the same place on its sheet."
     },
     {
      "id": "sheet-setup",
@@ -14545,7 +14603,7 @@
      "tier": "free",
      "figure": {
       "w": 1036,
-      "h": 530,
+      "h": 438,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -14566,10 +14624,10 @@
         "flow": false,
         "blurb": "Sheet format, landscape",
         "callX": 0,
-        "callY": 112,
+        "callY": 20,
         "gripX": 434,
         "gripY": 144,
-        "d": "M340 143 H354 L422 144 H434"
+        "d": "M340 51 H354 L422 144 H434"
        },
        {
         "side": "in",
@@ -14581,10 +14639,10 @@
         "flow": false,
         "blurb": "How many sheets per row before the layout wraps",
         "callX": 0,
-        "callY": 180,
+        "callY": 87,
         "gripX": 434,
         "gripY": 174,
-        "d": "M340 211 H354 L422 174 H434"
+        "d": "M340 118 H354 L422 174 H434"
        },
        {
         "side": "in",
@@ -14596,10 +14654,10 @@
         "flow": false,
         "blurb": "Denominators round up to a multiple of this",
         "callX": 0,
-        "callY": 246,
+        "callY": 154,
         "gripX": 434,
         "gripY": 204,
-        "d": "M340 277 H354 L422 204 H434"
+        "d": "M340 185 H354 L422 204 H434"
        },
        {
         "side": "in",
@@ -14611,10 +14669,10 @@
         "flow": false,
         "blurb": "Margin inside each sheet, in paper millimetres",
         "callX": 0,
-        "callY": 314,
+        "callY": 221,
         "gripX": 434,
         "gripY": 234,
-        "d": "M340 345 H354 L422 234 H434"
+        "d": "M340 252 H354 L422 234 H434"
        },
        {
         "side": "in",
@@ -14626,10 +14684,10 @@
         "flow": false,
         "blurb": "Gap between sheets, in paper millimetres",
         "callX": 0,
-        "callY": 380,
+        "callY": 288,
         "gripX": 434,
         "gripY": 264,
-        "d": "M340 411 H354 L422 264 H434"
+        "d": "M340 319 H354 L422 264 H434"
        },
        {
         "side": "in",
@@ -14641,10 +14699,10 @@
         "flow": true,
         "blurb": "A Rhino dimension style for the sheet texts",
         "callX": 0,
-        "callY": 448,
+        "callY": 355,
         "gripX": 434,
         "gripY": 294,
-        "d": "M340 479 H354 L422 294 H434"
+        "d": "M340 386 H354 L422 294 H434"
        },
        {
         "side": "out",
@@ -14662,7 +14720,9 @@
         "d": "M696 219 H602"
        }
       ]
-     }
+     },
+     "indexHead": "Holds the sheet layout settings in one place - where the sheets start, the paper size, how many sheets per...",
+     "indexMore": "row, the scale rounding, margins and the text style. Wire the SHD output into C-value Section Check, C-value Map and Seat Map so every sheet component lays out the same way from a single setup. When SHD is wired, the sheet inputs on those components are ignored."
     },
     {
      "id": "slider-merge",
@@ -14696,12 +14756,12 @@
      "tier": "free",
      "figure": {
       "w": 755,
-      "h": 111,
+      "h": 103,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 0,
-      "imgY": 30,
+      "imgY": 26,
       "imgW": 327,
       "imgH": 51,
       "img": "/assets/img/antlion/components/slider-merge.png",
@@ -14717,13 +14777,15 @@
         "flow": false,
         "blurb": "Every row's value as one list",
         "callX": 415,
-        "callY": 24,
+        "callY": 20,
         "gripX": 321,
-        "gripY": 56,
-        "d": "M415 55 H401 L333 56 H321"
+        "gripY": 52,
+        "d": "M415 51 H401 L333 52 H321"
        }
       ]
-     }
+     },
+     "indexHead": "A stack of sliders in one component — each row Dk drives output Rk. Drag the bottom edge to add...",
+     "indexMore": "or remove rows; right-click to set ranges. Saves wiring a dozen separate sliders into per-tier inputs."
     },
     {
      "id": "toggle-merge",
@@ -14757,12 +14819,12 @@
      "tier": "free",
      "figure": {
       "w": 692,
-      "h": 111,
+      "h": 103,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 0,
-      "imgY": 30,
+      "imgY": 26,
       "imgW": 264,
       "imgH": 51,
       "img": "/assets/img/antlion/components/toggle-merge.png",
@@ -14778,13 +14840,15 @@
         "flow": false,
         "blurb": "Every row's state as one list",
         "callX": 352,
-        "callY": 24,
+        "callY": 20,
         "gripX": 258,
-        "gripY": 56,
-        "d": "M352 55 H338 L270 56 H258"
+        "gripY": 52,
+        "d": "M352 51 H338 L270 52 H258"
        }
       ]
-     }
+     },
+     "indexHead": "A stack of toggles in one component — each row Dk drives output Rk. Drag the bottom edge to add...",
+     "indexMore": "or remove rows. Saves wiring a dozen separate toggles into per-tier inputs."
     },
     {
      "id": "c-value-map",
@@ -14953,7 +15017,7 @@
      "tier": "core",
      "figure": {
       "w": 1048,
-      "h": 702,
+      "h": 572,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -15019,10 +15083,10 @@
         "flow": false,
         "blurb": "One sheet rectangle per tier, sized so the drawing inside stays full size",
         "callX": 708,
-        "callY": 150,
+        "callY": 20,
         "gripX": 614,
         "gripY": 181,
-        "d": "M708 181 H614"
+        "d": "M708 51 H694 L626 181 H614"
        },
        {
         "side": "out",
@@ -15034,10 +15098,10 @@
         "flow": false,
         "blurb": "The coloured map on the sheets, one hatch per cell",
         "callX": 708,
-        "callY": 216,
+        "callY": 87,
         "gripX": 614,
         "gripY": 211,
-        "d": "M708 247 H694 L626 211 H614"
+        "d": "M708 118 H694 L626 211 H614"
        },
        {
         "side": "out",
@@ -15049,10 +15113,10 @@
         "flow": false,
         "blurb": "The curve each hatch on the map was made from",
         "callX": 708,
-        "callY": 284,
+        "callY": 154,
         "gripX": 614,
         "gripY": 241,
-        "d": "M708 315 H694 L626 241 H614"
+        "d": "M708 185 H694 L626 241 H614"
        },
        {
         "side": "out",
@@ -15064,10 +15128,10 @@
         "flow": false,
         "blurb": "The seat layout drawing on each sheet, flat on Z=0",
         "callX": 708,
-        "callY": 350,
+        "callY": 221,
         "gripX": 614,
         "gripY": 271,
-        "d": "M708 381 H694 L626 271 H614"
+        "d": "M708 252 H694 L626 271 H614"
        },
        {
         "side": "out",
@@ -15079,10 +15143,10 @@
         "flow": false,
         "blurb": "Sheet titles as real Rhino text",
         "callX": 708,
-        "callY": 418,
+        "callY": 288,
         "gripX": 614,
         "gripY": 301,
-        "d": "M708 449 H694 L626 301 H614"
+        "d": "M708 319 H694 L626 301 H614"
        },
        {
         "side": "out",
@@ -15094,10 +15158,10 @@
         "flow": false,
         "blurb": "The tier name on each sheet, parallel to Sheets",
         "callX": 708,
-        "callY": 484,
+        "callY": 355,
         "gripX": 614,
         "gripY": 331,
-        "d": "M708 515 H694 L626 331 H614"
+        "d": "M708 386 H694 L626 331 H614"
        },
        {
         "side": "out",
@@ -15109,10 +15173,10 @@
         "flow": false,
         "blurb": "Sheet format, scale, what was drawn and the conventions used",
         "callX": 708,
-        "callY": 552,
+        "callY": 422,
         "gripX": 614,
         "gripY": 361,
-        "d": "M708 583 H694 L626 361 H614"
+        "d": "M708 453 H694 L626 361 H614"
        },
        {
         "side": "out",
@@ -15124,13 +15188,15 @@
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 708,
-        "callY": 618,
+        "callY": 489,
         "gripX": 614,
         "gripY": 391,
-        "d": "M708 649 H694 L626 391 H614"
+        "d": "M708 520 H694 L626 391 H614"
        }
       ]
-     }
+     },
+     "indexHead": "Lays the C-value map out flat - one sheet per tier, named TIER 0, TIER 1 and so on, with...",
+     "indexMore": "the seat layout drawing, the coloured map and the tier's minimum, average and pass rate written top-left. Wire the CMD output of C-value Seat for a seat map, or of C-value Tread for a tread map - one at a time."
     },
     {
      "id": "data-gate",
@@ -15178,12 +15244,12 @@
      "tier": "free",
      "figure": {
       "w": 961,
-      "h": 141,
+      "h": 121,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
-      "imgY": 30,
+      "imgY": 20,
       "imgW": 105,
       "imgH": 81,
       "img": "/assets/img/antlion/components/data-gate.png",
@@ -15199,10 +15265,10 @@
         "flow": true,
         "blurb": "The data to hold back",
         "callX": 0,
-        "callY": 22,
+        "callY": 20,
         "gripX": 434,
-        "gripY": 54,
-        "d": "M340 53 H354 L422 54 H434"
+        "gripY": 44,
+        "d": "M340 51 H354 L422 44 H434"
        },
        {
         "side": "out",
@@ -15214,13 +15280,15 @@
         "flow": true,
         "blurb": "The data as it was when PASS was last pressed",
         "callX": 621,
-        "callY": 22,
+        "callY": 20,
         "gripX": 527,
-        "gripY": 54,
-        "d": "M621 53 H607 L539 54 H527"
+        "gripY": 44,
+        "d": "M621 51 H607 L539 44 H527"
        }
       ]
-     }
+     },
+     "indexHead": "Holds the wire shut. Whatever changes upstream, nothing downstream recomputes until you press PASS - then the data at D...",
+     "indexMore": "goes through R once and stays there. Put it between the 2D bowl chain and the heavy 3D build or analysis components: edit the bowl lag-free, press to update. The Gate Switch component opens and closes every gate on the canvas at once. Reopening a file behaves like the moment it was saved: a gate that was holding data picks it up again on load (one full compute, like opening any normal file), and a gate that was empty stays shut."
     },
     {
      "id": "gate-switch",
@@ -15240,18 +15308,20 @@
      "tier": "free",
      "figure": {
       "w": 108,
-      "h": 153,
+      "h": 133,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 0,
-      "imgY": 30,
+      "imgY": 20,
       "imgW": 108,
       "imgH": 93,
       "img": "/assets/img/antlion/components/gate-switch.png",
       "pending": false,
       "ports": []
-     }
+     },
+     "indexHead": "One switch for every Data Gate on the canvas - no wires needed. LIVE holds every gate open, so data...",
+     "indexMore": "flows as if PASS were held down and the whole chain stays current. HOLD closes them all again; each gate keeps the last data that went through. Keep a single switch per document."
     },
     {
      "id": "seat-map",
@@ -15474,7 +15544,7 @@
      "tier": "core",
      "figure": {
       "w": 1051,
-      "h": 958,
+      "h": 773,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -15555,10 +15625,10 @@
         "flow": true,
         "blurb": "Zones with their statistics, plus every seat's zone, number and address",
         "callX": 711,
-        "callY": 206,
+        "callY": 20,
         "gripX": 617,
         "gripY": 237,
-        "d": "M711 237 H617"
+        "d": "M711 51 H697 L629 237 H617"
        },
        {
         "side": "out",
@@ -15570,10 +15640,10 @@
         "flow": false,
         "blurb": "One sheet rectangle per tier, sized so the drawing inside stays full size",
         "callX": 711,
-        "callY": 272,
+        "callY": 87,
         "gripX": 617,
         "gripY": 267,
-        "d": "M711 303 H697 L629 267 H617"
+        "d": "M711 118 H697 L629 267 H617"
        },
        {
         "side": "out",
@@ -15585,10 +15655,10 @@
         "flow": false,
         "blurb": "One pastel hatch per zone",
         "callX": 711,
-        "callY": 340,
+        "callY": 154,
         "gripX": 617,
         "gripY": 297,
-        "d": "M711 371 H697 L629 297 H617"
+        "d": "M711 185 H697 L629 297 H617"
        },
        {
         "side": "out",
@@ -15600,10 +15670,10 @@
         "flow": false,
         "blurb": "The boundary of each zone on the sheets",
         "callX": 711,
-        "callY": 406,
+        "callY": 221,
         "gripX": 617,
         "gripY": 327,
-        "d": "M711 437 H697 L629 327 H617"
+        "d": "M711 252 H697 L629 327 H617"
        },
        {
         "side": "out",
@@ -15615,10 +15685,10 @@
         "flow": false,
         "blurb": "The seat layout drawing on each sheet, flat on Z=0",
         "callX": 711,
-        "callY": 474,
+        "callY": 288,
         "gripX": 617,
         "gripY": 357,
-        "d": "M711 505 H697 L629 357 H617"
+        "d": "M711 319 H697 L629 357 H617"
        },
        {
         "side": "out",
@@ -15630,10 +15700,10 @@
         "flow": false,
         "blurb": "Zone labels, seat counts and sheet titles as real Rhino text",
         "callX": 711,
-        "callY": 540,
+        "callY": 355,
         "gripX": 617,
         "gripY": 387,
-        "d": "M711 571 H697 L629 387 H617"
+        "d": "M711 386 H697 L629 387 H617"
        },
        {
         "side": "out",
@@ -15645,10 +15715,10 @@
         "flow": false,
         "blurb": "The tier name on each sheet, parallel to Sheets",
         "callX": 711,
-        "callY": 608,
+        "callY": 422,
         "gripX": 617,
         "gripY": 417,
-        "d": "M711 639 H697 L629 417 H617"
+        "d": "M711 453 H697 L629 417 H617"
        },
        {
         "side": "out",
@@ -15660,10 +15730,10 @@
         "flow": false,
         "blurb": "One tab-separated line per zone with a header row",
         "callX": 711,
-        "callY": 674,
+        "callY": 489,
         "gripX": 617,
         "gripY": 447,
-        "d": "M711 705 H697 L629 447 H617"
+        "d": "M711 520 H697 L629 447 H617"
        },
        {
         "side": "out",
@@ -15675,10 +15745,10 @@
         "flow": false,
         "blurb": "One tab-separated line per seat",
         "callX": 711,
-        "callY": 742,
+        "callY": 556,
         "gripX": 617,
         "gripY": 477,
-        "d": "M711 773 H697 L629 477 H617"
+        "d": "M711 587 H697 L629 477 H617"
        },
        {
         "side": "out",
@@ -15690,10 +15760,10 @@
         "flow": false,
         "blurb": "Zone-by-zone summary you can read like a legend",
         "callX": 711,
-        "callY": 808,
+        "callY": 623,
         "gripX": 617,
         "gripY": 507,
-        "d": "M711 839 H697 L629 507 H617"
+        "d": "M711 654 H697 L629 507 H617"
        },
        {
         "side": "out",
@@ -15705,13 +15775,15 @@
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 711,
-        "callY": 876,
+        "callY": 690,
         "gripX": 617,
         "gripY": 537,
-        "d": "M711 907 H697 L629 537 H617"
+        "d": "M711 721 H697 L629 537 H617"
        }
       ]
-     }
+     },
+     "indexHead": "Groups the seats into zones - the pieces left when the aisles, vomitories and cuts are taken out of the...",
+     "indexMore": "tier - and gives every seat a readable address like \"A0 05 S 25\": prefix and tier number, zone number counted along the axis direction, then the seat number running from the lowest tread up. Wheelchair units belong to their zone too, numbered \"W 1\", \"W 2\". Outputs the SMD bundle for Seat View and Seat 3D, a zone map laid out one sheet per tier, and flat tables ready for a spreadsheet. Wire the BRD output of Stand 3D Plus; wire SHD from Sheet Setup to place the sheets"
     },
     {
      "id": "license",
@@ -15785,7 +15857,7 @@
      "tier": "free",
      "figure": {
       "w": 1054,
-      "h": 274,
+      "h": 237,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -15806,10 +15878,10 @@
         "flow": false,
         "blurb": "Paste the license key from your customer portal",
         "callX": 0,
-        "callY": 58,
+        "callY": 20,
         "gripX": 434,
         "gripY": 89,
-        "d": "M340 89 H434"
+        "d": "M340 51 H354 L422 89 H434"
        },
        {
         "side": "in",
@@ -15821,10 +15893,10 @@
         "flow": false,
         "blurb": "Flip to True once to register the key on this computer",
         "callX": 0,
-        "callY": 124,
+        "callY": 87,
         "gripX": 434,
         "gripY": 119,
-        "d": "M340 155 H354 L422 119 H434"
+        "d": "M340 118 H354 L422 119 H434"
        },
        {
         "side": "in",
@@ -15836,10 +15908,10 @@
         "flow": false,
         "blurb": "Flip to True to test the connection to the license server",
         "callX": 0,
-        "callY": 192,
+        "callY": 154,
         "gripX": 434,
         "gripY": 149,
-        "d": "M340 223 H354 L422 149 H434"
+        "d": "M340 185 H354 L422 149 H434"
        },
        {
         "side": "out",
@@ -15857,7 +15929,9 @@
         "d": "M714 119 H620"
        }
       ]
-     }
+     },
+     "indexHead": "Register your Antlion license key. Enter the key once — every definition on this computer is unlocked.",
+     "indexMore": null
     },
     {
      "id": "seat-view",
@@ -16076,7 +16150,7 @@
      "tier": "core",
      "figure": {
       "w": 1048,
-      "h": 958,
+      "h": 773,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -16097,10 +16171,10 @@
         "flow": true,
         "blurb": "The seat map from Seat Map",
         "callX": 0,
-        "callY": 206,
+        "callY": 20,
         "gripX": 434,
         "gripY": 237,
-        "d": "M340 237 H434"
+        "d": "M340 51 H354 L422 237 H434"
        },
        {
         "side": "in",
@@ -16112,10 +16186,10 @@
         "flow": false,
         "blurb": "Which tier the seat is on, 0 = lowest",
         "callX": 0,
-        "callY": 272,
+        "callY": 87,
         "gripX": 434,
         "gripY": 267,
-        "d": "M340 303 H354 L422 267 H434"
+        "d": "M340 118 H354 L422 267 H434"
        },
        {
         "side": "in",
@@ -16127,10 +16201,10 @@
         "flow": false,
         "blurb": "Which zone of the tier, counted the way Seat Map numbers them",
         "callX": 0,
-        "callY": 340,
+        "callY": 154,
         "gripX": 434,
         "gripY": 297,
-        "d": "M340 371 H354 L422 297 H434"
+        "d": "M340 185 H354 L422 297 H434"
        },
        {
         "side": "in",
@@ -16142,10 +16216,10 @@
         "flow": false,
         "blurb": "The seat number inside the zone, as the map prints it",
         "callX": 0,
-        "callY": 406,
+        "callY": 221,
         "gripX": 434,
         "gripY": 327,
-        "d": "M340 437 H354 L422 327 H434"
+        "d": "M340 252 H354 L422 327 H434"
        },
        {
         "side": "in",
@@ -16157,10 +16231,10 @@
         "flow": false,
         "blurb": "Look left or right from the eye point, in degrees",
         "callX": 0,
-        "callY": 474,
+        "callY": 288,
         "gripX": 434,
         "gripY": 357,
-        "d": "M340 505 H354 L422 357 H434"
+        "d": "M340 319 H354 L422 357 H434"
        },
        {
         "side": "in",
@@ -16172,10 +16246,10 @@
         "flow": false,
         "blurb": "Look up or down from the eye point, in degrees",
         "callX": 0,
-        "callY": 540,
+        "callY": 355,
         "gripX": 434,
         "gripY": 387,
-        "d": "M340 571 H354 L422 387 H434"
+        "d": "M340 386 H354 L422 387 H434"
        },
        {
         "side": "in",
@@ -16187,10 +16261,10 @@
         "flow": false,
         "blurb": "Camera lens, 35mm-film equivalent",
         "callX": 0,
-        "callY": 608,
+        "callY": 422,
         "gripX": 434,
         "gripY": 417,
-        "d": "M340 639 H354 L422 417 H434"
+        "d": "M340 453 H354 L422 417 H434"
        },
        {
         "side": "in",
@@ -16202,10 +16276,10 @@
         "flow": false,
         "blurb": "Wire a Button to move the perspective viewport to this seat",
         "callX": 0,
-        "callY": 674,
+        "callY": 489,
         "gripX": 434,
         "gripY": 447,
-        "d": "M340 705 H354 L422 447 H434"
+        "d": "M340 520 H354 L422 447 H434"
        },
        {
         "side": "in",
@@ -16217,10 +16291,10 @@
         "flow": false,
         "blurb": "On = the viewport follows every change, so you can look around by sliding",
         "callX": 0,
-        "callY": 742,
+        "callY": 556,
         "gripX": 434,
         "gripY": 477,
-        "d": "M340 773 H354 L422 477 H434"
+        "d": "M340 587 H354 L422 477 H434"
        },
        {
         "side": "in",
@@ -16232,10 +16306,10 @@
         "flow": false,
         "blurb": "A seat address like A0 05 S 25",
         "callX": 0,
-        "callY": 808,
+        "callY": 623,
         "gripX": 434,
         "gripY": 507,
-        "d": "M340 839 H354 L422 507 H434"
+        "d": "M340 654 H354 L422 507 H434"
        },
        {
         "side": "in",
@@ -16247,10 +16321,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 876,
+        "callY": 690,
         "gripX": 434,
         "gripY": 537,
-        "d": "M340 907 H354 L422 537 H434"
+        "d": "M340 721 H354 L422 537 H434"
        },
        {
         "side": "out",
@@ -16313,7 +16387,9 @@
         "d": "M708 509 H694 L626 510 H614"
        }
       ]
-     }
+     },
+     "indexHead": "Looks through a spectator's eyes. Wire the Seat Map SMD and pick a seat by tier, zone and seat number...",
+     "indexMore": "- or type its address like \"A0 05 S 25\" - press apply, and the perspective viewport jumps to that seat's analysis eye point looking at its own focal point - the same eye and focus the C-value map measures. Turn live on and the yaw and pitch sliders let you look around from the fixed eye point, so you can judge a vomitory rail or a cut-edge railing exactly as the seated spectator would see it."
     },
     {
      "id": "view-axis",
@@ -16470,7 +16546,7 @@
      "tier": "core",
      "figure": {
       "w": 1046,
-      "h": 444,
+      "h": 371,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -16491,10 +16567,10 @@
         "flow": true,
         "blurb": "The axis system to label",
         "callX": 0,
-        "callY": 94,
+        "callY": 20,
         "gripX": 434,
         "gripY": 125,
-        "d": "M340 125 H434"
+        "d": "M340 51 H354 L422 125 H434"
        },
        {
         "side": "in",
@@ -16506,10 +16582,10 @@
         "flow": false,
         "blurb": "How far each tag line runs out from its axis point",
         "callX": 0,
-        "callY": 160,
+        "callY": 87,
         "gripX": 434,
         "gripY": 155,
-        "d": "M340 191 H354 L422 155 H434"
+        "d": "M340 118 H354 L422 155 H434"
        },
        {
         "side": "in",
@@ -16521,10 +16597,10 @@
         "flow": false,
         "blurb": "Radius of the circle at the end of each tag line",
         "callX": 0,
-        "callY": 228,
+        "callY": 154,
         "gripX": 434,
         "gripY": 185,
-        "d": "M340 259 H354 L422 185 H434"
+        "d": "M340 185 H434"
        },
        {
         "side": "in",
@@ -16536,10 +16612,10 @@
         "flow": false,
         "blurb": "Height of the axis name text inside each circle",
         "callX": 0,
-        "callY": 294,
+        "callY": 221,
         "gripX": 434,
         "gripY": 215,
-        "d": "M340 325 H354 L422 215 H434"
+        "d": "M340 252 H354 L422 215 H434"
        },
        {
         "side": "in",
@@ -16551,10 +16627,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 362,
+        "callY": 288,
         "gripX": 434,
         "gripY": 245,
-        "d": "M340 393 H354 L422 245 H434"
+        "d": "M340 319 H354 L422 245 H434"
        },
        {
         "side": "out",
@@ -16566,10 +16642,10 @@
         "flow": false,
         "blurb": "One tag line per axis",
         "callX": 706,
-        "callY": 94,
+        "callY": 20,
         "gripX": 612,
         "gripY": 125,
-        "d": "M706 125 H612"
+        "d": "M706 51 H692 L624 125 H612"
        },
        {
         "side": "out",
@@ -16581,10 +16657,10 @@
         "flow": false,
         "blurb": "The circle at the end of each tag line, matching Guide Lines item for item",
         "callX": 706,
-        "callY": 160,
+        "callY": 87,
         "gripX": 612,
         "gripY": 155,
-        "d": "M706 191 H692 L624 155 H612"
+        "d": "M706 118 H692 L624 155 H612"
        },
        {
         "side": "out",
@@ -16596,10 +16672,10 @@
         "flow": false,
         "blurb": "The axis name as bakeable text, centred in each circle",
         "callX": 706,
-        "callY": 228,
+        "callY": 154,
         "gripX": 612,
         "gripY": 185,
-        "d": "M706 259 H692 L624 185 H612"
+        "d": "M706 185 H612"
        },
        {
         "side": "out",
@@ -16611,10 +16687,10 @@
         "flow": false,
         "blurb": "The axis names as plain text, matching Circles item for item",
         "callX": 706,
-        "callY": 294,
+        "callY": 221,
         "gripX": 612,
         "gripY": 215,
-        "d": "M706 325 H692 L624 215 H612"
+        "d": "M706 252 H692 L624 215 H612"
        },
        {
         "side": "out",
@@ -16626,13 +16702,15 @@
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 706,
-        "callY": 362,
+        "callY": 288,
         "gripX": 612,
         "gripY": 245,
-        "d": "M706 393 H692 L624 245 H612"
+        "d": "M706 319 H692 L624 245 H612"
        }
       ]
-     }
+     },
+     "indexHead": "Tags every axis with its number — a guide line running out from each axis point into a circle holding...",
+     "indexMore": "the axis name (A0, A1, ...). The numbers are the same ones Cut and Opening Cut expect in axis_from / opening_from, so you can read them here and leave those heavy previews off."
     },
     {
      "id": "view-limit",
@@ -16844,7 +16922,7 @@
      "tier": "core",
      "figure": {
       "w": 1068,
-      "h": 616,
+      "h": 505,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -16865,10 +16943,10 @@
         "flow": true,
         "blurb": "The field, straight from Field",
         "callX": 0,
-        "callY": 132,
+        "callY": 20,
         "gripX": 434,
         "gripY": 163,
-        "d": "M340 163 H434"
+        "d": "M340 51 H354 L422 163 H434"
        },
        {
         "side": "in",
@@ -16880,10 +16958,10 @@
         "flow": true,
         "blurb": "The seat layout from Seat or Cut",
         "callX": 0,
-        "callY": 198,
+        "callY": 87,
         "gripX": 434,
         "gripY": 193,
-        "d": "M340 229 H354 L422 193 H434"
+        "d": "M340 118 H354 L422 193 H434"
        },
        {
         "side": "in",
@@ -16895,10 +16973,10 @@
         "flow": false,
         "blurb": "Which sports to draw limits for",
         "callX": 0,
-        "callY": 266,
+        "callY": 154,
         "gripX": 434,
         "gripY": 223,
-        "d": "M340 297 H354 L422 223 H434"
+        "d": "M340 185 H354 L422 223 H434"
        },
        {
         "side": "in",
@@ -16910,10 +16988,10 @@
         "flow": false,
         "blurb": "Set the OPTIMUM viewing radius yourself",
         "callX": 0,
-        "callY": 332,
+        "callY": 221,
         "gripX": 434,
         "gripY": 253,
-        "d": "M340 363 H354 L422 253 H434"
+        "d": "M340 252 H354 L422 253 H434"
        },
        {
         "side": "in",
@@ -16925,10 +17003,10 @@
         "flow": false,
         "blurb": "Set the MAXIMUM viewing radius yourself",
         "callX": 0,
-        "callY": 400,
+        "callY": 288,
         "gripX": 434,
         "gripY": 283,
-        "d": "M340 431 H354 L422 283 H434"
+        "d": "M340 319 H354 L422 283 H434"
        },
        {
         "side": "in",
@@ -16940,10 +17018,10 @@
         "flow": false,
         "blurb": "For sports with no published limit, borrow the soccer figures",
         "callX": 0,
-        "callY": 466,
+        "callY": 355,
         "gripX": 434,
         "gripY": 313,
-        "d": "M340 497 H354 L422 313 H434"
+        "d": "M340 386 H354 L422 313 H434"
        },
        {
         "side": "in",
@@ -16955,10 +17033,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 534,
+        "callY": 422,
         "gripX": 434,
         "gripY": 343,
-        "d": "M340 565 H354 L422 343 H434"
+        "d": "M340 453 H354 L422 343 H434"
        },
        {
         "side": "out",
@@ -16970,10 +17048,10 @@
         "flow": false,
         "blurb": "Reference envelopes: optimum, maximum, quality circle",
         "callX": 728,
-        "callY": 132,
+        "callY": 20,
         "gripX": 634,
         "gripY": 163,
-        "d": "M728 163 H634"
+        "d": "M728 51 H714 L646 163 H634"
        },
        {
         "side": "out",
@@ -16985,10 +17063,10 @@
         "flow": false,
         "blurb": "Sport, kind, radius, datum, source and whether the value is sourced or user-set",
         "callX": 728,
-        "callY": 198,
+        "callY": 87,
         "gripX": 634,
         "gripY": 193,
-        "d": "M728 229 H714 L646 193 H634"
+        "d": "M728 118 H714 L646 193 H634"
        },
        {
         "side": "out",
@@ -17000,10 +17078,10 @@
         "flow": false,
         "blurb": "Seats inside the maximum limit, or the reference/override maximum when the sport has none",
         "callX": 728,
-        "callY": 266,
+        "callY": 154,
         "gripX": 634,
         "gripY": 223,
-        "d": "M728 297 H714 L646 223 H634"
+        "d": "M728 185 H714 L646 223 H634"
        },
        {
         "side": "out",
@@ -17015,10 +17093,10 @@
         "flow": false,
         "blurb": "Seats outside the maximum limit, or the reference/override maximum when the sport has none",
         "callX": 728,
-        "callY": 332,
+        "callY": 221,
         "gripX": 634,
         "gripY": 253,
-        "d": "M728 363 H714 L646 253 H634"
+        "d": "M728 252 H714 L646 253 H634"
        },
        {
         "side": "out",
@@ -17030,10 +17108,10 @@
         "flow": false,
         "blurb": "Positions of the seats outside the maximum limit",
         "callX": 728,
-        "callY": 400,
+        "callY": 288,
         "gripX": 634,
         "gripY": 283,
-        "d": "M728 431 H714 L646 283 H634"
+        "d": "M728 319 H714 L646 283 H634"
        },
        {
         "side": "out",
@@ -17045,10 +17123,10 @@
         "flow": false,
         "blurb": "Sport, limit radii, seats inside versus outside",
         "callX": 728,
-        "callY": 466,
+        "callY": 355,
         "gripX": 634,
         "gripY": 313,
-        "d": "M728 497 H714 L646 313 H634"
+        "d": "M728 386 H714 L646 313 H634"
        },
        {
         "side": "out",
@@ -17060,13 +17138,15 @@
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 728,
-        "callY": 534,
+        "callY": 422,
         "gripX": 634,
         "gripY": 343,
-        "d": "M728 565 H714 L646 343 H634"
+        "d": "M728 453 H714 L646 343 H634"
        }
       ]
-     }
+     },
+     "indexHead": "Draws the optimum and maximum viewing distance circles for a sport and counts how many seats fall outside. Reference only...",
+     "indexMore": "— it never removes a seat; wire limit_curves into Cut if you want it enforced."
     },
     {
      "id": "excel-workbook",
@@ -17211,7 +17291,7 @@
      "tier": "core",
      "figure": {
       "w": 1034,
-      "h": 530,
+      "h": 438,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -17232,10 +17312,10 @@
         "flow": true,
         "blurb": "Optional",
         "callX": 0,
-        "callY": 112,
+        "callY": 20,
         "gripX": 434,
         "gripY": 144,
-        "d": "M340 143 H354 L422 144 H434"
+        "d": "M340 51 H354 L422 144 H434"
        },
        {
         "side": "in",
@@ -17247,10 +17327,10 @@
         "flow": false,
         "blurb": "Optional",
         "callX": 0,
-        "callY": 180,
+        "callY": 87,
         "gripX": 434,
         "gripY": 174,
-        "d": "M340 211 H354 L422 174 H434"
+        "d": "M340 118 H354 L422 174 H434"
        },
        {
         "side": "in",
@@ -17262,10 +17342,10 @@
         "flow": false,
         "blurb": "The faceted line the stand is built on",
         "callX": 0,
-        "callY": 246,
+        "callY": 154,
         "gripX": 434,
         "gripY": 204,
-        "d": "M340 277 H354 L422 204 H434"
+        "d": "M340 185 H354 L422 204 H434"
        },
        {
         "side": "in",
@@ -17277,10 +17357,10 @@
         "flow": false,
         "blurb": "Wire a Boolean Button",
         "callX": 0,
-        "callY": 314,
+        "callY": 221,
         "gripX": 434,
         "gripY": 234,
-        "d": "M340 345 H354 L422 234 H434"
+        "d": "M340 252 H354 L422 234 H434"
        },
        {
         "side": "in",
@@ -17292,10 +17372,10 @@
         "flow": false,
         "blurb": "Folder the workbook lives in (e.g",
         "callX": 0,
-        "callY": 380,
+        "callY": 288,
         "gripX": 434,
         "gripY": 264,
-        "d": "M340 411 H354 L422 264 H434"
+        "d": "M340 319 H354 L422 264 H434"
        },
        {
         "side": "in",
@@ -17307,10 +17387,10 @@
         "flow": false,
         "blurb": "Optional workbook name (e.g",
         "callX": 0,
-        "callY": 448,
+        "callY": 355,
         "gripX": 434,
         "gripY": 294,
-        "d": "M340 479 H354 L422 294 H434"
+        "d": "M340 386 H354 L422 294 H434"
        },
        {
         "side": "out",
@@ -17358,7 +17438,9 @@
         "d": "M694 293 H680 L612 279 H600"
        }
       ]
-     }
+     },
+     "indexHead": "Creates an .xlsx workbook you can fill in with Excel, with the input pages already laid out, and hands the...",
+     "indexMore": "reference to Table In and Table Out. Give the project folder, optionally a file name (the folder name is used when empty), and press Run - an existing file connects, a missing file is made there. No internet or sign-in is needed, so this is the path that works on closed networks. The reference is saved with the Grasshopper file; because it is a file path, moving the workbook or the .gh means picking the file again. The 10-series pages are yours and are written only at creation; the 80-series pages belong to the plugin."
     },
     {
      "id": "google-workbook",
@@ -17516,7 +17598,7 @@
      "tier": "core",
      "figure": {
       "w": 1056,
-      "h": 616,
+      "h": 505,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -17537,10 +17619,10 @@
         "flow": true,
         "blurb": "Optional",
         "callX": 0,
-        "callY": 132,
+        "callY": 20,
         "gripX": 434,
         "gripY": 163,
-        "d": "M340 163 H434"
+        "d": "M340 51 H354 L422 163 H434"
        },
        {
         "side": "in",
@@ -17552,10 +17634,10 @@
         "flow": false,
         "blurb": "Optional",
         "callX": 0,
-        "callY": 198,
+        "callY": 87,
         "gripX": 434,
         "gripY": 193,
-        "d": "M340 229 H354 L422 193 H434"
+        "d": "M340 118 H354 L422 193 H434"
        },
        {
         "side": "in",
@@ -17567,10 +17649,10 @@
         "flow": false,
         "blurb": "The faceted line the stand is built on",
         "callX": 0,
-        "callY": 266,
+        "callY": 154,
         "gripX": 434,
         "gripY": 223,
-        "d": "M340 297 H354 L422 223 H434"
+        "d": "M340 185 H354 L422 223 H434"
        },
        {
         "side": "in",
@@ -17582,10 +17664,10 @@
         "flow": false,
         "blurb": "What Run does: connect, sign in, or make a new workbook",
         "callX": 0,
-        "callY": 332,
+        "callY": 221,
         "gripX": 434,
         "gripY": 253,
-        "d": "M340 363 H354 L422 253 H434"
+        "d": "M340 252 H354 L422 253 H434"
        },
        {
         "side": "in",
@@ -17597,10 +17679,10 @@
         "flow": false,
         "blurb": "Wire a Boolean Button",
         "callX": 0,
-        "callY": 400,
+        "callY": 288,
         "gripX": 434,
         "gripY": 283,
-        "d": "M340 431 H354 L422 283 H434"
+        "d": "M340 319 H354 L422 283 H434"
        },
        {
         "side": "in",
@@ -17612,10 +17694,10 @@
         "flow": false,
         "blurb": "Name for the new workbook",
         "callX": 0,
-        "callY": 466,
+        "callY": 355,
         "gripX": 434,
         "gripY": 313,
-        "d": "M340 497 H354 L422 313 H434"
+        "d": "M340 386 H354 L422 313 H434"
        },
        {
         "side": "in",
@@ -17627,10 +17709,10 @@
         "flow": false,
         "blurb": "Paste a workbook address to connect to that one instead of making a new one",
         "callX": 0,
-        "callY": 534,
+        "callY": 422,
         "gripX": 434,
         "gripY": 343,
-        "d": "M340 565 H354 L422 343 H434"
+        "d": "M340 453 H354 L422 343 H434"
        },
        {
         "side": "out",
@@ -17678,7 +17760,9 @@
         "d": "M716 321 H702 L634 322 H622"
        }
       ]
-     }
+     },
+     "indexHead": "Creates a spreadsheet you can fill in by hand, with the input pages already laid out, and hands the reference...",
+     "indexMore": "to Table In and Table Out. Press Run once - the reference is saved with the Grasshopper file, so reopening it stays connected to the same workbook. After that you only edit the sheet and press Run on Table In; you do not need this component again. The 10-series pages are yours and are written only at creation; the 80-series pages belong to the plugin."
     },
     {
      "id": "table-in",
@@ -17862,7 +17946,7 @@
      "tier": "core",
      "figure": {
       "w": 1051,
-      "h": 872,
+      "h": 706,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -17913,10 +17997,10 @@
         "flow": false,
         "blurb": "One branch per step: row index, tread depth, riser height",
         "callX": 711,
-        "callY": 186,
+        "callY": 20,
         "gripX": 617,
         "gripY": 218,
-        "d": "M711 217 H697 L629 218 H617"
+        "d": "M711 51 H697 L629 218 H617"
        },
        {
         "side": "out",
@@ -17928,10 +18012,10 @@
         "flow": false,
         "blurb": "How far back from the nosing the eye sits",
         "callX": 711,
-        "callY": 254,
+        "callY": 87,
         "gripX": 617,
         "gripY": 248,
-        "d": "M711 285 H697 L629 248 H617"
+        "d": "M711 118 H697 L629 248 H617"
        },
        {
         "side": "out",
@@ -17943,10 +18027,10 @@
         "flow": false,
         "blurb": "Eye height above the tread",
         "callX": 711,
-        "callY": 320,
+        "callY": 154,
         "gripX": 617,
         "gripY": 278,
-        "d": "M711 351 H697 L629 278 H617"
+        "d": "M711 185 H697 L629 278 H617"
        },
        {
         "side": "out",
@@ -17958,10 +18042,10 @@
         "flow": false,
         "blurb": "Thickness of the stand slab",
         "callX": 711,
-        "callY": 388,
+        "callY": 221,
         "gripX": 617,
         "gripY": 308,
-        "d": "M711 419 H697 L629 308 H617"
+        "d": "M711 252 H697 L629 308 H617"
        },
        {
         "side": "out",
@@ -17973,10 +18057,10 @@
         "flow": false,
         "blurb": "Smallest acceptable C-value",
         "callX": 711,
-        "callY": 454,
+        "callY": 288,
         "gripX": 617,
         "gripY": 338,
-        "d": "M711 485 H697 L629 338 H617"
+        "d": "M711 319 H697 L629 338 H617"
        },
        {
         "side": "out",
@@ -17988,10 +18072,10 @@
         "flow": false,
         "blurb": "STANDARD or VARIABLE_CORNER",
         "callX": 711,
-        "callY": 522,
+        "callY": 355,
         "gripX": 617,
         "gripY": 368,
-        "d": "M711 553 H697 L629 368 H617"
+        "d": "M711 386 H697 L629 368 H617"
        },
        {
         "side": "out",
@@ -18003,10 +18087,10 @@
         "flow": true,
         "blurb": "The whole workbook as read",
         "callX": 711,
-        "callY": 588,
+        "callY": 422,
         "gripX": 617,
         "gripY": 398,
-        "d": "M711 619 H697 L629 398 H617"
+        "d": "M711 453 H697 L629 398 H617"
        },
        {
         "side": "out",
@@ -18018,10 +18102,10 @@
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 711,
-        "callY": 656,
+        "callY": 489,
         "gripX": 617,
         "gripY": 428,
-        "d": "M711 687 H697 L629 428 H617"
+        "d": "M711 520 H697 L629 428 H617"
        },
        {
         "side": "out",
@@ -18033,10 +18117,10 @@
         "flow": false,
         "blurb": "Eye height above the platform for a wheelchair user",
         "callX": 711,
-        "callY": 722,
+        "callY": 556,
         "gripX": 617,
         "gripY": 458,
-        "d": "M711 753 H697 L629 458 H617"
+        "d": "M711 587 H697 L629 458 H617"
        },
        {
         "side": "out",
@@ -18048,13 +18132,15 @@
         "flow": false,
         "blurb": "How far back from the nosing a wheelchair user's eye sits",
         "callX": 711,
-        "callY": 790,
+        "callY": 623,
         "gripX": 617,
         "gripY": 488,
-        "d": "M711 821 H697 L629 488 H617"
+        "d": "M711 654 H697 L629 488 H617"
        }
       ]
-     }
+     },
+     "indexHead": "Reads the workbook's input pages and gives you the values to build from. Wire the workbook reference and press run....",
+     "indexMore": "Values are looked up by column and key name, so inserting rows or reordering columns in the spreadsheet is safe. What was read is stored with the Grasshopper file, so the canvas keeps working without pressing run again."
     },
     {
      "id": "table-out",
@@ -18158,7 +18244,7 @@
      "tier": "core",
      "figure": {
       "w": 1048,
-      "h": 274,
+      "h": 237,
       "callW": 340,
       "callH": 63,
       "lead": 88,
@@ -18179,10 +18265,10 @@
         "flow": true,
         "blurb": "Wire from Google Workbook or Excel Workbook",
         "callX": 0,
-        "callY": 58,
+        "callY": 20,
         "gripX": 434,
         "gripY": 89,
-        "d": "M340 89 H434"
+        "d": "M340 51 H354 L422 89 H434"
        },
        {
         "side": "in",
@@ -18194,10 +18280,10 @@
         "flow": true,
         "blurb": "Wire outputs marked ⊞, in any combination",
         "callX": 0,
-        "callY": 124,
+        "callY": 87,
         "gripX": 434,
         "gripY": 119,
-        "d": "M340 155 H354 L422 119 H434"
+        "d": "M340 118 H354 L422 119 H434"
        },
        {
         "side": "in",
@@ -18209,10 +18295,10 @@
         "flow": false,
         "blurb": "Wire a Boolean Button and press it to write",
         "callX": 0,
-        "callY": 192,
+        "callY": 154,
         "gripX": 434,
         "gripY": 149,
-        "d": "M340 223 H354 L422 149 H434"
+        "d": "M340 185 H354 L422 149 H434"
        },
        {
         "side": "out",
@@ -18224,10 +18310,10 @@
         "flow": false,
         "blurb": "True when the last write finished, or was skipped because nothing changed",
         "callX": 708,
-        "callY": 58,
+        "callY": 20,
         "gripX": 614,
         "gripY": 89,
-        "d": "M708 89 H614"
+        "d": "M708 51 H694 L626 89 H614"
        },
        {
         "side": "out",
@@ -18239,10 +18325,10 @@
         "flow": false,
         "blurb": "What landed where",
         "callX": 708,
-        "callY": 124,
+        "callY": 87,
         "gripX": 614,
         "gripY": 119,
-        "d": "M708 155 H694 L626 119 H614"
+        "d": "M708 118 H694 L626 119 H614"
        },
        {
         "side": "out",
@@ -18254,13 +18340,15 @@
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 708,
-        "callY": 192,
+        "callY": 154,
         "gripX": 614,
         "gripY": 149,
-        "d": "M708 223 H694 L626 149 H614"
+        "d": "M708 185 H694 L626 149 H614"
        }
       ]
-     }
+     },
+     "indexHead": "Writes analysis results into the workbook's result pages. Wire the workbook reference and the result objects - section, analysis, seat...",
+     "indexMore": "map or C-value map - and press run. Each result type knows which page it belongs on. The plugin owns those pages and rewrites them every run; copy rows into the input pages if you want to keep and edit them."
     }
    ],
    "types": {
