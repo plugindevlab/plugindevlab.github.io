@@ -40,11 +40,22 @@
   </svg>
 </div>
 
-<ul class="fm-key" markdown="0">
-  <li><span class="fm-key-ic fm-key-main"></span>Backbone &mdash; the chain everything else hangs off</li>
-  <li><span class="fm-key-ic fm-key-alt"></span>A swap &mdash; stands in for the one below it, not alongside</li>
-  <li><span class="fm-key-ic fm-key-pick"></span>Your own input &mdash; use it when the built-in shape is not enough</li>
-  <li><span class="fm-key-ic fm-key-table"></span>Carries a result a table can hold &mdash; <b>Table Out</b> writes it to Excel or Google Sheets</li>
-  <li><span class="fm-key-ic fm-key-guide"></span>A guide &mdash; draws labels and markers so the model is easier to read</li>
+{% assign fm_keys = "main|alt|pick|table|guide" | split: "|" %}
+<ul class="fm-key fm-s-{{ f.style }}" markdown="0">
+  {%- for k in fm_keys %}
+  <li>
+    {%- if f.style == 'icon' -%}
+    <svg class="fm-key-box" viewBox="-2 -2 {{ f.nodeW | plus: 4 }} {{ f.nodeH | plus: 4 }}" aria-hidden="true"><g class="fm-{{ k }}"><rect class="fm-shape" width="{{ f.nodeW }}" height="{{ f.nodeH }}" rx="{{ f.iconRx }}"/></g></svg>
+    {%- else -%}
+    <span class="fm-key-ic fm-key-{{ k }}"></span>
+    {%- endif -%}
+    {%- if k == 'main' %}Backbone &mdash; the chain everything else hangs off
+    {%- elsif k == 'alt' %}A swap &mdash; stands in for the one below it, not alongside
+    {%- elsif k == 'pick' %}Your own input &mdash; use it when the built-in shape is not enough
+    {%- elsif k == 'table' %}Carries a result a table can hold &mdash; <b>Table Out</b> writes it to Excel or Google Sheets
+    {%- elsif k == 'guide' %}A guide &mdash; draws labels and markers so the model is easier to read
+    {%- endif -%}
+  </li>
+  {%- endfor %}
 </ul>
 {%- endif %}

@@ -4,6 +4,8 @@
   --accent:#14557f; --warn:#a2502a; --warn-soft:#f4ebe5;
   --field:#12405e; --on-field:#e6eff5; --on-field-soft:#93b4c9; --field-line:#2b5a79;
   --s1:#a7c0d0; --s2:#7fa3bc; --s3:#57869f; --s4:#2f6a86; --s5:#0f4a6b;
+  --kind-pick:#d6ebdb; --kind-pick-line:#3d8a57; --kind-table:#dcdddd; --kind-table-line:#737a80;
+  --kind-guide:#c2e1f7; --kind-guide-line:#1f7fc0;
 }
 
 @media (prefers-color-scheme: dark){
@@ -13,6 +15,8 @@
     --accent:#8fbcd8; --warn:#d08a63; --warn-soft:#2a2018;
     --field:#0d2b41; --on-field:#dfe8ef; --on-field-soft:#7fa3bc; --field-line:#23445c;
     --s1:#3f5f75; --s2:#4f7995; --s3:#6b9ab8; --s4:#8fbcd8; --s5:#b4d6ec;
+    --kind-pick:#19291e; --kind-pick-line:#5fae7b; --kind-table:#2b2c2e; --kind-table-line:#8f979d;
+    --kind-guide:#16354b; --kind-guide-line:#5aaee6;
   }
 }
 
@@ -527,12 +531,14 @@ figure.fig figcaption {
 .fm-key-pick { background: var(--panel); border: 1.4px solid var(--s2); border-radius: 5px; }
 .fm-key-table { background: var(--bg-soft); border: 1.2px solid var(--line); border-radius: 2px; }
 .fm-key-guide { border: 1.5px solid var(--accent); border-radius: 50%; }
+.fm-key-box { width: 20px; height: 20px; flex: none; display: inline-block; overflow: visible; }
+.fm-key-box .fm-shape { vector-effect: non-scaling-stroke; }
 
 .fm-s-icon .fm-shape { fill: var(--panel); stroke: var(--frame); stroke-width: 1.2; }
-.fm-s-icon .fm-alt .fm-shape { stroke-dasharray: 4 3; }
-.fm-s-icon .fm-pick .fm-shape { stroke: var(--s2); }
-.fm-s-icon .fm-table .fm-shape { fill: var(--bg-soft); }
-.fm-s-icon .fm-guide .fm-shape { stroke: var(--accent); }
+.fm-s-icon .fm-alt .fm-shape { stroke-width: 1.6; stroke-dasharray: 5 3; }
+.fm-s-icon .fm-pick .fm-shape  { fill: var(--kind-pick);  stroke: var(--kind-pick-line);  stroke-width: 1.6; }
+.fm-s-icon .fm-table .fm-shape { fill: var(--kind-table); stroke: var(--kind-table-line); stroke-width: 1.6; }
+.fm-s-icon .fm-guide .fm-shape { fill: var(--kind-guide); stroke: var(--kind-guide-line); stroke-width: 1.6; }
 .fm-s-icon .fm-t {
   fill: var(--ink); stroke: var(--bg); stroke-width: 1.8px;
   paint-order: stroke fill; stroke-linejoin: round;
