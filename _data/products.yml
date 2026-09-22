@@ -2,12 +2,12 @@
   name: Antlion
   status: shipped
   tagline: >-
-    Stadium bowl design workflow for Rhino 8 and Grasshopper — start lines, sections,
+    Grasshopper plugin for stadium seating bowls in Rhino 8 — start lines, sections,
     stands, vomitories and seats as one editable chain, with continuous sightline checking.
   image: /assets/img/antlion/mark-card.png
   image_alt: >-
-    Antlion mark — a football lifted out of an antlion's funnel pit by its pincers,
-    seen from a low angle.
+    Antlion logo — an antlion's pincers holding a football above its funnel pit,
+    over the ANTLION wordmark.
   reference: antlion/specs/reference/en
   tiers: antlion/phase2_csharp/_tools/icon_audit.py
   qa: antlion/qa

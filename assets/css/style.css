@@ -118,6 +118,7 @@ blockquote {
 }
 
 hr { border: 0; border-top: 1px solid var(--rule); margin: var(--rhythm) 0; }
+hr + h2 { border-top: 0; padding-top: 0; }
 
 code { font: .875em/1.5 var(--font-mono); background: var(--bg-soft); padding: .12em .38em; border-radius: 2px; }
 pre { background: var(--bg-soft); padding: 1.1rem 1.25rem; overflow-x: auto; border-radius: 2px; font-size: .9rem; }

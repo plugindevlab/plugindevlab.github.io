@@ -1,15 +1,15 @@
 ---
 title: Antlion
-description: Stadium bowl design workflow for Rhino 8 and Grasshopper — sections, stands, vomitories, seats and continuous C-value checking.
+description: Grasshopper plugin for stadium seating bowls in Rhino 8 — sections, stands, vomitories and seats as one editable chain, with C-value sightlines checked as you design.
 ---
 
-<p class="label">Rhino 8 · Grasshopper</p>
+<p class="label">Grasshopper plugin · Rhino 8</p>
 
-# Design the bowl as one chain you can keep editing.
+# Design the bowl. Don't just generate it.
 
-Antlion builds a stadium seating bowl from the start line out — sections, stands,
-vomitories, seats, cuts — and keeps every step editable. Sightline quality is checked
-continuously as you go, not after the fact.
+Antlion is a Grasshopper plugin for stadium seating bowls. It builds the stand from the
+start line out — sections, stands, vomitories, seats, cuts — keeps every step editable,
+and checks C-value sightlines continuously as you design, not after the fact.
 
 <section class="split">
 <div class="split-text" markdown="1">
@@ -51,12 +51,32 @@ number you report is a number you can defend in a meeting.
 
 <section class="split">
 <div class="split-text" markdown="1">
+## Bring your own curves
+
+The presets are where you start, not where you have to stay. A field outline, the start
+line, section axes, hand-drawn tread lines, cut and opening curves, seat blocks and aisles
+can all come from your own Rhino or Grasshopper curves.
+
+Antlion builds the bowl around them and checks the sightlines again, so you can change the
+shape and see what it does to every seat.
+
+[Components](components/index.html)
+</div>
+<figure class="fig">
+<div class="fig-wait">Image to come</div>
+<figcaption>A bowl rebuilt around a custom start line.</figcaption>
+</figure>
+</section>
+
+<section class="split flip">
+<div class="split-text" markdown="1">
 ## Drawings and spreadsheets, both directions
 
-Results go straight onto drawing sheets, and the numbers round-trip through Google Sheets
-or Excel — read your inputs from a workbook, write the results back.
+Results go straight onto drawing sheets. Step heights, tread depths, tier settings and the
+C-value target can be read from a Google Sheets or Excel workbook and the results written
+back to it — change the numbers, run, and the section follows.
 
-Works in millimetre and inch documents.
+Works in millimeter and inch documents.
 
 [Table components](components/index.html)
 </div>
@@ -69,7 +89,7 @@ Works in millimetre and inch documents.
 ## Learn it
 
 - [**Getting started**](getting-started/index.md) — what you need, installing from the
-  package manager, and registering your licence.
+  package manager, and registering your license.
 - [**Workflow**](workflow/index.md) — the whole chain as a map. Start here if you are
   wondering what order to use things in.
 - [**Components**](components/index.html) — every component, every port, with a diagram of
@@ -89,7 +109,7 @@ purchase are handled there.
 *(Food4Rhino listing link — coming with release.)*
 
 The plugin itself is free to download. Components in the **Util** panel work without a
-licence; the bowl, analysis and table components need one.
+license; the bowl, analysis and table components need one.
 
 ## Report a problem
 

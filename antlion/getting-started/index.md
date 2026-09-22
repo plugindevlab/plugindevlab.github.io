@@ -1,13 +1,13 @@
 ---
 title: Getting started with Antlion
-description: What you need, how to install Antlion from the Rhino package manager, and how to register your licence key.
+description: What you need, how to install Antlion from the Rhino package manager, and how to register your license key.
 ---
 
 # Getting started
 
 <section class="split">
 <div class="split-text" markdown="1">
-Setup is three things: install from the Rhino package manager, register a licence key once,
+Setup is three things: install from the Rhino package manager, register a license key once,
 and open Grasshopper. None of it touches your Rhino model.
 
 Once the **Antlion** tab is in the ribbon, [the workflow](../workflow/index.md) shows what
@@ -25,7 +25,7 @@ order to use things in — that page is where the first bowl gets built.
 - **Rhino running on .NET Core** — the current default. If Rhino was switched to .NET
   Framework mode for some other plugin, Antlion does not load at all and the tab never
   appears. Run `SetDotNetRuntime` in Rhino to check it, switch back, and restart.
-- **Millimetre or inch documents** — both work.
+- **Millimeter or inch documents** — both work.
 - **An internet connection when you register.** After that Antlion checks in quietly in the
   background and rides out short network outages.
 
@@ -50,13 +50,13 @@ button opens the same package manager entry rather than handing you a file.
 
 *(Food4Rhino listing — coming with release.)*
 
-## Register your licence
+## Register your license
 
-Downloading Antlion is free. The **Util** panel works without a licence; the **Bowl**,
+Downloading Antlion is free. The **Util** panel works without a license; the **Bowl**,
 **Bowl Analysis** and **Table** panels need one.
 
 **1 — Take the key from your customer portal.** Purchases, billing and invoices are handled
-by **Polar**, the merchant of record for this product, and your licence key lives in the
+by **Polar**, the merchant of record for this product, and your license key lives in the
 customer portal there. Do not wait for it to arrive by email — the portal always has it.
 Enter the email address you bought with, type the code it sends you, and copy the key from
 the purchases page.
