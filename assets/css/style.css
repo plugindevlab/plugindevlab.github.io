@@ -227,6 +227,7 @@ figure.fig figcaption {
 .content.full-page { max-width: 1520px; }
 .content.full-page > p, .content.full-page > ul, .content.full-page > ol,
 .content.full-page > h1, .content.full-page > h2 { max-width: var(--measure); }
+.content.wide > .fm-key, .content.full-page > .fm-key { max-width: none; }
 
 .content.sheet-page { max-width: 1520px; padding: var(--sp6) var(--sp5) var(--sp9); }
 .content.sheet-page > * { max-width: none; }
@@ -393,11 +394,8 @@ figure.fig figcaption {
 }
 .warn li::before { content: "!"; position: absolute; left: 0; top: var(--sp3); font: 600 12px/1.55 var(--font-mono); color: var(--warn); }
 
-.chain-box { grid-column: 2; grid-row: 1 / span 40; padding-top: var(--sp7); }
+.sheet .body > .chain-box { grid-column: 2; grid-row: 1 / span 40; padding-top: var(--sp7); }
 .chain { border: .5px solid var(--line); padding: var(--sp4) var(--sp4) var(--sp1); background: var(--plate); }
-.chain-box .chain {
-  margin-left: calc(-1 * (var(--sp4) + .5px)); margin-right: calc(-1 * (var(--sp4) + .5px));
-}
 .chain h3 {
   font: 600 var(--t1)/1 var(--font-mono); letter-spacing: .16em; text-transform: uppercase;
   color: var(--faint); margin: 0 0 var(--sp3);
@@ -443,7 +441,10 @@ figure.fig figcaption {
 @media (max-width: 76rem) {
   .shell { gap: 0 var(--sp5); }
   .sheet .body { grid-template-columns: 1fr; }
-  .chain-box { grid-column: 1; grid-row: auto; padding-top: var(--sp5); }
+  .sheet .body > .chain-box { grid-column: 1; grid-row: auto; padding-top: var(--sp5); }
+  .chain-box .chain {
+    margin-left: calc(-1 * (var(--sp4) + .5px)); margin-right: calc(-1 * (var(--sp4) + .5px));
+  }
 }
 @media (max-width: 60rem) {
   .shell { display: block; }
