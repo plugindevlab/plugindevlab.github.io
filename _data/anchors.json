@@ -1,8 +1,8 @@
 {
  "_about": "Generated from a Grasshopper capture run - do not edit by hand. Coordinates are CSS pixels (1x); the PNG is rendered at 'scale'.",
- "captured": "2026-09-12T08:08:10.3221828+09:00",
- "gh": "8.33.26188.13001",
- "source": "req-20260912-080809-807.json",
+ "captured": "2026-09-22T17:13:40.3351847+09:00",
+ "gh": "8.35.26251.13001",
+ "source": "req-20260922-171339-735.json",
  "components": {
   "Auto Section": {
    "id": "auto-section",
@@ -129,7 +129,7 @@
    "outputs": [
     {
      "name": "Stand Sections",
-     "nick": "SSD",
+     "nick": "SSD ⊞",
      "x": 136,
      "y": 31
     },
@@ -251,7 +251,7 @@
   "Section analysis": {
    "id": "section-analysis",
    "product": "antlion",
-   "w": 153,
+   "w": 157,
    "h": 188,
    "scale": 2,
    "inputs": [
@@ -307,56 +307,56 @@
    "outputs": [
     {
      "name": "Analysis Reports",
-     "nick": "Reports",
-     "x": 149,
+     "nick": "Reports ⊞",
+     "x": 153,
      "y": 14
     },
     {
      "name": "OK Dimensions",
      "nick": "OK Dims",
-     "x": 149,
+     "x": 153,
      "y": 34
     },
     {
      "name": "Poor Dimensions",
      "nick": "Poor Dim",
-     "x": 149,
+     "x": 153,
      "y": 54
     },
     {
      "name": "Riser Dimensions",
      "nick": "Riser Dm",
-     "x": 149,
+     "x": 153,
      "y": 74
     },
     {
      "name": "OK Sightlines",
      "nick": "OK Sight",
-     "x": 149,
+     "x": 153,
      "y": 94
     },
     {
      "name": "Poor Sightlines",
      "nick": "Poor Sgt",
-     "x": 149,
+     "x": 153,
      "y": 114
     },
     {
      "name": "Barrier Dimensions",
      "nick": "Barr Dim",
-     "x": 149,
+     "x": 153,
      "y": 134
     },
     {
      "name": "Report",
      "nick": "Report",
-     "x": 149,
+     "x": 153,
      "y": 154
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 149,
+     "x": 153,
      "y": 174
     }
    ]
@@ -393,26 +393,26 @@
      "y": 102
     },
     {
+     "name": "Focal Aim Mode",
+     "nick": "▾ Aim",
+     "x": 4,
+     "y": 130
+    },
+    {
      "name": "Minimum C-Value",
      "nick": "Min C",
      "x": 4,
-     "y": 130
+     "y": 158
     },
     {
      "name": "Optimal C-Value",
      "nick": "Opt C",
      "x": 4,
-     "y": 158
+     "y": 186
     },
     {
      "name": "Tier Enabled",
      "nick": "Tiers",
-     "x": 4,
-     "y": 186
-    },
-    {
-     "name": "Color Mode",
-     "nick": "▾ Color",
      "x": 4,
      "y": 214
     },
@@ -432,13 +432,13 @@
    "outputs": [
     {
      "name": "C-value Map Data",
-     "nick": "CMD",
+     "nick": "CMD ⊞",
      "x": 134,
      "y": 14
     },
     {
      "name": "C-value Section Data",
-     "nick": "CSD",
+     "nick": "CSD ⊞",
      "x": 134,
      "y": 34
     },
@@ -520,7 +520,7 @@
    "id": "c-value-seat",
    "product": "antlion",
    "w": 144,
-   "h": 248,
+   "h": 228,
    "scale": 2,
    "inputs": [
     {
@@ -554,52 +554,46 @@
      "y": 94
     },
     {
-     "name": "Color Mode",
-     "nick": "▾ Color",
-     "x": 4,
-     "y": 114
-    },
-    {
      "name": "Minimum C-Value",
      "nick": "Min C",
      "x": 4,
-     "y": 134
+     "y": 114
     },
     {
      "name": "Optimal C-Value",
      "nick": "Opt C",
      "x": 4,
-     "y": 154
+     "y": 134
     },
     {
      "name": "Tier Enabled",
      "nick": "Tiers",
      "x": 4,
-     "y": 174
+     "y": 154
     },
     {
      "name": "Show Sightlines",
      "nick": "Show Sgt",
      "x": 4,
-     "y": 194
+     "y": 174
     },
     {
      "name": "Rail Check",
      "nick": "Rail Chk",
      "x": 4,
-     "y": 214
+     "y": 194
     },
     {
      "name": "Panel Values",
      "nick": "Panel",
      "x": 4,
-     "y": 234
+     "y": 214
     }
    ],
    "outputs": [
     {
      "name": "C-value Map Data",
-     "nick": "CMD",
+     "nick": "CMD ⊞",
      "x": 140,
      "y": 14
     },
@@ -607,61 +601,61 @@
      "name": "Map Hatches",
      "nick": "Hatches",
      "x": 140,
-     "y": 36
+     "y": 34
     },
     {
      "name": "Seat Outlines",
      "nick": "Outlines",
      "x": 140,
-     "y": 58
+     "y": 54
     },
     {
      "name": "Seat C-Values",
      "nick": "Seat C",
      "x": 140,
-     "y": 80
+     "y": 74
     },
     {
      "name": "Seat Statuses",
      "nick": "Status",
      "x": 140,
-     "y": 102
+     "y": 94
     },
     {
      "name": "Seat Eyes",
      "nick": "Eyes",
      "x": 140,
-     "y": 123
+     "y": 114
     },
     {
      "name": "Seat Focals",
      "nick": "Focals",
      "x": 140,
-     "y": 145
+     "y": 134
     },
     {
      "name": "Effective Focal Curves",
      "nick": "Eff Focal",
      "x": 140,
-     "y": 167
+     "y": 154
     },
     {
      "name": "Sightlines",
      "nick": "Sightlns",
      "x": 140,
-     "y": 189
+     "y": 174
     },
     {
      "name": "Report",
      "nick": "Report",
      "x": 140,
-     "y": 211
+     "y": 194
     },
     {
      "name": "Debug",
      "nick": "Debug",
      "x": 140,
-     "y": 233
+     "y": 214
     }
    ]
   },
@@ -1022,7 +1016,7 @@
   "Field": {
    "id": "field",
    "product": "antlion",
-   "w": 140,
+   "w": 153,
    "h": 188,
    "scale": 2,
    "inputs": [
@@ -1052,13 +1046,13 @@
     },
     {
      "name": "Focal Position Mode",
-     "nick": "▾ Focal",
+     "nick": "▾ Focal Pos",
      "x": 4,
      "y": 94
     },
     {
      "name": "Focal Direction Mode",
-     "nick": "▾ Focal",
+     "nick": "▾ Focal Dir",
      "x": 4,
      "y": 114
     },
@@ -1085,37 +1079,37 @@
     {
      "name": "Field Info",
      "nick": "Field",
-     "x": 136,
+     "x": 149,
      "y": 19
     },
     {
      "name": "Field Outline",
      "nick": "Outline",
-     "x": 136,
+     "x": 149,
      "y": 49
     },
     {
      "name": "Focal Curve",
      "nick": "Focal C",
-     "x": 136,
+     "x": 149,
      "y": 79
     },
     {
      "name": "Focal Point",
      "nick": "Focal",
-     "x": 136,
+     "x": 149,
      "y": 109
     },
     {
      "name": "Base Point",
      "nick": "Base Pt",
-     "x": 136,
+     "x": 149,
      "y": 139
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 136,
+     "x": 149,
      "y": 169
     }
    ]
@@ -1367,7 +1361,7 @@
    "inputs": [],
    "outputs": [
     {
-     "name": "R1",
+     "name": "Rows",
      "nick": "R1",
      "x": 172,
      "y": 17
@@ -1544,7 +1538,7 @@
    "id": "c-value-legend",
    "product": "antlion",
    "w": 131,
-   "h": 88,
+   "h": 108,
    "scale": 2,
    "inputs": [
     {
@@ -1570,6 +1564,12 @@
      "nick": "Colors",
      "x": 4,
      "y": 74
+    },
+    {
+     "name": "Detail Mode",
+     "nick": "Detail",
+     "x": 4,
+     "y": 94
     }
    ],
    "outputs": [
@@ -1577,25 +1577,25 @@
      "name": "Scheme",
      "nick": "Scheme",
      "x": 127,
-     "y": 14
+     "y": 16
     },
     {
      "name": "Colors",
      "nick": "Colors",
      "x": 127,
-     "y": 34
+     "y": 41
     },
     {
      "name": "Band Labels",
      "nick": "Band Lbl",
      "x": 127,
-     "y": 54
+     "y": 66
     },
     {
      "name": "Report",
      "nick": "Report",
      "x": 127,
-     "y": 74
+     "y": 91
     }
    ]
   },
@@ -1691,7 +1691,7 @@
    "inputs": [],
    "outputs": [
     {
-     "name": "R1",
+     "name": "Rows",
      "nick": "R1",
      "x": 214,
      "y": 17
@@ -1851,7 +1851,7 @@
    "outputs": [
     {
      "name": "Seat Map Data",
-     "nick": "SMD",
+     "nick": "SMD ⊞",
      "x": 126,
      "y": 14
     },
@@ -1964,7 +1964,7 @@
    "outputs": [
     {
      "name": "Stand Sections",
-     "nick": "SSD",
+     "nick": "SSD ⊞",
      "x": 124,
      "y": 14
     },
@@ -2368,20 +2368,20 @@
      "y": 134
     },
     {
-     "name": "Panel Values",
-     "nick": "Panel",
+     "name": "WC Eye Vertical Offset",
+     "nick": "WC Eye V",
      "x": 4,
      "y": 154
     },
     {
-     "name": "WC Eye Vertical Offset",
-     "nick": "WC Eye V",
+     "name": "WC Eye Horizontal Offset",
+     "nick": "WC Eye H",
      "x": 4,
      "y": 174
     },
     {
-     "name": "WC Eye Horizontal Offset",
-     "nick": "WC Eye H",
+     "name": "Panel Values",
+     "nick": "Panel",
      "x": 4,
      "y": 194
     }
@@ -2389,7 +2389,7 @@
    "outputs": [
     {
      "name": "Stand Sections",
-     "nick": "SSD",
+     "nick": "SSD ⊞",
      "x": 147,
      "y": 18
     },
@@ -2649,7 +2649,7 @@
    "id": "cut",
    "product": "antlion",
    "w": 148,
-   "h": 208,
+   "h": 268,
    "scale": 2,
    "inputs": [
     {
@@ -2707,10 +2707,28 @@
      "y": 174
     },
     {
+     "name": "From Offsets",
+     "nick": "From Off",
+     "x": 4,
+     "y": 194
+    },
+    {
+     "name": "To Offsets",
+     "nick": "To Off",
+     "x": 4,
+     "y": 214
+    },
+    {
+     "name": "Cut End Mode",
+     "nick": "▾ End",
+     "x": 4,
+     "y": 234
+    },
+    {
      "name": "Panel Values",
      "nick": "Panel",
      "x": 4,
-     "y": 194
+     "y": 254
     }
    ],
    "outputs": [
@@ -2718,55 +2736,55 @@
      "name": "Seat Result",
      "nick": "SRD",
      "x": 144,
-     "y": 15
+     "y": 18
     },
     {
      "name": "Cut Lines",
      "nick": "Cut Lns",
      "x": 144,
-     "y": 37
+     "y": 46
     },
     {
      "name": "Cut Records",
      "nick": "Records",
      "x": 144,
-     "y": 59
+     "y": 75
     },
     {
      "name": "Removed Seat Rects",
      "nick": "Removed",
      "x": 144,
-     "y": 81
+     "y": 104
     },
     {
      "name": "Tread Rings",
      "nick": "Rings",
      "x": 144,
-     "y": 103
+     "y": 133
     },
     {
      "name": "Seat Rects",
      "nick": "Seats",
      "x": 144,
-     "y": 126
+     "y": 162
     },
     {
      "name": "Vom Rects",
      "nick": "Voms",
      "x": 144,
-     "y": 148
+     "y": 191
     },
     {
      "name": "Aisles",
      "nick": "Aisles",
      "x": 144,
-     "y": 170
+     "y": 220
     },
     {
      "name": "Debug",
      "nick": "Debug",
      "x": 144,
-     "y": 192
+     "y": 249
     }
    ]
   },
@@ -2951,8 +2969,8 @@
   "Custom Seat": {
    "id": "custom-seat",
    "product": "antlion",
-   "w": 151,
-   "h": 388,
+   "w": 160,
+   "h": 508,
    "scale": 2,
    "inputs": [
     {
@@ -3064,66 +3082,102 @@
      "y": 354
     },
     {
+     "name": "Custom Ring Lines",
+     "nick": "Ring Lines",
+     "x": 4,
+     "y": 374
+    },
+    {
+     "name": "Wall Thickness",
+     "nick": "Wall T",
+     "x": 4,
+     "y": 394
+    },
+    {
+     "name": "Opening Height",
+     "nick": "Height",
+     "x": 4,
+     "y": 414
+    },
+    {
+     "name": "Forward Range",
+     "nick": "Fwd Range",
+     "x": 4,
+     "y": 434
+    },
+    {
+     "name": "Backward Range",
+     "nick": "Back Range",
+     "x": 4,
+     "y": 454
+    },
+    {
+     "name": "Opening Direction",
+     "nick": "▾ Dir",
+     "x": 4,
+     "y": 474
+    },
+    {
      "name": "Panel Values",
      "nick": "Panel",
      "x": 4,
-     "y": 374
+     "y": 494
     }
    ],
    "outputs": [
     {
      "name": "Seat Result",
      "nick": "SRD",
-     "x": 147,
-     "y": 25
+     "x": 156,
+     "y": 31
     },
     {
      "name": "Seat Rects",
      "nick": "Seats",
-     "x": 147,
-     "y": 67
+     "x": 156,
+     "y": 87
     },
     {
      "name": "Good Seat Rects",
      "nick": "Good",
-     "x": 147,
-     "y": 109
+     "x": 156,
+     "y": 142
     },
     {
      "name": "Poor Seat Rects",
      "nick": "Poor",
-     "x": 147,
-     "y": 151
+     "x": 156,
+     "y": 198
     },
     {
      "name": "Vom Rects",
      "nick": "Voms",
-     "x": 147,
-     "y": 193
+     "x": 156,
+     "y": 253
     },
     {
      "name": "Aisles",
      "nick": "Aisles",
-     "x": 147,
-     "y": 236
+     "x": 156,
+     "y": 309
     },
     {
      "name": "WC Platforms",
      "nick": "WC Plat",
-     "x": 147,
-     "y": 278
+     "x": 156,
+     "y": 364
     },
     {
      "name": "WC Units",
      "nick": "WC Units",
-     "x": 147,
-     "y": 320
+     "x": 156,
+     "y": 420
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 147,
-     "y": 362
+     "x": 156,
+     "y": 476
     }
    ]
   },
@@ -3290,8 +3344,8 @@
   "Opening Cut": {
    "id": "opening-cut",
    "product": "antlion",
-   "w": 146,
-   "h": 228,
+   "w": 150,
+   "h": 268,
    "scale": 2,
    "inputs": [
     {
@@ -3355,78 +3409,90 @@
      "y": 194
     },
     {
+     "name": "Opening Offsets",
+     "nick": "Open Off",
+     "x": 4,
+     "y": 214
+    },
+    {
+     "name": "Opening End Mode",
+     "nick": "▾ End",
+     "x": 4,
+     "y": 234
+    },
+    {
      "name": "Panel Values",
      "nick": "Panel",
      "x": 4,
-     "y": 214
+     "y": 254
     }
    ],
    "outputs": [
     {
      "name": "Seat Result",
      "nick": "SRD",
-     "x": 142,
-     "y": 14
+     "x": 146,
+     "y": 15
     },
     {
      "name": "Railing Lines",
      "nick": "Rail Lns",
-     "x": 142,
-     "y": 34
+     "x": 146,
+     "y": 39
     },
     {
      "name": "Opening Rects",
      "nick": "Openings",
-     "x": 142,
-     "y": 54
+     "x": 146,
+     "y": 62
     },
     {
      "name": "Cut Records",
      "nick": "Records",
-     "x": 142,
-     "y": 74
+     "x": 146,
+     "y": 86
     },
     {
      "name": "Removed Seat Rects",
      "nick": "Removed",
-     "x": 142,
-     "y": 94
+     "x": 146,
+     "y": 110
     },
     {
      "name": "Tread Rings",
      "nick": "Rings",
-     "x": 142,
-     "y": 114
+     "x": 146,
+     "y": 133
     },
     {
      "name": "Seat Rects",
      "nick": "Seats",
-     "x": 142,
-     "y": 134
+     "x": 146,
+     "y": 157
     },
     {
      "name": "Vom Rects",
      "nick": "Voms",
-     "x": 142,
-     "y": 154
+     "x": 146,
+     "y": 181
     },
     {
      "name": "Aisles",
      "nick": "Aisles",
-     "x": 142,
-     "y": 174
+     "x": 146,
+     "y": 204
     },
     {
      "name": "WC Units",
      "nick": "WC Units",
-     "x": 142,
-     "y": 194
+     "x": 146,
+     "y": 228
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 142,
-     "y": 214
+     "x": 146,
+     "y": 252
     }
    ]
   },
@@ -3909,7 +3975,7 @@
    "outputs": [
     {
      "name": "Stand Sections",
-     "nick": "SSD",
+     "nick": "SSD ⊞",
      "x": 120,
      "y": 22
     },

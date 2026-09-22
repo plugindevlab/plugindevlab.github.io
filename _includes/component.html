@@ -64,9 +64,16 @@
     </div>
     {%- assign chainin = comp.inputs | where: "flow", true | size -%}
     {%- assign chainout = comp.outputs | where: "flow", true | size -%}
-    {%- if chainin > 0 or chainout > 0 %}
-    <p class="plate-n">Coloured ports carry the chain from one component to the next.
-      The rest are values you set once.</p>
+    {%- assign marklist = false -%}
+    {%- for p in comp.inputs %}{% if p.nick contains "▾" %}{% assign marklist = true %}{% endif %}{% endfor -%}
+    {%- assign marktable = false -%}
+    {%- for p in comp.outputs %}{% if p.nick contains "⊞" %}{% assign marktable = true %}{% endif %}{% endfor -%}
+    {%- if chainin > 0 or chainout > 0 or marklist or marktable %}
+    <p class="plate-n">
+      {%- if chainin > 0 or chainout > 0 %}Colored ports carry the chain from one component to the next.
+      The rest are values you set once.{% endif %}
+      {%- if marklist %} Inputs marked ▾ take a Value List: wire one in and it fills with the choices.{% endif %}
+      {%- if marktable %} Outputs marked ⊞ can go into Table Out, which writes them to a spreadsheet.{% endif %}</p>
     {%- endif %}
   </div>
 
