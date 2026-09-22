@@ -10,7 +10,7 @@ antlion:
     - {id: custom-axis,           col: 2,  row: 4, kind: pick}
     - {id: table-section,         col: 3,  row: 0, kind: alt}
     - {id: section-plus,          col: 3,  row: 1, kind: main}
-    - {id: section-analysis,      col: 4,  row: 1, kind: table}
+    - {id: section-analysis,      col: 4,  row: 1, kind: main}
     - {id: view-axis,             col: 4,  row: 3, kind: guide}
     - {id: stand-2d,              col: 5,  row: 2, kind: main}
     - {id: vomitory,              col: 6,  row: 2, kind: main}
@@ -24,9 +24,9 @@ antlion:
     - {id: view-limit,            col: 11, row: 5, kind: guide}
     - {id: rail-3d,               col: 12, row: 1, kind: main}
     - {id: stand-3d-plus,         col: 12, row: 2, kind: main}
-    - {id: c-value-seat,          col: 13, row: 1, kind: table}
-    - {id: c-value-tread,         col: 13, row: 2, kind: table}
-    - {id: seat-map,              col: 13, row: 4, kind: table}
+    - {id: c-value-seat,          col: 13, row: 1, kind: main}
+    - {id: c-value-tread,         col: 13, row: 2, kind: main}
+    - {id: seat-map,              col: 13, row: 4, kind: main}
     - {id: c-value-map,           col: 14, row: 1, kind: main}
     - {id: c-value-section-check, col: 14, row: 2, kind: main}
     - {id: seat-view,             col: 14, row: 4, kind: main}
