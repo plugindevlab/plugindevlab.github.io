@@ -9,7 +9,7 @@
       {%- assign list = pdata.components | where: "group", s.group %}
       <details{% if s.group == include.group %} open{% endif %}>
         <summary><span>{{ s.label | escape }}</span><i>{{ list | size }}</i></summary>
-        <ul>
+        <ul translate="no">
           {%- for c in list %}
           <li><a href="/{{ prod.slug }}/components/{{ c.id }}/"{% if c.id == include.current %} aria-current="page"{% endif %}>{{ c.name | escape }}</a></li>
           {%- endfor %}
@@ -20,7 +20,7 @@
       {%- assign list = pdata.components | where: "group", s.group %}
       <details{% if s.group == include.group %} open{% endif %}>
         <summary><span>{{ s.label | escape }}</span><i>{{ list | size }}</i></summary>
-        <ul>
+        <ul translate="no">
           {%- for c in list %}
           <li><a href="/{{ prod.slug }}/components/{{ c.id }}/"{% if c.id == include.current %} aria-current="page"{% endif %}>{{ c.name | escape }}</a></li>
           {%- endfor %}

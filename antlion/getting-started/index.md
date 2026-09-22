@@ -52,8 +52,8 @@ button opens the same package manager entry rather than handing you a file.
 
 ## Register your license
 
-Downloading Antlion is free. The **Util** panel works without a license; the **Bowl**,
-**Bowl Analysis** and **Table** panels need one.
+Downloading Antlion is free. The <strong translate="no">Util</strong> panel works without a license; the <strong translate="no">Bowl</strong>,
+<strong translate="no">Bowl Analysis</strong> and <strong translate="no">Table</strong> panels need one.
 
 **1 — Take the key from your customer portal.** Purchases, billing and invoices are handled
 by **Polar**, the merchant of record for this product, and your license key lives in the
@@ -65,16 +65,16 @@ the purchases page.
 
 **2 — Enter it once in Grasshopper.**
 
-- Antlion tab → [**License**](../components/license/index.html)
-- Paste the key into `Key`
-- Set `Register` to **True**
-- `Status` reports what happened
+- <span translate="no">Antlion</span> tab → [<strong translate="no">License</strong>](../components/license/index.html)
+- Paste the key into <code translate="no">Key</code>
+- Set <code translate="no">Register</code> to <strong translate="no">True</strong>
+- <code translate="no">Status</code> reports what happened
 
 That unlocks **every definition on this computer** — it is not something you repeat per file.
 
 **One computer at a time.** To move to another machine, release the old one in the customer
-portal and register on the new one. If a computer has been released, `Status` says so and
-tells you to flip `Register` again.
+portal and register on the new one. If a computer has been released, <code translate="no">Status</code> says so and
+tells you to flip <code translate="no">Register</code> again.
 
 *(Video walkthrough — coming with release.)*
 

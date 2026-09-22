@@ -34,18 +34,18 @@ A Grasshopper definition only *references* the curves and surfaces in your Rhino
 Sent as-is, it opens empty on our side and there is nothing to look at.
 
 - Select the components you used, or just the input parameters holding your Rhino geometry
-- Right-click that input → **Internalise data**
+- Right-click that input → <strong translate="no">Internalise data</strong>
 - The wire to Rhino disappears and the geometry is now stored inside the definition
-- **File → Save As**, and attach that copy
+- <strong translate="no">File → Save As</strong>, and attach that copy
 
 The internalised file contains only the geometry you internalised — not your Rhino document.
 
 **2 — Or paste the debug output instead.**
-Every Antlion component has a **`debug`** output, and it is often faster than sending files.
+Every Antlion component has a **<code translate="no">debug</code>** output, and it is often faster than sending files.
 
-- Double-click empty canvas, type `panel`, press Enter
-- Drag a wire from the component's **`debug`** output into that panel
-- Right-click the panel → **Copy Data Only**
+- Double-click empty canvas, type <code translate="no">panel</code>, press Enter
+- Drag a wire from the component's **<code translate="no">debug</code>** output into that panel
+- Right-click the panel → <strong translate="no">Copy Data Only</strong>
 - Paste it into the report form
 
 If the component shows an orange or red bubble, hover it and copy that message too.

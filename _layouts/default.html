@@ -25,10 +25,10 @@
 {%- if page.product -%}{%- assign prod = site.data.products | where: "slug", page.product | first -%}{%- endif %}
 <header class="site-head">
   <div class="head-in">
-    <a class="wordmark" href="{{ '/' | relative_url }}">plugin<span>.</span>dev<span>.</span>lab</a>
+    <a class="wordmark" href="{{ '/' | relative_url }}" translate="no">plugin<span>.</span>dev<span>.</span>lab</a>
     {%- if prod %}
     <nav class="product-nav" aria-label="{{ prod.name }}">
-      <a class="product-home{% if page.url == '/' | append: prod.slug | append: '/' %} here{% endif %}" href="/{{ prod.slug }}/">{{ prod.name }}</a>
+      <a class="product-home{% if page.url == '/' | append: prod.slug | append: '/' %} here{% endif %}" href="/{{ prod.slug }}/" translate="no">{{ prod.name }}</a>
       {%- for item in prod.nav %}
       <a{% if page.url contains item.url %} class="here"{% endif %} href="{{ item.url | relative_url }}">{{ item.label }}</a>
       {%- endfor %}
@@ -50,7 +50,7 @@
       <a href="/{{ prod.slug }}/changelog/">Changelog</a>
     </p>
     {%- endif %}
-    <p class="mark">plugin.dev.lab</p>
+    <p class="mark" translate="no">plugin.dev.lab</p>
   </div>
 </footer>
 

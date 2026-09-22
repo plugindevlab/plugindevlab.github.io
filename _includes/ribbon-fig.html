@@ -1,7 +1,7 @@
 {%- assign pdata = site.data.components.products[page.product] -%}
 {%- assign r = pdata.graph.ribbon -%}
 {%- if r %}
-<div class="rib-wrap" markdown="0">
+<div class="rib-wrap" markdown="0" translate="no">
   <svg class="rib" viewBox="0 0 {{ r.w }} {{ r.h }}" width="{{ r.w }}" height="{{ r.h }}"
        role="img" aria-label="The {{ r.tab }} tab in the Grasshopper ribbon, with its panels">
     <rect class="rib-plate" x="0" y="0" width="{{ r.w }}" height="{{ r.h }}"/>

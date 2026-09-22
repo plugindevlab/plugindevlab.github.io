@@ -1,7 +1,7 @@
 {%- assign pdata = site.data.components.products[page.product] -%}
 {%- assign f = pdata.graph.flowmap -%}
 {%- if f %}
-<div class="fm-wrap" markdown="0">
+<div class="fm-wrap" markdown="0" translate="no">
   <svg class="fm fm-s-{{ f.style }}" viewBox="0 0 {{ f.w }} {{ f.h }}" width="{{ f.w }}" height="{{ f.h }}"
        role="img" aria-label="The whole chain in one diagram — what order to use things in">
     <defs>
@@ -53,7 +53,7 @@
     {%- if k == 'main' %}Backbone &mdash; the chain everything else hangs off
     {%- elsif k == 'alt' %}A swap &mdash; stands in for the one below it, not alongside
     {%- elsif k == 'pick' %}Your own input &mdash; use it when the built-in shape is not enough
-    {%- elsif k == 'table' %}Carries a result a table can hold &mdash; outputs marked ⊞ go into <b>Table Out</b>, which writes them to Excel or Google Sheets
+    {%- elsif k == 'table' %}Carries a result a table can hold &mdash; outputs marked ⊞ go into <b translate="no">Table Out</b>, which writes them to Excel or Google Sheets
     {%- elsif k == 'guide' %}A guide &mdash; draws labels and markers so the model is easier to read
     {%- endif -%}
     </span>

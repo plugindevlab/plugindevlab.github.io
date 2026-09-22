@@ -21,10 +21,10 @@ as a single diagram.
 
 {% include ribbon-fig.html %}
 
-**Bowl** builds geometry — start lines, sections, the 2D layout, the solids.
-**Bowl Analysis** measures what Bowl built: sightlines, C-values, seat maps, and the guides
-that make them legible. **Table** connects a workbook, so numbers live in Excel or Google
-Sheets instead of in sliders. **Util** is everything that helps without being part of the
+<strong translate="no">Bowl</strong> builds geometry — start lines, sections, the 2D layout, the solids.
+<strong translate="no">Bowl Analysis</strong> measures what <span translate="no">Bowl</span> built: sightlines, C-values, seat maps, and the guides
+that make them legible. <strong translate="no">Table</strong> connects a workbook, so numbers live in Excel or Google
+Sheets instead of in sliders. <strong translate="no">Util</strong> is everything that helps without being part of the
 chain — a values panel, a legend, sheet setup, the licence.
 
 **Inside a panel, the separators are the order of work.** Read a panel left to right,
@@ -52,7 +52,7 @@ replaces the built-in one; a table-driven section replaces the one you set by ha
 <p class="label">Stage {{ forloop.index }}</p>
 <h3>{{ s.label }}</h3>
 {{ site.data.stage_notes[s.group] | markdownify }}
-<p class="comp-list">
+<p class="comp-list" translate="no">
 {%- for c in g.components %}{% if c.group == s.group %}<a href="../components/{{ c.id }}/">{{ c.name }}</a> {% endif %}{% endfor %}
 </p>
 </div>
@@ -68,7 +68,7 @@ replaces the built-in one; a table-driven section replaces the one you set by ha
 <section id="{{ s.group }}" markdown="0">
 <h3>{{ s.label }}</h3>
 {{ site.data.stage_notes[s.group] | markdownify }}
-<p class="comp-list">
+<p class="comp-list" translate="no">
 {%- for c in g.components %}{% if c.group == s.group %}<a href="../components/{{ c.id }}/">{{ c.name }}</a> {% endif %}{% endfor %}
 </p>
 </section>

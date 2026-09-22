@@ -78,7 +78,7 @@ back to it — change the numbers, run, and the section follows.
 
 Works in millimeter and inch documents.
 
-[Table components](components/index.html)
+[<span translate="no">Table</span> components](components/index.html)
 </div>
 <figure class="fig">
 <div class="fig-wait">Image to come</div>
@@ -108,7 +108,7 @@ purchase are handled there.
 
 *(Food4Rhino listing link — coming with release.)*
 
-The plugin itself is free to download. Components in the **Util** panel work without a
+The plugin itself is free to download. Components in the <strong translate="no">Util</strong> panel work without a
 license; the bowl, analysis and table components need one.
 
 ## Report a problem
