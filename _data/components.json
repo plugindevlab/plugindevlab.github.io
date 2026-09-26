@@ -6744,7 +6744,7 @@
        "optional": true,
        "dropdown": false,
        "default": null,
-       "desc": "One branch per tier. Draw each opening over the treads it spans: a closed rect, a band bent along the rings (4 corners, plus 2 per bend - split into rects, doors at the band's ends), or a U-shaped outline (arms at or inside the bar's ends - split into arm, bar and arm). Two rects may share a segment only on different rows",
+       "desc": "One branch per tier. Draw each opening over the treads it spans: a closed rect, a band bent along the rings (4 corners, plus 2 per bend - split into rects, doors at the band's ends as Band Opening Mode picks), or a U-shaped outline (arms at or inside the bar's ends - split into arm, bar and arm). Two rects may share a segment only on different rows",
        "flow": false,
        "type": null
       },
@@ -6932,84 +6932,19 @@
       },
       {
        "index": 18,
-       "name": "Custom Ring Lines",
-       "nick": "Ring Lines",
-       "ghType": "Curve",
-       "access": "tree",
+       "name": "Band Opening Mode",
+       "nick": "▾ Band",
+       "ghType": "Integer",
+       "access": "list",
        "optional": true,
        "dropdown": false,
        "default": null,
-       "desc": "One branch per tier. Open lines drawn from the concourse across the top tread ring - each one starts a large opening that empties treads down from the top ring, for accessible seating and concourse links",
+       "desc": "Which end of each band bent along the rings gets its opening: BOTH, LEFT or RIGHT - give as many as there are bands, numbered in Custom Voms order from tier 0; the last value fills the rest. LEFT is the end towards higher axis numbers - the left end seen from the field on a closed bowl. The opening size comes from Vom 3D (default BOTH)",
        "flow": false,
        "type": null
       },
       {
        "index": 19,
-       "name": "Wall Thickness",
-       "nick": "Wall T",
-       "ghType": "Number",
-       "access": "item",
-       "optional": false,
-       "dropdown": false,
-       "default": "150 mm / 6 in",
-       "desc": "Thickness of the vomitory wall between a ring line and its opening, measured along the top ring. Wire the same value as Vom 3D Wall Thickness (default 150 mm)",
-       "flow": false,
-       "type": null
-      },
-      {
-       "index": 20,
-       "name": "Opening Height",
-       "nick": "Height",
-       "ghType": "Number",
-       "access": "item",
-       "optional": false,
-       "dropdown": false,
-       "default": "0.0",
-       "desc": "How far down from the top ring a ring opening empties, as a height difference. Treads within that height are removed. 0 = every tread (default 0)",
-       "flow": false,
-       "type": null
-      },
-      {
-       "index": 21,
-       "name": "Forward Range",
-       "nick": "Fwd Range",
-       "ghType": "Number",
-       "access": "item",
-       "optional": false,
-       "dropdown": false,
-       "default": "4000 mm / 156 in",
-       "desc": "Length of a ring opening along the top ring towards higher axis numbers (default 4000 mm)",
-       "flow": false,
-       "type": null
-      },
-      {
-       "index": 22,
-       "name": "Backward Range",
-       "nick": "Back Range",
-       "ghType": "Number",
-       "access": "item",
-       "optional": false,
-       "dropdown": false,
-       "default": "4000 mm / 156 in",
-       "desc": "Length of a ring opening along the top ring towards lower axis numbers (default 4000 mm)",
-       "flow": false,
-       "type": null
-      },
-      {
-       "index": 23,
-       "name": "Opening Direction",
-       "nick": "▾ Dir",
-       "ghType": "Integer",
-       "access": "item",
-       "optional": false,
-       "dropdown": false,
-       "default": "0",
-       "desc": "Which way a ring opening extends from its ring line: FORWARD, BACKWARD or BOTH - with BOTH the wall sits on both sides of the line and the opening starts one wall thickness away on each side (default FORWARD)",
-       "flow": false,
-       "type": null
-      },
-      {
-       "index": 24,
        "name": "Panel Values",
        "nick": "Panel",
        "ghType": "Object",
@@ -7162,14 +7097,14 @@
      "tier": "core",
      "figure": {
       "w": 1082,
-      "h": 1711,
+      "h": 1376,
       "callW": 340,
       "callH": 63,
-      "lead": 81,
-      "imgX": 421,
-      "imgY": 474,
-      "imgW": 240,
-      "imgH": 762,
+      "lead": 88,
+      "imgX": 428,
+      "imgY": 382,
+      "imgW": 226,
+      "imgH": 612,
       "img": "/assets/img/antlion/components/custom-seat.png",
       "pending": false,
       "ports": [
@@ -7184,9 +7119,9 @@
         "blurb": "The tier sections, passed along the chain",
         "callX": 0,
         "callY": 20,
-        "gripX": 427,
-        "gripY": 495,
-        "d": "M340 51 H354 L415 495 H427"
+        "gripX": 434,
+        "gripY": 403,
+        "d": "M340 51 H354 L422 403 H434"
        },
        {
         "side": "in",
@@ -7199,9 +7134,9 @@
         "blurb": "The axis system from Stand 2D",
         "callX": 0,
         "callY": 87,
-        "gripX": 427,
-        "gripY": 525,
-        "d": "M340 118 H354 L415 525 H427"
+        "gripX": 434,
+        "gripY": 433,
+        "d": "M340 118 H354 L422 433 H434"
        },
        {
         "side": "in",
@@ -7214,9 +7149,9 @@
         "blurb": "The tread rings seats are placed on",
         "callX": 0,
         "callY": 154,
-        "gripX": 427,
-        "gripY": 555,
-        "d": "M340 185 H354 L415 555 H427"
+        "gripX": 434,
+        "gripY": 463,
+        "d": "M340 185 H354 L422 463 H434"
        },
        {
         "side": "in",
@@ -7229,9 +7164,9 @@
         "blurb": "One branch per tier",
         "callX": 0,
         "callY": 221,
-        "gripX": 427,
-        "gripY": 585,
-        "d": "M340 252 H354 L415 585 H427"
+        "gripX": 434,
+        "gripY": 493,
+        "d": "M340 252 H354 L422 493 H434"
        },
        {
         "side": "in",
@@ -7244,9 +7179,9 @@
         "blurb": "One branch per tier",
         "callX": 0,
         "callY": 288,
-        "gripX": 427,
-        "gripY": 615,
-        "d": "M340 319 H354 L415 615 H427"
+        "gripX": 434,
+        "gripY": 523,
+        "d": "M340 319 H354 L422 523 H434"
        },
        {
         "side": "in",
@@ -7259,9 +7194,9 @@
         "blurb": "One branch per tier",
         "callX": 0,
         "callY": 355,
-        "gripX": 427,
-        "gripY": 645,
-        "d": "M340 386 H354 L415 645 H427"
+        "gripX": 434,
+        "gripY": 553,
+        "d": "M340 386 H354 L422 553 H434"
        },
        {
         "side": "in",
@@ -7274,9 +7209,9 @@
         "blurb": "One branch per tier",
         "callX": 0,
         "callY": 422,
-        "gripX": 427,
-        "gripY": 675,
-        "d": "M340 453 H354 L415 675 H427"
+        "gripX": 434,
+        "gripY": 583,
+        "d": "M340 453 H354 L422 583 H434"
        },
        {
         "side": "in",
@@ -7289,9 +7224,9 @@
         "blurb": "Longest run allowed when spectators can leave from both ends",
         "callX": 0,
         "callY": 489,
-        "gripX": 427,
-        "gripY": 705,
-        "d": "M340 520 H354 L415 705 H427"
+        "gripX": 434,
+        "gripY": 613,
+        "d": "M340 520 H354 L422 613 H434"
        },
        {
         "side": "in",
@@ -7304,9 +7239,9 @@
         "blurb": "Shortest run worth keeping",
         "callX": 0,
         "callY": 556,
-        "gripX": 427,
-        "gripY": 735,
-        "d": "M340 587 H354 L415 735 H427"
+        "gripX": 434,
+        "gripY": 643,
+        "d": "M340 587 H354 L422 643 H434"
        },
        {
         "side": "in",
@@ -7319,9 +7254,9 @@
         "blurb": "Where the end aisles go: BOTH, LEFT, RIGHT or NONE",
         "callX": 0,
         "callY": 623,
-        "gripX": 427,
-        "gripY": 765,
-        "d": "M340 654 H354 L415 765 H427"
+        "gripX": 434,
+        "gripY": 673,
+        "d": "M340 654 H354 L422 673 H434"
        },
        {
         "side": "in",
@@ -7334,9 +7269,9 @@
         "blurb": "Width of one seat",
         "callX": 0,
         "callY": 690,
-        "gripX": 427,
-        "gripY": 795,
-        "d": "M340 721 H354 L415 795 H427"
+        "gripX": 434,
+        "gripY": 703,
+        "d": "M340 721 H354 L422 703 H434"
        },
        {
         "side": "in",
@@ -7349,9 +7284,9 @@
         "blurb": "Depth of one seat",
         "callX": 0,
         "callY": 757,
-        "gripX": 427,
-        "gripY": 825,
-        "d": "M340 788 H354 L415 825 H427"
+        "gripX": 434,
+        "gripY": 733,
+        "d": "M340 788 H354 L422 733 H434"
        },
        {
         "side": "in",
@@ -7364,9 +7299,9 @@
         "blurb": "Clear width of each aisle",
         "callX": 0,
         "callY": 824,
-        "gripX": 427,
-        "gripY": 855,
-        "d": "M340 855 H427"
+        "gripX": 434,
+        "gripY": 763,
+        "d": "M340 855 H354 L422 763 H434"
        },
        {
         "side": "in",
@@ -7379,9 +7314,9 @@
         "blurb": "Comfortable rise per aisle step",
         "callX": 0,
         "callY": 891,
-        "gripX": 427,
-        "gripY": 885,
-        "d": "M340 922 H354 L415 885 H427"
+        "gripX": 434,
+        "gripY": 793,
+        "d": "M340 922 H354 L422 793 H434"
        },
        {
         "side": "in",
@@ -7394,9 +7329,9 @@
         "blurb": "Add a mid aisle to runs still too long",
         "callX": 0,
         "callY": 958,
-        "gripX": 427,
-        "gripY": 915,
-        "d": "M340 989 H354 L415 915 H427"
+        "gripX": 434,
+        "gripY": 823,
+        "d": "M340 989 H354 L422 823 H434"
        },
        {
         "side": "in",
@@ -7409,9 +7344,9 @@
         "blurb": "Target share of wheelchair spaces, percent of capacity",
         "callX": 0,
         "callY": 1025,
-        "gripX": 427,
-        "gripY": 945,
-        "d": "M340 1056 H354 L415 945 H427"
+        "gripX": 434,
+        "gripY": 853,
+        "d": "M340 1056 H354 L422 853 H434"
        },
        {
         "side": "in",
@@ -7424,9 +7359,9 @@
         "blurb": "Width of one wheelchair space",
         "callX": 0,
         "callY": 1092,
-        "gripX": 427,
-        "gripY": 975,
-        "d": "M340 1123 H354 L415 975 H427"
+        "gripX": 434,
+        "gripY": 883,
+        "d": "M340 1123 H354 L422 883 H434"
        },
        {
         "side": "in",
@@ -7439,103 +7374,28 @@
         "blurb": "Depth of one wheelchair space",
         "callX": 0,
         "callY": 1159,
-        "gripX": 427,
-        "gripY": 1005,
-        "d": "M340 1190 H354 L415 1005 H427"
+        "gripX": 434,
+        "gripY": 913,
+        "d": "M340 1190 H354 L422 913 H434"
        },
        {
         "side": "in",
         "index": 18,
-        "name": "Custom Ring Lines",
-        "nick": "Ring Lines",
-        "ghType": "Curve",
-        "access": "tree",
+        "name": "Band Opening Mode",
+        "nick": "▾ Band",
+        "ghType": "Integer",
+        "access": "list",
         "flow": false,
-        "blurb": "One branch per tier",
+        "blurb": "Which end of each band bent along the rings gets its opening: BOTH, LEFT or RIGHT",
         "callX": 0,
         "callY": 1226,
-        "gripX": 427,
-        "gripY": 1035,
-        "d": "M340 1257 H354 L415 1035 H427"
+        "gripX": 434,
+        "gripY": 943,
+        "d": "M340 1257 H354 L422 943 H434"
        },
        {
         "side": "in",
         "index": 19,
-        "name": "Wall Thickness",
-        "nick": "Wall T",
-        "ghType": "Number",
-        "access": "item",
-        "flow": false,
-        "blurb": "Thickness of the vomitory wall between a ring line and its opening, measured along the top ring",
-        "callX": 0,
-        "callY": 1293,
-        "gripX": 427,
-        "gripY": 1065,
-        "d": "M340 1324 H354 L415 1065 H427"
-       },
-       {
-        "side": "in",
-        "index": 20,
-        "name": "Opening Height",
-        "nick": "Height",
-        "ghType": "Number",
-        "access": "item",
-        "flow": false,
-        "blurb": "How far down from the top ring a ring opening empties, as a height difference",
-        "callX": 0,
-        "callY": 1360,
-        "gripX": 427,
-        "gripY": 1095,
-        "d": "M340 1391 H354 L415 1095 H427"
-       },
-       {
-        "side": "in",
-        "index": 21,
-        "name": "Forward Range",
-        "nick": "Fwd Range",
-        "ghType": "Number",
-        "access": "item",
-        "flow": false,
-        "blurb": "Length of a ring opening along the top ring towards higher axis numbers",
-        "callX": 0,
-        "callY": 1427,
-        "gripX": 427,
-        "gripY": 1125,
-        "d": "M340 1458 H354 L415 1125 H427"
-       },
-       {
-        "side": "in",
-        "index": 22,
-        "name": "Backward Range",
-        "nick": "Back Range",
-        "ghType": "Number",
-        "access": "item",
-        "flow": false,
-        "blurb": "Length of a ring opening along the top ring towards lower axis numbers",
-        "callX": 0,
-        "callY": 1494,
-        "gripX": 427,
-        "gripY": 1155,
-        "d": "M340 1525 H354 L415 1155 H427"
-       },
-       {
-        "side": "in",
-        "index": 23,
-        "name": "Opening Direction",
-        "nick": "▾ Dir",
-        "ghType": "Integer",
-        "access": "item",
-        "flow": false,
-        "blurb": "Which way a ring opening extends from its ring line: FORWARD, BACKWARD or BOTH",
-        "callX": 0,
-        "callY": 1561,
-        "gripX": 427,
-        "gripY": 1185,
-        "d": "M340 1592 H354 L415 1185 H427"
-       },
-       {
-        "side": "in",
-        "index": 24,
         "name": "Panel Values",
         "nick": "Panel",
         "ghType": "Object",
@@ -7543,10 +7403,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 1628,
-        "gripX": 427,
-        "gripY": 1215,
-        "d": "M340 1659 H354 L415 1215 H427"
+        "callY": 1293,
+        "gripX": 434,
+        "gripY": 973,
+        "d": "M340 1324 H354 L422 973 H434"
        },
        {
         "side": "out",
@@ -7558,10 +7418,10 @@
         "flow": true,
         "blurb": "The whole 2D layout as one object",
         "callX": 742,
-        "callY": 488,
-        "gripX": 655,
-        "gripY": 520,
-        "d": "M742 519 H728 L667 520 H655"
+        "callY": 390,
+        "gripX": 648,
+        "gripY": 421,
+        "d": "M742 421 H648"
        },
        {
         "side": "out",
@@ -7573,10 +7433,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 742,
-        "callY": 572,
-        "gripX": 655,
-        "gripY": 604,
-        "d": "M742 603 H728 L667 604 H655"
+        "callY": 456,
+        "gripX": 648,
+        "gripY": 487,
+        "d": "M742 487 H648"
        },
        {
         "side": "out",
@@ -7588,10 +7448,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 742,
-        "callY": 656,
-        "gripX": 655,
-        "gripY": 687,
-        "d": "M742 687 H655"
+        "callY": 524,
+        "gripX": 648,
+        "gripY": 553,
+        "d": "M742 555 H728 L660 553 H648"
        },
        {
         "side": "out",
@@ -7603,10 +7463,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 742,
-        "callY": 740,
-        "gripX": 655,
-        "gripY": 771,
-        "d": "M742 771 H655"
+        "callY": 590,
+        "gripX": 648,
+        "gripY": 620,
+        "d": "M742 621 H728 L660 620 H648"
        },
        {
         "side": "out",
@@ -7618,10 +7478,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 742,
-        "callY": 822,
-        "gripX": 655,
-        "gripY": 854,
-        "d": "M742 853 H728 L667 854 H655"
+        "callY": 658,
+        "gripX": 648,
+        "gripY": 686,
+        "d": "M742 689 H728 L660 686 H648"
        },
        {
         "side": "out",
@@ -7633,10 +7493,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 742,
-        "callY": 906,
-        "gripX": 655,
-        "gripY": 938,
-        "d": "M742 937 H728 L667 938 H655"
+        "callY": 724,
+        "gripX": 648,
+        "gripY": 754,
+        "d": "M742 755 H728 L660 754 H648"
        },
        {
         "side": "out",
@@ -7648,10 +7508,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 742,
-        "callY": 988,
-        "gripX": 655,
-        "gripY": 1020,
-        "d": "M742 1019 H728 L667 1020 H655"
+        "callY": 792,
+        "gripX": 648,
+        "gripY": 820,
+        "d": "M742 823 H728 L660 820 H648"
        },
        {
         "side": "out",
@@ -7663,10 +7523,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 742,
-        "callY": 1072,
-        "gripX": 655,
-        "gripY": 1104,
-        "d": "M742 1103 H728 L667 1104 H655"
+        "callY": 858,
+        "gripX": 648,
+        "gripY": 888,
+        "d": "M742 889 H728 L660 888 H648"
        },
        {
         "side": "out",
@@ -7678,10 +7538,10 @@
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 742,
-        "callY": 1156,
-        "gripX": 655,
-        "gripY": 1188,
-        "d": "M742 1187 H728 L667 1188 H655"
+        "callY": 926,
+        "gripX": 648,
+        "gripY": 954,
+        "d": "M742 957 H728 L660 954 H648"
        }
       ]
      },
