@@ -4802,7 +4802,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-09-22",
+     "checked": "2026-09-26",
      "summary": "Sweeps each tier section around the axis planes and flattens it into tread rings in plan. Everything downstream — seats, vomitories, cuts — works on these rings.",
      "inputs": [
       {
@@ -5049,7 +5049,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-09-22",
+     "checked": "2026-09-26",
      "summary": "Places the vomitories — the tunnels spectators enter the bowl through — in the tread rings, and sets how each one gets down to the concourse: flat, stepped, stair or ramp.",
      "inputs": [
       {
@@ -5828,7 +5828,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-09-22",
+     "checked": "2026-09-26",
      "summary": "Fills the tread rings with seats, breaking each row at the vomitories and aisles, and flags rows that break the egress limits. Wheelchair spaces are placed here too.",
      "inputs": [
       {
@@ -6693,7 +6693,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-09-22",
+     "checked": "2026-09-26",
      "summary": "Same seat placement as Seat, but the vomitories, aisles and even the seats come from curves you draw instead of being generated. Use it where the automatic layout cannot express what you want.",
      "inputs": [
       {
@@ -6744,7 +6744,7 @@
        "optional": true,
        "dropdown": false,
        "default": null,
-       "desc": "One branch per tier. Draw each rect over the treads the opening spans. A U-shaped outline (two arms reaching the top ring, joined by a bar) is split into arm, bar and arm for you",
+       "desc": "One branch per tier. Draw each opening over the treads it spans: a closed rect, a band bent along the rings (4 corners, plus 2 per bend - split into rects, doors at the band's ends), or a U-shaped outline (arms at or inside the bar's ends - split into arm, bar and arm). Two rects may share a segment only on different rows",
        "flow": false,
        "type": null
       },
@@ -7698,8 +7698,8 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-09-22",
-     "summary": "Cuts the bowl to shape — keep or remove a whole span between two axis numbers, or everything on one side of a curve you draw. Seats, aisles, vomitories and rings are all filtered together.",
+     "checked": "2026-09-26",
+     "summary": "Cuts the bowl to shape — keep or remove a whole span between two axis numbers, or everything on one side of each curve you draw. Seats, aisles, vomitories and rings are all filtered together.",
      "inputs": [
       {
        "index": 0,
@@ -7719,11 +7719,11 @@
        "name": "Cut Curve",
        "nick": "Curve",
        "ghType": "Curve",
-       "access": "item",
+       "access": "list",
        "optional": true,
        "dropdown": false,
        "default": null,
-       "desc": "Cut along this curve, drawn in plan. Past its endpoints nothing changes",
+       "desc": "Cut along these curves, drawn in plan - as many as you like. Each one cuts what the one before it left, the same as chaining Cuts. Past a curve's endpoints nothing changes",
        "flow": false,
        "type": null
       },
@@ -7771,11 +7771,11 @@
        "name": "Keep Side",
        "nick": "Keep Sd",
        "ghType": "Boolean",
-       "access": "item",
+       "access": "list",
        "optional": false,
        "dropdown": false,
        "default": "true",
-       "desc": "Which side of your curve survives, looking along its direction: on = left (default true). If the wrong side survived, toggle this",
+       "desc": "Which side of each curve survives, looking along its direction: on = left. Give as many as the curves, item for item - the last one repeats (default true). If the wrong side survived, toggle that item",
        "flow": false,
        "type": null
       },
@@ -7853,7 +7853,7 @@
        "optional": false,
        "dropdown": true,
        "default": "EXTEND",
-       "desc": "How an offset end runs out to its line: FOLLOW keeps the ring's own path, EXTEND runs the tread straight on (default EXTEND)",
+       "desc": "How a + offset end runs out to its line: FOLLOW cuts on the offset line and keeps the seats there as drawn, EXTEND cuts on the axis and runs each tread straight on to the line, re-laying seats along it. A - offset is cut on its line either way. Same choices as Opening Cut (default EXTEND)",
        "flow": false,
        "type": null
       },
@@ -8038,9 +8038,9 @@
         "name": "Cut Curve",
         "nick": "Curve",
         "ghType": "Curve",
-        "access": "item",
+        "access": "list",
         "flow": false,
-        "blurb": "Cut along this curve, drawn in plan",
+        "blurb": "Cut along these curves, drawn in plan",
         "callX": 0,
         "callY": 87,
         "gripX": 434,
@@ -8098,9 +8098,9 @@
         "name": "Keep Side",
         "nick": "Keep Sd",
         "ghType": "Boolean",
-        "access": "item",
+        "access": "list",
         "flow": false,
-        "blurb": "Which side of your curve survives, looking along its direction: on = left (default true)",
+        "blurb": "Which side of each curve survives, looking along its direction: on = left",
         "callX": 0,
         "callY": 355,
         "gripX": 434,
@@ -8190,7 +8190,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "How an offset end runs out to its line: FOLLOW keeps the ring's own path, EXTEND runs the tread straight on",
+        "blurb": "How a + offset end runs out to its line: FOLLOW cuts on the offset line and keeps the seats there as drawn…",
         "callX": 0,
         "callY": 757,
         "gripX": 434,
@@ -8350,7 +8350,7 @@
       ]
      },
      "indexHead": "Cuts the bowl to shape — keep or remove a whole span between two axis numbers, or everything on one...",
-     "indexMore": "side of a curve you draw. Seats, aisles, vomitories and rings are all filtered together."
+     "indexMore": "side of each curve you draw. Seats, aisles, vomitories and rings are all filtered together."
     },
     {
      "id": "opening-cut",
@@ -8362,7 +8362,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-09-22",
+     "checked": "2026-09-26",
      "summary": "Punches local entrance openings through the stand — between two axis numbers, or under a closed curve you draw. Unlike Cut it removes only what the opening covers, and it records the new edges as railing lines.",
      "inputs": [
       {
@@ -9082,7 +9082,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-09-13",
+     "checked": "2026-09-26",
      "summary": "Sweeps the closed section profile around the axis planes into the solid tier bodies. This is the raw stand — cuts and openings are applied later by Stand 3D Plus.",
      "inputs": [
       {
@@ -9439,7 +9439,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-09-13",
+     "checked": "2026-09-26",
      "summary": "Builds the vomitories as solids — the side and end walls, the portal opening punched through, and the stair or ramp down to the concourse.",
      "inputs": [
       {
@@ -9821,7 +9821,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-09-13",
+     "checked": "2026-09-26",
      "summary": "Builds the 3D bowl: cuts the stand solids with everything the 2D chain decided — shape cuts, entrance openings, vomitories — and lifts the seats and aisle steps to their real tread heights.",
      "inputs": [
       {
@@ -10152,8 +10152,8 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-09-13",
-     "summary": "Builds the railings and parapets as solids — the front barrier, the rear parapet, the edges left by a cut, and the walls around entrance openings.",
+     "checked": "2026-09-26",
+     "summary": "Builds the railings and parapets as solids — the front barrier, the rear parapet, the edges left by a cut, and the walls around entrance openings. In a bowl assembled from several stands, a per-tier list shorter than the assembled tier count is read per stand: three values set tiers 0, 1 and 2 of every stand. Give one per assembled tier to set each on its own.",
      "inputs": [
       {
        "index": 0,
@@ -10714,7 +10714,7 @@
       ]
      },
      "indexHead": "Builds the railings and parapets as solids — the front barrier, the rear parapet, the edges left by a cut,...",
-     "indexMore": "and the walls around entrance openings."
+     "indexMore": "and the walls around entrance openings. In a bowl assembled from several stands, a per-tier list shorter than the assembled tier count is read per stand: three values set tiers 0, 1 and 2 of every stand. Give one per assembled tier to set each on its own."
     },
     {
      "id": "assemble-bowl",
@@ -10726,7 +10726,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-09-13",
+     "checked": "2026-09-26",
      "summary": "Assembles the final bowl plan before Stand 3D Plus: merges parallel seat layouts (tiers renumbered), pulls exposed cut ends past their axis by the offset, and previews the finished plan.",
      "inputs": [
       {
@@ -11165,7 +11165,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-09-13",
+     "checked": "2026-09-26",
      "summary": "Puts a chair and a seated spectator target on every seat of the built bowl. Wire the Stand 3D Plus BRD output. The ports carry one merged preview mesh per tier so twenty thousand seats stay light; bake the component itself (right-click, Bake) to plant real block instances - one definition, one instance per seat - so the document stays light too. The spectator is a flat target whose eye mark sits exactly on the eye point the C-value analysis measures from.",
      "inputs": [
       {
@@ -11173,11 +11173,11 @@
        "name": "Build Result",
        "nick": "BRD",
        "ghType": "Object",
-       "access": "item",
+       "access": "list",
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "The built bowl, straight from Stand 3D Plus. Carries the 3D seat planes and tiers",
+       "desc": "The built bowl, straight from Stand 3D Plus. Carries the 3D seat planes and tiers. Merge several into one branch and they are seated as one bowl",
        "flow": true,
        "type": "BRD"
       },
@@ -11404,7 +11404,7 @@
         "name": "Build Result",
         "nick": "BRD",
         "ghType": "Object",
-        "access": "item",
+        "access": "list",
         "flow": true,
         "blurb": "The built bowl, straight from Stand 3D Plus",
         "callX": 0,
@@ -11652,7 +11652,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-22",
+     "checked": "2026-09-26",
      "summary": "Pick an Antlion component and set every value it takes, with sensible defaults shown. For when you are not sure what to wire in.",
      "inputs": [],
      "outputs": [
@@ -11715,7 +11715,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-22",
+     "checked": "2026-09-26",
      "summary": "Checks the sightline over the row in front, row by row, and reports the C-value. Draws the sightlines and dimensions so you can see where the view fails.",
      "inputs": [
       {
@@ -12234,19 +12234,19 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-22",
-     "summary": "Paints every seat with its own C-value, measured in 3D from that seat's eye to its own focus. Wire the Stand 3D Plus BRD output; add Rail 3D RLD to see where a railing, not a head, is the obstruction.",
+     "checked": "2026-09-26",
+     "summary": "Paints every seat with its own C-value, measured in 3D from that seat's eye to its own focus. Wire the Stand 3D Plus BRD output. A railing or vomitory wall in front of a seat counts as the obstruction too; add Rail 3D RLD for the railings' exact built tops.",
      "inputs": [
       {
        "index": 0,
        "name": "Build Result",
        "nick": "BRD",
        "ghType": "Object",
-       "access": "item",
+       "access": "list",
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "The built bowl, straight from Stand 3D Plus. Carries the 3D seats and tread heights",
+       "desc": "The built bowl, straight from Stand 3D Plus - or Rail 3D's Rail Result, which carries it. Merge several into one branch and they are checked as one bowl",
        "flow": true,
        "type": "BRD"
       },
@@ -12255,11 +12255,11 @@
        "name": "Rail Result",
        "nick": "RLD",
        "ghType": "Object",
-       "access": "item",
+       "access": "list",
        "optional": true,
        "dropdown": false,
        "default": null,
-       "desc": "Railings from Rail 3D. Wired, a railing in front of a seat counts as the obstruction",
+       "desc": "Railings from Rail 3D - their exact built tops. Unwired, railings are rebuilt from the cut and opening edges. Merge several to match the bowls above",
        "flow": true,
        "type": "RLD"
       },
@@ -12363,7 +12363,7 @@
        "optional": false,
        "dropdown": false,
        "default": "true",
-       "desc": "Count railings from Rail 3D as sightline obstructions. Off = ignore every railing, as if none were built (default on)",
+       "desc": "Count railings and vomitory walls as sightline obstructions - the walls come with the build result, so they count without Rail Result too. Off = ignore them all, as if none were built (default on)",
        "flow": false,
        "type": null
       },
@@ -12554,7 +12554,7 @@
         "name": "Build Result",
         "nick": "BRD",
         "ghType": "Object",
-        "access": "item",
+        "access": "list",
         "flow": true,
         "blurb": "The built bowl, straight from Stand 3D Plus",
         "callX": 0,
@@ -12569,7 +12569,7 @@
         "name": "Rail Result",
         "nick": "RLD",
         "ghType": "Object",
-        "access": "item",
+        "access": "list",
         "flow": true,
         "blurb": "Railings from Rail 3D",
         "callX": 0,
@@ -12691,7 +12691,7 @@
         "ghType": "Boolean",
         "access": "item",
         "flow": false,
-        "blurb": "Count railings from Rail 3D as sightline obstructions",
+        "blurb": "Count railings and vomitory walls as sightline obstructions",
         "callX": 0,
         "callY": 623,
         "gripX": 434,
@@ -12881,7 +12881,7 @@
       ]
      },
      "indexHead": "Paints every seat with its own C-value, measured in 3D from that seat's eye to its own focus. Wire the...",
-     "indexMore": "Stand 3D Plus BRD output; add Rail 3D RLD to see where a railing, not a head, is the obstruction."
+     "indexMore": "Stand 3D Plus BRD output. A railing or vomitory wall in front of a seat counts as the obstruction too; add Rail 3D RLD for the railings' exact built tops."
     },
     {
      "id": "c-value-tread",
@@ -12892,7 +12892,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-22",
+     "checked": "2026-09-26",
      "summary": "Paints each tread band with the C-value of one representative section taken between two axes. One value per axis gap, so it is light enough to leave on while you tune the section. C-value Seat measures every seat instead - the two differ most on curves, where one section cannot stand for the whole band.",
      "inputs": [
       {
@@ -12900,11 +12900,11 @@
        "name": "Build Result",
        "nick": "BRD",
        "ghType": "Object",
-       "access": "item",
+       "access": "list",
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "The built bowl from Stand 3D Plus - or Rail 3D's Rail Result, which carries it. Carries the tread rings and heights",
+       "desc": "The built bowl from Stand 3D Plus - or Rail 3D's Rail Result, which carries it. Merge several into one branch and they are checked as one bowl",
        "flow": true,
        "type": "BRD"
       },
@@ -12913,11 +12913,11 @@
        "name": "Rail Result",
        "nick": "RLD",
        "ghType": "Object",
-       "access": "item",
+       "access": "list",
        "optional": true,
        "dropdown": false,
        "default": null,
-       "desc": "Railings from Rail 3D. Wired, a railing in front of a row counts as the obstruction - including the front row",
+       "desc": "Railings from Rail 3D - their exact built tops, the front row's included. Unwired, railings are rebuilt from the cut and opening edges. Merge several to match the bowls above",
        "flow": true,
        "type": "RLD"
       },
@@ -13008,7 +13008,7 @@
        "optional": false,
        "dropdown": false,
        "default": "true",
-       "desc": "Count railings from Rail 3D as sightline obstructions. Off = ignore every railing, as if none were built (default on)",
+       "desc": "Count railings and vomitory walls as sightline obstructions - the walls come with the build result, so they count without Rail Result too. Off = ignore them all, as if none were built (default on)",
        "flow": false,
        "type": null
       },
@@ -13114,7 +13114,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One branch per tier. OK / POOR / BLOCKED / FRONT / NA",
+       "desc": "One branch per tier. OK / POOR / BLOCKED / FRONT / EMPTY / NA - EMPTY is a row cell with no seat in it, so nothing is measured there",
        "flow": false,
        "type": null
       },
@@ -13239,7 +13239,7 @@
         "name": "Build Result",
         "nick": "BRD",
         "ghType": "Object",
-        "access": "item",
+        "access": "list",
         "flow": true,
         "blurb": "The built bowl from Stand 3D Plus",
         "callX": 0,
@@ -13254,7 +13254,7 @@
         "name": "Rail Result",
         "nick": "RLD",
         "ghType": "Object",
-        "access": "item",
+        "access": "list",
         "flow": true,
         "blurb": "Railings from Rail 3D",
         "callX": 0,
@@ -13361,7 +13361,7 @@
         "ghType": "Boolean",
         "access": "item",
         "flow": false,
-        "blurb": "Count railings from Rail 3D as sightline obstructions",
+        "blurb": "Count railings and vomitory walls as sightline obstructions",
         "callX": 0,
         "callY": 802,
         "gripX": 434,
@@ -13607,7 +13607,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-22",
+     "checked": "2026-09-26",
      "summary": "Builds an explicit colour legend for the C-value maps. Set the first number, the last number and the band size - the bands become <min, min to min+step, ... , >=max, each with its own colour. Leave colors unwired for the built-in ramp, or supply your own (interpolated when fewer than the band count). Wire scheme into C-value Seat or C-value Tread; the map is then coloured by these bands and C-value Map prints this legend on every sheet. Detail Mode on lists the two view-cut states (a seat row or a railing hiding the focal point, C<0) in their own colours; off folds them into the lowest band. It also carries the not-graded states - OPEN, FRONT, EMPTY and NA - as a fixed grey series, so every grey patch on the map is named on the sheet; the report output explains why each state appears and how to clear it. The component itself shows the legend on the canvas.",
      "inputs": [
       {
@@ -13898,7 +13898,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-22",
+     "checked": "2026-09-26",
      "summary": "Lays every axis section out on its own sheet so you can flip through them. One scale for the whole set, chosen so the largest section fits, and every section sits at the same place on its sheet.",
      "inputs": [
       {
@@ -13949,7 +13949,7 @@
        "optional": true,
        "dropdown": false,
        "default": null,
-       "desc": "Draw only these axis numbers - as many as you need. A sheet is named after the two axes it sits between, so sheet A8-9 is picked by typing 8 (the number it starts at). Clear it to lay out the whole set",
+       "desc": "Draw only these axis numbers - as many as you need. A sheet is named after the two axes it sits between, so sheet A8-9 is picked by typing 8 (the number it starts at); stands facing several ways get S1, S2 and so on in front, and 8 picks A8-9 on each. Clear it to lay out the whole set",
        "flow": false,
        "type": null
       },
@@ -14497,7 +14497,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-22",
+     "checked": "2026-09-26",
      "summary": "Holds the sheet layout settings in one place - where the sheets start, the paper size, how many sheets per row, the scale rounding, margins and the text style. Wire the SHD output into C-value Section Check, C-value Map and Seat Map so every sheet component lays out the same way from a single setup. When SHD is wired, the sheet inputs on those components are ignored.",
      "inputs": [
       {
@@ -14733,7 +14733,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-22",
+     "checked": "2026-09-26",
      "summary": "A stack of sliders in one component — each row Dk drives output Rk. Drag the bottom edge to add or remove rows; right-click to set ranges. Saves wiring a dozen separate sliders into per-tier inputs.",
      "inputs": [],
      "outputs": [
@@ -14796,7 +14796,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-22",
+     "checked": "2026-09-26",
      "summary": "A stack of toggles in one component — each row Dk drives output Rk. Drag the bottom edge to add or remove rows. Saves wiring a dozen separate toggles into per-tier inputs.",
      "inputs": [],
      "outputs": [
@@ -14859,8 +14859,8 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-22",
-     "summary": "Lays the C-value map out flat - one sheet per tier, named TIER 0, TIER 1 and so on, with the seat layout drawing, the coloured map and the tier's minimum, average and pass rate written top-left. Wire the CMD output of C-value Seat for a seat map, or of C-value Tread for a tread map - one at a time.",
+     "checked": "2026-09-26",
+     "summary": "Lays the C-value map out flat - one sheet per tier, named TIER 0, TIER 1 and so on, with the seat layout drawing, the coloured map and the tier's minimum, average and pass rate written top-left. In a bowl merged from several stands, tiers with the same tier label share one sheet named after it - by default that is the same tier number in each stand, or give Table Section tier_label values such as LOW. Wire the CMD output of C-value Seat for a seat map, or of C-value Tread for a tread map - one at a time.",
      "inputs": [
       {
        "index": 0,
@@ -14912,7 +14912,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One sheet rectangle per tier, sized so the drawing inside stays full size",
+       "desc": "One sheet rectangle per tier - merged stands' tiers with the same tier label share one - sized so the drawing inside stays full size",
        "flow": false,
        "type": null
       },
@@ -14964,7 +14964,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "Sheet titles as real Rhino text - tier name, then minimum, average and pass rate",
+       "desc": "Sheet titles as real Rhino text - the sheet's name, then minimum, average and pass rate",
        "flow": false,
        "type": null
       },
@@ -14977,7 +14977,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "The tier name on each sheet, parallel to Sheets",
+       "desc": "The name on each sheet - TIER n, or a tier label that merged stands share - parallel to Sheets",
        "flow": false,
        "type": null
       },
@@ -15081,7 +15081,7 @@
         "ghType": "Curve",
         "access": "list",
         "flow": false,
-        "blurb": "One sheet rectangle per tier, sized so the drawing inside stays full size",
+        "blurb": "One sheet rectangle per tier",
         "callX": 708,
         "callY": 20,
         "gripX": 614,
@@ -15156,7 +15156,7 @@
         "ghType": "Text",
         "access": "list",
         "flow": false,
-        "blurb": "The tier name on each sheet, parallel to Sheets",
+        "blurb": "The name on each sheet",
         "callX": 708,
         "callY": 355,
         "gripX": 614,
@@ -15196,7 +15196,7 @@
       ]
      },
      "indexHead": "Lays the C-value map out flat - one sheet per tier, named TIER 0, TIER 1 and so on, with...",
-     "indexMore": "the seat layout drawing, the coloured map and the tier's minimum, average and pass rate written top-left. Wire the CMD output of C-value Seat for a seat map, or of C-value Tread for a tread map - one at a time."
+     "indexMore": "the seat layout drawing, the coloured map and the tier's minimum, average and pass rate written top-left. In a bowl merged from several stands, tiers with the same tier label share one sheet named after it - by default that is the same tier number in each stand, or give Table Section tier_label values such as LOW. Wire the CMD output of C-value Seat for a seat map, or of C-value Tread for a tread map - one at a time."
     },
     {
      "id": "data-gate",
@@ -15207,7 +15207,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-22",
+     "checked": "2026-09-26",
      "summary": "Holds the wire shut. Whatever changes upstream, nothing downstream recomputes until you press PASS - then the data at D goes through R once and stays there. Put it between the 2D bowl chain and the heavy 3D build or analysis components: edit the bowl lag-free, press to update. The Gate Switch component opens and closes every gate on the canvas at once. Reopening a file behaves like the moment it was saved: a gate that was holding data picks it up again on load (one full compute, like opening any normal file), and a gate that was empty stays shut.",
      "inputs": [
       {
@@ -15299,7 +15299,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-22",
+     "checked": "2026-09-26",
      "summary": "One switch for every Data Gate on the canvas - no wires needed. LIVE holds every gate open, so data flows as if PASS were held down and the whole chain stays current. HOLD closes them all again; each gate keeps the last data that went through. Keep a single switch per document.",
      "inputs": [],
      "outputs": [],
@@ -15332,19 +15332,19 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-22",
-     "summary": "Groups the seats into zones - the pieces left when the aisles, vomitories and cuts are taken out of the tier - and gives every seat a readable address like \"A0 05 S 25\": prefix and tier number, zone number counted along the axis direction, then the seat number running from the lowest tread up. Wheelchair units belong to their zone too, numbered \"W 1\", \"W 2\". Outputs the SMD bundle for Seat View and Seat 3D, a zone map laid out one sheet per tier, and flat tables ready for a spreadsheet. Wire the BRD output of Stand 3D Plus; wire SHD from Sheet Setup to place the sheets",
+     "checked": "2026-09-26",
+     "summary": "Groups the seats into zones - the pieces left when the aisles, vomitories and cuts are taken out of the tier - and gives every seat a readable address like \"A0 05 S 25\": prefix and tier number, zone number counted around the bowl in the axis direction, then the seat number running from the lowest tread up. In a bowl merged from several stands, tiers with the same tier label - by default the same tier number in each stand - count as one tier: one number, one run of zones around the bowl, one sheet. Wheelchair units belong to their zone too, numbered \"W 1\", \"W 2\". Outputs the SMD bundle for Seat View and Seat 3D, a zone map laid out one sheet per tier, and flat tables ready for a spreadsheet. Wire the BRD output of Stand 3D Plus; wire SHD from Sheet Setup to place the sheets",
      "inputs": [
       {
        "index": 0,
        "name": "Build Result",
        "nick": "BRD",
        "ghType": "Object",
-       "access": "item",
+       "access": "list",
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "The build result from Stand 3D Plus - the seats after every cut, with tiers and rows",
+       "desc": "The build result from Stand 3D Plus - the seats after every cut, with tiers and rows. Merge several into one branch and they are numbered as one bowl",
        "flow": true,
        "type": "BRD"
       },
@@ -15411,7 +15411,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "One sheet rectangle per tier, sized so the drawing inside stays full size",
+       "desc": "One sheet rectangle per tier - merged stands' tiers with the same tier label share one - sized so the drawing inside stays full size",
        "flow": false,
        "type": null
       },
@@ -15476,7 +15476,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "The tier name on each sheet, parallel to Sheets",
+       "desc": "The name on each sheet - TIER n, or a tier label that merged stands share - parallel to Sheets",
        "flow": false,
        "type": null
       },
@@ -15561,7 +15561,7 @@
         "name": "Build Result",
         "nick": "BRD",
         "ghType": "Object",
-        "access": "item",
+        "access": "list",
         "flow": true,
         "blurb": "The build result from Stand 3D Plus",
         "callX": 0,
@@ -15638,7 +15638,7 @@
         "ghType": "Curve",
         "access": "list",
         "flow": false,
-        "blurb": "One sheet rectangle per tier, sized so the drawing inside stays full size",
+        "blurb": "One sheet rectangle per tier",
         "callX": 711,
         "callY": 87,
         "gripX": 617,
@@ -15713,7 +15713,7 @@
         "ghType": "Text",
         "access": "list",
         "flow": false,
-        "blurb": "The tier name on each sheet, parallel to Sheets",
+        "blurb": "The name on each sheet",
         "callX": 711,
         "callY": 422,
         "gripX": 617,
@@ -15783,7 +15783,7 @@
       ]
      },
      "indexHead": "Groups the seats into zones - the pieces left when the aisles, vomitories and cuts are taken out of the...",
-     "indexMore": "tier - and gives every seat a readable address like \"A0 05 S 25\": prefix and tier number, zone number counted along the axis direction, then the seat number running from the lowest tread up. Wheelchair units belong to their zone too, numbered \"W 1\", \"W 2\". Outputs the SMD bundle for Seat View and Seat 3D, a zone map laid out one sheet per tier, and flat tables ready for a spreadsheet. Wire the BRD output of Stand 3D Plus; wire SHD from Sheet Setup to place the sheets"
+     "indexMore": "tier - and gives every seat a readable address like \"A0 05 S 25\": prefix and tier number, zone number counted around the bowl in the axis direction, then the seat number running from the lowest tread up. In a bowl merged from several stands, tiers with the same tier label - by default the same tier number in each stand - count as one tier: one number, one run of zones around the bowl, one sheet. Wheelchair units belong to their zone too, numbered \"W 1\", \"W 2\". Outputs the SMD bundle for Seat View and Seat 3D, a zone map laid out one sheet per tier, and flat tables ready for a spreadsheet. Wire the BRD output of Stand 3D Plus; wire SHD from Sheet Setup to place the sheets"
     },
     {
      "id": "license",
@@ -15794,7 +15794,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-22",
+     "checked": "2026-09-26",
      "summary": "Register your Antlion license key. Enter the key once — every definition on this computer is unlocked.",
      "inputs": [
       {
@@ -15942,7 +15942,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-22",
+     "checked": "2026-09-26",
      "summary": "Looks through a spectator's eyes. Wire the Seat Map SMD and pick a seat by tier, zone and seat number - or type its address like \"A0 05 S 25\" - press apply, and the perspective viewport jumps to that seat's analysis eye point looking at its own focal point - the same eye and focus the C-value map measures. Turn live on and the yaw and pitch sliders let you look around from the fixed eye point, so you can judge a vomitory rail or a cut-edge railing exactly as the seated spectator would see it.",
      "inputs": [
       {
@@ -15967,7 +15967,7 @@
        "optional": false,
        "dropdown": false,
        "default": "0",
-       "desc": "Which tier the seat is on, 0 = lowest (default 0)",
+       "desc": "Which tier the seat is on, 0 = lowest - numbered the way Seat Map numbers them, so merged stands' tiers with the same tier label are one tier (default 0)",
        "flow": false,
        "type": null
       },
@@ -16400,7 +16400,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-22",
+     "checked": "2026-09-26",
      "summary": "Tags every axis with its number — a guide line running out from each axis point into a circle holding the axis name (A0, A1, ...). The numbers are the same ones Cut and Opening Cut expect in axis_from / opening_from, so you can read them here and leave those heavy previews off.",
      "inputs": [
       {
@@ -16721,7 +16721,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-22",
+     "checked": "2026-09-26",
      "summary": "Draws the optimum and maximum viewing distance circles for a sport and counts how many seats fall outside. Reference only — it never removes a seat; wire limit_curves into Cut if you want it enforced.",
      "inputs": [
       {
@@ -18673,7 +18673,9 @@
     }
    },
    "notes": {
-    "cut": "A seat, aisle cell or vomitory goes only when it crosses into the side being removed - one that merely touches the cut line stays. So a cut line drawn on top of a tread ring or an axis line keeps the seats that hang on that line. A cut line drawn exactly on an axis line also leaves a narrow empty strip beside it: seats are laid out between axis lines, the leftover width gathers at the axis, and the seat that straddles the line goes with the cut. End Aisle clears seats and nothing else; on a curve that runs along a row it empties that whole row. On a closed start line the axis numbers run counterclockwise whichever way the line was drawn - read them off View Axis before filling in Axis From and Axis To.",
+    "cut": "A seat, aisle cell or vomitory goes only when it crosses into the side being removed - one that merely touches the cut line stays. So a cut line drawn on top of a tread ring or an axis line keeps the seats that hang on that line. A cut line drawn exactly on an axis line also leaves a narrow empty strip beside it: seats are laid out between axis lines, the leftover width gathers at the axis, and the seat that straddles the line goes with the cut. End Aisle clears seats and nothing else; on a curve that runs along a row it empties that whole row. On a closed start line the axis numbers run counterclockwise whichever way the line was drawn - read them off View Axis before filling in Axis From and Axis To. With Cut End Mode EXTEND, a row that runs through a vomitory where the cut is made stays open to the new end face: no seats are laid in its extension.",
+    "custom-seat": "A tier given all three of vomitories, aisle cells and seats is taken as complete, and Custom Seat adds nothing of its own there - no automatic aisle beside a vomitory and no aisle carried up to the top row - so every aisle you want has to be drawn. Aisle cells drawn inside a vomitory passage or its entry band are removed, with an orange warning that gives the row and position. A tier missing any of the three is filled in as before: the component adds the aisles and seats it needs. Wheelchair spaces are optional either way.",
+    "table-section": "Each tier's start point comes from the workbook's 12_INPUT_TIER page as start_mode, start_h and start_v. PREV_TIER, the default above tier 0, measures from the outer end of the lower tier's last tread - the edge away from the field - at that tread's top surface, not from its nosing or a railing top. The upper tier's first tread front edge then sits start_h outward (negative when it overhangs the tier below) and start_v up, so start_v alone sets the height between tiers and the lower tier's last riser height is not used. START_LINE, the default for tier 0, measures from the start line's anchor point - 0, 0 puts the first tread front edge on the start line - and FOCAL measures from the focal point. Section Plus then moves the whole section outward by tier 0's solid_thickness, which keeps the tiers where they are relative to each other. To take the values off a drawing: start_v is the top of the upper tier's first tread minus the top of the lower tier's last tread, and start_h is the horizontal distance from the lower tier's last tread outer end to the upper tier's first tread front edge, negative toward the field.",
     "sheet-setup": "One Sheet Setup can feed C-value Map, C-value Section Check and Seat Map, but each of them works out its own scale: the most detailed one its drawing fits at on the sheet, rounded up to a multiple of Scale Step. Enter the scale you want as Scale Step - 800 for 1:800 - and a sheet uses exactly that whenever its drawing fits, otherwise the next multiple up. So the three sheets share a scale only when every drawing fits at Scale Step. For a different scale on each, give each component its own Sheet Setup. A scale more detailed than the drawing fits at cannot be forced: choose a larger sheet size instead.",
     "input-panel": "Pick a component, set the tier count, and every value it takes appears in one place with its default already filled in - so you can see what a value is and what a normal one looks like before you commit to it. It is not there to reduce how much you have to wire: almost every input already has a default, and the handful that must be wired carry data from upstream, which no panel can stand in for. The bundle it outputs is locked to the component you picked - wire it into a different one and it says so, rather than quietly filling a port that happens to share a name. A wire always wins over the bundle; a value you typed into a port by right-clicking does not, because whatever wins has to be visible on the canvas. Not every component is on its list - a few take one value or none, and a few take things a panel cannot type."
    },
@@ -19685,7 +19687,7 @@
       "cid": "CUT-001",
       "group": "bowl-section-3",
       "tier": "core",
-      "summary": "Cuts the bowl to shape — keep or remove a whole span between two axis numbers, or everything on one side of a curve you draw.",
+      "summary": "Cuts the bowl to shape — keep or remove a whole span between two axis numbers, or everything on one side of each curve you draw.",
       "in": [
        {
         "n": "Seat Result",
@@ -19882,7 +19884,7 @@
        {
         "n": "Build Result",
         "t": "BRD",
-        "a": "item",
+        "a": "list",
         "opt": false
        },
        {
@@ -19945,13 +19947,13 @@
        {
         "n": "Build Result",
         "t": "BRD",
-        "a": "item",
+        "a": "list",
         "opt": false
        },
        {
         "n": "Rail Result",
         "t": "RLD",
-        "a": "item",
+        "a": "list",
         "opt": true
        },
        {
@@ -19981,13 +19983,13 @@
        {
         "n": "Build Result",
         "t": "BRD",
-        "a": "item",
+        "a": "list",
         "opt": false
        },
        {
         "n": "Rail Result",
         "t": "RLD",
-        "a": "item",
+        "a": "list",
         "opt": true
        },
        {
@@ -20159,12 +20161,12 @@
       "cid": "SEATMAP-001",
       "group": "bowl-analysis",
       "tier": "core",
-      "summary": "Groups the seats into zones - the pieces left when the aisles, vomitories and cuts are taken out of the tier - and gives every seat a readable address like \"A0 05 S 25\": prefix and tier number, zone number counted along the axis direction...",
+      "summary": "Groups the seats into zones - the pieces left when the aisles, vomitories and cuts are taken out of the tier - and gives every seat a readable address like \"A0 05 S 25\": prefix and tier number, zone number counted around the bowl in the...",
       "in": [
        {
         "n": "Build Result",
         "t": "BRD",
-        "a": "item",
+        "a": "list",
         "opt": false
        },
        {
@@ -23522,7 +23524,7 @@
        "row": 2,
        "members": "Cut",
        "tier": "core",
-       "summary": "Cuts the bowl to shape — keep or remove a whole span between two axis numbers, or everything on one side of a curve you draw.",
+       "summary": "Cuts the bowl to shape — keep or remove a whole span between two axis numbers, or everything on one side of each curve you draw.",
        "x": 814,
        "y": 214,
        "icon": "/assets/img/antlion/icons/cut.svg",

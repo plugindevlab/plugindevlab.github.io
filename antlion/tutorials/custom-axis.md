@@ -68,6 +68,13 @@ not distance.** The curve is extended straight along its own tangent; if that ex
 - A curve sitting right next to the start line but **not pointing at it** does not
   become an axis. It is not dropped silently — it is counted in the orange warning
   `AC12`: `N/M axis_curves skipped (does not point at the start line=N)`.
+- **Except axis lines lying beyond the ends of an open start line** — those get only the
+  white note `AC20`. When several stands share one set of axis lines and one stand's
+  start line is shorter, the top view already shows why they were left out. Extend the
+  start line if you wanted that stand wider.
+- **An axis line that crosses the start line in plan but sits at a different height (Z)**
+  stays in the orange `AC12`, with the reason
+  `crosses the start line only in plan - drawn at a different height` — the test is a 3D crossing.
 - An extension takes **only the nearest crossing** (the one using the least extension).
   This is deliberately different from direct crossings (§2): an extended line would
   also pierce the far side of the bowl, and taking every extended crossing would create
@@ -125,13 +132,14 @@ from the result / **white** = information.
 - `AC02` (red) — no axis curves.
 - `AC10` (red) — every curve was skipped; zero axes (with a tally of reasons).
 - `AC12` (orange) — some curves skipped. Reasons: `null` (empty entries) ·
-  `does not point at the start line` (§4) · `degenerate direction`.
+  `does not point at the start line` (§4) · `crosses the start line only in plan` (height differs, §4) · `degenerate direction`.
 - `AC06` (orange) — extension beyond 1 mm; reports the max gap and the axis numbers (§5).
 - `AC09` (orange) — two axis points within 1 mm. Both are kept; check the numbering.
 - `AC04` (white) — one curve, several crossings, one axis each (§2).
 - `AC08` (white) — vertical tangent, radial fallback (§6).
 - `AC11` (white) — no direct crossing, matched by extension (§4).
 - `AC13` (white) — numbering follows the rotated field long axis (§3).
+- `AC20` (white) — axis lines beyond the ends of an open start line were left out (§4). Fine if the stand is meant to be shorter.
 
 ## 9. Quick answers
 
@@ -139,8 +147,9 @@ from the result / **white** = information.
   Trim the curve if you want one side only.
 - **Numbers don't match the order I fed them in** → they never will; numbering is
   perimeter order (§3). Check with `View Axis`.
-- **One of my curves is missing from the result** → read `AC12`: it doesn't point at
-  the start line even when extended (§4).
+- **One of my curves is missing from the result** → read `AC12` (orange) or `AC20` (white):
+  it doesn't point at the start line even when extended, sits at a different height, or
+  lies beyond the start line's ends (§4).
 - **There's an axis in a weird place** → read `AC06`'s max gap and axis numbers. A huge
   gap means a stray curve got in (§5).
 - **Changing `Guide Length` does nothing** → correct; it is display only (§1).
