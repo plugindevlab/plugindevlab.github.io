@@ -17017,7 +17017,7 @@
      ],
      "group": "table",
      "page": "06-table",
-     "checked": "2026-09-22",
+     "checked": "2026-09-28",
      "summary": "Creates an .xlsx workbook you can fill in with Excel, with the input pages already laid out, and hands the reference to Table In and Table Out. Give the project folder, optionally a file name (the folder name is used when empty), and press Run - an existing file connects, a missing file is made there. No internet or sign-in is needed, so this is the path that works on closed networks. The reference is saved with the Grasshopper file; because it is a file path, moving the workbook or the .gh means picking the file again. The 10-series pages are yours and are written only at creation; the 80-series pages belong to the plugin.",
      "inputs": [
       {
@@ -17311,7 +17311,7 @@
      ],
      "group": "table",
      "page": "06-table",
-     "checked": "2026-09-22",
+     "checked": "2026-09-28",
      "summary": "Creates a spreadsheet you can fill in by hand, with the input pages already laid out, and hands the reference to Table In and Table Out. Press Run once - the reference is saved with the Grasshopper file, so reopening it stays connected to the same workbook. After that you only edit the sheet and press Run on Table In; you do not need this component again. The 10-series pages are yours and are written only at creation; the 80-series pages belong to the plugin.",
      "inputs": [
       {
@@ -17633,7 +17633,7 @@
      ],
      "group": "table",
      "page": "06-table",
-     "checked": "2026-09-22",
+     "checked": "2026-09-28",
      "summary": "Reads the workbook's input pages and gives you the values to build from. Wire the workbook reference and press run. Values are looked up by column and key name, so inserting rows or reordering columns in the spreadsheet is safe. What was read is stored with the Grasshopper file, so the canvas keeps working without pressing run again.",
      "inputs": [
       {
@@ -18011,8 +18011,8 @@
      ],
      "group": "table",
      "page": "06-table",
-     "checked": "2026-09-22",
-     "summary": "Writes analysis results into the workbook's result pages. Wire the workbook reference and the result objects - section, analysis, seat map or C-value map - and press run. Each result type knows which page it belongs on. The plugin owns those pages and rewrites them every run; copy rows into the input pages if you want to keep and edit them.",
+     "checked": "2026-09-28",
+     "summary": "Writes analysis results into the workbook's result pages. Wire the workbook reference and the result objects - section, analysis, seat map or C-value map - and press run. Each result type knows which page it belongs on. The plugin owns those pages and rewrites them whenever the results change - the same results are not sent twice to the same workbook unless you right-click and choose Send again. Copy rows into the input pages if you want to keep and edit them.",
      "inputs": [
       {
        "index": 0,
@@ -18208,7 +18208,7 @@
       ]
      },
      "indexHead": "Writes analysis results into the workbook's result pages. Wire the workbook reference and the result objects - section, analysis, seat...",
-     "indexMore": "map or C-value map - and press run. Each result type knows which page it belongs on. The plugin owns those pages and rewrites them every run; copy rows into the input pages if you want to keep and edit them."
+     "indexMore": "map or C-value map - and press run. Each result type knows which page it belongs on. The plugin owns those pages and rewrites them whenever the results change - the same results are not sent twice to the same workbook unless you right-click and choose Send again. Copy rows into the input pages if you want to keep and edit them."
     }
    ],
    "types": {
@@ -18537,7 +18537,9 @@
     "custom-seat": "A tier given all three of vomitories, aisle cells and seats is taken as complete, and Custom Seat adds nothing of its own there - no automatic aisle beside a vomitory and no aisle carried up to the top row - so every aisle you want has to be drawn. Aisle cells drawn inside a vomitory passage or its entry band are removed, with an orange warning that gives the row and position. A tier missing any of the three is filled in as before: the component adds the aisles and seats it needs. Wheelchair spaces are optional either way. In a bowl built from several sections, a vomitory band bent along the rings is split by the cut, and each end follows the Band Opening Mode of the Custom Seat whose section keeps it - so give every Custom Seat that receives the band the same value, for example by wiring one Value List or one Input Panel into all of them. When they differ, Assemble Bowl names the band and the input that kept a door at an end another section closes, as a white remark rather than a warning, since it can be intended.",
     "table-section": "Each tier's start point comes from the workbook's 12_INPUT_TIER page as start_mode, start_h and start_v. PREV_TIER, the default above tier 0, measures from the outer end of the lower tier's last tread - the edge away from the field - at that tread's top surface, not from its nosing or a railing top. The upper tier's first tread front edge then sits start_h outward (negative when it overhangs the tier below) and start_v up, so start_v alone sets the height between tiers and the lower tier's last riser height is not used. START_LINE, the default for tier 0, measures from the start line's anchor point - 0, 0 puts the first tread front edge on the start line - and FOCAL measures from the focal point. Section Plus then moves the whole section outward by tier 0's solid_thickness, which keeps the tiers where they are relative to each other. To take the values off a drawing: start_v is the top of the upper tier's first tread minus the top of the lower tier's last tread, and start_h is the horizontal distance from the lower tier's last tread outer end to the upper tier's first tread front edge, negative toward the field.",
     "sheet-setup": "One Sheet Setup can feed C-value Map, C-value Section Check and Seat Map, but each of them works out its own scale: the most detailed one its drawing fits at on the sheet, rounded up to a multiple of Scale Step. Enter the scale you want as Scale Step - 800 for 1:800 - and a sheet uses exactly that whenever its drawing fits, otherwise the next multiple up. So the three sheets share a scale only when every drawing fits at Scale Step. For a different scale on each, give each component its own Sheet Setup. A scale more detailed than the drawing fits at cannot be forced: choose a larger sheet size instead.",
-    "input-panel": "Pick a component, set the tier count, and every value it takes appears in one place with its default already filled in - so you can see what a value is and what a normal one looks like before you commit to it. It is not there to reduce how much you have to wire: almost every input already has a default, and the handful that must be wired carry data from upstream, which no panel can stand in for. The bundle it outputs is locked to the component you picked - wire it into a different one and it says so, rather than quietly filling a port that happens to share a name. A wire always wins over the bundle; a value you typed into a port by right-clicking does not, because whatever wins has to be visible on the canvas. Not every component is on its list - a few take one value or none, and a few take things a panel cannot type."
+    "input-panel": "Pick a component, set the tier count, and every value it takes appears in one place with its default already filled in - so you can see what a value is and what a normal one looks like before you commit to it. It is not there to reduce how much you have to wire: almost every input already has a default, and the handful that must be wired carry data from upstream, which no panel can stand in for. The bundle it outputs is locked to the component you picked - wire it into a different one and it says so, rather than quietly filling a port that happens to share a name. A wire always wins over the bundle; a value you typed into a port by right-clicking does not, because whatever wins has to be visible on the canvas. Not every component is on its list - a few take one value or none, and a few take things a panel cannot type.",
+    "c-value-seat": "Railings - vomitory walls included - are obstructions like the row in front, and whichever leaves the least clearance sets the seat's value. A railing the view clears by more than Optimal C-Value does not count while there is a row in front, but with nothing else in front its clearance is still the seat's value. A railing on another tier whose lowest tread is higher than the sightline where the two cross is overhead and is left out; this is judged by height, so it also holds in a bowl assembled from several stands. Near a corner a seat's focus can fall outside the field, on the extension of a goal line for example. There a railing that blocks the view to the focus counts only if it also blocks the view from the same eye to the nearest point of the field - otherwise it stands beside the view, and the next obstruction sets the value.",
+    "c-value-tread": "Railings - vomitory walls included - count the same way as in C-value Seat: whichever of the row in front and a railing leaves the least clearance sets the cell's value, a railing the view clears by more than Optimal C-Value does not count while there is a row in front, a railing on another tier whose lowest tread is higher than the sightline is overhead and left out, and near a corner a railing that blocks the view to a focus outside the field counts only if it also blocks the view to the nearest point of the field. In the front row, with nothing else in front, the railing's clearance is the cell's value. Where a band's center line crosses none of the treads a cut has left in a tier, that tier's cells in the band are NA - no value - rather than a value measured where there is no tread, and the band's section leaves that tier out; a white remark lists those bands, and C-value Seat still gives every seat there its own value."
    },
    "selfchain": {
     "cut": "Chains into another Cut. Two in series with complementary Tier Enabled is how you cut different tiers from opposite sides.",
