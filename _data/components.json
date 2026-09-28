@@ -12,7 +12,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-09-22",
+     "checked": "2026-09-28",
      "summary": "Draws the playing field outline for a sport and the focal point every sightline is measured to. Start here — the rest of the chain hangs off field_info.",
      "inputs": [
       {
@@ -36,7 +36,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "Plane.WorldXY",
+       "default": "World XY plane",
        "desc": "Where the field sits and which way it faces (default world XY)",
        "flow": false,
        "type": null
@@ -480,7 +480,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-09-22",
+     "checked": "2026-09-28",
      "summary": "Start line for the front row, offset outward from the field edge by a long-side and a short-side distance. Optional rounded or chamfered corners.",
      "inputs": [
       {
@@ -517,7 +517,7 @@
        "access": "item",
        "optional": false,
        "dropdown": true,
-       "default": "StartlineConstants.DefaultCornerMode",
+       "default": "NONE",
        "desc": "How the four corners are treated: square, arc or straight cut (default NONE)",
        "flow": false,
        "type": null
@@ -530,7 +530,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "StartlineConstants.DefaultOffsetLong",
+       "default": "5000 mm",
        "desc": "Gap from the long sides of the field to the front row (default 5000 mm)",
        "flow": false,
        "type": null
@@ -543,7 +543,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "StartlineConstants.DefaultOffsetShort",
+       "default": "5000 mm",
        "desc": "Gap from the short (goal) ends of the field to the front row (default 5000 mm)",
        "flow": false,
        "type": null
@@ -556,7 +556,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "StartlineConstants.DefaultCornerSize",
+       "default": "2000 mm",
        "desc": "Corner arc radius, or chamfer cut-back. Ignored when Corner Mode is NONE (default 2000 mm)",
        "flow": false,
        "type": null
@@ -858,7 +858,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-09-22",
+     "checked": "2026-09-28",
      "summary": "Start line as a capsule - two equal semicircles joined by straight sides. The classic athletics track outline.",
      "inputs": [
       {
@@ -895,7 +895,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "StartlineConstants.DefaultArcShift",
+       "default": "18750 mm",
        "desc": "How far each semicircle centre sits from the field centre (default 18750 mm)",
        "flow": false,
        "type": null
@@ -908,7 +908,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "StartlineConstants.DefaultArcRadius",
+       "default": "39000 mm",
        "desc": "Radius of the two end semicircles (default 39000 mm)",
        "flow": false,
        "type": null
@@ -1180,7 +1180,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-09-22",
+     "checked": "2026-09-28",
      "summary": "Start line as an oval around the field — four tangent arcs, or a true ellipse. Use when the bowl has no straight sides.",
      "inputs": [
       {
@@ -1217,7 +1217,7 @@
        "access": "item",
        "optional": false,
        "dropdown": true,
-       "default": "StartlineConstants.DefaultOvalMode",
+       "default": "ARC_4CENTER",
        "desc": "Four tangent arcs with buildable radii, or a true ellipse (default ARC_4CENTER)",
        "flow": false,
        "type": null
@@ -1230,7 +1230,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "StartlineConstants.DefaultAddLong",
+       "default": "5000 mm",
        "desc": "How far past the field the oval reaches along its long axis (default 5000 mm)",
        "flow": false,
        "type": null
@@ -1243,7 +1243,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "StartlineConstants.DefaultAddShort",
+       "default": "5000 mm",
        "desc": "How far past the field the oval reaches along its short axis (default 5000 mm)",
        "flow": false,
        "type": null
@@ -1256,7 +1256,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "StartlineConstants.DefaultSnapUnit",
+       "default": "100 mm / 4 in",
        "desc": "Rounding step used by Radius Snap (default 100 mm)",
        "flow": false,
        "type": null
@@ -1269,7 +1269,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "StartlineConstants.DefaultRadiusSnap",
+       "default": "false",
        "desc": "Round the arc radii to whole units so they are easier to set out on site (default false)",
        "flow": false,
        "type": null
@@ -1586,7 +1586,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-09-22",
+     "checked": "2026-09-28",
      "summary": "Start line taken from a curve you draw - aligned to the field frame for a preset field, used as drawn for a custom field. Use when no preset shape fits. An open curve gives a stand with two free ends.",
      "inputs": [
       {
@@ -1824,7 +1824,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-09-22",
+     "checked": "2026-09-28",
      "summary": "Divides the start line into the planes each stand section is placed on. Straight runs are split by an even module, arcs by a fixed count — so section spacing follows the shape.",
      "inputs": [
       {
@@ -1900,7 +1900,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "0.0",
+       "default": "0",
        "desc": "Spacing along chamfered corner edges. 0 = one section per chamfer (default 0)",
        "flow": false,
        "type": null
@@ -2293,7 +2293,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-09-22",
+     "checked": "2026-09-28",
      "summary": "Section placement planes from axis curves you draw yourself. Each curve's crossing with the start line becomes an axis, numbered along the start line - those numbers are what Cut refers to.",
      "inputs": [
       {
@@ -2622,7 +2622,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-09-22",
+     "checked": "2026-09-28",
      "summary": "Turns the tread lines you draw into a tier section — rows, nosing and eye points, and the closed profile the stand is swept from. Draw one line per step; the component sorts them and works out the tiers.",
      "inputs": [
       {
@@ -3061,7 +3061,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-09-22",
+     "checked": "2026-09-28",
      "summary": "Works out the risers for you. Give it the tread depths and the minimum C-value you want to hold, and it raises each step by the smallest Riser Step increment that still clears that C-value - the shallowest bowl that meets the target. The front row starts on the start line, so wire the same field, focal point and start line that Section takes. Bake tread_lines if you want to fine-tune the steps by hand in Section afterwards.",
      "inputs": [
       {
@@ -3836,7 +3836,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-09-22",
+     "checked": "2026-09-28",
      "summary": "Adds the things a bare section does not have: the front barrier or handrail, accessible (wheelchair) rows, and the sightline check over the barrier. Sits between Section and Stand 2D — pure section geometry stays in Section.",
      "inputs": [
       {
@@ -3897,10 +3897,10 @@
        "nick": "Min C Ovr",
        "ghType": "Number",
        "access": "item",
-       "optional": false,
+       "optional": true,
        "dropdown": false,
-       "default": "90 mm / 3.5 in",
-       "desc": "Smallest C-value over the barrier top. Below this the front row cannot see past it (default 90 mm)",
+       "default": null,
+       "desc": "Smallest C-value over the barrier top. Below this the front row cannot see past it. Leave it empty to use the value each tier was designed for (Auto Section Minimum C-Values; 90 mm if the section has none)",
        "flow": false,
        "type": null
       },
@@ -3938,7 +3938,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "Antlion.Logic.HandrailLogic.WcEyeVerticalDefault",
+       "default": "1150 mm",
        "desc": "Eye height above the platform for a wheelchair user. 1150 mm follows EN 13200-1, measured from the floor - a seated spectator's 1200 mm is measured the same way but includes the seat. Set your own if your code says otherwise",
        "flow": false,
        "type": null
@@ -3951,7 +3951,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "Antlion.Logic.HandrailLogic.WcEyeHorizontalFollow",
+       "default": "-1",
        "desc": "How far back from the nosing a wheelchair user's eye sits. Leave it at -1 to use the same value as a seated spectator, which is what Section already applied",
        "flow": false,
        "type": null
@@ -4360,7 +4360,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-09-22",
+     "checked": "2026-09-28",
      "summary": "Builds the tier sections from the numbers in your workbook instead of lines you draw. Wire the book from Table In, plus the same field, focal point and start line that Section takes. The barrier settings live in the workbook too, so this one component does what Section and Section Plus do together - the outputs are the same.",
      "inputs": [
       {
@@ -4423,7 +4423,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "0.0",
+       "default": "0",
        "desc": "Thickness of the stand slab. Leave at 0 to use the one in the workbook",
        "flow": false,
        "type": null
@@ -4802,7 +4802,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Sweeps each tier section around the axis planes and flattens it into tread rings in plan. Everything downstream — seats, vomitories, cuts — works on these rings.",
      "inputs": [
       {
@@ -5049,7 +5049,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Places the vomitories — the tunnels spectators enter the bowl through — in the tread rings, and sets how each one gets down to the concourse: flat, stepped, stair or ramp.",
      "inputs": [
       {
@@ -5216,7 +5216,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "12.0",
+       "default": "12",
        "desc": "Ramp gradient as 1:N - 12 means 1 in 12. Type 4 only (default 12)",
        "flow": false,
        "type": null
@@ -5229,7 +5229,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "0.0",
+       "default": "0",
        "desc": "Depth of each intermediate landing. 0 = code minimum (default 0)",
        "flow": false,
        "type": null
@@ -5828,7 +5828,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Fills the tread rings with seats, breaking each row at the vomitories and aisles, and flags rows that break the egress limits. Wheelchair spaces are placed here too.",
      "inputs": [
       {
@@ -5995,7 +5995,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "0.0",
+       "default": "0",
        "desc": "Target share of wheelchair spaces, percent of capacity. Reporting only (default 0)",
        "flow": false,
        "type": null
@@ -6693,7 +6693,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Same seat placement as Seat, but the vomitories, aisles and even the seats come from curves you draw instead of being generated. Use it where the automatic layout cannot express what you want.",
      "inputs": [
       {
@@ -6899,7 +6899,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "0.0",
+       "default": "0",
        "desc": "Target share of wheelchair spaces, percent of capacity. Reporting only (default 0)",
        "flow": false,
        "type": null
@@ -7558,7 +7558,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Cuts the bowl to shape — keep or remove a whole span between two axis numbers, or everything on one side of each curve you draw. Seats, aisles, vomitories and rings are all filtered together.",
      "inputs": [
       {
@@ -7583,7 +7583,7 @@
        "optional": true,
        "dropdown": false,
        "default": null,
-       "desc": "Cut along these curves, drawn in plan - as many as you like. Each one cuts what the one before it left, the same as chaining Cuts. Past a curve's endpoints nothing changes",
+       "desc": "Cut along these curves, drawn in plan - as many as you like. Each one cuts what the one before it left. An end that stops inside the stand is extended until it leaves the stand. A closed bowl needs a line that crosses it twice, or two lines in this Cut that each end in the field - they are joined there into one",
        "flow": false,
        "type": null
       },
@@ -7713,7 +7713,7 @@
        "optional": false,
        "dropdown": true,
        "default": "EXTEND",
-       "desc": "How a + offset end runs out to its line: FOLLOW cuts on the offset line and keeps the seats there as drawn, EXTEND cuts on the axis and runs each tread straight on to the line, re-laying seats along it. A - offset is cut on its line either way. Same choices as Opening Cut (default EXTEND)",
+       "desc": "How a + offset end runs out to its line: FOLLOW cuts on the offset line and keeps the seats there as drawn, EXTEND cuts on the axis and runs each tread straight on to the line, re-laying seats along it - on a tier whose seats you drew in Custom Seat, your own seats there come back instead. A - offset is cut on its line either way. Same choices as Opening Cut (default EXTEND)",
        "flow": false,
        "type": null
       },
@@ -8222,7 +8222,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Punches local entrance openings through the stand — between two axis numbers, or under a closed curve you draw. Unlike Cut it removes only what the opening covers, and it records the new edges as railing lines.",
      "inputs": [
       {
@@ -8337,7 +8337,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "0.0",
+       "default": "0",
        "desc": "Where a curve leaves a tread shallower than this, its seats go too. 0 = off (default 0)",
        "flow": false,
        "type": null
@@ -8942,7 +8942,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Sweeps the closed section profile around the axis planes into the solid tier bodies. This is the raw stand — cuts and openings are applied later by Stand 3D Plus.",
      "inputs": [
       {
@@ -9299,7 +9299,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Builds the vomitories as solids — the side and end walls, the portal opening punched through, and the stair or ramp down to the concourse.",
      "inputs": [
       {
@@ -9681,7 +9681,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Builds the 3D bowl: cuts the stand solids with everything the 2D chain decided — shape cuts, entrance openings, vomitories — and lifts the seats and aisle steps to their real tread heights.",
      "inputs": [
       {
@@ -10012,7 +10012,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Builds the railings and parapets as solids — the front barrier, the rear parapet, the edges left by a cut, and the walls around entrance openings. In a bowl assembled from several stands, a per-tier list shorter than the assembled tier count is read per stand: three values set tiers 0, 1 and 2 of every stand. Give one per assembled tier to set each on its own.",
      "inputs": [
       {
@@ -10036,7 +10036,7 @@
        "access": "list",
        "optional": false,
        "dropdown": true,
-       "default": "PortValueLists.RailSideTopModes[0]",
+       "default": "Hold Side H",
        "desc": "How tall the cut-edge parapet is along its run - one per tier. Hold Side H keeps Side H the whole way, so it meets the rear parapet at a step. Blend to Rear H starts at Side H and eases to Rear H by the back, so the two meet flush (default Hold Side H)",
        "flow": false,
        "type": null
@@ -10049,7 +10049,7 @@
        "access": "list",
        "optional": false,
        "dropdown": false,
-       "default": "-1.0",
+       "default": "-1",
        "desc": "How far the front parapet drops below the first tread - one per tier. Leave it at -1 to use the barrier depth from Section Plus. 0 = no skirt",
        "flow": false,
        "type": null
@@ -10075,7 +10075,7 @@
        "access": "list",
        "optional": false,
        "dropdown": false,
-       "default": "-1.0",
+       "default": "-1",
        "desc": "How far the cut-edge parapet drops below the tread at each end of its run - in between it hangs lower still, covering the cut face and the structure below - one per tier. Leave it at -1 to use the barrier depth from Section Plus. 0 = no skirt",
        "flow": false,
        "type": null
@@ -10101,7 +10101,7 @@
        "access": "list",
        "optional": false,
        "dropdown": false,
-       "default": "-1.0",
+       "default": "-1",
        "desc": "How far the rear parapet drops below the last tread - one per tier. Leave it at -1 to use the barrier depth from Section Plus. 0 = no skirt",
        "flow": false,
        "type": null
@@ -10114,7 +10114,7 @@
        "access": "list",
        "optional": false,
        "dropdown": false,
-       "default": "-1.0",
+       "default": "-1",
        "desc": "Height of the parapet around an entrance opening, above the tread - one per tier. Leave it at -1 to follow the front parapet height from Section Plus. Give a height to use that instead - it still meets the front parapet at its height where the two join. 0 leaves it out",
        "flow": false,
        "type": null
@@ -10127,7 +10127,7 @@
        "access": "list",
        "optional": false,
        "dropdown": false,
-       "default": "-1.0",
+       "default": "-1",
        "desc": "How far the underside of the cut-edge parapet runs level from the front before it starts to climb, hiding the structure below - one per tier. -1 = the depth of the first row, 0 = climbs right away",
        "flow": false,
        "type": null
@@ -10586,7 +10586,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Assembles the final bowl plan before Stand 3D Plus: merges parallel seat layouts (tiers renumbered), pulls exposed cut ends past their axis by the offset, and previews the finished plan.",
      "inputs": [
       {
@@ -10649,7 +10649,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "0.0",
+       "default": "0",
        "desc": "Pull every exposed cut end this far past its axis, so the joint sits clear of the structural line. The free ends of an open stand count too. Ends where two layouts meet at the same level stay on the axis. 0 = cut exactly on the axis (default)",
        "flow": false,
        "type": null
@@ -10662,7 +10662,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "-1.0",
+       "default": "-1",
        "desc": "Opening edges only (Opening Cut spans): their own pull distance. -1 = follow Cut Offset (default), 0 = leave openings on the axis",
        "flow": false,
        "type": null
@@ -11025,7 +11025,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Puts a chair and a seated spectator target on every seat of the built bowl. Wire the Stand 3D Plus BRD output. The ports carry one merged preview mesh per tier so twenty thousand seats stay light; bake the component itself (right-click, Bake) to plant real block instances - one definition, one instance per seat - so the document stays light too. The spectator is a flat target whose eye mark sits exactly on the eye point the C-value analysis measures from.",
      "inputs": [
       {
@@ -11512,7 +11512,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Pick an Antlion component and set every value it takes, with sensible defaults shown. For when you are not sure what to wire in.",
      "inputs": [],
      "outputs": [
@@ -11575,7 +11575,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Checks the sightline over the row in front, row by row, and reports the C-value. Draws the sightlines and dimensions so you can see where the view fails.",
      "inputs": [
       {
@@ -11610,10 +11610,10 @@
        "nick": "Min C",
        "ghType": "Number",
        "access": "item",
-       "optional": false,
+       "optional": true,
        "dropdown": false,
-       "default": "90 mm / 3.5 in",
-       "desc": "Rows below this are reported POOR. 60 tolerable, 90 good, 120 excellent (default 90 mm)",
+       "default": null,
+       "desc": "Rows below this are reported POOR. Leave it empty to judge each section by the value it was designed for (Table Section min_c_value, Auto Section Minimum C-Values; 90 mm if the section has none). 60 tolerable, 90 good, 120 excellent",
        "flow": false,
        "type": null
       },
@@ -12094,7 +12094,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Paints every seat with its own C-value, measured in 3D from that seat's eye to its own focus. Wire the Stand 3D Plus BRD output. A railing or vomitory wall in front of a seat counts as the obstruction too; add Rail 3D RLD for the railings' exact built tops.",
      "inputs": [
       {
@@ -12168,10 +12168,10 @@
        "nick": "Min C",
        "ghType": "Number",
        "access": "item",
-       "optional": false,
+       "optional": true,
        "dropdown": false,
-       "default": "CmapConstants.MinCValueDefault",
-       "desc": "Seats below this are POOR. 60 tolerable, 90 good, 120 excellent (default 90 mm)",
+       "default": null,
+       "desc": "Seats below this are POOR. Leave it empty to judge each tier by the value its section was designed for (Table Section min_c_value, Auto Section Minimum C-Values; 90 mm if the section has none). 60 tolerable, 90 good, 120 excellent",
        "flow": false,
        "type": null
       },
@@ -12183,7 +12183,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "CmapConstants.OptimalCValueDefault",
+       "default": "120 mm / 5 in",
        "desc": "Upper end of the published band. Seats above it are drawn blue (default 120 mm)",
        "flow": false,
        "type": null
@@ -12752,7 +12752,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Paints each tread band with the C-value of one representative section taken between two axes. One value per axis gap, so it is light enough to leave on while you tune the section. C-value Seat measures every seat instead - the two differ most on curves, where one section cannot stand for the whole band.",
      "inputs": [
       {
@@ -12826,10 +12826,10 @@
        "nick": "Min C",
        "ghType": "Number",
        "access": "item",
-       "optional": false,
+       "optional": true,
        "dropdown": false,
-       "default": "CmapConstants.MinCValueDefault",
-       "desc": "Bands below this are POOR. 60 tolerable, 90 good, 120 excellent (default 90 mm)",
+       "default": null,
+       "desc": "Bands below this are POOR. Leave it empty to judge each tier by the value its section was designed for (Table Section min_c_value, Auto Section Minimum C-Values; 90 mm if the section has none). 60 tolerable, 90 good, 120 excellent",
        "flow": false,
        "type": null
       },
@@ -12841,7 +12841,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "CmapConstants.OptimalCValueDefault",
+       "default": "120 mm / 5 in",
        "desc": "Upper end of the published band. Bands above it are drawn blue (default 120 mm)",
        "flow": false,
        "type": null
@@ -13467,7 +13467,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Builds an explicit colour legend for the C-value maps. Set the first number, the last number and the band size - the bands become <min, min to min+step, ... , >=max, each with its own colour. Leave colors unwired for the built-in ramp, or supply your own (interpolated when fewer than the band count). Wire scheme into C-value Seat or C-value Tread; the map is then coloured by these bands and C-value Map prints this legend on every sheet. Detail Mode on lists the two view-cut states (a seat row or a railing hiding the focal point, C<0) in their own colours; off folds them into the lowest band. It also carries the not-graded states - OPEN, FRONT, EMPTY and NA - as a fixed grey series, so every grey patch on the map is named on the sheet; the report output explains why each state appears and how to clear it. The component itself shows the legend on the canvas.",
      "inputs": [
       {
@@ -13758,7 +13758,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Lays every axis section out on its own sheet so you can flip through them. One scale for the whole set, chosen so the largest section fits, and every section sits at the same place on its sheet.",
      "inputs": [
       {
@@ -13782,7 +13782,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "Point3d.Origin",
+       "default": "World origin",
        "desc": "Bottom-left corner of the first sheet. Give each sheet component its own",
        "flow": false,
        "type": null
@@ -14357,7 +14357,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Holds the sheet layout settings in one place - where the sheets start, the paper size, how many sheets per row, the scale rounding, margins and the text style. Wire the SHD output into C-value Section Check, C-value Map and Seat Map so every sheet component lays out the same way from a single setup. When SHD is wired, the sheet inputs on those components are ignored.",
      "inputs": [
       {
@@ -14407,7 +14407,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "10.0",
+       "default": "10",
        "desc": "Margin inside each sheet, in paper millimetres (default 10)",
        "flow": false,
        "type": null
@@ -14420,7 +14420,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "10.0",
+       "default": "10",
        "desc": "Gap between sheets, in paper millimetres (default 10)",
        "flow": false,
        "type": null
@@ -14593,7 +14593,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "A stack of sliders in one component — each row Dk drives output Rk. Drag the bottom edge to add or remove rows; right-click to set ranges. Saves wiring a dozen separate sliders into per-tier inputs.",
      "inputs": [],
      "outputs": [
@@ -14656,7 +14656,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "A stack of toggles in one component — each row Dk drives output Rk. Drag the bottom edge to add or remove rows. Saves wiring a dozen separate toggles into per-tier inputs.",
      "inputs": [],
      "outputs": [
@@ -14719,7 +14719,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Lays the C-value map out flat - one sheet per tier, named TIER 0, TIER 1 and so on, with the seat layout drawing, the coloured map and the tier's minimum, average and pass rate written top-left. In a bowl merged from several stands, tiers with the same tier label share one sheet named after it - by default that is the same tier number in each stand, or give Table Section tier_label values such as LOW. Wire the CMD output of C-value Seat for a seat map, or of C-value Tread for a tread map - one at a time.",
      "inputs": [
       {
@@ -14743,7 +14743,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "Point3d.Origin",
+       "default": "World origin",
        "desc": "Bottom-left corner of the first sheet. Give each sheet component its own",
        "flow": false,
        "type": null
@@ -15067,7 +15067,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Holds the wire shut. Whatever changes upstream, nothing downstream recomputes until you press PASS - then the data at D goes through R once and stays there. Put it between the 2D bowl chain and the heavy 3D build or analysis components: edit the bowl lag-free, press to update. The Gate Switch component opens and closes every gate on the canvas at once. Reopening a file behaves like the moment it was saved: a gate that was holding data picks it up again on load (one full compute, like opening any normal file), and a gate that was empty stays shut.",
      "inputs": [
       {
@@ -15159,7 +15159,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "One switch for every Data Gate on the canvas - no wires needed. LIVE holds every gate open, so data flows as if PASS were held down and the whole chain stays current. HOLD closes them all again; each gate keeps the last data that went through. Keep a single switch per document.",
      "inputs": [],
      "outputs": [],
@@ -15192,7 +15192,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Groups the seats into zones - the pieces left when the aisles, vomitories and cuts are taken out of the tier - and gives every seat a readable address like \"A0 05 S 25\": prefix and tier number, zone number counted around the bowl in the axis direction, then the seat number running from the lowest tread up. In a bowl merged from several stands, tiers with the same tier label - by default the same tier number in each stand - count as one tier: one number, one run of zones around the bowl, one sheet. Wheelchair units belong to their zone too, numbered \"W 1\", \"W 2\". Outputs the SMD bundle for Seat View and Seat 3D, a zone map laid out one sheet per tier, and flat tables ready for a spreadsheet. Wire the BRD output of Stand 3D Plus; wire SHD from Sheet Setup to place the sheets",
      "inputs": [
       {
@@ -15216,7 +15216,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "Point3d.Origin",
+       "default": "World origin",
        "desc": "Bottom-left corner of the first sheet. Give each sheet component its own",
        "flow": false,
        "type": null
@@ -15654,7 +15654,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Register your Antlion license key. Enter the key once — every definition on this computer is unlocked.",
      "inputs": [
       {
@@ -15802,7 +15802,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Looks through a spectator's eyes. Wire the Seat Map SMD and pick a seat by tier, zone and seat number - or type its address like \"A0 05 S 25\" - press apply, and the perspective viewport jumps to that seat's analysis eye point looking at its own focal point - the same eye and focus the C-value map measures. Turn live on and the yaw and pitch sliders let you look around from the fixed eye point, so you can judge a vomitory rail or a cut-edge railing exactly as the seated spectator would see it.",
      "inputs": [
       {
@@ -15865,7 +15865,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "0.0",
+       "default": "0",
        "desc": "Look left or right from the eye point, in degrees. + = left (default 0)",
        "flow": false,
        "type": null
@@ -15878,7 +15878,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "0.0",
+       "default": "0",
        "desc": "Look up or down from the eye point, in degrees. + = up (default 0)",
        "flow": false,
        "type": null
@@ -15891,7 +15891,7 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "50.0",
+       "default": "50",
        "desc": "Camera lens, 35mm-film equivalent. 50 is a natural human view (default 50)",
        "flow": false,
        "type": null
@@ -16260,7 +16260,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Tags every axis with its number — a guide line running out from each axis point into a circle holding the axis name (A0, A1, ...). The numbers are the same ones Cut and Opening Cut expect in axis_from / opening_from, so you can read them here and leave those heavy previews off.",
      "inputs": [
       {
@@ -16581,7 +16581,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-09-26",
+     "checked": "2026-09-28",
      "summary": "Draws the optimum and maximum viewing distance circles for a sport and counts how many seats fall outside. Reference only — it never removes a seat; wire limit_curves into Cut if you want it enforced.",
      "inputs": [
       {
