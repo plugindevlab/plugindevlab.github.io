@@ -2622,7 +2622,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-09-29",
+     "checked": "2026-10-02",
      "summary": "Turns the tread lines you draw into a tier section — rows, nosing and eye points, and the closed profile the stand is swept from. Draw one line per step; the component sorts them and works out the tiers.",
      "inputs": [
       {
@@ -3061,7 +3061,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-09-29",
+     "checked": "2026-10-02",
      "summary": "Works out the risers for you. Give it the tread depths and the minimum C-value you want to hold, and it raises each step by the smallest Riser Step increment that still clears that C-value - the shallowest bowl that meets the target. The front row starts on the start line, so wire the same field, focal point and start line that Section takes. Bake tread_lines if you want to fine-tune the steps by hand in Section afterwards.",
      "inputs": [
       {
@@ -3151,7 +3151,7 @@
        "optional": true,
        "dropdown": false,
        "default": null,
-       "desc": "How far the tier behind starts back from the last nosing below - one per gap between tiers. Negative reaches out over it (no default - you set this)",
+       "desc": "How far the tier behind starts back from the outer end of the last tread below, on its top surface - one per gap between tiers. Negative reaches out over it (no default - you set this)",
        "flow": false,
        "type": null
       },
@@ -3164,7 +3164,7 @@
        "optional": true,
        "dropdown": false,
        "default": null,
-       "desc": "How high the tier behind starts above the last nosing below - one per gap between tiers (no default - you set this)",
+       "desc": "How high the tier behind starts above the outer end of the last tread below, on its top surface - one per gap between tiers (no default - you set this)",
        "flow": false,
        "type": null
       },
@@ -3529,7 +3529,7 @@
         "ghType": "Number",
         "access": "list",
         "flow": false,
-        "blurb": "How far the tier behind starts back from the last nosing below",
+        "blurb": "How far the tier behind starts back from the outer end of the last tread below, on its top surface",
         "callX": 0,
         "callY": 422,
         "gripX": 434,
@@ -3544,7 +3544,7 @@
         "ghType": "Number",
         "access": "list",
         "flow": false,
-        "blurb": "How high the tier behind starts above the last nosing below",
+        "blurb": "How high the tier behind starts above the outer end of the last tread below, on its top surface",
         "callX": 0,
         "callY": 489,
         "gripX": 434,
@@ -3836,7 +3836,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-09-29",
+     "checked": "2026-10-02",
      "summary": "Adds the things a bare section does not have: the front barrier or handrail, accessible (wheelchair) rows, and the sightline check over the barrier. Sits between Section and Stand 2D — pure section geometry stays in Section.",
      "inputs": [
       {
@@ -4360,7 +4360,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-09-29",
+     "checked": "2026-10-02",
      "summary": "Builds the tier sections from the numbers in your workbook instead of lines you draw. Wire the book from Table In, plus the same field, focal point and start line that Section takes. The barrier settings live in the workbook too, so this one component does what Section and Section Plus do together - the outputs are the same.",
      "inputs": [
       {

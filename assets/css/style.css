@@ -91,7 +91,7 @@ a:hover { text-decoration: none; }
 .content > * { max-width: var(--measure); }
 .content > .full, .content > .split, .content > .grid, .content > .map-wrap,
 .content > .combos, .content > .map-note, .content > .rib-wrap,
-.content > .fm-wrap, .content > .fm-key,
+.content > .fm-wrap, .content > .fm-key, .content > .roadmap,
 .content > section, .content > table, .content > pre, .content > figure { max-width: none; }
 
 h1 {
@@ -167,6 +167,37 @@ figure.fig figcaption {
 .card img {
   display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: contain;
   border: 1px solid var(--rule); background: var(--bg-soft); margin-bottom: 1rem;
+}
+
+.roadmap { margin: var(--sp6) 0; }
+.rm { display: grid; grid-template-columns: minmax(0, 1fr) 9rem minmax(0, 1fr) var(--sp7) minmax(0, 1fr); }
+.rm-v { background: var(--panel); border: 1px solid var(--line); padding: var(--sp4) var(--sp5) var(--sp5); }
+.rm-v.is-now { border-color: var(--frame); }
+.rm-head { display: flex; align-items: center; gap: var(--sp3); margin: 0 0 var(--sp3); }
+.rm-when { font-size: var(--t1); font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--faint); }
+.rm-v h3 { margin: 0 0 var(--sp2); font-size: var(--t4); font-weight: 400; }
+.rm-v ul { margin: 0; padding-left: 1.1em; font-size: .95rem; line-height: 1.5; color: var(--soft); }
+.rm-v li { margin: var(--sp1) 0; }
+.rm-link { position: relative; display: flex; align-items: center; padding: 0 var(--sp2); }
+.rm-arrow { position: relative; display: block; width: 100%; border-top: 1px solid var(--frame); }
+.rm-arrow::after {
+  content: ""; position: absolute; right: -1px; top: -5px;
+  border-left: 7px solid var(--frame); border-top: 4.5px solid transparent; border-bottom: 4.5px solid transparent;
+}
+.rm-note {
+  position: absolute; left: var(--sp2); right: var(--sp2); bottom: calc(50% + var(--sp2));
+  font-size: var(--t2); line-height: 1.35; color: var(--soft); text-align: center;
+}
+.rm-fine { font-size: .85rem; color: var(--soft); }
+@media (max-width: 46rem) {
+  .rm { grid-template-columns: minmax(0, 1fr); }
+  .rm-link { min-height: var(--sp8); padding: 0 0 0 var(--sp6); gap: var(--sp3); }
+  .rm-arrow { width: 0; height: var(--sp6); border-top: 0; border-left: 1px solid var(--frame); }
+  .rm-arrow::after {
+    right: auto; top: auto; bottom: -1px; left: -5px;
+    border-left: 4.5px solid transparent; border-right: 4.5px solid transparent; border-top: 7px solid var(--frame); border-bottom: 0;
+  }
+  .rm-note { position: static; text-align: left; order: 2; }
 }
 
 .site-foot { border-top: 1px solid var(--rule); margin-top: var(--rhythm); }
