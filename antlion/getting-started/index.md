@@ -45,6 +45,11 @@ Antlion is distributed **through the package manager only.** We do not publish `
 `.yak` files for download anywhere, so a copy offered as a direct file download did not come
 from us.
 
+**Updates arrive the same way.** New releases of Antlion are published to the package manager.
+If **Automatically update packages when Rhino starts** is turned on in the package manager,
+Rhino installs them on its own the next time it starts. If it is off, run `_PackageManager` and
+update Antlion there. The [changelog](../changelog/index.md) lists what changed in each release.
+
 The Food4Rhino listing carries the product description and the purchase route — its download
 button opens the same package manager entry rather than handing you a file.
 
