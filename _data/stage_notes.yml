@@ -46,7 +46,7 @@ table: |
   the definition does not talk to the network while you are designing.
 
 util: |
-  Tools that sit beside the chain rather than in it — licence registration, gathering inputs
+  Tools that sit beside the chain rather than in it — license registration, gathering inputs
   into one panel, legends, shared drawing-sheet format, and helpers for bundling per-tier
   values.
 

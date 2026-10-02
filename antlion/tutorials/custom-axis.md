@@ -21,7 +21,7 @@ A few of its rules are invisible on screen. This page states all of them.
 
 1. `Start Line` — **wire the output of any Startline component (recommended).**
    You can feed a bare curve into `Start Line Curve` instead, but the object carries
-   the numbering reference frame (the field's long axis) and the bowl centre; with a
+   the numbering reference frame (the field's long axis) and the bowl center; with a
    bare curve the component falls back to a centroid estimate.
 2. `Axis Curves` — the curves you drew across the start line, collected in a `Curve`
    container. **The order you collect them in does not matter** — numbering is by
@@ -38,7 +38,7 @@ start line twice makes two axes.
 
 CAD axis lines usually run **through** the whole bowl. They naturally cross a closed
 start line twice — so **one set of axis lines puts axes on both stands.** That is the
-intended behaviour, not a bug.
+intended behavior, not a bug.
 
 - **Want axes on one stand only? Trim the curve on that side.** The component never
   guesses which crossing you "really meant" — a direct crossing is read as explicit intent.
@@ -96,7 +96,7 @@ direction to meet it (max gap 32.5mm, axes [3, 7])
 
 - **Gap of a few mm–cm** — the axis line was drawn slightly short. Common and harmless;
   just know the axis point sits at the extended intersection, not at the curve's end.
-- **Gap of tens of metres** — that is not an axis you drew short. It is **a distant
+- **Gap of tens of meters** — that is not an axis you drew short. It is **a distant
   stray curve that happened to point at the start line.** The warning names the axis
   numbers (`axes [...]`); check those axis points and remove the stray from the input.
 - The extension limit is the size of the start line itself (its bounding-box diagonal) —
@@ -105,7 +105,7 @@ direction to meet it (max gap 32.5mm, axes [3, 7])
 ## 6. Section direction — follows your curve's tangent, faces outward
 
 Each axis plane faces along **the curve's tangent at the crossing point**, projected to
-the XY plane — then auto-flipped to face away from the bowl centre, so the direction
+the XY plane — then auto-flipped to face away from the bowl center, so the direction
 you drew the curve in doesn't matter.
 
 - Cross the start line at an angle and the section stands at that angle — the reference
@@ -125,7 +125,7 @@ principle as the `Axis` component.
 
 ## 8. Warning codes at a glance
 
-Balloon colours: **red** = nothing is produced / **orange** = some input was dropped
+Balloon colors: **red** = nothing is produced / **orange** = some input was dropped
 from the result / **white** = information.
 
 - `AC01` (red) — no start line. Wire `Start Line` or `Start Line Curve`.

@@ -25,7 +25,7 @@ as a single diagram.
 <strong translate="no">Bowl Analysis</strong> measures what <span translate="no">Bowl</span> built: sightlines, C-values, seat maps, and the guides
 that make them legible. <strong translate="no">Table</strong> connects a workbook, so numbers live in Excel or Google
 Sheets instead of in sliders. <strong translate="no">Util</strong> is everything that helps without being part of the
-chain — a values panel, a legend, sheet setup, the licence.
+chain — a values panel, a legend, sheet setup, the license.
 
 **Inside a panel, the separators are the order of work.** Read a panel left to right,
 section by section, and you are reading the sequence you would actually build in.
