@@ -12,7 +12,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-10-01",
+     "checked": "2026-10-03",
      "summary": "Draws the playing field outline for a sport and the focal point every sightline is measured to. Start here — the rest of the chain hangs off field_info.",
      "inputs": [
       {
@@ -480,7 +480,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-10-01",
+     "checked": "2026-10-03",
      "summary": "Start line for the front row, offset outward from the field edge by a long-side and a short-side distance. Optional rounded or chamfered corners.",
      "inputs": [
       {
@@ -858,7 +858,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-10-01",
+     "checked": "2026-10-03",
      "summary": "Start line as a capsule - two equal semicircles joined by straight sides. The classic athletics track outline.",
      "inputs": [
       {
@@ -895,8 +895,8 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "18750 mm",
-       "desc": "How far each semicircle center sits from the field center (default 18750 mm)",
+       "default": "42195 mm",
+       "desc": "How far each semicircle center sits from the field center (default 42195 mm)",
        "flow": false,
        "type": null
       },
@@ -908,8 +908,8 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "39000 mm",
-       "desc": "Radius of the two end semicircles (default 39000 mm)",
+       "default": "48000 mm",
+       "desc": "Radius of the two end semicircles (default 48000 mm)",
        "flow": false,
        "type": null
       },
@@ -1180,7 +1180,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-10-01",
+     "checked": "2026-10-03",
      "summary": "Start line as an oval around the field — four tangent arcs, or a true ellipse. Use when the bowl has no straight sides.",
      "inputs": [
       {
@@ -1230,8 +1230,8 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "5000 mm",
-       "desc": "How far past the field the oval reaches along its long axis (default 5000 mm)",
+       "default": "25000 mm",
+       "desc": "How far past the field the oval reaches along its long axis (default 25000 mm)",
        "flow": false,
        "type": null
       },
@@ -1243,8 +1243,8 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "5000 mm",
-       "desc": "How far past the field the oval reaches along its short axis (default 5000 mm)",
+       "default": "25000 mm",
+       "desc": "How far past the field the oval reaches along its short axis (default 25000 mm)",
        "flow": false,
        "type": null
       },
@@ -1586,7 +1586,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-10-01",
+     "checked": "2026-10-03",
      "summary": "Start line taken from a curve you draw - aligned to the field frame for a preset field, used as drawn for a custom field. Use when no preset shape fits. An open curve gives a stand with two free ends.",
      "inputs": [
       {
@@ -1824,7 +1824,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-10-01",
+     "checked": "2026-10-03",
      "summary": "Divides the start line into the planes each stand section is placed on. Straight runs are split by an even module, arcs by a fixed count — so section spacing follows the shape.",
      "inputs": [
       {
@@ -2293,7 +2293,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-10-01",
+     "checked": "2026-10-03",
      "summary": "Section placement planes from axis curves you draw yourself. Each curve's crossing with the start line becomes an axis, numbered along the start line - those numbers are what Cut refers to.",
      "inputs": [
       {

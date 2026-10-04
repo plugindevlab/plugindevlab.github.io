@@ -66,7 +66,7 @@ customer portal there. Do not wait for it to arrive by email — the portal alwa
 Enter the email address you bought with, type the code it sends you, and copy the key from
 the purchases page.
 
-*(Customer portal — coming with release.)*
+Customer portal: [polar.sh/plugindevlab/portal](https://polar.sh/plugindevlab/portal)
 
 **2 — Enter it once in Grasshopper.**
 
