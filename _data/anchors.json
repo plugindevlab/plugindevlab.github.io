@@ -1,8 +1,8 @@
 {
  "_about": "Generated from a Grasshopper capture run - do not edit by hand. Coordinates are CSS pixels (1x); the PNG is rendered at 'scale'.",
- "captured": "2026-10-02T08:45:40.5435228+09:00",
+ "captured": "2026-10-04T21:27:47.2273299+09:00",
  "gh": "8.35.26251.13001",
- "source": "req-20261002-084540-057.json",
+ "source": "req-20261004-212746-371.json",
  "components": {
   "Auto Section": {
    "id": "auto-section",
@@ -1170,7 +1170,7 @@
   "Seat": {
    "id": "seat",
    "product": "antlion",
-   "w": 149,
+   "w": 138,
    "h": 408,
    "scale": 2,
    "inputs": [
@@ -1247,20 +1247,20 @@
      "y": 234
     },
     {
-     "name": "WC Ratio Target",
-     "nick": "WC %",
+     "name": "Wheelchair Ratio Target",
+     "nick": "♿ %",
      "x": 4,
      "y": 254
     },
     {
-     "name": "WC Width",
-     "nick": "WC W",
+     "name": "Wheelchair Space Width",
+     "nick": "♿ W",
      "x": 4,
      "y": 274
     },
     {
-     "name": "WC Depth",
-     "nick": "WC D",
+     "name": "Wheelchair Space Depth",
+     "nick": "♿ D",
      "x": 4,
      "y": 294
     },
@@ -1299,61 +1299,61 @@
     {
      "name": "Seat Result",
      "nick": "SRD",
-     "x": 145,
+     "x": 134,
      "y": 24
     },
     {
      "name": "Seat Rects",
      "nick": "Seats",
-     "x": 145,
+     "x": 134,
      "y": 64
     },
     {
      "name": "Good Seat Rects",
      "nick": "Good",
-     "x": 145,
+     "x": 134,
      "y": 104
     },
     {
      "name": "Poor Seat Rects",
      "nick": "Poor",
-     "x": 145,
+     "x": 134,
      "y": 144
     },
     {
      "name": "Vom Rects",
      "nick": "Voms",
-     "x": 145,
+     "x": 134,
      "y": 184
     },
     {
      "name": "Vom Shifts",
      "nick": "Shifts",
-     "x": 145,
+     "x": 134,
      "y": 224
     },
     {
      "name": "Aisles",
      "nick": "Aisles",
-     "x": 145,
+     "x": 134,
      "y": 264
     },
     {
-     "name": "WC Platforms",
-     "nick": "WC Plat",
-     "x": 145,
+     "name": "Wheelchair Platforms",
+     "nick": "♿ Plat",
+     "x": 134,
      "y": 304
     },
     {
-     "name": "WC Units",
-     "nick": "WC Units",
-     "x": 145,
+     "name": "Wheelchair Units",
+     "nick": "♿ Units",
+     "x": 134,
      "y": 344
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 145,
+     "x": 134,
      "y": 384
     }
    ]
@@ -1608,7 +1608,7 @@
   "Table In": {
    "id": "table-in",
    "product": "antlion",
-   "w": 130,
+   "w": 120,
    "h": 208,
    "scale": 2,
    "inputs": [
@@ -1629,61 +1629,61 @@
     {
      "name": "Table Data",
      "nick": "Table",
-     "x": 126,
+     "x": 116,
      "y": 14
     },
     {
      "name": "Eye Horizontal Offset",
      "nick": "Eye H",
-     "x": 126,
+     "x": 116,
      "y": 34
     },
     {
      "name": "Eye Vertical Offset",
      "nick": "Eye V",
-     "x": 126,
+     "x": 116,
      "y": 54
     },
     {
      "name": "Slab Thickness",
      "nick": "Slab T",
-     "x": 126,
+     "x": 116,
      "y": 74
     },
     {
      "name": "Minimum C-Value",
      "nick": "Min C",
-     "x": 126,
+     "x": 116,
      "y": 94
     },
     {
      "name": "C-Value Mode",
      "nick": "C Val",
-     "x": 126,
+     "x": 116,
      "y": 114
     },
     {
      "name": "Book",
      "nick": "Book",
-     "x": 126,
+     "x": 116,
      "y": 134
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 126,
+     "x": 116,
      "y": 154
     },
     {
-     "name": "WC Eye Vertical Offset",
-     "nick": "WC Eye V",
-     "x": 126,
+     "name": "Wheelchair Eye Vertical Offset",
+     "nick": "♿ Eye V",
+     "x": 116,
      "y": 174
     },
     {
-     "name": "WC Eye Horizontal Offset",
-     "nick": "WC Eye H",
-     "x": 126,
+     "name": "Wheelchair Eye Horizontal Offset",
+     "nick": "♿ Eye H",
+     "x": 116,
      "y": 194
     }
    ]
@@ -1926,7 +1926,7 @@
   "Table Section": {
    "id": "table-section",
    "product": "antlion",
-   "w": 128,
+   "w": 122,
    "h": 168,
    "scale": 2,
    "inputs": [
@@ -1971,49 +1971,49 @@
     {
      "name": "Stand Sections",
      "nick": "SSD ⊞",
-     "x": 124,
+     "x": 118,
      "y": 14
     },
     {
      "name": "Handrail Sections",
      "nick": "Rails",
-     "x": 124,
+     "x": 118,
      "y": 34
     },
     {
      "name": "Section Profiles",
      "nick": "Profile",
-     "x": 124,
+     "x": 118,
      "y": 54
     },
     {
      "name": "Closed Profiles",
      "nick": "Closed",
-     "x": 124,
+     "x": 118,
      "y": 74
     },
     {
      "name": "Eye Points",
      "nick": "Eye Pts",
-     "x": 124,
+     "x": 118,
      "y": 94
     },
     {
      "name": "Guide Geometry",
      "nick": "Guides",
-     "x": 124,
+     "x": 118,
      "y": 114
     },
     {
-     "name": "WC Section Profiles",
-     "nick": "WC Prof",
-     "x": 124,
+     "name": "Wheelchair Section Profiles",
+     "nick": "♿ Prof",
+     "x": 118,
      "y": 134
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 124,
+     "x": 118,
      "y": 154
     }
    ]
@@ -2327,7 +2327,7 @@
   "Section Plus": {
    "id": "section-plus",
    "product": "antlion",
-   "w": 151,
+   "w": 141,
    "h": 208,
    "scale": 2,
    "inputs": [
@@ -2362,26 +2362,26 @@
      "y": 94
     },
     {
-     "name": "WC Tiers",
-     "nick": "WC Tiers",
+     "name": "Wheelchair Tiers",
+     "nick": "♿ Tiers",
      "x": 4,
      "y": 114
     },
     {
-     "name": "WC Merge",
-     "nick": "WC Merge",
+     "name": "Wheelchair Merge",
+     "nick": "♿ Merge",
      "x": 4,
      "y": 134
     },
     {
-     "name": "WC Eye Vertical Offset",
-     "nick": "WC Eye V",
+     "name": "Wheelchair Eye Vertical Offset",
+     "nick": "♿ Eye V",
      "x": 4,
      "y": 154
     },
     {
-     "name": "WC Eye Horizontal Offset",
-     "nick": "WC Eye H",
+     "name": "Wheelchair Eye Horizontal Offset",
+     "nick": "♿ Eye H",
      "x": 4,
      "y": 174
     },
@@ -2396,43 +2396,43 @@
     {
      "name": "Stand Sections",
      "nick": "SSD ⊞",
-     "x": 147,
+     "x": 137,
      "y": 18
     },
     {
      "name": "Handrail Sections",
      "nick": "Rails",
-     "x": 147,
+     "x": 137,
      "y": 46
     },
     {
      "name": "Section Profiles",
      "nick": "Profile",
-     "x": 147,
+     "x": 137,
      "y": 75
     },
     {
      "name": "Closed Profiles",
      "nick": "Closed",
-     "x": 147,
+     "x": 137,
      "y": 103
     },
     {
      "name": "Guide Geometry",
      "nick": "Guides",
-     "x": 147,
+     "x": 137,
      "y": 132
     },
     {
-     "name": "WC Section Profiles",
-     "nick": "WC Prof",
-     "x": 147,
+     "name": "Wheelchair Section Profiles",
+     "nick": "♿ Prof",
+     "x": 137,
      "y": 160
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 147,
+     "x": 137,
      "y": 189
     }
    ]
@@ -2798,7 +2798,7 @@
    "id": "vom-3d",
    "product": "antlion",
    "w": 140,
-   "h": 168,
+   "h": 188,
    "scale": 2,
    "inputs": [
     {
@@ -2844,10 +2844,16 @@
      "y": 134
     },
     {
+     "name": "Band Opening Mode",
+     "nick": "▾ Band",
+     "x": 4,
+     "y": 154
+    },
+    {
      "name": "Panel Values",
      "nick": "Panel",
      "x": 4,
-     "y": 154
+     "y": 174
     }
    ],
    "outputs": [
@@ -2855,25 +2861,25 @@
      "name": "Seat Result",
      "nick": "SRD",
      "x": 136,
-     "y": 24
+     "y": 26
     },
     {
      "name": "Vom Breps",
      "nick": "Vom 3D",
      "x": 136,
-     "y": 64
+     "y": 71
     },
     {
      "name": "Vom Curves",
      "nick": "Vom Crv",
      "x": 136,
-     "y": 104
+     "y": 116
     },
     {
      "name": "Debug",
      "nick": "Debug",
      "x": 136,
-     "y": 144
+     "y": 161
     }
    ]
   },
@@ -2945,8 +2951,8 @@
   "Custom Seat": {
    "id": "custom-seat",
    "product": "antlion",
-   "w": 151,
-   "h": 428,
+   "w": 140,
+   "h": 408,
    "scale": 2,
    "inputs": [
     {
@@ -2986,8 +2992,8 @@
      "y": 114
     },
     {
-     "name": "Custom WCs",
-     "nick": "Cust WC",
+     "name": "Custom Wheelchair Spaces",
+     "nick": "Cust ♿",
      "x": 4,
      "y": 134
     },
@@ -3040,96 +3046,90 @@
      "y": 294
     },
     {
-     "name": "WC Ratio Target",
-     "nick": "WC %",
+     "name": "Wheelchair Ratio Target",
+     "nick": "♿ %",
      "x": 4,
      "y": 314
     },
     {
-     "name": "WC Width",
-     "nick": "WC W",
+     "name": "Wheelchair Space Width",
+     "nick": "♿ W",
      "x": 4,
      "y": 334
     },
     {
-     "name": "WC Depth",
-     "nick": "WC D",
+     "name": "Wheelchair Space Depth",
+     "nick": "♿ D",
      "x": 4,
      "y": 354
-    },
-    {
-     "name": "Band Opening Mode",
-     "nick": "▾ Band",
-     "x": 4,
-     "y": 374
     },
     {
      "name": "End Offset",
      "nick": "End Off",
      "x": 4,
-     "y": 394
+     "y": 374
     },
     {
      "name": "Panel Values",
      "nick": "Panel",
      "x": 4,
-     "y": 414
+     "y": 394
     }
    ],
    "outputs": [
     {
      "name": "Seat Result",
      "nick": "SRD",
-     "x": 147,
-     "y": 27
+     "x": 136,
+     "y": 26
     },
     {
      "name": "Seat Rects",
      "nick": "Seats",
-     "x": 147,
-     "y": 73
+     "x": 136,
+     "y": 70
     },
     {
      "name": "Good Seat Rects",
      "nick": "Good",
-     "x": 147,
-     "y": 120
+     "x": 136,
+     "y": 114
     },
     {
      "name": "Poor Seat Rects",
      "nick": "Poor",
-     "x": 147,
-     "y": 167
+     "x": 136,
+     "y": 159
     },
     {
      "name": "Vom Rects",
      "nick": "Voms",
-     "x": 147,
-     "y": 213
+     "x": 136,
+     "y": 203
     },
     {
      "name": "Aisles",
      "nick": "Aisles",
-     "x": 147,
-     "y": 260
+     "x": 136,
+     "y": 248
     },
     {
-     "name": "WC Platforms",
-     "nick": "WC Plat",
-     "x": 147,
-     "y": 307
+     "name": "Wheelchair Platforms",
+     "nick": "♿ Plat",
+     "x": 136,
+     "y": 292
     },
     {
-     "name": "WC Units",
-     "nick": "WC Units",
-     "x": 147,
-     "y": 353
+     "name": "Wheelchair Units",
+     "nick": "♿ Units",
+     "x": 136,
+     "y": 337
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 147,
-     "y": 400
+     "x": 136,
+     "y": 381
     }
    ]
   },
@@ -3435,8 +3435,8 @@
      "y": 204
     },
     {
-     "name": "WC Units",
-     "nick": "WC Units",
+     "name": "Wheelchair Units",
+     "nick": "♿ Units",
      "x": 146,
      "y": 228
     },
@@ -3794,7 +3794,7 @@
   "Stand 3D Plus": {
    "id": "stand-3d-plus",
    "product": "antlion",
-   "w": 144,
+   "w": 139,
    "h": 108,
    "scale": 2,
    "inputs": [
@@ -3811,7 +3811,7 @@
      "y": 34
     },
     {
-     "name": "WC Deck Mode",
+     "name": "Wheelchair Deck Mode",
      "nick": "▾ Deck",
      "x": 4,
      "y": 54
@@ -3833,31 +3833,31 @@
     {
      "name": "Build Result",
      "nick": "BRD",
-     "x": 140,
+     "x": 135,
      "y": 14
     },
     {
      "name": "Stand Breps",
      "nick": "Bodies",
-     "x": 140,
+     "x": 135,
      "y": 34
     },
     {
      "name": "Aisles 3D",
      "nick": "Aisles 3D",
-     "x": 140,
+     "x": 135,
      "y": 54
     },
     {
-     "name": "WC Decks",
-     "nick": "WC Decks",
-     "x": 140,
+     "name": "Wheelchair Decks",
+     "nick": "♿ Decks",
+     "x": 135,
      "y": 74
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 140,
+     "x": 135,
      "y": 94
     }
    ]

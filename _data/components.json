@@ -2622,7 +2622,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-10-02",
+     "checked": "2026-10-04",
      "summary": "Turns the tread lines you draw into a tier section — rows, nosing and eye points, and the closed profile the stand is swept from. Draw one line per step; the component sorts them and works out the tiers.",
      "inputs": [
       {
@@ -3061,7 +3061,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-10-02",
+     "checked": "2026-10-04",
      "summary": "Works out the risers for you. Give it the tread depths and the minimum C-value you want to hold, and it raises each step by the smallest Riser Step increment that still clears that C-value - the shallowest bowl that meets the target. The front row starts on the start line, so wire the same field, focal point and start line that Section takes. Bake tread_lines if you want to fine-tune the steps by hand in Section afterwards.",
      "inputs": [
       {
@@ -3836,7 +3836,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-10-02",
+     "checked": "2026-10-04",
      "summary": "Adds the things a bare section does not have: the front barrier or handrail, accessible (wheelchair) rows, and the sightline check over the barrier. Sits between Section and Stand 2D — pure section geometry stays in Section.",
      "inputs": [
       {
@@ -3906,8 +3906,8 @@
       },
       {
        "index": 5,
-       "name": "WC Tiers",
-       "nick": "",
+       "name": "Wheelchair Tiers",
+       "nick": "♿ Tiers",
        "ghType": "Boolean",
        "access": "list",
        "optional": true,
@@ -3919,21 +3919,21 @@
       },
       {
        "index": 6,
-       "name": "WC Merge",
-       "nick": "",
+       "name": "Wheelchair Merge",
+       "nick": "♿ Merge",
        "ghType": "Boolean",
        "access": "item",
        "optional": false,
        "dropdown": false,
        "default": "false",
-       "desc": "Level the top 2 rows of every WC tier. The section does not change - see WC Section Profiles (default false)",
+       "desc": "Level the top 2 rows of every wheelchair tier. The section does not change - see Wheelchair Section Profiles (default false)",
        "flow": false,
        "type": null
       },
       {
        "index": 7,
-       "name": "WC Eye Vertical Offset",
-       "nick": "WC Eye V",
+       "name": "Wheelchair Eye Vertical Offset",
+       "nick": "♿ Eye V",
        "ghType": "Number",
        "access": "item",
        "optional": false,
@@ -3945,8 +3945,8 @@
       },
       {
        "index": 8,
-       "name": "WC Eye Horizontal Offset",
-       "nick": "WC Eye H",
+       "name": "Wheelchair Eye Horizontal Offset",
+       "nick": "♿ Eye H",
        "ghType": "Number",
        "access": "item",
        "optional": false,
@@ -4038,14 +4038,14 @@
       },
       {
        "index": 5,
-       "name": "WC Section Profiles",
-       "nick": "WC Prof",
+       "name": "Wheelchair Section Profiles",
+       "nick": "♿ Prof",
        "ghType": "Curve",
        "access": "list",
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "Tread-top line through an accessible platform, one per WC tier. The tier's own section is unchanged",
+       "desc": "Tread-top line through an accessible platform, one per wheelchair tier. The tier's own section is unchanged",
        "flow": false,
        "type": null
       },
@@ -4078,14 +4078,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1082,
+      "w": 1068,
       "h": 706,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 197,
-      "imgW": 226,
+      "imgW": 212,
       "imgH": 312,
       "img": "/assets/img/antlion/components/section-plus.png",
       "pending": false,
@@ -4168,8 +4168,8 @@
        {
         "side": "in",
         "index": 5,
-        "name": "WC Tiers",
-        "nick": "",
+        "name": "Wheelchair Tiers",
+        "nick": "♿ Tiers",
         "ghType": "Boolean",
         "access": "list",
         "flow": false,
@@ -4183,12 +4183,12 @@
        {
         "side": "in",
         "index": 6,
-        "name": "WC Merge",
-        "nick": "",
+        "name": "Wheelchair Merge",
+        "nick": "♿ Merge",
         "ghType": "Boolean",
         "access": "item",
         "flow": false,
-        "blurb": "Level the top 2 rows of every WC tier",
+        "blurb": "Level the top 2 rows of every wheelchair tier",
         "callX": 0,
         "callY": 422,
         "gripX": 434,
@@ -4198,8 +4198,8 @@
        {
         "side": "in",
         "index": 7,
-        "name": "WC Eye Vertical Offset",
-        "nick": "WC Eye V",
+        "name": "Wheelchair Eye Vertical Offset",
+        "nick": "♿ Eye V",
         "ghType": "Number",
         "access": "item",
         "flow": false,
@@ -4213,8 +4213,8 @@
        {
         "side": "in",
         "index": 8,
-        "name": "WC Eye Horizontal Offset",
-        "nick": "WC Eye H",
+        "name": "Wheelchair Eye Horizontal Offset",
+        "nick": "♿ Eye H",
         "ghType": "Number",
         "access": "item",
         "flow": false,
@@ -4249,11 +4249,11 @@
         "access": "list",
         "flow": true,
         "blurb": "The same sections back, with the barrier and accessible rows written in",
-        "callX": 742,
+        "callX": 728,
         "callY": 192,
-        "gripX": 648,
+        "gripX": 634,
         "gripY": 224,
-        "d": "M742 223 H728 L660 224 H648"
+        "d": "M728 223 H714 L646 224 H634"
        },
        {
         "side": "out",
@@ -4264,11 +4264,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The barrier itself, one closed section curve per tier",
-        "callX": 742,
+        "callX": 728,
         "callY": 260,
-        "gripX": 648,
+        "gripX": 634,
         "gripY": 266,
-        "d": "M742 291 H728 L660 266 H648"
+        "d": "M728 291 H714 L646 266 H634"
        },
        {
         "side": "out",
@@ -4279,11 +4279,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Tread-top stepped line after the front row was pulled back for the barrier",
-        "callX": 742,
+        "callX": 728,
         "callY": 326,
-        "gripX": 648,
+        "gripX": 634,
         "gripY": 309,
-        "d": "M742 357 H728 L660 309 H648"
+        "d": "M728 357 H714 L646 309 H634"
        },
        {
         "side": "out",
@@ -4294,11 +4294,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The closed profile rebuilt after the barrier pull-back",
-        "callX": 742,
+        "callX": 728,
         "callY": 394,
-        "gripX": 648,
+        "gripX": 634,
         "gripY": 351,
-        "d": "M742 425 H728 L660 351 H648"
+        "d": "M728 425 H714 L646 351 H634"
        },
        {
         "side": "out",
@@ -4309,26 +4309,26 @@
         "access": "list",
         "flow": false,
         "blurb": "The lines behind the barrier check",
-        "callX": 742,
+        "callX": 728,
         "callY": 460,
-        "gripX": 648,
+        "gripX": 634,
         "gripY": 395,
-        "d": "M742 491 H728 L660 395 H648"
+        "d": "M728 491 H714 L646 395 H634"
        },
        {
         "side": "out",
         "index": 5,
-        "name": "WC Section Profiles",
-        "nick": "WC Prof",
+        "name": "Wheelchair Section Profiles",
+        "nick": "♿ Prof",
         "ghType": "Curve",
         "access": "list",
         "flow": false,
-        "blurb": "Tread-top line through an accessible platform, one per WC tier",
-        "callX": 742,
+        "blurb": "Tread-top line through an accessible platform, one per wheelchair tier",
+        "callX": 728,
         "callY": 528,
-        "gripX": 648,
+        "gripX": 634,
         "gripY": 437,
-        "d": "M742 559 H728 L660 437 H648"
+        "d": "M728 559 H714 L646 437 H634"
        },
        {
         "side": "out",
@@ -4339,11 +4339,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 742,
+        "callX": 728,
         "callY": 594,
-        "gripX": 648,
+        "gripX": 634,
         "gripY": 481,
-        "d": "M742 625 H728 L660 481 H648"
+        "d": "M728 625 H714 L646 481 H634"
        }
       ]
      },
@@ -4360,7 +4360,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-10-02",
+     "checked": "2026-10-04",
      "summary": "Builds the tier sections from the numbers in your workbook instead of lines you draw. Wire the book from Table In, plus the same field, focal point and start line that Section takes. The barrier settings live in the workbook too, so this one component does what Section and Section Plus do together - the outputs are the same.",
      "inputs": [
       {
@@ -4523,14 +4523,14 @@
       },
       {
        "index": 6,
-       "name": "WC Section Profiles",
-       "nick": "WC Prof",
+       "name": "Wheelchair Section Profiles",
+       "nick": "♿ Prof",
        "ghType": "Curve",
        "access": "list",
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "Tread-top line through an accessible platform, one per WC tier. The tier's own section is unchanged",
+       "desc": "Tread-top line through an accessible platform, one per wheelchair tier. The tier's own section is unchanged",
        "flow": false,
        "type": null
       },
@@ -4565,14 +4565,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1048,
+      "w": 1039,
       "h": 572,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 160,
-      "imgW": 192,
+      "imgW": 183,
       "imgH": 252,
       "img": "/assets/img/antlion/components/table-section.png",
       "pending": false,
@@ -4676,11 +4676,11 @@
         "access": "list",
         "flow": true,
         "blurb": "The tier sections, with the barrier and any accessible rows written in",
-        "callX": 708,
+        "callX": 699,
         "callY": 20,
-        "gripX": 614,
+        "gripX": 605,
         "gripY": 181,
-        "d": "M708 51 H694 L626 181 H614"
+        "d": "M699 51 H685 L617 181 H605"
        },
        {
         "side": "out",
@@ -4691,11 +4691,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The barrier itself, one closed section curve per tier",
-        "callX": 708,
+        "callX": 699,
         "callY": 87,
-        "gripX": 614,
+        "gripX": 605,
         "gripY": 211,
-        "d": "M708 118 H694 L626 211 H614"
+        "d": "M699 118 H685 L617 211 H605"
        },
        {
         "side": "out",
@@ -4706,11 +4706,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Tread-top stepped line, after the front row was pulled back for the barrier",
-        "callX": 708,
+        "callX": 699,
         "callY": 154,
-        "gripX": 614,
+        "gripX": 605,
         "gripY": 241,
-        "d": "M708 185 H694 L626 241 H614"
+        "d": "M699 185 H685 L617 241 H605"
        },
        {
         "side": "out",
@@ -4721,11 +4721,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The closed profile the stand is swept from",
-        "callX": 708,
+        "callX": 699,
         "callY": 221,
-        "gripX": 614,
+        "gripX": 605,
         "gripY": 271,
-        "d": "M708 252 H694 L626 271 H614"
+        "d": "M699 252 H685 L617 271 H605"
        },
        {
         "side": "out",
@@ -4736,11 +4736,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Eye point of every row, all tiers",
-        "callX": 708,
+        "callX": 699,
         "callY": 288,
-        "gripX": 614,
+        "gripX": 605,
         "gripY": 301,
-        "d": "M708 319 H694 L626 301 H614"
+        "d": "M699 319 H685 L617 301 H605"
        },
        {
         "side": "out",
@@ -4751,26 +4751,26 @@
         "access": "list",
         "flow": false,
         "blurb": "The lines behind the barrier sightline check",
-        "callX": 708,
+        "callX": 699,
         "callY": 355,
-        "gripX": 614,
+        "gripX": 605,
         "gripY": 331,
-        "d": "M708 386 H694 L626 331 H614"
+        "d": "M699 386 H685 L617 331 H605"
        },
        {
         "side": "out",
         "index": 6,
-        "name": "WC Section Profiles",
-        "nick": "WC Prof",
+        "name": "Wheelchair Section Profiles",
+        "nick": "♿ Prof",
         "ghType": "Curve",
         "access": "list",
         "flow": false,
-        "blurb": "Tread-top line through an accessible platform, one per WC tier",
-        "callX": 708,
+        "blurb": "Tread-top line through an accessible platform, one per wheelchair tier",
+        "callX": 699,
         "callY": 422,
-        "gripX": 614,
+        "gripX": 605,
         "gripY": 361,
-        "d": "M708 453 H694 L626 361 H614"
+        "d": "M699 453 H685 L617 361 H605"
        },
        {
         "side": "out",
@@ -4781,11 +4781,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 708,
+        "callX": 699,
         "callY": 489,
-        "gripX": 614,
+        "gripX": 605,
         "gripY": 391,
-        "d": "M708 520 H694 L626 391 H614"
+        "d": "M699 520 H685 L617 391 H605"
        }
       ]
      },
@@ -4802,7 +4802,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-10-01",
+     "checked": "2026-10-04",
      "summary": "Sweeps each tier section around the axis planes and flattens it into tread rings in plan. Everything downstream — seats, vomitories, cuts — works on these rings.",
      "inputs": [
       {
@@ -5049,7 +5049,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-10-01",
+     "checked": "2026-10-04",
      "summary": "Places the vomitories — the tunnels spectators enter the bowl through — in the tread rings, and sets how each one gets down to the concourse: flat, stepped, stair or ramp.",
      "inputs": [
       {
@@ -5828,7 +5828,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-10-01",
+     "checked": "2026-10-04",
      "summary": "Fills the tread rings with seats, breaking each row at the vomitories and aisles, and flags rows that break the egress limits. Wheelchair spaces are placed here too.",
      "inputs": [
       {
@@ -5989,8 +5989,8 @@
       },
       {
        "index": 12,
-       "name": "WC Ratio Target",
-       "nick": "WC %",
+       "name": "Wheelchair Ratio Target",
+       "nick": "♿ %",
        "ghType": "Number",
        "access": "item",
        "optional": false,
@@ -6002,8 +6002,8 @@
       },
       {
        "index": 13,
-       "name": "WC Width",
-       "nick": "WC W",
+       "name": "Wheelchair Space Width",
+       "nick": "♿ W",
        "ghType": "Number",
        "access": "item",
        "optional": false,
@@ -6015,8 +6015,8 @@
       },
       {
        "index": 14,
-       "name": "WC Depth",
-       "nick": "WC D",
+       "name": "Wheelchair Space Depth",
+       "nick": "♿ D",
        "ghType": "Number",
        "access": "item",
        "optional": false,
@@ -6186,8 +6186,8 @@
       },
       {
        "index": 7,
-       "name": "WC Platforms",
-       "nick": "WC Plat",
+       "name": "Wheelchair Platforms",
+       "nick": "♿ Plat",
        "ghType": "Curve",
        "access": "tree",
        "optional": false,
@@ -6199,8 +6199,8 @@
       },
       {
        "index": 8,
-       "name": "WC Units",
-       "nick": "",
+       "name": "Wheelchair Units",
+       "nick": "♿ Units",
        "ghType": "Curve",
        "access": "tree",
        "optional": false,
@@ -6244,14 +6244,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1080,
+      "w": 1063,
       "h": 1376,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 382,
-      "imgW": 224,
+      "imgW": 207,
       "imgH": 612,
       "img": "/assets/img/antlion/components/seat.png",
       "pending": false,
@@ -6439,8 +6439,8 @@
        {
         "side": "in",
         "index": 12,
-        "name": "WC Ratio Target",
-        "nick": "WC %",
+        "name": "Wheelchair Ratio Target",
+        "nick": "♿ %",
         "ghType": "Number",
         "access": "item",
         "flow": false,
@@ -6454,8 +6454,8 @@
        {
         "side": "in",
         "index": 13,
-        "name": "WC Width",
-        "nick": "WC W",
+        "name": "Wheelchair Space Width",
+        "nick": "♿ W",
         "ghType": "Number",
         "access": "item",
         "flow": false,
@@ -6469,8 +6469,8 @@
        {
         "side": "in",
         "index": 14,
-        "name": "WC Depth",
-        "nick": "WC D",
+        "name": "Wheelchair Space Depth",
+        "nick": "♿ D",
         "ghType": "Number",
         "access": "item",
         "flow": false,
@@ -6565,11 +6565,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The whole 2D layout as one object",
-        "callX": 740,
+        "callX": 723,
         "callY": 386,
-        "gripX": 646,
+        "gripX": 629,
         "gripY": 418,
-        "d": "M740 417 H726 L658 418 H646"
+        "d": "M723 417 H709 L641 418 H629"
        },
        {
         "side": "out",
@@ -6580,11 +6580,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 740,
+        "callX": 723,
         "callY": 454,
-        "gripX": 646,
+        "gripX": 629,
         "gripY": 478,
-        "d": "M740 485 H726 L658 478 H646"
+        "d": "M723 485 H709 L641 478 H629"
        },
        {
         "side": "out",
@@ -6595,11 +6595,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 740,
+        "callX": 723,
         "callY": 520,
-        "gripX": 646,
+        "gripX": 629,
         "gripY": 538,
-        "d": "M740 551 H726 L658 538 H646"
+        "d": "M723 551 H709 L641 538 H629"
        },
        {
         "side": "out",
@@ -6610,11 +6610,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 740,
+        "callX": 723,
         "callY": 588,
-        "gripX": 646,
+        "gripX": 629,
         "gripY": 598,
-        "d": "M740 619 H726 L658 598 H646"
+        "d": "M723 619 H709 L641 598 H629"
        },
        {
         "side": "out",
@@ -6625,11 +6625,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 740,
+        "callX": 723,
         "callY": 654,
-        "gripX": 646,
+        "gripX": 629,
         "gripY": 658,
-        "d": "M740 685 H726 L658 658 H646"
+        "d": "M723 685 H709 L641 658 H629"
        },
        {
         "side": "out",
@@ -6640,11 +6640,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 740,
+        "callX": 723,
         "callY": 722,
-        "gripX": 646,
+        "gripX": 629,
         "gripY": 718,
-        "d": "M740 753 H726 L658 718 H646"
+        "d": "M723 753 H709 L641 718 H629"
        },
        {
         "side": "out",
@@ -6655,41 +6655,41 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 740,
+        "callX": 723,
         "callY": 788,
-        "gripX": 646,
+        "gripX": 629,
         "gripY": 778,
-        "d": "M740 819 H726 L658 778 H646"
+        "d": "M723 819 H709 L641 778 H629"
        },
        {
         "side": "out",
         "index": 7,
-        "name": "WC Platforms",
-        "nick": "WC Plat",
+        "name": "Wheelchair Platforms",
+        "nick": "♿ Plat",
         "ghType": "Curve",
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 740,
+        "callX": 723,
         "callY": 856,
-        "gripX": 646,
+        "gripX": 629,
         "gripY": 838,
-        "d": "M740 887 H726 L658 838 H646"
+        "d": "M723 887 H709 L641 838 H629"
        },
        {
         "side": "out",
         "index": 8,
-        "name": "WC Units",
-        "nick": "",
+        "name": "Wheelchair Units",
+        "nick": "♿ Units",
         "ghType": "Curve",
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 740,
+        "callX": 723,
         "callY": 922,
-        "gripX": 646,
+        "gripX": 629,
         "gripY": 898,
-        "d": "M740 953 H726 L658 898 H646"
+        "d": "M723 953 H709 L641 898 H629"
        },
        {
         "side": "out",
@@ -6700,11 +6700,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 740,
+        "callX": 723,
         "callY": 990,
-        "gripX": 646,
+        "gripX": 629,
         "gripY": 958,
-        "d": "M740 1021 H726 L658 958 H646"
+        "d": "M723 1021 H709 L641 958 H629"
        }
       ]
      },
@@ -6721,7 +6721,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-10-01",
+     "checked": "2026-10-04",
      "summary": "Same seat placement as Seat, but the vomitories, aisles and even the seats come from curves you draw instead of being generated. Use it where the automatic layout cannot express what you want.",
      "inputs": [
       {
@@ -6772,7 +6772,7 @@
        "optional": true,
        "dropdown": false,
        "default": null,
-       "desc": "One branch per tier. Draw each opening over the treads it spans: a closed rect, a band bent along the rings (4 corners, plus 2 per bend - split into rects, doors at the band's ends as Band Opening Mode picks), or a U-shaped outline (arms at or inside the bar's ends - split into arm, bar and arm). Two rects may share a segment only on different rows",
+       "desc": "One branch per tier. Draw each opening over the treads it spans: a closed rect, a band bent along the rings (4 corners, plus 2 per bend - split into rects, doors at both ends of the band - Vom 3D's Band Opening Mode can keep one), or a U-shaped outline (arms at or inside the bar's ends - split into arm, bar and arm). Two rects may share a segment only on different rows",
        "flow": false,
        "type": null
       },
@@ -6804,14 +6804,14 @@
       },
       {
        "index": 6,
-       "name": "Custom WCs",
-       "nick": "Cust WC",
+       "name": "Custom Wheelchair Spaces",
+       "nick": "Cust ♿",
        "ghType": "Curve",
        "access": "tree",
        "optional": true,
        "dropdown": false,
        "default": null,
-       "desc": "One branch per tier. Draw each accessible space - wheelchair and companion alike - exactly where you want it. The rects are kept as drawn, seats underneath are removed, and automatic WC units are replaced by yours - the accessible row itself stays cleared and merged",
+       "desc": "One branch per tier. Draw each accessible space - wheelchair and companion alike - exactly where you want it. The rects are kept as drawn, seats underneath are removed, and automatic wheelchair units are replaced by yours - the accessible row itself stays cleared and merged",
        "flow": false,
        "type": null
       },
@@ -6915,14 +6915,14 @@
        "optional": false,
        "dropdown": false,
        "default": "true",
-       "desc": "Add a mid aisle to runs still too long. Your own aisles never move (default true)",
+       "desc": "Add a mid aisle to runs still too long. Tiers with Custom Steps use only your aisles (default true)",
        "flow": false,
        "type": null
       },
       {
        "index": 15,
-       "name": "WC Ratio Target",
-       "nick": "WC %",
+       "name": "Wheelchair Ratio Target",
+       "nick": "♿ %",
        "ghType": "Number",
        "access": "item",
        "optional": false,
@@ -6934,8 +6934,8 @@
       },
       {
        "index": 16,
-       "name": "WC Width",
-       "nick": "WC W",
+       "name": "Wheelchair Space Width",
+       "nick": "♿ W",
        "ghType": "Number",
        "access": "item",
        "optional": false,
@@ -6947,8 +6947,8 @@
       },
       {
        "index": 17,
-       "name": "WC Depth",
-       "nick": "WC D",
+       "name": "Wheelchair Space Depth",
+       "nick": "♿ D",
        "ghType": "Number",
        "access": "item",
        "optional": false,
@@ -6960,19 +6960,6 @@
       },
       {
        "index": 18,
-       "name": "Band Opening Mode",
-       "nick": "▾ Band",
-       "ghType": "Integer",
-       "access": "list",
-       "optional": true,
-       "dropdown": true,
-       "default": null,
-       "desc": "Which end of each band bent along the rings gets its opening: BOTH, LEFT or RIGHT - give as many as there are bands, numbered in Custom Voms order from tier 1; the last value fills the rest. LEFT is the end towards higher axis numbers - the left end seen from the field on a closed bowl. The opening size comes from Vom 3D. With several sections, each Custom Seat sets only the band ends its own section keeps - give every one that holds the band the same value; Assemble Bowl points out a band left open at an end another section closes (default BOTH)",
-       "flow": false,
-       "type": null
-      },
-      {
-       "index": 19,
        "name": "End Offset",
        "nick": "End Off",
        "ghType": "Number",
@@ -6985,7 +6972,7 @@
        "type": null
       },
       {
-       "index": 20,
+       "index": 19,
        "name": "Panel Values",
        "nick": "Panel",
        "ghType": "Object",
@@ -7079,8 +7066,8 @@
       },
       {
        "index": 6,
-       "name": "WC Platforms",
-       "nick": "WC Plat",
+       "name": "Wheelchair Platforms",
+       "nick": "♿ Plat",
        "ghType": "Curve",
        "access": "tree",
        "optional": false,
@@ -7092,8 +7079,8 @@
       },
       {
        "index": 7,
-       "name": "WC Units",
-       "nick": "",
+       "name": "Wheelchair Units",
+       "nick": "♿ Units",
        "ghType": "Curve",
        "access": "tree",
        "optional": false,
@@ -7137,15 +7124,15 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1082,
-      "h": 1443,
+      "w": 1066,
+      "h": 1376,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
-      "imgY": 400,
-      "imgW": 226,
-      "imgH": 642,
+      "imgY": 382,
+      "imgW": 210,
+      "imgH": 612,
       "img": "/assets/img/antlion/components/custom-seat.png",
       "pending": false,
       "ports": [
@@ -7161,8 +7148,8 @@
         "callX": 0,
         "callY": 20,
         "gripX": 434,
-        "gripY": 421,
-        "d": "M340 51 H354 L422 421 H434"
+        "gripY": 403,
+        "d": "M340 51 H354 L422 403 H434"
        },
        {
         "side": "in",
@@ -7176,8 +7163,8 @@
         "callX": 0,
         "callY": 87,
         "gripX": 434,
-        "gripY": 451,
-        "d": "M340 118 H354 L422 451 H434"
+        "gripY": 433,
+        "d": "M340 118 H354 L422 433 H434"
        },
        {
         "side": "in",
@@ -7191,8 +7178,8 @@
         "callX": 0,
         "callY": 154,
         "gripX": 434,
-        "gripY": 481,
-        "d": "M340 185 H354 L422 481 H434"
+        "gripY": 463,
+        "d": "M340 185 H354 L422 463 H434"
        },
        {
         "side": "in",
@@ -7206,8 +7193,8 @@
         "callX": 0,
         "callY": 221,
         "gripX": 434,
-        "gripY": 511,
-        "d": "M340 252 H354 L422 511 H434"
+        "gripY": 493,
+        "d": "M340 252 H354 L422 493 H434"
        },
        {
         "side": "in",
@@ -7221,8 +7208,8 @@
         "callX": 0,
         "callY": 288,
         "gripX": 434,
-        "gripY": 541,
-        "d": "M340 319 H354 L422 541 H434"
+        "gripY": 523,
+        "d": "M340 319 H354 L422 523 H434"
        },
        {
         "side": "in",
@@ -7236,14 +7223,14 @@
         "callX": 0,
         "callY": 355,
         "gripX": 434,
-        "gripY": 571,
-        "d": "M340 386 H354 L422 571 H434"
+        "gripY": 553,
+        "d": "M340 386 H354 L422 553 H434"
        },
        {
         "side": "in",
         "index": 6,
-        "name": "Custom WCs",
-        "nick": "Cust WC",
+        "name": "Custom Wheelchair Spaces",
+        "nick": "Cust ♿",
         "ghType": "Curve",
         "access": "tree",
         "flow": false,
@@ -7251,8 +7238,8 @@
         "callX": 0,
         "callY": 422,
         "gripX": 434,
-        "gripY": 601,
-        "d": "M340 453 H354 L422 601 H434"
+        "gripY": 583,
+        "d": "M340 453 H354 L422 583 H434"
        },
        {
         "side": "in",
@@ -7266,8 +7253,8 @@
         "callX": 0,
         "callY": 489,
         "gripX": 434,
-        "gripY": 631,
-        "d": "M340 520 H354 L422 631 H434"
+        "gripY": 613,
+        "d": "M340 520 H354 L422 613 H434"
        },
        {
         "side": "in",
@@ -7281,8 +7268,8 @@
         "callX": 0,
         "callY": 556,
         "gripX": 434,
-        "gripY": 661,
-        "d": "M340 587 H354 L422 661 H434"
+        "gripY": 643,
+        "d": "M340 587 H354 L422 643 H434"
        },
        {
         "side": "in",
@@ -7296,8 +7283,8 @@
         "callX": 0,
         "callY": 623,
         "gripX": 434,
-        "gripY": 691,
-        "d": "M340 654 H354 L422 691 H434"
+        "gripY": 673,
+        "d": "M340 654 H354 L422 673 H434"
        },
        {
         "side": "in",
@@ -7311,8 +7298,8 @@
         "callX": 0,
         "callY": 690,
         "gripX": 434,
-        "gripY": 721,
-        "d": "M340 721 H434"
+        "gripY": 703,
+        "d": "M340 721 H354 L422 703 H434"
        },
        {
         "side": "in",
@@ -7326,8 +7313,8 @@
         "callX": 0,
         "callY": 757,
         "gripX": 434,
-        "gripY": 751,
-        "d": "M340 788 H354 L422 751 H434"
+        "gripY": 733,
+        "d": "M340 788 H354 L422 733 H434"
        },
        {
         "side": "in",
@@ -7341,8 +7328,8 @@
         "callX": 0,
         "callY": 824,
         "gripX": 434,
-        "gripY": 781,
-        "d": "M340 855 H354 L422 781 H434"
+        "gripY": 763,
+        "d": "M340 855 H354 L422 763 H434"
        },
        {
         "side": "in",
@@ -7356,8 +7343,8 @@
         "callX": 0,
         "callY": 891,
         "gripX": 434,
-        "gripY": 811,
-        "d": "M340 922 H354 L422 811 H434"
+        "gripY": 793,
+        "d": "M340 922 H354 L422 793 H434"
        },
        {
         "side": "in",
@@ -7371,14 +7358,14 @@
         "callX": 0,
         "callY": 958,
         "gripX": 434,
-        "gripY": 841,
-        "d": "M340 989 H354 L422 841 H434"
+        "gripY": 823,
+        "d": "M340 989 H354 L422 823 H434"
        },
        {
         "side": "in",
         "index": 15,
-        "name": "WC Ratio Target",
-        "nick": "WC %",
+        "name": "Wheelchair Ratio Target",
+        "nick": "♿ %",
         "ghType": "Number",
         "access": "item",
         "flow": false,
@@ -7386,14 +7373,14 @@
         "callX": 0,
         "callY": 1025,
         "gripX": 434,
-        "gripY": 871,
-        "d": "M340 1056 H354 L422 871 H434"
+        "gripY": 853,
+        "d": "M340 1056 H354 L422 853 H434"
        },
        {
         "side": "in",
         "index": 16,
-        "name": "WC Width",
-        "nick": "WC W",
+        "name": "Wheelchair Space Width",
+        "nick": "♿ W",
         "ghType": "Number",
         "access": "item",
         "flow": false,
@@ -7401,14 +7388,14 @@
         "callX": 0,
         "callY": 1092,
         "gripX": 434,
-        "gripY": 901,
-        "d": "M340 1123 H354 L422 901 H434"
+        "gripY": 883,
+        "d": "M340 1123 H354 L422 883 H434"
        },
        {
         "side": "in",
         "index": 17,
-        "name": "WC Depth",
-        "nick": "WC D",
+        "name": "Wheelchair Space Depth",
+        "nick": "♿ D",
         "ghType": "Number",
         "access": "item",
         "flow": false,
@@ -7416,27 +7403,12 @@
         "callX": 0,
         "callY": 1159,
         "gripX": 434,
-        "gripY": 931,
-        "d": "M340 1190 H354 L422 931 H434"
+        "gripY": 913,
+        "d": "M340 1190 H354 L422 913 H434"
        },
        {
         "side": "in",
         "index": 18,
-        "name": "Band Opening Mode",
-        "nick": "▾ Band",
-        "ghType": "Integer",
-        "access": "list",
-        "flow": false,
-        "blurb": "Which end of each band bent along the rings gets its opening: BOTH, LEFT or RIGHT",
-        "callX": 0,
-        "callY": 1226,
-        "gripX": 434,
-        "gripY": 961,
-        "d": "M340 1257 H354 L422 961 H434"
-       },
-       {
-        "side": "in",
-        "index": 19,
         "name": "End Offset",
         "nick": "End Off",
         "ghType": "Number",
@@ -7444,14 +7416,14 @@
         "flow": false,
         "blurb": "How far each open end of the stand moves past its end axis",
         "callX": 0,
-        "callY": 1293,
+        "callY": 1226,
         "gripX": 434,
-        "gripY": 991,
-        "d": "M340 1324 H354 L422 991 H434"
+        "gripY": 943,
+        "d": "M340 1257 H354 L422 943 H434"
        },
        {
         "side": "in",
-        "index": 20,
+        "index": 19,
         "name": "Panel Values",
         "nick": "Panel",
         "ghType": "Object",
@@ -7459,10 +7431,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 1360,
+        "callY": 1293,
         "gripX": 434,
-        "gripY": 1021,
-        "d": "M340 1391 H354 L422 1021 H434"
+        "gripY": 973,
+        "d": "M340 1324 H354 L422 973 H434"
        },
        {
         "side": "out",
@@ -7473,11 +7445,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The whole 2D layout as one object",
-        "callX": 742,
-        "callY": 408,
-        "gripX": 648,
-        "gripY": 440,
-        "d": "M742 439 H728 L660 440 H648"
+        "callX": 726,
+        "callY": 390,
+        "gripX": 632,
+        "gripY": 421,
+        "d": "M726 421 H632"
        },
        {
         "side": "out",
@@ -7488,11 +7460,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 742,
-        "callY": 478,
-        "gripX": 648,
-        "gripY": 510,
-        "d": "M742 509 H728 L660 510 H648"
+        "callX": 726,
+        "callY": 456,
+        "gripX": 632,
+        "gripY": 487,
+        "d": "M726 487 H632"
        },
        {
         "side": "out",
@@ -7503,11 +7475,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 742,
-        "callY": 548,
-        "gripX": 648,
-        "gripY": 580,
-        "d": "M742 579 H728 L660 580 H648"
+        "callX": 726,
+        "callY": 524,
+        "gripX": 632,
+        "gripY": 553,
+        "d": "M726 555 H712 L644 553 H632"
        },
        {
         "side": "out",
@@ -7518,11 +7490,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 742,
-        "callY": 618,
-        "gripX": 648,
-        "gripY": 650,
-        "d": "M742 649 H728 L660 650 H648"
+        "callX": 726,
+        "callY": 590,
+        "gripX": 632,
+        "gripY": 620,
+        "d": "M726 621 H712 L644 620 H632"
        },
        {
         "side": "out",
@@ -7533,11 +7505,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 742,
-        "callY": 688,
-        "gripX": 648,
-        "gripY": 720,
-        "d": "M742 719 H728 L660 720 H648"
+        "callX": 726,
+        "callY": 658,
+        "gripX": 632,
+        "gripY": 686,
+        "d": "M726 689 H712 L644 686 H632"
        },
        {
         "side": "out",
@@ -7548,41 +7520,41 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 742,
-        "callY": 758,
-        "gripX": 648,
-        "gripY": 790,
-        "d": "M742 789 H728 L660 790 H648"
+        "callX": 726,
+        "callY": 724,
+        "gripX": 632,
+        "gripY": 754,
+        "d": "M726 755 H712 L644 754 H632"
        },
        {
         "side": "out",
         "index": 6,
-        "name": "WC Platforms",
-        "nick": "WC Plat",
+        "name": "Wheelchair Platforms",
+        "nick": "♿ Plat",
         "ghType": "Curve",
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 742,
-        "callY": 828,
-        "gripX": 648,
-        "gripY": 860,
-        "d": "M742 859 H728 L660 860 H648"
+        "callX": 726,
+        "callY": 792,
+        "gripX": 632,
+        "gripY": 820,
+        "d": "M726 823 H712 L644 820 H632"
        },
        {
         "side": "out",
         "index": 7,
-        "name": "WC Units",
-        "nick": "",
+        "name": "Wheelchair Units",
+        "nick": "♿ Units",
         "ghType": "Curve",
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 742,
-        "callY": 898,
-        "gripX": 648,
-        "gripY": 930,
-        "d": "M742 929 H728 L660 930 H648"
+        "callX": 726,
+        "callY": 858,
+        "gripX": 632,
+        "gripY": 888,
+        "d": "M726 889 H712 L644 888 H632"
        },
        {
         "side": "out",
@@ -7593,11 +7565,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 742,
-        "callY": 968,
-        "gripX": 648,
-        "gripY": 1000,
-        "d": "M742 999 H728 L660 1000 H648"
+        "callX": 726,
+        "callY": 926,
+        "gripX": 632,
+        "gripY": 954,
+        "d": "M726 957 H712 L644 954 H632"
        }
       ]
      },
@@ -7614,7 +7586,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-10-01",
+     "checked": "2026-10-04",
      "summary": "Cuts the bowl to shape — keep or remove a whole span between two axis numbers, or everything on one side of each curve you draw. Seats, aisles, vomitories and rings are all filtered together.",
      "inputs": [
       {
@@ -8278,7 +8250,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-10-01",
+     "checked": "2026-10-04",
      "summary": "Punches local entrance openings through the stand — between two axis numbers, or under a closed curve you draw. Unlike Cut it removes only what the opening covers, and it records the new edges as railing lines.",
      "inputs": [
       {
@@ -8299,11 +8271,11 @@
        "name": "Cut Curve",
        "nick": "Curve",
        "ghType": "Curve",
-       "access": "item",
+       "access": "list",
        "optional": true,
        "dropdown": false,
        "default": null,
-       "desc": "A CLOSED curve in plan - everything inside it is opened up. Open curves are ignored",
+       "desc": "CLOSED curves in plan, as many as you like - everything inside each is opened up, one after another. Open curves are ignored",
        "flow": false,
        "type": null
       },
@@ -8571,8 +8543,8 @@
       },
       {
        "index": 9,
-       "name": "WC Units",
-       "nick": "",
+       "name": "Wheelchair Units",
+       "nick": "♿ Units",
        "ghType": "Curve",
        "access": "tree",
        "optional": false,
@@ -8644,9 +8616,9 @@
         "name": "Cut Curve",
         "nick": "Curve",
         "ghType": "Curve",
-        "access": "item",
+        "access": "list",
         "flow": false,
-        "blurb": "A CLOSED curve in plan",
+        "blurb": "CLOSED curves in plan, as many as you like",
         "callX": 0,
         "callY": 87,
         "gripX": 434,
@@ -8956,8 +8928,8 @@
        {
         "side": "out",
         "index": 9,
-        "name": "WC Units",
-        "nick": "",
+        "name": "Wheelchair Units",
+        "nick": "♿ Units",
         "ghType": "Curve",
         "access": "tree",
         "flow": false,
@@ -8998,7 +8970,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-10-01",
+     "checked": "2026-10-04",
      "summary": "Sweeps the closed section profile around the axis planes into the solid tier bodies. This is the raw stand — cuts and openings are applied later by Stand 3D Plus.",
      "inputs": [
       {
@@ -9355,7 +9327,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-10-01",
+     "checked": "2026-10-04",
      "summary": "Builds the vomitories as solids — the side and end walls, the portal opening punched through, and the stair or ramp down to the concourse.",
      "inputs": [
       {
@@ -9451,6 +9423,19 @@
       },
       {
        "index": 7,
+       "name": "Band Opening Mode",
+       "nick": "▾ Band",
+       "ghType": "Integer",
+       "access": "list",
+       "optional": true,
+       "dropdown": true,
+       "default": null,
+       "desc": "Which end of each vomitory band bent along the rings (drawn in Custom Voms of Custom Seat) keeps its door: BOTH, LEFT or RIGHT - one per band, numbered in Custom Voms order from tier 1 (the Custom Seat message lists the numbers); the last value fills the rest. LEFT is the end towards higher axis numbers - the left end seen from the field on a closed bowl. With several sections, give each section's Vom 3D the same value for a band they share - Assemble Bowl points out a band left open at an end another section closes (default BOTH)",
+       "flow": false,
+       "type": null
+      },
+      {
+       "index": 8,
        "name": "Panel Values",
        "nick": "Panel",
        "ghType": "Object",
@@ -9531,14 +9516,14 @@
      "tier": "core",
      "figure": {
       "w": 1066,
-      "h": 572,
+      "h": 639,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
-      "imgY": 160,
+      "imgY": 178,
       "imgW": 210,
-      "imgH": 252,
+      "imgH": 282,
       "img": "/assets/img/antlion/components/vom-3d.png",
       "pending": false,
       "ports": [
@@ -9554,8 +9539,8 @@
         "callX": 0,
         "callY": 20,
         "gripX": 434,
-        "gripY": 181,
-        "d": "M340 51 H354 L422 181 H434"
+        "gripY": 199,
+        "d": "M340 51 H354 L422 199 H434"
        },
        {
         "side": "in",
@@ -9569,8 +9554,8 @@
         "callX": 0,
         "callY": 87,
         "gripX": 434,
-        "gripY": 211,
-        "d": "M340 118 H354 L422 211 H434"
+        "gripY": 229,
+        "d": "M340 118 H354 L422 229 H434"
        },
        {
         "side": "in",
@@ -9584,8 +9569,8 @@
         "callX": 0,
         "callY": 154,
         "gripX": 434,
-        "gripY": 241,
-        "d": "M340 185 H354 L422 241 H434"
+        "gripY": 259,
+        "d": "M340 185 H354 L422 259 H434"
        },
        {
         "side": "in",
@@ -9599,8 +9584,8 @@
         "callX": 0,
         "callY": 221,
         "gripX": 434,
-        "gripY": 271,
-        "d": "M340 252 H354 L422 271 H434"
+        "gripY": 289,
+        "d": "M340 252 H354 L422 289 H434"
        },
        {
         "side": "in",
@@ -9614,8 +9599,8 @@
         "callX": 0,
         "callY": 288,
         "gripX": 434,
-        "gripY": 301,
-        "d": "M340 319 H354 L422 301 H434"
+        "gripY": 319,
+        "d": "M340 319 H434"
        },
        {
         "side": "in",
@@ -9629,8 +9614,8 @@
         "callX": 0,
         "callY": 355,
         "gripX": 434,
-        "gripY": 331,
-        "d": "M340 386 H354 L422 331 H434"
+        "gripY": 349,
+        "d": "M340 386 H354 L422 349 H434"
        },
        {
         "side": "in",
@@ -9644,12 +9629,27 @@
         "callX": 0,
         "callY": 422,
         "gripX": 434,
-        "gripY": 361,
-        "d": "M340 453 H354 L422 361 H434"
+        "gripY": 379,
+        "d": "M340 453 H354 L422 379 H434"
        },
        {
         "side": "in",
         "index": 7,
+        "name": "Band Opening Mode",
+        "nick": "▾ Band",
+        "ghType": "Integer",
+        "access": "list",
+        "flow": false,
+        "blurb": "Which end of each vomitory band bent along the rings (drawn in Custom Voms of Custom Seat) keeps its door…",
+        "callX": 0,
+        "callY": 489,
+        "gripX": 434,
+        "gripY": 409,
+        "d": "M340 520 H354 L422 409 H434"
+       },
+       {
+        "side": "in",
+        "index": 8,
         "name": "Panel Values",
         "nick": "Panel",
         "ghType": "Object",
@@ -9657,10 +9657,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 489,
+        "callY": 556,
         "gripX": 434,
-        "gripY": 391,
-        "d": "M340 520 H354 L422 391 H434"
+        "gripY": 439,
+        "d": "M340 587 H354 L422 439 H434"
        },
        {
         "side": "out",
@@ -9672,10 +9672,10 @@
         "flow": true,
         "blurb": "The layout back again, cut range widened for stepped vomitories",
         "callX": 726,
-        "callY": 164,
+        "callY": 186,
         "gripX": 632,
-        "gripY": 196,
-        "d": "M726 195 H712 L644 196 H632"
+        "gripY": 217,
+        "d": "M726 217 H632"
        },
        {
         "side": "out",
@@ -9687,10 +9687,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 726,
-        "callY": 232,
+        "callY": 252,
         "gripX": 632,
-        "gripY": 256,
-        "d": "M726 263 H712 L644 256 H632"
+        "gripY": 284,
+        "d": "M726 283 H712 L644 284 H632"
        },
        {
         "side": "out",
@@ -9702,10 +9702,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 726,
-        "callY": 298,
+        "callY": 320,
         "gripX": 632,
-        "gripY": 316,
-        "d": "M726 329 H712 L644 316 H632"
+        "gripY": 352,
+        "d": "M726 351 H712 L644 352 H632"
        },
        {
         "side": "out",
@@ -9717,10 +9717,10 @@
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 726,
-        "callY": 366,
+        "callY": 388,
         "gripX": 632,
-        "gripY": 376,
-        "d": "M726 397 H712 L644 376 H632"
+        "gripY": 420,
+        "d": "M726 419 H712 L644 420 H632"
        }
       ]
      },
@@ -9737,7 +9737,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-10-01",
+     "checked": "2026-10-04",
      "summary": "Builds the 3D bowl: cuts the stand solids with everything the 2D chain decided — shape cuts, entrance openings, vomitories — and lifts the seats and aisle steps to their real tread heights.",
      "inputs": [
       {
@@ -9768,7 +9768,7 @@
       },
       {
        "index": 2,
-       "name": "WC Deck Mode",
+       "name": "Wheelchair Deck Mode",
        "nick": "▾ Deck",
        "ghType": "Integer",
        "access": "item",
@@ -9848,8 +9848,8 @@
       },
       {
        "index": 3,
-       "name": "WC Decks",
-       "nick": "",
+       "name": "Wheelchair Decks",
+       "nick": "♿ Decks",
        "ghType": "Brep",
        "access": "tree",
        "optional": false,
@@ -9891,14 +9891,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1072,
+      "w": 1064,
       "h": 371,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 104,
-      "imgW": 216,
+      "imgW": 208,
       "imgH": 162,
       "img": "/assets/img/antlion/components/stand-3d-plus.png",
       "pending": false,
@@ -9936,7 +9936,7 @@
        {
         "side": "in",
         "index": 2,
-        "name": "WC Deck Mode",
+        "name": "Wheelchair Deck Mode",
         "nick": "▾ Deck",
         "ghType": "Integer",
         "access": "item",
@@ -9987,11 +9987,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The 3D bowl as one object",
-        "callX": 732,
+        "callX": 724,
         "callY": 20,
-        "gripX": 638,
+        "gripX": 630,
         "gripY": 125,
-        "d": "M732 51 H718 L650 125 H638"
+        "d": "M724 51 H710 L642 125 H630"
        },
        {
         "side": "out",
@@ -10002,11 +10002,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 732,
+        "callX": 724,
         "callY": 87,
-        "gripX": 638,
+        "gripX": 630,
         "gripY": 155,
-        "d": "M732 118 H718 L650 155 H638"
+        "d": "M724 118 H710 L642 155 H630"
        },
        {
         "side": "out",
@@ -10017,26 +10017,26 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 732,
+        "callX": 724,
         "callY": 154,
-        "gripX": 638,
+        "gripX": 630,
         "gripY": 185,
-        "d": "M732 185 H638"
+        "d": "M724 185 H630"
        },
        {
         "side": "out",
         "index": 3,
-        "name": "WC Decks",
-        "nick": "",
+        "name": "Wheelchair Decks",
+        "nick": "♿ Decks",
         "ghType": "Brep",
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 732,
+        "callX": 724,
         "callY": 221,
-        "gripX": 638,
+        "gripX": 630,
         "gripY": 215,
-        "d": "M732 252 H718 L650 215 H638"
+        "d": "M724 252 H710 L642 215 H630"
        },
        {
         "side": "out",
@@ -10047,11 +10047,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 732,
+        "callX": 724,
         "callY": 288,
-        "gripX": 638,
+        "gripX": 630,
         "gripY": 245,
-        "d": "M732 319 H718 L650 245 H638"
+        "d": "M724 319 H710 L642 245 H630"
        }
       ]
      },
@@ -10068,7 +10068,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-10-01",
+     "checked": "2026-10-04",
      "summary": "Builds the railings and parapets as solids — the front barrier, the rear parapet, the edges left by a cut, and the walls around entrance openings. In a bowl assembled from several stands, a per-tier list shorter than the assembled tier count is read per stand: three values set tiers 0, 1 and 2 of every stand. Give one per assembled tier to set each on its own.",
      "inputs": [
       {
@@ -10642,7 +10642,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-10-01",
+     "checked": "2026-10-04",
      "summary": "Assembles the final bowl plan before Stand 3D Plus: merges parallel seat layouts (tiers renumbered) with their stand solids, and previews the finished plan. Cut ends are pulled where they are cut - Cut, Opening Cut and Seat each carry their own offset.",
      "inputs": [
       {
@@ -10941,7 +10941,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-10-01",
+     "checked": "2026-10-04",
      "summary": "Puts a chair and a seated spectator target on every seat of the built bowl. Wire the Stand 3D Plus BRD output. The ports carry one merged preview mesh per tier so twenty thousand seats stay light; bake the component itself (right-click, Bake) to plant real block instances - one definition, one instance per seat - so the document stays light too. The spectator is a flat target whose eye mark sits exactly on the eye point the C-value analysis measures from.",
      "inputs": [
       {
@@ -16933,7 +16933,7 @@
      ],
      "group": "table",
      "page": "06-table",
-     "checked": "2026-09-28",
+     "checked": "2026-10-04",
      "summary": "Creates an .xlsx workbook you can fill in with Excel, with the input pages already laid out, and hands the reference to Table In and Table Out. Give the project folder, optionally a file name (the folder name is used when empty), and press Run - an existing file connects, a missing file is made there. No internet or sign-in is needed, so this is the path that works on closed networks. The reference is saved with the Grasshopper file; because it is a file path, moving the workbook or the .gh means picking the file again. The 10-series pages are yours and are written only at creation; the 80-series pages belong to the plugin.",
      "inputs": [
       {
@@ -17227,7 +17227,7 @@
      ],
      "group": "table",
      "page": "06-table",
-     "checked": "2026-09-28",
+     "checked": "2026-10-04",
      "summary": "Creates a spreadsheet you can fill in by hand, with the input pages already laid out, and hands the reference to Table In and Table Out. Press Run once - the reference is saved with the Grasshopper file, so reopening it stays connected to the same workbook. After that you only edit the sheet and press Run on Table In; you do not need this component again. The 10-series pages are yours and are written only at creation; the 80-series pages belong to the plugin.",
      "inputs": [
       {
@@ -17549,7 +17549,7 @@
      ],
      "group": "table",
      "page": "06-table",
-     "checked": "2026-09-28",
+     "checked": "2026-10-04",
      "summary": "Reads the workbook's input pages and gives you the values to build from. Wire the workbook reference and press run. Values are looked up by column and key name, so inserting rows or reordering columns in the spreadsheet is safe. What was read is stored with the Grasshopper file, so the canvas keeps working without pressing run again.",
      "inputs": [
       {
@@ -17686,8 +17686,8 @@
       },
       {
        "index": 8,
-       "name": "WC Eye Vertical Offset",
-       "nick": "WC Eye V",
+       "name": "Wheelchair Eye Vertical Offset",
+       "nick": "♿ Eye V",
        "ghType": "Number",
        "access": "item",
        "optional": false,
@@ -17699,8 +17699,8 @@
       },
       {
        "index": 9,
-       "name": "WC Eye Horizontal Offset",
-       "nick": "WC Eye H",
+       "name": "Wheelchair Eye Horizontal Offset",
+       "nick": "♿ Eye H",
        "ghType": "Number",
        "access": "item",
        "optional": false,
@@ -17721,14 +17721,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1051,
+      "w": 1036,
       "h": 706,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 197,
-      "imgW": 195,
+      "imgW": 180,
       "imgH": 312,
       "img": "/assets/img/antlion/components/table-in.png",
       "pending": false,
@@ -17772,11 +17772,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per step: row index, tread depth, riser height",
-        "callX": 711,
+        "callX": 696,
         "callY": 20,
-        "gripX": 617,
+        "gripX": 602,
         "gripY": 218,
-        "d": "M711 51 H697 L629 218 H617"
+        "d": "M696 51 H682 L614 218 H602"
        },
        {
         "side": "out",
@@ -17787,11 +17787,11 @@
         "access": "item",
         "flow": false,
         "blurb": "How far back from the nosing the eye sits",
-        "callX": 711,
+        "callX": 696,
         "callY": 87,
-        "gripX": 617,
+        "gripX": 602,
         "gripY": 248,
-        "d": "M711 118 H697 L629 248 H617"
+        "d": "M696 118 H682 L614 248 H602"
        },
        {
         "side": "out",
@@ -17802,11 +17802,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Eye height above the tread",
-        "callX": 711,
+        "callX": 696,
         "callY": 154,
-        "gripX": 617,
+        "gripX": 602,
         "gripY": 278,
-        "d": "M711 185 H697 L629 278 H617"
+        "d": "M696 185 H682 L614 278 H602"
        },
        {
         "side": "out",
@@ -17817,11 +17817,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Thickness of the stand slab",
-        "callX": 711,
+        "callX": 696,
         "callY": 221,
-        "gripX": 617,
+        "gripX": 602,
         "gripY": 308,
-        "d": "M711 252 H697 L629 308 H617"
+        "d": "M696 252 H682 L614 308 H602"
        },
        {
         "side": "out",
@@ -17832,11 +17832,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Smallest acceptable C-value",
-        "callX": 711,
+        "callX": 696,
         "callY": 288,
-        "gripX": 617,
+        "gripX": 602,
         "gripY": 338,
-        "d": "M711 319 H697 L629 338 H617"
+        "d": "M696 319 H682 L614 338 H602"
        },
        {
         "side": "out",
@@ -17847,11 +17847,11 @@
         "access": "item",
         "flow": false,
         "blurb": "STANDARD or VARIABLE_CORNER",
-        "callX": 711,
+        "callX": 696,
         "callY": 355,
-        "gripX": 617,
+        "gripX": 602,
         "gripY": 368,
-        "d": "M711 386 H697 L629 368 H617"
+        "d": "M696 386 H682 L614 368 H602"
        },
        {
         "side": "out",
@@ -17862,11 +17862,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The whole workbook as read",
-        "callX": 711,
+        "callX": 696,
         "callY": 422,
-        "gripX": 617,
+        "gripX": 602,
         "gripY": 398,
-        "d": "M711 453 H697 L629 398 H617"
+        "d": "M696 453 H682 L614 398 H602"
        },
        {
         "side": "out",
@@ -17877,41 +17877,41 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 711,
+        "callX": 696,
         "callY": 489,
-        "gripX": 617,
+        "gripX": 602,
         "gripY": 428,
-        "d": "M711 520 H697 L629 428 H617"
+        "d": "M696 520 H682 L614 428 H602"
        },
        {
         "side": "out",
         "index": 8,
-        "name": "WC Eye Vertical Offset",
-        "nick": "WC Eye V",
+        "name": "Wheelchair Eye Vertical Offset",
+        "nick": "♿ Eye V",
         "ghType": "Number",
         "access": "item",
         "flow": false,
         "blurb": "Eye height above the platform for a wheelchair user",
-        "callX": 711,
+        "callX": 696,
         "callY": 556,
-        "gripX": 617,
+        "gripX": 602,
         "gripY": 458,
-        "d": "M711 587 H697 L629 458 H617"
+        "d": "M696 587 H682 L614 458 H602"
        },
        {
         "side": "out",
         "index": 9,
-        "name": "WC Eye Horizontal Offset",
-        "nick": "WC Eye H",
+        "name": "Wheelchair Eye Horizontal Offset",
+        "nick": "♿ Eye H",
         "ghType": "Number",
         "access": "item",
         "flow": false,
         "blurb": "How far back from the nosing a wheelchair user's eye sits",
-        "callX": 711,
+        "callX": 696,
         "callY": 623,
-        "gripX": 617,
+        "gripX": 602,
         "gripY": 488,
-        "d": "M711 654 H697 L629 488 H617"
+        "d": "M696 654 H682 L614 488 H602"
        }
       ]
      },
@@ -17927,7 +17927,7 @@
      ],
      "group": "table",
      "page": "06-table",
-     "checked": "2026-09-28",
+     "checked": "2026-10-04",
      "summary": "Writes analysis results into the workbook's result pages. Wire the workbook reference and the result objects - section, analysis, seat map or C-value map - and press run. Each result type knows which page it belongs on. The plugin owns those pages and rewrites them whenever the results change - the same results are not sent twice to the same workbook unless you right-click and choose Send again. Copy rows into the input pages if you want to keep and edit them.",
      "inputs": [
       {
@@ -18450,7 +18450,8 @@
    },
    "notes": {
     "cut": "A seat, aisle cell or vomitory goes only when it crosses into the side being removed - one that merely touches the cut line stays. So a cut line drawn on top of a tread ring or an axis line keeps the seats that hang on that line. A cut line drawn exactly on an axis line also leaves a narrow empty strip beside it: seats are laid out between axis lines, the leftover width gathers at the axis, and the seat that straddles the line goes with the cut. End Aisle clears seats and nothing else; on a curve that runs along a row it empties that whole row. On a closed start line the axis numbers run counterclockwise whichever way the line was drawn - read them off View Axis before filling in Axis From and Axis To. With Cut End Mode EXTEND, a row that runs through a vomitory where the cut is made stays open to the new end face: no seats are laid in its extension.",
-    "custom-seat": "A tier given all three of vomitories, aisle cells and seats is taken as complete, and Custom Seat adds nothing of its own there - no automatic aisle beside a vomitory and no aisle carried up to the top row - so every aisle you want has to be drawn. Aisle cells drawn inside a vomitory passage or its entry band are removed, with an orange warning that gives the row and position. A tier missing any of the three is filled in as before: the component adds the aisles and seats it needs. Wheelchair spaces are optional either way. In a bowl built from several sections, a vomitory band bent along the rings is split by the cut, and each end follows the Band Opening Mode of the Custom Seat whose section keeps it - so give every Custom Seat that receives the band the same value, for example by wiring one Value List or one Input Panel into all of them. When they differ, Assemble Bowl names the band and the input that kept a door at an end another section closes, as a white remark rather than a warning, since it can be intended.",
+    "custom-seat": "A tier given all three of vomitories, aisle cells and seats is taken as complete, and Custom Seat adds nothing of its own there - no automatic aisle beside a vomitory and no aisle carried up to the top row - so every aisle you want has to be drawn. Aisle cells drawn inside a vomitory passage or its entry band are removed, with an orange warning that gives the row and position. A tier missing any of the three is filled in as before, with one exception: once you draw aisle cells on a tier, they are its only aisles. No automatic aisle is added there, and a run still longer than Max Seats Per Run shows in Poor Seat Rects with a white remark that gives the row and position - it is your layout to judge, not an error. Wheelchair spaces are optional either way. A vomitory band bent along the rings opens at both of its ends; which end keeps its door is chosen on Vom 3D, with Band Opening Mode.",
+    "vom-3d": "Band Opening Mode applies to the vomitory bands drawn along the rings in Custom Seat: BOTH keeps a door at each end of a band, LEFT or RIGHT keeps one. Seats are not affected - only the end that is shut gets a wall. In a bowl built from several sections a band is split by the cut, and each end follows the Band Opening Mode of the Vom 3D whose section keeps it - so give every Vom 3D that receives part of the band the same value, for example by wiring one Value List or one Input Panel into all of them. When they differ, Assemble Bowl names the band and the input that kept a door at an end another section closes, as a white remark rather than a warning, since it can be intended.",
     "table-section": "Each tier's start point comes from the workbook's 12_INPUT_TIER page as start_mode, start_h and start_v. PREV_TIER, the default for every tier above the first, measures from the outer end of the lower tier's last tread - the edge away from the field - at that tread's top surface, not from its nosing or a railing top. The upper tier's first tread front edge then sits start_h outward (negative when it overhangs the tier below) and start_v up, so start_v alone sets the height between tiers and the lower tier's last riser height is not used. START_LINE, the default for the first tier (tier_index 0), measures from the start line's anchor point - 0, 0 puts the first tread front edge on the start line - and FOCAL measures from the focal point. Section Plus then moves the whole section outward by the first tier's solid_thickness, which keeps the tiers where they are relative to each other. To take the values off a drawing: start_v is the top of the upper tier's first tread minus the top of the lower tier's last tread, and start_h is the horizontal distance from the lower tier's last tread outer end to the upper tier's first tread front edge, negative toward the field.",
     "sheet-setup": "One Sheet Setup can feed C-value Map, C-value Section Check and Seat Map, but each of them works out its own scale: the most detailed one its drawing fits at on the sheet, rounded up to a multiple of Scale Step. Enter the scale you want as Scale Step - 800 for 1:800 - and a sheet uses exactly that whenever its drawing fits, otherwise the next multiple up. So the three sheets share a scale only when every drawing fits at Scale Step. For a different scale on each, give each component its own Sheet Setup. A scale more detailed than the drawing fits at cannot be forced: choose a larger sheet size instead.",
     "input-panel": "Pick a component, set the tier count, and every value it takes appears in one place with its default already filled in - so you can see what a value is and what a normal one looks like before you commit to it. It is not there to reduce how much you have to wire: almost every input already has a default, and the handful that must be wired carry data from upstream, which no panel can stand in for. The bundle it outputs is locked to the component you picked - wire it into a different one and it says so, rather than quietly filling a port that happens to share a name. A wire always wins over the bundle; a value you typed into a port by right-clicking does not, because whatever wins has to be visible on the canvas. Not every component is on its list - a few take one value or none, and a few take things a panel cannot type.",
