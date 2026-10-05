@@ -1,4 +1,31 @@
 antlion:
+  - version: "1.0.1"
+    date: "2026-10-05"
+    title: Inch documents — lengths read the way you set Rhino's units
+    body: |
+      **Lengths in messages and reports**
+
+      - Lengths now follow the distance display in Rhino's Document Properties → Units.
+        Decimal documents show decimals (`4.75 in`), fractional documents show fractions
+        (`4-3/4 in`), and Feet & Inches documents show `1'-6 3/8"`.
+      - A value you typed comes back exactly as you typed it. Before, some messages rounded
+        inch values to the whole inch — a minimum C-value of 2.5 in could read as `2in`.
+      - The same value now reads the same in every message, and two different values that a
+        message compares never print as the same number.
+
+      **Inch defaults**
+
+      - New components in inch documents start from round inch values instead of converted
+        millimeters — for example a minimum C-value of 3-1/2 in, an optimal C-value of 4-3/4 in,
+        an eye height of 48 in and a seat depth of 20 in. Values already in your files do not
+        change, and millimeter documents are unchanged.
+
+      **Other**
+
+      - The plugin's contact link in Grasshopper's info window now points to the problem-report page.
+
+      Tip — Grasshopper reads `12-3/4` typed into a panel as 12 minus 3/4. Type inch values as
+      decimals (`12.75`).
   - version: "1.0.0"
     date: "2026-10-05"
     title: First public release — the seating bowl
