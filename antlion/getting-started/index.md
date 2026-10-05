@@ -83,8 +83,6 @@ That unlocks **every definition on this computer** — it is not something you r
 portal and register on the new one. If a computer has been released, <code translate="no">Status</code> says so and
 tells you to flip <code translate="no">Register</code> again.
 
-*(Video walkthrough — coming with release.)*
-
 ## Where to go next
 
 - [**Workflow**](../workflow/index.md) — the whole chain as one diagram, and what order to
