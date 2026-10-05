@@ -12,6 +12,9 @@
   tiers: antlion/phase2_csharp/_tools/icon_audit.py
   qa: antlion/qa
   guids: antlion/phase2_csharp/_tools/port_audit.py
+  release_code: antlion/phase2_csharp/Contract antlion/phase2_csharp/Logic antlion/phase2_csharp/Shell
+  release_version: antlion/phase2_csharp/Shell/Shell.csproj
+  release_tag: yak/
   flow:
     spine:
       - { group: bowl-section-1, label: "Plan & setup", col: 0, row: 0 }

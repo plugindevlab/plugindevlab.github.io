@@ -42,8 +42,8 @@ intended behavior, not a bug.
 
 - **Want axes on one stand only? Trim the curve on that side.** The component never
   guesses which crossing you "really meant" — a direct crossing is read as explicit intent.
-- Curves crossing more than once raise the white note `AC04`:
-  `N curves cross the start line more than once - one axis per crossing`.
+- Curves crossing more than once are noted as `AC04` in the `Debug` output — no balloon,
+  since this is the intended behavior (§8).
 
 ## 3. Rule ② — axes are numbered along the start line, not by input order
 
@@ -52,7 +52,9 @@ line perimeter, and numbered in that order.
 
 - **Index 0 is the axis nearest the field's long-axis +X direction** — the same rule as
   the `Axis` component, so the two components share one numbering system. If the field
-  is rotated, the white note `AC13` tells you so.
+  is rotated, `AC13` in the `Debug` output says so.
+- **Numbers run counterclockwise** whichever way the start line was drawn — a clockwise
+  start line is reversed first, and `AC19` in the `Debug` output says so.
 - Why: you can't reliably control the collection order of referenced curves, and with
   order-based numbering **one stray curve shifts every number after it.** Perimeter
   order stays stable as curves are added or removed.
@@ -67,7 +69,7 @@ not distance.** The curve is extended straight along its own tangent; if that ex
 
 - A curve sitting right next to the start line but **not pointing at it** does not
   become an axis. It is not dropped silently — it is counted in the orange warning
-  `AC12`: `N/M axis_curves skipped (does not point at the start line=N)`.
+  `AC12`: `N/M axis curves skipped (does not point at the start line=N)`.
 - **Except axis lines lying beyond the ends of an open start line** — those get only the
   white note `AC20`. When several stands share one set of axis lines and one stand's
   start line is shorter, the top view already shows why they were left out. Extend the
@@ -80,8 +82,8 @@ not distance.** The curve is extended straight along its own tangent; if that ex
   also pierce the far side of the bowl, and taking every extended crossing would create
   ghost axes. **Direct crossing = explicit intent; extension = inference.** If you want
   a through-axis, actually draw the curve through.
-- The fact that extension was used at all shows as the white note `AC11`:
-  `extended N/M curves to meet the start line (no direct crossing)`.
+- The fact that extension was used at all is noted as `AC11` in the `Debug` output. A gap
+  over 1 mm also raises the orange `AC06` balloon (§5).
 - **A closed axis curve that doesn't touch the start line** cannot be extended, so it
   is treated as foreign and skipped (`AC12`).
 
@@ -90,7 +92,7 @@ not distance.** The curve is extended straight along its own tangent; if that ex
 When the extension distance exceeds 1 mm, the orange warning `AC06` appears:
 
 ```
-N/M axis_curves stop short of the start line - extended along their own
+N/M axis curves stop short of the start line - extended along their own
 direction to meet it (max gap 32.5mm, axes [3, 7])
 ```
 
@@ -109,9 +111,19 @@ the XY plane — then auto-flipped to face away from the bowl center, so the dir
 you drew the curve in doesn't matter.
 
 - Cross the start line at an angle and the section stands at that angle — the reference
-  is **your curve**, not a radial direction.
+  is **your curve**, not a radial direction. Three exceptions:
+  - **Where the start line bends**, an axis is turned to the bend's miter — the only
+    direction that keeps your tread depth on both sides of the bend. The white balloon
+    `AC16` names those axes and the largest turn. Axis points and numbering do not change,
+    but the far end of a long stand moves sideways; draw the axis curves more evenly
+    through the bend to be followed more closely.
+  - **An axis curve lying almost along the start line** (over 60° from its normal) is set
+    to the start-line normal instead — orange balloon `AC17`. Redraw it closer to square.
+  - **When outward cannot be worked out**, the drawn direction is kept — `AC18`: a white
+    balloon if the curve runs sideways past the field center, orange if no field is wired
+    at all (wire Field Info into the start line).
 - If the tangent at the crossing is vertical (no XY component), the component falls
-  back to the radial direction and notes it as `AC08`.
+  back to the radial direction and notes it as `AC08` in the `Debug` output.
 
 ## 7. Base Line — where the stand is actually built
 
@@ -126,20 +138,33 @@ principle as the `Axis` component.
 ## 8. Warning codes at a glance
 
 Balloon colors: **red** = nothing is produced / **orange** = some input was dropped
-from the result / **white** = information.
+from the result / **white** = it works, but check this. Codes that only report what
+happened raise **no balloon** — they appear as codes in the component's `Debug` output
+(`info[...]`).
+
+**Balloons**
 
 - `AC01` (red) — no start line. Wire `Start Line` or `Start Line Curve`.
 - `AC02` (red) — no axis curves.
 - `AC10` (red) — every curve was skipped; zero axes (with a tally of reasons).
+- `AC14` (red) — fewer than 2 distinct axis points; a base line needs at least 2.
+- `AC15` (red) — fewer than 3 distinct axis points on a closed start line.
 - `AC12` (orange) — some curves skipped. Reasons: `null` (empty entries) ·
   `does not point at the start line` (§4) · `crosses the start line only in plan` (height differs, §4) · `degenerate direction`.
 - `AC06` (orange) — extension beyond 1 mm; reports the max gap and the axis numbers (§5).
 - `AC09` (orange) — two axis points within 1 mm. Both are kept; check the numbering.
-- `AC04` (white) — one curve, several crossings, one axis each (§2).
-- `AC08` (white) — vertical tangent, radial fallback (§6).
-- `AC11` (white) — no direct crossing, matched by extension (§4).
-- `AC13` (white) — numbering follows the rotated field long axis (§3).
+- `AC17` (orange) — an axis curve lies almost along the start line; the start-line normal is used (§6).
+- `AC18` (white, or orange with no field wired) — outward could not be worked out; the drawn direction is kept (§6).
+- `AC16` (white) — axes at a bend of the start line were turned to the bend's miter (§6).
 - `AC20` (white) — axis lines beyond the ends of an open start line were left out (§4). Fine if the stand is meant to be shorter.
+
+**`Debug` output only**
+
+- `AC04` — one curve, several crossings, one axis each (§2).
+- `AC08` — vertical tangent, radial fallback (§6).
+- `AC11` — no direct crossing, matched by extension (§4).
+- `AC13` — numbering follows the rotated field long axis (§3).
+- `AC19` — the start line was drawn clockwise and was reversed (§3).
 
 ## 9. Quick answers
 
@@ -154,4 +179,5 @@ from the result / **white** = information.
   gap means a stray curve got in (§5).
 - **Changing `Guide Length` does nothing** → correct; it is display only (§1).
 - **The section faces a strange direction** → direction is your curve's tangent at the
-  crossing (§6). Redraw the curve at the angle you want.
+  crossing (§6). Redraw the curve at the angle you want. If a white `AC16` or orange
+  `AC17`/`AC18` balloon is up, it names the axes that were turned or kept, and why.

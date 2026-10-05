@@ -130,8 +130,8 @@ New to Antlion? Read these two, in this order.
 When you need to look something up:
 
 - [**Components**](components/index.html) — every component, every port, with a diagram of
-  where each port sits on the capsule. Generated from the plugin source, so it cannot
-  disagree with the plugin you are running.
+  where each port sits on the capsule. Generated from the plugin source for each release,
+  and every page names the version it describes.
 - [**Ribbon map**](workflow/index.md#ribbon) — which panel and section each component lives
   in, for when you know the plugin and just want to find the thing.
 - [**Tutorials**](tutorials/index.md) — the parts where the rules are not visible on screen.
@@ -155,8 +155,8 @@ Found a bug, or something that does not behave the way the reference says it sho
 [**Report a problem →**](https://tally.so/r/MepAQM)
 
 **No account or sign-in is required.** The form asks what you saw and how to reproduce it;
-the plugin fills in version and environment details for you. Two steps — internalising the
-geometry, or pasting the `debug` output — usually let us find the cause without asking you
+add which Rhino you run — <code translate="no">SystemInfo</code> in Rhino shows it. Two steps — internalising the
+geometry, or pasting the `Debug` output — usually let us find the cause without asking you
 anything further:
 [how to write a report that gets fixed](troubleshooting/index.md#report-a-problem).
 

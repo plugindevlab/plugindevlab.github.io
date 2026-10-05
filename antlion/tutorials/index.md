@@ -16,5 +16,5 @@ visible on screen.
   was not the one you meant.
 
 More guides land here as the plugin grows. If you are stuck on something that is not
-covered, the reference pages are generated from the plugin itself and always match the
-version you are running.
+covered, the reference pages are generated from the plugin source for each release, and
+each one names the version it describes.

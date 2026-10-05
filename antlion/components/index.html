@@ -45,6 +45,7 @@ sheet: true
   <dl class="title-block">
     <div><dt>Product</dt><dd translate="no">{{ prod.name }}</dd></div>
     <div><dt>Components</dt><dd>{{ all }}</dd></div>
+    {%- if pdata.version %}<div><dt>Version</dt><dd translate="no">{{ pdata.version }}</dd></div>{% endif %}
     <div><dt>Stages</dt><dd>{{ prod.flow.spine | size }}</dd></div>
     <div><dt>Ribbon map</dt><dd><a href="/{{ prod.slug }}/workflow/#ribbon">Where things sit</a></dd></div>
   </dl>

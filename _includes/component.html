@@ -138,6 +138,7 @@
     <div><dt>Ribbon</dt><dd translate="no">{{ comp.ribbon | join: " ▸ " }}</dd></div>
     {%- if comp.tier %}<div><dt>Tier</dt><dd translate="no">{{ comp.tier }}</dd></div>{% endif %}
     <div><dt>Ports</dt><dd>{{ nin }} in &middot; {{ nout }} out</dd></div>
+    {%- if pdata.version %}<div><dt>Version</dt><dd translate="no">{{ pdata.version }}</dd></div>{% endif %}
     {%- if comp.checked %}<div><dt>Checked</dt><dd>{{ comp.checked }}</dd></div>{% endif %}
   </dl>
 </article>

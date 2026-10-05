@@ -31,8 +31,9 @@ Found a bug, or something that does not behave the way the reference says it sho
 
 [**Report a problem →**](https://tally.so/r/MepAQM)
 
-**No account or sign-in is required.** The form asks what you saw and how to reproduce it;
-the plugin fills in version and environment details for you.
+**No account or sign-in is required.** The form asks what you saw and how to reproduce it.
+Please also include your Rhino and Windows details: run <code translate="no">SystemInfo</code> in Rhino,
+right-click the text in the window that opens → <strong translate="no">Copy All</strong>, and paste it into the form.
 
 ### Two things that make a report fixable
 
@@ -46,19 +47,21 @@ Sent as-is, it opens empty on our side and there is nothing to look at.
 - Select the components you used, or just the input parameters holding your Rhino geometry
 - Right-click that input → <strong translate="no">Internalise data</strong>
 - The wire to Rhino disappears and the geometry is now stored inside the definition
-- <strong translate="no">File → Save As</strong>, and attach that copy
+- <strong translate="no">File → Save Document As…</strong>, and attach that copy
 
 The internalised file contains only the geometry you internalised — not your Rhino document.
 
 **2 — Or paste the debug output instead.**
-Every Antlion component has a **<code translate="no">debug</code>** output, and it is often faster than sending files.
+Most Antlion components have a **<code translate="no">Debug</code>** output, and it is often faster than sending files.
 
 - Double-click empty canvas, type <code translate="no">panel</code>, press Enter
-- Drag a wire from the component's **<code translate="no">debug</code>** output into that panel
+- Drag a wire from the component's **<code translate="no">Debug</code>** output into that panel
 - Right-click the panel → <strong translate="no">Copy Data Only</strong>
 - Paste it into the report form
 
-If the component shows an orange or red bubble, hover it and copy that message too.
+If the component shows an orange or red bubble, copy that message too: right-click the
+component → <strong translate="no">Runtime warnings</strong> (or <strong translate="no">Runtime errors</strong>)
+and click the message — that puts it on the clipboard.
 
 Attaching the Grasshopper definition that shows the problem is the single most useful thing
 you can do — please **internalize the input geometry** first, so the definition reproduces

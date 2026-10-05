@@ -38,10 +38,11 @@ component's page.
 
 {% include flowmap.html %}
 
-**Arrows are order, not wiring.** Nearly all of them are a real connection you could make on
-the canvas, but not every one is — the axis comes before the section even though nothing runs
-between the two. **Dotted links mean "instead of", not "as well as":** a custom start line
-replaces the built-in one; a table-driven section replaces the one you set by hand.
+**Arrows are the order you build in, and each is a wire you make on the canvas.** The one from
+the axis into the section is <strong translate="no">Base Line</strong>: the start line as the axes
+facet it, which is what the section actually stands on. **Dotted links mean "instead of", not
+"as well as":** a custom start line replaces the built-in one; a table-driven section replaces the
+one you set by hand.
 
 ## The stages
 

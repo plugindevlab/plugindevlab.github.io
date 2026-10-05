@@ -33,8 +33,8 @@ back a result you cannot argue with.
 ## How these are built
 
 Every plugin here is documented from its own source. The component reference is generated
-from that source, so it cannot drift from the version you are running — if a port is
-renamed, the page changes with it. Bugs are fixed and shipped continuously, and each
-product's changelog is the record of that.
+from that source for each release, and every page names the version it describes — when a
+release renames a port, the page changes with it. Bugs are fixed and shipped continuously,
+and each product's changelog is the record of that.
 
 Reports do not require an account. Nothing on this site asks you to sign up.
