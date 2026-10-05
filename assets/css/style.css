@@ -303,6 +303,33 @@ figure.fig figcaption {
 }
 .side-in li a[aria-current] { color: var(--ink); font-weight: 600; border-left-color: var(--accent); }
 
+.rel-count { margin-top: var(--sp6); }
+.rel-list { margin: 0 0 var(--sp7); border-bottom: .5px solid var(--line); }
+.rel { border-top: .5px solid var(--line); }
+.rel > summary {
+  list-style: none; cursor: pointer; display: flex; align-items: baseline; gap: var(--sp4);
+  min-height: 44px; padding: var(--sp3) 0; color: var(--ink);
+}
+.rel > summary::-webkit-details-marker { display: none; }
+.rel > summary::after {
+  content: "+"; margin-left: auto; padding-left: var(--sp3);
+  font: 400 var(--t3)/1 var(--font-mono); color: var(--faint);
+}
+.rel[open] > summary::after { content: "–"; }
+.rel-v {
+  flex: none; min-width: var(--sp9);
+  font: 600 var(--t3)/1.4 var(--font-mono); font-variant-numeric: tabular-nums; color: var(--accent);
+}
+.rel-t { font-size: var(--t3); line-height: 1.4; }
+.rel > summary:hover .rel-t { color: var(--accent); }
+.rel-body { padding: 0 0 var(--sp5) calc(var(--sp9) + var(--sp4)); }
+.rel-body > :last-child { margin-bottom: 0; }
+.rel-date { font: 400 var(--t2)/1.4 var(--font-mono); color: var(--faint); margin: 0 0 var(--sp3); }
+@media (max-width: 40rem) {
+  .rel-v { min-width: var(--sp8); }
+  .rel-body { padding-left: 0; }
+}
+
 .sheet { max-width: var(--sheet); background: var(--panel); border: 1.5px solid var(--frame); position: relative; }
 .sheet::before { content: ""; position: absolute; inset: 7px; border: .5px solid var(--line); pointer-events: none; }
 .sheet .inner { padding: var(--sp6) var(--sp7) 0; }
