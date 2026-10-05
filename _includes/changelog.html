@@ -4,7 +4,7 @@
 <div class="rel-list">
 {%- for r in rels %}
 <details class="rel" id="v{{ r.version | replace: '.', '-' }}">
-<summary><span class="rel-v" translate="no">{{ r.version }}</span><span class="rel-t">{{ r.title }}</span></summary>
+<summary><span class="rel-v" translate="no">{{ r.version }}</span> <span class="rel-t">{{ r.title }}</span></summary>
 <div class="rel-body">
 <p class="rel-date"><time datetime="{{ r.date }}">{{ r.date | date: "%B %-d, %Y" }}</time></p>
 {{ r.body | markdownify }}
