@@ -1,0 +1,19 @@
+antlion:
+  - id: MWOVvJcE1ig
+    title: "How to Design a Three-Tier Soccer Stadium in Grasshopper"
+    length: "42 min"
+    thumb: /assets/img/antlion/tutorials/soccer-three-tier.jpg
+    thumb_alt: "A three-tier soccer stadium bowl modelled with Antlion, seats coloured by C-value"
+    summary: "A three-tier soccer bowl from an empty canvas to drawing sheets. You place the field, set the start line and section axes, build the three tiers in section, lay out vomitories, aisles and seats in plan, cut the openings, build it all in 3D, check <span class=\"nb\">C-value</span> sightlines seat by seat, and put the results on drawing sheets."
+    chapters:
+      - { t: 0, at: "0:00", name: "Intro" }
+      - { t: 17, at: "0:17", name: "Field and the Input Panel" }
+      - { t: 127, at: "2:07", name: "Start Line and Axes" }
+      - { t: 329, at: "5:29", name: "Sections" }
+      - { t: 834, at: "13:54", name: "Plan, Vomitories and Seats" }
+      - { t: 1142, at: "19:02", name: "Cuts and Openings" }
+      - { t: 1557, at: "25:57", name: "Building in 3D" }
+      - { t: 1811, at: "30:11", name: "Sightline Analysis" }
+      - { t: 2090, at: "34:50", name: "Drawing Sheets" }
+      - { t: 2278, at: "37:58", name: "Seat Map and Seat View" }
+      - { t: 2454, at: "40:54", name: "Wrap-up" }

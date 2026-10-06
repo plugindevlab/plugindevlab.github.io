@@ -91,7 +91,8 @@ tells you to flip <code translate="no">Register</code> again.
 
 - [**Workflow**](../workflow/index.md) — the whole chain as one diagram, and what order to
   use things in. Start here.
-- [**Tutorials**](../tutorials/index.md) — the parts where the rules are not visible on screen.
+- [**Tutorials**](../tutorials/index.html) — video walkthroughs that build a stadium bowl step by
+  step, with chapters you can jump to.
 
 ## When something does not work
 

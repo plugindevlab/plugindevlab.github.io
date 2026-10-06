@@ -91,7 +91,7 @@ a:hover { text-decoration: none; }
 .content > * { max-width: var(--measure); }
 .content > .full, .content > .split, .content > .grid, .content > .map-wrap,
 .content > .combos, .content > .map-note, .content > .rib-wrap,
-.content > .fm-wrap, .content > .fm-key, .content > .roadmap,
+.content > .fm-wrap, .content > .fm-key, .content > .roadmap, .content > .tuts,
 .content > section, .content > table, .content > pre, .content > figure { max-width: none; }
 
 h1 {
@@ -167,6 +167,39 @@ figure.fig figcaption {
 .card img {
   display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: contain;
   border: 1px solid var(--rule); background: var(--bg-soft); margin-bottom: 1rem;
+}
+
+.tuts { margin: var(--sp6) 0 var(--rhythm); }
+.tut {
+  display: grid; grid-template-columns: minmax(0, 28rem) minmax(0, 1fr); gap: var(--sp6);
+  align-items: start; padding: var(--sp6) 0; border-top: 1px solid var(--rule);
+}
+.tut-thumb { position: relative; display: block; }
+.tut-thumb img {
+  display: block; width: 100%; height: auto; aspect-ratio: 16 / 9;
+  border: 1px solid var(--rule); background: var(--bg-soft); transition: border-color 120ms ease;
+}
+.tut-thumb:hover img, .tut-thumb:focus-visible img { border-color: var(--accent); }
+.tut-len {
+  position: absolute; right: var(--sp2); bottom: var(--sp2); padding: .15rem .45rem;
+  background: var(--ink); color: var(--bg); font-size: .75rem; font-weight: 600;
+  font-variant-numeric: tabular-nums; letter-spacing: .02em;
+}
+.tut h2 { margin: 0 0 var(--sp3); padding-top: 0; border-top: 0; font-size: 1.35rem; }
+.tut h2 a { color: var(--ink); text-decoration: none; }
+.tut h2 a:hover { color: var(--accent); }
+.tut-text > p { color: var(--ink-soft); max-width: var(--measure); }
+.tut .nb { white-space: nowrap; }.tut-ch { list-style: none; padding: 0; margin: 0; columns: 2 14rem; column-gap: var(--sp5); font-size: .92rem; }
+.tut-ch li { margin: 0 0 .35rem; break-inside: avoid; }
+.tut-ch a { color: var(--ink-soft); text-decoration: none; }
+.tut-ch a:hover { color: var(--accent); }
+.tut-ch .at {
+  display: inline-block; min-width: 3.2em; margin-right: .5em;
+  font-variant-numeric: tabular-nums; color: var(--ink-faint);
+}
+.tut-fine { font-size: .82rem; color: var(--ink-faint); max-width: var(--measure); }
+@media (max-width: 46rem) {
+  .tut { grid-template-columns: minmax(0, 1fr); gap: var(--sp4); }
 }
 
 .roadmap { margin: var(--sp6) 0; }

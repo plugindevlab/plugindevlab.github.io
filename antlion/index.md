@@ -134,7 +134,8 @@ When you need to look something up:
   and every page names the version it describes.
 - [**Ribbon map**](workflow/index.md#ribbon) — which panel and section each component lives
   in, for when you know the plugin and just want to find the thing.
-- [**Tutorials**](tutorials/index.md) — the parts where the rules are not visible on screen.
+- [**Tutorials**](tutorials/index.html) — video walkthroughs that build a stadium bowl step by
+  step, with chapters you can jump to.
 - [**Troubleshooting**](troubleshooting/index.md) — known symptoms, causes, and fixes.
 - [**Changelog**](changelog/index.md) — what changed in each release.
 

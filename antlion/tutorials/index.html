@@ -1,0 +1,36 @@
+---
+title: "Antlion Tutorials"
+description: "Video tutorials for Antlion. Each one builds a stadium bowl in Grasshopper step by step, with chapters you can jump to."
+---
+{%- assign vids = site.data.tutorials[page.product] -%}
+
+<p class="label">Tutorials</p>
+
+<h1>Antlion tutorials</h1>
+
+<p>Video walkthroughs. Each one builds a stadium bowl in Grasshopper from an empty canvas, one
+step at a time. Click a thumbnail to watch on YouTube, or jump straight to a chapter.</p>
+
+<div class="tuts">
+{%- for v in vids %}
+  <article class="tut">
+    <a class="tut-thumb" href="https://www.youtube.com/watch?v={{ v.id }}">
+      <img src="{{ v.thumb | relative_url }}" alt="{{ v.thumb_alt }}" width="960" height="540" loading="lazy">
+      <span class="tut-len">{{ v.length }}</span>
+    </a>
+    <div class="tut-text">
+      <h2><a href="https://www.youtube.com/watch?v={{ v.id }}">{{ v.title }}</a></h2>
+      <p>{{ v.summary }}</p>
+      <p class="label">Chapters</p>
+      <ol class="tut-ch">
+        {%- for c in v.chapters %}
+        <li><a href="https://www.youtube.com/watch?v={{ v.id }}&amp;t={{ c.t }}s"><span class="at">{{ c.at }}</span>{{ c.name }}</a></li>
+        {%- endfor %}
+      </ol>
+    </div>
+  </article>
+{%- endfor %}
+</div>
+
+<p class="tut-fine">Rhinoceros® and Grasshopper® are registered trademarks of Robert McNeel &amp; Associates.
+Antlion is an independent product and is not affiliated with or endorsed by McNeel.</p>
