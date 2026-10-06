@@ -1,0 +1,10 @@
+bowl-section-1: { src: /assets/img/antlion/workflow/1-plan-setup.jpg, w: 1500, h: 1000,
+  alt: "Top view: the soccer field, the rounded start line around it and the section axes." }
+bowl-section-2: { src: /assets/img/antlion/workflow/2-section.jpg, w: 1626, h: 1084,
+  alt: "Two tiers of stepped section with their sightlines to the focal point." }
+bowl-section-3: { src: /assets/img/antlion/workflow/3-2d-layout.jpg, w: 1500, h: 1000,
+  alt: "Top view: the 2D layout around the field, with seats, aisles and vomitories." }
+bowl-section-4: { src: /assets/img/antlion/workflow/4-3d-solids.jpg, w: 1626, h: 1084,
+  alt: "The bowl built as solids, with its stands and vomitory openings." }
+bowl-analysis: { src: /assets/img/antlion/workflow/5-analysis.jpg, w: 1626, h: 1084,
+  alt: "The same bowl with its seats colored by C-value." }

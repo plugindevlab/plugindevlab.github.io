@@ -57,7 +57,8 @@ one you set by hand.
 {%- for c in g.components %}{% if c.group == s.group %}<a href="../components/{{ c.id }}/">{{ c.name }}</a> {% endif %}{% endfor %}
 </p>
 </div>
-<figure class="fig"><div class="fig-wait">Image to come</div></figure>
+{%- assign sf = site.data.stage_figs[s.group] %}
+<figure class="fig">{% if sf %}<img src="{{ sf.src | relative_url }}" alt="{{ sf.alt }}" width="{{ sf.w }}" height="{{ sf.h }}" loading="lazy">{% else %}<div class="fig-wait">Image to come</div>{% endif %}</figure>
 </section>
 {%- endunless %}
 {% endfor %}
