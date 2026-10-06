@@ -1,4 +1,19 @@
 antlion:
+  - version: "1.0.2"
+    date: "2026-10-06"
+    title: Report a problem and manage your subscription from the License component
+    body: |
+      **License component menu**
+
+      - Right-click the License component for two new items. *Manage subscription* opens your
+        customer portal. *Report a problem* opens the problem-report form with your Antlion,
+        Rhino and Windows versions and your document units already attached, and copies the same
+        details — with the last error message, if there was one — to the clipboard.
+
+      **Offline use**
+
+      - When Antlion has not been able to check your license for a while, the warning now counts
+        the hours left. Before, it said "0 more day(s)" for the whole last day.
   - version: "1.0.1"
     date: "2026-10-05"
     title: Inch documents — lengths read the way you set Rhino's units

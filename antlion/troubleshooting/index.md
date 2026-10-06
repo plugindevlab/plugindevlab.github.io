@@ -32,8 +32,14 @@ Found a bug, or something that does not behave the way the reference says it sho
 [**Report a problem →**](https://tally.so/r/MepAQM)
 
 **No account or sign-in is required.** The form asks what you saw and how to reproduce it.
-Please also include your Rhino and Windows details: run <code translate="no">SystemInfo</code> in Rhino,
-right-click the text in the window that opens → <strong translate="no">Copy All</strong>, and paste it into the form.
+
+**Easiest — from inside Grasshopper** (Antlion 1.0.2 or later): right-click the
+<strong translate="no">License</strong> component → <strong translate="no">Report a problem</strong>. It opens this form
+with your Antlion, Rhino and Windows versions already attached.
+
+**If the plugin does not load**, use the link above and include your Rhino and Windows details: run
+<code translate="no">SystemInfo</code> in Rhino, right-click the text in the window that opens →
+<strong translate="no">Copy All</strong>, and paste it into the form.
 
 ### Two things that make a report fixable
 
