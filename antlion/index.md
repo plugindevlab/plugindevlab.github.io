@@ -26,7 +26,7 @@ tell which way it came.**
 [See the workflow](workflow/index.md)
 </div>
 <figure class="fig">
-<img src="{{ '/assets/img/antlion/landing/soccer-bowl-c-value.jpg' | relative_url }}" alt="A three-tier soccer stadium bowl in Rhino, each seat colored by its C-value." width="1800" height="1200">
+{% include zoom.html id="l1" src="/assets/img/antlion/landing/soccer-bowl-c-value.jpg" alt="A three-tier soccer stadium bowl in Rhino, each seat colored by its C-value." w="1800" h="1200" %}
 <figcaption>The finished bowl: a three-tier soccer stadium, seats colored by C-value.</figcaption>
 </figure>
 </section>
@@ -44,7 +44,7 @@ number you report is a number you can defend in a meeting.
 [Analysis components](components/index.html)
 </div>
 <figure class="fig">
-<img src="{{ '/assets/img/antlion/landing/section-sightlines.jpg' | relative_url }}" alt="A two-tier stepped section with red sightlines converging on the focal point." width="1626" height="1084">
+{% include zoom.html id="l2" src="/assets/img/antlion/landing/section-sightlines.jpg" alt="A two-tier stepped section with red sightlines converging on the focal point." w="1626" h="1084" %}
 <figcaption>A two-tier section and its sightlines to the focal point.</figcaption>
 </figure>
 </section>
@@ -63,7 +63,7 @@ shape and see what it does to every seat.
 [Components](components/index.html)
 </div>
 <figure class="fig">
-<img src="{{ '/assets/img/antlion/landing/baseball-custom-curves.jpg' | relative_url }}" alt="Baseball park stands in Rhino, built around hand-drawn red curves." width="1800" height="1200">
+{% include zoom.html id="l3" src="/assets/img/antlion/landing/baseball-custom-curves.jpg" alt="Baseball park stands in Rhino, built around hand-drawn red curves." w="1800" h="1200" %}
 <figcaption>A baseball park, built around curves drawn in Rhino.</figcaption>
 </figure>
 </section>
@@ -81,7 +81,7 @@ Works in millimeter and inch documents.
 [<span translate="no">Table</span> components](components/index.html)
 </div>
 <figure class="fig">
-<img src="{{ '/assets/img/antlion/landing/workbook-section-input.png' | relative_url }}" alt="An Excel sheet of section inputs: tread depth, riser height and tier per row, with eye distances and a C-value preview." width="780" height="520">
+{% include zoom.html id="l4" src="/assets/img/antlion/landing/workbook-section-input.png" alt="An Excel sheet of section inputs: tread depth, riser height and tier per row, with eye distances and a C-value preview." w="780" h="520" %}
 <figcaption>Section inputs in an Excel workbook: tread and riser per row, with a C-value preview.</figcaption>
 </figure>
 </section>

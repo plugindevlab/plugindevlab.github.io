@@ -226,6 +226,30 @@ figure.fig figcaption {
   .car-navs, .car-dots { display: none; }
 }
 
+.zoom, .zoom-shut {
+  display: block; width: 100%; padding: 0; border: 0; background: none;
+  font: inherit; color: inherit; cursor: zoom-in;
+}
+.zoom img { display: block; width: 100%; height: auto; }
+.zoom:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.zoom-pop {
+  margin: auto; padding: 0; border: 0; background: transparent; overflow: visible;
+  max-width: 96vw; max-height: 96vh;
+}
+.zoom-pop::backdrop { background: rgb(12 15 20 / .86); }
+.zoom-shut { cursor: zoom-out; }
+.fig .zoom-pop img {
+  display: block; width: auto; height: auto; max-width: 96vw; max-height: 92vh;
+  aspect-ratio: auto; object-fit: contain; border: 0; background: #fff;
+}
+.zoom-pop:popover-open { opacity: 1; transform: none; transition: opacity 180ms cubic-bezier(.23,1,.32,1), transform 180ms cubic-bezier(.23,1,.32,1); }
+@starting-style { .zoom-pop:popover-open { opacity: 0; transform: scale(.97); } }
+@media (prefers-reduced-motion: reduce) {
+  .zoom-pop:popover-open { transition: opacity 180ms ease; }
+  @starting-style { .zoom-pop:popover-open { transform: none; } }
+}
+@media print { .zoom-pop { display: none; } }
+
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 23rem)); gap: 2.5rem 2rem; margin: 2.5rem 0 var(--rhythm); }
 .card { display: block; }
 .card h3 { margin-top: 0; }

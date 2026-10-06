@@ -5,7 +5,7 @@
 <div class="car-frame">
 <div class="car-slides">
 {%- for s in include.items %}
-<div class="car-slide">{% if s.src and s.src != "" %}<img src="{{ s.src | relative_url }}" alt="{{ s.alt }}"{% if s.w %} width="{{ s.w }}" height="{{ s.h }}"{% endif %}>{% else %}<div class="fig-wait">Image to come</div>{% endif %}</div>{% endfor %}
+<div class="car-slide">{% if s.src and s.src != "" %}{% capture zid %}{{ include.id }}-{{ forloop.index }}{% endcapture %}{% include zoom.html id=zid src=s.src alt=s.alt w=s.w h=s.h %}{% else %}<div class="fig-wait">Image to come</div>{% endif %}</div>{% endfor %}
 </div>
 <div class="car-navs" aria-hidden="true">
 {%- for s in include.items %}{% assign p = forloop.index | minus: 1 %}{% assign q = forloop.index | plus: 1 %}

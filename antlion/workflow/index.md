@@ -58,7 +58,7 @@ one you set by hand.
 </p>
 </div>
 {%- assign sf = site.data.stage_figs[s.group] %}
-<figure class="fig">{% if sf %}<img src="{{ sf.src | relative_url }}" alt="{{ sf.alt }}" width="{{ sf.w }}" height="{{ sf.h }}" loading="lazy">{% else %}<div class="fig-wait">Image to come</div>{% endif %}</figure>
+<figure class="fig">{% if sf %}{% include zoom.html id=s.group src=sf.src alt=sf.alt w=sf.w h=sf.h lazy=true %}{% else %}<div class="fig-wait">Image to come</div>{% endif %}</figure>
 </section>
 {%- endunless %}
 {% endfor %}
