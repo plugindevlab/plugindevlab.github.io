@@ -1,4 +1,11 @@
 antlion:
+  - version: "1.0.4"
+    date: "2026-10-06"
+    title: Shorter package description
+    body: |
+      - No changes to the components. The package description in Rhino's Package Manager and on
+        Food4Rhino is now a single short summary. The package's website link goes to the
+        Food4Rhino page, which links to the documentation and the video tutorial.
   - version: "1.0.3"
     date: "2026-10-06"
     title: Sightlines line up with seat statuses again

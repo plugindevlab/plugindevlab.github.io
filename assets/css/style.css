@@ -159,6 +159,73 @@ figure.fig figcaption {
   font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
 }
 
+.carousel { position: relative; --car-gut: 44px; }
+.car-pick { position: absolute; top: 0; left: 0; width: 1px; height: 1px; margin: 0; opacity: 0; pointer-events: none; }
+.carousel .car-frame, .carousel .car-dots, .carousel figcaption { margin-left: var(--car-gut); margin-right: var(--car-gut); }
+.car-frame { position: relative; }
+.car-slides > *, .car-navs > *, .car-caps > * { display: none; }
+.car-slide img, .car-slide .fig-wait {
+  width: 100%; aspect-ratio: var(--car-ar, 3 / 2); object-fit: contain; background: var(--bg-soft);
+}
+.car-nav { position: absolute; inset: 0; pointer-events: none; }
+.car-prev, .car-next {
+  position: absolute; top: 50%; width: 44px; height: 44px; margin-top: -22px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--soft); cursor: pointer; pointer-events: auto; transition: color 120ms ease;
+}
+.car-prev { left: calc(-1 * var(--car-gut)); }
+.car-next { right: calc(-1 * var(--car-gut)); }
+.car-prev svg, .car-next svg { display: block; fill: none; stroke: currentColor; stroke-width: 1.5; }
+.car-end { color: var(--line); cursor: default; }
+@media (hover: hover) and (pointer: fine) {
+  label.car-prev:hover, label.car-next:hover { color: var(--ink); }
+}
+.car-dots { display: flex; justify-content: center; gap: var(--sp1); margin-top: var(--sp2); }
+.car-dot { display: flex; align-items: center; justify-content: center; width: 28px; height: 28px; cursor: pointer; }
+.car-dot::before {
+  content: ""; width: 9px; height: 9px; border: 1.5px solid var(--soft); border-radius: 50%;
+}
+.car-pick:nth-of-type(1):checked ~ .car-frame .car-slides > :nth-child(1),
+.car-pick:nth-of-type(2):checked ~ .car-frame .car-slides > :nth-child(2),
+.car-pick:nth-of-type(3):checked ~ .car-frame .car-slides > :nth-child(3),
+.car-pick:nth-of-type(4):checked ~ .car-frame .car-slides > :nth-child(4),
+.car-pick:nth-of-type(5):checked ~ .car-frame .car-slides > :nth-child(5),
+.car-pick:nth-of-type(1):checked ~ .car-frame .car-navs > :nth-child(1),
+.car-pick:nth-of-type(2):checked ~ .car-frame .car-navs > :nth-child(2),
+.car-pick:nth-of-type(3):checked ~ .car-frame .car-navs > :nth-child(3),
+.car-pick:nth-of-type(4):checked ~ .car-frame .car-navs > :nth-child(4),
+.car-pick:nth-of-type(5):checked ~ .car-frame .car-navs > :nth-child(5),
+.car-pick:nth-of-type(1):checked ~ .car-caps > :nth-child(1),
+.car-pick:nth-of-type(2):checked ~ .car-caps > :nth-child(2),
+.car-pick:nth-of-type(3):checked ~ .car-caps > :nth-child(3),
+.car-pick:nth-of-type(4):checked ~ .car-caps > :nth-child(4),
+.car-pick:nth-of-type(5):checked ~ .car-caps > :nth-child(5) { display: block; }
+.car-pick:nth-of-type(1):checked ~ .car-dots > :nth-child(1)::before,
+.car-pick:nth-of-type(2):checked ~ .car-dots > :nth-child(2)::before,
+.car-pick:nth-of-type(3):checked ~ .car-dots > :nth-child(3)::before,
+.car-pick:nth-of-type(4):checked ~ .car-dots > :nth-child(4)::before,
+.car-pick:nth-of-type(5):checked ~ .car-dots > :nth-child(5)::before { background: var(--soft); }
+.car-pick:nth-of-type(1):focus-visible ~ .car-dots > :nth-child(1),
+.car-pick:nth-of-type(2):focus-visible ~ .car-dots > :nth-child(2),
+.car-pick:nth-of-type(3):focus-visible ~ .car-dots > :nth-child(3),
+.car-pick:nth-of-type(4):focus-visible ~ .car-dots > :nth-child(4),
+.car-pick:nth-of-type(5):focus-visible ~ .car-dots > :nth-child(5) { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (pointer: coarse) {
+  .car-dot { width: 44px; height: 44px; }
+  .car-dots { gap: 0; }
+}
+@media (max-width: 46rem) {
+  .carousel { --car-gut: 0px; }
+  .car-dots { min-height: 44px; align-items: center; }
+  .car-prev, .car-next { top: calc(100% + var(--sp2)); margin-top: 0; }
+  .car-prev { left: 0; }
+  .car-next { right: 0; }
+}
+@media print {
+  .car-slides > *, .car-caps > * { display: block; margin-bottom: var(--sp4); }
+  .car-navs, .car-dots { display: none; }
+}
+
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 23rem)); gap: 2.5rem 2rem; margin: 2.5rem 0 var(--rhythm); }
 .card { display: block; }
 .card h3 { margin-top: 0; }

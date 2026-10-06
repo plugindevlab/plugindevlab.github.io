@@ -1,22 +1,44 @@
 ---
 title: Getting started with Antlion
 description: What you need, how to install Antlion from the Rhino package manager, and how to register your license key.
+shots:
+  - src: /assets/img/antlion/getting-started/package-manager.png
+    w: 786
+    h: 538
+    alt: "Rhino's package manager with Antlion found by search and the Install button."
+    cap: "Antlion in the Rhino package manager."
+  - src: /assets/img/antlion/getting-started/register.png
+    w: 1500
+    h: 1000
+    alt: "The License component in Grasshopper with the key in a Panel, blacked out, and Toggles set to True on Register and Diagnose."
+    cap: 'Registering in Grasshopper: the key in a <span translate="no">Panel</span>, a <span translate="no">Toggle</span> on <code translate="no">Register</code>. The key is blacked out; the panel on the right is the <code translate="no">Diagnose</code> connection test.'
+  - src: /assets/img/antlion/getting-started/license-menu.png
+    w: 550
+    h: 367
+    alt: "The License right-click menu with Manage subscription and Report a problem."
+    cap: 'Right-click <span translate="no">License</span> for <span translate="no">Manage subscription</span> and <span translate="no">Report a problem</span>.'
 ---
 
 # Getting started
 
 <section class="split">
 <div class="split-text" markdown="1">
-Setup is three things: install from the Rhino package manager, register a license key once,
-and open Grasshopper. None of it touches your Rhino model.
+Setup is three steps, and none of it touches your Rhino model.
 
-Once the **Antlion** tab is in the ribbon, [the workflow](../workflow/index.md) shows what
-order to use things in — that page is where the first bowl gets built.
+1. **Install** from the Rhino package manager — the download button on Food4Rhino opens it
+   at Antlion.
+2. **Buy a license.** Checkout is run by Polar, and the email address you enter there is how
+   you reach your key in the customer portal.
+3. **Register** in Grasshopper — put the key in a <strong translate="no">Panel</strong> wired to
+   <code translate="no">Key</code> on <span translate="no">License</span>, and set a
+   <strong translate="no">Toggle</strong> on <code translate="no">Register</code> to True.
+
+Right-click <span translate="no">License</span> to open your customer portal
+(<strong translate="no">Manage subscription</strong>) or to report a problem
+(<strong translate="no">Report a problem</strong>). Each step is spelled out below; after that,
+[the workflow](../workflow/index.md) is where the first bowl gets built.
 </div>
-<figure class="fig">
-<div class="fig-wait">Image to come</div>
-<figcaption>A bowl built with Antlion — sections, stands, vomitories and seats from one chain.</figcaption>
-</figure>
+{% include carousel.html id="gs" items=page.shots label="Installing and registering Antlion" %}
 </section>
 
 ## What you need

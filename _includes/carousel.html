@@ -1,0 +1,25 @@
+{%- assign n = include.items | size -%}
+<figure class="fig carousel" role="group" aria-roledescription="carousel" aria-label="{{ include.label }}"{% if include.ratio %} style="--car-ar: {{ include.ratio }}"{% endif %}>
+{%- for s in include.items %}
+<input type="radio" class="car-pick" name="car-{{ include.id }}" id="car-{{ include.id }}-{{ forloop.index }}" aria-label="Image {{ forloop.index }} of {{ n }}"{% if forloop.first %} checked{% endif %}>{% endfor %}
+<div class="car-frame">
+<div class="car-slides">
+{%- for s in include.items %}
+<div class="car-slide">{% if s.src and s.src != "" %}<img src="{{ s.src | relative_url }}" alt="{{ s.alt }}"{% if s.w %} width="{{ s.w }}" height="{{ s.h }}"{% endif %}>{% else %}<div class="fig-wait">Image to come</div>{% endif %}</div>{% endfor %}
+</div>
+<div class="car-navs" aria-hidden="true">
+{%- for s in include.items %}{% assign p = forloop.index | minus: 1 %}{% assign q = forloop.index | plus: 1 %}
+<div class="car-nav">{% if forloop.first %}<span class="car-prev car-end">{% else %}<label class="car-prev" for="car-{{ include.id }}-{{ p }}">{% endif %}<svg width="20" height="20" viewBox="0 0 16 16"><path d="M10.5 2.5 5 8l5.5 5.5"/></svg>{% if forloop.first %}</span>{% else %}</label>{% endif %}{% if forloop.last %}<span class="car-next car-end">{% else %}<label class="car-next" for="car-{{ include.id }}-{{ q }}">{% endif %}<svg width="20" height="20" viewBox="0 0 16 16"><path d="M5.5 2.5 11 8l-5.5 5.5"/></svg>{% if forloop.last %}</span>{% else %}</label>{% endif %}</div>{% endfor %}
+</div>
+</div>
+<div class="car-dots" aria-hidden="true">
+{%- for s in include.items %}
+<label class="car-dot" for="car-{{ include.id }}-{{ forloop.index }}"></label>{% endfor %}
+</div>
+{%- assign has_cap = false -%}
+{%- for s in include.items -%}{%- if s.cap and s.cap != "" -%}{%- assign has_cap = true -%}{%- endif -%}{%- endfor -%}
+{%- if has_cap %}
+<figcaption class="car-caps">{% for s in include.items %}<span>{{ s.cap }}</span>{% endfor %}</figcaption>
+{%- elsif include.caption %}
+<figcaption>{{ include.caption }}</figcaption>{% endif %}
+</figure>
