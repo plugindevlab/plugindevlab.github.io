@@ -61,6 +61,10 @@
       <a href="/{{ prod.slug }}/changelog/">Changelog</a>
     </p>
     {%- endif %}
+    <p class="foot-links">
+      {%- if prod %}<a href="/{{ prod.slug }}/eula/">{{ prod.name }} licence (EULA)</a>{% endif %}
+      <a href="/privacy/">Privacy</a>
+    </p>
     <p class="mark" translate="no">plugin.dev.lab</p>
   </div>
 </footer>

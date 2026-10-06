@@ -7,6 +7,7 @@ baseurl: ""
 
 prelaunch: true
 
+f4r_url: ""
 exclude:
   - _tools
   - README.md

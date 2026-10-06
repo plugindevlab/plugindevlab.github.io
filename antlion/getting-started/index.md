@@ -55,7 +55,7 @@ newer version. The [changelog](../changelog/index.md) lists what changed in each
 The Food4Rhino listing carries the product description and the purchase route — its download
 button opens the same package manager entry rather than handing you a file.
 
-*(Food4Rhino listing — coming with release.)*
+{% if site.f4r_url and site.f4r_url != "" %}<strong><a href="{{ site.f4r_url }}">Antlion on Food4Rhino</a></strong>{% else %}*(Food4Rhino listing — coming with release.)*{% endif %}
 
 ## Register your license
 
@@ -78,6 +78,10 @@ Customer portal: [polar.sh/plugindevlab/portal](https://polar.sh/plugindevlab/po
 - <code translate="no">Status</code> reports what happened
 
 That unlocks **every definition on this computer** — it is not something you repeat per file.
+
+Registering sends your computer name, your Windows user name and the date to Polar, so that you
+can tell your machines apart in the customer portal. Nothing from your models is sent — see the
+[privacy policy](../../privacy/index.md).
 
 **One computer at a time.** To move to another machine, release the old one in the customer
 portal and register on the new one. If a computer has been released, <code translate="no">Status</code> says so and

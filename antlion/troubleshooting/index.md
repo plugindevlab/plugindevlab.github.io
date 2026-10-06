@@ -36,6 +36,8 @@ Found a bug, or something that does not behave the way the reference says it sho
 **Easiest — from inside Grasshopper** (Antlion 1.0.2 or later): right-click the
 <strong translate="no">License</strong> component → <strong translate="no">Report a problem</strong>. It opens this form
 with your Antlion, Rhino and Windows versions already attached.
+It also attaches the document's units, the last six characters of your license key and the most
+recent error message, which can contain file paths — see the [privacy policy](../../privacy/index.md).
 
 **If the plugin does not load**, use the link above and include your Rhino and Windows details: run
 <code translate="no">SystemInfo</code> in Rhino, right-click the text in the window that opens →

@@ -143,10 +143,13 @@ When you need to look something up:
 Antlion is distributed through **Food4Rhino** and the Rhino package manager. Pricing and
 purchase are handled there.
 
-*(Food4Rhino listing link — coming with release.)*
+{% if site.f4r_url and site.f4r_url != "" %}<strong><a href="{{ site.f4r_url }}">Antlion on Food4Rhino</a></strong>{% else %}*(Food4Rhino listing link — coming with release.)*{% endif %}
 
 The plugin itself is free to download. Components in the <strong translate="no">Util</strong> panel work without a
 license; the bowl, analysis and table components need one.
+
+Use of Antlion is governed by the [Antlion End User Licence Agreement](eula/index.md); checkout asks
+you to accept it. How we handle personal data is set out in our [privacy policy](../privacy/index.md).
 
 ## Report a problem
 
