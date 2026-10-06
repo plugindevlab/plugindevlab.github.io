@@ -5,9 +5,9 @@ lang: en
 url: https://plugindevlab.github.io
 baseurl: ""
 
-prelaunch: true
+prelaunch: false
 
-f4r_url: ""
+f4r_url: "https://www.food4rhino.com/en/app/antlion"
 exclude:
   - _tools
   - README.md
