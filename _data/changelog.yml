@@ -1,4 +1,28 @@
 antlion:
+  - version: "1.0.3"
+    date: "2026-10-06"
+    title: Sightlines line up with seat statuses again
+    body: |
+      **C-value Seat and C-value Tread**
+
+      - *Sightlines* keep one item per seat or cell again, in the same order as *Seat Statuses*
+        and *Band Statuses*. A seat or cell without a sightline (for example, no focal point in
+        front of it) now leaves an empty item instead of being skipped, so filtering the
+        sightlines by status picks the right lines. Before, every line after the first gap moved
+        up by one.
+      - *Map Hatches* on C-value Seat keep an empty item where a hatch could not be made, so they
+        stay in step with *Seat C-Values*.
+
+      **Seat**
+
+      - With a negative *End Offset* that removes a vomitory near the end of the stand,
+        *Vom Shifts* now lists only the vomitories that remain, in the same order as *Vom Rects*.
+
+      **Package**
+
+      - The package page in Rhino's Package Manager links to the website, Food4Rhino and the
+        YouTube tutorial, and the package includes a copy of the licence agreement
+        (`misc/LICENSE.txt`).
   - version: "1.0.2"
     date: "2026-10-06"
     title: Report a problem and manage your subscription from the License component
