@@ -44,7 +44,7 @@ number you report is a number you can defend in a meeting.
 [Analysis components](components/index.html)
 </div>
 <figure class="fig">
-<img src="{{ '/assets/img/antlion/landing/section-sightlines.png' | relative_url }}" alt="A two-tier stepped section with red sightlines converging on the focal point." width="1800" height="1200">
+<img src="{{ '/assets/img/antlion/landing/section-sightlines.jpg' | relative_url }}" alt="A two-tier stepped section with red sightlines converging on the focal point." width="1626" height="1084">
 <figcaption>A two-tier section and its sightlines to the focal point.</figcaption>
 </figure>
 </section>
