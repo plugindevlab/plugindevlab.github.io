@@ -1,4 +1,31 @@
 antlion:
+  - version: "1.0.6"
+    date: "2026-10-07"
+    title: Custom vomitories can be stepped, stair or ramp
+    body: |
+      **Custom Seat**
+
+      - New optional input Vomitory, right below Stand 2D. Wire it from Vomitory and each vomitory
+        you draw in Custom Voms gets its tier's descent - stepped, stair or ramp - from the Vomitory
+        settings. Before, every custom vomitory was built flat. Only the settings are used: your
+        outlines stay exactly as drawn, and if one is too short for the headroom over the stairs,
+        you are told where.
+      - Because the new input sits below Stand 2D, the inputs from Custom Voms down move one place.
+        Older files reconnect by input name when opened. To get the new input in an older file,
+        place a fresh Custom Seat.
+      - On a tier where you drew Custom Steps, no automatic aisle cells are added beside or behind
+        vomitories any more - your cells are used as drawn. A white note lists the spots left out.
+
+      **Rail 3D**
+
+      - Front railings are now cleared across a vomitory whose front edge lies exactly on the front
+        of the tier. Before, thin pieces of railing could be left standing in the opening.
+
+      **Vom 3D**
+
+      - The note that the descent runs past the opening is orange only when the stairs actually run
+        into the end wall beside the opening. When they just pass out through the opening, it is a
+        white note with the length.
   - version: "1.0.5"
     date: "2026-10-07"
     title: Overlapping seats are removed

@@ -1,8 +1,8 @@
 {
  "_about": "Generated from a Grasshopper capture run - do not edit by hand. Coordinates are CSS pixels (1x); the PNG is rendered at 'scale'.",
- "captured": "2026-10-04T21:27:47.2273299+09:00",
+ "captured": "2026-10-07T16:13:57.4578205+09:00",
  "gh": "8.35.26251.13001",
- "source": "req-20261004-212746-371.json",
+ "source": "req-20261007-161356-313.json",
  "components": {
   "Auto Section": {
    "id": "auto-section",
@@ -2952,7 +2952,7 @@
    "id": "custom-seat",
    "product": "antlion",
    "w": 140,
-   "h": 408,
+   "h": 428,
    "scale": 2,
    "inputs": [
     {
@@ -2974,106 +2974,112 @@
      "y": 54
     },
     {
+     "name": "Vomitory",
+     "nick": "VD",
+     "x": 4,
+     "y": 74
+    },
+    {
      "name": "Custom Voms",
      "nick": "Cust Vom",
      "x": 4,
-     "y": 74
+     "y": 94
     },
     {
      "name": "Custom Steps",
      "nick": "Cust Step",
      "x": 4,
-     "y": 94
+     "y": 114
     },
     {
      "name": "Custom Seats",
      "nick": "Cust Seat",
      "x": 4,
-     "y": 114
+     "y": 134
     },
     {
      "name": "Custom Wheelchair Spaces",
      "nick": "Cust ♿",
      "x": 4,
-     "y": 134
+     "y": 154
     },
     {
      "name": "Max Seats Per Run",
      "nick": "Max Run",
      "x": 4,
-     "y": 154
+     "y": 174
     },
     {
      "name": "Min Seats Per Run",
      "nick": "Min Run",
      "x": 4,
-     "y": 174
+     "y": 194
     },
     {
      "name": "Aisle Side Mode",
      "nick": "▾ Side",
      "x": 4,
-     "y": 194
+     "y": 214
     },
     {
      "name": "Seat Width",
      "nick": "Seat W",
      "x": 4,
-     "y": 214
+     "y": 234
     },
     {
      "name": "Seat Depth",
      "nick": "Seat D",
      "x": 4,
-     "y": 234
+     "y": 254
     },
     {
      "name": "Aisle Width",
      "nick": "Aisle W",
      "x": 4,
-     "y": 254
+     "y": 274
     },
     {
      "name": "Max Riser Step",
      "nick": "Max Step",
      "x": 4,
-     "y": 274
+     "y": 294
     },
     {
      "name": "Aisle Split Mode",
      "nick": "Split",
      "x": 4,
-     "y": 294
+     "y": 314
     },
     {
      "name": "Wheelchair Ratio Target",
      "nick": "♿ %",
      "x": 4,
-     "y": 314
+     "y": 334
     },
     {
      "name": "Wheelchair Space Width",
      "nick": "♿ W",
      "x": 4,
-     "y": 334
+     "y": 354
     },
     {
      "name": "Wheelchair Space Depth",
      "nick": "♿ D",
      "x": 4,
-     "y": 354
+     "y": 374
     },
     {
      "name": "End Offset",
      "nick": "End Off",
      "x": 4,
-     "y": 374
+     "y": 394
     },
     {
      "name": "Panel Values",
      "nick": "Panel",
      "x": 4,
-     "y": 394
+     "y": 414
     }
    ],
    "outputs": [
@@ -3081,55 +3087,55 @@
      "name": "Seat Result",
      "nick": "SRD",
      "x": 136,
-     "y": 26
+     "y": 27
     },
     {
      "name": "Seat Rects",
      "nick": "Seats",
      "x": 136,
-     "y": 70
+     "y": 73
     },
     {
      "name": "Good Seat Rects",
      "nick": "Good",
      "x": 136,
-     "y": 114
+     "y": 120
     },
     {
      "name": "Poor Seat Rects",
      "nick": "Poor",
      "x": 136,
-     "y": 159
+     "y": 167
     },
     {
      "name": "Vom Rects",
      "nick": "Voms",
      "x": 136,
-     "y": 203
+     "y": 213
     },
     {
      "name": "Aisles",
      "nick": "Aisles",
      "x": 136,
-     "y": 248
+     "y": 260
     },
     {
      "name": "Wheelchair Platforms",
      "nick": "♿ Plat",
      "x": 136,
-     "y": 292
+     "y": 307
     },
     {
      "name": "Wheelchair Units",
      "nick": "♿ Units",
      "x": 136,
-     "y": 337
+     "y": 353
     },
     {
      "name": "Debug",
      "nick": "Debug",
      "x": 136,
-     "y": 381
+     "y": 400
     }
    ]
   },
