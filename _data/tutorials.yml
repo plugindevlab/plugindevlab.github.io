@@ -17,3 +17,24 @@ antlion:
       - { t: 2090, at: "34:50", name: "Drawing Sheets" }
       - { t: 2278, at: "37:58", name: "Seat Map and Seat View" }
       - { t: 2454, at: "40:54", name: "Wrap-up" }
+  - id: 9l0bxU1cems
+    title: "How to Design a Multi-Purpose Indoor Arena in Grasshopper"
+    length: "43 min"
+    thumb: /assets/img/antlion/tutorials/arena-two-tier.jpg
+    thumb_alt: "A two-tier indoor arena bowl modelled with Antlion, seats coloured by C-value"
+    summary: "A <span class=\"nb\">two-tier</span> indoor arena with its sections kept in a Google Sheet. You write the tiers as a table in the sheet and bring them into Grasshopper, lay out vomitories and seats in plan, move vomitories, aisles, wheelchair spaces and seats by hand with Custom Seat, build it all in 3D, check <span class=\"nb\">C-value</span> sightlines seat by seat, and send the results back to the sheet. Change a value, and everything follows."
+    chapters:
+      - { t: 0, at: "0:00", name: "Intro" }
+      - { t: 12, at: "0:12", name: "Field and the Input Panel" }
+      - { t: 102, at: "1:42", name: "Start Line and Axes" }
+      - { t: 222, at: "3:42", name: "Google Workbook" }
+      - { t: 413, at: "6:53", name: "Writing the Section in the Sheet" }
+      - { t: 677, at: "11:17", name: "Table In, Table Section and Analysis" }
+      - { t: 808, at: "13:28", name: "Plan, Vomitories and Seats" }
+      - { t: 935, at: "15:35", name: "Editing with Custom Seat" }
+      - { t: 1400, at: "23:20", name: "Openings and 3D" }
+      - { t: 1624, at: "27:04", name: "Sightline Analysis" }
+      - { t: 1826, at: "30:26", name: "Drawing Sheets" }
+      - { t: 1998, at: "33:18", name: "Seat Map and Seat View" }
+      - { t: 2239, at: "37:19", name: "Results Back to the Sheet" }
+      - { t: 2496, at: "41:36", name: "Change a Value, Everything Follows" }
