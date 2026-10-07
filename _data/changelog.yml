@@ -1,4 +1,18 @@
 antlion:
+  - version: "1.0.5"
+    date: "2026-10-07"
+    title: Overlapping seats are removed
+    body: |
+      **Seat and Custom Seat**
+
+      - When two seats in the same tier overlap, only one is kept. This mostly happens where the
+        rows turn at an axis line, for example at the corners of a chamfered bowl. The seat that
+        reaches further across the axis line is removed. Seats in different tiers are never
+        compared.
+      - Seat now removes a seat that overlaps an aisle step, as Custom Seat already did, so the
+        aisle stays clear. This showed up beside vomitories at the corners of a chamfered bowl.
+      - Even a small overlap removes the seat, because two chairs there would clash. Seat counts
+        can be slightly lower than in 1.0.4 on curved and chamfered bowls.
   - version: "1.0.4"
     date: "2026-10-06"
     title: Shorter package description
