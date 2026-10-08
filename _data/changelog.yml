@@ -1,4 +1,27 @@
 antlion:
+  - version: "1.0.8"
+    date: "2026-10-08"
+    title: Stands stay at their design height when the focal curve is raised
+    body: |
+      **Fixed**
+
+      - **Stand 3D Plus, Rail 3D, Vom 3D, Stand 3D** - When Field's Focal Offset raised the focal
+        curve (for example by 500 mm), the 3D stand, its railings and its vomitories were built that
+        much lower than the section you designed, and the Stand 3D preview sat lower again. The stand
+        now stays at its design height whatever the Focal Offset, and Stand 3D and Stand 3D Plus show
+        it in the same place.
+      - **C-value Seat and C-value Tread** - With a raised focal curve they measured from that lowered
+        floor, so C-values came out higher than they really are (about 35 mm too high at the front row
+        with a 500 mm offset in our test bowl). They now agree with Section analysis row by row.
+      - **Section Plus** - On a tier with a wheelchair platform, the wheelchair sightline check was taken
+        from the back of the platform, outside the wheelchair space. It is now taken from the front of the
+        platform, where wheelchair users sit, and gives the same value as Section analysis.
+      - **C-value Seat and C-value Tread** - Wheelchair spaces ignored your wheelchair eye height setting
+        (Wheelchair Eye Vertical Offset) and used the seated eye height. They now use the setting
+        (1150 mm by default); companion seats keep the seated eye height. With the default setting,
+        wheelchair C-values are about 50 mm lower than in 1.0.7.
+
+      Files made with earlier versions update when they recompute - there is nothing to rewire.
   - version: "1.0.7"
     date: "2026-10-08"
     title: Wheelchair platform rows are checked where people actually sit
