@@ -2622,7 +2622,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-10-07",
+     "checked": "2026-10-08",
      "summary": "Turns the tread lines you draw into a tier section — rows, nosing and eye points, and the closed profile the stand is swept from. Draw one line per step; the component sorts them and works out the tiers.",
      "inputs": [
       {
@@ -3061,7 +3061,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-10-07",
+     "checked": "2026-10-08",
      "summary": "Works out the risers for you. Give it the tread depths and the minimum C-value you want to hold, and it raises each step by the smallest Riser Step increment that still clears that C-value - the shallowest bowl that meets the target. The front row starts on the base line - the start line as the axes facet it - so wire the same field, focal point and Base Line that Section takes. Bake tread_lines if you want to fine-tune the steps by hand in Section afterwards.",
      "inputs": [
       {
@@ -3836,7 +3836,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-10-07",
+     "checked": "2026-10-08",
      "summary": "Adds the things a bare section does not have: the front barrier or handrail, accessible (wheelchair) rows, and the sightline check over the barrier. Sits between Section and Stand 2D — pure section geometry stays in Section.",
      "inputs": [
       {
@@ -3900,7 +3900,7 @@
        "optional": true,
        "dropdown": false,
        "default": null,
-       "desc": "Smallest C-value over the barrier top. Below this the front row cannot see past it. Leave it empty to use the value each tier was designed for (Auto Section Minimum C-Values; 90 mm if the section has none)",
+       "desc": "Smallest C-value over the barrier top. Below this the front row cannot see past it. Leave it empty to use the value each tier was designed for (Auto Section Minimum C-Values; 90 mm if the section has none). Barrier only - the wheelchair check always uses the value each tier was designed for, as Section analysis does",
        "flow": false,
        "type": null
       },
@@ -4360,7 +4360,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-10-07",
+     "checked": "2026-10-08",
      "summary": "Builds the tier sections from the numbers in your workbook instead of lines you draw. Wire the book from Table In, plus the same field, focal point and Base Line that Section takes. The barrier settings live in the workbook too, so this one component does what Section and Section Plus do together - the outputs are the same.",
      "inputs": [
       {
@@ -11456,7 +11456,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-07",
+     "checked": "2026-10-08",
      "summary": "Pick an Antlion component and set every value it takes, with sensible defaults shown. For when you are not sure what to wire in.",
      "inputs": [],
      "outputs": [
@@ -11519,7 +11519,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-07",
+     "checked": "2026-10-08",
      "summary": "Checks the sightline over the row in front, row by row, and reports the C-value. Draws the sightlines and dimensions so you can see where the view fails.",
      "inputs": [
       {
@@ -12038,7 +12038,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-07",
+     "checked": "2026-10-08",
      "summary": "Paints every seat with its own C-value, measured in 3D from that seat's eye to its own focus. Wire the Stand 3D Plus BRD output. A railing or vomitory wall in front of a seat counts as the obstruction too; add Rail 3D RLD for the railings' exact built tops.",
      "inputs": [
       {
@@ -12063,7 +12063,7 @@
        "optional": true,
        "dropdown": false,
        "default": null,
-       "desc": "Railings from Rail 3D - their exact built tops. Unwired, railings are rebuilt from the cut and opening edges. Merge several to match the bowls above",
+       "desc": "Railings from Rail 3D - their exact built tops. Unwired, railings are not checked (orange warning) - the first row and the seats behind railings get no railing value. Merge several to match the bowls above",
        "flow": true,
        "type": "RLD"
       },
@@ -12696,7 +12696,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-07",
+     "checked": "2026-10-08",
      "summary": "Paints each tread band with the C-value of one representative section taken between two axes. One value per axis gap, so it is light enough to leave on while you tune the section. C-value Seat measures every seat instead - the two differ most on curves, where one section cannot stand for the whole band.",
      "inputs": [
       {
@@ -12721,7 +12721,7 @@
        "optional": true,
        "dropdown": false,
        "default": null,
-       "desc": "Railings from Rail 3D - their exact built tops, the front row's included. Unwired, railings are rebuilt from the cut and opening edges. Merge several to match the bowls above",
+       "desc": "Railings from Rail 3D - their exact built tops, the front row's included. Unwired, railings are not checked (orange warning) - the first row and the seats behind railings get no railing value. Merge several to match the bowls above",
        "flow": true,
        "type": "RLD"
       },
@@ -13411,7 +13411,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-07",
+     "checked": "2026-10-08",
      "summary": "Builds an explicit color legend for the C-value maps. Set the first number, the last number and the band size - the bands become <min, min to min+step, ... , >=max, each with its own color. Leave colors unwired for the built-in ramp, or supply your own (interpolated when fewer than the band count). Wire scheme into C-value Seat or C-value Tread; the map is then colored by these bands and C-value Map prints this legend on every sheet. Detail Mode on lists the two view-cut states (a seat row or a railing hiding the focal point, C<0) in their own colors; off folds them into the lowest band. It also carries the not-graded states - OPEN, FRONT, EMPTY and NA - as a fixed gray series, so every gray patch on the map is named on the sheet; the report output explains why each state appears and how to clear it. The component itself shows the legend on the canvas.",
      "inputs": [
       {
@@ -13702,7 +13702,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-07",
+     "checked": "2026-10-08",
      "summary": "Lays every axis section out on its own sheet so you can flip through them. One scale for the whole set, chosen so the largest section fits, and every section sits at the same place on its sheet.",
      "inputs": [
       {
@@ -14301,7 +14301,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-07",
+     "checked": "2026-10-08",
      "summary": "Holds the sheet layout settings in one place - the paper size, how many sheets per row, the scale rounding, margins and the text style. Wire the SHD output into C-value Section Check, C-value Map and Seat Map so every sheet component lays out the same way from a single setup. Leave SHD unwired and each of them uses the defaults this component starts with. Where the sheets start is not part of it - each sheet component keeps its own Origin, so their sheets do not land on top of each other.",
      "inputs": [
       {
@@ -14537,7 +14537,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-07",
+     "checked": "2026-10-08",
      "summary": "A stack of sliders in one component — each row Dk drives output Rk. Zoom in to see the small + and - buttons: the ones beside the sliders add or remove rows, the ones on the right add or remove outputs. Double-click a row label to set the range all rows share, or double-click a value to type it. Saves wiring a dozen separate sliders into per-tier inputs.",
      "inputs": [],
      "outputs": [
@@ -14600,7 +14600,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-07",
+     "checked": "2026-10-08",
      "summary": "A stack of toggles in one component — each row Dk drives output Rk. Click a row to flip it. Zoom in to see the small + and - buttons: the ones beside the toggles add or remove rows, the ones on the right add or remove outputs. Saves wiring a dozen separate toggles into per-tier inputs.",
      "inputs": [],
      "outputs": [
@@ -14663,7 +14663,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-07",
+     "checked": "2026-10-08",
      "summary": "Lays the C-value map out flat - one sheet per tier, named TIER 1, TIER 2 and so on, with the seat layout drawing, the colored map and the tier's minimum, average and pass rate written top-left. In a bowl merged from several stands, tiers with the same tier label share one sheet named after it - by default that is the same tier number in each stand, or give Table Section tier_label values such as LOW. Wire the CMD output of C-value Seat for a seat map, or of C-value Tread for a tread map - one at a time.",
      "inputs": [
       {
@@ -15011,7 +15011,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-07",
+     "checked": "2026-10-08",
      "summary": "Holds the wire shut. Whatever changes upstream, nothing downstream recomputes until you press PASS - then the data at D goes through R once and stays there. Put it between the 2D bowl chain and the heavy 3D build or analysis components: edit the bowl lag-free, press to update. The Gate Switch component opens and closes every gate on the canvas at once. Reopening a file behaves like the moment it was saved: a gate that was holding data picks it up again on load (one full compute, like opening any normal file), and a gate that was empty stays shut.",
      "inputs": [
       {
@@ -15103,7 +15103,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-07",
+     "checked": "2026-10-08",
      "summary": "One switch for every Data Gate on the canvas - no wires needed. LIVE holds every gate open, so data flows as if PASS were held down and the whole chain stays current. HOLD closes them all again; each gate keeps the last data that went through. Keep a single switch per document.",
      "inputs": [],
      "outputs": [],
@@ -15136,7 +15136,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-07",
+     "checked": "2026-10-08",
      "summary": "Groups the seats into zones - the pieces left when the aisles, vomitories and cuts are taken out of the tier - and gives every seat a readable address like \"T1 05 S 25\": prefix and tier number, zone number counted around the bowl in the axis direction, then the seat number running from the lowest tread up. In a bowl merged from several stands, tiers with the same tier label - by default the same tier number in each stand - count as one tier: one number, one run of zones around the bowl, one sheet. Wheelchair units belong to their zone too, numbered \"W 1\", \"W 2\". Outputs the SMD bundle for Seat View and Seat 3D, a zone map laid out one sheet per tier, and flat tables ready for a spreadsheet. Wire the BRD output of Stand 3D Plus; wire SHD from Sheet Setup to place the sheets",
      "inputs": [
       {
@@ -15598,7 +15598,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-07",
+     "checked": "2026-10-08",
      "summary": "Register your Antlion license key. Enter the key once — every definition on this computer is unlocked.",
      "inputs": [
       {
@@ -15746,7 +15746,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-07",
+     "checked": "2026-10-08",
      "summary": "Looks through a spectator's eyes. Wire the Seat Map SMD and pick a seat by tier, zone and seat number - or type its address like \"T1 05 S 25\" - press apply, and the perspective viewport jumps to that seat's analysis eye point looking at its own focal point - the same eye and focus the C-value map measures. Turn live on and the yaw and pitch sliders let you look around from the fixed eye point, so you can judge a vomitory rail or a cut-edge railing exactly as the seated spectator would see it.",
      "inputs": [
       {
@@ -15916,7 +15916,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "What the seat is graded against, before Yaw and Pitch",
+       "desc": "What the camera aims at, before Yaw and Pitch - the focal point the sections were drawn to. C-value Seat may grade against another point (its Focal Curve) - that is a point this view must show, not where it aims",
        "flow": false,
        "type": null
       },
@@ -16153,7 +16153,7 @@
         "ghType": "Point",
         "access": "item",
         "flow": false,
-        "blurb": "What the seat is graded against, before Yaw and Pitch",
+        "blurb": "What the camera aims at, before Yaw and Pitch",
         "callX": 708,
         "callY": 314,
         "gripX": 614,
@@ -16204,7 +16204,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-07",
+     "checked": "2026-10-08",
      "summary": "Tags every axis with its number — a guide line running out from each axis point into a circle holding the axis name (A0, A1, ...). The numbers are the same ones Cut and Opening Cut expect in Axis From / Opening From, so you can read them here and leave those heavy previews off.",
      "inputs": [
       {
@@ -16525,7 +16525,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-07",
+     "checked": "2026-10-08",
      "summary": "Draws the optimum and maximum viewing distance circles for a sport and counts how many seats fall outside. Reference only — it never removes a seat; wire Limit Curves into Cut if you want it enforced.",
      "inputs": [
       {
@@ -24665,7 +24665,7 @@
      ]
     }
    },
-   "version": "1.0.9"
+   "version": "1.0.10"
   }
  }
 }

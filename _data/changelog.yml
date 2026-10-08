@@ -1,4 +1,24 @@
 antlion:
+  - version: "1.0.10"
+    date: "2026-10-08"
+    title: Row and tier numbers count from 1 everywhere, and railings are only checked when Rail 3D is wired
+    body: |
+      **Fixed**
+
+      - **Section Plus** - The wheelchair sightline check used Min C Over Rail, the pass mark for the
+        barrier, so the same wheelchair C-value could pass here and fail in Section analysis. It now uses
+        the value each tier was designed for, as Section analysis does. Min C Over Rail is for the barrier only.
+      - **C-value Seat and C-value Tread** - With Rail 3D not wired, railings were guessed from the cut and
+        opening edges at the front barrier height, and the front barrier itself was missing, so the first
+        row of each tier silently had no value. Railings are now checked only when Rail 3D is wired; without
+        it an orange message says which seats get no railing value.
+      - **Row and tier numbers** - Rows were counted from 0 in messages, in C-value Tread item names and on
+        the workbook result pages, and the result pages also counted tiers and stand sections from 0 while
+        Seat Map and the seat addresses count from 1. Row, tier and stand section numbers now count from 1
+        everywhere you read them. Columns ending in _index and axis numbers keep counting from 0.
+      - **Seat View** - The Focal Point output was described as the point the seat is graded against. It is
+        the point the camera aims at; the point C-value Seat grades against is a point this view must show.
+        Only the description changed.
   - version: "1.0.9"
     date: "2026-10-08"
     title: Wheelchair places on tiers without Wheelchair Merge are measured where they really are
