@@ -1,4 +1,20 @@
 antlion:
+  - version: "1.0.7"
+    date: "2026-10-08"
+    title: Wheelchair platform rows are checked where people actually sit
+    body: |
+      **Section analysis**
+
+      - On a tier with a wheelchair platform (Wheelchair Merge on), the top two rows become the
+        platform and hold no regular seats. The row in front of the platform is now checked against
+        the wheelchair users' eye: at the front of the platform, at platform level, using the
+        wheelchair eye height from your settings.
+      - The first platform row no longer gets a C-value, because no one sits behind it. Before, it
+        was checked as if a seated spectator sat there, which could show a POOR that was not real -
+        also on workbook page 80_RESULT_ROWS. Report now names the platform rows.
+      - Tiers without a wheelchair platform are unchanged. The preview columns on page
+        10_INPUT_SECTION still use the regular eye height for every row; page 80_RESULT_ROWS has
+        the analysed values.
   - version: "1.0.6"
     date: "2026-10-07"
     title: Custom vomitories can be stepped, stair or ramp
