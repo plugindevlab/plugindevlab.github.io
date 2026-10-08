@@ -1,4 +1,23 @@
 antlion:
+  - version: "1.0.11"
+    date: "2026-10-09"
+    title: Seats with nobody in front are measured against the railing actually in front of them
+    body: |
+      **Fixed**
+
+      - **C-value Seat** - When no one sat within 2 m straight in front of a seat, it was graded against a
+        made-up spectator standing on the empty floor ahead, borrowed from a seat as far as 20 m to the side.
+        Seats behind an empty row could come out POOR although the view was clear (76.8 mm instead of
+        397.8 mm in our test bowl). Such seats are now graded against the real railing or wall in front of
+        them, or get no value when there is none.
+      - **C-value Seat and C-value Tread** - A front row with no railing of its own could be graded against
+        the railing of a lower tier many metres ahead, even when the view passes well over it (1,335.8 mm
+        from a railing 11.65 m away in our arena). A railing of another tier now counts only when it
+        really blocks the view, as it already did for every other row.
+      - **C-value Tread** - Where a vomitory opening takes up the middle of a band, the band's front row was
+        measured over the open passage, where nobody sits and nothing blocks the view. It is now measured
+        at the nearest seats of that row, against the railing built in front of them. On a tier's first
+        row this gives the same value as C-value Seat for those seats.
   - version: "1.0.10"
     date: "2026-10-08"
     title: Row and tier numbers count from 1 everywhere, and railings are only checked when Rail 3D is wired
