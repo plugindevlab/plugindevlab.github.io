@@ -1,4 +1,23 @@
 antlion:
+  - version: "1.0.9"
+    date: "2026-10-08"
+    title: Wheelchair places on tiers without Wheelchair Merge are measured where they really are
+    body: |
+      **Fixed**
+
+      - **C-value Seat** - On a wheelchair tier with Wheelchair Merge off (the default), the wheelchair
+        spaces sit on the top row, and Section Plus and Section analysis measure them there. C-value Seat
+        measured them one row further forward, at the height a merged platform would have had - a platform
+        that is not built when Merge is off - so wheelchair places came out OK when they were not (313.8 mm
+        instead of 49.7 mm in our test bowl). It now measures each wheelchair place on the tread it actually
+        stands on and gives the same value as Section analysis. Expect wheelchair results on tiers without
+        Merge to look worse than in 1.0.8: these are the real values.
+      - **C-value Tread** - On the same tiers it measured the wheelchair row with the seated eye height
+        instead of your Wheelchair Eye Vertical Offset. It now uses the wheelchair eye height there too.
+      - **Section Plus** - A barrier or wheelchair C-value exactly equal to the minimum could be reported
+        as below it while Section analysis passed it. Both now use the same boundary.
+      - **Table Out** - On the seat summary page (88), a seat whose C-value equals the Optimal C-Value could
+        be left out of the optimal count in inch documents. It is now counted.
   - version: "1.0.8"
     date: "2026-10-08"
     title: Stands stay at their design height when the focal curve is raised
