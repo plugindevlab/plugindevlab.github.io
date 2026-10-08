@@ -93,7 +93,7 @@ When the extension distance exceeds 1 mm, the orange warning `AC06` appears:
 
 ```
 N/M axis curves stop short of the start line - extended along their own
-direction to meet it (max gap 32.5mm, axes [3, 7])
+direction to meet it (max gap 32.5 mm, axes [3, 7]).
 ```
 
 - **Gap of a few mm–cm** — the axis line was drawn slightly short. Common and harmless;
@@ -150,7 +150,7 @@ happened raise **no balloon** — they appear as codes in the component's `Debug
 - `AC14` (red) — fewer than 2 distinct axis points; a base line needs at least 2.
 - `AC15` (red) — fewer than 3 distinct axis points on a closed start line.
 - `AC12` (orange) — some curves skipped. Reasons: `null` (empty entries) ·
-  `does not point at the start line` (§4) · `crosses the start line only in plan` (height differs, §4) · `degenerate direction`.
+  `does not point at the start line` (§4) · `crosses the start line only in plan` (height differs, §4) · `degenerate direction` · `zero-length curve`.
 - `AC06` (orange) — extension beyond 1 mm; reports the max gap and the axis numbers (§5).
 - `AC09` (orange) — two axis points within 1 mm. Both are kept; check the numbering.
 - `AC17` (orange) — an axis curve lies almost along the start line; the start-line normal is used (§6).

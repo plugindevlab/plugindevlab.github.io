@@ -25,7 +25,8 @@ bowl-section-4: |
   seats.
 
   From here the chain carries the 3D result inside a single bundled port, so the analysis
-  stage needs one wire rather than many.
+  stage needs one wire rather than many. Take it from the railings' result, which carries
+  the rest, and the railings are checked too.
 
 bowl-analysis: |
   Check the design and produce evidence you can put in front of someone.

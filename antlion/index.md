@@ -158,15 +158,18 @@ Found a bug, or something that does not behave the way the reference says it sho
 
 [**Report a problem →**](https://tally.so/r/MepAQM)
 
-**No account or sign-in is required.** The form asks what you saw and how to reproduce it;
-add which Rhino you run — <code translate="no">SystemInfo</code> in Rhino shows it. Two steps — internalising the
+**No account or sign-in is required.** The form asks what you saw and how to reproduce it.
+The quickest way in is from Grasshopper: right-click <strong translate="no">License</strong> →
+<strong translate="no">Report a problem</strong>, which opens the form with your Antlion, Rhino and Windows
+versions already attached. If Antlion does not load at all, add which Rhino you run —
+<code translate="no">SystemInfo</code> in Rhino shows it. Two steps — internalising the
 geometry, or pasting the `Debug` output — usually let us find the cause without asking you
 anything further:
 [how to write a report that gets fixed](troubleshooting/index.md#report-a-problem).
 
 Subscription, payment and invoice questions are handled by **Polar**, the merchant of record
-for this product — use the customer portal link in your purchase email rather than the
-report form.
+for this product — use the customer portal (the link in your purchase email, or right-click
+<strong translate="no">License</strong> → <strong translate="no">Manage subscription</strong>) rather than the report form.
 
 ## Who builds Antlion
 

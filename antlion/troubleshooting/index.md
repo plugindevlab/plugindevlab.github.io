@@ -81,5 +81,5 @@ email if you want to be told when yours is fixed, and a display name if you woul
 credit in the release notes.
 
 Subscription, payment and invoice questions are handled by **Polar**, the merchant of record
-for this product — use the customer portal link in your purchase email rather than the
-report form.
+for this product — use the customer portal (the link in your purchase email, or right-click
+<strong translate="no">License</strong> → <strong translate="no">Manage subscription</strong>) rather than the report form.
