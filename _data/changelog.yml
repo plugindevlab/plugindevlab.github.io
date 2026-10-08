@@ -26,129 +26,121 @@ antlion:
     date: "2026-10-08"
     title: Wheelchair platform rows are checked where people actually sit
     body: |
-      **Section analysis**
+      **Fixed**
 
-      - On a tier with a wheelchair platform (Wheelchair Merge on), the top two rows become the
-        platform and hold no regular seats. The row in front of the platform is now checked against
-        the wheelchair users' eye: at the front of the platform, at platform level, using the
-        wheelchair eye height from your settings.
-      - The first platform row no longer gets a C-value, because no one sits behind it. Before, it
-        was checked as if a seated spectator sat there, which could show a POOR that was not real -
-        also on workbook page 80_RESULT_ROWS. Report now names the platform rows.
-      - Tiers without a wheelchair platform are unchanged. The preview columns on page
-        10_INPUT_SECTION still use the regular eye height for every row; page 80_RESULT_ROWS has
-        the analysed values.
+      - **Section analysis** - On a tier with a wheelchair platform (Wheelchair Merge on), the top two
+        rows are the platform and hold no regular seats, but the first platform row was checked as if
+        a seated spectator sat there. That could show a POOR that was not real - also on workbook page
+        80_RESULT_ROWS. That row now carries no C-value (no one sits behind it), and the row in front
+        of the platform is checked against the wheelchair users' eye: at the front of the platform,
+        at platform level, using the wheelchair eye height from your settings. Report names the
+        platform rows. Tiers without a wheelchair platform are unchanged.
+
+      The preview columns on page 10_INPUT_SECTION still use the regular eye height for every row;
+      page 80_RESULT_ROWS has the analysed values.
   - version: "1.0.6"
     date: "2026-10-07"
     title: Custom vomitories can be stepped, stair or ramp
     body: |
-      **Custom Seat**
+      **Added**
 
-      - New optional input Vomitory, right below Stand 2D. Wire it from Vomitory and each vomitory
-        you draw in Custom Voms gets its tier's descent - stepped, stair or ramp - from the Vomitory
-        settings. Before, every custom vomitory was built flat. Only the settings are used: your
-        outlines stay exactly as drawn, and if one is too short for the headroom over the stairs,
-        you are told where.
-      - Because the new input sits below Stand 2D, the inputs from Custom Voms down move one place.
-        Older files reconnect by input name when opened. To get the new input in an older file,
-        place a fresh Custom Seat.
-      - On a tier where you drew Custom Steps, no automatic aisle cells are added beside or behind
-        vomitories any more - your cells are used as drawn. A white note lists the spots left out.
+      - **Custom Seat** - New optional input Vomitory, right below Stand 2D. Wire it from Vomitory and
+        each vomitory you draw in Custom Voms gets its tier's descent - stepped, stair or ramp - from
+        the Vomitory settings (until now every custom vomitory was built flat). Only the settings are
+        used: your outlines stay exactly as drawn, and if one is too short for the headroom over the
+        stairs, you are told where. Because the new input sits below Stand 2D, the inputs from
+        Custom Voms down move one place. Older files reconnect by input name when opened; to get the
+        new input in an older file, place a fresh Custom Seat.
 
-      **Rail 3D**
+      **Fixed**
 
-      - Front railings are now cleared across a vomitory whose front edge lies exactly on the front
-        of the tier. Before, thin pieces of railing could be left standing in the opening.
-
-      **Vom 3D**
-
-      - The note that the descent runs past the opening is orange only when the stairs actually run
-        into the end wall beside the opening. When they just pass out through the opening, it is a
-        white note with the length.
+      - **Custom Seat** - On a tier where you drew Custom Steps, automatic aisle cells were still added
+        beside and behind vomitories, so cells you had removed came back. Your cells are now used as
+        drawn, and a white note lists the spots left out.
+      - **Rail 3D** - Where a vomitory's front edge lay exactly on the front of the tier, thin pieces of
+        front railing could be left standing in the opening. The railing is now cleared across it.
+      - **Vom 3D** - The note that the descent runs past the opening was orange even when the stairs
+        simply pass out through the opening. It is now orange only when the stairs run into the end
+        wall beside the opening; otherwise it is a white note with the length.
   - version: "1.0.5"
     date: "2026-10-07"
     title: Overlapping seats are removed
     body: |
-      **Seat and Custom Seat**
+      **Fixed**
 
-      - When two seats in the same tier overlap, only one is kept. This mostly happens where the
-        rows turn at an axis line, for example at the corners of a chamfered bowl. The seat that
-        reaches further across the axis line is removed. Seats in different tiers are never
-        compared.
-      - Seat now removes a seat that overlaps an aisle step, as Custom Seat already did, so the
-        aisle stays clear. This showed up beside vomitories at the corners of a chamfered bowl.
-      - Even a small overlap removes the seat, because two chairs there would clash. Seat counts
+      - **Seat and Custom Seat** - Two seats in the same tier could overlap, mostly where the rows turn
+        at an axis line, for example at the corners of a chamfered bowl. Now only one is kept: the seat
+        that reaches further across the axis line is removed. Even a small overlap removes a seat,
+        because two chairs there would clash; seats in different tiers are never compared. Seat counts
         can be slightly lower than in 1.0.4 on curved and chamfered bowls.
+      - **Seat** - A seat could overlap an aisle step beside a vomitory at the corners of a chamfered
+        bowl. Seat now removes it, as Custom Seat already did, so the aisle stays clear.
   - version: "1.0.4"
     date: "2026-10-06"
     title: Shorter package description
     body: |
-      - No changes to the components. The package description in Rhino's Package Manager and on
-        Food4Rhino is now a single short summary. The package's website link goes to the
-        Food4Rhino page, which links to the documentation and the video tutorial.
+      **Fixed**
+
+      - **Package** - The 1.0.3 package description lost its line breaks and was cut off on Food4Rhino.
+        It is now a single short summary, and the package's website link goes to the Food4Rhino page,
+        which links to the documentation and the video tutorial.
+
+      No changes to the components.
   - version: "1.0.3"
     date: "2026-10-06"
     title: Sightlines line up with seat statuses again
     body: |
-      **C-value Seat and C-value Tread**
+      **Fixed**
 
-      - *Sightlines* keep one item per seat or cell again, in the same order as *Seat Statuses*
-        and *Band Statuses*. A seat or cell without a sightline (for example, no focal point in
-        front of it) now leaves an empty item instead of being skipped, so filtering the
-        sightlines by status picks the right lines. Before, every line after the first gap moved
-        up by one.
-      - *Map Hatches* on C-value Seat keep an empty item where a hatch could not be made, so they
-        stay in step with *Seat C-Values*.
+      - **C-value Seat and C-value Tread** - A seat or cell without a sightline (for example, no focal
+        point in front of it) was skipped in *Sightlines*, so every line after the first gap moved up
+        by one and filtering the sightlines by status picked the wrong lines. It now leaves an empty
+        item, so *Sightlines* keep one item per seat or cell, in the same order as *Seat Statuses* and
+        *Band Statuses*.
+      - **C-value Seat** - *Map Hatches* skipped seats where a hatch could not be made. They now keep an
+        empty item there, so they stay in step with *Seat C-Values*.
+      - **Seat** - With a negative *End Offset* that removes a vomitory near the end of the stand,
+        *Vom Shifts* still listed the removed vomitory, so the shifts no longer matched *Vom Rects*.
+        It now lists only the vomitories that remain, in the same order as *Vom Rects*.
 
-      **Seat**
+      **Added**
 
-      - With a negative *End Offset* that removes a vomitory near the end of the stand,
-        *Vom Shifts* now lists only the vomitories that remain, in the same order as *Vom Rects*.
-
-      **Package**
-
-      - The package page in Rhino's Package Manager links to the website, Food4Rhino and the
-        YouTube tutorial, and the package includes a copy of the licence agreement
+      - **Package** - The package page in Rhino's Package Manager links to the website, Food4Rhino and
+        the YouTube tutorial, and the package includes a copy of the licence agreement
         (`misc/LICENSE.txt`).
   - version: "1.0.2"
     date: "2026-10-06"
     title: Report a problem and manage your subscription from the License component
     body: |
-      **License component menu**
+      **Added**
 
-      - Right-click the License component for two new items. *Manage subscription* opens your
-        customer portal. *Report a problem* opens the problem-report form with your Antlion,
-        Rhino and Windows versions and your document units already attached, and copies the same
-        details — with the last error message, if there was one — to the clipboard.
+      - **License** - Right-click the License component for two new items. *Manage subscription* opens
+        your customer portal. *Report a problem* opens the problem-report form with your Antlion, Rhino
+        and Windows versions and your document units already attached, and copies the same details —
+        with the last error message, if there was one — to the clipboard.
 
-      **Offline use**
+      **Fixed**
 
-      - When Antlion has not been able to check your license for a while, the warning now counts
-        the hours left. Before, it said "0 more day(s)" for the whole last day.
+      - **License** - When Antlion had not been able to check your license for a while, the warning said
+        "0 more day(s)" for the whole last day. It now counts the hours left.
   - version: "1.0.1"
     date: "2026-10-05"
     title: Inch documents — lengths read the way you set Rhino's units
     body: |
-      **Lengths in messages and reports**
+      **Fixed**
 
-      - Lengths now follow the distance display in Rhino's Document Properties → Units.
-        Decimal documents show decimals (`4.75 in`), fractional documents show fractions
-        (`4-3/4 in`), and Feet & Inches documents show `1'-6 3/8"`.
-      - A value you typed comes back exactly as you typed it. Before, some messages rounded
-        inch values to the whole inch — a minimum C-value of 2.5 in could read as `2in`.
-      - The same value now reads the same in every message, and two different values that a
-        message compares never print as the same number.
-
-      **Inch defaults**
-
-      - New components in inch documents start from round inch values instead of converted
-        millimeters — for example a minimum C-value of 3-1/2 in, an optimal C-value of 4-3/4 in,
-        an eye height of 48 in and a seat depth of 20 in. Values already in your files do not
-        change, and millimeter documents are unchanged.
-
-      **Other**
-
-      - The plugin's contact link in Grasshopper's info window now points to the problem-report page.
+      - **Lengths in messages and reports** - Some messages rounded inch values to the whole inch (a
+        minimum C-value of 2.5 in could read as `2in`), the same value could read differently from one
+        message to another, and lengths ignored Rhino's unit display. A value you typed now comes back
+        exactly as you typed it, reads the same in every message, two values a message compares never
+        print as the same number, and lengths follow the distance display in Document Properties →
+        Units: decimals (`4.75 in`), fractions (`4-3/4 in`) or Feet & Inches (`1'-6 3/8"`).
+      - **Inch defaults** - New components in inch documents started from converted millimeter values.
+        They now start from round inch values — for example a minimum C-value of 3-1/2 in, an optimal
+        C-value of 4-3/4 in, an eye height of 48 in and a seat depth of 20 in. Values already in your
+        files do not change, and millimeter documents are unchanged.
+      - **Info window** - The plugin's contact link in Grasshopper's info window now points to the
+        problem-report page.
 
       Tip — Grasshopper reads `12-3/4` typed into a panel as 12 minus 3/4. Type inch values as
       decimals (`12.75`).
@@ -156,9 +148,11 @@ antlion:
     date: "2026-10-05"
     title: First public release — the seating bowl
     body: |
+      **Added**
+
       It covers the seating bowl, from the field outline to the sightline drawings.
 
-      **Build the bowl**
+      *Build the bowl*
 
       - Field presets, with the focal point every sightline aims at. Rectangle, capsule and oval
         start lines, or your own curve.
@@ -171,7 +165,7 @@ antlion:
       - Cuts and openings by axis number or by curve, chained one after another.
       - 3D solids for the stands, vomitories, railings, chairs and seated spectators.
 
-      **Check the sightlines**
+      *Check the sightlines*
 
       - C-value per seat and per tread band across the whole bowl, colored by a legend you set.
       - Section checks with sightlines and dimensions, one sheet per axis.
@@ -179,12 +173,12 @@ antlion:
         seat addresses.
       - A view from any seat, in the Perspective viewport.
 
-      **Tables**
+      *Tables*
 
       - Step heights, tread depths, tier settings and the C-value target read from a Google Sheets
         or Excel workbook, with the results written back.
 
-      **Also**
+      *Also*
 
       - Millimeter and inch documents.
       - The Util panel works without a license.
