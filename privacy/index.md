@@ -9,7 +9,7 @@ effective: "2026-10-10"
 Plugin Dev Lab ("we", "us") — operating as **plugin.dev.lab**
 Contact: **plugin.dev.lab@gmail.com**
 Published at: {{ page.url | absolute_url }}
-Version 1.1 — effective {{ page.effective }}
+Version 1.2 — effective {{ page.effective }}
 
 This English text is the only authoritative version of this Policy.
 
@@ -126,7 +126,10 @@ countries. Each processor publishes its own privacy policy governing that storag
   An application that is never completed is deleted within 30 days after its verification code
   expires or, if no code was sent, within 30 days after we reply to it. An application whose
   school domain we check by hand is kept until we decide, and if we cannot approve it, it is
-  deleted within 30 days after we tell you so.
+  deleted within 30 days after we tell you so. If we end a student discount because it was used
+  outside the student terms (for example, for commercial work), we keep the school e-mail address,
+  the subscription the discount was applied to and the reason for 12 months after we end it, so
+  that the same discount is not applied again, and then delete them.
 
 ## 7. Your rights
 
