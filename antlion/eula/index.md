@@ -1,15 +1,15 @@
 ---
 title: Antlion end user licence agreement
 description: The licence terms for installing and using Antlion.
-effective: "2026-10-06"
+effective: "2026-10-10"
 ---
 
 # ANTLION — END USER LICENCE AGREEMENT
 
 Licensor: Plugin Dev Lab ("we", "us")
-Contact: plugin.dev.lab@gmail.com
+Contact: founder@plugindevlab.com
 Published at: {{ page.url | absolute_url }}
-Version 1.0 — effective {{ page.effective }}
+Version 1.1 — effective {{ page.effective }}
 
 This English text is the only authoritative version of this Agreement.
 
@@ -131,7 +131,7 @@ lawfully be limited or excluded.**
 Purchases are made from Polar as merchant of record. Payment, invoicing, taxes, refunds and
 chargebacks are handled by Polar under Polar's own terms and refund policy, which apply to your
 purchase in addition to this Agreement. Questions about a payment, an invoice or a refund should
-be directed to Polar; questions about the Software should be directed to us at plugin.dev.lab@gmail.com.
+be directed to Polar; questions about the Software should be directed to us at founder@plugindevlab.com.
 
 ## 9. Term and termination
 

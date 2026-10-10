@@ -7,9 +7,9 @@ effective: "2026-10-10"
 # PRIVACY POLICY
 
 Plugin Dev Lab ("we", "us") — operating as **plugin.dev.lab**
-Contact: **plugin.dev.lab@gmail.com**
+Contact: **founder@plugindevlab.com**
 Published at: {{ page.url | absolute_url }}
-Version 1.2 — effective {{ page.effective }}
+Version 1.3 — effective {{ page.effective }}
 
 This English text is the only authoritative version of this Policy.
 
@@ -71,6 +71,13 @@ licensing functions described above, the only component that makes a network con
 `Google Workbook` — and that connection is between **you and Google**, not between you and us
 (section 3).
 
+### 2.5 E-mail you send us
+
+If you write to us, we receive your e-mail address, your message and anything you attach. Mail
+sent to our address is forwarded by **Cloudflare** to the Google (Gmail) mailbox in which we read
+it, and our replies are delivered through **Resend**. We use this correspondence only to answer
+you.
+
 ## 3. Optional Google Sheets connection
 
 The `Google Workbook` component can read and write a Google spreadsheet on your behalf. If you
@@ -105,7 +112,10 @@ they store it principally in the **United States**:
 - **Tally** — problem-report form and attachments (section 2.2), and the student-verification
   forms (section 2.3).
 - **Google LLC** — the spreadsheet that records student verification and the e-mails we send
-  from our Gmail account (section 2.3).
+  from our Gmail account (section 2.3), and the mailbox in which we read and answer your e-mail
+  (section 2.5).
+- **Cloudflare, Inc.** — forwarding of e-mail sent to our address (section 2.5).
+- **Plus Five Five, Inc. (Resend)** — delivery of the e-mail replies we send (section 2.5).
 
 By using these services you accept that the data concerned is transferred to and stored in those
 countries. Each processor publishes its own privacy policy governing that storage.
@@ -130,12 +140,14 @@ countries. Each processor publishes its own privacy policy governing that storag
   outside the student terms (for example, for commercial work), we keep the school e-mail address,
   the subscription the discount was applied to and the reason for 12 months after we end it, so
   that the same discount is not applied again, and then delete them.
+- **E-mail correspondence** is kept in our mailbox for as long as we need it to deal with your
+  request and any follow-up, and is deleted when you ask us to.
 
 ## 7. Your rights
 
 You may ask us to confirm what we hold about you, to correct it, to delete it, or to stop
 processing it, and you may withdraw a consent you have given. Write to
-**plugin.dev.lab@gmail.com** and we will respond without undue delay. You also have the right to
+**founder@plugindevlab.com** and we will respond without undue delay. You also have the right to
 lodge a complaint with the data protection authority in the country where you live.
 
 You can exercise some of these rights directly and immediately: device activations can be
@@ -158,7 +170,7 @@ collect personal data from children.
 ## 10. Data Protection Officer, and changes to this Policy
 
 The person responsible for personal data protection can be reached at
-**plugin.dev.lab@gmail.com** (Privacy Officer, plugin.dev.lab).
+**founder@plugindevlab.com** (Privacy Officer, plugin.dev.lab).
 
 If we change this Policy we will publish the revised version at {{ page.url | absolute_url }} with a new version
 number and effective date. Where a change materially affects what we process or who processes it,
