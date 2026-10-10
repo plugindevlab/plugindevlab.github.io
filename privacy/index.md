@@ -1,7 +1,7 @@
 ---
 title: Privacy policy
 description: What personal data plugin.dev.lab processes, why, where it goes, and your rights.
-effective: "2026-10-10"
+effective: "2026-10-11"
 ---
 
 # PRIVACY POLICY
@@ -9,7 +9,7 @@ effective: "2026-10-10"
 Plugin Dev Lab ("we", "us") — operating as **plugin.dev.lab**
 Contact: **founder@plugindevlab.com**
 Published at: {{ page.url | absolute_url }}
-Version 1.4 — effective {{ page.effective }}
+Version 1.5 — effective {{ page.effective }}
 
 This English text is the only authoritative version of this Policy.
 
@@ -57,8 +57,9 @@ If you apply for the student price, we receive your **name, school e-mail addres
 name** through a form hosted by **Tally**. If you have already subscribed or started a free trial,
 you may also give us **the e-mail address you used at checkout**, so that we can find that
 subscription and apply the discount to it; when we do, we let that address know. The answers are
-recorded in a Google spreadsheet that we control; we send a verification code to that school
-address from our Google (Gmail) account, and once you enter it we apply a student discount.
+recorded in a Google spreadsheet that we control; we e-mail a verification code to that school
+address from our address, delivered through **Resend**, and once you enter it we apply a student
+discount. The other e-mails about your student discount are delivered the same way.
 Student status is re-verified every six months, so we keep your school address, the subscription
 the discount is applied to, and the status of your discount while the discount is active. We
 confirm student status only through a school e-mail address.
@@ -111,11 +112,12 @@ they store it principally in the **United States**:
   are held by Polar under its own privacy policy, and we never see your full payment information.
 - **Tally** — problem-report form and attachments (section 2.2), and the student-verification
   forms (section 2.3).
-- **Google LLC** — the spreadsheet that records student verification and the e-mails we send
-  from our Gmail account (section 2.3), and the mailbox in which we read and answer your e-mail
-  (section 2.5).
+- **Google LLC** — the spreadsheet that records student verification (section 2.3), and the
+  mailbox in which we read and answer your e-mail (section 2.5).
 - **Cloudflare, Inc.** — forwarding of e-mail sent to our address (section 2.5).
-- **Plus Five Five, Inc. (Resend)** — delivery of the e-mail replies we send (section 2.5).
+- **Plus Five Five, Inc. (Resend)** — delivery of the e-mails we send, including verification
+  codes and other student-discount e-mails (sections 2.3 and 2.5). Resend keeps a record of each
+  e-mail it delivers for 30 days.
 
 By using these services you accept that the data concerned is transferred to and stored in those
 countries. Each processor publishes its own privacy policy governing that storage.
