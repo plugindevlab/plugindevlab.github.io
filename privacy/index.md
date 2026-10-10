@@ -1,7 +1,7 @@
 ---
 title: Privacy policy
 description: What personal data plugin.dev.lab processes, why, where it goes, and your rights.
-effective: "2026-10-06"
+effective: "2026-10-10"
 ---
 
 # PRIVACY POLICY
@@ -9,7 +9,7 @@ effective: "2026-10-06"
 Plugin Dev Lab ("we", "us") — operating as **plugin.dev.lab**
 Contact: **plugin.dev.lab@gmail.com**
 Published at: {{ page.url | absolute_url }}
-Version 1.0 — effective {{ page.effective }}
+Version 1.1 — effective {{ page.effective }}
 
 This English text is the only authoritative version of this Policy.
 
@@ -54,13 +54,14 @@ optional — without it we simply cannot reply to you.
 ### 2.3 Student verification
 
 If you apply for the student price, we receive your **name, school e-mail address and school
-name** through a form hosted by **Tally**. The answers are recorded in a Google spreadsheet that
-we control; we send a verification code to that school address from our Google (Gmail) account,
-and once you enter it we apply a student discount. Student status is re-verified every six
-months, so we keep your school address and the status of your discount while the discount is
-active. Where a school e-mail does not exist, we may instead accept a **student card or
-certificate of enrolment** sent to us by e-mail; such an image contains more personal data than
-we need, so it is **checked and then deleted immediately**.
+name** through a form hosted by **Tally**. If you have already subscribed or started a free trial,
+you may also give us **the e-mail address you used at checkout**, so that we can find that
+subscription and apply the discount to it; when we do, we let that address know. The answers are
+recorded in a Google spreadsheet that we control; we send a verification code to that school
+address from our Google (Gmail) account, and once you enter it we apply a student discount.
+Student status is re-verified every six months, so we keep your school address, the subscription
+the discount is applied to, and the status of your discount while the discount is active. We
+confirm student status only through a school e-mail address.
 
 ### 2.4 What we never receive
 
@@ -119,11 +120,13 @@ countries. Each processor publishes its own privacy policy governing that storag
 - **Problem reports** are kept while the issue is open and for a reasonable period afterwards so
   that recurrences can be recognised. When we publish anything about an issue, we publish the
   technical facts only — **never your e-mail address or any identifying detail**.
-- **Student-verification records** — your name, school e-mail address, school name and discount
-  status — are kept while the student discount is active and deleted within 30 days after it
-  ends, including the copies held by our form service. An application that is never completed is
-  deleted within 30 days after its verification code expires. A student card or certificate of enrolment is deleted immediately upon
-  checking, as described in section 2.3.
+- **Student-verification records** — your name, school e-mail address, school name, the checkout
+  e-mail address if you gave one, and discount status — are kept while the student discount is
+  active and deleted within 30 days after it ends, including the copies held by our form service.
+  An application that is never completed is deleted within 30 days after its verification code
+  expires or, if no code was sent, within 30 days after we reply to it. An application whose
+  school domain we check by hand is kept until we decide, and if we cannot approve it, it is
+  deleted within 30 days after we tell you so.
 
 ## 7. Your rights
 

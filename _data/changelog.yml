@@ -1,4 +1,17 @@
 antlion:
+  - version: "1.0.12"
+    date: "2026-10-10"
+    title: Two descriptions corrected - Field, and the Rail Result input of the C-value components
+    body: |
+      **Fixed**
+
+      - **C-value Seat and C-value Tread** - The Rail Result input said that leaving it unwired means
+        railings are not checked. That was wrong: when the Build Result you wire already takes Rail Result,
+        railings are read from there. The description now says so. Only the description changed.
+      - **Field** - The description pointed to field_info, a name you never see on the canvas. It now names
+        the Field Info output. Only the description changed.
+
+      Components already on your canvas keep their old descriptions until you place them again.
   - version: "1.0.11"
     date: "2026-10-09"
     title: Seats with nobody in front are measured against the railing actually in front of them
