@@ -9,7 +9,7 @@ effective: "2026-10-10"
 Plugin Dev Lab ("we", "us") — operating as **plugin.dev.lab**
 Contact: **founder@plugindevlab.com**
 Published at: {{ page.url | absolute_url }}
-Version 1.3 — effective {{ page.effective }}
+Version 1.4 — effective {{ page.effective }}
 
 This English text is the only authoritative version of this Policy.
 
@@ -139,7 +139,9 @@ countries. Each processor publishes its own privacy policy governing that storag
   deleted within 30 days after we tell you so. If we end a student discount because it was used
   outside the student terms (for example, for commercial work), we keep the school e-mail address,
   the subscription the discount was applied to and the reason for 12 months after we end it, so
-  that the same discount is not applied again, and then delete them.
+  that the same discount is not applied again, and then delete them. When we delete a form
+  submission, our form service keeps it in its trash for up to 90 days before erasing it
+  permanently.
 - **E-mail correspondence** is kept in our mailbox for as long as we need it to deal with your
   request and any follow-up, and is deleted when you ask us to.
 
