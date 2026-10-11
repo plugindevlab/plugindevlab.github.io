@@ -60,7 +60,7 @@ antlion:
     page: "05-analysis-util"
     count: 9
     components:
-      - { name: "Section analysis", anchor: "section-analysis", id: "ANALYSIS-001", page: "05-analysis-util" }
+      - { name: "Section Analysis", anchor: "section-analysis", id: "ANALYSIS-001", page: "05-analysis-util" }
       - { name: "C-value Seat", anchor: "c-value-seat", id: "ANALYSIS-004", page: "05-analysis-util" }
       - { name: "C-value Tread", anchor: "c-value-tread", id: "ANALYSIS-005", page: "05-analysis-util" }
       - { name: "C-value Section Check", anchor: "c-value-section-check", id: "ANALYSIS-006", page: "05-analysis-util" }

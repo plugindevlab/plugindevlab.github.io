@@ -1,8 +1,8 @@
 {
  "_about": "Generated from a Grasshopper capture run - do not edit by hand. Coordinates are CSS pixels (1x); the PNG is rendered at 'scale'.",
- "captured": "2026-10-07T16:13:57.4578205+09:00",
+ "captured": "2026-10-11T11:20:52.3342169+09:00",
  "gh": "8.35.26251.13001",
- "source": "req-20261007-161356-313.json",
+ "source": "req-20261011-112051-566.json",
  "components": {
   "Auto Section": {
    "id": "auto-section",
@@ -248,7 +248,7 @@
     }
    ]
   },
-  "Section analysis": {
+  "Section Analysis": {
    "id": "section-analysis",
    "product": "antlion",
    "w": 157,
@@ -262,7 +262,7 @@
      "y": 15
     },
     {
-     "name": "C-Value Mode",
+     "name": "C-value Mode",
      "nick": "▾ C Val",
      "x": 4,
      "y": 37
@@ -1657,7 +1657,7 @@
      "y": 94
     },
     {
-     "name": "C-Value Mode",
+     "name": "C-value Mode",
      "nick": "C Val",
      "x": 116,
      "y": 114

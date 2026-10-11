@@ -1,4 +1,15 @@
 antlion:
+  - version: "1.0.13"
+    date: "2026-10-11"
+    title: Section Analysis and C-value Mode now spelled like the rest of Antlion
+    body: |
+      **Fixed**
+
+      - **Section Analysis** - The component was spelled "Section analysis", unlike every other component
+        name. It is now "Section Analysis". A component already on your canvas takes the new name when you
+        open the file, unless you renamed it yourself.
+      - **Section Analysis and Table In** - The C-Value Mode port is now spelled C-value Mode, like the
+        C-value components. Wires and values you already set stay where they are.
   - version: "1.0.12"
     date: "2026-10-10"
     title: Two descriptions corrected - Field, and the Rail Result input of the C-value components
