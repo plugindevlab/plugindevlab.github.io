@@ -1,4 +1,27 @@
 antlion:
+  - version: "1.0.14"
+    date: "2026-10-12"
+    title: Millimeters, inches and feet now give the same results in five places
+    body: |
+      **Fixed**
+
+      - **Cut** - A wheelchair platform band that ran almost all the way around a tier could not be trimmed
+        back to the wheelchair spaces left after a cut, and stayed whole with a warning. It is now trimmed:
+        the band sits under every remaining wheelchair space and stops there.
+      - **C-value Seat** - When the nearest seat in the row ahead sat exactly 2 m to the side, rounding decided
+        whether that row counted as occupied, so the same seat could get a very different value depending on
+        the model's units (90.2 mm in feet, 1,063 mm in inches in our test). A seat exactly 2 m to the side now
+        always counts as in front, the cautious reading. Some seats right behind a gap in the row ahead show a
+        lower value than before; none changed between pass and fail in our test bowls.
+      - **Opening Cut** - A vomitory-type opening that reaches the front row now opens the front railing across
+        its full width, as an opening between two axes already did. Before, rounding decided it: the railing
+        could run straight across the opening, or break off at an odd point inside it.
+      - **Assemble Bowl** - Where two branches meet, a seat of one branch standing on an aisle step of the other
+        is now removed so the aisle stays clear, and a note says where. Before, the seat stayed and the
+        component only warned. Seats on seats and steps on steps still raise the warning as before.
+      - **Custom Seat** - An aisle cell drawn exactly one and a half aisle widths to the side of the cell below
+        could join that aisle or start a new one, depending on the model's units. It now always joins, as the
+        rule says (up to one and a half aisle widths).
   - version: "1.0.13"
     date: "2026-10-11"
     title: Section Analysis and C-value Mode now spelled like the rest of Antlion
