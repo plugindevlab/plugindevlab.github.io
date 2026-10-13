@@ -12,7 +12,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-10-10",
+     "checked": "2026-10-14",
      "summary": "Draws the playing field outline for a sport and the focal point every sightline is measured to. Start here — the rest of the chain hangs off Field Info.",
      "inputs": [
       {
@@ -50,7 +50,7 @@
        "optional": true,
        "dropdown": false,
        "default": null,
-       "desc": "Your own focal point. Used when Focal Position Mode is CUSTOM, and required for a Custom Curve that is not a rectangle - there it also sets which way the field faces (toward the outline center)",
+       "desc": "Your own focal point. Used when Focal Position Mode is CUSTOM, and whenever it is wired with a Custom Curve that is not a rectangle - there it also sets which way the field faces (toward the outline center). Required for a Custom Curve with no long and short side (one that does not touch the middle of all four sides of the rectangle around it, such as a triangle or fan)",
        "flow": false,
        "type": null
       },
@@ -63,7 +63,7 @@
        "optional": false,
        "dropdown": true,
        "default": "SOCCER",
-       "desc": "Which sport sets the field size and shape (default SOCCER). CUSTOM uses your Custom Curve - wiring the curve does the same",
+       "desc": "Which sport sets the field size and shape (default SOCCER). Each choice names the rule it follows and whether that rule sizes it in metric or imperial units. CUSTOM uses your Custom Curve - wiring the curve does the same",
        "flow": false,
        "type": null
       },
@@ -76,7 +76,7 @@
        "optional": false,
        "dropdown": true,
        "default": "HALF_S",
-       "desc": "Where the focal point sits: HALF_N or HALF_S halfway along a long side, HALF_E or HALF_W at an end, CUSTOM at Custom Focal Point (default HALF_S)",
+       "desc": "Where the focal point sits: HALF_N or HALF_S halfway along a long side, HALF_E or HALF_W at an end, CUSTOM at Custom Focal Point (default HALF_S). A Custom Curve such as a track or rounded rectangle uses the sides of the rectangle around it when Custom Focal Point is not wired, HALF_E being the end toward Base Plane X",
        "flow": false,
        "type": null
       },
@@ -102,7 +102,7 @@
        "optional": false,
        "dropdown": false,
        "default": "0",
-       "desc": "How far the focal point sits from the field surface or outline - Focal Direction says which way. Ball on the ground is 0 (default 0). Treated as 0 for a Custom Curve that is not a rectangle",
+       "desc": "How far the focal point sits from the field surface or outline - Focal Direction says which way. Ball on the ground is 0 (default 0). Treated as 0 when a Custom Curve that is not a rectangle takes its focus from Custom Focal Point",
        "flow": false,
        "type": null
       },
@@ -480,7 +480,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-10-10",
+     "checked": "2026-10-14",
      "summary": "Start line for the front row, offset outward from the field edge by a long-side and a short-side distance. Optional rounded or chamfered corners.",
      "inputs": [
       {
@@ -858,7 +858,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-10-10",
+     "checked": "2026-10-14",
      "summary": "Start line as a capsule - two equal semicircles joined by straight sides. The classic athletics track outline.",
      "inputs": [
       {
@@ -1180,7 +1180,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-10-10",
+     "checked": "2026-10-14",
      "summary": "Start line as an oval around the field — four tangent arcs, or a true ellipse. Use when the bowl has no straight sides.",
      "inputs": [
       {
@@ -1586,7 +1586,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-10-10",
+     "checked": "2026-10-14",
      "summary": "Start line taken from a curve you draw - aligned to the field frame for a preset field, used as drawn for a custom field. Use when no preset shape fits. An open curve gives a stand with two free ends.",
      "inputs": [
       {
@@ -1824,7 +1824,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-10-10",
+     "checked": "2026-10-14",
      "summary": "Divides the start line into the planes each stand section is placed on. Straight runs are split by an even module, arcs by a fixed count — so section spacing follows the shape.",
      "inputs": [
       {
@@ -2293,7 +2293,7 @@
      ],
      "group": "bowl-section-1",
      "page": "01-plan",
-     "checked": "2026-10-10",
+     "checked": "2026-10-14",
      "summary": "Section placement planes from axis curves you draw yourself. Each curve's crossing with the start line becomes an axis, numbered along the start line - those numbers are what Cut refers to.",
      "inputs": [
       {
@@ -24665,7 +24665,7 @@
      ]
     }
    },
-   "version": "1.0.14"
+   "version": "1.0.15"
   }
  }
 }

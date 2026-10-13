@@ -1,8 +1,14 @@
 {%- assign rels = site.data.changelog[include.product] -%}
 {%- if rels and rels.size > 0 %}
+{%- assign per = 15 -%}
+{%- assign npages = rels.size | plus: per | minus: 1 | divided_by: per -%}
 <p class="label rel-count">{{ rels.size }} {% if rels.size == 1 %}release{% else %}releases{% endif %}</p>
+<div class="rel-pages">
+{%- for pi in (1..npages) %}
+{%- assign off = pi | minus: 1 | times: per %}
+<section class="rel-page" id="rel-page-{{ pi }}">
 <div class="rel-list">
-{%- for r in rels %}
+{%- for r in rels limit: per offset: off %}
 <details class="rel" id="v{{ r.version | replace: '.', '-' }}">
 <summary><span class="rel-v" translate="no">{{ r.version }}</span> <span class="rel-t">{{ r.title }}</span></summary>
 <div class="rel-body">
@@ -10,6 +16,22 @@
 {{ r.body | markdownify }}
 </div>
 </details>
+{%- endfor %}
+</div>
+{%- if npages > 1 %}
+<nav class="rel-nav" aria-label="Release pages">
+{%- for pj in (1..npages) %}
+{%- assign o2 = pj | minus: 1 | times: per %}
+{%- assign last = o2 | plus: per | minus: 1 %}
+{%- assign maxi = rels.size | minus: 1 %}
+{%- if last > maxi %}{% assign last = maxi %}{% endif %}
+{%- assign hi = rels[o2].version %}
+{%- assign lo = rels[last].version %}
+<a href="#rel-page-{{ pj }}" translate="no"{% if pj == pi %} aria-current="page"{% endif %}>{{ hi }}{% if hi != lo %}–{{ lo }}{% endif %}</a>
+{%- endfor %}
+</nav>
+{%- endif %}
+</section>
 {%- endfor %}
 </div>
 {%- else %}

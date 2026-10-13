@@ -1,4 +1,41 @@
 antlion:
+  - version: "1.0.15"
+    date: "2026-10-14"
+    title: A wrongly wired input now stops the component at once, and Field gets nine more sports
+    body: |
+      **Fixed**
+
+      - **All components** - An input that takes one result from another component, such as Custom Seat's VD,
+        made the whole component run once for every item that reached it. Curves wired there by mistake were
+        quietly ignored, so 63 curves meant the same bowl laid out 63 times - minutes of work and gigabytes of
+        memory before anything came back. Now the component stops at once with one red message that names the
+        input, how many items reached it and where they came from. Nothing downstream runs on the bad data.
+      - **Field** - The 400 m track outline followed the lane 1 measuring line, 8.85 m inside the centre of the
+        outermost lane that athletics sightlines aim at, so stands came out too far from the focal line and
+        C-values looked better than they are. The outline is now the outside edge of lane 8. To aim at the centre of the
+        outermost lane, use Focal Direction HORIZONTAL with a Focal Offset of 610 mm. Files using the track
+        change when they recalculate - nothing to rewire.
+      - **Field** - On the track, the east and west half positions put the base point at the centre of the
+        semicircle instead of on the outline. It now sits at the tip of the semicircle, on the outline.
+      - **Field** - Rugby union was 100 × 70 m without its in-goal areas, so end stands were measured from a
+        boundary up to 22 m too far away. It is now 120 × 70 m, in-goal included.
+      - **Field** and **View Limit** - When an update changed the Sport Mode list, a wired Value List could fall
+        back to its first choice and quietly switch your sport to soccer. Your choice is now kept.
+      - **Field** - A custom curve that is not closed now says so first, instead of first asking for a focal point.
+      - **Field** - On a custom rectangle, the east half position depended on the direction the curve was drawn
+        and could land on the west side. It now always takes the end toward Base Plane X.
+
+      **Added**
+
+      - **Field** - Nine sports whose rules fix one size: an NHL ice rink, an NBA court, Canadian football,
+        rugby league, field hockey, volleyball, netball, badminton and a 50 m pool.
+      - **Field** - Each Sport Mode choice now reads sport · rule · metric or imperial, so you can see which
+        rulebook a size comes from and in which units it is defined.
+      - **Field** - A custom outline that touches the middle of each side of its bounding rectangle - a track,
+        a rounded rectangle, an ellipse - can now use the four half positions, Focal Offset and HORIZONTAL like
+        the presets when no Custom Focal Point is wired. Before, only a plain rectangle could, and anything else
+        needed a Custom Focal Point. A wired Custom Focal Point still wins, so older files keep aiming where they did.
+      - **Field** - A note when a Custom Focal Point sits more than 5 m outside the field.
   - version: "1.0.14"
     date: "2026-10-12"
     title: Millimeters, inches and feet now give the same results in five places

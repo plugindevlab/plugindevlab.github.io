@@ -453,6 +453,19 @@ figure.fig figcaption {
   .rel-v { min-width: var(--sp8); }
   .rel-body { padding-left: 0; }
 }
+.rel-page { display: none; scroll-margin-top: var(--sp6); }
+.rel-page:first-of-type { display: block; }
+.rel-page:target { display: block; }
+.rel-page:has(:target) { display: block; }
+.rel-pages:has(:target) .rel-page:first-of-type:not(:target):not(:has(:target)) { display: none; }
+.rel-nav { display: flex; flex-wrap: wrap; gap: var(--sp2) var(--sp4); margin: calc(-1 * var(--sp5)) 0 var(--sp7); }
+.rel-nav a {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--sp1);
+  font: 400 var(--t2)/1.4 var(--font-mono); font-variant-numeric: tabular-nums;
+  color: var(--soft); text-decoration: none; border-bottom: 2px solid transparent;
+}
+.rel-nav a:hover { color: var(--accent); }
+.rel-nav a[aria-current] { color: var(--ink); font-weight: 600; border-bottom-color: var(--accent); }
 
 .sheet { max-width: var(--sheet); background: var(--panel); border: 1.5px solid var(--frame); position: relative; }
 .sheet::before { content: ""; position: absolute; inset: 7px; border: .5px solid var(--line); pointer-events: none; }
