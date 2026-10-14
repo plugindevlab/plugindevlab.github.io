@@ -1,4 +1,21 @@
 antlion:
+  - version: "1.0.16"
+    date: "2026-10-15"
+    title: Stands built from different sections now each keep their own shape
+    body: |
+      **Fixed**
+
+      - **Stand 3D** - On a bowl that runs all the way around, two sections that start at the same front point
+        and reach the same height and depth could come out as the same stand: the second Stand 3D quietly
+        output the first one's body. Wired through Assemble Bowl, Stand 3D Plus then built every branch with
+        the first section while the seats followed the right one. Editing a section without moving its front
+        point or outer edge did the same until Rhino was restarted. Each stand now always matches its own section.
+      - **Cut** - A smooth cut curve made of a single span could be mistaken for its mirror image, so a cut
+        could follow the earlier curve's path. Each curve is now read for its own shape.
+      - **Seat 3D** - A custom chair and its left-right mirror image, such as an armrest moved to the other
+        side, could reuse the first chair's block, so the change never reached the baked seats. The block now
+        follows the geometry. A file baked before this update gets one new chair block the next time you bake;
+        the old block stays in the file.
   - version: "1.0.15"
     date: "2026-10-14"
     title: A wrongly wired input now stops the component at once, and Field gets nine more sports
