@@ -1,4 +1,19 @@
 antlion:
+  - version: "1.0.17"
+    date: "2026-10-16"
+    title: Aisle steps now add a step when the tread is deep enough
+    body: |
+      **Fixed**
+
+      - **Seat** - Aisle steps stopped at two per row however deep the tread was, so a tall riser always
+        climbed in three rises - a 600 mm riser became three 200 mm rises even on a tread with room for more.
+        The number of steps now follows the tread: every step, and the landing at the row, keeps at least
+        280 mm (11 in) of going, so a tread of 1,120 mm (44 in) or more takes three steps and the same riser
+        climbs in four 150 mm rises. Treads shorter than that come out exactly as before, and Stand 3D Plus
+        builds whatever Seat lays out.
+      - **Seat** - When a riser still needs more steps than its tread can hold, the hint now names the
+        steepest case: the riser, the tread, the rise per step, and the tread depth one more step would need.
+      - In inch documents an aisle step's going is now 11 in instead of 11.02 in.
   - version: "1.0.16"
     date: "2026-10-15"
     title: Stands built from different sections now each keep their own shape
