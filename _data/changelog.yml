@@ -1,4 +1,23 @@
 antlion:
+  - version: "1.0.19"
+    date: "2026-10-19"
+    title: PERPENDICULAR sight lines on track ends, and wide straight vomitories as bands
+    body: |
+      **Fixed**
+
+      - **C-value Seat**, **C-value Tread** - With Focal Aim Mode set to PERPENDICULAR on a focal curve made of
+        straight and arc pieces, such as a running track, some sight lines at the curved ends missed the near
+        curve and aimed at the far straight across the field, so their C-values came out wrong or empty. The
+        focal point is now always found on the near curve, and the two aim modes agree there. C-value Tread
+        finds the field crossing of its sections the same way in either aim mode.
+      - **Custom Seat** - A four-corner vomitory was always read as one rect however long it was, so a wide
+        opening drawn along a straight side could not work as a band the way one bent around a corner does. A
+        rect that crosses an axis line is now a band: it is split at each axis line, gets a band number, has
+        doors at both ends, and follows Vom 3D's Band Opening Mode. Vomitories that stay between two axis
+        lines come out as before.
+      - **Custom Seat** - A band edge drawn between two tread rings could be taken for the end of the band,
+        which put a side aisle as long as that edge beside the band and raised the hint about an aisle cell
+        much wider than the aisle width. An edge that runs along the rings is now always read that way.
   - version: "1.0.18"
     date: "2026-10-18"
     title: Aisle steps near corners and wide vomitories no longer overlap

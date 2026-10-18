@@ -4802,7 +4802,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-10-07",
+     "checked": "2026-10-18",
      "summary": "Sweeps each tier section around the axis planes and flattens it into tread rings in plan. Everything downstream — seats, vomitories, cuts — works on these rings.",
      "inputs": [
       {
@@ -5049,7 +5049,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-10-07",
+     "checked": "2026-10-18",
      "summary": "Places the vomitories — the tunnels spectators enter the bowl through — in the tread rings, and sets how each one gets down to the concourse: flat, stepped, stair or ramp.",
      "inputs": [
       {
@@ -5828,7 +5828,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-10-07",
+     "checked": "2026-10-18",
      "summary": "Fills the tread rings with seats, breaking each row at the vomitories and aisles, and flags rows that break the egress limits. Wheelchair spaces are placed here too.",
      "inputs": [
       {
@@ -6721,7 +6721,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-10-07",
+     "checked": "2026-10-18",
      "summary": "Same seat placement as Seat, but the vomitories, aisles and even the seats come from curves you draw instead of being generated. Use it where the automatic layout cannot express what you want.",
      "inputs": [
       {
@@ -6785,7 +6785,7 @@
        "optional": true,
        "dropdown": false,
        "default": null,
-       "desc": "One branch per tier. Draw each opening over the treads it spans: a closed rect, a band bent along the rings (4 corners, plus 2 per bend - split into rects, doors at both ends of the band - Vom 3D's Band Opening Mode can keep one), or a U-shaped outline (arms at or inside the bar's ends - split into arm, bar and arm). Two rects may share a segment only on different rows",
+       "desc": "One branch per tier. Draw each opening over the treads it spans: a closed rect, a band along the rings - a rect that crosses an axis line, or one bent along the rings (4 corners, plus 2 per bend) - split into rects at the axis lines or bends, doors at both ends of the band - Vom 3D's Band Opening Mode can keep one, or a U-shaped outline (arms at or inside the bar's ends - split into arm, bar and arm). Two rects may share a segment only on different rows",
        "flow": false,
        "type": null
       },
@@ -7614,7 +7614,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-10-07",
+     "checked": "2026-10-18",
      "summary": "Cuts the bowl to shape — keep or remove a whole span between two axis numbers, or everything on one side of each curve you draw. Seats, aisles, vomitories and rings are all filtered together.",
      "inputs": [
       {
@@ -8278,7 +8278,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-10-07",
+     "checked": "2026-10-18",
      "summary": "Punches local entrance openings through the stand — between two axis numbers, or under a closed curve you draw. Unlike Cut it removes only what the opening covers, and it records the new edges as railing lines.",
      "inputs": [
       {
@@ -24665,7 +24665,7 @@
      ]
     }
    },
-   "version": "1.0.18"
+   "version": "1.0.19"
   }
  }
 }
