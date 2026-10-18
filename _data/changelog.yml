@@ -1,4 +1,22 @@
 antlion:
+  - version: "1.0.18"
+    date: "2026-10-18"
+    title: Aisle steps near corners and wide vomitories no longer overlap
+    body: |
+      **Fixed**
+
+      - **Seat**, **Custom Seat** - With Aisle Split Mode on, an automatic aisle could stand closer than one
+        aisle width to the aisle beside it: where a straight side turns into a corner, next to the side aisle
+        of a wide vomitory, or next to an aisle that shifts toward the wall above a vomitory. Their aisle step
+        cells overlapped, and Stand 3D Plus could build one flight of steps into another. The automatic aisle
+        now gives way on the treads where its cells would overlap another aisle's. Seats and warnings come out
+        as before.
+      - **Custom Seat** - Custom step cells from two different aisles near a corner could be read as one
+        aisle that stretched across both, so the cell grew several metres wide and the hint reported a cell
+        much wider than the aisle width. Cells are now matched to an aisle by their distance along their own
+        tread, so each aisle keeps its own width. Where an aisle shifts sideways by more than its width
+        between two bands of a rounded corner, the two parts now count as separate aisles; the seats and
+        cells stay the same.
   - version: "1.0.17"
     date: "2026-10-16"
     title: Aisle steps now add a step when the tread is deep enough
