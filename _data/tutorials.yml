@@ -3,7 +3,7 @@ antlion:
     title: "How to Design a Three-Tier Soccer Stadium in Grasshopper"
     length: "42 min"
     thumb: /assets/img/antlion/tutorials/soccer-three-tier.jpg
-    thumb_alt: "A three-tier soccer stadium bowl modelled with Antlion, seats coloured by C-value"
+    thumb_alt: "A three-tier soccer stadium bowl modeled with Antlion, seats colored by C-value"
     summary: "A three-tier soccer bowl from an empty canvas to drawing sheets. You place the field, set the start line and section axes, build the three tiers in section, lay out vomitories, aisles and seats in plan, cut the openings, build it all in 3D, check <span class=\"nb\">C-value</span> sightlines seat by seat, and put the results on drawing sheets."
     chapters:
       - { t: 0, at: "0:00", name: "Intro" }
@@ -21,7 +21,7 @@ antlion:
     title: "How to Design a Multi-Purpose Indoor Arena in Grasshopper"
     length: "43 min"
     thumb: /assets/img/antlion/tutorials/arena-two-tier.jpg
-    thumb_alt: "A two-tier indoor arena bowl modelled with Antlion, seats coloured by C-value"
+    thumb_alt: "A two-tier indoor arena bowl modeled with Antlion, seats colored by C-value"
     summary: "A <span class=\"nb\">two-tier</span> indoor arena with its sections kept in a Google Sheet. You write the tiers as a table in the sheet and bring them into Grasshopper, lay out vomitories and seats in plan, move vomitories, aisles, wheelchair spaces and seats by hand with Custom Seat, build it all in 3D, check <span class=\"nb\">C-value</span> sightlines seat by seat, and send the results back to the sheet. Change a value, and everything follows."
     chapters:
       - { t: 0, at: "0:00", name: "Intro" }
@@ -38,3 +38,24 @@ antlion:
       - { t: 1998, at: "33:18", name: "Seat Map and Seat View" }
       - { t: 2239, at: "37:19", name: "Results Back to the Sheet" }
       - { t: 2496, at: "41:36", name: "Change a Value, Everything Follows" }
+  - id: Nz9T0EaU2UY
+    title: "How to Design a Track and Field Stadium in Grasshopper"
+    length: "32 min"
+    thumb: /assets/img/antlion/tutorials/track-and-field.jpg
+    thumb_alt: "A track and field stadium bowl modeled with Antlion, treads colored by C-value"
+    summary: "The stands around a 400&nbsp;m running track, with the sections kept in an Excel workbook. You redraw the axes by hand with Custom Axis, write the sections as tables in Excel, draw your own vomitories for Custom Seat, join a second, VIP section to the main bowl, build it all in 3D, check <span class=\"nb\">C-value</span> sightlines seat by seat, and send the results back to Excel."
+    chapters:
+      - { t: 0, at: "0:00", name: "Intro" }
+      - { t: 15, at: "0:15", name: "Field and the Input Panel" }
+      - { t: 219, at: "3:39", name: "Start Line and Axes" }
+      - { t: 401, at: "6:41", name: "Excel Workbook" }
+      - { t: 519, at: "8:39", name: "Writing the Section in Excel" }
+      - { t: 703, at: "11:43", name: "Table Section and Analysis" }
+      - { t: 794, at: "13:14", name: "Drawing Your Own Vomitories" }
+      - { t: 1027, at: "17:07", name: "Cutting the Bowl" }
+      - { t: 1116, at: "18:36", name: "A Second Section for VIP Seats" }
+      - { t: 1284, at: "21:24", name: "Openings and Vomitories in 3D" }
+      - { t: 1387, at: "23:07", name: "Joining Two Sections in 3D" }
+      - { t: 1496, at: "24:56", name: "Sightline Analysis" }
+      - { t: 1598, at: "26:38", name: "Drawings, Seat Map and Seat View" }
+      - { t: 1732, at: "28:52", name: "Results Back to Excel" }
