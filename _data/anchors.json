@@ -1,13 +1,13 @@
 {
  "_about": "Generated from a Grasshopper capture run - do not edit by hand. Coordinates are CSS pixels (1x); the PNG is rendered at 'scale'.",
- "captured": "2026-10-11T11:20:52.3342169+09:00",
+ "captured": "2026-10-20T23:51:42.6532664+09:00",
  "gh": "8.35.26251.13001",
- "source": "req-20261011-112051-566.json",
+ "source": "req-20261020-235141-486.json",
  "components": {
   "Auto Section": {
    "id": "auto-section",
    "product": "antlion",
-   "w": 140,
+   "w": 133,
    "h": 388,
    "scale": 2,
    "inputs": [
@@ -130,43 +130,43 @@
     {
      "name": "Stand Sections",
      "nick": "SSD ⊞",
-     "x": 136,
+     "x": 129,
      "y": 31
     },
     {
      "name": "Tread Lines",
      "nick": "Treads",
-     "x": 136,
+     "x": 129,
      "y": 85
     },
     {
      "name": "Riser Heights",
      "nick": "Risers",
-     "x": 136,
+     "x": 129,
      "y": 139
     },
     {
      "name": "Section Profiles",
      "nick": "Profile",
-     "x": 136,
+     "x": 129,
      "y": 193
     },
     {
      "name": "Closed Profiles",
      "nick": "Closed",
-     "x": 136,
+     "x": 129,
      "y": 248
     },
     {
      "name": "Eye Points",
      "nick": "Eye Pts",
-     "x": 136,
+     "x": 129,
      "y": 302
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 136,
+     "x": 129,
      "y": 356
     }
    ]
@@ -174,7 +174,7 @@
   "C-value Map": {
    "id": "c-value-map",
    "product": "antlion",
-   "w": 128,
+   "w": 123,
    "h": 168,
    "scale": 2,
    "inputs": [
@@ -201,49 +201,49 @@
     {
      "name": "Sheets",
      "nick": "Sheets",
-     "x": 124,
+     "x": 119,
      "y": 14
     },
     {
      "name": "Map Hatches",
      "nick": "Hatches",
-     "x": 124,
+     "x": 119,
      "y": 34
     },
     {
      "name": "Map Outlines",
      "nick": "Outlines",
-     "x": 124,
+     "x": 119,
      "y": 54
     },
     {
      "name": "Drawing Curves",
      "nick": "Drawing",
-     "x": 124,
+     "x": 119,
      "y": 74
     },
     {
      "name": "Labels",
      "nick": "Labels",
-     "x": 124,
+     "x": 119,
      "y": 94
     },
     {
      "name": "Sheet Labels",
      "nick": "Sh Label",
-     "x": 124,
+     "x": 119,
      "y": 114
     },
     {
      "name": "Report",
      "nick": "Report",
-     "x": 124,
+     "x": 119,
      "y": 134
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 124,
+     "x": 119,
      "y": 154
     }
    ]
@@ -251,7 +251,7 @@
   "Section Analysis": {
    "id": "section-analysis",
    "product": "antlion",
-   "w": 157,
+   "w": 145,
    "h": 188,
    "scale": 2,
    "inputs": [
@@ -308,55 +308,55 @@
     {
      "name": "Analysis Reports",
      "nick": "Reports ⊞",
-     "x": 153,
+     "x": 141,
      "y": 14
     },
     {
      "name": "OK Dimensions",
      "nick": "OK Dims",
-     "x": 153,
+     "x": 141,
      "y": 34
     },
     {
      "name": "Poor Dimensions",
      "nick": "Poor Dim",
-     "x": 153,
+     "x": 141,
      "y": 54
     },
     {
      "name": "Riser Dimensions",
      "nick": "Riser Dm",
-     "x": 153,
+     "x": 141,
      "y": 74
     },
     {
      "name": "OK Sightlines",
      "nick": "OK Sight",
-     "x": 153,
+     "x": 141,
      "y": 94
     },
     {
      "name": "Poor Sightlines",
      "nick": "Poor Sgt",
-     "x": 153,
+     "x": 141,
      "y": 114
     },
     {
      "name": "Barrier Dimensions",
      "nick": "Barr Dim",
-     "x": 153,
+     "x": 141,
      "y": 134
     },
     {
      "name": "Report",
      "nick": "Report",
-     "x": 153,
+     "x": 141,
      "y": 154
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 153,
+     "x": 141,
      "y": 174
     }
    ]
@@ -364,7 +364,7 @@
   "C-value Tread": {
    "id": "c-value-tread",
    "product": "antlion",
-   "w": 138,
+   "w": 135,
    "h": 288,
    "scale": 2,
    "inputs": [
@@ -433,85 +433,85 @@
     {
      "name": "C-value Map Data",
      "nick": "CMD ⊞",
-     "x": 134,
+     "x": 131,
      "y": 14
     },
     {
      "name": "C-value Section Data",
      "nick": "CSD ⊞",
-     "x": 134,
+     "x": 131,
      "y": 34
     },
     {
      "name": "Map Hatches",
      "nick": "Hatches",
-     "x": 134,
+     "x": 131,
      "y": 54
     },
     {
      "name": "Cell Colors",
      "nick": "Colors",
-     "x": 134,
+     "x": 131,
      "y": 74
     },
     {
      "name": "Cell Outlines",
      "nick": "Outlines",
-     "x": 134,
+     "x": 131,
      "y": 94
     },
     {
      "name": "Band C-Values",
      "nick": "Band C",
-     "x": 134,
+     "x": 131,
      "y": 114
     },
     {
      "name": "Band Statuses",
      "nick": "Status",
-     "x": 134,
+     "x": 131,
      "y": 134
     },
     {
      "name": "Band Sections",
      "nick": "Sections",
-     "x": 134,
+     "x": 131,
      "y": 154
     },
     {
      "name": "Band Eyes",
      "nick": "Eyes",
-     "x": 134,
+     "x": 131,
      "y": 174
     },
     {
      "name": "Band Focals",
      "nick": "Focals",
-     "x": 134,
+     "x": 131,
      "y": 194
     },
     {
      "name": "Effective Focal Curves",
      "nick": "Eff Focal",
-     "x": 134,
+     "x": 131,
      "y": 214
     },
     {
      "name": "Sightlines",
      "nick": "Sightlns",
-     "x": 134,
+     "x": 131,
      "y": 234
     },
     {
      "name": "Report",
      "nick": "Report",
-     "x": 134,
+     "x": 131,
      "y": 254
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 134,
+     "x": 131,
      "y": 274
     }
    ]
@@ -519,7 +519,7 @@
   "C-value Seat": {
    "id": "c-value-seat",
    "product": "antlion",
-   "w": 144,
+   "w": 138,
    "h": 228,
    "scale": 2,
    "inputs": [
@@ -594,67 +594,67 @@
     {
      "name": "C-value Map Data",
      "nick": "CMD ⊞",
-     "x": 140,
+     "x": 134,
      "y": 14
     },
     {
      "name": "Map Hatches",
      "nick": "Hatches",
-     "x": 140,
+     "x": 134,
      "y": 34
     },
     {
      "name": "Seat Outlines",
      "nick": "Outlines",
-     "x": 140,
+     "x": 134,
      "y": 54
     },
     {
      "name": "Seat C-Values",
      "nick": "Seat C",
-     "x": 140,
+     "x": 134,
      "y": 74
     },
     {
      "name": "Seat Statuses",
      "nick": "Status",
-     "x": 140,
+     "x": 134,
      "y": 94
     },
     {
      "name": "Seat Eyes",
      "nick": "Eyes",
-     "x": 140,
+     "x": 134,
      "y": 114
     },
     {
      "name": "Seat Focals",
      "nick": "Focals",
-     "x": 140,
+     "x": 134,
      "y": 134
     },
     {
      "name": "Effective Focal Curves",
      "nick": "Eff Focal",
-     "x": 140,
+     "x": 134,
      "y": 154
     },
     {
      "name": "Sightlines",
      "nick": "Sightlns",
-     "x": 140,
+     "x": 134,
      "y": 174
     },
     {
      "name": "Report",
      "nick": "Report",
-     "x": 140,
+     "x": 134,
      "y": 194
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 140,
+     "x": 134,
      "y": 214
     }
    ]
@@ -662,7 +662,7 @@
   "Stand 3D": {
    "id": "stand-3d",
    "product": "antlion",
-   "w": 137,
+   "w": 132,
    "h": 128,
    "scale": 2,
    "inputs": [
@@ -707,31 +707,31 @@
     {
      "name": "Stand Body",
      "nick": "SBD",
-     "x": 133,
+     "x": 128,
      "y": 16
     },
     {
      "name": "Stand Geometry",
      "nick": "Bodies",
-     "x": 133,
+     "x": 128,
      "y": 40
     },
     {
      "name": "Handrail Geometry",
      "nick": "Rails 3D",
-     "x": 133,
+     "x": 128,
      "y": 64
     },
     {
      "name": "Section Profiles",
      "nick": "Profile",
-     "x": 133,
+     "x": 128,
      "y": 88
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 133,
+     "x": 128,
      "y": 112
     }
    ]
@@ -739,7 +739,7 @@
   "Vomitory": {
    "id": "vomitory",
    "product": "antlion",
-   "w": 148,
+   "w": 140,
    "h": 368,
    "scale": 2,
    "inputs": [
@@ -856,49 +856,49 @@
     {
      "name": "Vomitory",
      "nick": "VD",
-     "x": 144,
+     "x": 136,
      "y": 26
     },
     {
      "name": "Stand 2D",
      "nick": "Stand 2D",
-     "x": 144,
+     "x": 136,
      "y": 71
     },
     {
      "name": "Stand Sections",
      "nick": "SSD",
-     "x": 144,
+     "x": 136,
      "y": 116
     },
     {
      "name": "Axis",
      "nick": "Axis",
-     "x": 144,
+     "x": 136,
      "y": 161
     },
     {
      "name": "Vom Lines",
      "nick": "Vom Lns",
-     "x": 144,
+     "x": 136,
      "y": 206
     },
     {
      "name": "Section Lines",
      "nick": "Sec Lns",
-     "x": 144,
+     "x": 136,
      "y": 251
     },
     {
      "name": "Vom Section Rects",
      "nick": "Vom Sec",
-     "x": 144,
+     "x": 136,
      "y": 296
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 144,
+     "x": 136,
      "y": 341
     }
    ]
@@ -906,7 +906,7 @@
   "Seat View": {
    "id": "seat-view",
    "product": "antlion",
-   "w": 128,
+   "w": 120,
    "h": 228,
    "scale": 2,
    "inputs": [
@@ -981,25 +981,25 @@
     {
      "name": "Eye Point",
      "nick": "Eye",
-     "x": 124,
+     "x": 116,
      "y": 31
     },
     {
      "name": "Focal Point",
      "nick": "Focal",
-     "x": 124,
+     "x": 116,
      "y": 86
     },
     {
      "name": "Sight Line",
      "nick": "Sight",
-     "x": 124,
+     "x": 116,
      "y": 141
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 124,
+     "x": 116,
      "y": 196
     }
    ]
@@ -1016,7 +1016,7 @@
   "Field": {
    "id": "field",
    "product": "antlion",
-   "w": 153,
+   "w": 142,
    "h": 188,
    "scale": 2,
    "inputs": [
@@ -1051,14 +1051,14 @@
      "y": 94
     },
     {
-     "name": "Focal Direction Mode",
-     "nick": "▾ Focal Dir",
+     "name": "Focal Horizontal",
+     "nick": "Focal H",
      "x": 4,
      "y": 114
     },
     {
-     "name": "Focal Offset",
-     "nick": "Focal Off",
+     "name": "Focal Vertical",
+     "nick": "Focal V",
      "x": 4,
      "y": 134
     },
@@ -1079,37 +1079,37 @@
     {
      "name": "Field Info",
      "nick": "Field",
-     "x": 149,
+     "x": 138,
      "y": 19
     },
     {
      "name": "Field Outline",
      "nick": "Outline",
-     "x": 149,
+     "x": 138,
      "y": 49
     },
     {
      "name": "Focal Curve",
      "nick": "Focal C",
-     "x": 149,
+     "x": 138,
      "y": 79
     },
     {
      "name": "Focal Point",
      "nick": "Focal",
-     "x": 149,
+     "x": 138,
      "y": 109
     },
     {
      "name": "Base Point",
      "nick": "Base Pt",
-     "x": 149,
+     "x": 138,
      "y": 139
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 149,
+     "x": 138,
      "y": 169
     }
    ]
@@ -1117,7 +1117,7 @@
   "Sheet Setup": {
    "id": "sheet-setup",
    "product": "antlion",
-   "w": 120,
+   "w": 117,
    "h": 128,
    "scale": 2,
    "inputs": [
@@ -1162,7 +1162,7 @@
     {
      "name": "Sheet Data",
      "nick": "SHD",
-     "x": 116,
+     "x": 113,
      "y": 64
     }
    ]
@@ -1170,7 +1170,7 @@
   "Seat": {
    "id": "seat",
    "product": "antlion",
-   "w": 138,
+   "w": 131,
    "h": 408,
    "scale": 2,
    "inputs": [
@@ -1299,61 +1299,61 @@
     {
      "name": "Seat Result",
      "nick": "SRD",
-     "x": 134,
+     "x": 127,
      "y": 24
     },
     {
      "name": "Seat Rects",
      "nick": "Seats",
-     "x": 134,
+     "x": 127,
      "y": 64
     },
     {
      "name": "Good Seat Rects",
      "nick": "Good",
-     "x": 134,
+     "x": 127,
      "y": 104
     },
     {
      "name": "Poor Seat Rects",
      "nick": "Poor",
-     "x": 134,
+     "x": 127,
      "y": 144
     },
     {
      "name": "Vom Rects",
      "nick": "Voms",
-     "x": 134,
+     "x": 127,
      "y": 184
     },
     {
      "name": "Vom Shifts",
      "nick": "Shifts",
-     "x": 134,
+     "x": 127,
      "y": 224
     },
     {
      "name": "Aisles",
      "nick": "Aisles",
-     "x": 134,
+     "x": 127,
      "y": 264
     },
     {
      "name": "Wheelchair Platforms",
      "nick": "♿ Plat",
-     "x": 134,
+     "x": 127,
      "y": 304
     },
     {
      "name": "Wheelchair Units",
      "nick": "♿ Units",
-     "x": 134,
+     "x": 127,
      "y": 344
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 134,
+     "x": 127,
      "y": 384
     }
    ]
@@ -1377,7 +1377,7 @@
   "View Limit": {
    "id": "view-limit",
    "product": "antlion",
-   "w": 141,
+   "w": 135,
    "h": 148,
    "scale": 2,
    "inputs": [
@@ -1428,43 +1428,43 @@
     {
      "name": "Limit Curves",
      "nick": "Limits",
-     "x": 137,
+     "x": 131,
      "y": 14
     },
     {
      "name": "Limit Labels",
      "nick": "Lim Lbl",
-     "x": 137,
+     "x": 131,
      "y": 34
     },
     {
      "name": "Seats Inside",
      "nick": "Inside",
-     "x": 137,
+     "x": 131,
      "y": 54
     },
     {
      "name": "Seats Outside",
      "nick": "Outside",
-     "x": 137,
+     "x": 131,
      "y": 74
     },
     {
      "name": "Seats Beyond Points",
      "nick": "Beyond",
-     "x": 137,
+     "x": 131,
      "y": 94
     },
     {
      "name": "Report",
      "nick": "Report",
-     "x": 137,
+     "x": 131,
      "y": 114
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 137,
+     "x": 131,
      "y": 134
     }
    ]
@@ -1472,7 +1472,7 @@
   "Google Workbook": {
    "id": "google-workbook",
    "product": "antlion",
-   "w": 133,
+   "w": 122,
    "h": 148,
    "scale": 2,
    "inputs": [
@@ -1523,19 +1523,19 @@
     {
      "name": "Book",
      "nick": "Book",
-     "x": 129,
+     "x": 118,
      "y": 27
     },
     {
      "name": "URL",
      "nick": "URL",
-     "x": 129,
+     "x": 118,
      "y": 73
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 129,
+     "x": 118,
      "y": 120
     }
    ]
@@ -1543,7 +1543,7 @@
   "C-value Legend": {
    "id": "c-value-legend",
    "product": "antlion",
-   "w": 131,
+   "w": 125,
    "h": 108,
    "scale": 2,
    "inputs": [
@@ -1582,25 +1582,25 @@
     {
      "name": "Scheme",
      "nick": "Scheme",
-     "x": 127,
+     "x": 121,
      "y": 16
     },
     {
      "name": "Colors",
      "nick": "Colors",
-     "x": 127,
+     "x": 121,
      "y": 41
     },
     {
      "name": "Band Labels",
      "nick": "Band Lbl",
-     "x": 127,
+     "x": 121,
      "y": 66
     },
     {
      "name": "Report",
      "nick": "Report",
-     "x": 127,
+     "x": 121,
      "y": 91
     }
    ]
@@ -1608,7 +1608,7 @@
   "Table In": {
    "id": "table-in",
    "product": "antlion",
-   "w": 120,
+   "w": 117,
    "h": 208,
    "scale": 2,
    "inputs": [
@@ -1629,61 +1629,61 @@
     {
      "name": "Table Data",
      "nick": "Table",
-     "x": 116,
+     "x": 113,
      "y": 14
     },
     {
      "name": "Eye Horizontal Offset",
      "nick": "Eye H",
-     "x": 116,
+     "x": 113,
      "y": 34
     },
     {
      "name": "Eye Vertical Offset",
      "nick": "Eye V",
-     "x": 116,
+     "x": 113,
      "y": 54
     },
     {
      "name": "Slab Thickness",
      "nick": "Slab T",
-     "x": 116,
+     "x": 113,
      "y": 74
     },
     {
      "name": "Minimum C-Value",
      "nick": "Min C",
-     "x": 116,
+     "x": 113,
      "y": 94
     },
     {
      "name": "C-value Mode",
      "nick": "C Val",
-     "x": 116,
+     "x": 113,
      "y": 114
     },
     {
      "name": "Book",
      "nick": "Book",
-     "x": 116,
+     "x": 113,
      "y": 134
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 116,
+     "x": 113,
      "y": 154
     },
     {
      "name": "Wheelchair Eye Vertical Offset",
      "nick": "♿ Eye V",
-     "x": 116,
+     "x": 113,
      "y": 174
     },
     {
      "name": "Wheelchair Eye Horizontal Offset",
      "nick": "♿ Eye H",
-     "x": 116,
+     "x": 113,
      "y": 194
     }
    ]
@@ -1707,7 +1707,7 @@
   "Table Out": {
    "id": "table-out",
    "product": "antlion",
-   "w": 128,
+   "w": 122,
    "h": 68,
    "scale": 2,
    "inputs": [
@@ -1734,19 +1734,19 @@
     {
      "name": "Success",
      "nick": "Success",
-     "x": 124,
+     "x": 118,
      "y": 14
     },
     {
      "name": "Written",
      "nick": "Written",
-     "x": 124,
+     "x": 118,
      "y": 34
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 124,
+     "x": 118,
      "y": 54
     }
    ]
@@ -1754,7 +1754,7 @@
   "Custom Axis": {
    "id": "custom-axis",
    "product": "antlion",
-   "w": 121,
+   "w": 115,
    "h": 128,
    "scale": 2,
    "inputs": [
@@ -1787,37 +1787,37 @@
     {
      "name": "Axis",
      "nick": "Axis",
-     "x": 117,
+     "x": 111,
      "y": 14
     },
     {
      "name": "Base Line",
      "nick": "Base",
-     "x": 117,
+     "x": 111,
      "y": 34
     },
     {
      "name": "Axis Points",
      "nick": "Points",
-     "x": 117,
+     "x": 111,
      "y": 54
     },
     {
      "name": "Axis Planes",
      "nick": "Planes",
-     "x": 117,
+     "x": 111,
      "y": 74
     },
     {
      "name": "Axis Lines",
      "nick": "Lines",
-     "x": 117,
+     "x": 111,
      "y": 94
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 117,
+     "x": 111,
      "y": 114
     }
    ]
@@ -1825,7 +1825,7 @@
   "Seat Map": {
    "id": "seat-map",
    "product": "antlion",
-   "w": 130,
+   "w": 125,
    "h": 228,
    "scale": 2,
    "inputs": [
@@ -1858,67 +1858,67 @@
     {
      "name": "Seat Map Data",
      "nick": "SMD ⊞",
-     "x": 126,
+     "x": 121,
      "y": 14
     },
     {
      "name": "Sheets",
      "nick": "Sheets",
-     "x": 126,
+     "x": 121,
      "y": 34
     },
     {
      "name": "Zone Hatches",
      "nick": "Hatches",
-     "x": 126,
+     "x": 121,
      "y": 54
     },
     {
      "name": "Zone Outlines",
      "nick": "Zones",
-     "x": 126,
+     "x": 121,
      "y": 74
     },
     {
      "name": "Drawing Curves",
      "nick": "Drawing",
-     "x": 126,
+     "x": 121,
      "y": 94
     },
     {
      "name": "Labels",
      "nick": "Labels",
-     "x": 126,
+     "x": 121,
      "y": 114
     },
     {
      "name": "Sheet Labels",
      "nick": "Sh Label",
-     "x": 126,
+     "x": 121,
      "y": 134
     },
     {
      "name": "Zone Table",
      "nick": "Zone Tbl",
-     "x": 126,
+     "x": 121,
      "y": 154
     },
     {
      "name": "Seat Table",
      "nick": "Seat Tbl",
-     "x": 126,
+     "x": 121,
      "y": 174
     },
     {
      "name": "Report",
      "nick": "Report",
-     "x": 126,
+     "x": 121,
      "y": 194
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 126,
+     "x": 121,
      "y": 214
     }
    ]
@@ -1926,7 +1926,7 @@
   "Table Section": {
    "id": "table-section",
    "product": "antlion",
-   "w": 122,
+   "w": 117,
    "h": 168,
    "scale": 2,
    "inputs": [
@@ -1971,49 +1971,49 @@
     {
      "name": "Stand Sections",
      "nick": "SSD ⊞",
-     "x": 118,
+     "x": 113,
      "y": 14
     },
     {
      "name": "Handrail Sections",
      "nick": "Rails",
-     "x": 118,
+     "x": 113,
      "y": 34
     },
     {
      "name": "Section Profiles",
      "nick": "Profile",
-     "x": 118,
+     "x": 113,
      "y": 54
     },
     {
      "name": "Closed Profiles",
      "nick": "Closed",
-     "x": 118,
+     "x": 113,
      "y": 74
     },
     {
      "name": "Eye Points",
      "nick": "Eye Pts",
-     "x": 118,
+     "x": 113,
      "y": 94
     },
     {
      "name": "Guide Geometry",
      "nick": "Guides",
-     "x": 118,
+     "x": 113,
      "y": 114
     },
     {
      "name": "Wheelchair Section Profiles",
      "nick": "♿ Prof",
-     "x": 118,
+     "x": 113,
      "y": 134
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 118,
+     "x": 113,
      "y": 154
     }
    ]
@@ -2044,7 +2044,7 @@
   "Seat 3D": {
    "id": "seat-3d",
    "product": "antlion",
-   "w": 146,
+   "w": 137,
    "h": 268,
    "scale": 2,
    "inputs": [
@@ -2131,19 +2131,19 @@
     {
      "name": "Chairs",
      "nick": "Chairs",
-     "x": 142,
+     "x": 133,
      "y": 47
     },
     {
      "name": "Humans",
      "nick": "Humans",
-     "x": 142,
+     "x": 133,
      "y": 133
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 142,
+     "x": 133,
      "y": 220
     }
    ]
@@ -2151,7 +2151,7 @@
   "License": {
    "id": "license",
    "product": "antlion",
-   "w": 132,
+   "w": 124,
    "h": 68,
    "scale": 2,
    "inputs": [
@@ -2178,7 +2178,7 @@
     {
      "name": "Status",
      "nick": "Status",
-     "x": 128,
+     "x": 120,
      "y": 34
     }
    ]
@@ -2186,7 +2186,7 @@
   "Rail 3D": {
    "id": "rail-3d",
    "product": "antlion",
-   "w": 147,
+   "w": 138,
    "h": 228,
    "scale": 2,
    "inputs": [
@@ -2261,49 +2261,49 @@
     {
      "name": "Rail Result",
      "nick": "RLD",
-     "x": 143,
+     "x": 134,
      "y": 17
     },
     {
      "name": "Railing Breps",
      "nick": "Rails",
-     "x": 143,
+     "x": 134,
      "y": 45
     },
     {
      "name": "Front Rails",
      "nick": "Front",
-     "x": 143,
+     "x": 134,
      "y": 72
     },
     {
      "name": "Side Rails",
      "nick": "Side",
-     "x": 143,
+     "x": 134,
      "y": 100
     },
     {
      "name": "Rear Rails",
      "nick": "Rear",
-     "x": 143,
+     "x": 134,
      "y": 127
     },
     {
      "name": "Opening Rails",
      "nick": "Open",
-     "x": 143,
+     "x": 134,
      "y": 155
     },
     {
      "name": "Rail Curves",
      "nick": "Rail Crv",
-     "x": 143,
+     "x": 134,
      "y": 182
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 143,
+     "x": 134,
      "y": 210
     }
    ]
@@ -2327,7 +2327,7 @@
   "Section Plus": {
    "id": "section-plus",
    "product": "antlion",
-   "w": 141,
+   "w": 134,
    "h": 208,
    "scale": 2,
    "inputs": [
@@ -2396,43 +2396,43 @@
     {
      "name": "Stand Sections",
      "nick": "SSD ⊞",
-     "x": 137,
+     "x": 130,
      "y": 18
     },
     {
      "name": "Handrail Sections",
      "nick": "Rails",
-     "x": 137,
+     "x": 130,
      "y": 46
     },
     {
      "name": "Section Profiles",
      "nick": "Profile",
-     "x": 137,
+     "x": 130,
      "y": 75
     },
     {
      "name": "Closed Profiles",
      "nick": "Closed",
-     "x": 137,
+     "x": 130,
      "y": 103
     },
     {
      "name": "Guide Geometry",
      "nick": "Guides",
-     "x": 137,
+     "x": 130,
      "y": 132
     },
     {
      "name": "Wheelchair Section Profiles",
      "nick": "♿ Prof",
-     "x": 137,
+     "x": 130,
      "y": 160
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 137,
+     "x": 130,
      "y": 189
     }
    ]
@@ -2440,7 +2440,7 @@
   "Startline Rect": {
    "id": "startline-rect",
    "product": "antlion",
-   "w": 140,
+   "w": 131,
    "h": 148,
    "scale": 2,
    "inputs": [
@@ -2491,31 +2491,31 @@
     {
      "name": "Start Line",
      "nick": "Start",
-     "x": 136,
+     "x": 127,
      "y": 18
     },
     {
      "name": "Start Line Curve",
      "nick": "Curve",
-     "x": 136,
+     "x": 127,
      "y": 46
     },
     {
      "name": "Arc Centers",
      "nick": "Centers",
-     "x": 136,
+     "x": 127,
      "y": 74
     },
     {
      "name": "Arc Radii",
      "nick": "Radii",
-     "x": 136,
+     "x": 127,
      "y": 102
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 136,
+     "x": 127,
      "y": 130
     }
    ]
@@ -2523,7 +2523,7 @@
   "C-value Section Check": {
    "id": "c-value-section-check",
    "product": "antlion",
-   "w": 143,
+   "w": 135,
    "h": 248,
    "scale": 2,
    "inputs": [
@@ -2580,73 +2580,73 @@
     {
      "name": "Sheets",
      "nick": "Sheets",
-     "x": 139,
+     "x": 131,
      "y": 14
     },
     {
      "name": "Tread Curves",
      "nick": "Treads",
-     "x": 139,
+     "x": 131,
      "y": 34
     },
     {
      "name": "Tread Hidden Curves",
      "nick": "Trd Hidn",
-     "x": 139,
+     "x": 131,
      "y": 54
     },
     {
      "name": "Sight Lines",
      "nick": "Sight",
-     "x": 139,
+     "x": 131,
      "y": 74
     },
     {
      "name": "Hidden Sight Lines",
      "nick": "Sght Hdn",
-     "x": 139,
+     "x": 131,
      "y": 94
     },
     {
      "name": "Field Curves",
      "nick": "Field Cv",
-     "x": 139,
+     "x": 131,
      "y": 114
     },
     {
      "name": "Labels",
      "nick": "Labels",
-     "x": 139,
+     "x": 131,
      "y": 134
     },
     {
      "name": "Sheet Labels",
      "nick": "Sh Label",
-     "x": 139,
+     "x": 131,
      "y": 154
     },
     {
      "name": "Report",
      "nick": "Report",
-     "x": 139,
+     "x": 131,
      "y": 174
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 139,
+     "x": 131,
      "y": 194
     },
     {
      "name": "Part Curves",
      "nick": "Parts",
-     "x": 139,
+     "x": 131,
      "y": 214
     },
     {
      "name": "Part Hidden Curves",
      "nick": "Part Hidn",
-     "x": 139,
+     "x": 131,
      "y": 234
     }
    ]
@@ -2654,7 +2654,7 @@
   "Cut": {
    "id": "cut",
    "product": "antlion",
-   "w": 148,
+   "w": 141,
    "h": 268,
    "scale": 2,
    "inputs": [
@@ -2741,55 +2741,55 @@
     {
      "name": "Seat Result",
      "nick": "SRD",
-     "x": 144,
+     "x": 137,
      "y": 18
     },
     {
      "name": "Cut Lines",
      "nick": "Cut Lns",
-     "x": 144,
+     "x": 137,
      "y": 46
     },
     {
      "name": "Cut Records",
      "nick": "Records",
-     "x": 144,
+     "x": 137,
      "y": 75
     },
     {
      "name": "Removed Seat Rects",
      "nick": "Removed",
-     "x": 144,
+     "x": 137,
      "y": 104
     },
     {
      "name": "Tread Rings",
      "nick": "Rings",
-     "x": 144,
+     "x": 137,
      "y": 133
     },
     {
      "name": "Seat Rects",
      "nick": "Seats",
-     "x": 144,
+     "x": 137,
      "y": 162
     },
     {
      "name": "Vom Rects",
      "nick": "Voms",
-     "x": 144,
+     "x": 137,
      "y": 191
     },
     {
      "name": "Aisles",
      "nick": "Aisles",
-     "x": 144,
+     "x": 137,
      "y": 220
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 144,
+     "x": 137,
      "y": 249
     }
    ]
@@ -2797,7 +2797,7 @@
   "Vom 3D": {
    "id": "vom-3d",
    "product": "antlion",
-   "w": 140,
+   "w": 133,
    "h": 188,
    "scale": 2,
    "inputs": [
@@ -2860,25 +2860,25 @@
     {
      "name": "Seat Result",
      "nick": "SRD",
-     "x": 136,
+     "x": 129,
      "y": 26
     },
     {
      "name": "Vom Breps",
      "nick": "Vom 3D",
-     "x": 136,
+     "x": 129,
      "y": 71
     },
     {
      "name": "Vom Curves",
      "nick": "Vom Crv",
-     "x": 136,
+     "x": 129,
      "y": 116
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 136,
+     "x": 129,
      "y": 161
     }
    ]
@@ -2886,7 +2886,7 @@
   "Assemble Bowl": {
    "id": "assemble-bowl",
    "product": "antlion",
-   "w": 109,
+   "w": 105,
    "h": 148,
    "scale": 2,
    "inputs": [
@@ -2907,43 +2907,43 @@
     {
      "name": "Stand Body",
      "nick": "SBD",
-     "x": 105,
+     "x": 101,
      "y": 14
     },
     {
      "name": "Seat Result",
      "nick": "SRD",
-     "x": 105,
+     "x": 101,
      "y": 34
     },
     {
      "name": "Tread Rings",
      "nick": "Rings",
-     "x": 105,
+     "x": 101,
      "y": 54
     },
     {
      "name": "Seat Rects",
      "nick": "Seats",
-     "x": 105,
+     "x": 101,
      "y": 74
     },
     {
      "name": "Vom Rects",
      "nick": "Voms",
-     "x": 105,
+     "x": 101,
      "y": 94
     },
     {
      "name": "Aisles",
      "nick": "Aisles",
-     "x": 105,
+     "x": 101,
      "y": 114
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 105,
+     "x": 101,
      "y": 134
     }
    ]
@@ -2951,7 +2951,7 @@
   "Custom Seat": {
    "id": "custom-seat",
    "product": "antlion",
-   "w": 140,
+   "w": 134,
    "h": 428,
    "scale": 2,
    "inputs": [
@@ -3086,55 +3086,55 @@
     {
      "name": "Seat Result",
      "nick": "SRD",
-     "x": 136,
+     "x": 130,
      "y": 27
     },
     {
      "name": "Seat Rects",
      "nick": "Seats",
-     "x": 136,
+     "x": 130,
      "y": 73
     },
     {
      "name": "Good Seat Rects",
      "nick": "Good",
-     "x": 136,
+     "x": 130,
      "y": 120
     },
     {
      "name": "Poor Seat Rects",
      "nick": "Poor",
-     "x": 136,
+     "x": 130,
      "y": 167
     },
     {
      "name": "Vom Rects",
      "nick": "Voms",
-     "x": 136,
+     "x": 130,
      "y": 213
     },
     {
      "name": "Aisles",
      "nick": "Aisles",
-     "x": 136,
+     "x": 130,
      "y": 260
     },
     {
      "name": "Wheelchair Platforms",
      "nick": "♿ Plat",
-     "x": 136,
+     "x": 130,
      "y": 307
     },
     {
      "name": "Wheelchair Units",
      "nick": "♿ Units",
-     "x": 136,
+     "x": 130,
      "y": 353
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 136,
+     "x": 130,
      "y": 400
     }
    ]
@@ -3142,7 +3142,7 @@
   "View Axis": {
    "id": "view-axis",
    "product": "antlion",
-   "w": 127,
+   "w": 123,
    "h": 108,
    "scale": 2,
    "inputs": [
@@ -3181,31 +3181,31 @@
     {
      "name": "Guide Lines",
      "nick": "Guides",
-     "x": 123,
+     "x": 119,
      "y": 14
     },
     {
      "name": "Circles",
      "nick": "Circles",
-     "x": 123,
+     "x": 119,
      "y": 34
     },
     {
      "name": "Labels",
      "nick": "Labels",
-     "x": 123,
+     "x": 119,
      "y": 54
     },
     {
      "name": "Label Names",
      "nick": "Names",
-     "x": 123,
+     "x": 119,
      "y": 74
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 123,
+     "x": 119,
      "y": 94
     }
    ]
@@ -3213,7 +3213,7 @@
   "Startline Oval": {
    "id": "startline-oval",
    "product": "antlion",
-   "w": 144,
+   "w": 135,
    "h": 168,
    "scale": 2,
    "inputs": [
@@ -3270,31 +3270,31 @@
     {
      "name": "Start Line",
      "nick": "Start",
-     "x": 140,
+     "x": 131,
      "y": 20
     },
     {
      "name": "Start Line Curve",
      "nick": "Curve",
-     "x": 140,
+     "x": 131,
      "y": 52
     },
     {
      "name": "Arc Centers",
      "nick": "Centers",
-     "x": 140,
+     "x": 131,
      "y": 84
     },
     {
      "name": "Arc Radii",
      "nick": "Radii",
-     "x": 140,
+     "x": 131,
      "y": 116
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 140,
+     "x": 131,
      "y": 148
     }
    ]
@@ -3302,7 +3302,7 @@
   "Opening Cut": {
    "id": "opening-cut",
    "product": "antlion",
-   "w": 150,
+   "w": 139,
    "h": 268,
    "scale": 2,
    "inputs": [
@@ -3389,67 +3389,67 @@
     {
      "name": "Seat Result",
      "nick": "SRD",
-     "x": 146,
+     "x": 135,
      "y": 15
     },
     {
      "name": "Railing Lines",
      "nick": "Rail Lns",
-     "x": 146,
+     "x": 135,
      "y": 39
     },
     {
      "name": "Opening Rects",
      "nick": "Openings",
-     "x": 146,
+     "x": 135,
      "y": 62
     },
     {
      "name": "Cut Records",
      "nick": "Records",
-     "x": 146,
+     "x": 135,
      "y": 86
     },
     {
      "name": "Removed Seat Rects",
      "nick": "Removed",
-     "x": 146,
+     "x": 135,
      "y": 110
     },
     {
      "name": "Tread Rings",
      "nick": "Rings",
-     "x": 146,
+     "x": 135,
      "y": 133
     },
     {
      "name": "Seat Rects",
      "nick": "Seats",
-     "x": 146,
+     "x": 135,
      "y": 157
     },
     {
      "name": "Vom Rects",
      "nick": "Voms",
-     "x": 146,
+     "x": 135,
      "y": 181
     },
     {
      "name": "Aisles",
      "nick": "Aisles",
-     "x": 146,
+     "x": 135,
      "y": 204
     },
     {
      "name": "Wheelchair Units",
      "nick": "♿ Units",
-     "x": 146,
+     "x": 135,
      "y": 228
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 146,
+     "x": 135,
      "y": 252
     }
    ]
@@ -3457,7 +3457,7 @@
   "Excel Workbook": {
    "id": "excel-workbook",
    "product": "antlion",
-   "w": 119,
+   "w": 113,
    "h": 128,
    "scale": 2,
    "inputs": [
@@ -3502,19 +3502,19 @@
     {
      "name": "Book",
      "nick": "Book",
-     "x": 115,
+     "x": 109,
      "y": 24
     },
     {
      "name": "Path",
      "nick": "Path",
-     "x": 115,
+     "x": 109,
      "y": 64
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 115,
+     "x": 109,
      "y": 104
     }
    ]
@@ -3522,7 +3522,7 @@
   "Stand 2D": {
    "id": "stand-2d",
    "product": "antlion",
-   "w": 121,
+   "w": 117,
    "h": 108,
    "scale": 2,
    "inputs": [
@@ -3543,31 +3543,31 @@
     {
      "name": "Stand Sections",
      "nick": "SSD",
-     "x": 117,
+     "x": 113,
      "y": 14
     },
     {
      "name": "Axis",
      "nick": "Axis",
-     "x": 117,
+     "x": 113,
      "y": 34
     },
     {
      "name": "Stand 2D",
      "nick": "Stand 2D",
-     "x": 117,
+     "x": 113,
      "y": 54
     },
     {
      "name": "Tread Rings",
      "nick": "Rings",
-     "x": 117,
+     "x": 113,
      "y": 74
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 117,
+     "x": 113,
      "y": 94
     }
    ]
@@ -3575,7 +3575,7 @@
   "Startline Capsule": {
    "id": "startline-capsule",
    "product": "antlion",
-   "w": 127,
+   "w": 120,
    "h": 108,
    "scale": 2,
    "inputs": [
@@ -3614,31 +3614,31 @@
     {
      "name": "Start Line",
      "nick": "Start",
-     "x": 123,
+     "x": 116,
      "y": 14
     },
     {
      "name": "Start Line Curve",
      "nick": "Curve",
-     "x": 123,
+     "x": 116,
      "y": 34
     },
     {
      "name": "Arc Centers",
      "nick": "Centers",
-     "x": 123,
+     "x": 116,
      "y": 54
     },
     {
      "name": "Arc Radii",
      "nick": "Radii",
-     "x": 123,
+     "x": 116,
      "y": 74
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 123,
+     "x": 116,
      "y": 94
     }
    ]
@@ -3646,7 +3646,7 @@
   "Axis": {
    "id": "axis",
    "product": "antlion",
-   "w": 130,
+   "w": 122,
    "h": 188,
    "scale": 2,
    "inputs": [
@@ -3709,37 +3709,37 @@
     {
      "name": "Axis",
      "nick": "Axis",
-     "x": 126,
+     "x": 118,
      "y": 19
     },
     {
      "name": "Base Line",
      "nick": "Base",
-     "x": 126,
+     "x": 118,
      "y": 49
     },
     {
      "name": "Axis Points",
      "nick": "Points",
-     "x": 126,
+     "x": 118,
      "y": 79
     },
     {
      "name": "Axis Planes",
      "nick": "Planes",
-     "x": 126,
+     "x": 118,
      "y": 109
     },
     {
      "name": "Axis Lines",
      "nick": "Lines",
-     "x": 126,
+     "x": 118,
      "y": 139
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 126,
+     "x": 118,
      "y": 169
     }
    ]
@@ -3747,7 +3747,7 @@
   "Custom Startline": {
    "id": "custom-startline",
    "product": "antlion",
-   "w": 122,
+   "w": 116,
    "h": 108,
    "scale": 2,
    "inputs": [
@@ -3768,31 +3768,31 @@
     {
      "name": "Start Line",
      "nick": "Start",
-     "x": 118,
+     "x": 112,
      "y": 14
     },
     {
      "name": "Start Line Curve",
      "nick": "Curve",
-     "x": 118,
+     "x": 112,
      "y": 34
     },
     {
      "name": "Arc Centers",
      "nick": "Centers",
-     "x": 118,
+     "x": 112,
      "y": 54
     },
     {
      "name": "Arc Radii",
      "nick": "Radii",
-     "x": 118,
+     "x": 112,
      "y": 74
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 118,
+     "x": 112,
      "y": 94
     }
    ]
@@ -3800,7 +3800,7 @@
   "Stand 3D Plus": {
    "id": "stand-3d-plus",
    "product": "antlion",
-   "w": 139,
+   "w": 131,
    "h": 108,
    "scale": 2,
    "inputs": [
@@ -3839,31 +3839,31 @@
     {
      "name": "Build Result",
      "nick": "BRD",
-     "x": 135,
+     "x": 127,
      "y": 14
     },
     {
      "name": "Stand Breps",
      "nick": "Bodies",
-     "x": 135,
+     "x": 127,
      "y": 34
     },
     {
      "name": "Aisles 3D",
      "nick": "Aisles 3D",
-     "x": 135,
+     "x": 127,
      "y": 54
     },
     {
      "name": "Wheelchair Decks",
      "nick": "♿ Decks",
-     "x": 135,
+     "x": 127,
      "y": 74
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 135,
+     "x": 127,
      "y": 94
     }
    ]
@@ -3871,7 +3871,7 @@
   "Section": {
    "id": "section",
    "product": "antlion",
-   "w": 124,
+   "w": 119,
    "h": 188,
    "scale": 2,
    "inputs": [
@@ -3934,31 +3934,31 @@
     {
      "name": "Stand Sections",
      "nick": "SSD ⊞",
-     "x": 120,
+     "x": 115,
      "y": 22
     },
     {
      "name": "Section Profiles",
      "nick": "Profile",
-     "x": 120,
+     "x": 115,
      "y": 58
     },
     {
      "name": "Closed Profiles",
      "nick": "Closed",
-     "x": 120,
+     "x": 115,
      "y": 94
     },
     {
      "name": "Eye Points",
      "nick": "Eye Pts",
-     "x": 120,
+     "x": 115,
      "y": 130
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 120,
+     "x": 115,
      "y": 166
     }
    ]
