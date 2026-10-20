@@ -1,4 +1,18 @@
 antlion:
+  - version: "1.0.21"
+    date: "2026-10-21"
+    title: Canvas text keeps its size at any Windows display scale
+    body: |
+      **Fixed**
+
+      - **Input Panel**, **C-value Legend**, **Slider Merge**, **Toggle Merge**, **Gate Switch** - With the
+        Windows display scale set above 100%, such as 175% or 200%, the text these components draw on the
+        canvas grew with the display scale while their boxes did not, so labels ran past their cells. The
+        text now keeps the same size against its box at any display scale, like the rest of the canvas.
+        Nothing changes at 100%.
+      - **Slider Merge** - At display scales above 100%, the Slider Settings window and the value window
+        kept their 100% size, which cut off labels such as Max, Digits and Value. Both windows now grow with
+        the display scale.
   - version: "1.0.20"
     date: "2026-10-20"
     title: Focal point inside the field edge and above it at once
