@@ -1,4 +1,22 @@
 antlion:
+  - version: "1.0.22"
+    date: "2026-10-21"
+    title: Drawn sections stand on any side; clearer vomitories and field line in Section Check
+    body: |
+      **Fixed**
+
+      - **Section** - Tread lines drawn on the plan were always read with their length along the field's
+        long axis, so a drawn section worked only at the east or west end; for the north and south sides
+        the field had to be turned with Rotate 90, and a section drawn for those sides gave wrong C-values
+        or none. The drawing is now read as distances and heights and stood on Base Line on the side that
+        Focal Position Mode names, the same way Auto Section and Table Section place theirs. On screen it
+        shows where it did before, set on Base Line. With a Focal Point wired by hand, or without Base
+        Line, nothing changes.
+      - **C-value Section Check** - Each section cut a vomitory through the middle of its doorway, so only
+        the strip of end wall above the opening showed, whatever the vomitory floor was. Its side walls,
+        floor level and full end wall now appear behind the cut on Part Hidden Curves.
+      - **C-value Section Check** - The field line ended at the focal point and ran into the front railing.
+        It now starts 2 m beyond the focal point and stops at the front face of the front railing.
   - version: "1.0.21"
     date: "2026-10-21"
     title: Canvas text keeps its size at any Windows display scale
