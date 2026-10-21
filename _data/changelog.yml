@@ -6,8 +6,8 @@ antlion:
       **Added**
 
       - **Auto Section**, **Section** - New input Riser Thickness, right below Slab Thickness: the thickness
-        of the stand's vertical riser legs, separate from the slab under the treads (for example a 4" tread
-        slab on 6" risers). Left at 0 it follows Slab Thickness, so existing stands build as before, and
+        of the stand's vertical riser legs, separate from the slab under the treads, as in precast stadia.
+        Left at 0 it follows Slab Thickness, so existing stands build as before, and
         Stand 3D Plus follows it. Slab Thickness now means the slab under the treads.
       - **Table In** - New output Riser Thickness, read from the new workbook row riser_t. New workbooks
         get it right below slab_t; for an older workbook, right-click the workbook component and choose
@@ -80,9 +80,8 @@ antlion:
 
       - **Field** - Focal Direction Mode and Focal Offset are replaced by two numbers: Focal Horizontal, how
         far inside the field outline the focal point sits, and Focal Vertical, how high above the field it
-        sits. Give both to place the focal point in from the edge and above it at the same time - for ice
-        hockey, for example, 3'-0" in from the dasher boards and 4'-0" above the ice. Leave either at 0 for
-        the earlier behavior. Files saved with earlier versions open with their focal settings moved to the
+        sits. Give both to place the focal point in from the edge and above it at the same time. Leave
+        either at 0 for the earlier behavior. Files saved with earlier versions open with their focal settings moved to the
         new inputs, including values set in Input Panel; a Field that used HORIZONTAL shows a note once.
 
       **Fixed**
