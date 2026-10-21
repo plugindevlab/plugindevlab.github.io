@@ -2622,7 +2622,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "Turns the tread lines you draw into a tier section — rows, nosing and eye points, and the closed profile the stand is swept from. Draw one line per step; the component sorts them and works out the tiers.",
      "inputs": [
       {
@@ -2725,12 +2725,25 @@
        "optional": false,
        "dropdown": false,
        "default": "150 mm / 6 in",
-       "desc": "Thickness of the stand slab. Set it once here - everything downstream reads it (default 150 mm)",
+       "desc": "Thickness of the stand slab under the treads - and behind the risers too, unless Riser Thickness is set. Set it once here - everything downstream reads it (default 150 mm)",
        "flow": false,
        "type": null
       },
       {
        "index": 8,
+       "name": "Riser Thickness",
+       "nick": "Riser T",
+       "ghType": "Number",
+       "access": "item",
+       "optional": false,
+       "dropdown": false,
+       "default": "0",
+       "desc": "Thickness of the riser legs, measured back from each riser face. 0 uses Slab Thickness, so treads and risers stay the same thickness",
+       "flow": false,
+       "type": null
+      },
+      {
+       "index": 9,
        "name": "Panel Values",
        "nick": "Panel",
        "ghType": "Object",
@@ -2824,15 +2837,15 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1034,
-      "h": 639,
+      "w": 1038,
+      "h": 706,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
-      "imgY": 178,
-      "imgW": 178,
-      "imgH": 282,
+      "imgY": 197,
+      "imgW": 182,
+      "imgH": 312,
       "img": "/assets/img/antlion/components/section.png",
       "pending": false,
       "ports": [
@@ -2848,8 +2861,8 @@
         "callX": 0,
         "callY": 20,
         "gripX": 434,
-        "gripY": 199,
-        "d": "M340 51 H354 L422 199 H434"
+        "gripY": 218,
+        "d": "M340 51 H354 L422 218 H434"
        },
        {
         "side": "in",
@@ -2863,8 +2876,8 @@
         "callX": 0,
         "callY": 87,
         "gripX": 434,
-        "gripY": 229,
-        "d": "M340 118 H354 L422 229 H434"
+        "gripY": 248,
+        "d": "M340 118 H354 L422 248 H434"
        },
        {
         "side": "in",
@@ -2878,8 +2891,8 @@
         "callX": 0,
         "callY": 154,
         "gripX": 434,
-        "gripY": 259,
-        "d": "M340 185 H354 L422 259 H434"
+        "gripY": 278,
+        "d": "M340 185 H354 L422 278 H434"
        },
        {
         "side": "in",
@@ -2893,8 +2906,8 @@
         "callX": 0,
         "callY": 221,
         "gripX": 434,
-        "gripY": 289,
-        "d": "M340 252 H354 L422 289 H434"
+        "gripY": 308,
+        "d": "M340 252 H354 L422 308 H434"
        },
        {
         "side": "in",
@@ -2908,8 +2921,8 @@
         "callX": 0,
         "callY": 288,
         "gripX": 434,
-        "gripY": 319,
-        "d": "M340 319 H434"
+        "gripY": 338,
+        "d": "M340 319 H354 L422 338 H434"
        },
        {
         "side": "in",
@@ -2923,8 +2936,8 @@
         "callX": 0,
         "callY": 355,
         "gripX": 434,
-        "gripY": 349,
-        "d": "M340 386 H354 L422 349 H434"
+        "gripY": 368,
+        "d": "M340 386 H354 L422 368 H434"
        },
        {
         "side": "in",
@@ -2938,8 +2951,8 @@
         "callX": 0,
         "callY": 422,
         "gripX": 434,
-        "gripY": 379,
-        "d": "M340 453 H354 L422 379 H434"
+        "gripY": 398,
+        "d": "M340 453 H354 L422 398 H434"
        },
        {
         "side": "in",
@@ -2949,16 +2962,31 @@
         "ghType": "Number",
         "access": "item",
         "flow": false,
-        "blurb": "Thickness of the stand slab",
+        "blurb": "Thickness of the stand slab under the treads",
         "callX": 0,
         "callY": 489,
         "gripX": 434,
-        "gripY": 409,
-        "d": "M340 520 H354 L422 409 H434"
+        "gripY": 428,
+        "d": "M340 520 H354 L422 428 H434"
        },
        {
         "side": "in",
         "index": 8,
+        "name": "Riser Thickness",
+        "nick": "Riser T",
+        "ghType": "Number",
+        "access": "item",
+        "flow": false,
+        "blurb": "Thickness of the riser legs, measured back from each riser face",
+        "callX": 0,
+        "callY": 556,
+        "gripX": 434,
+        "gripY": 458,
+        "d": "M340 587 H354 L422 458 H434"
+       },
+       {
+        "side": "in",
+        "index": 9,
         "name": "Panel Values",
         "nick": "Panel",
         "ghType": "Object",
@@ -2966,10 +2994,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 556,
+        "callY": 623,
         "gripX": 434,
-        "gripY": 439,
-        "d": "M340 587 H354 L422 439 H434"
+        "gripY": 488,
+        "d": "M340 654 H354 L422 488 H434"
        },
        {
         "side": "out",
@@ -2980,11 +3008,11 @@
         "access": "list",
         "flow": true,
         "blurb": "One section object per tier",
-        "callX": 694,
-        "callY": 180,
-        "gripX": 600,
-        "gripY": 211,
-        "d": "M694 211 H600"
+        "callX": 698,
+        "callY": 202,
+        "gripX": 604,
+        "gripY": 233,
+        "d": "M698 233 H604"
        },
        {
         "side": "out",
@@ -2995,11 +3023,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The stepped line along the tread tops, one per tier",
-        "callX": 694,
-        "callY": 246,
-        "gripX": 600,
-        "gripY": 265,
-        "d": "M694 277 H680 L612 265 H600"
+        "callX": 698,
+        "callY": 268,
+        "gripX": 604,
+        "gripY": 293,
+        "d": "M698 299 H684 L616 293 H604"
        },
        {
         "side": "out",
@@ -3010,11 +3038,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The closed profile per tier",
-        "callX": 694,
-        "callY": 314,
-        "gripX": 600,
-        "gripY": 319,
-        "d": "M694 345 H680 L612 319 H600"
+        "callX": 698,
+        "callY": 336,
+        "gripX": 604,
+        "gripY": 353,
+        "d": "M698 367 H684 L616 353 H604"
        },
        {
         "side": "out",
@@ -3025,11 +3053,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Eye point of every row, all tiers",
-        "callX": 694,
-        "callY": 380,
-        "gripX": 600,
-        "gripY": 373,
-        "d": "M694 411 H680 L612 373 H600"
+        "callX": 698,
+        "callY": 402,
+        "gripX": 604,
+        "gripY": 413,
+        "d": "M698 433 H684 L616 413 H604"
        },
        {
         "side": "out",
@@ -3040,11 +3068,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 694,
-        "callY": 448,
-        "gripX": 600,
-        "gripY": 427,
-        "d": "M694 479 H680 L612 427 H600"
+        "callX": 698,
+        "callY": 470,
+        "gripX": 604,
+        "gripY": 473,
+        "d": "M698 501 H684 L616 473 H604"
        }
       ]
      },
@@ -3061,7 +3089,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "Works out the risers for you. Give it the tread depths and the minimum C-value you want to hold, and it raises each step by the smallest Riser Step increment that still clears that C-value - the shallowest bowl that meets the target. The front row starts on the base line - the start line as the axes facet it - so wire the same field, focal point and Base Line that Section takes. Bake tread_lines if you want to fine-tune the steps by hand in Section afterwards.",
      "inputs": [
       {
@@ -3268,12 +3296,25 @@
        "optional": false,
        "dropdown": false,
        "default": "150 mm / 6 in",
-       "desc": "Thickness of the stand slab. Set it once here - everything downstream reads it (default 150 mm)",
+       "desc": "Thickness of the stand slab under the treads - and behind the risers too, unless Riser Thickness is set. Set it once here - everything downstream reads it (default 150 mm)",
        "flow": false,
        "type": null
       },
       {
        "index": 16,
+       "name": "Riser Thickness",
+       "nick": "Riser T",
+       "ghType": "Number",
+       "access": "item",
+       "optional": false,
+       "dropdown": false,
+       "default": "0",
+       "desc": "Thickness of the riser legs, measured back from each riser face. 0 uses Slab Thickness, so treads and risers stay the same thickness",
+       "flow": false,
+       "type": null
+      },
+      {
+       "index": 17,
        "name": "Riser Step",
        "nick": "Rise Stp",
        "ghType": "Number",
@@ -3286,7 +3327,7 @@
        "type": null
       },
       {
-       "index": 17,
+       "index": 18,
        "name": "Flip X",
        "nick": "",
        "ghType": "Boolean",
@@ -3299,7 +3340,7 @@
        "type": null
       },
       {
-       "index": 18,
+       "index": 19,
        "name": "Panel Values",
        "nick": "Panel",
        "ghType": "Object",
@@ -3420,14 +3461,14 @@
      "tier": "core",
      "figure": {
       "w": 1056,
-      "h": 1309,
+      "h": 1376,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
-      "imgY": 364,
+      "imgY": 382,
       "imgW": 200,
-      "imgH": 582,
+      "imgH": 612,
       "img": "/assets/img/antlion/components/auto-section.png",
       "pending": false,
       "ports": [
@@ -3443,8 +3484,8 @@
         "callX": 0,
         "callY": 20,
         "gripX": 434,
-        "gripY": 385,
-        "d": "M340 51 H354 L422 385 H434"
+        "gripY": 403,
+        "d": "M340 51 H354 L422 403 H434"
        },
        {
         "side": "in",
@@ -3458,8 +3499,8 @@
         "callX": 0,
         "callY": 87,
         "gripX": 434,
-        "gripY": 415,
-        "d": "M340 118 H354 L422 415 H434"
+        "gripY": 433,
+        "d": "M340 118 H354 L422 433 H434"
        },
        {
         "side": "in",
@@ -3473,8 +3514,8 @@
         "callX": 0,
         "callY": 154,
         "gripX": 434,
-        "gripY": 445,
-        "d": "M340 185 H354 L422 445 H434"
+        "gripY": 463,
+        "d": "M340 185 H354 L422 463 H434"
        },
        {
         "side": "in",
@@ -3488,8 +3529,8 @@
         "callX": 0,
         "callY": 221,
         "gripX": 434,
-        "gripY": 475,
-        "d": "M340 252 H354 L422 475 H434"
+        "gripY": 493,
+        "d": "M340 252 H354 L422 493 H434"
        },
        {
         "side": "in",
@@ -3503,8 +3544,8 @@
         "callX": 0,
         "callY": 288,
         "gripX": 434,
-        "gripY": 505,
-        "d": "M340 319 H354 L422 505 H434"
+        "gripY": 523,
+        "d": "M340 319 H354 L422 523 H434"
        },
        {
         "side": "in",
@@ -3518,8 +3559,8 @@
         "callX": 0,
         "callY": 355,
         "gripX": 434,
-        "gripY": 535,
-        "d": "M340 386 H354 L422 535 H434"
+        "gripY": 553,
+        "d": "M340 386 H354 L422 553 H434"
        },
        {
         "side": "in",
@@ -3533,8 +3574,8 @@
         "callX": 0,
         "callY": 422,
         "gripX": 434,
-        "gripY": 565,
-        "d": "M340 453 H354 L422 565 H434"
+        "gripY": 583,
+        "d": "M340 453 H354 L422 583 H434"
        },
        {
         "side": "in",
@@ -3548,8 +3589,8 @@
         "callX": 0,
         "callY": 489,
         "gripX": 434,
-        "gripY": 595,
-        "d": "M340 520 H354 L422 595 H434"
+        "gripY": 613,
+        "d": "M340 520 H354 L422 613 H434"
        },
        {
         "side": "in",
@@ -3563,8 +3604,8 @@
         "callX": 0,
         "callY": 556,
         "gripX": 434,
-        "gripY": 625,
-        "d": "M340 587 H354 L422 625 H434"
+        "gripY": 643,
+        "d": "M340 587 H354 L422 643 H434"
        },
        {
         "side": "in",
@@ -3578,8 +3619,8 @@
         "callX": 0,
         "callY": 623,
         "gripX": 434,
-        "gripY": 655,
-        "d": "M340 654 H354 L422 655 H434"
+        "gripY": 673,
+        "d": "M340 654 H354 L422 673 H434"
        },
        {
         "side": "in",
@@ -3593,8 +3634,8 @@
         "callX": 0,
         "callY": 690,
         "gripX": 434,
-        "gripY": 685,
-        "d": "M340 721 H354 L422 685 H434"
+        "gripY": 703,
+        "d": "M340 721 H354 L422 703 H434"
        },
        {
         "side": "in",
@@ -3608,8 +3649,8 @@
         "callX": 0,
         "callY": 757,
         "gripX": 434,
-        "gripY": 715,
-        "d": "M340 788 H354 L422 715 H434"
+        "gripY": 733,
+        "d": "M340 788 H354 L422 733 H434"
        },
        {
         "side": "in",
@@ -3623,8 +3664,8 @@
         "callX": 0,
         "callY": 824,
         "gripX": 434,
-        "gripY": 745,
-        "d": "M340 855 H354 L422 745 H434"
+        "gripY": 763,
+        "d": "M340 855 H354 L422 763 H434"
        },
        {
         "side": "in",
@@ -3638,8 +3679,8 @@
         "callX": 0,
         "callY": 891,
         "gripX": 434,
-        "gripY": 775,
-        "d": "M340 922 H354 L422 775 H434"
+        "gripY": 793,
+        "d": "M340 922 H354 L422 793 H434"
        },
        {
         "side": "in",
@@ -3653,8 +3694,8 @@
         "callX": 0,
         "callY": 958,
         "gripX": 434,
-        "gripY": 805,
-        "d": "M340 989 H354 L422 805 H434"
+        "gripY": 823,
+        "d": "M340 989 H354 L422 823 H434"
        },
        {
         "side": "in",
@@ -3664,16 +3705,31 @@
         "ghType": "Number",
         "access": "item",
         "flow": false,
-        "blurb": "Thickness of the stand slab",
+        "blurb": "Thickness of the stand slab under the treads",
         "callX": 0,
         "callY": 1025,
         "gripX": 434,
-        "gripY": 835,
-        "d": "M340 1056 H354 L422 835 H434"
+        "gripY": 853,
+        "d": "M340 1056 H354 L422 853 H434"
        },
        {
         "side": "in",
         "index": 16,
+        "name": "Riser Thickness",
+        "nick": "Riser T",
+        "ghType": "Number",
+        "access": "item",
+        "flow": false,
+        "blurb": "Thickness of the riser legs, measured back from each riser face",
+        "callX": 0,
+        "callY": 1092,
+        "gripX": 434,
+        "gripY": 883,
+        "d": "M340 1123 H354 L422 883 H434"
+       },
+       {
+        "side": "in",
+        "index": 17,
         "name": "Riser Step",
         "nick": "Rise Stp",
         "ghType": "Number",
@@ -3681,14 +3737,14 @@
         "flow": false,
         "blurb": "Risers round up to a whole multiple of this, so they set out on site",
         "callX": 0,
-        "callY": 1092,
+        "callY": 1159,
         "gripX": 434,
-        "gripY": 865,
-        "d": "M340 1123 H354 L422 865 H434"
+        "gripY": 913,
+        "d": "M340 1190 H354 L422 913 H434"
        },
        {
         "side": "in",
-        "index": 17,
+        "index": 18,
         "name": "Flip X",
         "nick": "",
         "ghType": "Boolean",
@@ -3696,14 +3752,14 @@
         "flow": false,
         "blurb": "Fold the section onto the other side of its own line in plan",
         "callX": 0,
-        "callY": 1159,
+        "callY": 1226,
         "gripX": 434,
-        "gripY": 895,
-        "d": "M340 1190 H354 L422 895 H434"
+        "gripY": 943,
+        "d": "M340 1257 H354 L422 943 H434"
        },
        {
         "side": "in",
-        "index": 18,
+        "index": 19,
         "name": "Panel Values",
         "nick": "Panel",
         "ghType": "Object",
@@ -3711,10 +3767,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 1226,
+        "callY": 1293,
         "gripX": 434,
-        "gripY": 925,
-        "d": "M340 1257 H354 L422 925 H434"
+        "gripY": 973,
+        "d": "M340 1324 H354 L422 973 H434"
        },
        {
         "side": "out",
@@ -3726,10 +3782,10 @@
         "flow": true,
         "blurb": "One section object per tier",
         "callX": 716,
-        "callY": 378,
+        "callY": 398,
         "gripX": 622,
-        "gripY": 410,
-        "d": "M716 409 H702 L634 410 H622"
+        "gripY": 430,
+        "d": "M716 429 H702 L634 430 H622"
        },
        {
         "side": "out",
@@ -3741,10 +3797,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 716,
-        "callY": 460,
+        "callY": 484,
         "gripX": 622,
-        "gripY": 492,
-        "d": "M716 491 H702 L634 492 H622"
+        "gripY": 516,
+        "d": "M716 515 H702 L634 516 H622"
        },
        {
         "side": "out",
@@ -3756,10 +3812,10 @@
         "flow": false,
         "blurb": "One branch per tier",
         "callX": 716,
-        "callY": 540,
+        "callY": 570,
         "gripX": 622,
-        "gripY": 572,
-        "d": "M716 571 H702 L634 572 H622"
+        "gripY": 601,
+        "d": "M716 601 H622"
        },
        {
         "side": "out",
@@ -3771,10 +3827,10 @@
         "flow": false,
         "blurb": "The stepped line along the tread tops, one per tier",
         "callX": 716,
-        "callY": 622,
+        "callY": 654,
         "gripX": 622,
-        "gripY": 654,
-        "d": "M716 653 H702 L634 654 H622"
+        "gripY": 686,
+        "d": "M716 685 H702 L634 686 H622"
        },
        {
         "side": "out",
@@ -3786,10 +3842,10 @@
         "flow": false,
         "blurb": "The closed profile per tier",
         "callX": 716,
-        "callY": 704,
+        "callY": 740,
         "gripX": 622,
-        "gripY": 736,
-        "d": "M716 735 H702 L634 736 H622"
+        "gripY": 772,
+        "d": "M716 771 H702 L634 772 H622"
        },
        {
         "side": "out",
@@ -3801,10 +3857,10 @@
         "flow": false,
         "blurb": "Eye point of every row, all tiers",
         "callX": 716,
-        "callY": 786,
+        "callY": 826,
         "gripX": 622,
-        "gripY": 817,
-        "d": "M716 817 H622"
+        "gripY": 858,
+        "d": "M716 857 H702 L634 858 H622"
        },
        {
         "side": "out",
@@ -3816,10 +3872,10 @@
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 716,
-        "callY": 866,
+        "callY": 912,
         "gripX": 622,
-        "gripY": 898,
-        "d": "M716 897 H702 L634 898 H622"
+        "gripY": 944,
+        "d": "M716 943 H702 L634 944 H622"
        }
       ]
      },
@@ -3836,7 +3892,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "Adds the things a bare section does not have: the front barrier or handrail, accessible (wheelchair) rows, and the sightline check over the barrier. Sits between Section and Stand 2D — pure section geometry stays in Section.",
      "inputs": [
       {
@@ -4360,7 +4416,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "Builds the tier sections from the numbers in your workbook instead of lines you draw. Wire the book from Table In, plus the same field, focal point and Base Line that Section takes. The barrier settings live in the workbook too, so this one component does what Section and Section Plus do together - the outputs are the same.",
      "inputs": [
       {
@@ -4417,19 +4473,6 @@
       },
       {
        "index": 4,
-       "name": "Slab Thickness",
-       "nick": "Slab T",
-       "ghType": "Number",
-       "access": "item",
-       "optional": false,
-       "dropdown": false,
-       "default": "0",
-       "desc": "Thickness of the stand slab. Leave at 0 to use the one in the workbook",
-       "flow": false,
-       "type": null
-      },
-      {
-       "index": 5,
        "name": "Panel Values",
        "nick": "Panel",
        "ghType": "Object",
@@ -4565,14 +4608,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1032,
+      "w": 1024,
       "h": 572,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 160,
-      "imgW": 176,
+      "imgW": 168,
       "imgH": 252,
       "img": "/assets/img/antlion/components/table-section.png",
       "pending": false,
@@ -4587,10 +4630,10 @@
         "flow": true,
         "blurb": "Wire from Table In",
         "callX": 0,
-        "callY": 154,
+        "callY": 158,
         "gripX": 434,
-        "gripY": 186,
-        "d": "M340 185 H354 L422 186 H434"
+        "gripY": 190,
+        "d": "M340 189 H354 L422 190 H434"
        },
        {
         "side": "in",
@@ -4602,10 +4645,10 @@
         "flow": true,
         "blurb": "The field, straight from Field",
         "callX": 0,
-        "callY": 221,
+        "callY": 226,
         "gripX": 434,
-        "gripY": 224,
-        "d": "M340 252 H354 L422 224 H434"
+        "gripY": 238,
+        "d": "M340 257 H354 L422 238 H434"
        },
        {
         "side": "in",
@@ -4617,10 +4660,10 @@
         "flow": false,
         "blurb": "Aim the sightlines somewhere else",
         "callX": 0,
-        "callY": 288,
+        "callY": 292,
         "gripX": 434,
-        "gripY": 265,
-        "d": "M340 319 H354 L422 265 H434"
+        "gripY": 286,
+        "d": "M340 323 H354 L422 286 H434"
        },
        {
         "side": "in",
@@ -4632,29 +4675,14 @@
         "flow": false,
         "blurb": "The faceted line the stand is built on",
         "callX": 0,
-        "callY": 355,
+        "callY": 360,
         "gripX": 434,
-        "gripY": 306,
-        "d": "M340 386 H354 L422 306 H434"
+        "gripY": 334,
+        "d": "M340 391 H354 L422 334 H434"
        },
        {
         "side": "in",
         "index": 4,
-        "name": "Slab Thickness",
-        "nick": "Slab T",
-        "ghType": "Number",
-        "access": "item",
-        "flow": false,
-        "blurb": "Thickness of the stand slab",
-        "callX": 0,
-        "callY": 422,
-        "gripX": 434,
-        "gripY": 344,
-        "d": "M340 453 H354 L422 344 H434"
-       },
-       {
-        "side": "in",
-        "index": 5,
         "name": "Panel Values",
         "nick": "Panel",
         "ghType": "Object",
@@ -4662,10 +4690,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 489,
+        "callY": 426,
         "gripX": 434,
-        "gripY": 385,
-        "d": "M340 520 H354 L422 385 H434"
+        "gripY": 382,
+        "d": "M340 457 H354 L422 382 H434"
        },
        {
         "side": "out",
@@ -4676,11 +4704,11 @@
         "access": "list",
         "flow": true,
         "blurb": "The tier sections, with the barrier and any accessible rows written in",
-        "callX": 692,
+        "callX": 684,
         "callY": 20,
-        "gripX": 598,
+        "gripX": 590,
         "gripY": 181,
-        "d": "M692 51 H678 L610 181 H598"
+        "d": "M684 51 H670 L602 181 H590"
        },
        {
         "side": "out",
@@ -4691,11 +4719,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The barrier itself, one closed section curve per tier",
-        "callX": 692,
+        "callX": 684,
         "callY": 87,
-        "gripX": 598,
+        "gripX": 590,
         "gripY": 211,
-        "d": "M692 118 H678 L610 211 H598"
+        "d": "M684 118 H670 L602 211 H590"
        },
        {
         "side": "out",
@@ -4706,11 +4734,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Tread-top stepped line, after the front row was pulled back for the barrier",
-        "callX": 692,
+        "callX": 684,
         "callY": 154,
-        "gripX": 598,
+        "gripX": 590,
         "gripY": 241,
-        "d": "M692 185 H678 L610 241 H598"
+        "d": "M684 185 H670 L602 241 H590"
        },
        {
         "side": "out",
@@ -4721,11 +4749,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The closed profile the stand is swept from",
-        "callX": 692,
+        "callX": 684,
         "callY": 221,
-        "gripX": 598,
+        "gripX": 590,
         "gripY": 271,
-        "d": "M692 252 H678 L610 271 H598"
+        "d": "M684 252 H670 L602 271 H590"
        },
        {
         "side": "out",
@@ -4736,11 +4764,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Eye point of every row, all tiers",
-        "callX": 692,
+        "callX": 684,
         "callY": 288,
-        "gripX": 598,
+        "gripX": 590,
         "gripY": 301,
-        "d": "M692 319 H678 L610 301 H598"
+        "d": "M684 319 H670 L602 301 H590"
        },
        {
         "side": "out",
@@ -4751,11 +4779,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The lines behind the barrier sightline check",
-        "callX": 692,
+        "callX": 684,
         "callY": 355,
-        "gripX": 598,
+        "gripX": 590,
         "gripY": 331,
-        "d": "M692 386 H678 L610 331 H598"
+        "d": "M684 386 H670 L602 331 H590"
        },
        {
         "side": "out",
@@ -4766,11 +4794,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Tread-top line through an accessible platform, one per wheelchair tier",
-        "callX": 692,
+        "callX": 684,
         "callY": 422,
-        "gripX": 598,
+        "gripX": 590,
         "gripY": 361,
-        "d": "M692 453 H678 L610 361 H598"
+        "d": "M684 453 H670 L602 361 H590"
        },
        {
         "side": "out",
@@ -4781,11 +4809,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 692,
+        "callX": 684,
         "callY": 489,
-        "gripX": 598,
+        "gripX": 590,
         "gripY": 391,
-        "d": "M692 520 H678 L610 391 H598"
+        "d": "M684 520 H670 L602 391 H590"
        }
       ]
      },
@@ -11456,7 +11484,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "Pick an Antlion component and set every value it takes, with sensible defaults shown. For when you are not sure what to wire in.",
      "inputs": [],
      "outputs": [
@@ -11519,7 +11547,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "Checks the sightline over the row in front, row by row, and reports the C-value. Draws the sightlines and dimensions so you can see where the view fails.",
      "inputs": [
       {
@@ -12038,7 +12066,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "Paints every seat with its own C-value, measured in 3D from that seat's eye to its own focus. Wire the Stand 3D Plus BRD output. A railing or vomitory wall in front of a seat counts as the obstruction too; add Rail 3D RLD for the railings' exact built tops.",
      "inputs": [
       {
@@ -12696,7 +12724,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "Paints each tread band with the C-value of one representative section taken between two axes. One value per axis gap, so it is light enough to leave on while you tune the section. C-value Seat measures every seat instead - the two differ most on curves, where one section cannot stand for the whole band.",
      "inputs": [
       {
@@ -13411,7 +13439,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "Builds an explicit color legend for the C-value maps. Set the first number, the last number and the band size - the bands become <min, min to min+step, ... , >=max, each with its own color. Leave colors unwired for the built-in ramp, or supply your own (interpolated when fewer than the band count). Wire scheme into C-value Seat or C-value Tread; the map is then colored by these bands and C-value Map prints this legend on every sheet. Detail Mode on lists the two view-cut states (a seat row or a railing hiding the focal point, C<0) in their own colors; off folds them into the lowest band. It also carries the not-graded states - OPEN, FRONT, EMPTY and NA - as a fixed gray series, so every gray patch on the map is named on the sheet; the report output explains why each state appears and how to clear it. The component itself shows the legend on the canvas.",
      "inputs": [
       {
@@ -13702,7 +13730,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "Lays every axis section out on its own sheet so you can flip through them. One scale for the whole set, chosen so the largest section fits, and every section sits at the same place on its sheet.",
      "inputs": [
       {
@@ -13917,32 +13945,6 @@
       },
       {
        "index": 8,
-       "name": "Report",
-       "nick": "",
-       "ghType": "Text",
-       "access": "list",
-       "optional": false,
-       "dropdown": false,
-       "default": null,
-       "desc": "Sheet format, scale, and how the largest section fits the usable area",
-       "flow": false,
-       "type": null
-      },
-      {
-       "index": 9,
-       "name": "Debug",
-       "nick": "",
-       "ghType": "Text",
-       "access": "item",
-       "optional": false,
-       "dropdown": false,
-       "default": null,
-       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
-       "flow": false,
-       "type": null
-      },
-      {
-       "index": 10,
        "name": "Part Curves",
        "nick": "Parts",
        "ghType": "Curve",
@@ -13955,7 +13957,7 @@
        "type": null
       },
       {
-       "index": 11,
+       "index": 9,
        "name": "Part Hidden Curves",
        "nick": "Part Hidn",
        "ghType": "Curve",
@@ -13964,6 +13966,32 @@
        "dropdown": false,
        "default": null,
        "desc": "The same parts where the cut misses them. Draw dashed",
+       "flow": false,
+       "type": null
+      },
+      {
+       "index": 10,
+       "name": "Report",
+       "nick": "",
+       "ghType": "Text",
+       "access": "list",
+       "optional": false,
+       "dropdown": false,
+       "default": null,
+       "desc": "Sheet format, scale, and how the largest section fits the usable area",
+       "flow": false,
+       "type": null
+      },
+      {
+       "index": 11,
+       "name": "Debug",
+       "nick": "",
+       "ghType": "Text",
+       "access": "item",
+       "optional": false,
+       "dropdown": false,
+       "default": null,
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -14230,12 +14258,12 @@
        {
         "side": "out",
         "index": 8,
-        "name": "Report",
-        "nick": "",
-        "ghType": "Text",
+        "name": "Part Curves",
+        "nick": "Parts",
+        "ghType": "Curve",
         "access": "list",
         "flow": false,
-        "blurb": "Sheet format, scale, and how the largest section fits the usable area",
+        "blurb": "Railings and vomitories where the cut really passes through them, one curve per piece",
         "callX": 718,
         "callY": 556,
         "gripX": 624,
@@ -14245,12 +14273,12 @@
        {
         "side": "out",
         "index": 9,
-        "name": "Debug",
-        "nick": "",
-        "ghType": "Text",
-        "access": "item",
+        "name": "Part Hidden Curves",
+        "nick": "Part Hidn",
+        "ghType": "Curve",
+        "access": "list",
         "flow": false,
-        "blurb": "Developer diagnostic output for tracking down bugs",
+        "blurb": "The same parts where the cut misses them",
         "callX": 718,
         "callY": 623,
         "gripX": 624,
@@ -14260,12 +14288,12 @@
        {
         "side": "out",
         "index": 10,
-        "name": "Part Curves",
-        "nick": "Parts",
-        "ghType": "Curve",
+        "name": "Report",
+        "nick": "",
+        "ghType": "Text",
         "access": "list",
         "flow": false,
-        "blurb": "Railings and vomitories where the cut really passes through them, one curve per piece",
+        "blurb": "Sheet format, scale, and how the largest section fits the usable area",
         "callX": 718,
         "callY": 690,
         "gripX": 624,
@@ -14275,12 +14303,12 @@
        {
         "side": "out",
         "index": 11,
-        "name": "Part Hidden Curves",
-        "nick": "Part Hidn",
-        "ghType": "Curve",
-        "access": "list",
+        "name": "Debug",
+        "nick": "",
+        "ghType": "Text",
+        "access": "item",
         "flow": false,
-        "blurb": "The same parts where the cut misses them",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 718,
         "callY": 757,
         "gripX": 624,
@@ -14301,7 +14329,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "Holds the sheet layout settings in one place - the paper size, how many sheets per row, the scale rounding, margins and the text style. Wire the SHD output into C-value Section Check, C-value Map and Seat Map so every sheet component lays out the same way from a single setup. Leave SHD unwired and each of them uses the defaults this component starts with. Where the sheets start is not part of it - each sheet component keeps its own Origin, so their sheets do not land on top of each other.",
      "inputs": [
       {
@@ -14537,7 +14565,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "A stack of sliders in one component — each row Dk drives output Rk. Zoom in to see the small + and - buttons: the ones beside the sliders add or remove rows, the ones on the right add or remove outputs. Double-click a row label to set the range all rows share, or double-click a value to type it. Saves wiring a dozen separate sliders into per-tier inputs.",
      "inputs": [],
      "outputs": [
@@ -14600,7 +14628,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "A stack of toggles in one component — each row Dk drives output Rk. Click a row to flip it. Zoom in to see the small + and - buttons: the ones beside the toggles add or remove rows, the ones on the right add or remove outputs. Saves wiring a dozen separate toggles into per-tier inputs.",
      "inputs": [],
      "outputs": [
@@ -14663,7 +14691,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "Lays the C-value map out flat - one sheet per tier, named TIER 1, TIER 2 and so on, with the seat layout drawing, the colored map and the tier's minimum, average and pass rate written top-left. In a bowl merged from several stands, tiers with the same tier label share one sheet named after it - by default that is the same tier number in each stand, or give Table Section tier_label values such as LOW. Wire the CMD output of C-value Seat for a seat map, or of C-value Tread for a tread map - one at a time.",
      "inputs": [
       {
@@ -15011,7 +15039,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "Holds the wire shut. Whatever changes upstream, nothing downstream recomputes until you press PASS - then the data at D goes through R once and stays there. Put it between the 2D bowl chain and the heavy 3D build or analysis components: edit the bowl lag-free, press to update. The Gate Switch component opens and closes every gate on the canvas at once. Reopening a file behaves like the moment it was saved: a gate that was holding data picks it up again on load (one full compute, like opening any normal file), and a gate that was empty stays shut.",
      "inputs": [
       {
@@ -15103,7 +15131,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "One switch for every Data Gate on the canvas - no wires needed. LIVE holds every gate open, so data flows as if PASS were held down and the whole chain stays current. HOLD closes them all again; each gate keeps the last data that went through. Keep a single switch per document.",
      "inputs": [],
      "outputs": [],
@@ -15136,7 +15164,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "Groups the seats into zones - the pieces left when the aisles, vomitories and cuts are taken out of the tier - and gives every seat a readable address like \"T1 05 S 25\": prefix and tier number, zone number counted around the bowl in the axis direction, then the seat number running from the lowest tread up. In a bowl merged from several stands, tiers with the same tier label - by default the same tier number in each stand - count as one tier: one number, one run of zones around the bowl, one sheet. Wheelchair units belong to their zone too, numbered \"W 1\", \"W 2\". Outputs the SMD bundle for Seat View and Seat 3D, a zone map laid out one sheet per tier, and flat tables ready for a spreadsheet. Wire the BRD output of Stand 3D Plus; wire SHD from Sheet Setup to place the sheets",
      "inputs": [
       {
@@ -15598,7 +15626,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "Register your Antlion license key. Enter the key once — every definition on this computer is unlocked.",
      "inputs": [
       {
@@ -15746,7 +15774,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "Looks through a spectator's eyes. Wire the Seat Map SMD and pick a seat by tier, zone and seat number - or type its address like \"T1 05 S 25\" - press apply, and the perspective viewport jumps to that seat's analysis eye point looking at its own focal point - the same eye and focus the C-value map measures. Turn live on and the yaw and pitch sliders let you look around from the fixed eye point, so you can judge a vomitory rail or a cut-edge railing exactly as the seated spectator would see it.",
      "inputs": [
       {
@@ -16204,7 +16232,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "Tags every axis with its number — a guide line running out from each axis point into a circle holding the axis name (A0, A1, ...). The numbers are the same ones Cut and Opening Cut expect in Axis From / Opening From, so you can read them here and leave those heavy previews off.",
      "inputs": [
       {
@@ -16525,7 +16553,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "Draws the optimum and maximum viewing distance circles for a sport and counts how many seats fall outside. Reference only — it never removes a seat; wire Limit Curves into Cut if you want it enforced.",
      "inputs": [
       {
@@ -16961,7 +16989,7 @@
      ],
      "group": "table",
      "page": "06-table",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "Creates an .xlsx workbook you can fill in with Excel, with the input pages already laid out, and hands the reference to Table In and Table Out. Give the project folder, optionally a file name (the folder name is used when empty), and press Run - an existing file connects, a missing file is made there, and either way it opens in Excel. No internet or sign-in is needed, so this is the path that works on closed networks. The reference is saved with the Grasshopper file; because it is a file path, moving the workbook or the .gh means picking the file again. The 10-series pages are yours and are written only at creation; the 80-series pages belong to the plugin.",
      "inputs": [
       {
@@ -17255,7 +17283,7 @@
      ],
      "group": "table",
      "page": "06-table",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "Creates a spreadsheet you can fill in by hand, with the input pages already laid out, and hands the reference to Table In and Table Out. Press Run once - the reference is saved with the Grasshopper file, so reopening it stays connected to the same workbook. After that you only edit the sheet and press Run on Table In; you do not need this component again. The 10-series pages are yours and are written only at creation; the 80-series pages belong to the plugin.",
      "inputs": [
       {
@@ -17577,7 +17605,7 @@
      ],
      "group": "table",
      "page": "06-table",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "Reads the workbook's input pages and gives you the values to build from. Wire the workbook reference and press run. Values are looked up by column and key name, so inserting rows or reordering columns in the spreadsheet is safe. What was read is stored with the Grasshopper file, so the canvas keeps working without pressing run again.",
      "inputs": [
       {
@@ -17656,12 +17684,25 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "Thickness of the stand slab",
+       "desc": "Thickness of the stand slab under the treads - and behind the risers too, unless Riser Thickness is set",
        "flow": false,
        "type": null
       },
       {
        "index": 4,
+       "name": "Riser Thickness",
+       "nick": "Riser T",
+       "ghType": "Number",
+       "access": "item",
+       "optional": false,
+       "dropdown": false,
+       "default": null,
+       "desc": "Thickness of the riser legs. 0 = same as Slab Thickness",
+       "flow": false,
+       "type": null
+      },
+      {
+       "index": 5,
        "name": "Minimum C-Value",
        "nick": "Min C",
        "ghType": "Number",
@@ -17670,19 +17711,6 @@
        "dropdown": false,
        "default": null,
        "desc": "Smallest acceptable C-value",
-       "flow": false,
-       "type": null
-      },
-      {
-       "index": 5,
-       "name": "C-value Mode",
-       "nick": "C Val",
-       "ghType": "Text",
-       "access": "item",
-       "optional": false,
-       "dropdown": false,
-       "default": null,
-       "desc": "STANDARD or VARIABLE_CORNER",
        "flow": false,
        "type": null
       },
@@ -17701,19 +17729,6 @@
       },
       {
        "index": 7,
-       "name": "Debug",
-       "nick": "",
-       "ghType": "Text",
-       "access": "item",
-       "optional": false,
-       "dropdown": false,
-       "default": null,
-       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
-       "flow": false,
-       "type": null
-      },
-      {
-       "index": 8,
        "name": "Wheelchair Eye Vertical Offset",
        "nick": "♿ Eye V",
        "ghType": "Number",
@@ -17726,7 +17741,7 @@
        "type": null
       },
       {
-       "index": 9,
+       "index": 8,
        "name": "Wheelchair Eye Horizontal Offset",
        "nick": "♿ Eye H",
        "ghType": "Number",
@@ -17735,6 +17750,19 @@
        "dropdown": false,
        "default": null,
        "desc": "How far back from the nosing a wheelchair user's eye sits. -1 = same as seated",
+       "flow": false,
+       "type": null
+      },
+      {
+       "index": 9,
+       "name": "Debug",
+       "nick": "",
+       "ghType": "Text",
+       "access": "item",
+       "optional": false,
+       "dropdown": false,
+       "default": null,
+       "desc": "Developer diagnostic output for tracking down bugs. Copy this when reporting a problem",
        "flow": false,
        "type": null
       }
@@ -17844,7 +17872,7 @@
         "ghType": "Number",
         "access": "item",
         "flow": false,
-        "blurb": "Thickness of the stand slab",
+        "blurb": "Thickness of the stand slab under the treads",
         "callX": 692,
         "callY": 221,
         "gripX": 598,
@@ -17854,12 +17882,12 @@
        {
         "side": "out",
         "index": 4,
-        "name": "Minimum C-Value",
-        "nick": "Min C",
+        "name": "Riser Thickness",
+        "nick": "Riser T",
         "ghType": "Number",
         "access": "item",
         "flow": false,
-        "blurb": "Smallest acceptable C-value",
+        "blurb": "Thickness of the riser legs",
         "callX": 692,
         "callY": 288,
         "gripX": 598,
@@ -17869,12 +17897,12 @@
        {
         "side": "out",
         "index": 5,
-        "name": "C-value Mode",
-        "nick": "C Val",
-        "ghType": "Text",
+        "name": "Minimum C-Value",
+        "nick": "Min C",
+        "ghType": "Number",
         "access": "item",
         "flow": false,
-        "blurb": "STANDARD or VARIABLE_CORNER",
+        "blurb": "Smallest acceptable C-value",
         "callX": 692,
         "callY": 355,
         "gripX": 598,
@@ -17899,12 +17927,12 @@
        {
         "side": "out",
         "index": 7,
-        "name": "Debug",
-        "nick": "",
-        "ghType": "Text",
+        "name": "Wheelchair Eye Vertical Offset",
+        "nick": "♿ Eye V",
+        "ghType": "Number",
         "access": "item",
         "flow": false,
-        "blurb": "Developer diagnostic output for tracking down bugs",
+        "blurb": "Eye height above the platform for a wheelchair user",
         "callX": 692,
         "callY": 489,
         "gripX": 598,
@@ -17914,12 +17942,12 @@
        {
         "side": "out",
         "index": 8,
-        "name": "Wheelchair Eye Vertical Offset",
-        "nick": "♿ Eye V",
+        "name": "Wheelchair Eye Horizontal Offset",
+        "nick": "♿ Eye H",
         "ghType": "Number",
         "access": "item",
         "flow": false,
-        "blurb": "Eye height above the platform for a wheelchair user",
+        "blurb": "How far back from the nosing a wheelchair user's eye sits",
         "callX": 692,
         "callY": 556,
         "gripX": 598,
@@ -17929,12 +17957,12 @@
        {
         "side": "out",
         "index": 9,
-        "name": "Wheelchair Eye Horizontal Offset",
-        "nick": "♿ Eye H",
-        "ghType": "Number",
+        "name": "Debug",
+        "nick": "",
+        "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "How far back from the nosing a wheelchair user's eye sits",
+        "blurb": "Developer diagnostic output for tracking down bugs",
         "callX": 692,
         "callY": 623,
         "gripX": 598,
@@ -17955,7 +17983,7 @@
      ],
      "group": "table",
      "page": "06-table",
-     "checked": "2026-10-11",
+     "checked": "2026-10-21",
      "summary": "Writes analysis results into the workbook's result pages. Wire the workbook reference and the result objects - section, analysis, seat map or C-value map - and press run. Each result type knows which page it belongs on. The plugin owns those pages and rewrites them whenever the results change - the same results are not sent twice to the same workbook unless you right-click and choose Send again. Copy rows into the input pages if you want to keep and edit them.",
      "inputs": [
       {
@@ -24666,7 +24694,7 @@
      ]
     }
    },
-   "version": "1.0.22"
+   "version": "1.0.23"
   }
  }
 }

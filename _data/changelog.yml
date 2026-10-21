@@ -1,4 +1,45 @@
 antlion:
+  - version: "1.0.23"
+    date: "2026-10-21"
+    title: Separate tread and riser thickness
+    body: |
+      **Added**
+
+      - **Auto Section**, **Section** - New input Riser Thickness, right below Slab Thickness: the thickness
+        of the stand's vertical riser legs, separate from the slab under the treads (for example a 4" tread
+        slab on 6" risers). Left at 0 it follows Slab Thickness, so existing stands build as before, and
+        Stand 3D Plus follows it. Slab Thickness now means the slab under the treads.
+      - **Table In** - New output Riser Thickness, read from the new workbook row riser_t. New workbooks
+        get it right below slab_t; for an older workbook, right-click the workbook component and choose
+        "Bring this workbook up to date".
+
+      **Fixed**
+
+      - **Table Section** - Slab thickness came from two places, the Slab Thickness input and the workbook
+        row slab_t, and a non-zero input overrode the workbook without notice. The input is removed and
+        both thicknesses come from the workbook. If an older file held a different value there, an orange
+        warning shows both values.
+      - **Section Plus** - Placed after Table Section, whose sections already include the workbook's
+        railing setback, it pushed the front row back a second time (150 mm with the defaults) without a
+        warning. Those sections now pass through unchanged, with a warning.
+      - **Opening Cut** - Where an upstream Cut had already removed the stand, it still added grace seats,
+        railings and openings. Those places now stay empty.
+      - **Stand 3D Plus** - When several Cuts follow one another, such as the zone cuts of Assemble Bowl
+        and then your own cuts, the parts each Cut keeps were combined instead of overlapped, so a tier
+        could spread over the next zone and C-value Seat reported floors inside vomitory openings. The
+        stand now keeps only what every Cut keeps, as the seats already did.
+      - **Opening Cut** - An opening end close to a zone edge extended its seats past the edge, onto the
+        next zone's seats. The extension and its fill seats now stop at the kept area.
+      - **Stand 3D Plus**, **Rail 3D**, **C-value Seat**, **C-value Tread**, **Seat View** - A tier removed
+        entirely by a cut raised orange warnings, as if data were missing. Stand 3D Plus and Rail 3D now
+        give a white note, and the C-value components and Seat View no longer warn about it.
+      - **Table In** - The C-value Mode output took effect only when wired to Section Analysis, and is
+        removed; set the mode on Section Analysis. Debug is now the last output here and on C-value
+        Section Check, as on other components.
+
+      Older files: inputs and outputs that moved reconnect by name when the file opens, so nothing needs
+      rewiring; wires to removed ports are dropped. Grasshopper may show an "IO generated N messages"
+      window for components that gained an input - it is safe to close.
   - version: "1.0.22"
     date: "2026-10-21"
     title: Drawn sections stand on any side; clearer vomitories and field line in Section Check

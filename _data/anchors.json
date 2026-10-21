@@ -1,14 +1,14 @@
 {
  "_about": "Generated from a Grasshopper capture run - do not edit by hand. Coordinates are CSS pixels (1x); the PNG is rendered at 'scale'.",
- "captured": "2026-10-20T23:51:42.6532664+09:00",
+ "captured": "2026-10-21T23:00:18.6850912+09:00",
  "gh": "8.35.26251.13001",
- "source": "req-20261020-235141-486.json",
+ "source": "req-20261021-230017-192.json",
  "components": {
   "Auto Section": {
    "id": "auto-section",
    "product": "antlion",
    "w": 133,
-   "h": 388,
+   "h": 408,
    "scale": 2,
    "inputs": [
     {
@@ -108,22 +108,28 @@
      "y": 314
     },
     {
+     "name": "Riser Thickness",
+     "nick": "Riser T",
+     "x": 4,
+     "y": 334
+    },
+    {
      "name": "Riser Step",
      "nick": "Rise Stp",
      "x": 4,
-     "y": 334
+     "y": 354
     },
     {
      "name": "Flip X",
      "nick": "Flip X",
      "x": 4,
-     "y": 354
+     "y": 374
     },
     {
      "name": "Panel Values",
      "nick": "Panel",
      "x": 4,
-     "y": 374
+     "y": 394
     }
    ],
    "outputs": [
@@ -131,43 +137,43 @@
      "name": "Stand Sections",
      "nick": "SSD ⊞",
      "x": 129,
-     "y": 31
+     "y": 32
     },
     {
      "name": "Tread Lines",
      "nick": "Treads",
      "x": 129,
-     "y": 85
+     "y": 89
     },
     {
      "name": "Riser Heights",
      "nick": "Risers",
      "x": 129,
-     "y": 139
+     "y": 146
     },
     {
      "name": "Section Profiles",
      "nick": "Profile",
      "x": 129,
-     "y": 193
+     "y": 203
     },
     {
      "name": "Closed Profiles",
      "nick": "Closed",
      "x": 129,
-     "y": 248
+     "y": 260
     },
     {
      "name": "Eye Points",
      "nick": "Eye Pts",
      "x": 129,
-     "y": 302
+     "y": 317
     },
     {
      "name": "Debug",
      "nick": "Debug",
      "x": 129,
-     "y": 356
+     "y": 375
     }
    ]
   },
@@ -1651,14 +1657,14 @@
      "y": 74
     },
     {
-     "name": "Minimum C-Value",
-     "nick": "Min C",
+     "name": "Riser Thickness",
+     "nick": "Riser T",
      "x": 113,
      "y": 94
     },
     {
-     "name": "C-value Mode",
-     "nick": "C Val",
+     "name": "Minimum C-Value",
+     "nick": "Min C",
      "x": 113,
      "y": 114
     },
@@ -1669,20 +1675,20 @@
      "y": 134
     },
     {
-     "name": "Debug",
-     "nick": "Debug",
+     "name": "Wheelchair Eye Vertical Offset",
+     "nick": "♿ Eye V",
      "x": 113,
      "y": 154
     },
     {
-     "name": "Wheelchair Eye Vertical Offset",
-     "nick": "♿ Eye V",
+     "name": "Wheelchair Eye Horizontal Offset",
+     "nick": "♿ Eye H",
      "x": 113,
      "y": 174
     },
     {
-     "name": "Wheelchair Eye Horizontal Offset",
-     "nick": "♿ Eye H",
+     "name": "Debug",
+     "nick": "Debug",
      "x": 113,
      "y": 194
     }
@@ -1926,7 +1932,7 @@
   "Table Section": {
    "id": "table-section",
    "product": "antlion",
-   "w": 117,
+   "w": 112,
    "h": 168,
    "scale": 2,
    "inputs": [
@@ -1934,86 +1940,80 @@
      "name": "Book",
      "nick": "Book",
      "x": 4,
-     "y": 17
+     "y": 20
     },
     {
      "name": "Field Info",
      "nick": "Field",
      "x": 4,
-     "y": 43
+     "y": 52
     },
     {
      "name": "Focal Point",
      "nick": "Focal",
      "x": 4,
-     "y": 70
+     "y": 84
     },
     {
      "name": "Base Line",
      "nick": "Base",
      "x": 4,
-     "y": 97
-    },
-    {
-     "name": "Slab Thickness",
-     "nick": "Slab T",
-     "x": 4,
-     "y": 123
+     "y": 116
     },
     {
      "name": "Panel Values",
      "nick": "Panel",
      "x": 4,
-     "y": 150
+     "y": 148
     }
    ],
    "outputs": [
     {
      "name": "Stand Sections",
      "nick": "SSD ⊞",
-     "x": 113,
+     "x": 108,
      "y": 14
     },
     {
      "name": "Handrail Sections",
      "nick": "Rails",
-     "x": 113,
+     "x": 108,
      "y": 34
     },
     {
      "name": "Section Profiles",
      "nick": "Profile",
-     "x": 113,
+     "x": 108,
      "y": 54
     },
     {
      "name": "Closed Profiles",
      "nick": "Closed",
-     "x": 113,
+     "x": 108,
      "y": 74
     },
     {
      "name": "Eye Points",
      "nick": "Eye Pts",
-     "x": 113,
+     "x": 108,
      "y": 94
     },
     {
      "name": "Guide Geometry",
      "nick": "Guides",
-     "x": 113,
+     "x": 108,
      "y": 114
     },
     {
      "name": "Wheelchair Section Profiles",
      "nick": "♿ Prof",
-     "x": 113,
+     "x": 108,
      "y": 134
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 113,
+     "x": 108,
      "y": 154
     }
    ]
@@ -2626,26 +2626,26 @@
      "y": 154
     },
     {
-     "name": "Report",
-     "nick": "Report",
+     "name": "Part Curves",
+     "nick": "Parts",
      "x": 131,
      "y": 174
     },
     {
-     "name": "Debug",
-     "nick": "Debug",
+     "name": "Part Hidden Curves",
+     "nick": "Part Hidn",
      "x": 131,
      "y": 194
     },
     {
-     "name": "Part Curves",
-     "nick": "Parts",
+     "name": "Report",
+     "nick": "Report",
      "x": 131,
      "y": 214
     },
     {
-     "name": "Part Hidden Curves",
-     "nick": "Part Hidn",
+     "name": "Debug",
+     "nick": "Debug",
      "x": 131,
      "y": 234
     }
@@ -3871,8 +3871,8 @@
   "Section": {
    "id": "section",
    "product": "antlion",
-   "w": 119,
-   "h": 188,
+   "w": 121,
+   "h": 208,
    "scale": 2,
    "inputs": [
     {
@@ -3924,42 +3924,48 @@
      "y": 154
     },
     {
+     "name": "Riser Thickness",
+     "nick": "Riser T",
+     "x": 4,
+     "y": 174
+    },
+    {
      "name": "Panel Values",
      "nick": "Panel",
      "x": 4,
-     "y": 174
+     "y": 194
     }
    ],
    "outputs": [
     {
      "name": "Stand Sections",
      "nick": "SSD ⊞",
-     "x": 115,
-     "y": 22
+     "x": 117,
+     "y": 24
     },
     {
      "name": "Section Profiles",
      "nick": "Profile",
-     "x": 115,
-     "y": 58
+     "x": 117,
+     "y": 64
     },
     {
      "name": "Closed Profiles",
      "nick": "Closed",
-     "x": 115,
-     "y": 94
+     "x": 117,
+     "y": 104
     },
     {
      "name": "Eye Points",
      "nick": "Eye Pts",
-     "x": 115,
-     "y": 130
+     "x": 117,
+     "y": 144
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 115,
-     "y": 166
+     "x": 117,
+     "y": 184
     }
    ]
   }
