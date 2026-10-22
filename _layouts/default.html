@@ -7,6 +7,7 @@
 {%- capture full_title -%}{% if page_title != site.title %}{{ page_title }} · {{ site.title }}{% else %}{{ site.title }} — {{ site.description }}{% endif %}{%- endcapture -%}
 <title>{{ full_title }}</title>
 <meta name="description" content="{{ page.description | default: site.description }}">
+<meta name="google-site-verification" content="-IcAPqQMxJ8kM4iAuo6UX7lODc06kvxZ5t22P4J_clg">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{{ site.title | escape }}">
 <meta property="og:title" content="{{ full_title | escape }}">
