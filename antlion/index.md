@@ -1,5 +1,5 @@
 ---
-title: Antlion
+title: "Antlion — Stadium Seating and C-value Sightlines for Grasshopper"
 description: Grasshopper plugin for stadium seating bowls in Rhino 8 — sections, stands, vomitories and seats as one editable chain, with C-value sightlines checked as you design.
 ---
 

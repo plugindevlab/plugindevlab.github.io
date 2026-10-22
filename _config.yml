@@ -8,6 +8,9 @@ baseurl: ""
 prelaunch: false
 
 f4r_url: "https://www.food4rhino.com/en/app/antlion"
+
+plugins:
+  - jekyll-sitemap
 exclude:
   - _tools
   - README.md

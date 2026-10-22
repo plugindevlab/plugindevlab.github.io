@@ -3,4 +3,6 @@ permalink: /robots.txt
 layout: null
 ---
 User-agent: *
-{% if site.prelaunch %}Disallow: /{% else %}Allow: /{% endif %}
+{% if site.prelaunch %}Disallow: /{% else %}Allow: /
+
+Sitemap: {{ "/sitemap.xml" | absolute_url }}{% endif %}
