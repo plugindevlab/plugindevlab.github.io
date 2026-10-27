@@ -36,6 +36,7 @@ Setup is three steps, and none of it touches your Rhino model.
 <details class="a-more-d"><summary>Updates</summary>
 <p>New releases arrive through the package manager. At the bottom of its window, keep <strong>Automatically update packages when Rhino starts</strong> checked — it is on unless someone turned it off. Rhino then installs newer packages shortly after it starts and asks you to restart; the new version runs from that restart.</p>
 <p>If you keep it off, run <code>_PackageManager</code>, select Antlion and click <strong>Install</strong> on the newer version. The <a href="/antlion/changelog/">changelog</a> lists what changed in each release.</p>
+<p><strong>Files from another version.</strong> A file saved with an older Antlion opens in a newer one with its wires and values in place; when a release removes an input or changes a default value, the changelog says what happens to older files. The other way round is not guaranteed. A file saved with a newer Antlion may use inputs your version does not have — they are left out when you open it, and from 1.1.0 the component says so. Update Antlion before saving such a file, because saving it with the older version removes those inputs for good. When several people work on the same files, keep everyone on the same version.</p>
 </details>
 </div>
 {%- assign s = page.shots[0] %}
