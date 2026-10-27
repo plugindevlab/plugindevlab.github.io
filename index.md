@@ -11,6 +11,7 @@ Design-workflow plugins for Rhino and Grasshopper. Each one takes a job that eat
 an architect's time and makes it a chain you can keep editing — not a black box that hands
 back a result you cannot argue with.
 
+<h2 class="vh">Products</h2>
 <div class="grid" markdown="0">
 {%- for p in site.data.products %}
   <div class="card">

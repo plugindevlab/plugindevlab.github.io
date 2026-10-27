@@ -2622,7 +2622,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-10-21",
+     "checked": "2026-10-25",
      "summary": "Turns the tread lines you draw into a tier section — rows, nosing and eye points, and the closed profile the stand is swept from. Draw one line per step; the component sorts them and works out the tiers.",
      "inputs": [
       {
@@ -3089,7 +3089,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-10-21",
+     "checked": "2026-10-25",
      "summary": "Works out the risers for you. Give it the tread depths and the minimum C-value you want to hold, and it raises each step by the smallest Riser Step increment that still clears that C-value - the shallowest bowl that meets the target. The front row starts on the base line - the start line as the axes facet it - so wire the same field, focal point and Base Line that Section takes. Bake tread_lines if you want to fine-tune the steps by hand in Section afterwards.",
      "inputs": [
       {
@@ -3335,7 +3335,7 @@
        "optional": false,
        "dropdown": false,
        "default": "false",
-       "desc": "Fold the section onto the other side of its own line in plan. It lies on the base line facing away from the focal point either way - true just puts it clear of whatever it overlaps (default false)",
+       "desc": "Mirror the section drawing left to right in plan - it then lies on the field side with its steps rising toward the field, clear of the stand it would overlap. The stand itself does not change (default false)",
        "flow": false,
        "type": null
       },
@@ -3750,7 +3750,7 @@
         "ghType": "Boolean",
         "access": "item",
         "flow": false,
-        "blurb": "Fold the section onto the other side of its own line in plan",
+        "blurb": "Mirror the section drawing left to right in plan",
         "callX": 0,
         "callY": 1226,
         "gripX": 434,
@@ -3892,7 +3892,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-10-21",
+     "checked": "2026-10-25",
      "summary": "Adds the things a bare section does not have: the front barrier or handrail, accessible (wheelchair) rows, and the sightline check over the barrier. Sits between Section and Stand 2D — pure section geometry stays in Section.",
      "inputs": [
       {
@@ -4416,7 +4416,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-10-21",
+     "checked": "2026-10-25",
      "summary": "Builds the tier sections from the numbers in your workbook instead of lines you draw. Wire the book from Table In, plus the same field, focal point and Base Line that Section takes. The barrier settings live in the workbook too, so this one component does what Section and Section Plus do together - the outputs are the same.",
      "inputs": [
       {
@@ -9026,7 +9026,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-10-07",
+     "checked": "2026-10-27",
      "summary": "Sweeps the closed section profile around the axis planes into the solid tier bodies. This is the raw stand — cuts and openings are applied later by Stand 3D Plus.",
      "inputs": [
       {
@@ -9383,7 +9383,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-10-07",
+     "checked": "2026-10-27",
      "summary": "Builds the vomitories as solids — the side and end walls, the portal opening punched through, and the stair or ramp down to the concourse.",
      "inputs": [
       {
@@ -9514,7 +9514,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "The layout back again, cut range widened for stepped vomitories. Wire THIS on, not the original",
+       "desc": "The layout back again, carrying these vomitory walls for the sightline checks and the cut down to the concourse for stepped vomitories. Wire THIS on, not the original",
        "flow": true,
        "type": "SRD"
       },
@@ -9726,7 +9726,7 @@
         "ghType": "Object",
         "access": "item",
         "flow": true,
-        "blurb": "The layout back again, cut range widened for stepped vomitories",
+        "blurb": "The layout back again, carrying these vomitory walls for the sightline checks and the cut down to the…",
         "callX": 716,
         "callY": 186,
         "gripX": 622,
@@ -9793,7 +9793,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-10-07",
+     "checked": "2026-10-27",
      "summary": "Builds the 3D bowl: cuts the stand solids with everything the 2D chain decided — shape cuts, entrance openings, vomitories — and lifts the seats and aisle steps to their real tread heights.",
      "inputs": [
       {
@@ -10124,7 +10124,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-10-07",
+     "checked": "2026-10-27",
      "summary": "Builds the railings and parapets as solids — the front barrier, the rear parapet, the edges left by a cut, and the walls around entrance openings. In a bowl assembled from several stands, a per-tier list shorter than the assembled tier count is read per stand: three values set tiers 1, 2 and 3 of every stand. Give one per assembled tier to set each on its own.",
      "inputs": [
       {
@@ -10698,8 +10698,8 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-10-07",
-     "summary": "Assembles the final bowl plan before Stand 3D Plus: merges parallel seat layouts (tiers renumbered) with their stand solids, and previews the finished plan. Cut ends are pulled where they are cut - Cut, Opening Cut and Seat each carry their own offset.",
+     "checked": "2026-10-27",
+     "summary": "Assembles the final bowl plan before Stand 3D Plus: merges parallel seat layouts (tiers renumbered) with their stand solids - stands built from different sections can go in together - and previews the finished plan. Cut ends are pulled where they are cut - Cut, Opening Cut and Seat each carry their own offset.",
      "inputs": [
       {
        "index": 0,
@@ -10984,8 +10984,8 @@
        }
       ]
      },
-     "indexHead": "Assembles the final bowl plan before Stand 3D Plus: merges parallel seat layouts (tiers renumbered) with their stand solids, and...",
-     "indexMore": "previews the finished plan. Cut ends are pulled where they are cut - Cut, Opening Cut and Seat each carry their own offset."
+     "indexHead": "Assembles the final bowl plan before Stand 3D Plus: merges parallel seat layouts (tiers renumbered) with their stand solids -...",
+     "indexMore": "stands built from different sections can go in together - and previews the finished plan. Cut ends are pulled where they are cut - Cut, Opening Cut and Seat each carry their own offset."
     },
     {
      "id": "seat-3d",
@@ -10997,7 +10997,7 @@
      ],
      "group": "bowl-section-4",
      "page": "04-body3d",
-     "checked": "2026-10-07",
+     "checked": "2026-10-27",
      "summary": "Puts a chair and a seated spectator target on every seat of the built bowl. Wire the Stand 3D Plus BRD output. The ports carry one merged preview mesh per tier so twenty thousand seats stay light; bake the component itself (right-click, Bake) to plant real block instances - one definition, one instance per seat - so the document stays light too. The spectator is a flat target whose eye mark sits exactly on the eye point the C-value analysis measures from.",
      "inputs": [
       {
@@ -11484,7 +11484,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-21",
+     "checked": "2026-10-24",
      "summary": "Pick an Antlion component and set every value it takes, with sensible defaults shown. For when you are not sure what to wire in.",
      "inputs": [],
      "outputs": [
@@ -11547,7 +11547,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-21",
+     "checked": "2026-10-24",
      "summary": "Checks the sightline over the row in front, row by row, and reports the C-value. Draws the sightlines and dimensions so you can see where the view fails.",
      "inputs": [
       {
@@ -12066,7 +12066,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-21",
+     "checked": "2026-10-24",
      "summary": "Paints every seat with its own C-value, measured in 3D from that seat's eye to its own focus. Wire the Stand 3D Plus BRD output. A railing or vomitory wall in front of a seat counts as the obstruction too; add Rail 3D RLD for the railings' exact built tops.",
      "inputs": [
       {
@@ -12724,7 +12724,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-21",
+     "checked": "2026-10-24",
      "summary": "Paints each tread band with the C-value of one representative section taken between two axes. One value per axis gap, so it is light enough to leave on while you tune the section. C-value Seat measures every seat instead - the two differ most on curves, where one section cannot stand for the whole band.",
      "inputs": [
       {
@@ -13439,7 +13439,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-21",
+     "checked": "2026-10-24",
      "summary": "Builds an explicit color legend for the C-value maps. Set the first number, the last number and the band size - the bands become <min, min to min+step, ... , >=max, each with its own color. Leave colors unwired for the built-in ramp, or supply your own (interpolated when fewer than the band count). Wire scheme into C-value Seat or C-value Tread; the map is then colored by these bands and C-value Map prints this legend on every sheet. Detail Mode on lists the two view-cut states (a seat row or a railing hiding the focal point, C<0) in their own colors; off folds them into the lowest band. It also carries the not-graded states - OPEN, FRONT, EMPTY and NA - as a fixed gray series, so every gray patch on the map is named on the sheet; the report output explains why each state appears and how to clear it. The component itself shows the legend on the canvas.",
      "inputs": [
       {
@@ -13730,7 +13730,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-21",
+     "checked": "2026-10-24",
      "summary": "Lays every axis section out on its own sheet so you can flip through them. One scale for the whole set, chosen so the largest section fits, and every section sits at the same place on its sheet.",
      "inputs": [
       {
@@ -13806,8 +13806,8 @@
        "access": "item",
        "optional": false,
        "dropdown": false,
-       "default": "50 mm / 2 in",
-       "desc": "Text height as drawn - the sheet scale is never applied to it (default 50 mm)",
+       "default": "0",
+       "desc": "Text height as drawn. 0 follows the sheet scale - 3 mm on paper at whatever scale the sheets come out; any other value is drawn exactly as typed, the sheet scale is never applied to it (default 0)",
        "flow": false,
        "type": null
       },
@@ -14329,7 +14329,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-21",
+     "checked": "2026-10-24",
      "summary": "Holds the sheet layout settings in one place - the paper size, how many sheets per row, the scale rounding, margins and the text style. Wire the SHD output into C-value Section Check, C-value Map and Seat Map so every sheet component lays out the same way from a single setup. Leave SHD unwired and each of them uses the defaults this component starts with. Where the sheets start is not part of it - each sheet component keeps its own Origin, so their sheets do not land on top of each other.",
      "inputs": [
       {
@@ -14565,7 +14565,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-21",
+     "checked": "2026-10-24",
      "summary": "A stack of sliders in one component — each row Dk drives output Rk. Zoom in to see the small + and - buttons: the ones beside the sliders add or remove rows, the ones on the right add or remove outputs. Double-click a row label to set the range all rows share, or double-click a value to type it. Saves wiring a dozen separate sliders into per-tier inputs.",
      "inputs": [],
      "outputs": [
@@ -14628,7 +14628,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-21",
+     "checked": "2026-10-24",
      "summary": "A stack of toggles in one component — each row Dk drives output Rk. Click a row to flip it. Zoom in to see the small + and - buttons: the ones beside the toggles add or remove rows, the ones on the right add or remove outputs. Saves wiring a dozen separate toggles into per-tier inputs.",
      "inputs": [],
      "outputs": [
@@ -14691,7 +14691,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-21",
+     "checked": "2026-10-24",
      "summary": "Lays the C-value map out flat - one sheet per tier, named TIER 1, TIER 2 and so on, with the seat layout drawing, the colored map and the tier's minimum, average and pass rate written top-left. In a bowl merged from several stands, tiers with the same tier label share one sheet named after it - by default that is the same tier number in each stand, or give Table Section tier_label values such as LOW. Wire the CMD output of C-value Seat for a seat map, or of C-value Tread for a tread map - one at a time.",
      "inputs": [
       {
@@ -15039,7 +15039,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-21",
+     "checked": "2026-10-24",
      "summary": "Holds the wire shut. Whatever changes upstream, nothing downstream recomputes until you press PASS - then the data at D goes through R once and stays there. Put it between the 2D bowl chain and the heavy 3D build or analysis components: edit the bowl lag-free, press to update. The Gate Switch component opens and closes every gate on the canvas at once. Reopening a file behaves like the moment it was saved: a gate that was holding data picks it up again on load (one full compute, like opening any normal file), and a gate that was empty stays shut.",
      "inputs": [
       {
@@ -15131,7 +15131,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-21",
+     "checked": "2026-10-24",
      "summary": "One switch for every Data Gate on the canvas - no wires needed. LIVE holds every gate open, so data flows as if PASS were held down and the whole chain stays current. HOLD closes them all again; each gate keeps the last data that went through. Keep a single switch per document.",
      "inputs": [],
      "outputs": [],
@@ -15164,7 +15164,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-21",
+     "checked": "2026-10-24",
      "summary": "Groups the seats into zones - the pieces left when the aisles, vomitories and cuts are taken out of the tier - and gives every seat a readable address like \"T1 05 S 25\": prefix and tier number, zone number counted around the bowl in the axis direction, then the seat number running from the lowest tread up. In a bowl merged from several stands, tiers with the same tier label - by default the same tier number in each stand - count as one tier: one number, one run of zones around the bowl, one sheet. Wheelchair units belong to their zone too, numbered \"W 1\", \"W 2\". Outputs the SMD bundle for Seat View and Seat 3D, a zone map laid out one sheet per tier, and flat tables ready for a spreadsheet. Wire the BRD output of Stand 3D Plus; wire SHD from Sheet Setup to place the sheets",
      "inputs": [
       {
@@ -15626,7 +15626,7 @@
      ],
      "group": "util",
      "page": "05-analysis-util",
-     "checked": "2026-10-21",
+     "checked": "2026-10-24",
      "summary": "Register your Antlion license key. Enter the key once — every definition on this computer is unlocked.",
      "inputs": [
       {
@@ -15774,7 +15774,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-21",
+     "checked": "2026-10-24",
      "summary": "Looks through a spectator's eyes. Wire the Seat Map SMD and pick a seat by tier, zone and seat number - or type its address like \"T1 05 S 25\" - press apply, and the perspective viewport jumps to that seat's analysis eye point looking at its own focal point - the same eye and focus the C-value map measures. Turn live on and the yaw and pitch sliders let you look around from the fixed eye point, so you can judge a vomitory rail or a cut-edge railing exactly as the seated spectator would see it.",
      "inputs": [
       {
@@ -16232,7 +16232,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-21",
+     "checked": "2026-10-24",
      "summary": "Tags every axis with its number — a guide line running out from each axis point into a circle holding the axis name (A0, A1, ...). The numbers are the same ones Cut and Opening Cut expect in Axis From / Opening From, so you can read them here and leave those heavy previews off.",
      "inputs": [
       {
@@ -16553,7 +16553,7 @@
      ],
      "group": "bowl-analysis",
      "page": "05-analysis-util",
-     "checked": "2026-10-21",
+     "checked": "2026-10-24",
      "summary": "Draws the optimum and maximum viewing distance circles for a sport and counts how many seats fall outside. Reference only — it never removes a seat; wire Limit Curves into Cut if you want it enforced.",
      "inputs": [
       {
@@ -16989,7 +16989,7 @@
      ],
      "group": "table",
      "page": "06-table",
-     "checked": "2026-10-21",
+     "checked": "2026-10-25",
      "summary": "Creates an .xlsx workbook you can fill in with Excel, with the input pages already laid out, and hands the reference to Table In and Table Out. Give the project folder, optionally a file name (the folder name is used when empty), and press Run - an existing file connects, a missing file is made there, and either way it opens in Excel. No internet or sign-in is needed, so this is the path that works on closed networks. The reference is saved with the Grasshopper file; because it is a file path, moving the workbook or the .gh means picking the file again. The 10-series pages are yours and are written only at creation; the 80-series pages belong to the plugin.",
      "inputs": [
       {
@@ -17053,7 +17053,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "Folder the workbook lives in (e.g. C:\\\\project). It must exist - it is not created for you. The file name comes from File Name, or from the folder name when File Name is empty",
+       "desc": "Full path of the folder the workbook lives in. It must exist - it is not created for you. The file name comes from File Name, or from the folder name when File Name is empty",
        "flow": false,
        "type": null
       },
@@ -17202,7 +17202,7 @@
         "ghType": "Text",
         "access": "item",
         "flow": false,
-        "blurb": "Folder the workbook lives in (e.g",
+        "blurb": "Full path of the folder the workbook lives in",
         "callX": 0,
         "callY": 288,
         "gripX": 434,
@@ -17283,7 +17283,7 @@
      ],
      "group": "table",
      "page": "06-table",
-     "checked": "2026-10-21",
+     "checked": "2026-10-25",
      "summary": "Creates a spreadsheet you can fill in by hand, with the input pages already laid out, and hands the reference to Table In and Table Out. Press Run once - the reference is saved with the Grasshopper file, so reopening it stays connected to the same workbook. After that you only edit the sheet and press Run on Table In; you do not need this component again. The 10-series pages are yours and are written only at creation; the 80-series pages belong to the plugin.",
      "inputs": [
       {
@@ -17605,7 +17605,7 @@
      ],
      "group": "table",
      "page": "06-table",
-     "checked": "2026-10-21",
+     "checked": "2026-10-25",
      "summary": "Reads the workbook's input pages and gives you the values to build from. Wire the workbook reference and press run. Values are looked up by column and key name, so inserting rows or reordering columns in the spreadsheet is safe. What was read is stored with the Grasshopper file, so the canvas keeps working without pressing run again.",
      "inputs": [
       {
@@ -17983,7 +17983,7 @@
      ],
      "group": "table",
      "page": "06-table",
-     "checked": "2026-10-21",
+     "checked": "2026-10-25",
      "summary": "Writes analysis results into the workbook's result pages. Wire the workbook reference and the result objects - section, analysis, seat map or C-value map - and press run. Each result type knows which page it belongs on. The plugin owns those pages and rewrites them whenever the results change - the same results are not sent twice to the same workbook unless you right-click and choose Send again. Copy rows into the input pages if you want to keep and edit them.",
      "inputs": [
       {
@@ -18524,7 +18524,7 @@
     "stages": [
      {
       "group": "bowl-section-1",
-      "label": "Plan & setup",
+      "label": "Plan",
       "col": 0,
       "row": 0,
       "aside": false
@@ -18538,14 +18538,14 @@
      },
      {
       "group": "bowl-section-3",
-      "label": "2D layout",
+      "label": "Seats",
       "col": 1,
       "row": 0,
       "aside": false
      },
      {
       "group": "bowl-section-4",
-      "label": "3D solids",
+      "label": "3D",
       "col": 2,
       "row": 0,
       "aside": false
@@ -18732,7 +18732,7 @@
      "nodes": [
       {
        "group": "bowl-section-1",
-       "label": "Plan & setup",
+       "label": "Plan",
        "aside": false,
        "x": 10,
        "y": 10,
@@ -18754,7 +18754,7 @@
       },
       {
        "group": "bowl-section-3",
-       "label": "2D layout",
+       "label": "Seats",
        "aside": false,
        "x": 302,
        "y": 10,
@@ -18765,7 +18765,7 @@
       },
       {
        "group": "bowl-section-4",
-       "label": "3D solids",
+       "label": "3D",
        "aside": false,
        "x": 594,
        "y": 10,
@@ -19686,7 +19686,7 @@
       "cid": "UTIL-004",
       "group": "bowl-section-4",
       "tier": "core",
-      "summary": "Assembles the final bowl plan before Stand 3D Plus: merges parallel seat layouts (tiers renumbered) with their stand solids, and previews the finished plan.",
+      "summary": "Assembles the final bowl plan before Stand 3D Plus: merges parallel seat layouts (tiers renumbered) with their stand solids - stands built from different sections can go in together - and previews the finished plan.",
       "in": [
        {
         "n": "Stand Bodies",
@@ -23477,7 +23477,7 @@
        "row": 2,
        "members": "Assemble Bowl",
        "tier": "core",
-       "summary": "Assembles the final bowl plan before Stand 3D Plus: merges parallel seat layouts (tiers renumbered) with their stand solids, and previews the...",
+       "summary": "Assembles the final bowl plan before Stand 3D Plus: merges parallel seat layouts (tiers renumbered) with their stand solids - stands built from...",
        "x": 1114,
        "y": 214,
        "icon": "/assets/img/antlion/icons/assemble-bowl.svg",
@@ -24694,7 +24694,7 @@
      ]
     }
    },
-   "version": "1.0.23"
+   "version": "1.1.0"
   }
  }
 }

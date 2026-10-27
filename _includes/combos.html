@@ -10,7 +10,7 @@
       <p class="combo-n">{{ r.note }}</p>
       <div class="combo-plate">
         <svg viewBox="0 0 {{ r.w }} {{ r.h }}" width="{{ r.w }}" height="{{ r.h }}"
-             role="img" aria-label="{{ r.label }} — {{ r.nodes | size }} components wired in order">
+             role="group" aria-label="{{ r.label }} — {{ r.nodes | size }} components wired in order">
           <g class="combo-wires">
             {%- for w in r.wires %}
             <path class="cw-{{ w.kind }}" d="{{ w.d }}"><title>{{ w.port }}</title></path>

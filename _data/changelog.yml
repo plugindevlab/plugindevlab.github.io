@@ -1,4 +1,76 @@
 antlion:
+  - version: "1.1.0"
+    date: "2026-10-27"
+    title: Help cards inside Grasshopper, and Antlion on Mac (beta)
+    body: |
+      **Added**
+
+      - **Mac (beta)** - Antlion now installs on Rhino 8 for Mac from the package manager, as the same
+        release as on Windows. It is new on Mac, so some things may not work yet - please report anything
+        that breaks. Getting started lists what is different on Mac.
+      - **Help cards** - Right-click any Antlion component and choose Antlion help - what to wire and why,
+        or open the Antlion menu at the top of the Grasshopper window. A card shows what the component does
+        and every input and output, most of them with a picture, and Next leads to the component that
+        usually follows.
+        Fold the card and a small Antlion logo stays on the canvas to open it again. Nothing is written
+        into your .gh file.
+      - **All components** - A file saved with a newer Antlion now says so when you open it, and names any
+        inputs this version does not have. If one of them was wired, an orange warning asks you to update
+        Antlion before saving, because saving with the older version drops those inputs for good.
+      - **Section Analysis**, **C-value Seat**, **C-value Tread**, **C-value Map** - The pass rate now names
+        its threshold, such as "pass at C ≥ 90 mm", so results read against different thresholds are not
+        mistaken for one another.
+      - **License** - When no key is registered yet, the message now also says where to start a trial or
+        buy a license.
+      - **Seat**, **Custom Seat**, **C-value Seat**, **C-value Map**, **C-value Section Check** - Recalculating
+        is faster. Results are unchanged.
+
+      **Fixed**
+
+      - **Auto Section** - Flip X folded the section drawing over to the other side of its axis line. It now
+        mirrors the drawing left to right, so it sits on the field side and its rows climb away from the
+        field. The stand itself is unchanged.
+      - **Section** - Tread lines baked from Auto Section with Flip X on were read the wrong way round. They
+        are now read as the mirrored drawing they are.
+      - **Section** - Tread Lines wired straight from Auto Section, one branch per tier, gave a note on every
+        tier and pulled the first row forward. All branches are now read together, the same as baked lines.
+      - **Vomitory** - With Align Tiers on, upper-tier vomitories where a straight side meets a corner could
+        sit up to about 0.9 m to the side of tier 1's axis line. They now line up with it again.
+      - **C-value Section Check** - Text Height defaulted to 50 mm, which is too small to read at most sheet
+        scales. It now defaults to 0, which sizes the labels to 3 mm on paper at the sheet scale. A value
+        you type is used as before.
+      - **Section Analysis**, **C-value Section Check** - A Dimension Style you wired was ignored, and the
+        dimensions always used the default style. They now use it, including its text, arrows and extension
+        lines.
+      - **C-value Section Check**, **C-value Map**, **Seat Map**, **View Axis** - Titles, legends, zone names
+        and View Axis labels came out one unit high in the Grasshopper output and when baked. They now keep
+        their height and alignment.
+      - **Axis** - A four-centre oval start line that is close to a circle, such as Startline Oval with its
+        default sizes, had its arcs merged and raised AX018 and AX028. Each arc now finds its own centre.
+      - **Custom Axis** - A short curve that only aims at the start line is allowed, so AC06 is now a white
+        note instead of an orange warning.
+      - **Opening Cut** - In EXTEND mode, Opening Rects outlined the uncut axis line, so refilled seats
+        looked as if they sat inside the opening. It now outlines the actual opening.
+      - **Cut** - A cut that removes the aisle at one end of a row now says so, with a white note when such
+        a run is longer than half of Max Seats Per Run.
+      - **Cut**, **Opening Cut** - Short runs left by a cut were looked for across a whole tier at once, so
+        some were missed and some longer runs were marked poor. Each row is now checked on its own.
+      - **Stand 3D Plus** - When one wheelchair deck piece could not join the stand as a closed solid, every
+        piece was left separate. Now only that piece stays separate, with an orange note.
+      - **Rail 3D** - With sections from Table Section and no railing values in the workbook, the message
+        said to wire Section Plus, which would set the railings back twice. It now points to the missing
+        workbook values.
+      - **C-value Seat** - With Rail 3D wired but no railings built, the message said Rail 3D was not
+        connected. It now says the railings were not built and points to Rail 3D's warning.
+      - **Workbook** - The 00_README steps for copying results back into the inputs left out the tier table,
+        which moved the upper tiers. The steps now include it, and the tier table now carries the wheelchair
+        row.
+      - **License** - An unusual reply from a company proxy or security device could remove a valid license
+        at once. It is now treated like a short connection problem.
+
+      Older files: an Auto Section with Flip X on shows its drawing in the new place, Vomitory with Align
+      Tiers on moves the vomitories where a straight side meets a corner, and C-value Section Check keeps
+      the Text Height it was saved with - set it to 0 to follow the sheet scale.
   - version: "1.0.23"
     date: "2026-10-21"
     title: Separate tread and riser thickness

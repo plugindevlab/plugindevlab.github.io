@@ -29,7 +29,7 @@ the two steps that make a report fixable.
 
 Found a bug, or something that does not behave the way the reference says it should?
 
-[**Report a problem →**](https://tally.so/r/MepAQM)
+[**Report a problem**](https://tally.so/r/MepAQM)
 
 **No account or sign-in is required.** The form asks what you saw and how to reproduce it.
 

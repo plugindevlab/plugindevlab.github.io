@@ -156,7 +156,7 @@ you to accept it. How we handle personal data is set out in our [privacy policy]
 
 Found a bug, or something that does not behave the way the reference says it should?
 
-[**Report a problem →**](https://tally.so/r/MepAQM)
+[**Report a problem**](https://tally.so/r/MepAQM)
 
 **No account or sign-in is required.** The form asks what you saw and how to reproduce it.
 The quickest way in is from Grasshopper: right-click <strong translate="no">License</strong> →

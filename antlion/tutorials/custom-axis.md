@@ -83,13 +83,13 @@ not distance.** The curve is extended straight along its own tangent; if that ex
   ghost axes. **Direct crossing = explicit intent; extension = inference.** If you want
   a through-axis, actually draw the curve through.
 - The fact that extension was used at all is noted as `AC11` in the `Debug` output. A gap
-  over 1 mm also raises the orange `AC06` balloon (§5).
+  over 1 mm also raises the white `AC06` balloon (§5).
 - **A closed axis curve that doesn't touch the start line** cannot be extended, so it
   is treated as foreign and skipped (`AC12`).
 
 ## 5. Rule ④ — a large AC06 gap means "that's not an axis, that's debris"
 
-When the extension distance exceeds 1 mm, the orange warning `AC06` appears:
+When the extension distance exceeds 1 mm, the white note `AC06` appears:
 
 ```
 N/M axis curves stop short of the start line - extended along their own
@@ -151,7 +151,7 @@ happened raise **no balloon** — they appear as codes in the component's `Debug
 - `AC15` (red) — fewer than 3 distinct axis points on a closed start line.
 - `AC12` (orange) — some curves skipped. Reasons: `null` (empty entries) ·
   `does not point at the start line` (§4) · `crosses the start line only in plan` (height differs, §4) · `degenerate direction` · `zero-length curve`.
-- `AC06` (orange) — extension beyond 1 mm; reports the max gap and the axis numbers (§5).
+- `AC06` (white) — extension beyond 1 mm; reports the max gap and the axis numbers (§5).
 - `AC09` (orange) — two axis points within 1 mm. Both are kept; check the numbering.
 - `AC17` (orange) — an axis curve lies almost along the start line; the start-line normal is used (§6).
 - `AC18` (white, or orange with no field wired) — outward could not be worked out; the drawn direction is kept (§6).

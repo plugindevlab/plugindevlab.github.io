@@ -15,13 +15,17 @@
   release_code: antlion/phase2_csharp/Contract antlion/phase2_csharp/Logic antlion/phase2_csharp/Shell
   release_version: antlion/phase2_csharp/Shell/Shell.csproj
   release_tag: yak/
+  runs_on: Rhino 8 for Windows, and for Mac (beta), with Grasshopper
+  units: Millimeter and inch documents
+  release_records: antlion/phase2_csharp/yak/shipped
+  units_source: antlion/phase2_csharp/Shell/Diag.cs
   flow:
     spine:
-      - { group: bowl-section-1, label: "Plan & setup", col: 0, row: 0 }
-      - { group: bowl-section-2, label: "Section",      col: 0, row: 1 }
-      - { group: bowl-section-3, label: "2D layout",    col: 1, row: 0 }
-      - { group: bowl-section-4, label: "3D solids",    col: 2, row: 0 }
-      - { group: bowl-analysis,  label: "Analysis",     col: 3, row: 0 }
+      - { group: bowl-section-1, label: "Plan",     col: 0, row: 0 }
+      - { group: bowl-section-2, label: "Section",  col: 0, row: 1 }
+      - { group: bowl-section-3, label: "Seats",    col: 1, row: 0 }
+      - { group: bowl-section-4, label: "3D",       col: 2, row: 0 }
+      - { group: bowl-analysis,  label: "Analysis", col: 3, row: 0 }
     aside:
       - { group: table, label: "Tables", col: 0, row: 2 }
       - { group: util,  label: "Tools",  col: 3, row: 2 }

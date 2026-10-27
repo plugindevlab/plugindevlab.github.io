@@ -1,7 +1,7 @@
 {%- assign n = include.items | size -%}
-<figure class="fig carousel" role="group" aria-roledescription="carousel" aria-label="{{ include.label }}"{% if include.ratio %} style="--car-ar: {{ include.ratio }}"{% endif %}>
+<div class="car-group" role="group" aria-roledescription="carousel" aria-label="{{ include.label }}"><figure class="fig carousel"{% if include.ratio %} style="--car-ar: {{ include.ratio }}"{% endif %}>
 {%- for s in include.items %}
-<input type="radio" class="car-pick" name="car-{{ include.id }}" id="car-{{ include.id }}-{{ forloop.index }}" aria-label="Image {{ forloop.index }} of {{ n }}"{% if forloop.first %} checked{% endif %}>{% endfor %}
+<input type="radio" class="car-pick" name="car-{{ include.id }}" id="car-{{ include.id }}-{{ forloop.index }}" aria-label="{% if s.cap and s.cap != "" %}{{ s.cap | strip_html | escape }} — {% endif %}image {{ forloop.index }} of {{ n }}"{% if forloop.first %} checked{% endif %}>{% endfor %}
 <div class="car-frame">
 <div class="car-slides">
 {%- for s in include.items %}
@@ -22,4 +22,4 @@
 <figcaption class="car-caps">{% for s in include.items %}<span>{{ s.cap }}</span>{% endfor %}</figcaption>
 {%- elsif include.caption %}
 <figcaption>{{ include.caption }}</figcaption>{% endif %}
-</figure>
+</figure></div>

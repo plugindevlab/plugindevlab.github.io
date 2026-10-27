@@ -43,13 +43,23 @@ Right-click <span translate="no">License</span> to open your customer portal
 
 ## What you need
 
-- **Rhino 8 for Windows**, with Grasshopper. Antlion is Windows-only for now.
+- **Rhino 8** for Windows or Mac, with Grasshopper. The Mac version is a beta - see [Mac (beta)](#mac-beta) below.
 - **Rhino running on .NET Core** — the current default. If Rhino was switched to .NET
   Framework mode for some other plugin, Antlion does not load at all and the tab never
   appears. Run `SetDotNetRuntime` in Rhino to check it, switch back, and restart.
 - **Millimeter or inch documents** — both work.
 - **An internet connection when you register.** After that Antlion checks in quietly in the
   background and rides out short network outages.
+
+### Mac (beta)
+
+Antlion runs on Rhino 8 for Mac from 1.1.0. It is the same plugin, with a few differences:
+
+- **Help cards** open in a standard Mac window instead of the floating card on the canvas. Move it by its title bar and resize it from its edges.
+- **Excel Workbook** - close the workbook in Excel before you press Run. Writing into a workbook that is open in Excel works on Windows only.
+- **Google Workbook** - you sign in to Google again each time you start Rhino.
+
+Something not working on Mac? Right-click the **License** component and choose **Report a problem** - it attaches your Rhino and macOS versions.
 
 ## Install
 
@@ -101,7 +111,7 @@ Customer portal: [polar.sh/plugindevlab/portal](https://polar.sh/plugindevlab/po
 
 That unlocks **every definition on this computer** — it is not something you repeat per file.
 
-Registering sends your computer name, your Windows user name and the date to Polar, so that you
+Registering sends your computer name, your user name on that computer and the date to Polar, so that you
 can tell your machines apart in the customer portal. Nothing from your models is sent — see the
 [privacy policy](../../privacy/index.md).
 

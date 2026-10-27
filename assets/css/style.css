@@ -65,6 +65,8 @@ body {
 a { color: var(--accent); text-underline-offset: .18em; }
 a:hover { text-decoration: none; }
 
+.vh { position: absolute !important; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0; }
+
 .skip { position: absolute; left: -999px; background: var(--bg); padding: .5rem .75rem; z-index: 10; }
 .skip:focus { left: .5rem; top: .5rem; }
 
@@ -86,12 +88,13 @@ a:hover { text-decoration: none; }
 .product-nav a:hover { color: var(--ink); }
 .product-nav .product-home { color: var(--ink); font-weight: 600; }
 .product-nav .here { color: var(--accent); }
+.product-nav .here { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: .45em; }
 
 .content { max-width: var(--wide); margin: 0 auto; padding: 4rem var(--pad) 6rem; }
 .content > * { max-width: var(--measure); }
 .content > .full, .content > .split, .content > .grid, .content > .map-wrap,
 .content > .combos, .content > .map-note, .content > .rib-wrap,
-.content > .fm-wrap, .content > .fm-key, .content > .roadmap, .content > .tuts,
+.content > .fm-wrap, .content > .fm-key, .content > .roadmap, .content > .tuts, .content > .car-group,
 .content > section, .content > table, .content > pre, .content > figure { max-width: none; }
 
 h1 {
@@ -105,15 +108,15 @@ h2 {
 h3 { font-size: 1.075rem; font-weight: 600; margin: 2.4rem 0 .5rem; }
 h1 + p, h2 + p, h3 + p { margin-top: 0; }
 
-h1 + p { font-size: 1.2rem; line-height: 1.6; color: var(--ink-soft); font-weight: 300; }
+h1 + p { font-size: 1.2rem; line-height: 1.6; color: var(--ink-soft); font-weight: 400; }
 
 p, ul, ol { margin: 0 0 1.15rem; }
 li { margin: .3rem 0; }
 strong { font-weight: 600; }
 
 .label {
-  font-size: .72rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
-  color: var(--ink-faint); margin: 0 0 .7rem;
+  font-size: var(--t1); font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--soft); margin: 0 0 .7rem;
 }
 
 blockquote {
@@ -156,7 +159,7 @@ figure.fig figcaption {
 .fig-wait {
   aspect-ratio: 3 / 2; border: 1px solid var(--rule); background: var(--bg-soft);
   display: flex; align-items: center; justify-content: center;
-  font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-faint);
+  font-size: var(--t1); letter-spacing: .14em; text-transform: uppercase; color: var(--soft);
 }
 
 .carousel { position: relative; --car-gut: 44px; }
@@ -286,9 +289,9 @@ figure.fig figcaption {
 .tut-ch a:hover { color: var(--accent); }
 .tut-ch .at {
   display: inline-block; min-width: 3.2em; margin-right: .5em;
-  font-variant-numeric: tabular-nums; color: var(--ink-faint);
+  font-variant-numeric: tabular-nums; color: var(--soft);
 }
-.tut-fine { font-size: .82rem; color: var(--ink-faint); max-width: var(--measure); }
+.tut-fine { font-size: .82rem; color: var(--soft); max-width: var(--measure); }
 @media (max-width: 46rem) {
   .tut { grid-template-columns: minmax(0, 1fr); gap: var(--sp4); }
 }
@@ -298,7 +301,7 @@ figure.fig figcaption {
 .rm-v { background: var(--panel); border: 1px solid var(--line); padding: var(--sp4) var(--sp5) var(--sp5); }
 .rm-v.is-now { border-color: var(--frame); }
 .rm-head { display: flex; align-items: center; gap: var(--sp3); margin: 0 0 var(--sp3); }
-.rm-when { font-size: var(--t1); font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--faint); }
+.rm-when { font-size: var(--t1); font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--soft); }
 .rm-v h3 { margin: 0 0 var(--sp2); font-size: var(--t4); font-weight: 400; }
 .rm-v ul { margin: 0; padding-left: 1.1em; font-size: .95rem; line-height: 1.5; color: var(--soft); }
 .rm-v li { margin: var(--sp1) 0; }
@@ -329,7 +332,7 @@ figure.fig figcaption {
 .foot-links { display: flex; flex-wrap: wrap; gap: .3rem 1.5rem; margin: 0 0 1rem; }
 .foot-links a { text-decoration: none; }
 .foot-links a:hover { text-decoration: underline; }
-.site-foot .mark { font-family: var(--font-mono); color: var(--ink-faint); margin: 0; }
+.site-foot .mark { font-family: var(--font-mono); color: var(--soft); margin: 0; }
 
 @media (max-width: 46rem) {
   :root { --rhythm: 3.25rem; }
@@ -346,7 +349,7 @@ figure.fig figcaption {
 .map-aside { fill: none; stroke-dasharray: 3 3; }
 
 .map text { font-family: var(--font-body); fill: var(--ink); }
-.map-n { font-size: 12px; font-weight: 600; letter-spacing: .14em; fill: var(--ink-faint); }
+.map-n { font-size: 12px; font-weight: 600; letter-spacing: .14em; fill: var(--soft); }
 .map-t { font-size: 17px; font-weight: 400; }
 .map-c { font-size: 12px; fill: var(--ink-soft); }
 .map a { text-decoration: none; }
@@ -371,9 +374,9 @@ figure.fig figcaption {
 .rib-call rect { fill: var(--panel); stroke: var(--line); stroke-width: .5; }
 .rib-call .rib-call-top { fill: var(--accent); stroke: none; }
 .rib-name { font: 600 15px/1 var(--font-body); fill: var(--ink); }
-.rib-count { font: 400 11.5px/1 var(--font-mono); fill: var(--faint); letter-spacing: .02em; }
+.rib-count { font: 400 12px/1 var(--font-mono); fill: var(--soft); letter-spacing: .02em; }
 
-.comp-list { font-size: .92rem; line-height: 2; color: var(--ink-faint); }
+.comp-list { font-size: .92rem; line-height: 2; color: var(--soft); }
 .comp-list a { text-decoration: none; color: var(--ink-soft); border-bottom: 1px solid var(--rule); }
 .comp-list a:hover { color: var(--accent); border-bottom-color: currentColor; }
 
@@ -393,7 +396,7 @@ figure.fig figcaption {
 .side { padding: 0 0 var(--sp8); position: sticky; top: 0; align-self: start; max-height: 100vh; overflow-y: auto; }
 .side h2 {
   font: 600 var(--t1)/1 var(--font-mono); letter-spacing: .14em; text-transform: uppercase;
-  color: var(--faint); margin: 0 0 var(--sp3); padding: 0; border: 0;
+  color: var(--soft); margin: 0 0 var(--sp3); padding: 0; border: 0;
 }
 .side-panel > summary {
   display: none; list-style: none; cursor: pointer; min-height: 44px;
@@ -401,7 +404,7 @@ figure.fig figcaption {
   font: 600 var(--t2)/1 var(--font-body); color: var(--ink);
 }
 .side-panel > summary::-webkit-details-marker { display: none; }
-.side-panel > summary::after { content: "▾"; color: var(--faint); font-size: var(--t2); }
+.side-panel > summary::after { content: "▾"; color: var(--soft); font-size: var(--t2); }
 .side-panel[open] > summary::after { content: "▴"; }
 
 .side-in details { border-top: .5px solid var(--line); }
@@ -413,10 +416,10 @@ figure.fig figcaption {
 }
 .side-in summary::-webkit-details-marker { display: none; }
 .side-in summary i {
-  font-style: normal; font: 400 var(--t1)/1 var(--font-mono); color: var(--faint);
+  font-style: normal; font: 400 var(--t1)/1 var(--font-mono); color: var(--soft);
   font-variant-numeric: tabular-nums;
 }
-.side-in summary::after { content: "+"; font: 400 var(--t2)/1 var(--font-mono); color: var(--faint); }
+.side-in summary::after { content: "+"; font: 400 var(--t2)/1 var(--font-mono); color: var(--soft); }
 .side-in details[open] summary::after { content: "–"; }
 .side-in ul { margin: 0 0 var(--sp2); padding: 0 0 0 var(--sp3); list-style: none; }
 .side-in li { margin: 0; }
@@ -437,7 +440,7 @@ figure.fig figcaption {
 .rel > summary::-webkit-details-marker { display: none; }
 .rel > summary::after {
   content: "+"; margin-left: auto; padding-left: var(--sp3);
-  font: 400 var(--t3)/1 var(--font-mono); color: var(--faint);
+  font: 400 var(--t3)/1 var(--font-mono); color: var(--soft);
 }
 .rel[open] > summary::after { content: "–"; }
 .rel-v {
@@ -448,7 +451,7 @@ figure.fig figcaption {
 .rel > summary:hover .rel-t { color: var(--accent); }
 .rel-body { padding: 0 0 var(--sp5) calc(var(--sp9) + var(--sp4)); }
 .rel-body > :last-child { margin-bottom: 0; }
-.rel-date { font: 400 var(--t2)/1.4 var(--font-mono); color: var(--faint); margin: 0 0 var(--sp3); }
+.rel-date { font: 400 var(--t2)/1.4 var(--font-mono); color: var(--soft); margin: 0 0 var(--sp3); }
 @media (max-width: 40rem) {
   .rel-v { min-width: var(--sp8); }
   .rel-body { padding-left: 0; }
@@ -473,40 +476,40 @@ figure.fig figcaption {
 
 .sheet .crumb {
   font: 600 var(--t1)/1 var(--font-mono); letter-spacing: .16em; text-transform: uppercase;
-  color: var(--faint); display: flex; gap: var(--sp2); align-items: center; flex-wrap: wrap;
+  color: var(--soft); display: flex; gap: var(--sp2); align-items: center; flex-wrap: wrap;
   margin: 0;
 }
-.sheet .crumb a { color: var(--faint); text-decoration: none; transition: color 120ms ease; }
+.sheet .crumb a { color: var(--soft); text-decoration: none; transition: color 120ms ease; }
 
 .sheet h1 {
   font-size: var(--t6); font-weight: 300; letter-spacing: -.022em; line-height: 1.05;
   margin: var(--sp4) 0 var(--sp1); text-wrap: balance;
 }
 .sheet .nick {
-  font: 400 var(--t4)/1 var(--font-mono); color: var(--faint); margin-left: var(--sp2);
+  font: 400 var(--t4)/1 var(--font-mono); color: var(--soft); margin-left: var(--sp2);
   letter-spacing: -.01em; font-variant-numeric: tabular-nums;
 }
 .sheet .lede {
-  font-size: var(--t4); line-height: 1.5; font-weight: 300; color: var(--soft);
+  font-size: var(--t4); line-height: 1.5; font-weight: 400; color: var(--soft);
   max-width: 46ch; margin: var(--sp3) 0 0; text-wrap: pretty;
 }
 
 .stages { display: flex; gap: 2px; margin: var(--sp6) 0 0; max-width: 640px; }
 .stages div {
   flex: 1; padding: var(--sp2) 0 0; border-top: 5px solid var(--st, var(--line));
-  font: 600 9.5px/1.35 var(--font-mono); letter-spacing: .09em; text-transform: uppercase;
-  color: var(--faint); font-variant-numeric: tabular-nums;
+  font: 600 var(--t1)/1.35 var(--font-mono); letter-spacing: .09em; text-transform: uppercase;
+  color: var(--soft); font-variant-numeric: tabular-nums;
 }
 .stages div b {
   display: block; font: 400 var(--t2)/1.4 var(--font-body); letter-spacing: 0;
-  text-transform: none; color: var(--faint);
+  text-transform: none; color: var(--soft);
 }
 .stages div.here, .stages div.here b { color: var(--ink); }
 .stages div.here b { font-weight: 600; }
 
 .tags { display: flex; flex-wrap: wrap; gap: var(--sp1); margin: var(--sp5) 0 0; }
 .tag {
-  font: 600 10.5px/1 var(--font-mono); letter-spacing: .1em; text-transform: uppercase;
+  font: 600 var(--t1)/1 var(--font-mono); letter-spacing: .1em; text-transform: uppercase;
   padding: .42em .62em; border: .5px solid var(--line); color: var(--soft); border-radius: 2px;
 }
 .tag.on { border-color: var(--tier, var(--accent)); background: var(--tier, var(--accent)); color: var(--panel); }
@@ -516,10 +519,11 @@ figure.fig figcaption {
   border-top: .5px solid var(--line); border-bottom: .5px solid var(--line);
   background: var(--plate); overflow-x: auto;
 }
+.plate:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
 .plate-h { display: flex; justify-content: space-between; align-items: baseline; margin: 0 0 var(--sp4); gap: var(--sp4); }
 .plate-h b {
   font: 600 var(--t1)/1 var(--font-mono); letter-spacing: .16em; text-transform: uppercase;
-  color: var(--faint);
+  color: var(--soft);
 }
 .diagram { position: relative; margin-left: auto; margin-right: auto; }
 .diagram svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
@@ -533,8 +537,8 @@ figure.fig figcaption {
 .call.in { text-align: right; align-items: flex-end; }
 .call > * { max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .call b { font: 600 12px/1.2 var(--font-body); }
-.call b i { font-style: normal; font-family: var(--font-mono); color: var(--faint); font-weight: 400; }
-.call span { font: 400 10.5px/1.2 var(--font-mono); color: var(--faint); letter-spacing: .02em; }
+.call b i { font-style: normal; font-family: var(--font-mono); color: var(--soft); font-weight: 400; }
+.call span { font: 400 10.5px/1.2 var(--font-mono); color: var(--soft); letter-spacing: .02em; }
 .call em {
   font: 400 11px/1.35 var(--font-body); font-style: normal; color: var(--soft);
   white-space: normal; display: -webkit-box; -webkit-box-orient: vertical;
@@ -548,20 +552,20 @@ figure.fig figcaption {
 }
 .capsule-img { position: absolute; display: block; image-rendering: auto; }
 .capsule p {
-  font: 600 10.5px/1.7 var(--font-mono); letter-spacing: .14em; text-transform: uppercase;
-  color: var(--faint); margin: 0;
+  font: 600 var(--t1)/1.7 var(--font-mono); letter-spacing: .14em; text-transform: uppercase;
+  color: var(--soft); margin: 0;
 }
 .capsule p em {
-  font-style: normal; display: block; font-size: 9.5px; letter-spacing: .08em;
-  text-transform: none; color: var(--faint); opacity: .75;
+  font-style: normal; display: block; font-size: 12px; letter-spacing: .08em;
+  text-transform: none; color: var(--soft);
 }
-.plate-n { font: 400 var(--t2)/1.5 var(--font-mono); color: var(--faint); margin: var(--sp4) 0 0; max-width: none; }
+.plate-n { font: 400 var(--t2)/1.5 var(--font-mono); color: var(--soft); margin: var(--sp4) 0 0; max-width: none; }
 
 .sheet .body { padding: 0 var(--sp7) var(--sp7); display: grid; grid-template-columns: minmax(0, 1fr) 268px; gap: 0 var(--sp7); }
 .sheet .body > * { grid-column: 1; }
 .sheet .body h2 {
   font: 600 12px/1 var(--font-mono); letter-spacing: .16em; text-transform: uppercase;
-  color: var(--faint); margin: var(--sp7) 0 var(--sp3); padding-top: var(--sp4);
+  color: var(--soft); margin: var(--sp7) 0 var(--sp3); padding-top: var(--sp4);
   border-top: .5px solid var(--line);
 }
 .sheet .body p { margin: 0 0 var(--sp4); max-width: var(--measure); text-wrap: pretty; }
@@ -573,14 +577,14 @@ figure.fig figcaption {
 }
 .ports li:first-child { border-top: .5px solid var(--line); }
 .ports b { font: 600 var(--t2)/1.4 var(--font-body); }
-.ports code { font: 400 11px/1.4 var(--font-mono); color: var(--soft); background: none; padding: 0; }
-.ports li.chain code { color: var(--s3); font-weight: 600; }
+.ports code { font: 400 12px/1.4 var(--font-mono); color: var(--soft); background: none; padding: 0; }
+.ports li.chain code { color: var(--s4); font-weight: 600; }
 .ports li.chain {
   margin-left: calc(-1 * (var(--sp4) + .5px)); margin-right: calc(-1 * (var(--sp4) + .5px));
   padding-left: var(--sp4); padding-right: var(--sp4);
 }
-.ports span, .ports .sum { font-size: 13.5px; color: var(--soft); line-height: 1.5; }
-.ports span em { font-style: normal; color: var(--faint); }
+.ports span, .ports .sum { font-size: var(--t2); color: var(--soft); line-height: 1.5; }
+.ports span em { font-style: normal; color: var(--soft); }
 
 .warn { margin: 0; padding: 0; list-style: none; }
 .warn li {
@@ -593,19 +597,19 @@ figure.fig figcaption {
 .chain { border: .5px solid var(--line); padding: var(--sp4) var(--sp4) var(--sp1); background: var(--plate); }
 .chain h3 {
   font: 600 var(--t1)/1 var(--font-mono); letter-spacing: .16em; text-transform: uppercase;
-  color: var(--faint); margin: 0 0 var(--sp3);
+  color: var(--soft); margin: 0 0 var(--sp3);
 }
 .chain a, .chain .self {
-  display: block; text-decoration: none; color: var(--ink); font-size: 13.5px;
+  display: block; text-decoration: none; color: var(--ink); font-size: var(--t2);
   padding: var(--sp2) 0; border-bottom: .5px solid var(--line); min-height: 32px;
   transition: color 120ms ease;
 }
 .chain .self { font-weight: 400; color: var(--soft); }
 .chain a:last-child, .chain .self:last-child { border-bottom: 0; }
-.chain a em, .chain .self em { font-style: normal; display: block; font: 400 10.5px/1.5 var(--font-mono); color: var(--faint); }
-.chain .self em { font-family: var(--font-body); font-size: 11.5px; }
+.chain a em, .chain .self em { font-style: normal; display: block; font: 400 12px/1.5 var(--font-mono); color: var(--soft); }
+.chain .self em { font-family: var(--font-body); font-size: 12px; }
 .chain .dir {
-  font: 600 10.5px/1 var(--font-mono); color: var(--accent); letter-spacing: .1em;
+  font: 600 var(--t1)/1 var(--font-mono); color: var(--accent); letter-spacing: .1em;
 }
 .sheet .body .chain .dir { margin: var(--sp5) 0 var(--sp1); max-width: none; }
 .sheet .body .chain h3 + .dir { margin-top: 0; }
@@ -617,7 +621,7 @@ figure.fig figcaption {
 .title-block div { padding: var(--sp3) var(--sp4) var(--sp4); border-right: .5px solid var(--field-line); }
 .title-block div:last-child { border-right: 0; }
 .title-block dt {
-  font: 600 9.5px/1 var(--font-mono); letter-spacing: .14em; text-transform: uppercase;
+  font: 600 var(--t1)/1 var(--font-mono); letter-spacing: .14em; text-transform: uppercase;
   color: var(--on-field-soft); margin: 0 0 var(--sp1);
 }
 .title-block dd {
@@ -667,10 +671,10 @@ figure.fig figcaption {
 .combo > summary::-webkit-details-marker { display: none; }
 .combo > summary b { font-size: 1.0625rem; font-weight: 600; }
 .combo > summary i {
-  font-style: normal; font: 400 .78rem/1 var(--font-mono); color: var(--ink-faint);
+  font-style: normal; font: 400 .78rem/1 var(--font-mono); color: var(--soft);
   font-variant-numeric: tabular-nums; white-space: nowrap;
 }
-.combo > summary::after { content: "+"; font: 400 1rem/1 var(--font-mono); color: var(--ink-faint); }
+.combo > summary::after { content: "+"; font: 400 1rem/1 var(--font-mono); color: var(--soft); }
 .combo[open] > summary::after { content: "–"; }
 .combo-in { padding: 0 0 1.6rem; }
 .combo-n { font-size: .95rem; line-height: 1.65; color: var(--ink-soft); margin: 0 0 1rem; max-width: var(--measure); }

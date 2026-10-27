@@ -40,9 +40,10 @@
     <a class="wordmark" href="{{ '/' | relative_url }}" translate="no">plugin<span>.</span>dev<span>.</span>lab</a>
     {%- if prod %}
     <nav class="product-nav" aria-label="{{ prod.name }}">
-      <a class="product-home{% if page.url == '/' | append: prod.slug | append: '/' %} here{% endif %}" href="/{{ prod.slug }}/" translate="no">{{ prod.name }}</a>
+      {%- assign prod_home = '/' | append: prod.slug | append: '/' %}
+      <a class="product-home{% if page.url == prod_home %} here{% endif %}"{% if page.url == prod_home %} aria-current="page"{% endif %} href="/{{ prod.slug }}/" translate="no">{{ prod.name }}</a>
       {%- for item in prod.nav %}
-      <a{% if page.url contains item.url %} class="here"{% endif %} href="{{ item.url | relative_url }}">{{ item.label }}</a>
+      <a{% if page.url contains item.url %} class="here" aria-current="{% if page.url == item.url %}page{% else %}true{% endif %}"{% endif %} href="{{ item.url | relative_url }}">{{ item.label }}</a>
       {%- endfor %}
     </nav>
     {%- endif %}
