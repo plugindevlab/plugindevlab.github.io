@@ -1,7 +1,7 @@
 ---
 title: Privacy policy
 description: What personal data plugin.dev.lab processes, why, where it goes, and your rights.
-effective: "2026-10-11"
+effective: "2026-10-27"
 ---
 
 # Privacy policy
@@ -9,7 +9,7 @@ effective: "2026-10-11"
 <p class="legal-meta">Plugin Dev Lab ("we", "us") — operating as <strong>plugin.dev.lab</strong><br>
 Contact: <strong>founder@plugindevlab.com</strong><br>
 Published at: {{ page.url | absolute_url }}<br>
-Version 1.5 — effective {{ page.effective }}</p>
+Version 1.6 — effective {{ page.effective }}</p>
 
 <nav class="legal-toc" aria-label="Contents" markdown="0"><p class="label">Contents</p><ul>
 <li><a href="#1-who-we-are-and-the-short-version">1. Who we are, and the short version</a></li>
@@ -59,7 +59,7 @@ happen, do not register a licence key.
 If you report a problem through our form, we receive what you choose to submit: a description,
 optional contact e-mail, and any file you attach. When you open the form from inside the
 plug-in (the **Report a problem** menu), it also fills in technical details for you: the plug-in
-version and build, your Rhino and Windows versions, the unit system of the open document, the
+version and build, your Rhino and operating-system versions, the unit system of the open document, the
 last six characters of your licence key, and the most recent error message — which can include
 file paths on your computer. The form is hosted by **Tally**. Giving an e-mail address is
 optional — without it we simply cannot reply to you.
@@ -101,8 +101,9 @@ choose to use it:
 - we request the **narrowest available scope** (`drive.file`) — access is limited to files the
   component creates or that you explicitly pick, and we deliberately do not request the broader
   spreadsheets permission;
-- the resulting token is stored **on your computer**, encrypted with Windows DPAPI, and is never
-  transmitted to us;
+- the resulting token stays **on your computer** and is never transmitted to us. On Windows it
+  is stored encrypted with Windows DPAPI; on macOS it is kept in memory only and never written
+  to disk, so you sign in again each time you start Rhino;
 - **we receive nothing** from this feature, including the contents of your spreadsheets.
 
 You can revoke this access at any time in your Google account settings.
@@ -176,7 +177,7 @@ in your Google account.
 Access to each processor's dashboard is limited to accounts under our sole control. The Google
 account that holds the student-verification records and sends our e-mails is protected by
 two-factor authentication. Locally, the Google authorisation token is encrypted with
-Windows DPAPI. Because we operate no servers and hold no database of our own, there is no
+Windows DPAPI on Windows and is not written to disk at all on macOS. Because we operate no servers and hold no database of our own, there is no
 separate store of customer data for us to lose.
 
 ## 9. Children
