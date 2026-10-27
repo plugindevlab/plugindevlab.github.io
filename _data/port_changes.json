@@ -107,53 +107,6 @@
     ]
    },
    {
-    "version": "1.0.13",
-    "groups": [
-     {
-      "comps": [
-       {
-        "name": "Section Analysis",
-        "slug": "section-analysis"
-       }
-      ],
-      "was": "Section analysis",
-      "changes": [
-       {
-        "kind": "ren",
-        "side": "input",
-        "ports": [
-         "C-value Mode"
-        ],
-        "was": [
-         "C-Value Mode"
-        ]
-       }
-      ]
-     },
-     {
-      "comps": [
-       {
-        "name": "Table In",
-        "slug": "table-in"
-       }
-      ],
-      "was": null,
-      "changes": [
-       {
-        "kind": "ren",
-        "side": "output",
-        "ports": [
-         "C-value Mode"
-        ],
-        "was": [
-         "C-Value Mode"
-        ]
-       }
-      ]
-     }
-    ]
-   },
-   {
     "version": "1.0.6",
     "groups": [
      {

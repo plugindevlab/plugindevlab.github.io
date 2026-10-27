@@ -19,6 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3"
@@ -26,6 +28,8 @@ jobs:
       - run: bundle exec jekyll build -d _site
         env:
           JEKYLL_ENV: production
+      - run: python3 .github/scripts/llms_twins.py --selftest
+      - run: python3 .github/scripts/llms_twins.py _site --repo .
       - uses: actions/upload-pages-artifact@v3
 
   deploy:
