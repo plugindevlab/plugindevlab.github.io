@@ -1,41 +1,32 @@
 ---
 title: plugin.dev.lab
 description: Design-workflow plugins for Rhino and Grasshopper — automate the workflow, keep the design yours.
+layout: a
+bare: true
 ---
 
-<p class="label">Rhino · Grasshopper</p>
-
-# Automate the workflow, keep the design yours.
-
-Design-workflow plugins for Rhino and Grasshopper. Each one takes a job that eats days of
-an architect's time and makes it a chain you can keep editing — not a black box that hands
-back a result you cannot argue with.
-
+<section class="a-house" aria-labelledby="house-h"><div class="a-wrap">
+<h1 id="house-h">Automate the workflow, keep the design yours.</h1>
+<p class="a-lead">Plugin Dev Lab makes design-workflow plugins for Rhino and Grasshopper.</p>
 <h2 class="vh">Products</h2>
-<div class="grid" markdown="0">
 {%- for p in site.data.products %}
-  <div class="card">
-    {%- if p.image %}
-    <img src="{{ p.image | relative_url }}" alt="{{ p.image_alt }}" loading="lazy">
-    {%- else %}
-    <div class="fig-wait">Image to come</div>
-    {%- endif %}
-    <h3>{% if p.status == "shipped" %}<a href="/{{ p.slug }}/">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</h3>
-    <p>{{ p.tagline }}</p>
-    {%- if p.status == "shipped" %}
-    <p><a href="/{{ p.slug }}/workflow/">Workflow</a> · <a href="/{{ p.slug }}/components/">Components</a> · <a href="/{{ p.slug }}/changelog/">Changelog</a></p>
-    {%- else %}
-    <p class="label">In development</p>
-    {%- endif %}
-  </div>
-{%- endfor %}
+{%- assign rel = site.data.changelog[p.slug] | first %}
+<article class="a-card" aria-labelledby="card-{{ p.slug }}">
+{%- if p.card_pic %}
+{% include pic.html key=p.card_pic dark=p.card_pic_dark alt=p.card_pic_alt sizes="(min-width: 1200px) 640px, (min-width: 761px) 55vw, 100vw" %}
+{%- endif %}
+<div class="a-card-body">
+<h2 id="card-{{ p.slug }}" translate="no">{{ p.name }}</h2>
+<p>{{ p.tagline }}</p>
+{%- if p.status == "shipped" %}
+<p class="a-facts">{{ rel.version }} · {{ rel.date }} · {{ p.runs_on }}</p>
+<a class="a-btn" href="/{{ p.slug }}/">Open {{ p.name }}</a>
+<p class="a-more"><a href="/{{ p.slug }}/components/">Components</a> · <a href="/{{ p.slug }}/changelog/">Changelog</a></p>
+{%- else %}
+<p class="a-facts">In development</p>
+{%- endif %}
 </div>
-
-## How these are built
-
-Every plugin here is documented from its own source. The component reference is generated
-from that source for each release, and every page names the version it describes — when a
-release renames a port, the page changes with it. Bugs are fixed and shipped continuously,
-and each product's changelog is the record of that.
-
-Reports do not require an account. Nothing on this site asks you to sign up.
+</article>
+{%- endfor %}
+<p class="a-house-note">Every plugin here is documented from its own source. Nothing on this site asks you to sign up.</p>
+</div></section>

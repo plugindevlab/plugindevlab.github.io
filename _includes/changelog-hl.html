@@ -1,0 +1,36 @@
+{%- assign units = include.units | slice: 0, 3 -%}
+{%- assign kinds = "" -%}
+{%- for u in units %}{% for c in u.ports %}{% assign kinds = kinds | append: " " | append: c.kind %}{% endfor %}{% endfor -%}
+{%- assign kinds = kinds | split: " " -%}
+<section class="hl" aria-label="Highlights in {{ include.ver }}">
+<div class="hl-h"><span class="label">Highlights</span>
+{%- if kinds.size > 0 %}<span class="hl-legend" aria-hidden="true">
+{%- if kinds contains "add" %}<span><span class="mk mk-add">+</span> added</span>{% endif %}
+{%- if kinds contains "del" %}<span><span class="mk mk-del">−</span> removed</span>{% endif %}
+{%- if kinds contains "mov" %}<span><span class="mk mk-mov">↕</span> moved</span>{% endif %}
+{%- if kinds contains "default" %}<span><span class="mk mk-default">=</span> default changed</span>{% endif %}
+</span>{% endif %}</div>
+<div class="hl-rows">
+{%- for u in units %}
+{%- assign key = u.img | slugify | prepend: "assets/img/antlion/changelog/" %}
+{%- assign dkey = key | append: "-dark" %}
+<article class="hl-row">
+{%- if site.data.images[dkey] %}{% include pic.html key=key dark=dkey alt="" sizes="(max-width: 40rem) 104px, 168px" cls="hl-img" %}{% else %}{% include pic.html key=key alt="" sizes="(max-width: 40rem) 104px, 168px" cls="hl-img" %}{% endif %}
+<div class="hl-tx">
+<p class="hl-t">{{ u.title }}</p>
+<p class="hl-d">{{ u.text }}</p>
+{%- if u.ports.size > 0 %}
+<ul class="hl-chips">
+{%- for c in u.ports %}
+{%- case c.kind %}{% when "add" %}{% assign g = "+" %}{% assign w = "added" %}{% when "del" %}{% assign g = "−" %}{% assign w = "removed" %}{% when "mov" %}{% assign g = "↕" %}{% assign w = "moved" %}{% else %}{% assign g = "=" %}{% assign w = "default changed" %}{% endcase %}
+<li class="chip chip-{{ c.kind }}"><span class="mk mk-{{ c.kind }}" aria-hidden="true">{{ g }}</span><span class="hl-sr">{{ w }}: </span><span class="cn">{{ c.port | join: ", " }}</span> <small>{{ c.comp | join: " · " }} · {{ c.side }}{% if c.note %} · {{ c.note }}{% endif %}</small></li>
+{%- endfor %}
+</ul>
+{%- else %}
+<p class="hl-none">No port changes</p>
+{%- endif %}
+</div>
+</article>
+{%- endfor %}
+</div>
+</section>

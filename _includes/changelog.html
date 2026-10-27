@@ -9,10 +9,15 @@
 <section class="rel-page" id="rel-page-{{ pi }}">
 <div class="rel-list">
 {%- for r in rels limit: per offset: off %}
+{%- assign hl = site.data.changelog_highlights[include.product][r.version] %}
+{%- assign nh = hl.size | at_most: 3 %}
 <details class="rel" id="v{{ r.version | replace: '.', '-' }}">
-<summary><span class="rel-v" translate="no">{{ r.version }}</span> <span class="rel-t">{{ r.title }}</span></summary>
+<summary><span class="rel-v" translate="no">{{ r.version }}</span> <span class="rel-t">{{ r.title }}{% if nh > 0 %} <span class="rel-tag">{{ nh }} {% if nh == 1 %}highlight{% else %}highlights{% endif %}</span>{% endif %}</span></summary>
 <div class="rel-body">
 <p class="rel-date"><time datetime="{{ r.date }}">{{ r.date | date: "%B %-d, %Y" }}</time></p>
+{%- if nh > 0 %}
+{% include changelog-hl.html units=hl ver=r.version %}
+{%- endif %}
 {{ r.body | markdownify }}
 </div>
 </details>

@@ -9,8 +9,6 @@ full: true
 {%- assign pdata = site.data.components.products.antlion -%}
 {%- assign g = pdata.graph -%}
 
-<p class="label">Track 1 · Concept</p>
-
 # What order to use things in
 
 Most of the difficulty in a Grasshopper plugin is not *what exists* — it is *what comes
@@ -38,11 +36,10 @@ component's page.
 
 {% include flowmap.html %}
 
-**Arrows are the order you build in, and each is a wire you make on the canvas.** The one from
-the axis into the section is <strong translate="no">Base Line</strong>: the start line as the axes
-facet it, which is what the section actually stands on. **Dotted links mean "instead of", not
-"as well as":** a custom start line replaces the built-in one; a table-driven section replaces the
-one you set by hand.
+**Arrows are wires you make, in build order.** The one from the axis into the section is
+<strong translate="no">Base Line</strong> — the start line as the axes facet it, which the section stands on.
+**Dotted links mean "instead of":** a custom start line replaces the built-in one; a table-driven
+section replaces the hand-set one.
 
 ## The stages
 
@@ -52,13 +49,13 @@ one you set by hand.
 <div class="split-text">
 <p class="label">Stage {{ forloop.index }}</p>
 <h3>{{ s.label }}</h3>
-{{ site.data.stage_notes[s.group] | markdownify }}
+{% include stage-note.html group=s.group %}
 <p class="comp-list" translate="no">
 {%- for c in g.components %}{% if c.group == s.group %}<a href="../components/{{ c.id }}/">{{ c.name }}</a> {% endif %}{% endfor %}
 </p>
 </div>
 {%- assign sf = site.data.stage_figs[s.group] %}
-<figure class="fig">{% if sf %}{% include zoom.html id=s.group src=sf.src alt=sf.alt w=sf.w h=sf.h lazy=true %}{% else %}<div class="fig-wait">Image to come</div>{% endif %}</figure>
+<figure class="fig">{% if sf.key %}{% include zoom.html id=s.group key=sf.key dark=sf.dark alt=sf.alt sizes="(min-width: 1100px) 600px, 100vw" %}{% elsif sf %}{% include zoom.html id=s.group src=sf.src alt=sf.alt w=sf.w h=sf.h lazy=true %}{% else %}<div class="fig-wait">Image to come</div>{% endif %}</figure>
 </section>
 {%- endunless %}
 {% endfor %}
@@ -69,7 +66,7 @@ one you set by hand.
 {%- if s.aside %}
 <section id="{{ s.group }}" markdown="0">
 <h3>{{ s.label }}</h3>
-{{ site.data.stage_notes[s.group] | markdownify }}
+{% include stage-note.html group=s.group %}
 <p class="comp-list" translate="no">
 {%- for c in g.components %}{% if c.group == s.group %}<a href="../components/{{ c.id }}/">{{ c.name }}</a> {% endif %}{% endfor %}
 </p>

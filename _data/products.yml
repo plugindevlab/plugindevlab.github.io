@@ -8,6 +8,8 @@
   image_alt: >-
     Antlion logo — an antlion's pincers holding a football above its funnel pit,
     over the ANTLION wordmark.
+  card_pic: assets/img/antlion/landing/hero-3d-still
+  card_pic_alt: A three-tier soccer bowl in 3D, each seat colored by its C-value.
   reference: antlion/specs/reference/en
   tiers: antlion/phase2_csharp/_tools/icon_audit.py
   qa: antlion/qa

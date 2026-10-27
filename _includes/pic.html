@@ -1,0 +1,23 @@
+{%- assign e = site.data.images[include.key] -%}
+{%- assign d = nil -%}{%- if include.dark -%}{%- assign d = site.data.images[include.dark] -%}{%- endif -%}
+{%- assign sizes = include.sizes | default: "100vw" -%}
+{%- assign st = e -%}{%- assign stkey = include.key -%}
+{%- assign dst = d -%}{%- assign dstkey = include.dark -%}
+{%- if e.kind == "loop" -%}{%- assign stkey = e.still -%}{%- assign st = site.data.images[e.still] -%}{%- if d -%}{%- assign dstkey = d.still -%}{%- assign dst = site.data.images[d.still] -%}{%- endif -%}{%- endif -%}
+<picture{% if include.cls %} class="{{ include.cls }}"{% endif %}>
+{%- if e.kind == "loop" and d %}
+<source type="image/avif" media="(prefers-color-scheme: dark) and (prefers-reduced-motion: no-preference)" srcset="{% for r in d.files.avif %}/{{ include.dark }}-{{ r[0] }}.avif {{ r[0] }}w{% unless forloop.last %}, {% endunless %}{% endfor %}" sizes="{{ sizes }}">
+{%- endif %}
+{%- if e.kind == "loop" %}
+<source type="image/avif" media="(prefers-reduced-motion: no-preference)" srcset="{% for r in e.files.avif %}/{{ include.key }}-{{ r[0] }}.avif {{ r[0] }}w{% unless forloop.last %}, {% endunless %}{% endfor %}" sizes="{{ sizes }}">
+{%- endif %}
+{%- if dst %}
+{%- assign fmts = "avif,webp,jpg" | split: "," %}
+{%- for fmt in fmts %}
+<source type="image/{% if fmt == 'jpg' %}jpeg{% else %}{{ fmt }}{% endif %}" media="(prefers-color-scheme: dark)" srcset="{% for r in dst.files[fmt] %}/{{ dstkey }}-{{ r[0] }}.{{ fmt }} {{ r[0] }}w{% unless forloop.last %}, {% endunless %}{% endfor %}" sizes="{{ sizes }}">
+{%- endfor %}
+{%- endif %}
+<source type="image/avif" srcset="{% for r in st.files.avif %}/{{ stkey }}-{{ r[0] }}.avif {{ r[0] }}w{% unless forloop.last %}, {% endunless %}{% endfor %}" sizes="{{ sizes }}">
+<source type="image/webp" srcset="{% for r in st.files.webp %}/{{ stkey }}-{{ r[0] }}.webp {{ r[0] }}w{% unless forloop.last %}, {% endunless %}{% endfor %}" sizes="{{ sizes }}">
+<img src="/{{ stkey }}-{{ st.files.jpg[0][0] }}.jpg" srcset="{% for r in st.files.jpg %}/{{ stkey }}-{{ r[0] }}.jpg {{ r[0] }}w{% unless forloop.last %}, {% endunless %}{% endfor %}" sizes="{{ sizes }}" width="{{ st.w }}" height="{{ st.h }}" alt="{{ include.alt | escape }}"{% if include.eager %} fetchpriority="high"{% else %} loading="lazy" decoding="async"{% endif %}>
+</picture>

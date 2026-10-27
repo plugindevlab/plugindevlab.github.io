@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}" class="skin-a{% if page.sheet %} a-sheet{% endif %}">
+<head>
+{% include head.html %}
+<link rel="stylesheet" href="{{ '/assets/css/a.css' | relative_url }}">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+{%- assign prod = false -%}
+{%- if page.product -%}{%- assign prod = site.data.products | where: "slug", page.product | first -%}{%- endif %}
+<header class="a-head">
+  <div class="a-head-in">
+    <a class="wordmark" href="{{ '/' | relative_url }}" translate="no">plugin<span>.</span>dev<span>.</span>lab</a>
+    {%- if prod %}
+    {%- assign prod_home = '/' | append: prod.slug | append: '/' %}
+    <a class="a-prod{% if page.url == prod_home %} here{% endif %}"{% if page.url == prod_home %} aria-current="page"{% endif %} href="/{{ prod.slug }}/" translate="no">{{ prod.name }}</a>
+    <button class="a-menu" type="button" popovertarget="a-nav" aria-label="{{ prod.name }} pages">Menu</button>
+    <nav class="a-nav" id="a-nav" popover aria-label="{{ prod.name }}">
+      {%- for item in prod.nav %}
+      <a{% if page.url contains item.url %} class="here" aria-current="{% if page.url == item.url %}page{% else %}true{% endif %}"{% endif %} href="{{ item.url | relative_url }}">{{ item.label }}</a>
+      {%- endfor %}
+    </nav>
+    {%- endif %}
+  </div>
+</header>
+
+<main class="{% if page.bare %}a-bare{% elsif page.sheet %}content sheet-page{% else %}content a-text{% if page.wide %} wide{% endif %}{% if page.full %} full-page{% endif %}{% endif %}" id="main">
+{{ content }}
+</main>
+
+<footer class="a-foot">
+  <div class="a-foot-in">
+    {%- if prod %}
+    <p class="a-foot-links">
+      <a href="/{{ prod.slug }}/troubleshooting/#report-a-problem">Report a problem</a>
+      <a href="/{{ prod.slug }}/#get-{{ prod.slug }}">Where to get {{ prod.name }}</a>
+      <a href="/{{ prod.slug }}/changelog/">Changelog</a>
+      <a href="/{{ prod.slug }}/eula/">{{ prod.name }} licence (EULA)</a>
+    </p>
+    {%- endif %}
+    <p class="a-foot-links">
+      <a href="/privacy/">Privacy</a>
+      <span>Contact: <a href="mailto:founder@plugindevlab.com" translate="no">founder@plugindevlab.com</a></span>
+      <span translate="no">© {{ site.time | date: "%Y" }} Plugin Dev Lab</span>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

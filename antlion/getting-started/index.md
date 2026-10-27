@@ -21,25 +21,47 @@ shots:
 
 # Getting started
 
-<section class="split">
-<div class="split-text" markdown="1">
 Setup is three steps, and none of it touches your Rhino model.
 
-1. **Install** from the Rhino package manager — the download button on Food4Rhino opens it
-   at Antlion.
-2. **Buy a license.** Checkout is run by Polar, and the email address you enter there is how
-   you reach your key in the customer portal.
-3. **Register** in Grasshopper — put the key in a <strong translate="no">Panel</strong> wired to
-   <code translate="no">Key</code> on <span translate="no">License</span>, and set a
-   <strong translate="no">Toggle</strong> on <code translate="no">Register</code> to True.
-
-Right-click <span translate="no">License</span> to open your customer portal
-(<strong translate="no">Manage subscription</strong>) or to report a problem
-(<strong translate="no">Report a problem</strong>). Each step is spelled out below; after that,
-[the workflow](../workflow/index.md) is where the first bowl gets built.
+<ol class="a-steps">
+<li id="install"><div><h2>Install</h2>
+<ol class="a-do">
+<li>In Rhino, run <code>_PackageManager</code> — the download button on Food4Rhino opens it at Antlion.</li>
+<li>Search for <strong>Antlion</strong> and install it.</li>
+<li>Restart Rhino.</li>
+<li>Open Grasshopper. There is now an <strong>Antlion</strong> tab in the ribbon — <a href="/antlion/workflow/#ribbon">what sits in each panel</a>.</li>
+</ol>
+<p><strong>No tab after restarting?</strong> Rhino is almost certainly in .NET Framework mode — see <a href="#what-you-need">What you need</a>.</p>
+<p>Antlion comes <strong>through the package manager only</strong>. We do not publish <code>.gha</code> or <code>.yak</code> files for download, so a direct file download did not come from us.</p>
+<details class="a-more-d"><summary>Updates</summary>
+<p>New releases arrive through the package manager. At the bottom of its window, keep <strong>Automatically update packages when Rhino starts</strong> checked — it is on unless someone turned it off. Rhino then installs newer packages shortly after it starts and asks you to restart; the new version runs from that restart.</p>
+<p>If you keep it off, run <code>_PackageManager</code>, select Antlion and click <strong>Install</strong> on the newer version. The <a href="/antlion/changelog/">changelog</a> lists what changed in each release.</p>
+</details>
 </div>
-{% include carousel.html id="gs" items=page.shots label="Installing and registering Antlion" %}
-</section>
+{%- assign s = page.shots[0] %}
+<figure><img src="{{ s.src }}" width="{{ s.w }}" height="{{ s.h }}" alt="{{ s.alt }}" fetchpriority="high"><figcaption>{{ s.cap }}</figcaption></figure></li>
+<li class="no-fig"><div><h2>Buy a license</h2>
+<p>Downloading is free. The <strong translate="no">Util</strong> panel works without a license; the <strong translate="no">Bowl</strong>, <strong translate="no">Bowl Analysis</strong> and <strong translate="no">Table</strong> panels need one.</p>
+<p>{% if site.f4r_url and site.f4r_url != "" %}Buy from the <a href="{{ site.f4r_url }}">Antlion listing on Food4Rhino</a>.{% else %}<em>(Food4Rhino listing — coming with release.)</em>{% endif %} Purchases, billing and invoices are handled by Polar, the merchant of record, and the email address you enter at checkout is how you reach your key.</p>
+</div></li>
+<li id="register-your-license"><div><h2>Register</h2>
+<ol class="a-do">
+<li>Open your customer portal at <a href="https://polar.sh/plugindevlab/portal">polar.sh/plugindevlab/portal</a>, enter the email address you bought with and the code it sends you, and copy the key from the purchases page. Do not wait for it by email — the portal always has it.</li>
+<li>In Grasshopper, <span translate="no">Antlion</span> tab → <a href="/antlion/components/license/"><strong translate="no">License</strong></a>: put the key in a <strong translate="no">Panel</strong> wired to <code translate="no">Key</code>.</li>
+<li>Set a <strong translate="no">Toggle</strong> on <code translate="no">Register</code> to <strong translate="no">True</strong>. <code translate="no">Status</code> reports what happened.</li>
+</ol>
+<p>That unlocks <strong>every definition on this computer</strong> — you do not repeat it per file.</p>
+<p>Registering sends your computer name, your user name on that computer and the date to Polar, so that you can tell your machines apart in the customer portal. Nothing from your models is sent — see the <a href="/privacy/">privacy policy</a>.</p>
+<details class="a-more-d"><summary>Moving to another computer, and the License menu</summary>
+<p><strong>One computer at a time.</strong> To move to another machine, release the old one in the customer portal and register on the new one. If a computer has been released, <code translate="no">Status</code> says so and tells you to flip <code translate="no">Register</code> again.</p>
+<p>Right-click <span translate="no">License</span> to open your customer portal (<strong translate="no">Manage subscription</strong>) or to report a problem (<strong translate="no">Report a problem</strong>).</p>
+{%- assign s = page.shots[2] %}
+<figure class="a-natural"><img src="{{ s.src }}" width="{{ s.w }}" height="{{ s.h }}" alt="{{ s.alt }}" loading="lazy" decoding="async"><figcaption>{{ s.cap }}</figcaption></figure>
+</details>
+</div>
+{%- assign s = page.shots[1] %}
+<figure><img src="{{ s.src }}" width="{{ s.w }}" height="{{ s.h }}" alt="{{ s.alt }}" loading="lazy" decoding="async"><figcaption>{{ s.cap }}</figcaption></figure></li>
+</ol>
 
 ## What you need
 
@@ -60,64 +82,6 @@ Antlion runs on Rhino 8 for Mac from 1.1.0. It is the same plugin, with a few di
 - **Google Workbook** - you sign in to Google again each time you start Rhino.
 
 Something not working on Mac? Right-click the **License** component and choose **Report a problem** - it attaches your Rhino and macOS versions.
-
-## Install
-
-1. In Rhino, run `_PackageManager`.
-2. Search for **Antlion** and install it.
-3. Restart Rhino.
-4. Open Grasshopper. There is now an **Antlion** tab in the ribbon —
-   [what sits in each panel](../workflow/index.md#ribbon).
-
-**No tab after restarting?** Rhino is almost certainly in .NET Framework mode. See
-*What you need* above; that one setting accounts for most "the components are not there"
-reports.
-
-Antlion is distributed **through the package manager only.** We do not publish `.gha` or
-`.yak` files for download anywhere, so a copy offered as a direct file download did not come
-from us.
-
-**Updates arrive the same way.** New releases of Antlion are published to the package manager.
-At the bottom of the package manager window, keep **Automatically update packages when Rhino
-starts** checked — it is on unless someone turned it off. Rhino then looks for newer packages
-shortly after it starts, installs them and asks you to restart; the new version runs from that
-restart. If you keep it off, run `_PackageManager`, select Antlion and click **Install** on the
-newer version. The [changelog](../changelog/index.md) lists what changed in each release.
-
-The Food4Rhino listing carries the product description and the purchase route — its download
-button opens the same package manager entry rather than handing you a file.
-
-{% if site.f4r_url and site.f4r_url != "" %}<strong><a href="{{ site.f4r_url }}">Antlion on Food4Rhino</a></strong>{% else %}*(Food4Rhino listing — coming with release.)*{% endif %}
-
-## Register your license
-
-Downloading Antlion is free. The <strong translate="no">Util</strong> panel works without a license; the <strong translate="no">Bowl</strong>,
-<strong translate="no">Bowl Analysis</strong> and <strong translate="no">Table</strong> panels need one.
-
-**1 — Take the key from your customer portal.** Purchases, billing and invoices are handled
-by **Polar**, the merchant of record for this product, and your license key lives in the
-customer portal there. Do not wait for it to arrive by email — the portal always has it.
-Enter the email address you bought with, type the code it sends you, and copy the key from
-the purchases page.
-
-Customer portal: [polar.sh/plugindevlab/portal](https://polar.sh/plugindevlab/portal)
-
-**2 — Enter it once in Grasshopper.**
-
-- <span translate="no">Antlion</span> tab → [<strong translate="no">License</strong>](../components/license/index.html)
-- Paste the key into <code translate="no">Key</code>
-- Set <code translate="no">Register</code> to <strong translate="no">True</strong>
-- <code translate="no">Status</code> reports what happened
-
-That unlocks **every definition on this computer** — it is not something you repeat per file.
-
-Registering sends your computer name, your user name on that computer and the date to Polar, so that you
-can tell your machines apart in the customer portal. Nothing from your models is sent — see the
-[privacy policy](../../privacy/index.md).
-
-**One computer at a time.** To move to another machine, release the old one in the customer
-portal and register on the new one. If a computer has been released, <code translate="no">Status</code> says so and
-tells you to flip <code translate="no">Register</code> again.
 
 ## Where to go next
 

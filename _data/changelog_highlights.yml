@@ -1,0 +1,43 @@
+antlion:
+  "1.1.0":
+    - title: Help cards inside Grasshopper
+      text: Right-click any Antlion component for a card that shows what it does and every input and output, most of them with a picture.
+      img: deck:Auto Section|in|Riser Thickness
+      ports: []
+    - title: Section Check labels follow the sheet scale
+      text: Left at 0, Text Height now sizes the labels to read on paper at the sheet scale. Older files keep the height they were saved with.
+      img: dim-c-value-section-check--text-height
+      zoom: 2
+      ports:
+        - {kind: default, comp: C-value Section Check, side: input, port: Text Height}
+  "1.0.23":
+    - title: Riser thickness, separate from the slab
+      text: Riser legs can be thinner than the slab under the treads, as in precast stands. Left at 0, Riser Thickness follows Slab Thickness.
+      img: dim-auto-section--riser-thickness
+      zoom: 2.4
+      ports:
+        - {kind: add, comp: [Auto Section, Section], side: input, port: Riser Thickness}
+        - {kind: add, comp: Table In, side: output, port: Riser Thickness}
+    - title: Each value set in one place
+      text: Slab thickness and the C-value mode could each be set in two places, and now each has one. Debug moves to the end, as on other components.
+      img: comp-table-section
+      ports:
+        - {kind: del, comp: Table Section, side: input, port: Slab Thickness}
+        - {kind: del, comp: Table In, side: output, port: C-value Mode}
+        - {kind: mov, comp: C-value Section Check, side: output, port: [Report, Debug], note: now last}
+        - {kind: mov, comp: Table In, side: output, port: Debug, note: now last}
+  "1.0.20":
+    - title: Focal point in from the edge and above it
+      text: Two distances replace a mode and an offset, so the focal point can sit inside the field edge and above it at the same time.
+      img: dim-field--focal-vertical
+      zoom: 1.8
+      ports:
+        - {kind: del, comp: Field, side: input, port: [Focal Direction Mode, Focal Offset]}
+        - {kind: add, comp: Field, side: input, port: [Focal Horizontal, Focal Vertical]}
+  "1.0.6":
+    - title: Custom vomitories get a descent
+      text: Wire Vomitory into Custom Seat and each vomitory you draw is stepped, stair or ramp, as the Vomitory settings say.
+      img: port-vomitory--vom-type-mode
+      zoom: 1.4
+      ports:
+        - {kind: add, comp: Custom Seat, side: input, port: Vomitory}

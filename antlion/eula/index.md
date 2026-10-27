@@ -4,12 +4,25 @@ description: The licence terms for installing and using Antlion.
 effective: "2026-10-10"
 ---
 
-# ANTLION — END USER LICENCE AGREEMENT
+# Antlion — end user licence agreement
 
-Licensor: Plugin Dev Lab ("we", "us")
-Contact: founder@plugindevlab.com
-Published at: {{ page.url | absolute_url }}
-Version 1.1 — effective {{ page.effective }}
+<p class="legal-meta">Licensor: Plugin Dev Lab ("we", "us")<br>
+Contact: founder@plugindevlab.com<br>
+Published at: {{ page.url | absolute_url }}<br>
+Version 1.1 — effective {{ page.effective }}</p>
+
+<nav class="legal-toc" aria-label="Contents" markdown="0"><p class="label">Contents</p><ul>
+<li><a href="#1-definitions">1. Definitions</a></li>
+<li><a href="#2-licence-grant">2. Licence grant</a></li>
+<li><a href="#3-seats-and-devices">3. Seats and Devices</a></li>
+<li><a href="#4-restrictions">4. Restrictions</a></li>
+<li><a href="#5-ownership">5. Ownership</a></li>
+<li><a href="#6-no-warranty--professional-responsibility">6. No warranty — professional responsibility</a></li>
+<li><a href="#7-limitation-of-liability">7. Limitation of liability</a></li>
+<li><a href="#8-purchase-subscription-refunds-and-taxes">8. Purchase, subscription, refunds and taxes</a></li>
+<li><a href="#9-term-and-termination">9. Term and termination</a></li>
+<li><a href="#10-governing-law-and-disputes">10. Governing law and disputes</a></li>
+</ul></nav>
 
 This English text is the only authoritative version of this Agreement.
 

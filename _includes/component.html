@@ -70,7 +70,7 @@
     {%- for p in comp.outputs %}{% if p.nick contains "⊞" %}{% assign marktable = true %}{% endif %}{% endfor -%}
     {%- if chainin > 0 or chainout > 0 or marklist or marktable %}
     <p class="plate-n">
-      {%- if chainin > 0 or chainout > 0 %}Colored ports carry the chain from one component to the next.
+      {%- if chainin > 0 or chainout > 0 %}Ports with a dark edge and line carry the chain from one component to the next.
       The rest are values you set once.{% endif %}
       {%- if marklist %} Inputs marked ▾ take a <span translate="no">Value List</span>: wire one in and it fills with the choices.{% endif %}
       {%- if marktable %} Outputs marked ⊞ can go into <span translate="no">Table Out</span>, which writes them to a spreadsheet.{% endif %}</p>
@@ -100,7 +100,13 @@
     {%- assign note = pdata.notes[comp.id] %}
     {%- if note %}
     <h2>What it does</h2>
-    <p>{{ note | escape }}</p>
+    {%- capture para %}
+
+{% endcapture %}
+    {%- assign paras = note | split: para %}
+    {%- for x in paras %}
+    <p>{{ x | escape }}</p>
+    {%- endfor %}
     {%- endif %}
 
     {%- assign before = comp.before -%}

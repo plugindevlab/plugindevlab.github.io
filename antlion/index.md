@@ -1,180 +1,67 @@
 ---
 title: "Antlion — Stadium Seating and C-value Sightlines for Grasshopper"
 description: Grasshopper plugin for stadium seating bowls in Rhino 8 — sections, stands, vomitories and seats as one editable chain, with C-value sightlines checked as you design.
+layout: a
+bare: true
 ---
 
-<p class="label">Grasshopper plugin · Rhino 8</p>
+{%- assign prod = site.data.products | where: "slug", "antlion" | first -%}
+{%- assign rel = site.data.changelog.antlion | first -%}
 
-# Design the bowl. Don't just generate it.
-
-Antlion is a Grasshopper plugin for stadium seating bowls. It builds the stand from the
-start line out — sections, stands, vomitories, seats, cuts — keeps every step editable,
-and checks C-value sightlines continuously as you design, not after the fact.
-
-<section class="split">
-<div class="split-text" markdown="1">
-## One chain, not a black box
-
-From the field outward, each component's outputs match the next one's inputs in order.
-Change the start line and the whole bowl follows — the seats, the cuts, the solids, the
-sightline maps.
-
-Three different ways to build a section — drawn by hand, solved from a target C-value, or
-driven from a spreadsheet — all produce the same object. **Everything downstream cannot
-tell which way it came.**
-
-[See the workflow](workflow/index.md)
-</div>
-<figure class="fig">
-{% include zoom.html id="l1" src="/assets/img/antlion/landing/soccer-bowl-c-value.jpg" alt="A three-tier soccer stadium bowl in Rhino, each seat colored by its C-value." w="1800" h="1200" %}
-<figcaption>The finished bowl: a three-tier soccer stadium, seats colored by C-value.</figcaption>
+<section class="a-hero" aria-labelledby="top-h"><div class="a-wrap a-hero-grid">
+<h1 id="top-h">Design the bowl. Don't just generate it.</h1>
+<p class="a-lead">Antlion is a Grasshopper plugin for stadium seating bowls in Rhino 8. Sections, stands, vomitories and seats stay one editable chain, and C-value sightlines are checked as you design.</p>
+<figure class="a-hero-fig">
+{% include pic.html key="assets/img/antlion/landing/hero-3d" alt="A three-tier soccer bowl in 3D, first as a white model, then with each seat colored by its C-value." sizes="(min-width: 1200px) 660px, (min-width: 861px) 56vw, 100vw" eager=true %}
+<figcaption>A three-tier soccer bowl, each seat colored by its C-value.</figcaption>
 </figure>
-</section>
+<aside class="a-spec" id="get-antlion" aria-label="Antlion at a glance">
+<dl>
+<dt>Version</dt><dd>{{ rel.version }}</dd>
+<dt>Updated</dt><dd>{{ rel.date }}</dd>
+<dt>Runs on</dt><dd>{{ prod.runs_on }}</dd>
+<dt>Units</dt><dd>{{ prod.units }}</dd>
+<dt>Install</dt><dd>Rhino Package Manager — free download</dd>
+<dt>License</dt><dd>Util components work without one; the rest need a plan</dd>
+</dl>
+<a class="a-btn" href="{{ site.f4r_url }}">Get Antlion on Food4Rhino</a>
+<p class="a-fine">Pricing and plans are on Food4Rhino. Checkout asks you to accept the <a href="/antlion/eula/">EULA</a>.</p>
+</aside>
+</div></section>
 
-<section class="split flip">
-<div class="split-text" markdown="1">
-## Sightlines checked as you design
+<section class="a-sec" aria-labelledby="how-h"><div class="a-wrap">
+<div class="a-sec-head"><h2 id="how-h">How it works</h2><p>Each step feeds the next: change the start line and everything after it follows.</p></div>
+<svg class="a-rake" viewBox="0 0 1000 56" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 52 H200 V41 H400 V30 H600 V19 H800 V8 H1000"/><circle cx="6" cy="52" r="3.5"/><circle cx="206" cy="41" r="3.5"/><circle cx="406" cy="30" r="3.5"/><circle cx="606" cy="19" r="3.5"/><circle cx="806" cy="8" r="3.5"/></svg>
+{%- assign steps = "Place the field, draw where the front row starts, set the section axes — or use your own curves.|Draw the stair profile, solve it from a target C-value, or read it from a workbook.|Unroll it onto the plan, place vomitories and seats, cut the bowl to shape.|Stands, vomitory stairs, railings and seats as solids.|C-value for every seat and tread band; section checks draw their evidence." | split: "|" -%}
+{%- assign figs = "1-plan,2-section,3-seats,4-3d,5-analysis" | split: "," -%}
+{%- assign alts = "The field with the start line and the section axes around it.|Three tiers of stepped sections with sightlines to the focal point.|The bowl in plan with every seat laid out and the vomitories cut in.|A close view of the stand solids as a white model: stepped treads, aisle stairs and vomitory openings.|The same view with every seat colored by its C-value." | split: "|" %}
+<ol class="a-flow">
+{%- for s in prod.flow.spine %}
+{%- assign i = forloop.index0 %}
+<li><span class="num">{{ forloop.index | prepend: "0" }}</span><h3>{{ s.label }}</h3><p>{{ steps[i] }}</p>
+{%- capture k %}assets/img/antlion/how/{{ figs[i] }}{% endcapture %}{% capture kd %}{{ k }}-dark{% endcapture %}{% assign al = alts[i] %}
+{% include pic.html key=k dark=kd alt=al sizes="(min-width: 961px) 220px, 300px" %}</li>
+{%- endfor %}
+</ol>
+<p class="a-tail">Section and tier values can live in Excel or Google Sheets; results go back there. <a href="/antlion/workflow/">See the workflow</a></p>
+</div></section>
 
-C-value is computed per seat and per tread band across the whole bowl, so you see where
-the design breaks down rather than checking one section and hoping.
-
-Section checks draw their evidence — dimensions and sightlines on the real cut — so a
-number you report is a number you can defend in a meeting.
-
-[Analysis components](components/index.html)
+<section class="a-sec" aria-labelledby="decide-h"><div class="a-wrap">
+<div class="a-sec-head"><h2 id="decide-h">Before you decide</h2></div>
+<div class="a-qa">
+<article><h3>Is it maintained?</h3><p>The latest release, {{ rel.version }} ({{ rel.date }}): {{ rel.title }}.</p><p><a href="/antlion/changelog/">Read the changelog</a></p></article>
+<article><h3>Will it run on my setup?</h3><p>Yes, if Rhino runs on .NET Core — the default.</p><p><a href="/antlion/getting-started/#what-you-need">What you need</a></p></article>
+<article id="report-a-problem"><h3>What if something breaks?</h3><p>No account needed: in Grasshopper, right-click <strong translate="no">License</strong> → <strong translate="no">Report a problem</strong>, and your versions come attached. If Antlion won't load, use the <a href="https://tally.so/r/MepAQM">report form</a>. Billing questions go to Polar, the merchant of record.</p><p><a href="/antlion/troubleshooting/#report-a-problem">How to write a report that gets fixed</a></p></article>
+<article><h3>Where is it going?</h3><p>Antlion covers the seating bowl today. Later versions add structure and circulation, then the facade and roof.</p><p><a href="/antlion/roadmap/">See the roadmap</a></p></article>
 </div>
-<figure class="fig">
-{% include zoom.html id="l2" src="/assets/img/antlion/landing/section-sightlines.jpg" alt="A two-tier stepped section with red sightlines converging on the focal point." w="1626" h="1084" %}
-<figcaption>A two-tier section and its sightlines to the focal point.</figcaption>
-</figure>
-</section>
+</div></section>
 
-<section class="split">
-<div class="split-text" markdown="1">
-## Bring your own curves
-
-The presets are where you start, not where you have to stay. A field outline, the start
-line, section axes, hand-drawn tread lines, cut and opening curves, seat blocks and aisles
-can all come from your own Rhino or Grasshopper curves.
-
-Antlion builds the bowl around them and checks the sightlines again, so you can change the
-shape and see what it does to every seat.
-
-[Components](components/index.html)
-</div>
-<figure class="fig">
-{% include zoom.html id="l3" src="/assets/img/antlion/landing/baseball-custom-curves.jpg" alt="Baseball park stands in Rhino, built around hand-drawn red curves." w="1800" h="1200" %}
-<figcaption>A baseball park, built around curves drawn in Rhino.</figcaption>
-</figure>
-</section>
-
-<section class="split flip">
-<div class="split-text" markdown="1">
-## Drawings and spreadsheets, both directions
-
-Results go straight onto drawing sheets. Step heights, tread depths, tier settings and the
-C-value target can be read from a Google Sheets or Excel workbook and the results written
-back to it — change the numbers, run, and the section follows.
-
-Works in millimeter and inch documents.
-
-[<span translate="no">Table</span> components](components/index.html)
-</div>
-<figure class="fig">
-{% include zoom.html id="l4" src="/assets/img/antlion/landing/workbook-section-input.png" alt="An Excel sheet of section inputs: tread depth, riser height and tier per row, with eye distances and a C-value preview." w="780" h="520" %}
-<figcaption>Section inputs in an Excel workbook: tread and riser per row, with a C-value preview.</figcaption>
-</figure>
-</section>
-
-## Where Antlion is going
-
-Antlion 1.0.0 covers the seating bowl. Later versions build outward from it — first the
-structure and circulation around the bowl, then the facade and roof.
-
-<figure class="roadmap">
-<div class="rm">
-<section class="rm-v is-now"><p class="rm-head"><span class="tag on" style="--tier:var(--tier-core)">1.0.0</span><span class="rm-when">First release</span></p>
-<h3>Bowl</h3>
-<ul><li>Sections, stands, vomitories, seats and cuts</li><li>C-value sightlines, per seat and per section</li><li>Drawing sheets and spreadsheet round trips</li></ul></section>
-<div class="rm-link"><span class="rm-note">A few months of fixes first</span><span class="rm-arrow"></span></div>
-<section class="rm-v"><p class="rm-head"><span class="tag on" style="--tier:var(--tier-structure)">2.0.0</span><span class="rm-when">Planned</span></p>
-<h3>Structure and circulation</h3>
-<ul><li>Concourses</li><li>Columns and raker beams</li><li>Stairs</li><li>Static crowd flow</li></ul></section>
-<div class="rm-link"><span class="rm-arrow"></span></div>
-<section class="rm-v"><p class="rm-head"><span class="tag on" style="--tier:var(--tier-roof)">3.0.0</span><span class="rm-when">Planned</span></p>
-<h3>Facade and roof</h3>
-<ul><li>Facade</li><li>Roof</li></ul></section>
-</div>
-</figure>
-
-- **Fixes come first.** For the first few months after release, the work goes into fixing and
-  refining 1.0.0. Development of 2.0.0 starts after that.
-- **Versions may come with their own plans.** 2.0.0 and 3.0.0 may be offered as higher
-  subscription plans, and the plans may be priced differently.
-- **Nothing you have moves up.** A component in your plan stays in your plan — a new version
-  never moves an existing component to a higher plan.
-- **Components can move down.** Over time, components from a higher plan may be added to a
-  lower one.
-
-<p class="rm-fine">This is a plan, not a release schedule. What goes into each version, and when, may change.</p>
-
-## Learn it
-
-New to Antlion? Read these two, in this order.
-
-1. [**Getting started**](getting-started/index.md) — what you need, installing from the
-   package manager, and registering your license.
-2. [**Workflow**](workflow/index.md) — the whole chain as a map. Start here if you are
-   wondering what order to use things in.
-
-When you need to look something up:
-
-- [**Components**](components/index.html) — every component, every port, with a diagram of
-  where each port sits on the capsule. Generated from the plugin source for each release,
-  and every page names the version it describes.
-- [**Ribbon map**](workflow/index.md#ribbon) — which panel and section each component lives
-  in, for when you know the plugin and just want to find the thing.
-- [**Tutorials**](tutorials/index.html) — video walkthroughs that build a stadium bowl step by
-  step, with chapters you can jump to.
-- [**Troubleshooting**](troubleshooting/index.md) — known symptoms, causes, and fixes.
-- [**Changelog**](changelog/index.md) — what changed in each release.
-
-## Get Antlion
-
-Antlion is distributed through **Food4Rhino** and the Rhino package manager. Pricing and
-purchase are handled there.
-
-{% if site.f4r_url and site.f4r_url != "" %}<strong><a href="{{ site.f4r_url }}">Antlion on Food4Rhino</a></strong>{% else %}*(Food4Rhino listing link — coming with release.)*{% endif %}
-
-The plugin itself is free to download. Components in the <strong translate="no">Util</strong> panel work without a
-license; the bowl, analysis and table components need one.
-
-Use of Antlion is governed by the [Antlion End User Licence Agreement](eula/index.md); checkout asks
-you to accept it. How we handle personal data is set out in our [privacy policy](../privacy/index.md).
-
-## Report a problem
-
-Found a bug, or something that does not behave the way the reference says it should?
-
-[**Report a problem**](https://tally.so/r/MepAQM)
-
-**No account or sign-in is required.** The form asks what you saw and how to reproduce it.
-The quickest way in is from Grasshopper: right-click <strong translate="no">License</strong> →
-<strong translate="no">Report a problem</strong>, which opens the form with your Antlion, Rhino and Windows
-versions already attached. If Antlion does not load at all, add which Rhino you run —
-<code translate="no">SystemInfo</code> in Rhino shows it. Two steps — internalising the
-geometry, or pasting the `Debug` output — usually let us find the cause without asking you
-anything further:
-[how to write a report that gets fixed](troubleshooting/index.md#report-a-problem).
-
-Subscription, payment and invoice questions are handled by **Polar**, the merchant of record
-for this product — use the customer portal (the link in your purchase email, or right-click
-<strong translate="no">License</strong> → <strong translate="no">Manage subscription</strong>) rather than the report form.
-
-## Who builds Antlion
-
-Antlion is built and maintained by **plugin.dev.lab**, which works on design automation for
-Rhino and Grasshopper. Bugs are fixed and shipped continuously — the
-[changelog](changelog/index.md) is the record of that, and it is the honest way to judge
-whether a subscription is worth it.
-
+<section class="a-sec" aria-labelledby="go-h"><div class="a-wrap">
+<div class="a-sec-head"><h2 id="go-h">Where to start</h2></div>
+<ul class="a-go">
+<li><a href="/antlion/getting-started/"><b>Getting started</b><span>Install and register.</span></a></li>
+<li><a href="/antlion/components/"><b>Components</b><span>Every port, regenerated each release.</span></a></li>
+<li><a href="/antlion/tutorials/"><b>Tutorials</b><span>Videos with chapters.</span></a></li>
+</ul>
+<p class="a-tail" id="who-h">Antlion is built and maintained by Plugin Dev Lab, which works on design automation for Rhino and Grasshopper.</p>
+</div></section>

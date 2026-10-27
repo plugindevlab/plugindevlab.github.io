@@ -1,0 +1,963 @@
+{
+ "assets/img/antlion/changelog/comp-table-section": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/changelog/comp-table-section-light.png",
+  "sha1": "9917fa2c07a4cb4d53b3aa6ed01deb24e6661319",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     3888
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     6876
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     24876
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/changelog/comp-table-section-dark": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/changelog/comp-table-section-dark.png",
+  "sha1": "bb8ad3bb8bd8137905c1bdc86a7ceb2ec982a6c7",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     3359
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     6422
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     22122
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/changelog/deck-auto-section-in-riser-thickness": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/changelog/deck-auto-section-in-riser-thickness-light.png",
+  "sha1": "168b7081b24fc5b8f1efa6ecf374cd4bddbd3695",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     13205
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     20034
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     43496
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/changelog/deck-auto-section-in-riser-thickness-dark": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/changelog/deck-auto-section-in-riser-thickness-dark.png",
+  "sha1": "debb1953c0442a16395cdc751a0f468a1ced9fe9",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     11494
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     17406
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     39797
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/changelog/dim-auto-section-riser-thickness": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/changelog/dim-auto-section-riser-thickness-light.png",
+  "sha1": "b364ef0969decbdcbf63b93ddbaf16209752332a",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     888
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     1908
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     9643
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/changelog/dim-auto-section-riser-thickness-dark": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/changelog/dim-auto-section-riser-thickness-dark.png",
+  "sha1": "b3034f4d8e9c0ee1e5d1d5442657c3cecbdd4e98",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     863
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     1856
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     9268
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/changelog/dim-c-value-section-check-text-height": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/changelog/dim-c-value-section-check-text-height-light.png",
+  "sha1": "f6f817834a920e8c4cd4fc400fd193e3dbd4a544",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     5914
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     11940
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     30469
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/changelog/dim-c-value-section-check-text-height-dark": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/changelog/dim-c-value-section-check-text-height-dark.png",
+  "sha1": "f376ae94971dd7a4bd89cd2e07e1e1dac842ba3f",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     5100
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     10226
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     27171
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/changelog/dim-field-focal-vertical": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/changelog/dim-field-focal-vertical-light.png",
+  "sha1": "7ad1117e6c9d695de645b92fa7a1e9b34362d2ce",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     1350
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     2732
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     8779
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/changelog/dim-field-focal-vertical-dark": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/changelog/dim-field-focal-vertical-dark.png",
+  "sha1": "37daef0cde9e0a8b7fbcb1ea82e557607f7b092a",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     1286
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     2566
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     9189
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/changelog/port-vomitory-vom-type-mode": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/changelog/port-vomitory-vom-type-mode-light.png",
+  "sha1": "1c3494c041bd540b9dc237c0e349059e08e83230",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     1581
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     3506
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     11230
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/changelog/port-vomitory-vom-type-mode-dark": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/changelog/port-vomitory-vom-type-mode-dark.png",
+  "sha1": "75edec7212d071ea416cfc681a78703ad8d6354e",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     1386
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     3220
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     10214
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/how/1-plan": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/how/1-plan-light.png",
+  "sha1": "1ddab1b46905601ee79580c1d6e85d56e4ce46cb",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     3079
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     5310
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     14256
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/how/1-plan-dark": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/how/1-plan-dark.png",
+  "sha1": "b3ea3085375ae61250f6b02a4429440fd1858bc2",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     2947
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     4960
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     14355
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/how/2-section": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/how/2-section-light.png",
+  "sha1": "b31ba39b05f87087d04df0f03baf91b1c20a7e9c",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     8888
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     15008
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     23939
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/how/2-section-dark": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/how/2-section-dark.png",
+  "sha1": "9be77b4369cc8f420e4f2a14ffb103754ebf3755",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     6614
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     12552
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     21099
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/how/3-seats": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/how/3-seats-light.png",
+  "sha1": "96c365bfff51151d03be4d7ca29af165499ebb69",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     32023
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     46756
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     71570
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/how/3-seats-dark": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/how/3-seats-dark.png",
+  "sha1": "ef809618258bb708d14d9071a542169cf25d190b",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     40892
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     55856
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     81405
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/how/4-3d": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/rhino/4-3d.png",
+  "sha1": "5ac533aa3fdc5869089b917325ef81a2ecb5060c",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     21379
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     38890
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     61953
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/how/5-analysis": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/rhino/5-analysis.png",
+  "sha1": "7010b20143f9d4339c10e7a96c6384658114ec1d",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     41214
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     71296
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     90845
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/landing/hero-3d": {
+  "kind": "loop",
+  "src": "../../etc/learn-gh/web-hero3d/frames",
+  "sha1": "b4f938df442bfe08ffbd2da764efb3c250b9c475",
+  "fps": 24,
+  "frames": 132,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     92950
+    ]
+   ]
+  },
+  "still": "assets/img/antlion/landing/hero-3d-still"
+ },
+ "assets/img/antlion/landing/hero-3d-still": {
+  "kind": "hero",
+  "src": "_tools/img_src/antlion/landing/hero-3d-still.png",
+  "sha1": "5ce1b1fa8aa735e1a16c8293e2edb8d73f07643e",
+  "bg": null,
+  "w": 1800,
+  "h": 1200,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     39426
+    ],
+    [
+     1800,
+     1200,
+     173925
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     61556
+    ],
+    [
+     1800,
+     1200,
+     238190
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     75099
+    ],
+    [
+     1800,
+     1200,
+     298463
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/workflow/card-1-plan": {
+  "kind": "figure",
+  "src": "_tools/img_src/antlion/how/1-plan-light.png",
+  "sha1": "1ddab1b46905601ee79580c1d6e85d56e4ce46cb",
+  "bg": null,
+  "w": 1800,
+  "h": 1200,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     3079
+    ],
+    [
+     1800,
+     1200,
+     5983
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     5310
+    ],
+    [
+     1800,
+     1200,
+     12862
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     14256
+    ],
+    [
+     1800,
+     1200,
+     36223
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/workflow/card-1-plan-dark": {
+  "kind": "figure",
+  "src": "_tools/img_src/antlion/how/1-plan-dark.png",
+  "sha1": "b3ea3085375ae61250f6b02a4429440fd1858bc2",
+  "bg": null,
+  "w": 1800,
+  "h": 1200,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     2947
+    ],
+    [
+     1800,
+     1200,
+     5800
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     4960
+    ],
+    [
+     1800,
+     1200,
+     12466
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     14355
+    ],
+    [
+     1800,
+     1200,
+     36109
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/workflow/card-2-section": {
+  "kind": "figure",
+  "src": "_tools/img_src/antlion/how/2-section-light.png",
+  "sha1": "b31ba39b05f87087d04df0f03baf91b1c20a7e9c",
+  "bg": null,
+  "w": 1800,
+  "h": 1200,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     8888
+    ],
+    [
+     1800,
+     1200,
+     37404
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     15008
+    ],
+    [
+     1800,
+     1200,
+     55952
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     23939
+    ],
+    [
+     1800,
+     1200,
+     83882
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/workflow/card-2-section-dark": {
+  "kind": "figure",
+  "src": "_tools/img_src/antlion/how/2-section-dark.png",
+  "sha1": "9be77b4369cc8f420e4f2a14ffb103754ebf3755",
+  "bg": null,
+  "w": 1800,
+  "h": 1200,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     6614
+    ],
+    [
+     1800,
+     1200,
+     32758
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     12552
+    ],
+    [
+     1800,
+     1200,
+     50490
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     21099
+    ],
+    [
+     1800,
+     1200,
+     76003
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/workflow/rhino-4-3d": {
+  "kind": "figure",
+  "src": "_tools/img_src/antlion/rhino/4-3d.png",
+  "sha1": "5ac533aa3fdc5869089b917325ef81a2ecb5060c",
+  "bg": null,
+  "w": 1800,
+  "h": 1200,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     21379
+    ],
+    [
+     1800,
+     1200,
+     44257
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     38890
+    ],
+    [
+     1800,
+     1200,
+     90956
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     61953
+    ],
+    [
+     1800,
+     1200,
+     180561
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/workflow/rhino-5-analysis": {
+  "kind": "figure",
+  "src": "_tools/img_src/antlion/rhino/5-analysis.png",
+  "sha1": "7010b20143f9d4339c10e7a96c6384658114ec1d",
+  "bg": null,
+  "w": 1800,
+  "h": 1200,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     41214
+    ],
+    [
+     1800,
+     1200,
+     97177
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     71296
+    ],
+    [
+     1800,
+     1200,
+     190562
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     90845
+    ],
+    [
+     1800,
+     1200,
+     282363
+    ]
+   ]
+  }
+ }
+}

@@ -1,0 +1,10 @@
+{%- assign n = site.data.stage_notes[include.group] -%}
+{%- if n.lead -%}
+{{ n.lead | markdownify }}
+{%- if n.more %}
+<details class="a-more-d"><summary>{{ n.more_title | default: "More" }}</summary>
+{{ n.more | markdownify }}</details>
+{%- endif -%}
+{%- else -%}
+{{ n | markdownify }}
+{%- endif -%}

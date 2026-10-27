@@ -18,7 +18,10 @@ exclude:
 defaults:
   - scope: { path: "" }
     values:
-      layout: default
+      layout: a
   - scope: { path: "antlion" }
     values:
       product: antlion
+  - scope: { path: "antlion/components" }
+    values:
+      layout: default

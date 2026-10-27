@@ -4,12 +4,25 @@ description: What personal data plugin.dev.lab processes, why, where it goes, an
 effective: "2026-10-11"
 ---
 
-# PRIVACY POLICY
+# Privacy policy
 
-Plugin Dev Lab ("we", "us") — operating as **plugin.dev.lab**
-Contact: **founder@plugindevlab.com**
-Published at: {{ page.url | absolute_url }}
-Version 1.5 — effective {{ page.effective }}
+<p class="legal-meta">Plugin Dev Lab ("we", "us") — operating as <strong>plugin.dev.lab</strong><br>
+Contact: <strong>founder@plugindevlab.com</strong><br>
+Published at: {{ page.url | absolute_url }}<br>
+Version 1.5 — effective {{ page.effective }}</p>
+
+<nav class="legal-toc" aria-label="Contents" markdown="0"><p class="label">Contents</p><ul>
+<li><a href="#1-who-we-are-and-the-short-version">1. Who we are, and the short version</a></li>
+<li><a href="#2-what-we-process-and-why">2. What we process, and why</a></li>
+<li><a href="#3-optional-google-sheets-connection">3. Optional Google Sheets connection</a></li>
+<li><a href="#4-legal-basis-and-purpose">4. Legal basis and purpose</a></li>
+<li><a href="#5-processors-and-international-transfer">5. Processors and international transfer</a></li>
+<li><a href="#6-retention">6. Retention</a></li>
+<li><a href="#7-your-rights">7. Your rights</a></li>
+<li><a href="#8-security">8. Security</a></li>
+<li><a href="#9-children">9. Children</a></li>
+<li><a href="#10-data-protection-officer-and-changes-to-this-policy">10. Data Protection Officer, and changes to this Policy</a></li>
+</ul></nav>
 
 This English text is the only authoritative version of this Policy.
 
