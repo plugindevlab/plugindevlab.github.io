@@ -1,0 +1,28 @@
+{%- assign pc = site.data.port_changes[include.product] -%}
+{%- if pc and pc.releases.size > 0 %}
+<aside class="pc" aria-labelledby="pc-h">
+<h2 class="pc-h" id="pc-h">Port changes since <span translate="no">{{ pc.since }}</span></h2>
+<p class="pc-lede">Inputs and outputs added, removed or renamed since the first release, newest first.</p>
+<p class="hl-legend pc-legend" aria-hidden="true"><span><span class="mk mk-add">+</span> added</span><span><span class="mk mk-del">−</span> removed</span><span><span class="mk mk-ren">→</span> renamed</span></p>
+<ol class="pc-rels">
+{%- for r in pc.releases %}
+<li class="pc-rel">
+<a class="pc-v" href="#v{{ r.version | replace: '.', '-' }}" translate="no">{{ r.version }}</a>
+{%- for g in r.groups %}
+<div class="pc-g">
+<p class="pc-c" translate="no">{% for c in g.comps %}{% if c.slug %}<a href="/{{ include.product }}/components/{{ c.slug }}/">{{ c.name }}</a>{% else %}{{ c.name }}{% endif %}{% unless forloop.last %} · {% endunless %}{% endfor %}{% if g.was %} <small>was {{ g.was }}</small>{% endif %}</p>
+{%- if g.changes.size > 0 %}
+<ul class="hl-chips pc-chips">
+{%- for ch in g.changes %}
+{%- case ch.kind %}{% when "add" %}{% assign mk = "add" %}{% assign gl = "+" %}{% assign w = "added" %}{% when "del" %}{% assign mk = "del" %}{% assign gl = "−" %}{% assign w = "removed" %}{% when "ren" %}{% assign mk = "ren" %}{% assign gl = "→" %}{% assign w = "renamed" %}{% when "comp+" %}{% assign mk = "add" %}{% assign gl = "+" %}{% assign w = "new component" %}{% when "comp-" %}{% assign mk = "del" %}{% assign gl = "−" %}{% assign w = "component removed" %}{% else %}{% assign mk = "default" %}{% assign gl = "=" %}{% assign w = "type changed" %}{% endcase %}
+<li class="chip chip-{{ mk }}"><span class="mk mk-{{ mk }}" aria-hidden="true">{{ gl }}</span><span class="hl-sr">{{ w }}: </span>{% if ch.ports.size > 0 and ch.ports[0] != "" %}<span class="cn" translate="no">{{ ch.ports | join: ", " }}</span> <small>{% if ch.was %}was <span translate="no">{{ ch.was | join: ", " }}</span> · {% endif %}{{ ch.side }}</small>{% else %}<span class="cn">{{ w }}</span>{% endif %}</li>
+{%- endfor %}
+</ul>
+{%- endif %}
+</div>
+{%- endfor %}
+</li>
+{%- endfor %}
+</ol>
+</aside>
+{%- endif %}
