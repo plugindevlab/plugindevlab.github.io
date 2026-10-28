@@ -1,4 +1,20 @@
 antlion:
+  - version: "1.1.1"
+    date: "2026-10-28"
+    title: Custom steps along an axis line keep the shape you draw
+    body: |
+      **Fixed**
+
+      - **Custom Seat** - Custom steps drawn on the axis line at a sharp corner, as one outline or as one
+        cell per tread, were redrawn as rectangles square to one row, and a wide outline was read as a single
+        step position. They now keep the shape you draw: each tread gets the part of your outline that falls
+        on it, and where the rows turn at the axis line, each half stays square to its own rows and the two
+        meet on the line. An open curve drawn along the axis line works the same way, with half the Aisle
+        Width on each side. Steps drawn anywhere else work as before.
+      - **Custom Seat** - A closed bowl with a single custom aisle and no vomitory had no seats, with an
+        orange message that seat runs could not be worked out. One aisle is now enough: the seats run all the
+        way around from one side of the aisle to the other, so the bowl shows while you add aisles one at a
+        time. This also holds where a shorter aisle leaves only one aisle across part of the bowl's height.
   - version: "1.1.0"
     date: "2026-10-27"
     title: Help cards inside Grasshopper, and Antlion on Mac (beta)
