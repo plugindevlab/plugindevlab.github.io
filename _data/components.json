@@ -228,14 +228,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1069,
+      "w": 1080,
       "h": 639,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 178,
-      "imgW": 213,
+      "imgW": 224,
       "imgH": 282,
       "img": "/assets/img/antlion/components/field.png",
       "pending": false,
@@ -384,11 +384,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The field as one object",
-        "callX": 729,
+        "callX": 740,
         "callY": 174,
-        "gripX": 635,
+        "gripX": 646,
         "gripY": 206,
-        "d": "M729 205 H715 L647 206 H635"
+        "d": "M740 205 H726 L658 206 H646"
        },
        {
         "side": "out",
@@ -399,11 +399,11 @@
         "access": "item",
         "flow": false,
         "blurb": "The playing field outline in plan",
-        "callX": 729,
+        "callX": 740,
         "callY": 242,
-        "gripX": 635,
+        "gripX": 646,
         "gripY": 252,
-        "d": "M729 273 H715 L647 252 H635"
+        "d": "M740 273 H726 L658 252 H646"
        },
        {
         "side": "out",
@@ -414,11 +414,11 @@
         "access": "item",
         "flow": false,
         "blurb": "The outline pulled inside by Focal Horizontal, then lifted by Focal Vertical",
-        "callX": 729,
+        "callX": 740,
         "callY": 308,
-        "gripX": 635,
+        "gripX": 646,
         "gripY": 296,
-        "d": "M729 339 H715 L647 296 H635"
+        "d": "M740 339 H726 L658 296 H646"
        },
        {
         "side": "out",
@@ -429,11 +429,11 @@
         "access": "item",
         "flow": false,
         "blurb": "The point every sightline aims at",
-        "callX": 729,
+        "callX": 740,
         "callY": 376,
-        "gripX": 635,
+        "gripX": 646,
         "gripY": 342,
-        "d": "M729 407 H715 L647 342 H635"
+        "d": "M740 407 H726 L658 342 H646"
        },
        {
         "side": "out",
@@ -444,11 +444,11 @@
         "access": "item",
         "flow": false,
         "blurb": "The same point on the field outline, before Focal Vertical and Focal Horizontal moved it",
-        "callX": 729,
+        "callX": 740,
         "callY": 442,
-        "gripX": 635,
+        "gripX": 646,
         "gripY": 386,
-        "d": "M729 473 H715 L647 386 H635"
+        "d": "M740 473 H726 L658 386 H646"
        },
        {
         "side": "out",
@@ -459,11 +459,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 729,
+        "callX": 740,
         "callY": 510,
-        "gripX": 635,
+        "gripX": 646,
         "gripY": 432,
-        "d": "M729 541 H715 L647 432 H635"
+        "d": "M740 541 H726 L658 432 H646"
        }
       ]
      },
@@ -651,14 +651,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1052,
+      "w": 1062,
       "h": 505,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 142,
-      "imgW": 196,
+      "imgW": 206,
       "imgH": 222,
       "img": "/assets/img/antlion/components/startline-rect.png",
       "pending": false,
@@ -777,11 +777,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The start line as one object",
-        "callX": 712,
+        "callX": 722,
         "callY": 138,
-        "gripX": 618,
+        "gripX": 628,
         "gripY": 169,
-        "d": "M712 169 H618"
+        "d": "M722 169 H628"
        },
        {
         "side": "out",
@@ -792,11 +792,11 @@
         "access": "item",
         "flow": false,
         "blurb": "The start line itself, a closed curve in plan",
-        "callX": 712,
+        "callX": 722,
         "callY": 204,
-        "gripX": 618,
+        "gripX": 628,
         "gripY": 211,
-        "d": "M712 235 H698 L630 211 H618"
+        "d": "M722 235 H708 L640 211 H628"
        },
        {
         "side": "out",
@@ -807,11 +807,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Center point of each rounded corner",
-        "callX": 712,
+        "callX": 722,
         "callY": 272,
-        "gripX": 618,
+        "gripX": 628,
         "gripY": 253,
-        "d": "M712 303 H698 L630 253 H618"
+        "d": "M722 303 H708 L640 253 H628"
        },
        {
         "side": "out",
@@ -822,11 +822,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Radius of each corner arc, matching Arc Centers",
-        "callX": 712,
+        "callX": 722,
         "callY": 338,
-        "gripX": 618,
+        "gripX": 628,
         "gripY": 295,
-        "d": "M712 369 H698 L630 295 H618"
+        "d": "M722 369 H708 L640 295 H628"
        },
        {
         "side": "out",
@@ -837,11 +837,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 712,
+        "callX": 722,
         "callY": 406,
-        "gripX": 618,
+        "gripX": 628,
         "gripY": 337,
-        "d": "M712 437 H698 L630 337 H618"
+        "d": "M722 437 H708 L640 337 H628"
        }
       ]
      },
@@ -1003,14 +1003,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1036,
+      "w": 1044,
       "h": 371,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 104,
-      "imgW": 180,
+      "imgW": 188,
       "imgH": 162,
       "img": "/assets/img/antlion/components/startline-capsule.png",
       "pending": false,
@@ -1099,11 +1099,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The start line as one object",
-        "callX": 696,
+        "callX": 704,
         "callY": 20,
-        "gripX": 602,
+        "gripX": 610,
         "gripY": 125,
-        "d": "M696 51 H682 L614 125 H602"
+        "d": "M704 51 H690 L622 125 H610"
        },
        {
         "side": "out",
@@ -1114,11 +1114,11 @@
         "access": "item",
         "flow": false,
         "blurb": "The start line itself, a closed curve in plan",
-        "callX": 696,
+        "callX": 704,
         "callY": 87,
-        "gripX": 602,
+        "gripX": 610,
         "gripY": 155,
-        "d": "M696 118 H682 L614 155 H602"
+        "d": "M704 118 H690 L622 155 H610"
        },
        {
         "side": "out",
@@ -1129,11 +1129,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The two semicircle center points, right then left",
-        "callX": 696,
+        "callX": 704,
         "callY": 154,
-        "gripX": 602,
+        "gripX": 610,
         "gripY": 185,
-        "d": "M696 185 H602"
+        "d": "M704 185 H610"
        },
        {
         "side": "out",
@@ -1144,11 +1144,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Radius of each semicircle",
-        "callX": 696,
+        "callX": 704,
         "callY": 221,
-        "gripX": 602,
+        "gripX": 610,
         "gripY": 215,
-        "d": "M696 252 H682 L614 215 H602"
+        "d": "M704 252 H690 L622 215 H610"
        },
        {
         "side": "out",
@@ -1159,11 +1159,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 696,
+        "callX": 704,
         "callY": 288,
-        "gripX": 602,
+        "gripX": 610,
         "gripY": 245,
-        "d": "M696 319 H682 L614 245 H602"
+        "d": "M704 319 H690 L622 245 H610"
        }
       ]
      },
@@ -1364,14 +1364,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1058,
+      "w": 1068,
       "h": 572,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 160,
-      "imgW": 202,
+      "imgW": 212,
       "imgH": 252,
       "img": "/assets/img/antlion/components/startline-oval.png",
       "pending": false,
@@ -1505,11 +1505,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The start line as one object",
-        "callX": 718,
+        "callX": 728,
         "callY": 158,
-        "gripX": 624,
+        "gripX": 634,
         "gripY": 190,
-        "d": "M718 189 H704 L636 190 H624"
+        "d": "M728 189 H714 L646 190 H634"
        },
        {
         "side": "out",
@@ -1520,11 +1520,11 @@
         "access": "item",
         "flow": false,
         "blurb": "The start line itself, a closed curve in plan",
-        "callX": 718,
+        "callX": 728,
         "callY": 226,
-        "gripX": 624,
+        "gripX": 634,
         "gripY": 238,
-        "d": "M718 257 H704 L636 238 H624"
+        "d": "M728 257 H714 L646 238 H634"
        },
        {
         "side": "out",
@@ -1535,11 +1535,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The four arc centers you set the oval out from",
-        "callX": 718,
+        "callX": 728,
         "callY": 292,
-        "gripX": 624,
+        "gripX": 634,
         "gripY": 286,
-        "d": "M718 323 H704 L636 286 H624"
+        "d": "M728 323 H714 L646 286 H634"
        },
        {
         "side": "out",
@@ -1550,11 +1550,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Radius of each arc, matching Arc Centers",
-        "callX": 718,
+        "callX": 728,
         "callY": 360,
-        "gripX": 624,
+        "gripX": 634,
         "gripY": 334,
-        "d": "M718 391 H704 L636 334 H624"
+        "d": "M728 391 H714 L646 334 H634"
        },
        {
         "side": "out",
@@ -1565,11 +1565,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 718,
+        "callX": 728,
         "callY": 426,
-        "gripX": 624,
+        "gripX": 634,
         "gripY": 382,
-        "d": "M718 457 H704 L636 382 H624"
+        "d": "M728 457 H714 L646 382 H634"
        }
       ]
      },
@@ -1692,14 +1692,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1030,
+      "w": 1036,
       "h": 371,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 104,
-      "imgW": 174,
+      "imgW": 180,
       "imgH": 162,
       "img": "/assets/img/antlion/components/custom-startline.png",
       "pending": false,
@@ -1743,11 +1743,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The start line as one object",
-        "callX": 690,
+        "callX": 696,
         "callY": 20,
-        "gripX": 596,
+        "gripX": 602,
         "gripY": 125,
-        "d": "M690 51 H676 L608 125 H596"
+        "d": "M696 51 H682 L614 125 H602"
        },
        {
         "side": "out",
@@ -1758,11 +1758,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Your curve",
-        "callX": 690,
+        "callX": 696,
         "callY": 87,
-        "gripX": 596,
+        "gripX": 602,
         "gripY": 155,
-        "d": "M690 118 H676 L608 155 H596"
+        "d": "M696 118 H682 L614 155 H602"
        },
        {
         "side": "out",
@@ -1773,11 +1773,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Center point of every arc found in your curve",
-        "callX": 690,
+        "callX": 696,
         "callY": 154,
-        "gripX": 596,
+        "gripX": 602,
         "gripY": 185,
-        "d": "M690 185 H596"
+        "d": "M696 185 H602"
        },
        {
         "side": "out",
@@ -1788,11 +1788,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Radius of each detected arc, matching Arc Centers",
-        "callX": 690,
+        "callX": 696,
         "callY": 221,
-        "gripX": 596,
+        "gripX": 602,
         "gripY": 215,
-        "d": "M690 252 H676 L608 215 H596"
+        "d": "M696 252 H682 L614 215 H602"
        },
        {
         "side": "out",
@@ -1803,11 +1803,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 690,
+        "callX": 696,
         "callY": 288,
-        "gripX": 596,
+        "gripX": 602,
         "gripY": 245,
-        "d": "M690 319 H676 L608 245 H596"
+        "d": "M696 319 H682 L614 245 H602"
        }
       ]
      },
@@ -2041,14 +2041,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1039,
+      "w": 1050,
       "h": 639,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 178,
-      "imgW": 183,
+      "imgW": 194,
       "imgH": 282,
       "img": "/assets/img/antlion/components/axis.png",
       "pending": false,
@@ -2197,11 +2197,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The axis system as one object",
-        "callX": 699,
+        "callX": 710,
         "callY": 174,
-        "gripX": 605,
+        "gripX": 616,
         "gripY": 206,
-        "d": "M699 205 H685 L617 206 H605"
+        "d": "M710 205 H696 L628 206 H616"
        },
        {
         "side": "out",
@@ -2212,11 +2212,11 @@
         "access": "item",
         "flow": false,
         "blurb": "The faceted line the stand is built on",
-        "callX": 699,
+        "callX": 710,
         "callY": 242,
-        "gripX": 605,
+        "gripX": 616,
         "gripY": 252,
-        "d": "M699 273 H685 L617 252 H605"
+        "d": "M710 273 H696 L628 252 H616"
        },
        {
         "side": "out",
@@ -2227,11 +2227,11 @@
         "access": "list",
         "flow": false,
         "blurb": "One point per axis, sitting on the start line",
-        "callX": 699,
+        "callX": 710,
         "callY": 308,
-        "gripX": 605,
+        "gripX": 616,
         "gripY": 296,
-        "d": "M699 339 H685 L617 296 H605"
+        "d": "M710 339 H696 L628 296 H616"
        },
        {
         "side": "out",
@@ -2242,11 +2242,11 @@
         "access": "list",
         "flow": false,
         "blurb": "One plane per axis",
-        "callX": 699,
+        "callX": 710,
         "callY": 376,
-        "gripX": 605,
+        "gripX": 616,
         "gripY": 342,
-        "d": "M699 407 H685 L617 342 H605"
+        "d": "M710 407 H696 L628 342 H616"
        },
        {
         "side": "out",
@@ -2257,11 +2257,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Preview line at each axis, for checking direction and spacing",
-        "callX": 699,
+        "callX": 710,
         "callY": 442,
-        "gripX": 605,
+        "gripX": 616,
         "gripY": 386,
-        "d": "M699 473 H685 L617 386 H605"
+        "d": "M710 473 H696 L628 386 H616"
        },
        {
         "side": "out",
@@ -2272,11 +2272,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 699,
+        "callX": 710,
         "callY": 510,
-        "gripX": 605,
+        "gripX": 616,
         "gripY": 432,
-        "d": "M699 541 H685 L617 432 H605"
+        "d": "M710 541 H696 L628 432 H616"
        }
       ]
      },
@@ -2445,14 +2445,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1028,
+      "w": 1038,
       "h": 438,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 123,
-      "imgW": 172,
+      "imgW": 182,
       "imgH": 192,
       "img": "/assets/img/antlion/components/custom-axis.png",
       "pending": false,
@@ -2526,11 +2526,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The axis system as one object",
-        "callX": 688,
+        "callX": 698,
         "callY": 20,
-        "gripX": 594,
+        "gripX": 604,
         "gripY": 144,
-        "d": "M688 51 H674 L606 144 H594"
+        "d": "M698 51 H684 L616 144 H604"
        },
        {
         "side": "out",
@@ -2541,11 +2541,11 @@
         "access": "item",
         "flow": false,
         "blurb": "The faceted line the stand is built on",
-        "callX": 688,
+        "callX": 698,
         "callY": 87,
-        "gripX": 594,
+        "gripX": 604,
         "gripY": 174,
-        "d": "M688 118 H674 L606 174 H594"
+        "d": "M698 118 H684 L616 174 H604"
        },
        {
         "side": "out",
@@ -2556,11 +2556,11 @@
         "access": "list",
         "flow": false,
         "blurb": "One point per axis, numbered along the start line",
-        "callX": 688,
+        "callX": 698,
         "callY": 154,
-        "gripX": 594,
+        "gripX": 604,
         "gripY": 204,
-        "d": "M688 185 H674 L606 204 H594"
+        "d": "M698 185 H684 L616 204 H604"
        },
        {
         "side": "out",
@@ -2571,11 +2571,11 @@
         "access": "list",
         "flow": false,
         "blurb": "One plane per axis",
-        "callX": 688,
+        "callX": 698,
         "callY": 221,
-        "gripX": 594,
+        "gripX": 604,
         "gripY": 234,
-        "d": "M688 252 H674 L606 234 H594"
+        "d": "M698 252 H684 L616 234 H604"
        },
        {
         "side": "out",
@@ -2586,11 +2586,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Preview line at each axis, for checking direction and spacing",
-        "callX": 688,
+        "callX": 698,
         "callY": 288,
-        "gripX": 594,
+        "gripX": 604,
         "gripY": 264,
-        "d": "M688 319 H674 L606 264 H594"
+        "d": "M698 319 H684 L616 264 H604"
        },
        {
         "side": "out",
@@ -2601,11 +2601,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 688,
+        "callX": 698,
         "callY": 355,
-        "gripX": 594,
+        "gripX": 604,
         "gripY": 294,
-        "d": "M688 386 H674 L606 294 H594"
+        "d": "M698 386 H684 L616 294 H604"
        }
       ]
      },
@@ -2622,7 +2622,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-10-25",
+     "checked": "2026-10-28",
      "summary": "Turns the tread lines you draw into a tier section — rows, nosing and eye points, and the closed profile the stand is swept from. Draw one line per step; the component sorts them and works out the tiers.",
      "inputs": [
       {
@@ -3089,7 +3089,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-10-25",
+     "checked": "2026-10-28",
      "summary": "Works out the risers for you. Give it the tread depths and the minimum C-value you want to hold, and it raises each step by the smallest Riser Step increment that still clears that C-value - the shallowest bowl that meets the target. The front row starts on the base line - the start line as the axes facet it - so wire the same field, focal point and Base Line that Section takes. Bake tread_lines if you want to fine-tune the steps by hand in Section afterwards.",
      "inputs": [
       {
@@ -3341,6 +3341,32 @@
       },
       {
        "index": 19,
+       "name": "Target Rise",
+       "nick": "Tgt Rise",
+       "ghType": "Number",
+       "access": "list",
+       "optional": true,
+       "dropdown": false,
+       "default": null,
+       "desc": "Height from each tier's first row to its last row - one per tier. Set it and the C-value becomes the result: the risers still follow the sightlines and add up to this rise, as close as Riser Step allows. Empty or 0 = use Minimum C-Values",
+       "flow": false,
+       "type": null
+      },
+      {
+       "index": 20,
+       "name": "Riser Fit",
+       "nick": "▾ Fit",
+       "ghType": "Text",
+       "access": "list",
+       "optional": true,
+       "dropdown": true,
+       "default": "Even C",
+       "desc": "What a tier with Target Rise does with height to spare - one per tier, or one for all. Even C spreads it over every row's C-value; Even Risers keeps every row at Minimum C-Values or above and makes the risers as equal as possible, so there are fewer riser heights. With no height to spare the two match (default Even C)",
+       "flow": false,
+       "type": null
+      },
+      {
+       "index": 21,
        "name": "Panel Values",
        "nick": "Panel",
        "ghType": "Object",
@@ -3460,15 +3486,15 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1056,
-      "h": 1376,
+      "w": 1060,
+      "h": 1510,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
-      "imgY": 382,
-      "imgW": 200,
-      "imgH": 612,
+      "imgY": 419,
+      "imgW": 204,
+      "imgH": 672,
       "img": "/assets/img/antlion/components/auto-section.png",
       "pending": false,
       "ports": [
@@ -3484,8 +3510,8 @@
         "callX": 0,
         "callY": 20,
         "gripX": 434,
-        "gripY": 403,
-        "d": "M340 51 H354 L422 403 H434"
+        "gripY": 440,
+        "d": "M340 51 H354 L422 440 H434"
        },
        {
         "side": "in",
@@ -3499,8 +3525,8 @@
         "callX": 0,
         "callY": 87,
         "gripX": 434,
-        "gripY": 433,
-        "d": "M340 118 H354 L422 433 H434"
+        "gripY": 470,
+        "d": "M340 118 H354 L422 470 H434"
        },
        {
         "side": "in",
@@ -3514,8 +3540,8 @@
         "callX": 0,
         "callY": 154,
         "gripX": 434,
-        "gripY": 463,
-        "d": "M340 185 H354 L422 463 H434"
+        "gripY": 500,
+        "d": "M340 185 H354 L422 500 H434"
        },
        {
         "side": "in",
@@ -3529,8 +3555,8 @@
         "callX": 0,
         "callY": 221,
         "gripX": 434,
-        "gripY": 493,
-        "d": "M340 252 H354 L422 493 H434"
+        "gripY": 530,
+        "d": "M340 252 H354 L422 530 H434"
        },
        {
         "side": "in",
@@ -3544,8 +3570,8 @@
         "callX": 0,
         "callY": 288,
         "gripX": 434,
-        "gripY": 523,
-        "d": "M340 319 H354 L422 523 H434"
+        "gripY": 560,
+        "d": "M340 319 H354 L422 560 H434"
        },
        {
         "side": "in",
@@ -3559,8 +3585,8 @@
         "callX": 0,
         "callY": 355,
         "gripX": 434,
-        "gripY": 553,
-        "d": "M340 386 H354 L422 553 H434"
+        "gripY": 590,
+        "d": "M340 386 H354 L422 590 H434"
        },
        {
         "side": "in",
@@ -3574,8 +3600,8 @@
         "callX": 0,
         "callY": 422,
         "gripX": 434,
-        "gripY": 583,
-        "d": "M340 453 H354 L422 583 H434"
+        "gripY": 620,
+        "d": "M340 453 H354 L422 620 H434"
        },
        {
         "side": "in",
@@ -3589,8 +3615,8 @@
         "callX": 0,
         "callY": 489,
         "gripX": 434,
-        "gripY": 613,
-        "d": "M340 520 H354 L422 613 H434"
+        "gripY": 650,
+        "d": "M340 520 H354 L422 650 H434"
        },
        {
         "side": "in",
@@ -3604,8 +3630,8 @@
         "callX": 0,
         "callY": 556,
         "gripX": 434,
-        "gripY": 643,
-        "d": "M340 587 H354 L422 643 H434"
+        "gripY": 680,
+        "d": "M340 587 H354 L422 680 H434"
        },
        {
         "side": "in",
@@ -3619,8 +3645,8 @@
         "callX": 0,
         "callY": 623,
         "gripX": 434,
-        "gripY": 673,
-        "d": "M340 654 H354 L422 673 H434"
+        "gripY": 710,
+        "d": "M340 654 H354 L422 710 H434"
        },
        {
         "side": "in",
@@ -3634,8 +3660,8 @@
         "callX": 0,
         "callY": 690,
         "gripX": 434,
-        "gripY": 703,
-        "d": "M340 721 H354 L422 703 H434"
+        "gripY": 740,
+        "d": "M340 721 H354 L422 740 H434"
        },
        {
         "side": "in",
@@ -3649,8 +3675,8 @@
         "callX": 0,
         "callY": 757,
         "gripX": 434,
-        "gripY": 733,
-        "d": "M340 788 H354 L422 733 H434"
+        "gripY": 770,
+        "d": "M340 788 H354 L422 770 H434"
        },
        {
         "side": "in",
@@ -3664,8 +3690,8 @@
         "callX": 0,
         "callY": 824,
         "gripX": 434,
-        "gripY": 763,
-        "d": "M340 855 H354 L422 763 H434"
+        "gripY": 800,
+        "d": "M340 855 H354 L422 800 H434"
        },
        {
         "side": "in",
@@ -3679,8 +3705,8 @@
         "callX": 0,
         "callY": 891,
         "gripX": 434,
-        "gripY": 793,
-        "d": "M340 922 H354 L422 793 H434"
+        "gripY": 830,
+        "d": "M340 922 H354 L422 830 H434"
        },
        {
         "side": "in",
@@ -3694,8 +3720,8 @@
         "callX": 0,
         "callY": 958,
         "gripX": 434,
-        "gripY": 823,
-        "d": "M340 989 H354 L422 823 H434"
+        "gripY": 860,
+        "d": "M340 989 H354 L422 860 H434"
        },
        {
         "side": "in",
@@ -3709,8 +3735,8 @@
         "callX": 0,
         "callY": 1025,
         "gripX": 434,
-        "gripY": 853,
-        "d": "M340 1056 H354 L422 853 H434"
+        "gripY": 890,
+        "d": "M340 1056 H354 L422 890 H434"
        },
        {
         "side": "in",
@@ -3724,8 +3750,8 @@
         "callX": 0,
         "callY": 1092,
         "gripX": 434,
-        "gripY": 883,
-        "d": "M340 1123 H354 L422 883 H434"
+        "gripY": 920,
+        "d": "M340 1123 H354 L422 920 H434"
        },
        {
         "side": "in",
@@ -3739,8 +3765,8 @@
         "callX": 0,
         "callY": 1159,
         "gripX": 434,
-        "gripY": 913,
-        "d": "M340 1190 H354 L422 913 H434"
+        "gripY": 950,
+        "d": "M340 1190 H354 L422 950 H434"
        },
        {
         "side": "in",
@@ -3754,12 +3780,42 @@
         "callX": 0,
         "callY": 1226,
         "gripX": 434,
-        "gripY": 943,
-        "d": "M340 1257 H354 L422 943 H434"
+        "gripY": 980,
+        "d": "M340 1257 H354 L422 980 H434"
        },
        {
         "side": "in",
         "index": 19,
+        "name": "Target Rise",
+        "nick": "Tgt Rise",
+        "ghType": "Number",
+        "access": "list",
+        "flow": false,
+        "blurb": "Height from each tier's first row to its last row",
+        "callX": 0,
+        "callY": 1293,
+        "gripX": 434,
+        "gripY": 1010,
+        "d": "M340 1324 H354 L422 1010 H434"
+       },
+       {
+        "side": "in",
+        "index": 20,
+        "name": "Riser Fit",
+        "nick": "▾ Fit",
+        "ghType": "Text",
+        "access": "list",
+        "flow": false,
+        "blurb": "What a tier with Target Rise does with height to spare",
+        "callX": 0,
+        "callY": 1360,
+        "gripX": 434,
+        "gripY": 1040,
+        "d": "M340 1391 H354 L422 1040 H434"
+       },
+       {
+        "side": "in",
+        "index": 21,
         "name": "Panel Values",
         "nick": "Panel",
         "ghType": "Object",
@@ -3767,10 +3823,10 @@
         "flow": false,
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
-        "callY": 1293,
+        "callY": 1427,
         "gripX": 434,
-        "gripY": 973,
-        "d": "M340 1324 H354 L422 973 H434"
+        "gripY": 1070,
+        "d": "M340 1458 H354 L422 1070 H434"
        },
        {
         "side": "out",
@@ -3781,11 +3837,11 @@
         "access": "list",
         "flow": true,
         "blurb": "One section object per tier",
-        "callX": 716,
-        "callY": 398,
-        "gripX": 622,
-        "gripY": 430,
-        "d": "M716 429 H702 L634 430 H622"
+        "callX": 720,
+        "callY": 440,
+        "gripX": 626,
+        "gripY": 471,
+        "d": "M720 471 H626"
        },
        {
         "side": "out",
@@ -3796,11 +3852,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 716,
-        "callY": 484,
-        "gripX": 622,
-        "gripY": 516,
-        "d": "M716 515 H702 L634 516 H622"
+        "callX": 720,
+        "callY": 534,
+        "gripX": 626,
+        "gripY": 565,
+        "d": "M720 565 H626"
        },
        {
         "side": "out",
@@ -3811,11 +3867,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 716,
-        "callY": 570,
-        "gripX": 622,
-        "gripY": 601,
-        "d": "M716 601 H622"
+        "callX": 720,
+        "callY": 628,
+        "gripX": 626,
+        "gripY": 659,
+        "d": "M720 659 H626"
        },
        {
         "side": "out",
@@ -3826,11 +3882,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The stepped line along the tread tops, one per tier",
-        "callX": 716,
-        "callY": 654,
-        "gripX": 622,
-        "gripY": 686,
-        "d": "M716 685 H702 L634 686 H622"
+        "callX": 720,
+        "callY": 722,
+        "gripX": 626,
+        "gripY": 753,
+        "d": "M720 753 H626"
        },
        {
         "side": "out",
@@ -3841,11 +3897,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The closed profile per tier",
-        "callX": 716,
-        "callY": 740,
-        "gripX": 622,
-        "gripY": 772,
-        "d": "M716 771 H702 L634 772 H622"
+        "callX": 720,
+        "callY": 816,
+        "gripX": 626,
+        "gripY": 848,
+        "d": "M720 847 H706 L638 848 H626"
        },
        {
         "side": "out",
@@ -3856,11 +3912,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Eye point of every row, all tiers",
-        "callX": 716,
-        "callY": 826,
-        "gripX": 622,
-        "gripY": 858,
-        "d": "M716 857 H702 L634 858 H622"
+        "callX": 720,
+        "callY": 912,
+        "gripX": 626,
+        "gripY": 943,
+        "d": "M720 943 H626"
        },
        {
         "side": "out",
@@ -3871,11 +3927,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 716,
-        "callY": 912,
-        "gripX": 622,
-        "gripY": 944,
-        "d": "M716 943 H702 L634 944 H622"
+        "callX": 720,
+        "callY": 1006,
+        "gripX": 626,
+        "gripY": 1037,
+        "d": "M720 1037 H626"
        }
       ]
      },
@@ -3892,7 +3948,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-10-25",
+     "checked": "2026-10-28",
      "summary": "Adds the things a bare section does not have: the front barrier or handrail, accessible (wheelchair) rows, and the sightline check over the barrier. Sits between Section and Stand 2D — pure section geometry stays in Section.",
      "inputs": [
       {
@@ -4134,14 +4190,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1057,
+      "w": 1062,
       "h": 706,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 197,
-      "imgW": 201,
+      "imgW": 206,
       "imgH": 312,
       "img": "/assets/img/antlion/components/section-plus.png",
       "pending": false,
@@ -4305,11 +4361,11 @@
         "access": "list",
         "flow": true,
         "blurb": "The same sections back, with the barrier and accessible rows written in",
-        "callX": 717,
+        "callX": 722,
         "callY": 192,
-        "gripX": 623,
+        "gripX": 628,
         "gripY": 224,
-        "d": "M717 223 H703 L635 224 H623"
+        "d": "M722 223 H708 L640 224 H628"
        },
        {
         "side": "out",
@@ -4320,11 +4376,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The barrier itself, one closed section curve per tier",
-        "callX": 717,
+        "callX": 722,
         "callY": 260,
-        "gripX": 623,
+        "gripX": 628,
         "gripY": 266,
-        "d": "M717 291 H703 L635 266 H623"
+        "d": "M722 291 H708 L640 266 H628"
        },
        {
         "side": "out",
@@ -4335,11 +4391,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Tread-top stepped line after the front row was pulled back for the barrier",
-        "callX": 717,
+        "callX": 722,
         "callY": 326,
-        "gripX": 623,
+        "gripX": 628,
         "gripY": 309,
-        "d": "M717 357 H703 L635 309 H623"
+        "d": "M722 357 H708 L640 309 H628"
        },
        {
         "side": "out",
@@ -4350,11 +4406,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The closed profile rebuilt after the barrier pull-back",
-        "callX": 717,
+        "callX": 722,
         "callY": 394,
-        "gripX": 623,
+        "gripX": 628,
         "gripY": 351,
-        "d": "M717 425 H703 L635 351 H623"
+        "d": "M722 425 H708 L640 351 H628"
        },
        {
         "side": "out",
@@ -4365,11 +4421,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The lines behind the barrier check",
-        "callX": 717,
+        "callX": 722,
         "callY": 460,
-        "gripX": 623,
+        "gripX": 628,
         "gripY": 395,
-        "d": "M717 491 H703 L635 395 H623"
+        "d": "M722 491 H708 L640 395 H628"
        },
        {
         "side": "out",
@@ -4380,11 +4436,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Tread-top line through an accessible platform, one per wheelchair tier",
-        "callX": 717,
+        "callX": 722,
         "callY": 528,
-        "gripX": 623,
+        "gripX": 628,
         "gripY": 437,
-        "d": "M717 559 H703 L635 437 H623"
+        "d": "M722 559 H708 L640 437 H628"
        },
        {
         "side": "out",
@@ -4395,11 +4451,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 717,
+        "callX": 722,
         "callY": 594,
-        "gripX": 623,
+        "gripX": 628,
         "gripY": 481,
-        "d": "M717 625 H703 L635 481 H623"
+        "d": "M722 625 H708 L640 481 H628"
        }
       ]
      },
@@ -4416,7 +4472,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-10-25",
+     "checked": "2026-10-28",
      "summary": "Builds the tier sections from the numbers in your workbook instead of lines you draw. Wire the book from Table In, plus the same field, focal point and Base Line that Section takes. The barrier settings live in the workbook too, so this one component does what Section and Section Plus do together - the outputs are the same.",
      "inputs": [
       {
@@ -4608,14 +4664,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1024,
+      "w": 1028,
       "h": 572,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 160,
-      "imgW": 168,
+      "imgW": 172,
       "imgH": 252,
       "img": "/assets/img/antlion/components/table-section.png",
       "pending": false,
@@ -4704,11 +4760,11 @@
         "access": "list",
         "flow": true,
         "blurb": "The tier sections, with the barrier and any accessible rows written in",
-        "callX": 684,
+        "callX": 688,
         "callY": 20,
-        "gripX": 590,
+        "gripX": 594,
         "gripY": 181,
-        "d": "M684 51 H670 L602 181 H590"
+        "d": "M688 51 H674 L606 181 H594"
        },
        {
         "side": "out",
@@ -4719,11 +4775,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The barrier itself, one closed section curve per tier",
-        "callX": 684,
+        "callX": 688,
         "callY": 87,
-        "gripX": 590,
+        "gripX": 594,
         "gripY": 211,
-        "d": "M684 118 H670 L602 211 H590"
+        "d": "M688 118 H674 L606 211 H594"
        },
        {
         "side": "out",
@@ -4734,11 +4790,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Tread-top stepped line, after the front row was pulled back for the barrier",
-        "callX": 684,
+        "callX": 688,
         "callY": 154,
-        "gripX": 590,
+        "gripX": 594,
         "gripY": 241,
-        "d": "M684 185 H670 L602 241 H590"
+        "d": "M688 185 H674 L606 241 H594"
        },
        {
         "side": "out",
@@ -4749,11 +4805,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The closed profile the stand is swept from",
-        "callX": 684,
+        "callX": 688,
         "callY": 221,
-        "gripX": 590,
+        "gripX": 594,
         "gripY": 271,
-        "d": "M684 252 H670 L602 271 H590"
+        "d": "M688 252 H674 L606 271 H594"
        },
        {
         "side": "out",
@@ -4764,11 +4820,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Eye point of every row, all tiers",
-        "callX": 684,
+        "callX": 688,
         "callY": 288,
-        "gripX": 590,
+        "gripX": 594,
         "gripY": 301,
-        "d": "M684 319 H670 L602 301 H590"
+        "d": "M688 319 H674 L606 301 H594"
        },
        {
         "side": "out",
@@ -4779,11 +4835,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The lines behind the barrier sightline check",
-        "callX": 684,
+        "callX": 688,
         "callY": 355,
-        "gripX": 590,
+        "gripX": 594,
         "gripY": 331,
-        "d": "M684 386 H670 L602 331 H590"
+        "d": "M688 386 H674 L606 331 H594"
        },
        {
         "side": "out",
@@ -4794,11 +4850,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Tread-top line through an accessible platform, one per wheelchair tier",
-        "callX": 684,
+        "callX": 688,
         "callY": 422,
-        "gripX": 590,
+        "gripX": 594,
         "gripY": 361,
-        "d": "M684 453 H670 L602 361 H590"
+        "d": "M688 453 H674 L606 361 H594"
        },
        {
         "side": "out",
@@ -4809,11 +4865,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 684,
+        "callX": 688,
         "callY": 489,
-        "gripX": 590,
+        "gripX": 594,
         "gripY": 391,
-        "d": "M684 520 H670 L602 391 H590"
+        "d": "M688 520 H674 L606 391 H594"
        }
       ]
      },
@@ -4830,7 +4886,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-10-18",
+     "checked": "2026-10-29",
      "summary": "Sweeps each tier section around the axis planes and flattens it into tread rings in plan. Everything downstream — seats, vomitories, cuts — works on these rings.",
      "inputs": [
       {
@@ -4945,14 +5001,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1032,
+      "w": 1036,
       "h": 371,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 104,
-      "imgW": 176,
+      "imgW": 180,
       "imgH": 162,
       "img": "/assets/img/antlion/components/stand-2d.png",
       "pending": false,
@@ -4996,11 +5052,11 @@
         "access": "list",
         "flow": true,
         "blurb": "Pass-through of the sections, unchanged",
-        "callX": 692,
+        "callX": 696,
         "callY": 20,
-        "gripX": 598,
+        "gripX": 602,
         "gripY": 125,
-        "d": "M692 51 H678 L610 125 H598"
+        "d": "M696 51 H682 L614 125 H602"
        },
        {
         "side": "out",
@@ -5011,11 +5067,11 @@
         "access": "item",
         "flow": true,
         "blurb": "Pass-through of the axis, unchanged",
-        "callX": 692,
+        "callX": 696,
         "callY": 87,
-        "gripX": 598,
+        "gripX": 602,
         "gripY": 155,
-        "d": "M692 118 H678 L610 155 H598"
+        "d": "M696 118 H682 L614 155 H602"
        },
        {
         "side": "out",
@@ -5026,11 +5082,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The 2D bowl as one object",
-        "callX": 692,
+        "callX": 696,
         "callY": 154,
-        "gripX": 598,
+        "gripX": 602,
         "gripY": 185,
-        "d": "M692 185 H598"
+        "d": "M696 185 H602"
        },
        {
         "side": "out",
@@ -5041,11 +5097,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The tread rings themselves, all tiers in one flat list",
-        "callX": 692,
+        "callX": 696,
         "callY": 221,
-        "gripX": 598,
+        "gripX": 602,
         "gripY": 215,
-        "d": "M692 252 H678 L610 215 H598"
+        "d": "M696 252 H682 L614 215 H602"
        },
        {
         "side": "out",
@@ -5056,11 +5112,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 692,
+        "callX": 696,
         "callY": 288,
-        "gripX": 598,
+        "gripX": 602,
         "gripY": 245,
-        "d": "M692 319 H678 L610 245 H598"
+        "d": "M696 319 H682 L614 245 H602"
        }
       ]
      },
@@ -5077,7 +5133,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-10-18",
+     "checked": "2026-10-29",
      "summary": "Places the vomitories — the tunnels spectators enter the bowl through — in the tread rings, and sets how each one gets down to the concourse: flat, stepped, stair or ramp.",
      "inputs": [
       {
@@ -5439,14 +5495,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1066,
+      "w": 1075,
       "h": 1242,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 345,
-      "imgW": 210,
+      "imgW": 219,
       "imgH": 552,
       "img": "/assets/img/antlion/components/vomitory.png",
       "pending": false,
@@ -5730,11 +5786,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The vomitories as one object",
-        "callX": 726,
+        "callX": 735,
         "callY": 352,
-        "gripX": 632,
+        "gripX": 641,
         "gripY": 384,
-        "d": "M726 383 H712 L644 384 H632"
+        "d": "M735 383 H721 L653 384 H641"
        },
        {
         "side": "out",
@@ -5745,11 +5801,11 @@
         "access": "item",
         "flow": true,
         "blurb": "Pass-through of the 2D bowl, unchanged",
-        "callX": 726,
+        "callX": 735,
         "callY": 420,
-        "gripX": 632,
+        "gripX": 641,
         "gripY": 451,
-        "d": "M726 451 H632"
+        "d": "M735 451 H641"
        },
        {
         "side": "out",
@@ -5760,11 +5816,11 @@
         "access": "list",
         "flow": true,
         "blurb": "Pass-through of the sections, unchanged",
-        "callX": 726,
+        "callX": 735,
         "callY": 488,
-        "gripX": 632,
+        "gripX": 641,
         "gripY": 519,
-        "d": "M726 519 H632"
+        "d": "M735 519 H641"
        },
        {
         "side": "out",
@@ -5775,11 +5831,11 @@
         "access": "item",
         "flow": true,
         "blurb": "Pass-through of the axis, unchanged",
-        "callX": 726,
+        "callX": 735,
         "callY": 556,
-        "gripX": 632,
+        "gripX": 641,
         "gripY": 587,
-        "d": "M726 587 H632"
+        "d": "M735 587 H641"
        },
        {
         "side": "out",
@@ -5790,11 +5846,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 726,
+        "callX": 735,
         "callY": 622,
-        "gripX": 632,
+        "gripX": 641,
         "gripY": 654,
-        "d": "M726 653 H712 L644 654 H632"
+        "d": "M735 653 H721 L653 654 H641"
        },
        {
         "side": "out",
@@ -5805,11 +5861,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The tier section lines the descent was worked out against",
-        "callX": 726,
+        "callX": 735,
         "callY": 690,
-        "gripX": 632,
+        "gripX": 641,
         "gripY": 721,
-        "d": "M726 721 H632"
+        "d": "M735 721 H641"
        },
        {
         "side": "out",
@@ -5820,11 +5876,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The vomitory opening seen in section",
-        "callX": 726,
+        "callX": 735,
         "callY": 758,
-        "gripX": 632,
+        "gripX": 641,
         "gripY": 789,
-        "d": "M726 789 H632"
+        "d": "M735 789 H641"
        },
        {
         "side": "out",
@@ -5835,11 +5891,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 726,
+        "callX": 735,
         "callY": 826,
-        "gripX": 632,
+        "gripX": 641,
         "gripY": 857,
-        "d": "M726 857 H632"
+        "d": "M735 857 H641"
        }
       ]
      },
@@ -5856,7 +5912,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-10-18",
+     "checked": "2026-10-29",
      "summary": "Fills the tread rings with seats, breaking each row at the vomitories and aisles, and flags rows that break the egress limits. Wheelchair spaces are placed here too.",
      "inputs": [
       {
@@ -6272,14 +6328,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1052,
+      "w": 1058,
       "h": 1376,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 382,
-      "imgW": 196,
+      "imgW": 202,
       "imgH": 612,
       "img": "/assets/img/antlion/components/seat.png",
       "pending": false,
@@ -6593,11 +6649,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The whole 2D layout as one object",
-        "callX": 712,
+        "callX": 718,
         "callY": 386,
-        "gripX": 618,
+        "gripX": 624,
         "gripY": 418,
-        "d": "M712 417 H698 L630 418 H618"
+        "d": "M718 417 H704 L636 418 H624"
        },
        {
         "side": "out",
@@ -6608,11 +6664,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 712,
+        "callX": 718,
         "callY": 454,
-        "gripX": 618,
+        "gripX": 624,
         "gripY": 478,
-        "d": "M712 485 H698 L630 478 H618"
+        "d": "M718 485 H704 L636 478 H624"
        },
        {
         "side": "out",
@@ -6623,11 +6679,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 712,
+        "callX": 718,
         "callY": 520,
-        "gripX": 618,
+        "gripX": 624,
         "gripY": 538,
-        "d": "M712 551 H698 L630 538 H618"
+        "d": "M718 551 H704 L636 538 H624"
        },
        {
         "side": "out",
@@ -6638,11 +6694,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 712,
+        "callX": 718,
         "callY": 588,
-        "gripX": 618,
+        "gripX": 624,
         "gripY": 598,
-        "d": "M712 619 H698 L630 598 H618"
+        "d": "M718 619 H704 L636 598 H624"
        },
        {
         "side": "out",
@@ -6653,11 +6709,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 712,
+        "callX": 718,
         "callY": 654,
-        "gripX": 618,
+        "gripX": 624,
         "gripY": 658,
-        "d": "M712 685 H698 L630 658 H618"
+        "d": "M718 685 H704 L636 658 H624"
        },
        {
         "side": "out",
@@ -6668,11 +6724,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 712,
+        "callX": 718,
         "callY": 722,
-        "gripX": 618,
+        "gripX": 624,
         "gripY": 718,
-        "d": "M712 753 H698 L630 718 H618"
+        "d": "M718 753 H704 L636 718 H624"
        },
        {
         "side": "out",
@@ -6683,11 +6739,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 712,
+        "callX": 718,
         "callY": 788,
-        "gripX": 618,
+        "gripX": 624,
         "gripY": 778,
-        "d": "M712 819 H698 L630 778 H618"
+        "d": "M718 819 H704 L636 778 H624"
        },
        {
         "side": "out",
@@ -6698,11 +6754,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 712,
+        "callX": 718,
         "callY": 856,
-        "gripX": 618,
+        "gripX": 624,
         "gripY": 838,
-        "d": "M712 887 H698 L630 838 H618"
+        "d": "M718 887 H704 L636 838 H624"
        },
        {
         "side": "out",
@@ -6713,11 +6769,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 712,
+        "callX": 718,
         "callY": 922,
-        "gripX": 618,
+        "gripX": 624,
         "gripY": 898,
-        "d": "M712 953 H698 L630 898 H618"
+        "d": "M718 953 H704 L636 898 H624"
        },
        {
         "side": "out",
@@ -6728,11 +6784,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 712,
+        "callX": 718,
         "callY": 990,
-        "gripX": 618,
+        "gripX": 624,
         "gripY": 958,
-        "d": "M712 1021 H698 L630 958 H618"
+        "d": "M718 1021 H704 L636 958 H624"
        }
       ]
      },
@@ -6749,7 +6805,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-10-18",
+     "checked": "2026-10-29",
      "summary": "Same seat placement as Seat, but the vomitories, aisles and even the seats come from curves you draw instead of being generated. Use it where the automatic layout cannot express what you want.",
      "inputs": [
       {
@@ -6813,7 +6869,7 @@
        "optional": true,
        "dropdown": false,
        "default": null,
-       "desc": "One branch per tier. Draw each opening over the treads it spans: a closed rect, a band along the rings - a rect that crosses an axis line, or one bent along the rings (4 corners, plus 2 per bend) - split into rects at the axis lines or bends, doors at both ends of the band - Vom 3D's Band Opening Mode can keep one, or a U-shaped outline (arms at or inside the bar's ends - split into arm, bar and arm). Two rects may share a segment only on different rows",
+       "desc": "One branch per tier. Draw each opening over the treads it spans: a closed rect, a band along the rings - a rect that crosses an axis line where the rings turn less than 30 degrees, or one bent along the rings (4 corners, plus 2 per bend) - split into rects at the axis lines or bends, doors at both ends of the band - Vom 3D's Band Opening Mode can keep one, or a U-shaped outline (arms at or inside the bar's ends - split into arm, bar and arm). A rect over an axis line where the rings turn 30 to 60 degrees stays one opening. Two rects may share a segment only on different rows",
        "flow": false,
        "type": null
       },
@@ -6826,7 +6882,7 @@
        "optional": true,
        "dropdown": false,
        "default": null,
-       "desc": "One branch per tier. Feed baked Aisles cells back, or draw your own - open curve = the aisle centerline, closed rect = one cell placing the aisle and its tread range",
+       "desc": "One branch per tier. Feed baked Aisles cells back, or draw your own - open curve = the aisle centerline; closed outline = the aisle cells over the treads it covers. The drawn shape is kept at an axis line where the rings turn 30 degrees or more, when wider than 1.5 times Aisle Width, with more than four corners (bends under 30 degrees don't count) or with its front and back edges along the rows; any other outline is squared to its rows",
        "flow": false,
        "type": null
       },
@@ -7165,14 +7221,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1057,
+      "w": 1062,
       "h": 1443,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 400,
-      "imgW": 201,
+      "imgW": 206,
       "imgH": 642,
       "img": "/assets/img/antlion/components/custom-seat.png",
       "pending": false,
@@ -7501,11 +7557,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The whole 2D layout as one object",
-        "callX": 717,
+        "callX": 722,
         "callY": 408,
-        "gripX": 623,
+        "gripX": 628,
         "gripY": 440,
-        "d": "M717 439 H703 L635 440 H623"
+        "d": "M722 439 H708 L640 440 H628"
        },
        {
         "side": "out",
@@ -7516,11 +7572,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 717,
+        "callX": 722,
         "callY": 478,
-        "gripX": 623,
+        "gripX": 628,
         "gripY": 510,
-        "d": "M717 509 H703 L635 510 H623"
+        "d": "M722 509 H708 L640 510 H628"
        },
        {
         "side": "out",
@@ -7531,11 +7587,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 717,
+        "callX": 722,
         "callY": 548,
-        "gripX": 623,
+        "gripX": 628,
         "gripY": 580,
-        "d": "M717 579 H703 L635 580 H623"
+        "d": "M722 579 H708 L640 580 H628"
        },
        {
         "side": "out",
@@ -7546,11 +7602,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 717,
+        "callX": 722,
         "callY": 618,
-        "gripX": 623,
+        "gripX": 628,
         "gripY": 650,
-        "d": "M717 649 H703 L635 650 H623"
+        "d": "M722 649 H708 L640 650 H628"
        },
        {
         "side": "out",
@@ -7561,11 +7617,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 717,
+        "callX": 722,
         "callY": 688,
-        "gripX": 623,
+        "gripX": 628,
         "gripY": 720,
-        "d": "M717 719 H703 L635 720 H623"
+        "d": "M722 719 H708 L640 720 H628"
        },
        {
         "side": "out",
@@ -7576,11 +7632,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 717,
+        "callX": 722,
         "callY": 758,
-        "gripX": 623,
+        "gripX": 628,
         "gripY": 790,
-        "d": "M717 789 H703 L635 790 H623"
+        "d": "M722 789 H708 L640 790 H628"
        },
        {
         "side": "out",
@@ -7591,11 +7647,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 717,
+        "callX": 722,
         "callY": 828,
-        "gripX": 623,
+        "gripX": 628,
         "gripY": 860,
-        "d": "M717 859 H703 L635 860 H623"
+        "d": "M722 859 H708 L640 860 H628"
        },
        {
         "side": "out",
@@ -7606,11 +7662,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 717,
+        "callX": 722,
         "callY": 898,
-        "gripX": 623,
+        "gripX": 628,
         "gripY": 930,
-        "d": "M717 929 H703 L635 930 H623"
+        "d": "M722 929 H708 L640 930 H628"
        },
        {
         "side": "out",
@@ -7621,11 +7677,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 717,
+        "callX": 722,
         "callY": 968,
-        "gripX": 623,
+        "gripX": 628,
         "gripY": 1000,
-        "d": "M717 999 H703 L635 1000 H623"
+        "d": "M722 999 H708 L640 1000 H628"
        }
       ]
      },
@@ -7642,7 +7698,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-10-18",
+     "checked": "2026-10-29",
      "summary": "Cuts the bowl to shape — keep or remove a whole span between two axis numbers, or everything on one side of each curve you draw. Seats, aisles, vomitories and rings are all filtered together.",
      "inputs": [
       {
@@ -7949,14 +8005,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1068,
+      "w": 1074,
       "h": 907,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 252,
-      "imgW": 212,
+      "imgW": 218,
       "imgH": 402,
       "img": "/assets/img/antlion/components/cut.png",
       "pending": false,
@@ -8165,11 +8221,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The layout after the cut",
-        "callX": 728,
+        "callX": 734,
         "callY": 248,
-        "gripX": 634,
+        "gripX": 640,
         "gripY": 279,
-        "d": "M728 279 H634"
+        "d": "M734 279 H640"
        },
        {
         "side": "out",
@@ -8180,11 +8236,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Where the cut actually landed",
-        "callX": 728,
+        "callX": 734,
         "callY": 314,
-        "gripX": 634,
+        "gripX": 640,
         "gripY": 321,
-        "d": "M728 345 H714 L646 321 H634"
+        "d": "M734 345 H720 L652 321 H640"
        },
        {
         "side": "out",
@@ -8195,11 +8251,11 @@
         "access": "list",
         "flow": false,
         "blurb": "A line per cut made here",
-        "callX": 728,
+        "callX": 734,
         "callY": 382,
-        "gripX": 634,
+        "gripX": 640,
         "gripY": 364,
-        "d": "M728 413 H714 L646 364 H634"
+        "d": "M734 413 H720 L652 364 H640"
        },
        {
         "side": "out",
@@ -8210,11 +8266,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The seats this cut removed, drawn in plan",
-        "callX": 728,
+        "callX": 734,
         "callY": 448,
-        "gripX": 634,
+        "gripX": 640,
         "gripY": 408,
-        "d": "M728 479 H714 L646 408 H634"
+        "d": "M734 479 H720 L652 408 H640"
        },
        {
         "side": "out",
@@ -8225,11 +8281,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 728,
+        "callX": 734,
         "callY": 516,
-        "gripX": 634,
+        "gripX": 640,
         "gripY": 452,
-        "d": "M728 547 H714 L646 452 H634"
+        "d": "M734 547 H720 L652 452 H640"
        },
        {
         "side": "out",
@@ -8240,11 +8296,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 728,
+        "callX": 734,
         "callY": 582,
-        "gripX": 634,
+        "gripX": 640,
         "gripY": 495,
-        "d": "M728 613 H714 L646 495 H634"
+        "d": "M734 613 H720 L652 495 H640"
        },
        {
         "side": "out",
@@ -8255,11 +8311,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 728,
+        "callX": 734,
         "callY": 650,
-        "gripX": 634,
+        "gripX": 640,
         "gripY": 538,
-        "d": "M728 681 H714 L646 538 H634"
+        "d": "M734 681 H720 L652 538 H640"
        },
        {
         "side": "out",
@@ -8270,11 +8326,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 728,
+        "callX": 734,
         "callY": 716,
-        "gripX": 634,
+        "gripX": 640,
         "gripY": 582,
-        "d": "M728 747 H714 L646 582 H634"
+        "d": "M734 747 H720 L652 582 H640"
        },
        {
         "side": "out",
@@ -8285,11 +8341,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 728,
+        "callX": 734,
         "callY": 784,
-        "gripX": 634,
+        "gripX": 640,
         "gripY": 626,
-        "d": "M728 815 H714 L646 626 H634"
+        "d": "M734 815 H720 L652 626 H640"
        }
       ]
      },
@@ -8306,7 +8362,7 @@
      ],
      "group": "bowl-section-3",
      "page": "03-plan2d",
-     "checked": "2026-10-18",
+     "checked": "2026-10-29",
      "summary": "Punches local entrance openings through the stand — between two axis numbers, or under a closed curve you draw. Unlike Cut it removes only what the opening covers, and it records the new edges as railing lines.",
      "inputs": [
       {
@@ -8639,14 +8695,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1064,
+      "w": 1076,
       "h": 907,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 252,
-      "imgW": 208,
+      "imgW": 220,
       "imgH": 402,
       "img": "/assets/img/antlion/components/opening-cut.png",
       "pending": false,
@@ -8855,11 +8911,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The layout after the openings",
-        "callX": 724,
+        "callX": 736,
         "callY": 154,
-        "gripX": 630,
+        "gripX": 642,
         "gripY": 274,
-        "d": "M724 185 H710 L642 274 H630"
+        "d": "M736 185 H722 L654 274 H642"
        },
        {
         "side": "out",
@@ -8870,11 +8926,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Every edge that now needs a railing, running total",
-        "callX": 724,
+        "callX": 736,
         "callY": 221,
-        "gripX": 630,
+        "gripX": 642,
         "gripY": 310,
-        "d": "M724 252 H710 L642 310 H630"
+        "d": "M736 252 H722 L654 310 H642"
        },
        {
         "side": "out",
@@ -8885,11 +8941,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The outline of each opening this component cut",
-        "callX": 724,
+        "callX": 736,
         "callY": 288,
-        "gripX": 630,
+        "gripX": 642,
         "gripY": 345,
-        "d": "M724 319 H710 L642 345 H630"
+        "d": "M736 319 H722 L654 345 H642"
        },
        {
         "side": "out",
@@ -8900,11 +8956,11 @@
         "access": "list",
         "flow": false,
         "blurb": "A line per opening made here",
-        "callX": 724,
+        "callX": 736,
         "callY": 355,
-        "gripX": 630,
+        "gripX": 642,
         "gripY": 381,
-        "d": "M724 386 H710 L642 381 H630"
+        "d": "M736 386 H722 L654 381 H642"
        },
        {
         "side": "out",
@@ -8915,11 +8971,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The seats these openings removed, drawn in plan",
-        "callX": 724,
+        "callX": 736,
         "callY": 422,
-        "gripX": 630,
+        "gripX": 642,
         "gripY": 417,
-        "d": "M724 453 H710 L642 417 H630"
+        "d": "M736 453 H722 L654 417 H642"
        },
        {
         "side": "out",
@@ -8930,11 +8986,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 724,
+        "callX": 736,
         "callY": 489,
-        "gripX": 630,
+        "gripX": 642,
         "gripY": 452,
-        "d": "M724 520 H710 L642 452 H630"
+        "d": "M736 520 H722 L654 452 H642"
        },
        {
         "side": "out",
@@ -8945,11 +9001,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 724,
+        "callX": 736,
         "callY": 556,
-        "gripX": 630,
+        "gripX": 642,
         "gripY": 488,
-        "d": "M724 587 H710 L642 488 H630"
+        "d": "M736 587 H722 L654 488 H642"
        },
        {
         "side": "out",
@@ -8960,11 +9016,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 724,
+        "callX": 736,
         "callY": 623,
-        "gripX": 630,
+        "gripX": 642,
         "gripY": 524,
-        "d": "M724 654 H710 L642 524 H630"
+        "d": "M736 654 H722 L654 524 H642"
        },
        {
         "side": "out",
@@ -8975,11 +9031,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 724,
+        "callX": 736,
         "callY": 690,
-        "gripX": 630,
+        "gripX": 642,
         "gripY": 558,
-        "d": "M724 721 H710 L642 558 H630"
+        "d": "M736 721 H722 L654 558 H642"
        },
        {
         "side": "out",
@@ -8990,11 +9046,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 724,
+        "callX": 736,
         "callY": 757,
-        "gripX": 630,
+        "gripX": 642,
         "gripY": 594,
-        "d": "M724 788 H710 L642 594 H630"
+        "d": "M736 788 H722 L654 594 H642"
        },
        {
         "side": "out",
@@ -9005,11 +9061,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 724,
+        "callX": 736,
         "callY": 824,
-        "gripX": 630,
+        "gripX": 642,
         "gripY": 630,
-        "d": "M724 855 H710 L642 630 H630"
+        "d": "M736 855 H722 L654 630 H642"
        }
       ]
      },
@@ -9191,14 +9247,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1054,
+      "w": 1058,
       "h": 438,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 123,
-      "imgW": 198,
+      "imgW": 202,
       "imgH": 192,
       "img": "/assets/img/antlion/components/stand-3d.png",
       "pending": false,
@@ -9302,11 +9358,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The raw tier solids as one object",
-        "callX": 714,
+        "callX": 718,
         "callY": 87,
-        "gripX": 620,
+        "gripX": 624,
         "gripY": 147,
-        "d": "M714 118 H700 L632 147 H620"
+        "d": "M718 118 H704 L636 147 H624"
        },
        {
         "side": "out",
@@ -9317,11 +9373,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The tier bodies as separate solids, one per tier",
-        "callX": 714,
+        "callX": 718,
         "callY": 154,
-        "gripX": 620,
+        "gripX": 624,
         "gripY": 183,
-        "d": "M714 185 H700 L632 183 H620"
+        "d": "M718 185 H704 L636 183 H624"
        },
        {
         "side": "out",
@@ -9332,11 +9388,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The barriers as solids, one per tier",
-        "callX": 714,
+        "callX": 718,
         "callY": 221,
-        "gripX": 620,
+        "gripX": 624,
         "gripY": 219,
-        "d": "M714 252 H700 L632 219 H620"
+        "d": "M718 252 H704 L636 219 H624"
        },
        {
         "side": "out",
@@ -9347,11 +9403,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The closed profile as actually placed on each axis plane",
-        "callX": 714,
+        "callX": 718,
         "callY": 288,
-        "gripX": 620,
+        "gripX": 624,
         "gripY": 255,
-        "d": "M714 319 H700 L632 255 H620"
+        "d": "M718 319 H704 L636 255 H624"
        },
        {
         "side": "out",
@@ -9362,11 +9418,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 714,
+        "callX": 718,
         "callY": 355,
-        "gripX": 620,
+        "gripX": 624,
         "gripY": 291,
-        "d": "M714 386 H700 L632 291 H620"
+        "d": "M718 386 H704 L636 291 H624"
        }
       ]
      },
@@ -9571,14 +9627,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1056,
+      "w": 1062,
       "h": 639,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 178,
-      "imgW": 200,
+      "imgW": 206,
       "imgH": 282,
       "img": "/assets/img/antlion/components/vom-3d.png",
       "pending": false,
@@ -9727,11 +9783,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The layout back again, carrying these vomitory walls for the sightline checks and the cut down to the…",
-        "callX": 716,
+        "callX": 722,
         "callY": 186,
-        "gripX": 622,
+        "gripX": 628,
         "gripY": 217,
-        "d": "M716 217 H622"
+        "d": "M722 217 H628"
        },
        {
         "side": "out",
@@ -9742,11 +9798,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 716,
+        "callX": 722,
         "callY": 252,
-        "gripX": 622,
+        "gripX": 628,
         "gripY": 284,
-        "d": "M716 283 H702 L634 284 H622"
+        "d": "M722 283 H708 L640 284 H628"
        },
        {
         "side": "out",
@@ -9757,11 +9813,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 716,
+        "callX": 722,
         "callY": 320,
-        "gripX": 622,
+        "gripX": 628,
         "gripY": 352,
-        "d": "M716 351 H702 L634 352 H622"
+        "d": "M722 351 H708 L640 352 H628"
        },
        {
         "side": "out",
@@ -9772,11 +9828,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 716,
+        "callX": 722,
         "callY": 388,
-        "gripX": 622,
+        "gripX": 628,
         "gripY": 420,
-        "d": "M716 419 H702 L634 420 H622"
+        "d": "M722 419 H708 L640 420 H628"
        }
       ]
      },
@@ -9947,14 +10003,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1052,
+      "w": 1060,
       "h": 371,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 104,
-      "imgW": 196,
+      "imgW": 204,
       "imgH": 162,
       "img": "/assets/img/antlion/components/stand-3d-plus.png",
       "pending": false,
@@ -10043,11 +10099,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The 3D bowl as one object",
-        "callX": 712,
+        "callX": 720,
         "callY": 20,
-        "gripX": 618,
+        "gripX": 626,
         "gripY": 125,
-        "d": "M712 51 H698 L630 125 H618"
+        "d": "M720 51 H706 L638 125 H626"
        },
        {
         "side": "out",
@@ -10058,11 +10114,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 712,
+        "callX": 720,
         "callY": 87,
-        "gripX": 618,
+        "gripX": 626,
         "gripY": 155,
-        "d": "M712 118 H698 L630 155 H618"
+        "d": "M720 118 H706 L638 155 H626"
        },
        {
         "side": "out",
@@ -10073,11 +10129,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 712,
+        "callX": 720,
         "callY": 154,
-        "gripX": 618,
+        "gripX": 626,
         "gripY": 185,
-        "d": "M712 185 H618"
+        "d": "M720 185 H626"
        },
        {
         "side": "out",
@@ -10088,11 +10144,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 712,
+        "callX": 720,
         "callY": 221,
-        "gripX": 618,
+        "gripX": 626,
         "gripY": 215,
-        "d": "M712 252 H698 L630 215 H618"
+        "d": "M720 252 H706 L638 215 H626"
        },
        {
         "side": "out",
@@ -10103,11 +10159,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 712,
+        "callX": 720,
         "callY": 288,
-        "gripX": 618,
+        "gripX": 626,
         "gripY": 245,
-        "d": "M712 319 H698 L630 245 H618"
+        "d": "M720 319 H706 L638 245 H626"
        }
       ]
      },
@@ -10386,14 +10442,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1063,
+      "w": 1069,
       "h": 773,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 216,
-      "imgW": 207,
+      "imgW": 213,
       "imgH": 342,
       "img": "/assets/img/antlion/components/rail-3d.png",
       "pending": false,
@@ -10572,11 +10628,11 @@
         "access": "item",
         "flow": true,
         "blurb": "All the railings as one object",
-        "callX": 723,
+        "callX": 729,
         "callY": 210,
-        "gripX": 629,
+        "gripX": 635,
         "gripY": 242,
-        "d": "M723 241 H709 L641 242 H629"
+        "d": "M729 241 H715 L647 242 H635"
        },
        {
         "side": "out",
@@ -10587,11 +10643,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 723,
+        "callX": 729,
         "callY": 278,
-        "gripX": 629,
+        "gripX": 635,
         "gripY": 284,
-        "d": "M723 309 H709 L641 284 H629"
+        "d": "M729 309 H715 L647 284 H635"
        },
        {
         "side": "out",
@@ -10602,11 +10658,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 723,
+        "callX": 729,
         "callY": 344,
-        "gripX": 629,
+        "gripX": 635,
         "gripY": 324,
-        "d": "M723 375 H709 L641 324 H629"
+        "d": "M729 375 H715 L647 324 H635"
        },
        {
         "side": "out",
@@ -10617,11 +10673,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 723,
+        "callX": 729,
         "callY": 412,
-        "gripX": 629,
+        "gripX": 635,
         "gripY": 366,
-        "d": "M723 443 H709 L641 366 H629"
+        "d": "M729 443 H715 L647 366 H635"
        },
        {
         "side": "out",
@@ -10632,11 +10688,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 723,
+        "callX": 729,
         "callY": 478,
-        "gripX": 629,
+        "gripX": 635,
         "gripY": 406,
-        "d": "M723 509 H709 L641 406 H629"
+        "d": "M729 509 H715 L647 406 H635"
        },
        {
         "side": "out",
@@ -10647,11 +10703,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 723,
+        "callX": 729,
         "callY": 546,
-        "gripX": 629,
+        "gripX": 635,
         "gripY": 448,
-        "d": "M723 577 H709 L641 448 H629"
+        "d": "M729 577 H715 L647 448 H635"
        },
        {
         "side": "out",
@@ -10662,11 +10718,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 723,
+        "callX": 729,
         "callY": 612,
-        "gripX": 629,
+        "gripX": 635,
         "gripY": 489,
-        "d": "M723 643 H709 L641 489 H629"
+        "d": "M729 643 H715 L647 489 H635"
        },
        {
         "side": "out",
@@ -10677,11 +10733,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 723,
+        "callX": 729,
         "callY": 680,
-        "gripX": 629,
+        "gripX": 635,
         "gripY": 531,
-        "d": "M723 711 H709 L641 531 H629"
+        "d": "M729 711 H715 L647 531 H635"
        }
       ]
      },
@@ -10835,14 +10891,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1014,
+      "w": 1018,
       "h": 505,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 142,
-      "imgW": 158,
+      "imgW": 162,
       "imgH": 222,
       "img": "/assets/img/antlion/components/assemble-bowl.png",
       "pending": false,
@@ -10886,11 +10942,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The merged stand solids, same tier order",
-        "callX": 674,
+        "callX": 678,
         "callY": 20,
-        "gripX": 580,
+        "gripX": 584,
         "gripY": 163,
-        "d": "M674 51 H660 L592 163 H580"
+        "d": "M678 51 H664 L596 163 H584"
        },
        {
         "side": "out",
@@ -10901,11 +10957,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The assembled layout, carrying every branch's tiers",
-        "callX": 674,
+        "callX": 678,
         "callY": 87,
-        "gripX": 580,
+        "gripX": 584,
         "gripY": 193,
-        "d": "M674 118 H660 L592 193 H580"
+        "d": "M678 118 H664 L596 193 H584"
        },
        {
         "side": "out",
@@ -10916,11 +10972,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 674,
+        "callX": 678,
         "callY": 154,
-        "gripX": 580,
+        "gripX": 584,
         "gripY": 223,
-        "d": "M674 185 H660 L592 223 H580"
+        "d": "M678 185 H664 L596 223 H584"
        },
        {
         "side": "out",
@@ -10931,11 +10987,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 674,
+        "callX": 678,
         "callY": 221,
-        "gripX": 580,
+        "gripX": 584,
         "gripY": 253,
-        "d": "M674 252 H660 L592 253 H580"
+        "d": "M678 252 H664 L596 253 H584"
        },
        {
         "side": "out",
@@ -10946,11 +11002,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 674,
+        "callX": 678,
         "callY": 288,
-        "gripX": 580,
+        "gripX": 584,
         "gripY": 283,
-        "d": "M674 319 H660 L592 283 H580"
+        "d": "M678 319 H664 L596 283 H584"
        },
        {
         "side": "out",
@@ -10961,11 +11017,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 674,
+        "callX": 678,
         "callY": 355,
-        "gripX": 580,
+        "gripX": 584,
         "gripY": 313,
-        "d": "M674 386 H660 L592 313 H580"
+        "d": "M678 386 H664 L596 313 H584"
        },
        {
         "side": "out",
@@ -10976,11 +11032,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs (includes the tier map)",
-        "callX": 674,
+        "callX": 678,
         "callY": 422,
-        "gripX": 580,
+        "gripX": 584,
         "gripY": 343,
-        "d": "M674 453 H660 L592 343 H580"
+        "d": "M678 453 H664 L596 343 H584"
        }
       ]
      },
@@ -11218,14 +11274,14 @@
      "after": [],
      "tier": "core",
      "figure": {
-      "w": 1062,
+      "w": 1070,
       "h": 907,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 252,
-      "imgW": 206,
+      "imgW": 214,
       "imgH": 402,
       "img": "/assets/img/antlion/components/seat-3d.png",
       "pending": false,
@@ -11434,11 +11490,11 @@
         "access": "list",
         "flow": false,
         "blurb": "One chair solid per seat",
-        "callX": 722,
+        "callX": 730,
         "callY": 290,
-        "gripX": 628,
+        "gripX": 636,
         "gripY": 322,
-        "d": "M722 321 H708 L640 322 H628"
+        "d": "M730 321 H716 L648 322 H636"
        },
        {
         "side": "out",
@@ -11449,11 +11505,11 @@
         "access": "list",
         "flow": false,
         "blurb": "One spectator target per seat",
-        "callX": 722,
+        "callX": 730,
         "callY": 420,
-        "gripX": 628,
+        "gripX": 636,
         "gripY": 452,
-        "d": "M722 451 H708 L640 452 H628"
+        "d": "M730 451 H716 L648 452 H636"
        },
        {
         "side": "out",
@@ -11464,11 +11520,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 722,
+        "callX": 730,
         "callY": 550,
-        "gripX": 628,
+        "gripX": 636,
         "gripY": 582,
-        "d": "M722 581 H708 L640 582 H628"
+        "d": "M730 581 H716 L648 582 H636"
        }
       ]
      },
@@ -11785,14 +11841,14 @@
      "after": [],
      "tier": "core",
      "figure": {
-      "w": 1074,
+      "w": 1082,
       "h": 639,
       "callW": 340,
       "callH": 63,
-      "lead": 88,
-      "imgX": 428,
+      "lead": 86,
+      "imgX": 426,
       "imgY": 178,
-      "imgW": 218,
+      "imgW": 230,
       "imgH": 282,
       "img": "/assets/img/antlion/components/section-analysis.png",
       "pending": false,
@@ -11808,9 +11864,9 @@
         "blurb": "The sections to check, from Section or Section Plus",
         "callX": 0,
         "callY": 87,
-        "gripX": 434,
+        "gripX": 432,
         "gripY": 200,
-        "d": "M340 118 H354 L422 200 H434"
+        "d": "M340 118 H354 L420 200 H432"
        },
        {
         "side": "in",
@@ -11823,9 +11879,9 @@
         "blurb": "STANDARD aims straight at the focal point, VARIABLE_CORNER allows for the corners",
         "callX": 0,
         "callY": 154,
-        "gripX": 434,
+        "gripX": 432,
         "gripY": 234,
-        "d": "M340 185 H354 L422 234 H434"
+        "d": "M340 185 H354 L420 234 H432"
        },
        {
         "side": "in",
@@ -11838,9 +11894,9 @@
         "blurb": "Rows below this are reported POOR",
         "callX": 0,
         "callY": 221,
-        "gripX": 434,
+        "gripX": 432,
         "gripY": 268,
-        "d": "M340 252 H354 L422 268 H434"
+        "d": "M340 252 H354 L420 268 H432"
        },
        {
         "side": "in",
@@ -11853,9 +11909,9 @@
         "blurb": "Draw the dimension annotations",
         "callX": 0,
         "callY": 288,
-        "gripX": 434,
+        "gripX": 432,
         "gripY": 301,
-        "d": "M340 319 H354 L422 301 H434"
+        "d": "M340 319 H354 L420 301 H432"
        },
        {
         "side": "in",
@@ -11868,9 +11924,9 @@
         "blurb": "How far the dimension lines sit from the geometry",
         "callX": 0,
         "callY": 355,
-        "gripX": 434,
+        "gripX": 432,
         "gripY": 336,
-        "d": "M340 386 H354 L422 336 H434"
+        "d": "M340 386 H354 L420 336 H432"
        },
        {
         "side": "in",
@@ -11883,9 +11939,9 @@
         "blurb": "Dimension text height",
         "callX": 0,
         "callY": 422,
-        "gripX": 434,
+        "gripX": 432,
         "gripY": 368,
-        "d": "M340 453 H354 L422 368 H434"
+        "d": "M340 453 H354 L420 368 H432"
        },
        {
         "side": "in",
@@ -11898,9 +11954,9 @@
         "blurb": "A Rhino dimension style to draw with",
         "callX": 0,
         "callY": 489,
-        "gripX": 434,
+        "gripX": 432,
         "gripY": 403,
-        "d": "M340 520 H354 L422 403 H434"
+        "d": "M340 520 H354 L420 403 H432"
        },
        {
         "side": "in",
@@ -11913,9 +11969,9 @@
         "blurb": "Every value from Input Panel, as one bundle",
         "callX": 0,
         "callY": 556,
-        "gripX": 434,
+        "gripX": 432,
         "gripY": 436,
-        "d": "M340 587 H354 L422 436 H434"
+        "d": "M340 587 H354 L420 436 H432"
        },
        {
         "side": "out",
@@ -11926,11 +11982,11 @@
         "access": "list",
         "flow": true,
         "blurb": "The full result per tier",
-        "callX": 734,
+        "callX": 742,
         "callY": 20,
-        "gripX": 640,
+        "gripX": 650,
         "gripY": 199,
-        "d": "M734 51 H720 L652 199 H640"
+        "d": "M742 51 H728 L662 199 H650"
        },
        {
         "side": "out",
@@ -11941,11 +11997,11 @@
         "access": "list",
         "flow": false,
         "blurb": "C-value dimensions for rows that pass",
-        "callX": 734,
+        "callX": 742,
         "callY": 87,
-        "gripX": 640,
+        "gripX": 650,
         "gripY": 229,
-        "d": "M734 118 H720 L652 229 H640"
+        "d": "M742 118 H728 L662 229 H650"
        },
        {
         "side": "out",
@@ -11956,11 +12012,11 @@
         "access": "list",
         "flow": false,
         "blurb": "C-value dimensions for rows that fail",
-        "callX": 734,
+        "callX": 742,
         "callY": 154,
-        "gripX": 640,
+        "gripX": 650,
         "gripY": 259,
-        "d": "M734 185 H720 L652 259 H640"
+        "d": "M742 185 H728 L662 259 H650"
        },
        {
         "side": "out",
@@ -11971,11 +12027,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Riser height dimension on each step",
-        "callX": 734,
+        "callX": 742,
         "callY": 221,
-        "gripX": 640,
+        "gripX": 650,
         "gripY": 289,
-        "d": "M734 252 H720 L652 289 H640"
+        "d": "M742 252 H728 L662 289 H650"
        },
        {
         "side": "out",
@@ -11986,11 +12042,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Sightlines for rows that pass, plus each tier's last row",
-        "callX": 734,
+        "callX": 742,
         "callY": 288,
-        "gripX": 640,
+        "gripX": 650,
         "gripY": 319,
-        "d": "M734 319 H640"
+        "d": "M742 319 H650"
        },
        {
         "side": "out",
@@ -12001,11 +12057,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Sightlines for rows that fail",
-        "callX": 734,
+        "callX": 742,
         "callY": 355,
-        "gripX": 640,
+        "gripX": 650,
         "gripY": 349,
-        "d": "M734 386 H720 L652 349 H640"
+        "d": "M742 386 H728 L662 349 H650"
        },
        {
         "side": "out",
@@ -12016,11 +12072,11 @@
         "access": "list",
         "flow": false,
         "blurb": "C-value dimension at the barrier top point",
-        "callX": 734,
+        "callX": 742,
         "callY": 422,
-        "gripX": 640,
+        "gripX": 650,
         "gripY": 379,
-        "d": "M734 453 H720 L652 379 H640"
+        "d": "M742 453 H728 L662 379 H650"
        },
        {
         "side": "out",
@@ -12031,11 +12087,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Per-tier summary",
-        "callX": 734,
+        "callX": 742,
         "callY": 489,
-        "gripX": 640,
+        "gripX": 650,
         "gripY": 409,
-        "d": "M734 520 H720 L652 409 H640"
+        "d": "M742 520 H728 L662 409 H650"
        },
        {
         "side": "out",
@@ -12046,11 +12102,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 734,
+        "callX": 742,
         "callY": 556,
-        "gripX": 640,
+        "gripX": 650,
         "gripY": 439,
-        "d": "M734 587 H720 L652 439 H640"
+        "d": "M742 587 H728 L662 439 H650"
        }
       ]
      },
@@ -12368,14 +12424,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1063,
+      "w": 1069,
       "h": 773,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 216,
-      "imgW": 207,
+      "imgW": 213,
       "imgH": 342,
       "img": "/assets/img/antlion/components/c-value-seat.png",
       "pending": false,
@@ -12554,11 +12610,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The whole seat map flattened to 2D plan",
-        "callX": 723,
+        "callX": 729,
         "callY": 20,
-        "gripX": 629,
+        "gripX": 635,
         "gripY": 237,
-        "d": "M723 51 H709 L641 237 H629"
+        "d": "M729 51 H715 L647 237 H635"
        },
        {
         "side": "out",
@@ -12569,11 +12625,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 723,
+        "callX": 729,
         "callY": 87,
-        "gripX": 629,
+        "gripX": 635,
         "gripY": 267,
-        "d": "M723 118 H709 L641 267 H629"
+        "d": "M729 118 H715 L647 267 H635"
        },
        {
         "side": "out",
@@ -12584,11 +12640,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 723,
+        "callX": 729,
         "callY": 154,
-        "gripX": 629,
+        "gripX": 635,
         "gripY": 297,
-        "d": "M723 185 H709 L641 297 H629"
+        "d": "M729 185 H715 L647 297 H635"
        },
        {
         "side": "out",
@@ -12599,11 +12655,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 723,
+        "callX": 729,
         "callY": 221,
-        "gripX": 629,
+        "gripX": 635,
         "gripY": 327,
-        "d": "M723 252 H709 L641 327 H629"
+        "d": "M729 252 H715 L647 327 H635"
        },
        {
         "side": "out",
@@ -12614,11 +12670,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 723,
+        "callX": 729,
         "callY": 288,
-        "gripX": 629,
+        "gripX": 635,
         "gripY": 357,
-        "d": "M723 319 H709 L641 357 H629"
+        "d": "M729 319 H715 L647 357 H635"
        },
        {
         "side": "out",
@@ -12629,11 +12685,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 723,
+        "callX": 729,
         "callY": 355,
-        "gripX": 629,
+        "gripX": 635,
         "gripY": 387,
-        "d": "M723 386 H709 L641 387 H629"
+        "d": "M729 386 H715 L647 387 H635"
        },
        {
         "side": "out",
@@ -12644,11 +12700,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 723,
+        "callX": 729,
         "callY": 422,
-        "gripX": 629,
+        "gripX": 635,
         "gripY": 417,
-        "d": "M723 453 H709 L641 417 H629"
+        "d": "M729 453 H715 L647 417 H635"
        },
        {
         "side": "out",
@@ -12659,11 +12715,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 723,
+        "callX": 729,
         "callY": 489,
-        "gripX": 629,
+        "gripX": 635,
         "gripY": 447,
-        "d": "M723 520 H709 L641 447 H629"
+        "d": "M729 520 H715 L647 447 H635"
        },
        {
         "side": "out",
@@ -12674,11 +12730,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per tier",
-        "callX": 723,
+        "callX": 729,
         "callY": 556,
-        "gripX": 629,
+        "gripX": 635,
         "gripY": 477,
-        "d": "M723 587 H709 L641 477 H629"
+        "d": "M729 587 H715 L647 477 H635"
        },
        {
         "side": "out",
@@ -12689,11 +12745,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Per-tier summary",
-        "callX": 723,
+        "callX": 729,
         "callY": 623,
-        "gripX": 629,
+        "gripX": 635,
         "gripY": 507,
-        "d": "M723 654 H709 L641 507 H629"
+        "d": "M729 654 H715 L647 507 H635"
        },
        {
         "side": "out",
@@ -12704,11 +12760,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 723,
+        "callX": 729,
         "callY": 690,
-        "gripX": 629,
+        "gripX": 635,
         "gripY": 537,
-        "d": "M723 721 H709 L641 537 H629"
+        "d": "M729 721 H715 L647 537 H635"
        }
       ]
      },
@@ -13569,14 +13625,14 @@
      ],
      "tier": "free",
      "figure": {
-      "w": 1044,
+      "w": 1048,
       "h": 371,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 104,
-      "imgW": 188,
+      "imgW": 192,
       "imgH": 162,
       "img": "/assets/img/antlion/components/c-value-legend.png",
       "pending": false,
@@ -13665,11 +13721,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The legend as one object",
-        "callX": 704,
+        "callX": 708,
         "callY": 87,
-        "gripX": 610,
+        "gripX": 614,
         "gripY": 128,
-        "d": "M704 118 H690 L622 128 H610"
+        "d": "M708 118 H694 L626 128 H614"
        },
        {
         "side": "out",
@@ -13680,11 +13736,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The color of each band, low band first",
-        "callX": 704,
+        "callX": 708,
         "callY": 154,
-        "gripX": 610,
+        "gripX": 614,
         "gripY": 166,
-        "d": "M704 185 H690 L622 166 H610"
+        "d": "M708 185 H694 L626 166 H614"
        },
        {
         "side": "out",
@@ -13695,11 +13751,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The label of each band, as text",
-        "callX": 704,
+        "callX": 708,
         "callY": 221,
-        "gripX": 610,
+        "gripX": 614,
         "gripY": 203,
-        "d": "M704 252 H690 L622 203 H610"
+        "d": "M708 252 H694 L626 203 H614"
        },
        {
         "side": "out",
@@ -13710,11 +13766,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Why the gray not-graded states appear and how to clear them",
-        "callX": 704,
+        "callX": 708,
         "callY": 288,
-        "gripX": 610,
+        "gripX": 614,
         "gripY": 240,
-        "d": "M704 319 H690 L622 240 H610"
+        "d": "M708 319 H694 L626 240 H614"
        }
       ]
      },
@@ -14003,14 +14059,14 @@
      "after": [],
      "tier": "core",
      "figure": {
-      "w": 1058,
+      "w": 1064,
       "h": 840,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 234,
-      "imgW": 202,
+      "imgW": 208,
       "imgH": 372,
       "img": "/assets/img/antlion/components/c-value-section-check.png",
       "pending": false,
@@ -14144,11 +14200,11 @@
         "access": "list",
         "flow": false,
         "blurb": "One sheet rectangle per axis, sized so the drawing inside stays full size",
-        "callX": 718,
+        "callX": 724,
         "callY": 20,
-        "gripX": 624,
+        "gripX": 630,
         "gripY": 255,
-        "d": "M718 51 H704 L636 255 H624"
+        "d": "M724 51 H710 L642 255 H630"
        },
        {
         "side": "out",
@@ -14159,11 +14215,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The stand where the tread is really built, one closed curve per run",
-        "callX": 718,
+        "callX": 724,
         "callY": 87,
-        "gripX": 624,
+        "gripX": 630,
         "gripY": 285,
-        "d": "M718 118 H704 L636 285 H624"
+        "d": "M724 118 H710 L642 285 H630"
        },
        {
         "side": "out",
@@ -14174,11 +14230,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The stand where nothing is built",
-        "callX": 718,
+        "callX": 724,
         "callY": 154,
-        "gripX": 624,
+        "gripX": 630,
         "gripY": 315,
-        "d": "M718 185 H704 L636 315 H624"
+        "d": "M724 185 H710 L642 315 H630"
        },
        {
         "side": "out",
@@ -14189,11 +14245,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Eye to focal point, one per row that has a spectator",
-        "callX": 718,
+        "callX": 724,
         "callY": 221,
-        "gripX": 624,
+        "gripX": 630,
         "gripY": 345,
-        "d": "M718 252 H704 L636 345 H624"
+        "d": "M724 252 H710 L642 345 H630"
        },
        {
         "side": "out",
@@ -14204,11 +14260,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Sightlines for rows the cut does not pass through",
-        "callX": 718,
+        "callX": 724,
         "callY": 288,
-        "gripX": 624,
+        "gripX": 630,
         "gripY": 375,
-        "d": "M718 319 H704 L636 375 H624"
+        "d": "M724 319 H710 L642 375 H630"
        },
        {
         "side": "out",
@@ -14219,11 +14275,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The drawing datums",
-        "callX": 718,
+        "callX": 724,
         "callY": 355,
-        "gripX": 624,
+        "gripX": 630,
         "gripY": 405,
-        "d": "M718 386 H704 L636 405 H624"
+        "d": "M724 386 H710 L642 405 H630"
        },
        {
         "side": "out",
@@ -14234,11 +14290,11 @@
         "access": "list",
         "flow": false,
         "blurb": "C-value and tread dimensions plus the sheet title, as real Rhino annotations",
-        "callX": 718,
+        "callX": 724,
         "callY": 422,
-        "gripX": 624,
+        "gripX": 630,
         "gripY": 435,
-        "d": "M718 453 H704 L636 435 H624"
+        "d": "M724 453 H710 L642 435 H630"
        },
        {
         "side": "out",
@@ -14249,11 +14305,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The axis label on each sheet, parallel to Sheets",
-        "callX": 718,
+        "callX": 724,
         "callY": 489,
-        "gripX": 624,
+        "gripX": 630,
         "gripY": 465,
-        "d": "M718 520 H704 L636 465 H624"
+        "d": "M724 520 H710 L642 465 H630"
        },
        {
         "side": "out",
@@ -14264,11 +14320,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Railings and vomitories where the cut really passes through them, one curve per piece",
-        "callX": 718,
+        "callX": 724,
         "callY": 556,
-        "gripX": 624,
+        "gripX": 630,
         "gripY": 495,
-        "d": "M718 587 H704 L636 495 H624"
+        "d": "M724 587 H710 L642 495 H630"
        },
        {
         "side": "out",
@@ -14279,11 +14335,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The same parts where the cut misses them",
-        "callX": 718,
+        "callX": 724,
         "callY": 623,
-        "gripX": 624,
+        "gripX": 630,
         "gripY": 525,
-        "d": "M718 654 H704 L636 525 H624"
+        "d": "M724 654 H710 L642 525 H630"
        },
        {
         "side": "out",
@@ -14294,11 +14350,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Sheet format, scale, and how the largest section fits the usable area",
-        "callX": 718,
+        "callX": 724,
         "callY": 690,
-        "gripX": 624,
+        "gripX": 630,
         "gripY": 555,
-        "d": "M718 721 H704 L636 555 H624"
+        "d": "M724 721 H710 L642 555 H630"
        },
        {
         "side": "out",
@@ -14309,11 +14365,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 718,
+        "callX": 724,
         "callY": 757,
-        "gripX": 624,
+        "gripX": 630,
         "gripY": 585,
-        "d": "M718 788 H704 L636 585 H624"
+        "d": "M724 788 H710 L642 585 H630"
        }
       ]
      },
@@ -14434,14 +14490,14 @@
      ],
      "tier": "free",
      "figure": {
-      "w": 1032,
+      "w": 1034,
       "h": 438,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 123,
-      "imgW": 176,
+      "imgW": 178,
       "imgH": 192,
       "img": "/assets/img/antlion/components/sheet-setup.png",
       "pending": false,
@@ -14545,11 +14601,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The sheet setup as one object",
-        "callX": 692,
+        "callX": 694,
         "callY": 188,
-        "gripX": 598,
+        "gripX": 600,
         "gripY": 219,
-        "d": "M692 219 H598"
+        "d": "M694 219 H600"
        }
       ]
      },
@@ -14848,14 +14904,14 @@
      "after": [],
      "tier": "core",
      "figure": {
-      "w": 1040,
+      "w": 1045,
       "h": 572,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 160,
-      "imgW": 184,
+      "imgW": 189,
       "imgH": 252,
       "img": "/assets/img/antlion/components/c-value-map.png",
       "pending": false,
@@ -14914,11 +14970,11 @@
         "access": "list",
         "flow": false,
         "blurb": "One sheet rectangle per tier",
-        "callX": 700,
+        "callX": 705,
         "callY": 20,
-        "gripX": 606,
+        "gripX": 611,
         "gripY": 181,
-        "d": "M700 51 H686 L618 181 H606"
+        "d": "M705 51 H691 L623 181 H611"
        },
        {
         "side": "out",
@@ -14929,11 +14985,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The colored map on the sheets, one hatch per cell",
-        "callX": 700,
+        "callX": 705,
         "callY": 87,
-        "gripX": 606,
+        "gripX": 611,
         "gripY": 211,
-        "d": "M700 118 H686 L618 211 H606"
+        "d": "M705 118 H691 L623 211 H611"
        },
        {
         "side": "out",
@@ -14944,11 +15000,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The curve each hatch on the map was made from",
-        "callX": 700,
+        "callX": 705,
         "callY": 154,
-        "gripX": 606,
+        "gripX": 611,
         "gripY": 241,
-        "d": "M700 185 H686 L618 241 H606"
+        "d": "M705 185 H691 L623 241 H611"
        },
        {
         "side": "out",
@@ -14959,11 +15015,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The seat layout drawing on each sheet, flat on Z=0",
-        "callX": 700,
+        "callX": 705,
         "callY": 221,
-        "gripX": 606,
+        "gripX": 611,
         "gripY": 271,
-        "d": "M700 252 H686 L618 271 H606"
+        "d": "M705 252 H691 L623 271 H611"
        },
        {
         "side": "out",
@@ -14974,11 +15030,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Sheet titles as real Rhino text",
-        "callX": 700,
+        "callX": 705,
         "callY": 288,
-        "gripX": 606,
+        "gripX": 611,
         "gripY": 301,
-        "d": "M700 319 H686 L618 301 H606"
+        "d": "M705 319 H691 L623 301 H611"
        },
        {
         "side": "out",
@@ -14989,11 +15045,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The name on each sheet",
-        "callX": 700,
+        "callX": 705,
         "callY": 355,
-        "gripX": 606,
+        "gripX": 611,
         "gripY": 331,
-        "d": "M700 386 H686 L618 331 H606"
+        "d": "M705 386 H691 L623 331 H611"
        },
        {
         "side": "out",
@@ -15004,11 +15060,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Sheet format, scale, what was drawn and the conventions used",
-        "callX": 700,
+        "callX": 705,
         "callY": 422,
-        "gripX": 606,
+        "gripX": 611,
         "gripY": 361,
-        "d": "M700 453 H686 L618 361 H606"
+        "d": "M705 453 H691 L623 361 H611"
        },
        {
         "side": "out",
@@ -15019,11 +15075,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 700,
+        "callX": 705,
         "callY": 489,
-        "gripX": 606,
+        "gripX": 611,
         "gripY": 391,
-        "d": "M700 520 H686 L618 391 H606"
+        "d": "M705 520 H691 L623 391 H611"
        }
       ]
      },
@@ -15375,14 +15431,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1044,
+      "w": 1048,
       "h": 773,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 216,
-      "imgW": 188,
+      "imgW": 192,
       "imgH": 342,
       "img": "/assets/img/antlion/components/seat-map.png",
       "pending": false,
@@ -15456,11 +15512,11 @@
         "access": "item",
         "flow": true,
         "blurb": "Zones with their statistics, plus every seat's zone, number and address",
-        "callX": 704,
+        "callX": 708,
         "callY": 20,
-        "gripX": 610,
+        "gripX": 614,
         "gripY": 237,
-        "d": "M704 51 H690 L622 237 H610"
+        "d": "M708 51 H694 L626 237 H614"
        },
        {
         "side": "out",
@@ -15471,11 +15527,11 @@
         "access": "list",
         "flow": false,
         "blurb": "One sheet rectangle per tier",
-        "callX": 704,
+        "callX": 708,
         "callY": 87,
-        "gripX": 610,
+        "gripX": 614,
         "gripY": 267,
-        "d": "M704 118 H690 L622 267 H610"
+        "d": "M708 118 H694 L626 267 H614"
        },
        {
         "side": "out",
@@ -15486,11 +15542,11 @@
         "access": "list",
         "flow": false,
         "blurb": "One pastel hatch per zone",
-        "callX": 704,
+        "callX": 708,
         "callY": 154,
-        "gripX": 610,
+        "gripX": 614,
         "gripY": 297,
-        "d": "M704 185 H690 L622 297 H610"
+        "d": "M708 185 H694 L626 297 H614"
        },
        {
         "side": "out",
@@ -15501,11 +15557,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The boundary of each zone on the sheets",
-        "callX": 704,
+        "callX": 708,
         "callY": 221,
-        "gripX": 610,
+        "gripX": 614,
         "gripY": 327,
-        "d": "M704 252 H690 L622 327 H610"
+        "d": "M708 252 H694 L626 327 H614"
        },
        {
         "side": "out",
@@ -15516,11 +15572,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The seat layout drawing on each sheet, flat on Z=0",
-        "callX": 704,
+        "callX": 708,
         "callY": 288,
-        "gripX": 610,
+        "gripX": 614,
         "gripY": 357,
-        "d": "M704 319 H690 L622 357 H610"
+        "d": "M708 319 H694 L626 357 H614"
        },
        {
         "side": "out",
@@ -15531,11 +15587,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Zone labels, seat counts and sheet titles as real Rhino text",
-        "callX": 704,
+        "callX": 708,
         "callY": 355,
-        "gripX": 610,
+        "gripX": 614,
         "gripY": 387,
-        "d": "M704 386 H690 L622 387 H610"
+        "d": "M708 386 H694 L626 387 H614"
        },
        {
         "side": "out",
@@ -15546,11 +15602,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The name on each sheet",
-        "callX": 704,
+        "callX": 708,
         "callY": 422,
-        "gripX": 610,
+        "gripX": 614,
         "gripY": 417,
-        "d": "M704 453 H690 L622 417 H610"
+        "d": "M708 453 H694 L626 417 H614"
        },
        {
         "side": "out",
@@ -15561,11 +15617,11 @@
         "access": "list",
         "flow": false,
         "blurb": "One tab-separated line per zone with a header row",
-        "callX": 704,
+        "callX": 708,
         "callY": 489,
-        "gripX": 610,
+        "gripX": 614,
         "gripY": 447,
-        "d": "M704 520 H690 L622 447 H610"
+        "d": "M708 520 H694 L626 447 H614"
        },
        {
         "side": "out",
@@ -15576,11 +15632,11 @@
         "access": "list",
         "flow": false,
         "blurb": "One tab-separated line per seat",
-        "callX": 704,
+        "callX": 708,
         "callY": 556,
-        "gripX": 610,
+        "gripX": 614,
         "gripY": 477,
-        "d": "M704 587 H690 L622 477 H610"
+        "d": "M708 587 H694 L626 477 H614"
        },
        {
         "side": "out",
@@ -15591,11 +15647,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Zone-by-zone summary you can read like a legend",
-        "callX": 704,
+        "callX": 708,
         "callY": 623,
-        "gripX": 610,
+        "gripX": 614,
         "gripY": 507,
-        "d": "M704 654 H690 L622 507 H610"
+        "d": "M708 654 H694 L626 507 H614"
        },
        {
         "side": "out",
@@ -15606,11 +15662,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 704,
+        "callX": 708,
         "callY": 690,
-        "gripX": 610,
+        "gripX": 614,
         "gripY": 537,
-        "d": "M704 721 H690 L622 537 H610"
+        "d": "M708 721 H694 L626 537 H614"
        }
       ]
      },
@@ -15688,14 +15744,14 @@
      "after": [],
      "tier": "free",
      "figure": {
-      "w": 1042,
+      "w": 1052,
       "h": 237,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 68,
-      "imgW": 186,
+      "imgW": 196,
       "imgH": 102,
       "img": "/assets/img/antlion/components/license.png",
       "pending": false,
@@ -15754,11 +15810,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Whether the license is active, and what to do if it is not",
-        "callX": 702,
+        "callX": 712,
         "callY": 88,
-        "gripX": 608,
+        "gripX": 618,
         "gripY": 119,
-        "d": "M702 119 H608"
+        "d": "M712 119 H618"
        }
       ]
      },
@@ -15981,14 +16037,14 @@
      "after": [],
      "tier": "core",
      "figure": {
-      "w": 1036,
+      "w": 1046,
       "h": 773,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 216,
-      "imgW": 180,
+      "imgW": 190,
       "imgH": 342,
       "img": "/assets/img/antlion/components/seat-view.png",
       "pending": false,
@@ -16167,11 +16223,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Where the camera stands",
-        "callX": 696,
+        "callX": 706,
         "callY": 230,
-        "gripX": 602,
+        "gripX": 612,
         "gripY": 262,
-        "d": "M696 261 H682 L614 262 H602"
+        "d": "M706 261 H692 L624 262 H612"
        },
        {
         "side": "out",
@@ -16182,11 +16238,11 @@
         "access": "item",
         "flow": false,
         "blurb": "What the camera aims at, before Yaw and Pitch",
-        "callX": 696,
+        "callX": 706,
         "callY": 314,
-        "gripX": 602,
+        "gripX": 612,
         "gripY": 345,
-        "d": "M696 345 H602"
+        "d": "M706 345 H612"
        },
        {
         "side": "out",
@@ -16197,11 +16253,11 @@
         "access": "item",
         "flow": false,
         "blurb": "The eye-to-target line actually applied to the viewport",
-        "callX": 696,
+        "callX": 706,
         "callY": 396,
-        "gripX": 602,
+        "gripX": 612,
         "gripY": 428,
-        "d": "M696 427 H682 L614 428 H602"
+        "d": "M706 427 H692 L624 428 H612"
        },
        {
         "side": "out",
@@ -16212,11 +16268,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 696,
+        "callX": 706,
         "callY": 478,
-        "gripX": 602,
+        "gripX": 612,
         "gripY": 510,
-        "d": "M696 509 H682 L614 510 H602"
+        "d": "M706 509 H692 L624 510 H612"
        }
       ]
      },
@@ -16377,14 +16433,14 @@
      "after": [],
      "tier": "core",
      "figure": {
-      "w": 1040,
+      "w": 1044,
       "h": 371,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 104,
-      "imgW": 184,
+      "imgW": 188,
       "imgH": 162,
       "img": "/assets/img/antlion/components/view-axis.png",
       "pending": false,
@@ -16473,11 +16529,11 @@
         "access": "list",
         "flow": false,
         "blurb": "One tag line per axis",
-        "callX": 700,
+        "callX": 704,
         "callY": 20,
-        "gripX": 606,
+        "gripX": 610,
         "gripY": 125,
-        "d": "M700 51 H686 L618 125 H606"
+        "d": "M704 51 H690 L622 125 H610"
        },
        {
         "side": "out",
@@ -16488,11 +16544,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The circle at the end of each tag line, matching Guide Lines item for item",
-        "callX": 700,
+        "callX": 704,
         "callY": 87,
-        "gripX": 606,
+        "gripX": 610,
         "gripY": 155,
-        "d": "M700 118 H686 L618 155 H606"
+        "d": "M704 118 H690 L622 155 H610"
        },
        {
         "side": "out",
@@ -16503,11 +16559,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The axis name as bakeable text, centered in each circle",
-        "callX": 700,
+        "callX": 704,
         "callY": 154,
-        "gripX": 606,
+        "gripX": 610,
         "gripY": 185,
-        "d": "M700 185 H606"
+        "d": "M704 185 H610"
        },
        {
         "side": "out",
@@ -16518,11 +16574,11 @@
         "access": "list",
         "flow": false,
         "blurb": "The axis names as plain text, matching Circles item for item",
-        "callX": 700,
+        "callX": 704,
         "callY": 221,
-        "gripX": 606,
+        "gripX": 610,
         "gripY": 215,
-        "d": "M700 252 H686 L618 215 H606"
+        "d": "M704 252 H690 L622 215 H610"
        },
        {
         "side": "out",
@@ -16533,11 +16589,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 700,
+        "callX": 704,
         "callY": 288,
-        "gripX": 606,
+        "gripX": 610,
         "gripY": 245,
-        "d": "M700 319 H686 L618 245 H606"
+        "d": "M704 319 H690 L622 245 H610"
        }
       ]
      },
@@ -16753,14 +16809,14 @@
      "after": [],
      "tier": "core",
      "figure": {
-      "w": 1058,
+      "w": 1063,
       "h": 505,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 142,
-      "imgW": 202,
+      "imgW": 207,
       "imgH": 222,
       "img": "/assets/img/antlion/components/view-limit.png",
       "pending": false,
@@ -16879,11 +16935,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Reference envelopes: optimum, maximum, quality circle",
-        "callX": 718,
+        "callX": 723,
         "callY": 20,
-        "gripX": 624,
+        "gripX": 629,
         "gripY": 163,
-        "d": "M718 51 H704 L636 163 H624"
+        "d": "M723 51 H709 L641 163 H629"
        },
        {
         "side": "out",
@@ -16894,11 +16950,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Sport, kind, radius, datum, source and whether the value is sourced or user-set",
-        "callX": 718,
+        "callX": 723,
         "callY": 87,
-        "gripX": 624,
+        "gripX": 629,
         "gripY": 193,
-        "d": "M718 118 H704 L636 193 H624"
+        "d": "M723 118 H709 L641 193 H629"
        },
        {
         "side": "out",
@@ -16909,11 +16965,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Seats inside the maximum limit, or the reference/override maximum when the sport has none",
-        "callX": 718,
+        "callX": 723,
         "callY": 154,
-        "gripX": 624,
+        "gripX": 629,
         "gripY": 223,
-        "d": "M718 185 H704 L636 223 H624"
+        "d": "M723 185 H709 L641 223 H629"
        },
        {
         "side": "out",
@@ -16924,11 +16980,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Seats outside the maximum limit, or the reference/override maximum when the sport has none",
-        "callX": 718,
+        "callX": 723,
         "callY": 221,
-        "gripX": 624,
+        "gripX": 629,
         "gripY": 253,
-        "d": "M718 252 H704 L636 253 H624"
+        "d": "M723 252 H709 L641 253 H629"
        },
        {
         "side": "out",
@@ -16939,11 +16995,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Positions of the seats outside the maximum limit",
-        "callX": 718,
+        "callX": 723,
         "callY": 288,
-        "gripX": 624,
+        "gripX": 629,
         "gripY": 283,
-        "d": "M718 319 H704 L636 283 H624"
+        "d": "M723 319 H709 L641 283 H629"
        },
        {
         "side": "out",
@@ -16954,11 +17010,11 @@
         "access": "list",
         "flow": false,
         "blurb": "Sport, limit radii, seats inside versus outside",
-        "callX": 718,
+        "callX": 723,
         "callY": 355,
-        "gripX": 624,
+        "gripX": 629,
         "gripY": 313,
-        "d": "M718 386 H704 L636 313 H624"
+        "d": "M723 386 H709 L641 313 H629"
        },
        {
         "side": "out",
@@ -16969,11 +17025,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 718,
+        "callX": 723,
         "callY": 422,
-        "gripX": 624,
+        "gripX": 629,
         "gripY": 343,
-        "d": "M718 453 H704 L636 343 H624"
+        "d": "M723 453 H709 L641 343 H629"
        }
       ]
      },
@@ -17122,14 +17178,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1026,
+      "w": 1034,
       "h": 438,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 123,
-      "imgW": 170,
+      "imgW": 178,
       "imgH": 192,
       "img": "/assets/img/antlion/components/excel-workbook.png",
       "pending": false,
@@ -17233,11 +17289,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The workbook reference",
-        "callX": 686,
+        "callX": 694,
         "callY": 128,
-        "gripX": 592,
+        "gripX": 600,
         "gripY": 159,
-        "d": "M686 159 H592"
+        "d": "M694 159 H600"
        },
        {
         "side": "out",
@@ -17248,11 +17304,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Where the workbook file is",
-        "callX": 686,
+        "callX": 694,
         "callY": 194,
-        "gripX": 592,
+        "gripX": 600,
         "gripY": 219,
-        "d": "M686 225 H672 L604 219 H592"
+        "d": "M694 225 H680 L612 219 H600"
        },
        {
         "side": "out",
@@ -17263,11 +17319,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 686,
+        "callX": 694,
         "callY": 262,
-        "gripX": 592,
+        "gripX": 600,
         "gripY": 279,
-        "d": "M686 293 H672 L604 279 H592"
+        "d": "M694 293 H680 L612 279 H600"
        }
       ]
      },
@@ -17429,14 +17485,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1039,
+      "w": 1054,
       "h": 505,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 142,
-      "imgW": 183,
+      "imgW": 198,
       "imgH": 222,
       "img": "/assets/img/antlion/components/google-workbook.png",
       "pending": false,
@@ -17555,11 +17611,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The workbook reference",
-        "callX": 699,
+        "callX": 714,
         "callY": 150,
-        "gripX": 605,
+        "gripX": 620,
         "gripY": 182,
-        "d": "M699 181 H685 L617 182 H605"
+        "d": "M714 181 H700 L632 182 H620"
        },
        {
         "side": "out",
@@ -17570,11 +17626,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Web address of the workbook",
-        "callX": 699,
+        "callX": 714,
         "callY": 220,
-        "gripX": 605,
+        "gripX": 620,
         "gripY": 252,
-        "d": "M699 251 H685 L617 252 H605"
+        "d": "M714 251 H700 L632 252 H620"
        },
        {
         "side": "out",
@@ -17585,11 +17641,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 699,
+        "callX": 714,
         "callY": 290,
-        "gripX": 605,
+        "gripX": 620,
         "gripY": 322,
-        "d": "M699 321 H685 L617 322 H605"
+        "d": "M714 321 H700 L632 322 H620"
        }
       ]
      },
@@ -17777,14 +17833,14 @@
      ],
      "tier": "core",
      "figure": {
-      "w": 1032,
+      "w": 1033,
       "h": 706,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 197,
-      "imgW": 176,
+      "imgW": 177,
       "imgH": 312,
       "img": "/assets/img/antlion/components/table-in.png",
       "pending": false,
@@ -17828,11 +17884,11 @@
         "access": "tree",
         "flow": false,
         "blurb": "One branch per step: row index, tread depth, riser height",
-        "callX": 692,
+        "callX": 693,
         "callY": 20,
-        "gripX": 598,
+        "gripX": 599,
         "gripY": 218,
-        "d": "M692 51 H678 L610 218 H598"
+        "d": "M693 51 H679 L611 218 H599"
        },
        {
         "side": "out",
@@ -17843,11 +17899,11 @@
         "access": "item",
         "flow": false,
         "blurb": "How far back from the nosing the eye sits",
-        "callX": 692,
+        "callX": 693,
         "callY": 87,
-        "gripX": 598,
+        "gripX": 599,
         "gripY": 248,
-        "d": "M692 118 H678 L610 248 H598"
+        "d": "M693 118 H679 L611 248 H599"
        },
        {
         "side": "out",
@@ -17858,11 +17914,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Eye height above the tread",
-        "callX": 692,
+        "callX": 693,
         "callY": 154,
-        "gripX": 598,
+        "gripX": 599,
         "gripY": 278,
-        "d": "M692 185 H678 L610 278 H598"
+        "d": "M693 185 H679 L611 278 H599"
        },
        {
         "side": "out",
@@ -17873,11 +17929,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Thickness of the stand slab under the treads",
-        "callX": 692,
+        "callX": 693,
         "callY": 221,
-        "gripX": 598,
+        "gripX": 599,
         "gripY": 308,
-        "d": "M692 252 H678 L610 308 H598"
+        "d": "M693 252 H679 L611 308 H599"
        },
        {
         "side": "out",
@@ -17888,11 +17944,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Thickness of the riser legs",
-        "callX": 692,
+        "callX": 693,
         "callY": 288,
-        "gripX": 598,
+        "gripX": 599,
         "gripY": 338,
-        "d": "M692 319 H678 L610 338 H598"
+        "d": "M693 319 H679 L611 338 H599"
        },
        {
         "side": "out",
@@ -17903,11 +17959,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Smallest acceptable C-value",
-        "callX": 692,
+        "callX": 693,
         "callY": 355,
-        "gripX": 598,
+        "gripX": 599,
         "gripY": 368,
-        "d": "M692 386 H678 L610 368 H598"
+        "d": "M693 386 H679 L611 368 H599"
        },
        {
         "side": "out",
@@ -17918,11 +17974,11 @@
         "access": "item",
         "flow": true,
         "blurb": "The whole workbook as read",
-        "callX": 692,
+        "callX": 693,
         "callY": 422,
-        "gripX": 598,
+        "gripX": 599,
         "gripY": 398,
-        "d": "M692 453 H678 L610 398 H598"
+        "d": "M693 453 H679 L611 398 H599"
        },
        {
         "side": "out",
@@ -17933,11 +17989,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Eye height above the platform for a wheelchair user",
-        "callX": 692,
+        "callX": 693,
         "callY": 489,
-        "gripX": 598,
+        "gripX": 599,
         "gripY": 428,
-        "d": "M692 520 H678 L610 428 H598"
+        "d": "M693 520 H679 L611 428 H599"
        },
        {
         "side": "out",
@@ -17948,11 +18004,11 @@
         "access": "item",
         "flow": false,
         "blurb": "How far back from the nosing a wheelchair user's eye sits",
-        "callX": 692,
+        "callX": 693,
         "callY": 556,
-        "gripX": 598,
+        "gripX": 599,
         "gripY": 458,
-        "d": "M692 587 H678 L610 458 H598"
+        "d": "M693 587 H679 L611 458 H599"
        },
        {
         "side": "out",
@@ -17963,11 +18019,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 692,
+        "callX": 693,
         "callY": 623,
-        "gripX": 598,
+        "gripX": 599,
         "gripY": 488,
-        "d": "M692 654 H678 L610 488 H598"
+        "d": "M693 654 H679 L611 488 H599"
        }
       ]
      },
@@ -18075,14 +18131,14 @@
      "after": [],
      "tier": "core",
      "figure": {
-      "w": 1039,
+      "w": 1045,
       "h": 237,
       "callW": 340,
       "callH": 63,
       "lead": 88,
       "imgX": 428,
       "imgY": 68,
-      "imgW": 183,
+      "imgW": 189,
       "imgH": 102,
       "img": "/assets/img/antlion/components/table-out.png",
       "pending": false,
@@ -18141,11 +18197,11 @@
         "access": "item",
         "flow": false,
         "blurb": "True when the last write finished, or was skipped because nothing changed",
-        "callX": 699,
+        "callX": 705,
         "callY": 20,
-        "gripX": 605,
+        "gripX": 611,
         "gripY": 89,
-        "d": "M699 51 H685 L617 89 H605"
+        "d": "M705 51 H691 L623 89 H611"
        },
        {
         "side": "out",
@@ -18156,11 +18212,11 @@
         "access": "list",
         "flow": false,
         "blurb": "What landed where",
-        "callX": 699,
+        "callX": 705,
         "callY": 87,
-        "gripX": 605,
+        "gripX": 611,
         "gripY": 119,
-        "d": "M699 118 H685 L617 119 H605"
+        "d": "M705 118 H691 L623 119 H611"
        },
        {
         "side": "out",
@@ -18171,11 +18227,11 @@
         "access": "item",
         "flow": false,
         "blurb": "Developer diagnostic output for tracking down bugs",
-        "callX": 699,
+        "callX": 705,
         "callY": 154,
-        "gripX": 605,
+        "gripX": 611,
         "gripY": 149,
-        "d": "M699 185 H685 L617 149 H605"
+        "d": "M705 185 H691 L623 149 H611"
        }
       ]
      },
@@ -24694,7 +24750,7 @@
      ]
     }
    },
-   "version": "1.1.1"
+   "version": "1.1.2"
   }
  }
 }

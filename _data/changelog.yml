@@ -1,4 +1,37 @@
 antlion:
+  - version: "1.1.2"
+    date: "2026-10-29"
+    title: Target Rise and Riser Fit on Auto Section
+    body: |
+      **Added**
+
+      - **Auto Section** - Target Rise sets the height of each tier, from its first row to its last row, and
+        the C-values become the result. The risers still follow the sightlines and add up to that height as
+        closely as Riser Step allows. A white message gives each tier's lowest and average C-value, a
+        separate white message says how far off the last row lands when the height can't be hit exactly,
+        and the message turns orange when the height can't be reached within Minimum and Maximum Riser.
+        Leave a tier empty or at 0 and it works as before.
+      - **Auto Section** - Riser Fit decides what a tier does with height to spare. Even C, the default,
+        spreads it over every row's C-value. Even Risers keeps every row at Minimum C-Values or above and
+        makes the risers as equal as possible, so the tier has fewer different riser heights. If there isn't
+        enough height for that, the tier falls back to Even C and the message says so.
+
+      **Fixed**
+
+      - **Custom Seat** - A custom vomitory drawn as a rectangle over a corner of a polygon bowl was split at
+        the axis line, leaving that part of the tier without seats and an orange message. Where the rings
+        turn by 30 to 60 degrees it now stays one opening, with an aisle on each side.
+      - **Custom Seat** - Feeding the Aisles cells of a custom step that keeps its drawn shape back into
+        Custom Steps redrew some of them as rectangles. Cells whose front and back edges follow the rows now
+        come back the same.
+      - **Custom Seat** - In rare cases a concave custom step outline cleared more seats than it covered.
+        It now clears only the seats it covers.
+      - **Custom Seat** - The white message about capped aisle steps now also counts steps that keep their
+        drawn shape.
+      - **Custom Seat** - The Custom Steps description only mentioned rectangles. It now says when a drawn
+        outline keeps its shape, and the Custom Voms description says where a rectangle stays one opening.
+      - **Help cards** - In the side tab, an input's description and the reason to wire it ran together as
+        one sentence. They are now two sentences.
   - version: "1.1.1"
     date: "2026-10-28"
     title: Custom steps along an axis line keep the shape you draw

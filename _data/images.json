@@ -309,6 +309,68 @@
    ]
   }
  },
+ "assets/img/antlion/changelog/port-auto-section-target-rise": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/changelog/port-auto-section-target-rise-light.png",
+  "sha1": "0441e2fc50b1a84b4c76c1e1b31391d3f17ccdfc",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     1727
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     3098
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     10078
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/changelog/port-auto-section-target-rise-dark": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/changelog/port-auto-section-target-rise-dark.png",
+  "sha1": "ee5e95cac3b8bb0652b4b119be8e9a6a9d5c6944",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     1597
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     2888
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     9933
+    ]
+   ]
+  }
+ },
  "assets/img/antlion/changelog/port-vomitory-vom-type-mode": {
   "kind": "band",
   "src": "_tools/img_src/antlion/changelog/port-vomitory-vom-type-mode-light.png",

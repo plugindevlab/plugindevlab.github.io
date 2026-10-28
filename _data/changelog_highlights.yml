@@ -1,4 +1,10 @@
 antlion:
+  "1.1.2":
+    - title: Target Rise and Riser Fit on Auto Section
+      text: Target Rise sets the height of each tier, from its first row to its last row, and the C-values become the result. Riser Fit decides what a tier does with height to spare.
+      img: port-auto-section--target-rise
+      ports:
+        - {kind: add, comp: Auto Section, side: input, port: [Target Rise, Riser Fit]}
   "1.1.0":
     - title: Help cards inside Grasshopper
       text: Right-click any Antlion component for a card that shows what it does and every input and output, most of them with a picture.
