@@ -1,4 +1,23 @@
 antlion:
+  - id: lOcgv7mArQA
+    title: "New to Antlion? Start Here (Website Tour and Help Cards)"
+    length: "7 min"
+    thumb: /assets/img/antlion/tutorials/start-here.jpg
+    thumb_alt: "New to Antlion? Start here — the Antlion website and a help card inside Grasshopper"
+    summary: "A short tour before the builds: getting Antlion from Food4Rhino, this website, and the help cards inside Grasshopper."
+    chapters:
+      - { t: 0, at: "0:00", name: "Intro" }
+      - { t: 14, at: "0:14", name: "Start on Food4Rhino" }
+      - { t: 54, at: "0:54", name: "The Antlion Website" }
+      - { t: 87, at: "1:27", name: "Getting Started: Install, License, Register" }
+      - { t: 160, at: "2:40", name: "Workflow" }
+      - { t: 191, at: "3:11", name: "Component Pages" }
+      - { t: 215, at: "3:35", name: "Tutorials and Troubleshooting" }
+      - { t: 239, at: "3:59", name: "Help Cards in Grasshopper" }
+      - { t: 256, at: "4:16", name: "Following the Chain from Field" }
+      - { t: 325, at: "5:25", name: "Folding a Card" }
+      - { t: 340, at: "5:40", name: "When a Tutorial Looks Different" }
+      - { t: 384, at: "6:24", name: "Wrap-up" }
   - id: MWOVvJcE1ig
     title: "How to Design a Three-Tier Soccer Stadium in Grasshopper"
     length: "42 min"
