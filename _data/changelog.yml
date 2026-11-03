@@ -1,4 +1,13 @@
 antlion:
+  - version: "1.1.3"
+    date: "2026-11-03"
+    title: Preview memory cleanup
+    body: |
+      **Fixed**
+
+      - **Stand 3D Plus, Seat 3D, C-value Seat, C-value Map** - Preview meshes that were replaced were left
+        for later cleanup in the background. They are now released right away, on the same thread that draws
+        them. This removes one possible cause of Rhino closing unexpectedly on Mac.
   - version: "1.1.2"
     date: "2026-10-29"
     title: Target Rise and Riser Fit on Auto Section
