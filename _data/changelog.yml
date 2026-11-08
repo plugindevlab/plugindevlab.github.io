@@ -1,4 +1,13 @@
 antlion:
+  - version: "1.1.4"
+    date: "2026-11-08"
+    title: Input Panel menu cleanup on Mac
+    body: |
+      **Fixed**
+
+      - **Input Panel** - The small menus it opens (typing a value, choosing from a list, picking the target
+        component) were left for background cleanup after they closed. On Mac, that cleanup could close Rhino
+        unexpectedly. They are now released right away, on the main thread.
   - version: "1.1.3"
     date: "2026-11-03"
     title: Preview memory cleanup
