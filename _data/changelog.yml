@@ -29,10 +29,12 @@ antlion:
         the new edges. Variant Profiles, Variant Closed Profiles and Variant Rail Sections show each change
         where the main section is, and Variant Sections goes into Section Analysis for the C-values inside
         each zone.
-      - **Combine Sections** (new) - For part of the bowl built from other sections: take a second Auto
-        Section through its own Section Plus, set it to ZONE_ONLY on Section Variant, and wire every set into
-        Combine Sections. It gives one branch per part for a single chain from Stand 2D - Seat keeps each
-        branch to its zone, Assemble Bowl joins them, and Parts lists each part with its zone and tiers.
+      - **Combine Sections** (new) - Brings several Section Variants into one set of data: give each area of
+        the bowl its own Bowl Zone and Section Variant, merge them, and wire the result into Combine Sections,
+        then into Stand 2D. One chain builds the whole bowl with every variant in place, instead of a copy of
+        the chain for each part. For part of the bowl built from other sections, take a second Auto Section
+        through its own Section Plus and set it to ZONE_ONLY on Section Variant. Parts lists each part with its
+        zone and tiers.
       - **Auto Section** - New input Main Section: for a second Auto Section that varies the main one, each
         tier's last row lands at the same height as the main section's. It wins over Target Rise.
       - **Vomitory** - Vom Type Mode 5 to 7 come in at the same level as 1 and shape the mouth for

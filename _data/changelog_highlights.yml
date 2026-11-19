@@ -1,7 +1,7 @@
 antlion:
   "1.2.0":
     - title: Bowl zones and section variants
-      text: Bowl Zone marks part of the bowl, where Seat and Custom Seat can take seats out or change their width and Cut can read its spans. Section Variant changes the section inside a zone tier by tier, and Combine Sections joins parts built from other sections into one chain.
+      text: Bowl Zone marks part of the bowl, where Seat and Custom Seat can take seats out or change their width and Cut can read its spans. Section Variant changes the section inside a zone tier by tier, and Combine Sections brings the variants of every zone into one chain.
       img: port-seat--zones
       ports:
         - {kind: add, comp: [Seat, Custom Seat], side: input, port: [Zones, Max Seat Width, Seat Layout]}
