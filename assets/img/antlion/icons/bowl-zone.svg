@@ -1,0 +1,79 @@
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <g
+     id="layer-guide"
+     style="display:none">
+    <rect
+       id="guide-canvas"
+       x="0.5"
+       y="0.5"
+       width="23"
+       height="23"
+       fill="none"
+       stroke="#ff00ff"
+       stroke-width="1" />
+    <rect
+       id="guide-live"
+       x="1.5"
+       y="1.5"
+       width="21"
+       height="21"
+       fill="none"
+       stroke="#00b0ff"
+       stroke-width="1" />
+  </g>
+  <g
+     id="layer-base">
+    <path
+       id="base-zone"
+       d="M 8 4.4 Q 12 3.6 16 4.4 V 19.4 Q 12 18.6 8 19.4 Z"
+       fill="#83c3e6" />
+    <path
+       id="base-row-1"
+       d="M 2 8 Q 12 3 22 8"
+       fill="none"
+       stroke="#656565"
+       stroke-width="2" />
+    <path
+       id="base-row-2"
+       d="M 2 14 Q 12 9 22 14"
+       fill="none"
+       stroke="#656565"
+       stroke-width="2" />
+    <path
+       id="base-row-3"
+       d="M 2 20 Q 12 15 22 20"
+       fill="none"
+       stroke="#656565"
+       stroke-width="2" />
+  </g>
+  <g
+     id="layer-detail">
+    <path
+       id="detail-zone-row-1"
+       d="M 8 5.9 Q 12 5.1 16 5.9"
+       fill="none"
+       stroke="#2d7be0"
+       stroke-width="2" />
+    <path
+       id="detail-zone-row-2"
+       d="M 8 11.9 Q 12 11.1 16 11.9"
+       fill="none"
+       stroke="#2d7be0"
+       stroke-width="2" />
+    <path
+       id="detail-zone-row-3"
+       d="M 8 17.9 Q 12 17.1 16 17.9"
+       fill="none"
+       stroke="#2d7be0"
+       stroke-width="2" />
+  </g>
+  <g
+     id="layer-accent" />
+</svg>

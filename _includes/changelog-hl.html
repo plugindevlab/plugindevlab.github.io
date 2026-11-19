@@ -9,6 +9,8 @@
 {%- if kinds contains "del" %}<span><span class="mk mk-del">−</span> removed</span>{% endif %}
 {%- if kinds contains "mov" %}<span><span class="mk mk-mov">↕</span> moved</span>{% endif %}
 {%- if kinds contains "default" %}<span><span class="mk mk-default">=</span> default changed</span>{% endif %}
+{%- if kinds contains "type" %}<span><span class="mk mk-type">~</span> type changed</span>{% endif %}
+{%- if kinds contains "new" %}<span><span class="mk mk-new">*</span> new component</span>{% endif %}
 </span>{% endif %}</div>
 <div class="hl-rows">
 {%- for u in units %}
@@ -22,8 +24,12 @@
 {%- if u.ports.size > 0 %}
 <ul class="hl-chips">
 {%- for c in u.ports %}
-{%- case c.kind %}{% when "add" %}{% assign g = "+" %}{% assign w = "added" %}{% when "del" %}{% assign g = "−" %}{% assign w = "removed" %}{% when "mov" %}{% assign g = "↕" %}{% assign w = "moved" %}{% else %}{% assign g = "=" %}{% assign w = "default changed" %}{% endcase %}
+{%- case c.kind %}{% when "add" %}{% assign g = "+" %}{% assign w = "added" %}{% when "del" %}{% assign g = "−" %}{% assign w = "removed" %}{% when "mov" %}{% assign g = "↕" %}{% assign w = "moved" %}{% when "type" %}{% assign g = "~" %}{% assign w = "type changed" %}{% when "new" %}{% assign g = "*" %}{% assign w = "new component" %}{% else %}{% assign g = "=" %}{% assign w = "default changed" %}{% endcase %}
+{%- if c.kind == "new" %}
+<li class="chip chip-new"><span class="mk mk-new" aria-hidden="true">{{ g }}</span><span class="hl-sr">{{ w }}: </span><span class="cn">{{ c.comp | join: ", " }}</span> <small>new component{% if c.note %} · {{ c.note }}{% endif %}</small></li>
+{%- else %}
 <li class="chip chip-{{ c.kind }}"><span class="mk mk-{{ c.kind }}" aria-hidden="true">{{ g }}</span><span class="hl-sr">{{ w }}: </span><span class="cn">{{ c.port | join: ", " }}</span> <small>{{ c.comp | join: " · " }} · {{ c.side }}{% if c.note %} · {{ c.note }}{% endif %}</small></li>
+{%- endif %}
 {%- endfor %}
 </ul>
 {%- else %}

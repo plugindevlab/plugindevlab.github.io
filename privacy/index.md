@@ -1,7 +1,7 @@
 ---
 title: Privacy policy
 description: What personal data plugin.dev.lab processes, why, where it goes, and your rights.
-effective: "2026-10-27"
+effective: "2026-11-19"
 ---
 
 # Privacy policy
@@ -9,7 +9,7 @@ effective: "2026-10-27"
 <p class="legal-meta">Plugin Dev Lab ("we", "us") — operating as <strong>plugin.dev.lab</strong><br>
 Contact: <strong>founder@plugindevlab.com</strong><br>
 Published at: {{ page.url | absolute_url }}<br>
-Version 1.6 — effective {{ page.effective }}</p>
+Version 1.7 — effective {{ page.effective }}</p>
 
 <nav class="legal-toc" aria-label="Contents" markdown="0"><p class="label">Contents</p><ul>
 <li><a href="#1-who-we-are-and-the-short-version">1. Who we are, and the short version</a></li>
@@ -24,6 +24,9 @@ Version 1.6 — effective {{ page.effective }}</p>
 <li><a href="#10-data-protection-officer-and-changes-to-this-policy">10. Data Protection Officer, and changes to this Policy</a></li>
 </ul></nav>
 
+*Changes in version 1.7: we now count visits to our website (section 2.6), and list GitHub and
+GoatCounter as processors.*
+
 This English text is the only authoritative version of this Policy.
 
 ---
@@ -35,8 +38,9 @@ We are **plugin.dev.lab**, publishing Grasshopper plug-ins for Rhino, of which
 handled by the third-party services we have listed, and our own access to your data is limited
 to looking at those services' dashboards.
 
-**We do not run analytics or telemetry, and your design data never leaves your machine.**
-See section 2.4.
+**The plug-in contains no analytics or telemetry, and your design data never leaves your machine**
+(section 2.4). Our website counts page visits without cookies and without storing your IP address
+(section 2.6).
 
 ## 2. What we process, and why
 
@@ -92,6 +96,17 @@ sent to our address is forwarded by **Cloudflare** to the Google (Gmail) mailbox
 it, and our replies are delivered through **Resend**. We use this correspondence only to answer
 you.
 
+### 2.6 Visits to our website
+
+Our website is hosted by **GitHub**, which logs visitors' IP addresses for security purposes. We
+count visits with **GoatCounter**: when you open a page, your browser sends it the page address, the
+page that linked you there (if your browser provides it), your browser and operating-system type
+and your screen size, and GoatCounter derives your country from your IP address. **No cookies or
+other browser storage are used, and your IP address is not stored** — it is held in memory for at
+most eight hours so that one visit is not counted twice, and is then discarded. We see only totals
+by page, referring site, country and device type; nothing in them identifies you. If your browser
+blocks the counter, nothing is sent.
+
 ## 3. Optional Google Sheets connection
 
 The `Google Workbook` component can read and write a Google spreadsheet on your behalf. If you
@@ -112,14 +127,16 @@ You can revoke this access at any time in your Google account settings.
 
 We process the data in section 2 to perform the contract you entered into when purchasing a
 licence (delivering and enforcing that licence), to respond to support requests you initiate, and
-to verify eligibility for a discount you applied for. We do not process personal data for
+to verify eligibility for a discount you applied for. We count website visits only in aggregate
+(section 2.6), to learn which pages are read and where visitors come from; we do not build
+profiles or use this to target anyone. We do not process personal data for
 marketing, and we do not sell or otherwise transfer personal data to third parties for their own
 purposes.
 
 ## 5. Processors and international transfer
 
 We do not have our own storage. The following processors hold the data described above, and
-they store it principally in the **United States**:
+they store it principally in the **United States**, except where noted:
 
 - **Polar Software, Inc.** — payment, subscription, and licence-key management (section 2.1).
   Polar acts as merchant of record and is the seller of record for your purchase; billing details
@@ -132,6 +149,8 @@ they store it principally in the **United States**:
 - **Plus Five Five, Inc. (Resend)** — delivery of the e-mails we send, including verification
   codes and other student-discount e-mails (sections 2.3 and 2.5). Resend keeps a record of each
   e-mail it delivers for 30 days.
+- **GitHub, Inc.** — hosting of our website, including its security logs (section 2.6).
+- **GoatCounter** — website visit counts (section 2.6); stored in the European Union.
 
 By using these services you accept that the data concerned is transferred to and stored in those
 countries. Each processor publishes its own privacy policy governing that storage.
@@ -160,6 +179,8 @@ countries. Each processor publishes its own privacy policy governing that storag
   permanently.
 - **E-mail correspondence** is kept in our mailbox for as long as we need it to deal with your
   request and any follow-up, and is deleted when you ask us to.
+- **Website visit counts** are aggregate totals with no IP address, and are kept for as long as the
+  website exists.
 
 ## 7. Your rights
 

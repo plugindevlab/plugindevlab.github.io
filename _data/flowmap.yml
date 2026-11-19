@@ -10,7 +10,10 @@ antlion:
     - {id: custom-axis,           col: 2,  row: 4, kind: pick}
     - {id: table-section,         col: 3,  row: 0, kind: alt}
     - {id: section-plus,          col: 3,  row: 1, kind: main}
+    - {id: bowl-zone,             col: 3,  row: 6, kind: main}
     - {id: section-analysis,      col: 4,  row: 1, kind: main}
+    - {id: section-variant,       col: 4,  row: 0, kind: main}
+    - {id: combine-sections,      col: 5,  row: 1, kind: main}
     - {id: view-axis,             col: 4,  row: 3, kind: guide}
     - {id: stand-2d,              col: 5,  row: 2, kind: main}
     - {id: vomitory,              col: 6,  row: 2, kind: main}
@@ -67,6 +70,13 @@ antlion:
     - c-value-tread > c-value-map
     - c-value-tread > c-value-section-check
     - seat-map > seat-view
+    - bowl-zone > seat
+    - bowl-zone > cut
+    - bowl-zone > section-variant
+    - section-plus > section-variant
+    - table-section > section-variant
+    - section-variant > combine-sections
+    - combine-sections > stand-2d
 
   swaps:
     - custom-startline ~ startline-rect

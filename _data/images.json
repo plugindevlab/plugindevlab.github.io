@@ -371,6 +371,192 @@
    ]
   }
  },
+ "assets/img/antlion/changelog/port-c-value-seat-focal-combine": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/changelog/port-c-value-seat-focal-combine-light.png",
+  "sha1": "ebd0999a6c3646488ade075b33b818b54f6ad213",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     35783
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     58764
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     88532
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/changelog/port-c-value-seat-focal-combine-dark": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/changelog/port-c-value-seat-focal-combine-dark.png",
+  "sha1": "32c82c3a53f42558925a1b395d958fd03720bbbf",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     45243
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     77552
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     109226
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/changelog/port-seat-zones": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/changelog/port-seat-zones-light.png",
+  "sha1": "da82636b3e59c1b84f084bfcad6b6bac0138f9aa",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     25863
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     47880
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     81800
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/changelog/port-seat-zones-dark": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/changelog/port-seat-zones-dark.png",
+  "sha1": "c7abdf76499cabb08e5afeaade497b9ad54286e3",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     20087
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     37622
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     68712
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/changelog/port-vomitory-vom-pocket-reach": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/changelog/port-vomitory-vom-pocket-reach-light.png",
+  "sha1": "a71143993cb58ff2eaea4ce001ae370783fb8590",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     12636
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     24738
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     78512
+    ]
+   ]
+  }
+ },
+ "assets/img/antlion/changelog/port-vomitory-vom-pocket-reach-dark": {
+  "kind": "band",
+  "src": "_tools/img_src/antlion/changelog/port-vomitory-vom-pocket-reach-dark.png",
+  "sha1": "b7c437143e77134f29200c335e55677c37f97969",
+  "bg": null,
+  "w": 900,
+  "h": 600,
+  "files": {
+   "avif": [
+    [
+     900,
+     600,
+     10426
+    ]
+   ],
+   "webp": [
+    [
+     900,
+     600,
+     20764
+    ]
+   ],
+   "jpg": [
+    [
+     900,
+     600,
+     67789
+    ]
+   ]
+  }
+ },
  "assets/img/antlion/changelog/port-vomitory-vom-type-mode": {
   "kind": "band",
   "src": "_tools/img_src/antlion/changelog/port-vomitory-vom-type-mode-light.png",

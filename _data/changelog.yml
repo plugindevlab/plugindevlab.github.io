@@ -1,4 +1,173 @@
 antlion:
+  - version: "1.2.0"
+    date: "2026-11-19"
+    title: Bowl zones, section variants and wheelchair places at the vomitories
+    body: |
+      **Added**
+
+      - **Bowl Zone** (new) - Marks part of the bowl: spans between axis numbers, read off View Axis the
+        same way as Cut, with offsets and the tiers it covers. It builds nothing by itself. With Axis wired,
+        Zone Lines shows where the zone starts and stops, and Inverted Zone gives the rest of the bowl.
+      - **Seat**, **Custom Seat** - New input Zones: merge as many Bowl Zones as you like. A zone only takes
+        seats out or changes their width - the stand, the wheelchair platform and the vomitory mouths stay as
+        they are. Tier by tier, a zone can leave out its wheelchair spaces and companion seats (Remove
+        Wheelchair), all its seats (Clear All Seats), or the seats of its front or top rows (Clear Front Rows,
+        Clear Rear Rows) - treads and aisles stay. A zone's Seat Width gives it its own seat width, changing
+        at the zone's axis lines.
+      - **Seat**, **Custom Seat** - New input Max Seat Width, just below Seat Width: seats can widen in
+        standard steps up to it, so each row fills out between its aisles. A row keeps the seat count Seat
+        Width gives, and a zone can set its own Max Seat Width. Leave it empty to keep one width.
+      - **Seat**, **Custom Seat** - New input Seat Layout. Aligned, the default, keeps seats in the same
+        columns from row to row, as before. Most Seats fills every row on its own with as many seats as fit,
+        so the columns can drift from row to row.
+      - **Cut** - New input Zone: wire a Bowl Zone to use its spans, offsets and tiers instead of typing
+        them. Keep Span still decides what is kept.
+      - **Section Variant** (new) - Keeps the main section and changes it inside Bowl Zones, tier by tier:
+        leave out rows at the front or the back (Cut Front Rows, Cut Rear Rows), merge every two rows into
+        one deep row (Merge Rows), leave out a whole tier (CUT_TIER), or read a tier as a standing area
+        (STANDING). The rows that stay do not move, so one chain builds the whole bowl, with railings along
+        the new edges. Variant Profiles, Variant Closed Profiles and Variant Rail Sections show each change
+        where the main section is, and Variant Sections goes into Section Analysis for the C-values inside
+        each zone.
+      - **Combine Sections** (new) - For part of the bowl built from other sections: take a second Auto
+        Section through its own Section Plus, set it to ZONE_ONLY on Section Variant, and wire every set into
+        Combine Sections. It gives one branch per part for a single chain from Stand 2D - Seat keeps each
+        branch to its zone, Assemble Bowl joins them, and Parts lists each part with its zone and tiers.
+      - **Auto Section** - New input Main Section: for a second Auto Section that varies the main one, each
+        tier's last row lands at the same height as the main section's. It wins over Target Rise.
+      - **Vomitory** - Vom Type Mode 5 to 7 come in at the same level as 1 and shape the mouth for
+        wheelchair places. 5 Pocket is a deck in front of the vomitory, carried past its sides as far as the
+        new input Vom Pocket Reach says. 6 U joins neighbouring vomitories with one deck and leaves the seats
+        between them as an island. 7 U with wings carries 6 past the outer vomitories. Seats behind a deck are
+        left empty as far back as those rows need to see over the wheelchair users. With Vom Drops set, they
+        ramp down from where the vomitory starts behind the deck.
+      - **Vomitory** - New input Deck Aisle Mode: where the aisles run around a deck. 0 keeps them on each
+        vomitory centerline, through the deck, as before. 1 puts them at the two deck ends, up past the empty
+        rows behind the deck, with one row left open to step across to the aisle beside the vomitory. 2 runs
+        them from the deck ends straight up to the top of the tier. New outputs Deck Profiles and Deck
+        Sections give every tier's section as it is at the vomitory - wire Deck Sections into Section
+        Analysis for the C-values of the wheelchair users at the mouth and the row behind them.
+      - **Auto Section**, **Section Plus** - New inputs for wheelchair places at the vomitory mouths, one
+        value per tier: Vom Start Treads (which tread the vomitories come out on - Vomitory follows it), Vom
+        Wheelchair (wheelchair places at the mouths), Vom Merge (the mouth row and the row in front become
+        one level, the deck) and Vom Over Standing (their view is judged over spectators standing in front).
+        Auto Section raises the riser up to the mouth row to suit; Section Plus keeps the section as drawn
+        and checks it. Left empty, the three toggles are off and Vomitory keeps its own start tread.
+      - **Auto Section** - Wheelchairs can now be set here, with Wheelchair Tiers, Wheelchair Merge and the
+        two wheelchair eye offsets, as on Section Plus. The riser up to the wheelchair row is raised so a
+        wheelchair user sees over the row in front, and the tiers above are worked out from where it ends.
+        New input Wheelchair Over Standing, here and on Section Plus, judges that row over spectators
+        standing in front.
+      - **Auto Section** - New input Standing Tiers: tiers where people stand. The eye goes to standing
+        height and C-values are measured over the second row in front, as the Green Guide and FIFA set out
+        for standing areas. Section Analysis, C-value Seat, C-value Tread and C-value Section Check give the
+        same values. For a section you draw yourself, use STANDING on Section Variant.
+      - **Auto Section** - Three new riser rules. Maximum C-Values keeps a riser height while the next rows
+        still hold Minimum C-Values, so there are fewer riser heights. Max Riser Increase caps how much taller
+        a riser may be than the one in front. Riser Group Rows gives each block of rows one riser height.
+        Turning them on makes the tier end higher. They are not used on a tier with Target Rise or Main
+        Section. Leave them empty and nothing changes.
+      - **Auto Section** - New input Flip Z shows the section drawing standing up where the stand will be,
+        instead of laid flat in plan. The stand itself does not change, and Flip X is then ignored.
+      - **C-value Seat**, **C-value Tread**, **Section Analysis** - Two focal curves: wire two curves into
+        Focal Curve, merged in order A then B (say basketball and ice hockey), to check the bowl for both.
+        New input Focal Combine: Min, the default, keeps the lower C-value at each seat, cell or row; A or B
+        measures one curve alone; Both keeps the lower value and also draws both sightlines. With one curve
+        it works as before. On Section Analysis, Focal Curve is new, and left empty it uses each section's
+        own focal point, as before.
+      - **Section Analysis** - Posture Mode replaces C-value Mode. Seated, the default, gives the same values
+        as before. Standing raises every row's eye to standing height - wheelchair users stay seated - to
+        show how the view holds up when people stand. Both draws the two together.
+      - **Section Analysis** - New input Show Row Numbers and output Row Numbers: each row's number on its
+        tread, from 1 in every tier.
+      - **Section Analysis** - With several sections in Stand Sections that share a focal point, the first
+        row of a section behind is now also checked over the top seated row of the section in front, as
+        C-value Seat does in 3D.
+      - **Assemble Bowl** - New white messages when the top rows of parts on the same level differ in
+        height, and when the zones on Cut leave a gap or overlap.
+      - **Stand 3D Plus** - New output Level Floors: the level floor under the rows left without seats
+        behind the vomitory decks. The Wheelchair Deck Mode description now says that PLATFORM rebuilds much
+        faster while you are still changing zones and variants. Switch back to INTEGRAL once the layout is
+        settled.
+      - **Workbook** - 10_INPUT_SECTION gets a preview column tier_rise, the height from the tier's first row
+        to each row, so the last row shows the tier's total rise. 12_INPUT_TIER gets vomitory_start_tread,
+        which Table Section reads like Vom Start Treads. The workbook version is now numbered like Antlion;
+        older workbooks still open, and empty cells work as before.
+
+      **Fixed**
+
+      - **Seat**, **Custom Seat** - Whether a row needs a split aisle (Max Seats Per Run) was judged on the
+        top row only. The rows below a vomitory mouth, longer by the vomitory and its aisles, could run past
+        the limit and only show as poor. Those rows are now checked too, and a split aisle is added where
+        they need one, so seat counts can be lower there.
+      - **Seat**, **Custom Seat** - The first row behind a vomitory could get a few seats on one side only,
+        left on their own behind the side stair. They are no longer placed, so some bowls have a few seats
+        fewer.
+      - **Cut** - Where a cut took out a vomitory and seats were laid again in its place, a gap of less than
+        one seat was left at the join. The new seats now start from the seats already there, so some files
+        gain seats.
+      - **Cut** - Trimming a wheelchair band that runs almost all the way round a tier, such as a Custom
+        Seat tier with a single aisle, could join the two pieces left on either side into one outline across
+        the removed part. Each piece now stays on its own side. Stand 3D Plus also no longer leaves part of
+        the connecting slab under the deck on such bands.
+      - **C-value Seat**, **C-value Tread** - The first seated row of a tier was measured only against its
+        own front railing, not against the people in front of it on another tier - the top row, wheelchair
+        users and companions there. Where one tier starts right behind another, a view that passed below
+        their heads could read OK. Those heads now count, and the lower value wins.
+      - **C-value Seat** - Wheelchair users and companions on the same tier were skipped when finding the
+        person in front, so the seats behind them were measured against a row further forward. They now
+        count as the row in front, and some seats right behind a wheelchair platform read lower.
+      - **Rail 3D** - Where Assemble Bowl joins two stands, the side railing along the seam was left out
+        entirely, even where one side stood much higher or had no stand beside it. Each tread is now compared
+        with the nearest surface across the seam: where it is 1.5 m (5 ft) or more higher, or nothing is
+        across, both sides get a side railing. Between 30 in and 1.5 m a white message gives the length
+        without a railing.
+      - **Rail 3D** - A side railing along a cut edge could run across a vomitory opening in mid-air. The
+        part over the opening is now left out.
+      - **Rail 3D** - At a seam, a short piece of side railing could stand among the seats on the other side.
+        It is no longer built.
+      - **Opening Cut** - At an opening through every tread, a boundary wall was built a second time, the rear
+        railing ran across the empty span, and railings crossed the open mouth of a vomitory left standing.
+        The railings now end at the last tread and break at the remaining vomitories. Seats and the stand
+        do not change; the number of railings can.
+      - **Section**, **Table Section** - With a riser of 0 at certain rows, the closed section could turn
+        inside out, so the stand sat above the section and C-value Tread gave no values. It now builds the
+        right way up.
+      - **Field** - With a Custom Focal Point, Focal Vertical raised only the focal curve, or was ignored on
+        a custom curve, while the sections kept aiming at the point on the ground. The sections' focal point
+        now rises with it everywhere. An orange message warns when the point sits at a different height from
+        the outline, because its height is read as the field level.
+      - **Field** - With Focal Horizontal and a Custom Focal Point, only the focal curve moved in, and the
+        sections kept aiming at the point you picked. The picked point now moves in the same way, as on the
+        presets.
+      - **Field** - With Rotate 90 and a Custom Focal Point, the picked point was turned with the field and
+        could land outside it. It now stays where you picked it, with a white note.
+      - **Auto Section** - A Custom Focal Point wired straight into Focal Point, instead of through Field,
+        left out Focal Vertical. It is now read the same as Field's output.
+      - **Auto Section** - When Riser Step left no whole step between Minimum Riser and Maximum Riser, the
+        message read as if the minimum were above the maximum. It now gives the real reason.
+      - **Custom Seat** - A vomitory or step rectangle whose centre sat just outside a sharp corner could be
+        matched to either side of the corner, so the same drawing could come out differently in millimeter
+        and inch documents. It now always takes the side it is more parallel to.
+      - **Seat 3D** - A SubD chair, or a chair of another geometry type, edited without changing its overall
+        size could reuse the earlier chair's block. The block now follows the geometry.
+      - **Stand 3D Plus** - Wheelchair deck pieces whose rows a Cut had removed were reported as failed. They
+        no longer warn; only pieces whose rows are there but could not be found are reported.
+      - **Lengths in messages and reports** - In documents with a coarse display precision, a short length
+        could print rounded to a value well off the real one. Such lengths now print with a finer fraction or
+        more decimals.
+      - **Input Panel** - Length cells did not read fractions or feet and inches. They now do, and a cell
+        turns red when its value can't be read. When the panel overrides a value you typed into the
+        component, a white message says so.
+
+      Older files: inputs reconnect by name when the file opens, so nothing needs rewiring, and every new
+      input left empty works as before. C-value Seat and C-value Tread take a list on Focal Curve now - one
+      curve measures as before. A Section Analysis that set C-value Mode opens with Posture Mode at Seated,
+      which gives the same values. Results change when they recalculate where the fixes above apply: split
+      aisles below vomitory mouths, the first row behind a vomitory, seats laid again at a cut vomitory,
+      first rows behind another tier, seats behind wheelchair users, seam and opening railings, and a Custom
+      Focal Point with Focal Vertical, Focal Horizontal or Rotate 90. Assemble Bowl may show new white
+      messages on files that did not have them.
   - version: "1.1.4"
     date: "2026-11-08"
     title: Input Panel menu cleanup on Mac

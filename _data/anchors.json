@@ -1,14 +1,14 @@
 {
  "_about": "Generated from a Grasshopper capture run - do not edit by hand. Coordinates are CSS pixels (1x); the PNG is rendered at 'scale'.",
- "captured": "2026-10-29T08:13:00.8105889+09:00",
- "gh": "8.36.26293.11001",
- "source": "req-20261029-081259-923.json",
+ "captured": "2026-11-19T13:55:37.5571452+09:00",
+ "gh": "8.36.26296.17001",
+ "source": "req-20261119-135536-473.json",
  "components": {
   "Auto Section": {
    "id": "auto-section",
    "product": "antlion",
-   "w": 136,
-   "h": 448,
+   "w": 162,
+   "h": 748,
    "scale": 2,
    "inputs": [
     {
@@ -138,54 +138,144 @@
      "y": 414
     },
     {
+     "name": "Wheelchair Tiers",
+     "nick": "♿ Tiers",
+     "x": 4,
+     "y": 434
+    },
+    {
+     "name": "Wheelchair Merge",
+     "nick": "♿ Merge",
+     "x": 4,
+     "y": 454
+    },
+    {
+     "name": "Wheelchair Over Standing",
+     "nick": "WC Stand",
+     "x": 4,
+     "y": 474
+    },
+    {
+     "name": "Wheelchair Eye Vertical Offset",
+     "nick": "♿ Eye V",
+     "x": 4,
+     "y": 494
+    },
+    {
+     "name": "Wheelchair Eye Horizontal Offset",
+     "nick": "♿ Eye H",
+     "x": 4,
+     "y": 514
+    },
+    {
+     "name": "Flip Z",
+     "nick": "Flip Z",
+     "x": 4,
+     "y": 534
+    },
+    {
+     "name": "Main Section",
+     "nick": "Main",
+     "x": 4,
+     "y": 554
+    },
+    {
+     "name": "Maximum C-Values",
+     "nick": "Max C",
+     "x": 4,
+     "y": 574
+    },
+    {
+     "name": "Max Riser Increase",
+     "nick": "Max Inc",
+     "x": 4,
+     "y": 594
+    },
+    {
+     "name": "Riser Group Rows",
+     "nick": "Group",
+     "x": 4,
+     "y": 614
+    },
+    {
+     "name": "Standing Tiers",
+     "nick": "Standing",
+     "x": 4,
+     "y": 634
+    },
+    {
+     "name": "Vom Start Treads",
+     "nick": "Start Tr",
+     "x": 4,
+     "y": 654
+    },
+    {
+     "name": "Vom Merge",
+     "nick": "Vom Merge",
+     "x": 4,
+     "y": 674
+    },
+    {
+     "name": "Vom Wheelchair",
+     "nick": "Vom WC",
+     "x": 4,
+     "y": 694
+    },
+    {
+     "name": "Vom Over Standing",
+     "nick": "Vom Stand",
+     "x": 4,
+     "y": 714
+    },
+    {
      "name": "Panel Values",
      "nick": "Panel",
      "x": 4,
-     "y": 434
+     "y": 734
     }
    ],
    "outputs": [
     {
      "name": "Stand Sections",
      "nick": "SSD ⊞",
-     "x": 132,
-     "y": 35
+     "x": 158,
+     "y": 56
     },
     {
      "name": "Tread Lines",
      "nick": "Treads",
-     "x": 132,
-     "y": 97
+     "x": 158,
+     "y": 162
     },
     {
      "name": "Riser Heights",
      "nick": "Risers",
-     "x": 132,
-     "y": 160
+     "x": 158,
+     "y": 268
     },
     {
      "name": "Section Profiles",
      "nick": "Profile",
-     "x": 132,
-     "y": 223
+     "x": 158,
+     "y": 373
     },
     {
      "name": "Closed Profiles",
      "nick": "Closed",
-     "x": 132,
-     "y": 286
+     "x": 158,
+     "y": 479
     },
     {
      "name": "Eye Points",
      "nick": "Eye Pts",
-     "x": 132,
-     "y": 349
+     "x": 158,
+     "y": 585
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 132,
-     "y": 412
+     "x": 158,
+     "y": 691
     }
    ]
   },
@@ -270,56 +360,74 @@
    "id": "section-analysis",
    "product": "antlion",
    "w": 153,
-   "h": 188,
+   "h": 228,
    "scale": 2,
    "inputs": [
     {
      "name": "Stand Sections",
      "nick": "SSD",
      "x": 4,
-     "y": 15
+     "y": 14
     },
     {
-     "name": "C-value Mode",
-     "nick": "▾ C Val",
+     "name": "Posture Mode",
+     "nick": "▾ Posture",
      "x": 4,
-     "y": 37
+     "y": 34
     },
     {
      "name": "Minimum C-Value",
      "nick": "Min C",
      "x": 4,
-     "y": 60
+     "y": 54
     },
     {
      "name": "Show Dimensions",
      "nick": "Show Dim",
      "x": 4,
-     "y": 82
+     "y": 74
     },
     {
      "name": "Text Offset",
      "nick": "Text Off",
      "x": 4,
-     "y": 105
+     "y": 94
     },
     {
      "name": "Text Height",
      "nick": "Text H",
      "x": 4,
-     "y": 127
+     "y": 114
     },
     {
      "name": "Dimension Style",
      "nick": "Dim Styl",
      "x": 4,
-     "y": 150
+     "y": 134
+    },
+    {
+     "name": "Show Row Numbers",
+     "nick": "Row No",
+     "x": 4,
+     "y": 154
+    },
+    {
+     "name": "Focal Curve",
+     "nick": "Focal C",
+     "x": 4,
+     "y": 174
+    },
+    {
+     "name": "Focal Combine",
+     "nick": "▾ Focals",
+     "x": 4,
+     "y": 194
     },
     {
      "name": "Panel Values",
      "nick": "Panel",
      "x": 4,
-     "y": 172
+     "y": 214
     }
    ],
    "outputs": [
@@ -327,62 +435,68 @@
      "name": "Analysis Reports",
      "nick": "Reports ⊞",
      "x": 149,
-     "y": 14
+     "y": 15
     },
     {
      "name": "OK Dimensions",
      "nick": "OK Dims",
      "x": 149,
-     "y": 34
+     "y": 37
     },
     {
      "name": "Poor Dimensions",
      "nick": "Poor Dim",
      "x": 149,
-     "y": 54
+     "y": 59
     },
     {
      "name": "Riser Dimensions",
      "nick": "Riser Dm",
      "x": 149,
-     "y": 74
+     "y": 81
     },
     {
      "name": "OK Sightlines",
      "nick": "OK Sight",
      "x": 149,
-     "y": 94
+     "y": 103
     },
     {
      "name": "Poor Sightlines",
      "nick": "Poor Sgt",
      "x": 149,
-     "y": 114
+     "y": 125
     },
     {
      "name": "Barrier Dimensions",
      "nick": "Barr Dim",
      "x": 149,
-     "y": 134
+     "y": 147
+    },
+    {
+     "name": "Row Numbers",
+     "nick": "Row No",
+     "x": 149,
+     "y": 169
     },
     {
      "name": "Report",
      "nick": "Report",
      "x": 149,
-     "y": 154
+     "y": 191
     },
     {
      "name": "Debug",
      "nick": "Debug",
      "x": 149,
-     "y": 174
+     "y": 213
     }
    ]
   },
   "C-value Tread": {
    "id": "c-value-tread",
    "product": "antlion",
-   "w": 135,
+   "w": 138,
    "h": 288,
    "scale": 2,
    "inputs": [
@@ -390,146 +504,152 @@
      "name": "Build Result",
      "nick": "BRD",
      "x": 4,
-     "y": 18
+     "y": 16
     },
     {
      "name": "Rail Result",
      "nick": "RLD",
      "x": 4,
-     "y": 46
+     "y": 41
     },
     {
      "name": "Focal Curve",
      "nick": "Focal C",
      "x": 4,
-     "y": 74
+     "y": 67
     },
     {
      "name": "Color Scheme",
      "nick": "Scheme",
      "x": 4,
-     "y": 102
+     "y": 92
     },
     {
      "name": "Focal Aim Mode",
      "nick": "▾ Aim",
      "x": 4,
-     "y": 130
+     "y": 118
     },
     {
      "name": "Minimum C-Value",
      "nick": "Min C",
      "x": 4,
-     "y": 158
+     "y": 143
     },
     {
      "name": "Optimal C-Value",
      "nick": "Opt C",
      "x": 4,
-     "y": 186
+     "y": 169
     },
     {
      "name": "Tier Enabled",
      "nick": "Tiers",
      "x": 4,
-     "y": 214
+     "y": 194
     },
     {
      "name": "Rail Check",
      "nick": "Rail Chk",
      "x": 4,
-     "y": 242
+     "y": 220
+    },
+    {
+     "name": "Focal Combine",
+     "nick": "▾ Focals",
+     "x": 4,
+     "y": 245
     },
     {
      "name": "Panel Values",
      "nick": "Panel",
      "x": 4,
-     "y": 270
+     "y": 271
     }
    ],
    "outputs": [
     {
      "name": "C-value Map Data",
      "nick": "CMD ⊞",
-     "x": 131,
+     "x": 134,
      "y": 14
     },
     {
      "name": "C-value Section Data",
      "nick": "CSD ⊞",
-     "x": 131,
+     "x": 134,
      "y": 34
     },
     {
      "name": "Map Hatches",
      "nick": "Hatches",
-     "x": 131,
+     "x": 134,
      "y": 54
     },
     {
      "name": "Cell Colors",
      "nick": "Colors",
-     "x": 131,
+     "x": 134,
      "y": 74
     },
     {
      "name": "Cell Outlines",
      "nick": "Outlines",
-     "x": 131,
+     "x": 134,
      "y": 94
     },
     {
      "name": "Band C-Values",
      "nick": "Band C",
-     "x": 131,
+     "x": 134,
      "y": 114
     },
     {
      "name": "Band Statuses",
      "nick": "Status",
-     "x": 131,
+     "x": 134,
      "y": 134
     },
     {
      "name": "Band Sections",
      "nick": "Sections",
-     "x": 131,
+     "x": 134,
      "y": 154
     },
     {
      "name": "Band Eyes",
      "nick": "Eyes",
-     "x": 131,
+     "x": 134,
      "y": 174
     },
     {
      "name": "Band Focals",
      "nick": "Focals",
-     "x": 131,
+     "x": 134,
      "y": 194
     },
     {
      "name": "Effective Focal Curves",
      "nick": "Eff Focal",
-     "x": 131,
+     "x": 134,
      "y": 214
     },
     {
      "name": "Sightlines",
      "nick": "Sightlns",
-     "x": 131,
+     "x": 134,
      "y": 234
     },
     {
      "name": "Report",
      "nick": "Report",
-     "x": 131,
+     "x": 134,
      "y": 254
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 131,
+     "x": 134,
      "y": 274
     }
    ]
@@ -538,7 +658,7 @@
    "id": "c-value-seat",
    "product": "antlion",
    "w": 142,
-   "h": 228,
+   "h": 248,
    "scale": 2,
    "inputs": [
     {
@@ -602,10 +722,16 @@
      "y": 194
     },
     {
+     "name": "Focal Combine",
+     "nick": "▾ Focals",
+     "x": 4,
+     "y": 214
+    },
+    {
      "name": "Panel Values",
      "nick": "Panel",
      "x": 4,
-     "y": 214
+     "y": 234
     }
    ],
    "outputs": [
@@ -619,61 +745,61 @@
      "name": "Map Hatches",
      "nick": "Hatches",
      "x": 138,
-     "y": 34
+     "y": 36
     },
     {
      "name": "Seat Outlines",
      "nick": "Outlines",
      "x": 138,
-     "y": 54
+     "y": 58
     },
     {
      "name": "Seat C-Values",
      "nick": "Seat C",
      "x": 138,
-     "y": 74
+     "y": 80
     },
     {
      "name": "Seat Statuses",
      "nick": "Status",
      "x": 138,
-     "y": 94
+     "y": 102
     },
     {
      "name": "Seat Eyes",
      "nick": "Eyes",
      "x": 138,
-     "y": 114
+     "y": 123
     },
     {
      "name": "Seat Focals",
      "nick": "Focals",
      "x": 138,
-     "y": 134
+     "y": 145
     },
     {
      "name": "Effective Focal Curves",
      "nick": "Eff Focal",
      "x": 138,
-     "y": 154
+     "y": 167
     },
     {
      "name": "Sightlines",
      "nick": "Sightlns",
      "x": 138,
-     "y": 174
+     "y": 189
     },
     {
      "name": "Report",
      "nick": "Report",
      "x": 138,
-     "y": 194
+     "y": 211
     },
     {
      "name": "Debug",
      "nick": "Debug",
      "x": 138,
-     "y": 214
+     "y": 233
     }
    ]
   },
@@ -757,8 +883,8 @@
   "Vomitory": {
    "id": "vomitory",
    "product": "antlion",
-   "w": 146,
-   "h": 368,
+   "w": 148,
+   "h": 408,
    "scale": 2,
    "inputs": [
     {
@@ -864,60 +990,84 @@
      "y": 334
     },
     {
+     "name": "Deck Aisle Mode",
+     "nick": "▾ Deck A",
+     "x": 4,
+     "y": 354
+    },
+    {
+     "name": "Vom Pocket Reach",
+     "nick": "Reach",
+     "x": 4,
+     "y": 374
+    },
+    {
      "name": "Panel Values",
      "nick": "Panel",
      "x": 4,
-     "y": 354
+     "y": 394
     }
    ],
    "outputs": [
     {
      "name": "Vomitory",
      "nick": "VD",
-     "x": 142,
-     "y": 26
+     "x": 144,
+     "y": 24
     },
     {
      "name": "Stand 2D",
      "nick": "Stand 2D",
-     "x": 142,
-     "y": 71
+     "x": 144,
+     "y": 64
     },
     {
      "name": "Stand Sections",
      "nick": "SSD",
-     "x": 142,
-     "y": 116
+     "x": 144,
+     "y": 104
     },
     {
      "name": "Axis",
      "nick": "Axis",
-     "x": 142,
-     "y": 161
+     "x": 144,
+     "y": 144
     },
     {
      "name": "Vom Lines",
      "nick": "Vom Lns",
-     "x": 142,
-     "y": 206
+     "x": 144,
+     "y": 184
     },
     {
      "name": "Section Lines",
      "nick": "Sec Lns",
-     "x": 142,
-     "y": 251
+     "x": 144,
+     "y": 224
     },
     {
      "name": "Vom Section Rects",
      "nick": "Vom Sec",
-     "x": 142,
-     "y": 296
+     "x": 144,
+     "y": 264
+    },
+    {
+     "name": "Deck Profiles",
+     "nick": "Deck Prf",
+     "x": 144,
+     "y": 304
+    },
+    {
+     "name": "Deck Sections",
+     "nick": "Deck SSD",
+     "x": 144,
+     "y": 344
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 142,
-     "y": 341
+     "x": 144,
+     "y": 384
     }
    ]
   },
@@ -1189,7 +1339,7 @@
    "id": "seat",
    "product": "antlion",
    "w": 135,
-   "h": 408,
+   "h": 468,
    "scale": 2,
    "inputs": [
     {
@@ -1247,70 +1397,88 @@
      "y": 174
     },
     {
+     "name": "Max Seat Width",
+     "nick": "Max W",
+     "x": 4,
+     "y": 194
+    },
+    {
      "name": "Seat Depth",
      "nick": "Seat D",
      "x": 4,
-     "y": 194
+     "y": 214
     },
     {
      "name": "Aisle Width",
      "nick": "Aisle W",
      "x": 4,
-     "y": 214
+     "y": 234
     },
     {
      "name": "Max Riser Step",
      "nick": "Max Step",
      "x": 4,
-     "y": 234
+     "y": 254
     },
     {
      "name": "Wheelchair Ratio Target",
      "nick": "♿ %",
      "x": 4,
-     "y": 254
+     "y": 274
     },
     {
      "name": "Wheelchair Space Width",
      "nick": "♿ W",
      "x": 4,
-     "y": 274
+     "y": 294
     },
     {
      "name": "Wheelchair Space Depth",
      "nick": "♿ D",
      "x": 4,
-     "y": 294
+     "y": 314
     },
     {
      "name": "Aisle Split Mode",
      "nick": "Split",
      "x": 4,
-     "y": 314
+     "y": 334
     },
     {
      "name": "Aisle Full Height",
      "nick": "Full H",
      "x": 4,
-     "y": 334
+     "y": 354
     },
     {
      "name": "End Aisle Mode",
      "nick": "End A",
      "x": 4,
-     "y": 354
+     "y": 374
     },
     {
      "name": "End Offset",
      "nick": "End Off",
      "x": 4,
-     "y": 374
+     "y": 394
+    },
+    {
+     "name": "Zones",
+     "nick": "Zones",
+     "x": 4,
+     "y": 414
+    },
+    {
+     "name": "Seat Layout",
+     "nick": "▾ Layout",
+     "x": 4,
+     "y": 434
     },
     {
      "name": "Panel Values",
      "nick": "Panel",
      "x": 4,
-     "y": 394
+     "y": 454
     }
    ],
    "outputs": [
@@ -1318,61 +1486,61 @@
      "name": "Seat Result",
      "nick": "SRD",
      "x": 131,
-     "y": 24
+     "y": 27
     },
     {
      "name": "Seat Rects",
      "nick": "Seats",
      "x": 131,
-     "y": 64
+     "y": 73
     },
     {
      "name": "Good Seat Rects",
      "nick": "Good",
      "x": 131,
-     "y": 104
+     "y": 119
     },
     {
      "name": "Poor Seat Rects",
      "nick": "Poor",
      "x": 131,
-     "y": 144
+     "y": 165
     },
     {
      "name": "Vom Rects",
      "nick": "Voms",
      "x": 131,
-     "y": 184
+     "y": 211
     },
     {
      "name": "Vom Shifts",
      "nick": "Shifts",
      "x": 131,
-     "y": 224
+     "y": 257
     },
     {
      "name": "Aisles",
      "nick": "Aisles",
      "x": 131,
-     "y": 264
+     "y": 303
     },
     {
      "name": "Wheelchair Platforms",
      "nick": "♿ Plat",
      "x": 131,
-     "y": 304
+     "y": 349
     },
     {
      "name": "Wheelchair Units",
      "nick": "♿ Units",
      "x": 131,
-     "y": 344
+     "y": 395
     },
     {
      "name": "Debug",
      "nick": "Debug",
      "x": 131,
-     "y": 384
+     "y": 441
     }
    ]
   },
@@ -1706,6 +1874,131 @@
     }
    ]
   },
+  "Section Variant": {
+   "id": "section-variant",
+   "product": "antlion",
+   "w": 139,
+   "h": 248,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Stand Sections",
+     "nick": "SSD",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Zones",
+     "nick": "Zones",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Variant Mode",
+     "nick": "▾ Mode",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Cut Front Rows",
+     "nick": "Cut F",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "Cut Rear Rows",
+     "nick": "Cut R",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "Merge Rows",
+     "nick": "Merge",
+     "x": 4,
+     "y": 114
+    },
+    {
+     "name": "Skip Front Rows",
+     "nick": "Skip F",
+     "x": 4,
+     "y": 134
+    },
+    {
+     "name": "Skip Rear Rows",
+     "nick": "Skip R",
+     "x": 4,
+     "y": 154
+    },
+    {
+     "name": "Merge From",
+     "nick": "▾ From",
+     "x": 4,
+     "y": 174
+    },
+    {
+     "name": "Merge Height",
+     "nick": "▾ Height",
+     "x": 4,
+     "y": 194
+    },
+    {
+     "name": "Merge Wheelchair Rows",
+     "nick": "♿ Merge",
+     "x": 4,
+     "y": 214
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 234
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Stand Sections",
+     "nick": "SSD",
+     "x": 135,
+     "y": 21
+    },
+    {
+     "name": "Variants",
+     "nick": "Variants",
+     "x": 135,
+     "y": 55
+    },
+    {
+     "name": "Variant Profiles",
+     "nick": "Profiles",
+     "x": 135,
+     "y": 89
+    },
+    {
+     "name": "Variant Closed Profiles",
+     "nick": "Closed",
+     "x": 135,
+     "y": 123
+    },
+    {
+     "name": "Variant Rail Sections",
+     "nick": "Rails",
+     "x": 135,
+     "y": 158
+    },
+    {
+     "name": "Variant Sections",
+     "nick": "V SSD",
+     "x": 135,
+     "y": 192
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 135,
+     "y": 226
+    }
+   ]
+  },
   "Slider Merge": {
    "id": "slider-merge",
    "product": "antlion",
@@ -1938,6 +2231,41 @@
      "nick": "Debug",
      "x": 124,
      "y": 214
+    }
+   ]
+  },
+  "Combine Sections": {
+   "id": "combine-sections",
+   "product": "antlion",
+   "w": 107,
+   "h": 68,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Stand Sections",
+     "nick": "SSD",
+     "x": 4,
+     "y": 34
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Stand Sections",
+     "nick": "SSD",
+     "x": 103,
+     "y": 14
+    },
+    {
+     "name": "Parts",
+     "nick": "Parts",
+     "x": 103,
+     "y": 34
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 103,
+     "y": 54
     }
    ]
   },
@@ -2339,8 +2667,8 @@
   "Section Plus": {
    "id": "section-plus",
    "product": "antlion",
-   "w": 137,
-   "h": 208,
+   "w": 145,
+   "h": 308,
    "scale": 2,
    "inputs": [
     {
@@ -2386,66 +2714,96 @@
      "y": 134
     },
     {
+     "name": "Wheelchair Over Standing",
+     "nick": "WC Stand",
+     "x": 4,
+     "y": 154
+    },
+    {
      "name": "Wheelchair Eye Vertical Offset",
      "nick": "♿ Eye V",
      "x": 4,
-     "y": 154
+     "y": 174
     },
     {
      "name": "Wheelchair Eye Horizontal Offset",
      "nick": "♿ Eye H",
      "x": 4,
-     "y": 174
+     "y": 194
+    },
+    {
+     "name": "Vom Start Treads",
+     "nick": "Start Tr",
+     "x": 4,
+     "y": 214
+    },
+    {
+     "name": "Vom Merge",
+     "nick": "Vom Merge",
+     "x": 4,
+     "y": 234
+    },
+    {
+     "name": "Vom Wheelchair",
+     "nick": "Vom WC",
+     "x": 4,
+     "y": 254
+    },
+    {
+     "name": "Vom Over Standing",
+     "nick": "Vom Stand",
+     "x": 4,
+     "y": 274
     },
     {
      "name": "Panel Values",
      "nick": "Panel",
      "x": 4,
-     "y": 194
+     "y": 294
     }
    ],
    "outputs": [
     {
      "name": "Stand Sections",
      "nick": "SSD ⊞",
-     "x": 133,
-     "y": 18
+     "x": 141,
+     "y": 25
     },
     {
      "name": "Handrail Sections",
      "nick": "Rails",
-     "x": 133,
-     "y": 46
+     "x": 141,
+     "y": 67
     },
     {
      "name": "Section Profiles",
      "nick": "Profile",
-     "x": 133,
-     "y": 75
+     "x": 141,
+     "y": 110
     },
     {
      "name": "Closed Profiles",
      "nick": "Closed",
-     "x": 133,
-     "y": 103
+     "x": 141,
+     "y": 153
     },
     {
      "name": "Guide Geometry",
      "nick": "Guides",
-     "x": 133,
-     "y": 132
+     "x": 141,
+     "y": 196
     },
     {
      "name": "Wheelchair Section Profiles",
      "nick": "♿ Prof",
-     "x": 133,
-     "y": 160
+     "x": 141,
+     "y": 239
     },
     {
      "name": "Debug",
      "nick": "Debug",
-     "x": 133,
-     "y": 189
+     "x": 141,
+     "y": 282
     }
    ]
   },
@@ -2667,7 +3025,7 @@
    "id": "cut",
    "product": "antlion",
    "w": 145,
-   "h": 268,
+   "h": 288,
    "scale": 2,
    "inputs": [
     {
@@ -2743,10 +3101,16 @@
      "y": 234
     },
     {
+     "name": "Zone",
+     "nick": "Zone",
+     "x": 4,
+     "y": 254
+    },
+    {
      "name": "Panel Values",
      "nick": "Panel",
      "x": 4,
-     "y": 254
+     "y": 274
     }
    ],
    "outputs": [
@@ -2754,55 +3118,55 @@
      "name": "Seat Result",
      "nick": "SRD",
      "x": 141,
-     "y": 18
+     "y": 19
     },
     {
      "name": "Cut Lines",
      "nick": "Cut Lns",
      "x": 141,
-     "y": 46
+     "y": 50
     },
     {
      "name": "Cut Records",
      "nick": "Records",
      "x": 141,
-     "y": 75
+     "y": 81
     },
     {
      "name": "Removed Seat Rects",
      "nick": "Removed",
      "x": 141,
-     "y": 104
+     "y": 112
     },
     {
      "name": "Tread Rings",
      "nick": "Rings",
      "x": 141,
-     "y": 133
+     "y": 143
     },
     {
      "name": "Seat Rects",
      "nick": "Seats",
      "x": 141,
-     "y": 162
+     "y": 174
     },
     {
      "name": "Vom Rects",
      "nick": "Voms",
      "x": 141,
-     "y": 191
+     "y": 205
     },
     {
      "name": "Aisles",
      "nick": "Aisles",
      "x": 141,
-     "y": 220
+     "y": 236
     },
     {
      "name": "Debug",
      "nick": "Debug",
      "x": 141,
-     "y": 249
+     "y": 268
     }
    ]
   },
@@ -2964,7 +3328,7 @@
    "id": "custom-seat",
    "product": "antlion",
    "w": 137,
-   "h": 428,
+   "h": 488,
    "scale": 2,
    "inputs": [
     {
@@ -3040,58 +3404,76 @@
      "y": 234
     },
     {
+     "name": "Max Seat Width",
+     "nick": "Max W",
+     "x": 4,
+     "y": 254
+    },
+    {
      "name": "Seat Depth",
      "nick": "Seat D",
      "x": 4,
-     "y": 254
+     "y": 274
     },
     {
      "name": "Aisle Width",
      "nick": "Aisle W",
      "x": 4,
-     "y": 274
+     "y": 294
     },
     {
      "name": "Max Riser Step",
      "nick": "Max Step",
      "x": 4,
-     "y": 294
+     "y": 314
     },
     {
      "name": "Aisle Split Mode",
      "nick": "Split",
      "x": 4,
-     "y": 314
+     "y": 334
     },
     {
      "name": "Wheelchair Ratio Target",
      "nick": "♿ %",
      "x": 4,
-     "y": 334
+     "y": 354
     },
     {
      "name": "Wheelchair Space Width",
      "nick": "♿ W",
      "x": 4,
-     "y": 354
+     "y": 374
     },
     {
      "name": "Wheelchair Space Depth",
      "nick": "♿ D",
      "x": 4,
-     "y": 374
+     "y": 394
     },
     {
      "name": "End Offset",
      "nick": "End Off",
      "x": 4,
-     "y": 394
+     "y": 414
+    },
+    {
+     "name": "Zones",
+     "nick": "Zones",
+     "x": 4,
+     "y": 434
+    },
+    {
+     "name": "Seat Layout",
+     "nick": "▾ Layout",
+     "x": 4,
+     "y": 454
     },
     {
      "name": "Panel Values",
      "nick": "Panel",
      "x": 4,
-     "y": 414
+     "y": 474
     }
    ],
    "outputs": [
@@ -3099,55 +3481,55 @@
      "name": "Seat Result",
      "nick": "SRD",
      "x": 133,
-     "y": 27
+     "y": 30
     },
     {
      "name": "Seat Rects",
      "nick": "Seats",
      "x": 133,
-     "y": 73
+     "y": 83
     },
     {
      "name": "Good Seat Rects",
      "nick": "Good",
      "x": 133,
-     "y": 120
+     "y": 136
     },
     {
      "name": "Poor Seat Rects",
      "nick": "Poor",
      "x": 133,
-     "y": 167
+     "y": 190
     },
     {
      "name": "Vom Rects",
      "nick": "Voms",
      "x": 133,
-     "y": 213
+     "y": 243
     },
     {
      "name": "Aisles",
      "nick": "Aisles",
      "x": 133,
-     "y": 260
+     "y": 296
     },
     {
      "name": "Wheelchair Platforms",
      "nick": "♿ Plat",
      "x": 133,
-     "y": 307
+     "y": 350
     },
     {
      "name": "Wheelchair Units",
      "nick": "♿ Units",
      "x": 133,
-     "y": 353
+     "y": 403
     },
     {
      "name": "Debug",
      "nick": "Debug",
      "x": 133,
-     "y": 400
+     "y": 456
     }
    ]
   },
@@ -3584,6 +3966,125 @@
     }
    ]
   },
+  "Bowl Zone": {
+   "id": "bowl-zone",
+   "product": "antlion",
+   "w": 138,
+   "h": 288,
+   "scale": 2,
+   "inputs": [
+    {
+     "name": "Axis",
+     "nick": "Axis",
+     "x": 4,
+     "y": 14
+    },
+    {
+     "name": "Name",
+     "nick": "Name",
+     "x": 4,
+     "y": 34
+    },
+    {
+     "name": "Axis From",
+     "nick": "From",
+     "x": 4,
+     "y": 54
+    },
+    {
+     "name": "Axis To",
+     "nick": "To",
+     "x": 4,
+     "y": 74
+    },
+    {
+     "name": "From Offsets",
+     "nick": "From Off",
+     "x": 4,
+     "y": 94
+    },
+    {
+     "name": "To Offsets",
+     "nick": "To Off",
+     "x": 4,
+     "y": 114
+    },
+    {
+     "name": "Tier Enabled",
+     "nick": "Tiers",
+     "x": 4,
+     "y": 134
+    },
+    {
+     "name": "Remove Wheelchair",
+     "nick": "No WC",
+     "x": 4,
+     "y": 154
+    },
+    {
+     "name": "Clear All Seats",
+     "nick": "Clear All",
+     "x": 4,
+     "y": 174
+    },
+    {
+     "name": "Clear Front Rows",
+     "nick": "Clear F",
+     "x": 4,
+     "y": 194
+    },
+    {
+     "name": "Clear Rear Rows",
+     "nick": "Clear R",
+     "x": 4,
+     "y": 214
+    },
+    {
+     "name": "Seat Width",
+     "nick": "Seat W",
+     "x": 4,
+     "y": 234
+    },
+    {
+     "name": "Max Seat Width",
+     "nick": "Max W",
+     "x": 4,
+     "y": 254
+    },
+    {
+     "name": "Panel Values",
+     "nick": "Panel",
+     "x": 4,
+     "y": 274
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Zone",
+     "nick": "Zone",
+     "x": 134,
+     "y": 39
+    },
+    {
+     "name": "Inverted Zone",
+     "nick": "Inverted",
+     "x": 134,
+     "y": 109
+    },
+    {
+     "name": "Zone Lines",
+     "nick": "Lines",
+     "x": 134,
+     "y": 179
+    },
+    {
+     "name": "Debug",
+     "nick": "Debug",
+     "x": 134,
+     "y": 249
+    }
+   ]
+  },
   "Startline Capsule": {
    "id": "startline-capsule",
    "product": "antlion",
@@ -3813,38 +4314,38 @@
    "id": "stand-3d-plus",
    "product": "antlion",
    "w": 136,
-   "h": 108,
+   "h": 128,
    "scale": 2,
    "inputs": [
     {
      "name": "Stand Body",
      "nick": "SBD",
      "x": 4,
-     "y": 14
+     "y": 16
     },
     {
      "name": "Seat Result",
      "nick": "SRD",
      "x": 4,
-     "y": 34
+     "y": 40
     },
     {
      "name": "Wheelchair Deck Mode",
      "nick": "▾ Deck",
      "x": 4,
-     "y": 54
+     "y": 64
     },
     {
      "name": "Tier Enabled",
      "nick": "Tiers",
      "x": 4,
-     "y": 74
+     "y": 88
     },
     {
      "name": "Panel Values",
      "nick": "Panel",
      "x": 4,
-     "y": 94
+     "y": 112
     }
    ],
    "outputs": [
@@ -3873,10 +4374,16 @@
      "y": 74
     },
     {
+     "name": "Level Floors",
+     "nick": "Floors",
+     "x": 132,
+     "y": 94
+    },
+    {
      "name": "Debug",
      "nick": "Debug",
      "x": 132,
-     "y": 94
+     "y": 114
     }
    ]
   },

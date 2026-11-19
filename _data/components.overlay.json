@@ -13,6 +13,10 @@
     "Results": {
       "source": "any-result",
       "note": "Table Out takes any mix of result objects - section, analysis, seat map or C-value map. Anything with no table form is skipped."
+    },
+    "Main": {
+      "source": "antlion",
+      "note": "Stand Sections from the Auto Section or Section Plus of the main section, or items picked from them with List Item."
     }
   },
 

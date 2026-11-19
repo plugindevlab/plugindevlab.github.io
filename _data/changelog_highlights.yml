@@ -1,4 +1,32 @@
 antlion:
+  "1.2.0":
+    - title: Bowl zones and section variants
+      text: Bowl Zone marks part of the bowl, where Seat and Custom Seat can take seats out or change their width and Cut can read its spans. Section Variant changes the section inside a zone tier by tier, and Combine Sections joins parts built from other sections into one chain.
+      img: port-seat--zones
+      ports:
+        - {kind: add, comp: [Seat, Custom Seat], side: input, port: [Zones, Max Seat Width, Seat Layout]}
+        - {kind: add, comp: Cut, side: input, port: Zone}
+        - {kind: new, comp: [Bowl Zone, Section Variant, Combine Sections]}
+        - {kind: add, comp: Auto Section, side: input, port: Main Section}
+    - title: Wheelchair places at the vomitory mouths
+      text: Vomitory adds a pocket, a U or a U with wings in front of the mouths, and the seats behind are left clear so those rows see over the wheelchair users. Auto Section now sets wheelchairs too, and each tier can be judged over spectators standing in front.
+      img: port-vomitory--vom-pocket-reach
+      ports:
+        - {kind: add, comp: [Auto Section, Section Plus], side: input, port: [Vom Start Treads, Vom Wheelchair, Vom Merge, Vom Over Standing, Wheelchair Over Standing]}
+        - {kind: add, comp: Auto Section, side: input, port: [Wheelchair Tiers, Wheelchair Merge, Wheelchair Eye Vertical Offset, Wheelchair Eye Horizontal Offset]}
+        - {kind: add, comp: Vomitory, side: input, port: [Vom Pocket Reach, Deck Aisle Mode]}
+        - {kind: add, comp: Vomitory, side: output, port: [Deck Profiles, Deck Sections]}
+        - {kind: add, comp: Stand 3D Plus, side: output, port: Level Floors}
+    - title: Two focal curves, standing tiers and riser rules
+      text: Check one bowl against two focal curves and keep the lower C-value, and mark tiers where people stand. Auto Section gets riser rules for fewer riser heights and can show its drawing standing up.
+      img: port-c-value-seat--focal-combine
+      ports:
+        - {kind: add, comp: [C-value Seat, C-value Tread, Section Analysis], side: input, port: Focal Combine}
+        - {kind: type, comp: [C-value Seat, C-value Tread], side: input, port: Focal Curve, note: now takes a list}
+        - {kind: add, comp: Section Analysis, side: input, port: [Focal Curve, Posture Mode, Show Row Numbers]}
+        - {kind: del, comp: Section Analysis, side: input, port: C-value Mode}
+        - {kind: add, comp: Section Analysis, side: output, port: Row Numbers}
+        - {kind: add, comp: Auto Section, side: input, port: [Standing Tiers, Maximum C-Values, Max Riser Increase, Riser Group Rows, Flip Z]}
   "1.1.2":
     - title: Target Rise and Riser Fit on Auto Section
       text: Target Rise sets the height of each tier, from its first row to its last row, and the C-values become the result. Riser Fit decides what a tier does with height to spare.
