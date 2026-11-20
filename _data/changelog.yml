@@ -1,4 +1,67 @@
 antlion:
+  - version: "1.2.1"
+    date: "2026-11-20"
+    title: Focal Vertical, Most Seats and wheelchair deck fixes
+    body: |
+      **Fixed**
+
+      - **Section**, **Section Plus** - Focal Vertical moved the focal point sideways instead of raising it
+        when the section's Field Info came from a different Field than its Focal Point, or was not wired.
+        The focal point is now taken from the Field that Focal Point is wired from.
+      - **Seat**, **Custom Seat** - With Seat Layout Most Seats, where a zone's seat width changes at a bend
+        in the row, the two end seats overlapped and one was dropped, so Most Seats could give fewer seats
+        than Aligned. The first seat after the bend now starts just far enough along to clear the other.
+      - **Seat**, **Custom Seat** - Max Seat Width could widen a row until its end seat crossed a corner axis
+        line, and a Cut on that axis then removed the seat. Widening now stops before the end seat crosses.
+      - **Custom Seat** - With Max Seat Width, some rows that bend lost a seat at each bend. They no longer
+        do.
+      - **Seat**, **Custom Seat** - When Max Seat Width was not a whole number of 10 mm steps (1 inch in
+        inch files) above Seat Width, a few rows could get seats a little wider than Max Seat Width. Seats
+        now stay within it.
+      - **Seat** - With Deck Aisle Mode 0 and a U mouth on Vomitory, the row just above each end of the deck
+        was left empty on the inside. It now has seats.
+      - **Opening Cut** - Where a Bowl Zone had only taken out the wheelchair spaces on a deck at a vomitory
+        mouth, Opening Cut removed the whole deck. It now trims the deck the way Cut does.
+      - **Opening Cut** - In a zone with Remove Wheelchair, Opening Cut could lay wheelchair spaces again
+        where it closed an aisle. It now leaves the zone empty.
+      - **Assemble Bowl** - In a bowl joined from several parts, the rule that keeps a deck whose wheelchair
+        spaces a zone took out only held for the first part. It now holds for every part.
+      - **C-value Seat** - When a Cut removed a tier's front rows, the floor of a wheelchair deck was read
+        too high, so the wheelchair values were off. It is now read at the deck's real height.
+      - **C-value Tread** - The first row behind a wheelchair deck could read much higher than C-value Seat
+        where the band's section line ran through the gap between two deck pieces. It is now measured over
+        the wheelchair users on the deck, as C-value Seat does.
+      - **C-value Section Check** - For a row measured over people standing in front, the dimension was
+        drawn off the section. It now sits on the sightline.
+      - **Stand 3D Plus** - Where two Cuts met on one tier, one with a closed curve and one with an open
+        curve, the stand body was not cut along the open curve. It now is.
+      - **Stand 3D Plus** - A Cut whose Tier Enabled turned on no tier that exists still split the decks
+        along its curve. Such a Cut now does nothing, as its message says.
+      - **Stand 3D Plus** - An orange message said vomitory boxes had failed where the rows behind a deck
+        left no height to cut. Those are no longer counted as failures. The wording "rows removed by the Cut
+        cut" now reads "rows removed by Cut".
+      - **Cut**, **Opening Cut** - A deck cut cleanly in two by a straight line could get an orange message
+        that a wheelchair band could not be trimmed back. That message now only appears when it is true.
+      - **Cut** - When a cut takes out a custom vomitory whole, the message is now orange and says that
+        Stand 3D Plus builds the stand solid where the vomitory ran.
+      - **Section Plus** - With vomitory mouths set in Auto Section, the message that Vom Merge or Vom
+        Wheelchair here was not used appeared when both had the same value, and not when they differed. It
+        now appears only when the value here differs.
+
+      **Added**
+
+      - **Section Plus** - A white message says how far the rows sit behind the sections wired in, when
+        the first Solid Thicknesses value moves them back to make room for the front barrier.
+      - **Seat**, **Custom Seat** - With Max Seat Width, rebuilding is several times faster, with the same
+        seats.
+      - **Section Variant** - The descriptions now say how to vary several zones: give each zone its own
+        Section Variant on the same main sections, merge them, and wire the result into Combine Sections.
+
+      Older files open as they are, with no rewiring. Results change when they recalculate where the fixes
+      above apply: Focal Vertical with Field Info from another Field or none, Most Seats at zone width
+      changes, Max Seat Width at corners, at bends and off the 10 mm steps, U mouths with Deck Aisle Mode 0,
+      decks with Remove Wheelchair under Opening Cut, C-values behind wheelchair decks, and a closed and an
+      open Cut on the same tier.
   - version: "1.2.0"
     date: "2026-11-19"
     title: Bowl zones, section variants and wheelchair places at the vomitories

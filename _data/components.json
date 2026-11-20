@@ -2624,7 +2624,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-11-18",
+     "checked": "2026-11-20",
      "summary": "Turns the tread lines you draw into a tier section — rows, nosing and eye points, and the closed profile the stand is swept from. Draw one line per step; the component sorts them and works out the tiers.",
      "inputs": [
       {
@@ -3093,7 +3093,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-11-18",
+     "checked": "2026-11-20",
      "summary": "Works out the risers for you. Give it the tread depths and the minimum C-value you want to hold, and it raises each step by the smallest Riser Step increment that still clears that C-value - the shallowest bowl that meets the target. The front row starts on the base line - the start line as the axes facet it - so wire the same field, focal point and Base Line that Section takes. Bake tread_lines if you want to fine-tune the steps by hand in Section afterwards.",
      "inputs": [
       {
@@ -4374,7 +4374,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-11-18",
+     "checked": "2026-11-20",
      "summary": "Adds the things a bare section does not have: the front barrier or handrail, accessible (wheelchair) rows, and the sightline check over the barrier. Sits between Section and Stand 2D — pure section geometry stays in Section.",
      "inputs": [
       {
@@ -5040,8 +5040,8 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-11-18",
-     "summary": "Keeps the main section and changes it inside a zone, tier by tier - leaves out rows at the front or the back, merges every two rows into one deep row, or both. The rows that stay do not move, so one chain builds the whole bowl and follows the main section. For a stand with other risers, take a second Auto Section (with Main Section) through its own Section Plus, set ZONE_ONLY here, and join it with the main sections in Combine Sections.",
+     "checked": "2026-11-20",
+     "summary": "Keeps the main section and changes it inside a zone, tier by tier - leaves out rows at the front or the back, merges every two rows into one deep row, or both. The rows that stay do not move, so one chain builds the whole bowl and follows the main section. For changes in several zones, give each zone its own Section Variant on the same main sections, merge them, and wire the result into Combine Sections. For a stand with other risers, take a second Auto Section (with Main Section) through its own Section Plus, set ZONE_ONLY here, and join it with the main sections in Combine Sections.",
      "inputs": [
       {
        "index": 0,
@@ -5052,7 +5052,7 @@
        "optional": false,
        "dropdown": false,
        "default": null,
-       "desc": "The main sections. Wire from Section Plus, or from another Section Variant",
+       "desc": "The main sections. Wire from Section Plus. Every Section Variant takes the same main sections",
        "flow": true,
        "type": "SSD"
       },
@@ -5065,7 +5065,7 @@
        "optional": true,
        "dropdown": false,
        "default": null,
-       "desc": "Where the changes apply - zones from Bowl Zone. Every zone takes the same changes, tier by tier, and the zone's own tiers choose which tiers it touches. For other changes in another zone, use a second Section Variant",
+       "desc": "Where the changes apply - zones from Bowl Zone. Every zone takes the same changes, tier by tier, and the zone's own tiers choose which tiers it touches. For other changes in another zone, use a second Section Variant on the same main sections, merge the two, and wire them into Combine Sections",
        "flow": true,
        "type": "Zone"
       },
@@ -5611,7 +5611,7 @@
       ]
      },
      "indexHead": "Keeps the main section and changes it inside a zone, tier by tier - leaves out rows at the front...",
-     "indexMore": "or the back, merges every two rows into one deep row, or both. The rows that stay do not move, so one chain builds the whole bowl and follows the main section. For a stand with other risers, take a second Auto Section (with Main Section) through its own Section Plus, set ZONE_ONLY here, and join it with the main sections in Combine Sections."
+     "indexMore": "or the back, merges every two rows into one deep row, or both. The rows that stay do not move, so one chain builds the whole bowl and follows the main section. For changes in several zones, give each zone its own Section Variant on the same main sections, merge them, and wire the result into Combine Sections. For a stand with other risers, take a second Auto Section (with Main Section) through its own Section Plus, set ZONE_ONLY here, and join it with the main sections in Combine Sections."
     },
     {
      "id": "table-section",
@@ -5623,7 +5623,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-11-18",
+     "checked": "2026-11-20",
      "summary": "Builds the tier sections from the numbers in your workbook instead of lines you draw. Wire the book from Table In, plus the same field, focal point and Base Line that Section takes. The barrier settings live in the workbook too, so this one component does what Section and Section Plus do together - the outputs are the same.",
      "inputs": [
       {
@@ -6039,7 +6039,7 @@
      ],
      "group": "bowl-section-2",
      "page": "02-section",
-     "checked": "2026-11-18",
+     "checked": "2026-11-20",
      "summary": "Gathers every set of sections for one chain. Variants of the same main section become one set. Sections that Section Variant keeps to a zone (ZONE_ONLY) become one branch per zone, and sections with no zone take the rest of the bowl. Wire the output into Stand 2D: the chain runs once per branch, Seat keeps each branch to its zone, and Assemble Bowl joins them.",
      "inputs": [
       {
@@ -27640,7 +27640,7 @@
      ]
     }
    },
-   "version": "1.2.0"
+   "version": "1.2.1"
   }
  }
 }
