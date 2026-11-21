@@ -1,4 +1,15 @@
 antlion:
+  - version: "1.2.2"
+    date: "2026-11-21"
+    title: Most Seats corners and Max Seat Width
+    body: |
+      **Fixed**
+
+      - **Seat**, **Custom Seat** - With Seat Layout Most Seats, some rows that turn a corner had overlapping
+        seats or ended up with fewer seats than Aligned. Each corner is now checked row by row and the
+        layout that keeps the most seats without overlap is used.
+      - **Seat**, **Custom Seat** - With Max Seat Width, a row could lose a seat where a widened seat crossed
+        the edge of a Section Variant zone. Widening now stops before that seat would be removed.
   - version: "1.2.1"
     date: "2026-11-20"
     title: Focal Vertical, Most Seats and wheelchair deck fixes
